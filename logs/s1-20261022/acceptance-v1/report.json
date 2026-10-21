@@ -1,0 +1,283 @@
+{
+  "stage": "S1",
+  "status": "passed",
+  "validation_level": "cpu_native_tools_and_project_environment",
+  "upstream_revision": "97eff345811fdf652a2135d38d874f2932e11702",
+  "data_revision": "s1-fixture-v1",
+  "policy_version": "scripted-s1-v1",
+  "seed": 0,
+  "python_version": "3.11.16",
+  "sqlite_version": "3.53.1",
+  "dependencies": "Python standard library only; no ML packages imported",
+  "fixture_sha256": {
+    "catalog.json": "9c9cc95ebf52b2e47bc6174e9ed57bab4a6419b3ba1bc51c33a8e778e017b71e",
+    "tasks.json": "344b3a424403d43960860181c53219e26c7bc9f3d131dbb715999b5ef4adfd91",
+    "expectations.json": "a01729c2953ba47f39c4ba17d0dbbb76a6bc92293df00fb406a3578c4fa70207"
+  },
+  "checks": [
+    {
+      "name": "replay:task-train-dual:dock-train-a",
+      "passed": true
+    },
+    {
+      "name": "manual_truth:task-train-dual:dock-train-a",
+      "passed": true,
+      "expected": {
+        "budget": true,
+        "interface": true,
+        "displays": true,
+        "power": true
+      },
+      "actual": {
+        "budget": true,
+        "interface": true,
+        "displays": true,
+        "power": true
+      }
+    },
+    {
+      "name": "positive_budget:task-train-dual:dock-train-a",
+      "passed": true,
+      "actual": 1.0
+    },
+    {
+      "name": "replay:task-train-dual:dock-train-b",
+      "passed": true
+    },
+    {
+      "name": "manual_truth:task-train-dual:dock-train-b",
+      "passed": true,
+      "expected": {
+        "budget": true,
+        "interface": true,
+        "displays": true,
+        "power": true
+      },
+      "actual": {
+        "budget": true,
+        "interface": true,
+        "displays": true,
+        "power": true
+      }
+    },
+    {
+      "name": "positive_budget:task-train-dual:dock-train-b",
+      "passed": true,
+      "actual": 1.0
+    },
+    {
+      "name": "replay:task-train-dual:dock-train-one",
+      "passed": true
+    },
+    {
+      "name": "manual_truth:task-train-dual:dock-train-one",
+      "passed": true,
+      "expected": {
+        "budget": true,
+        "interface": true,
+        "displays": false,
+        "power": true
+      },
+      "actual": {
+        "budget": true,
+        "interface": true,
+        "displays": false,
+        "power": true
+      }
+    },
+    {
+      "name": "positive_budget:task-train-dual:dock-train-one",
+      "passed": true,
+      "actual": 1.0
+    },
+    {
+      "name": "replay:task-train-dual:dock-train-low",
+      "passed": true
+    },
+    {
+      "name": "manual_truth:task-train-dual:dock-train-low",
+      "passed": true,
+      "expected": {
+        "budget": true,
+        "interface": true,
+        "displays": true,
+        "power": false
+      },
+      "actual": {
+        "budget": true,
+        "interface": true,
+        "displays": true,
+        "power": false
+      }
+    },
+    {
+      "name": "positive_budget:task-train-dual:dock-train-low",
+      "passed": true,
+      "actual": 1.0
+    },
+    {
+      "name": "replay:task-dev-dual:dock-dev-a",
+      "passed": true
+    },
+    {
+      "name": "manual_truth:task-dev-dual:dock-dev-a",
+      "passed": true,
+      "expected": {
+        "budget": true,
+        "interface": true,
+        "displays": true,
+        "power": true
+      },
+      "actual": {
+        "budget": true,
+        "interface": true,
+        "displays": true,
+        "power": true
+      }
+    },
+    {
+      "name": "positive_budget:task-dev-dual:dock-dev-a",
+      "passed": true,
+      "actual": 1.0
+    },
+    {
+      "name": "replay:task-dev-dual:dock-dev-expensive",
+      "passed": true
+    },
+    {
+      "name": "manual_truth:task-dev-dual:dock-dev-expensive",
+      "passed": true,
+      "expected": {
+        "budget": false,
+        "interface": true,
+        "displays": true,
+        "power": true
+      },
+      "actual": {
+        "budget": false,
+        "interface": true,
+        "displays": true,
+        "power": true
+      }
+    },
+    {
+      "name": "positive_budget:task-dev-dual:dock-dev-expensive",
+      "passed": true,
+      "actual": 1.0
+    },
+    {
+      "name": "replay:task-dev-dual:dock-dev-legacy",
+      "passed": true
+    },
+    {
+      "name": "manual_truth:task-dev-dual:dock-dev-legacy",
+      "passed": true,
+      "expected": {
+        "budget": true,
+        "interface": false,
+        "displays": true,
+        "power": true
+      },
+      "actual": {
+        "budget": true,
+        "interface": false,
+        "displays": true,
+        "power": true
+      }
+    },
+    {
+      "name": "positive_budget:task-dev-dual:dock-dev-legacy",
+      "passed": true,
+      "actual": 1.0
+    },
+    {
+      "name": "concurrent_isolation",
+      "passed": true
+    },
+    {
+      "name": "retrieval_split_isolation",
+      "passed": true
+    },
+    {
+      "name": "disabled_execution",
+      "passed": true
+    },
+    {
+      "name": "repeat_penalty",
+      "passed": true
+    },
+    {
+      "name": "budget_exhaustion",
+      "passed": true
+    },
+    {
+      "name": "readonly_database",
+      "passed": true
+    }
+  ],
+  "scenarios": [
+    {
+      "task_id": "task-train-dual",
+      "product_id": "dock-train-a",
+      "tool_calls": 7,
+      "terminal_reward": 1.0,
+      "delivery_success": true,
+      "trajectory": "logs/s1-20261022/acceptance-v1/trajectories/task-train-dual--dock-train-a.json"
+    },
+    {
+      "task_id": "task-train-dual",
+      "product_id": "dock-train-b",
+      "tool_calls": 7,
+      "terminal_reward": 1.0,
+      "delivery_success": true,
+      "trajectory": "logs/s1-20261022/acceptance-v1/trajectories/task-train-dual--dock-train-b.json"
+    },
+    {
+      "task_id": "task-train-dual",
+      "product_id": "dock-train-one",
+      "tool_calls": 7,
+      "terminal_reward": 0.0,
+      "delivery_success": false,
+      "trajectory": "logs/s1-20261022/acceptance-v1/trajectories/task-train-dual--dock-train-one.json"
+    },
+    {
+      "task_id": "task-train-dual",
+      "product_id": "dock-train-low",
+      "tool_calls": 7,
+      "terminal_reward": 0.0,
+      "delivery_success": false,
+      "trajectory": "logs/s1-20261022/acceptance-v1/trajectories/task-train-dual--dock-train-low.json"
+    },
+    {
+      "task_id": "task-dev-dual",
+      "product_id": "dock-dev-a",
+      "tool_calls": 7,
+      "terminal_reward": 1.0,
+      "delivery_success": true,
+      "trajectory": "logs/s1-20261022/acceptance-v1/trajectories/task-dev-dual--dock-dev-a.json"
+    },
+    {
+      "task_id": "task-dev-dual",
+      "product_id": "dock-dev-expensive",
+      "tool_calls": 7,
+      "terminal_reward": 0.0,
+      "delivery_success": false,
+      "trajectory": "logs/s1-20261022/acceptance-v1/trajectories/task-dev-dual--dock-dev-expensive.json"
+    },
+    {
+      "task_id": "task-dev-dual",
+      "product_id": "dock-dev-legacy",
+      "tool_calls": 7,
+      "terminal_reward": 0.0,
+      "delivery_success": false,
+      "trajectory": "logs/s1-20261022/acceptance-v1/trajectories/task-dev-dual--dock-dev-legacy.json"
+    }
+  ],
+  "gpu_compute_performed": false,
+  "model_revision": null,
+  "limitations": [
+    "Fictional engineering fixtures, not S2 training data or an expert demonstration",
+    "No full official product database or LLM judge evaluation",
+    "No tokenizer, real model multi-turn inference, GPU or training validation"
+  ]
+}

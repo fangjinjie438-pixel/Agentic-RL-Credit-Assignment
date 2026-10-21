@@ -1,0 +1,599 @@
+{
+  "initial_observation": {
+    "task_id": "task-dev-dual",
+    "query": "Please recommend one office dock costing no more than 150 USD.",
+    "requirements": [
+      {
+        "id": "budget",
+        "source": "query",
+        "field": "price",
+        "op": "lte",
+        "value": 150
+      }
+    ],
+    "remaining_steps": 40,
+    "protocol_version": "procure-ecom-v1"
+  },
+  "schema_version": 1,
+  "task_id": "task-dev-dual",
+  "split": "dev",
+  "data_revision": "s1-fixture-v1",
+  "catalog_sha256": "9848753a08088fc6c00d9e29e2aa44e08817fc356a864b42846ff0ac51ef5820",
+  "task_sha256": "1a44e1f0b395aa216430b010c5b2a98df374588606b58d839d48a54791e437cf",
+  "policy_version": "scripted-s1-v1",
+  "seed": 0,
+  "transitions": [
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "dock"
+        }
+      },
+      "observation": {
+        "products": [
+          {
+            "product_id": "dock-dev-a",
+            "title": "Iris WorkBridge E USB-C office dock"
+          },
+          {
+            "product_id": "dock-dev-expensive",
+            "title": "Willow PremiumHub F USB-C office dock"
+          },
+          {
+            "product_id": "dock-dev-legacy",
+            "title": "Hazel LegacyDesk G USB-A office dock"
+          }
+        ],
+        "page": 0,
+        "total_found": 3,
+        "remaining_steps": 39
+      },
+      "done": false,
+      "step_reward": 0,
+      "terminal_reward": 0.0,
+      "verifier_events": [],
+      "terminal_validation": null,
+      "action_index": 0
+    },
+    {
+      "action": {
+        "name": "get_user_profile",
+        "arguments": {}
+      },
+      "observation": {
+        "profile": {
+          "description": "My work laptop has a USB-C port available for connecting a dock."
+        },
+        "requirements": [
+          {
+            "id": "interface",
+            "source": "persona",
+            "field": "host_interface",
+            "op": "eq",
+            "value": "USB-C"
+          }
+        ],
+        "remaining_steps": 38
+      },
+      "done": false,
+      "step_reward": 0.13333333333333333,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "hidden_requirement",
+          "key": "interface",
+          "constraint_id": "interface",
+          "source": "persona",
+          "reward": 0.13333333333333333
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 1
+    },
+    {
+      "action": {
+        "name": "ask_user",
+        "arguments": {
+          "question": "How many displays?"
+        }
+      },
+      "observation": {
+        "user_response": "I need to use two external displays at the same time.",
+        "turns_remaining": 9,
+        "requirements": [
+          {
+            "id": "displays",
+            "source": "clarification",
+            "field": "display_count",
+            "op": "gte",
+            "value": 2
+          }
+        ],
+        "remaining_steps": 37
+      },
+      "done": false,
+      "step_reward": 0.13333333333333333,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "hidden_requirement",
+          "key": "displays",
+          "constraint_id": "displays",
+          "source": "clarification",
+          "reward": 0.13333333333333333
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 2
+    },
+    {
+      "action": {
+        "name": "ask_user",
+        "arguments": {
+          "question": "How much power?"
+        }
+      },
+      "observation": {
+        "user_response": "The dock must deliver at least 65 W to my laptop.",
+        "turns_remaining": 8,
+        "requirements": [
+          {
+            "id": "power",
+            "source": "clarification",
+            "field": "power_w",
+            "op": "gte",
+            "value": 65
+          }
+        ],
+        "remaining_steps": 36
+      },
+      "done": false,
+      "step_reward": 0.13333333333333333,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "hidden_requirement",
+          "key": "power",
+          "constraint_id": "power",
+          "source": "clarification",
+          "reward": 0.13333333333333333
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 3
+    },
+    {
+      "action": {
+        "name": "get_product_details",
+        "arguments": {
+          "product_id": "dock-dev-a"
+        }
+      },
+      "observation": {
+        "product": {
+          "product_id": "dock-dev-a",
+          "title": "Iris WorkBridge E USB-C office dock",
+          "main_category": "Office Electronics",
+          "store": "Iris WorkBridge E",
+          "price": 129,
+          "features": [],
+          "description": [],
+          "details": {
+            "price": 129,
+            "host_interface": "USB-C",
+            "display_count": 2,
+            "weight_g": 260
+          },
+          "bought_together": null
+        },
+        "evidence": [
+          {
+            "evidence_id": "dock-dev-a:details:display_count",
+            "product_id": "dock-dev-a",
+            "field": "display_count",
+            "value": 2,
+            "channel": "details",
+            "text": "This dock supports 2 simultaneous external displays."
+          },
+          {
+            "evidence_id": "dock-dev-a:details:host_interface",
+            "product_id": "dock-dev-a",
+            "field": "host_interface",
+            "value": "USB-C",
+            "channel": "details",
+            "text": "This dock connects to its host laptop through a USB-C port."
+          },
+          {
+            "evidence_id": "dock-dev-a:details:price",
+            "product_id": "dock-dev-a",
+            "field": "price",
+            "value": 129,
+            "channel": "details",
+            "text": "The listed price of this dock is 129 USD."
+          },
+          {
+            "evidence_id": "dock-dev-a:details:weight_g",
+            "product_id": "dock-dev-a",
+            "field": "weight_g",
+            "value": 260,
+            "channel": "details",
+            "text": "This dock weighs 260 g."
+          }
+        ],
+        "remaining_steps": 35
+      },
+      "done": false,
+      "step_reward": 0.44999999999999996,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "evidence",
+          "key": "displays",
+          "constraint_id": "displays",
+          "evidence_id": "dock-dev-a:details:display_count",
+          "product_id": "dock-dev-a",
+          "field": "display_count",
+          "supports": true,
+          "reward": 0.15
+        },
+        {
+          "kind": "evidence",
+          "key": "interface",
+          "constraint_id": "interface",
+          "evidence_id": "dock-dev-a:details:host_interface",
+          "product_id": "dock-dev-a",
+          "field": "host_interface",
+          "supports": true,
+          "reward": 0.15
+        },
+        {
+          "kind": "evidence",
+          "key": "budget",
+          "constraint_id": "budget",
+          "evidence_id": "dock-dev-a:details:price",
+          "product_id": "dock-dev-a",
+          "field": "price",
+          "supports": true,
+          "reward": 0.15
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 4
+    },
+    {
+      "action": {
+        "name": "get_review_content",
+        "arguments": {
+          "product_id": "dock-dev-a",
+          "query": "power"
+        }
+      },
+      "observation": {
+        "reviews": [
+          {
+            "product_id": "dock-dev-a",
+            "rating": 4.0,
+            "title": "power_w",
+            "text": "An office test confirmed that this dock delivers 85 W of power to its host laptop."
+          }
+        ],
+        "evidence": [
+          {
+            "evidence_id": "dock-dev-a:reviews:power_w",
+            "product_id": "dock-dev-a",
+            "field": "power_w",
+            "value": 85,
+            "channel": "reviews",
+            "text": "An office test confirmed that this dock delivers 85 W of power to its host laptop."
+          }
+        ],
+        "remaining_steps": 34
+      },
+      "done": false,
+      "step_reward": 0.15,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "evidence",
+          "key": "power",
+          "constraint_id": "power",
+          "evidence_id": "dock-dev-a:reviews:power_w",
+          "product_id": "dock-dev-a",
+          "field": "power_w",
+          "supports": true,
+          "reward": 0.15
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 5
+    },
+    {
+      "action": {
+        "name": "recommend_product",
+        "arguments": {
+          "product_id": "dock-dev-a",
+          "reasoning": "Scripted S1 acceptance against fictional catalog facts.",
+          "checks": [
+            {
+              "constraint_id": "budget",
+              "evidence_ids": [
+                "dock-dev-a:details:price"
+              ]
+            },
+            {
+              "constraint_id": "interface",
+              "evidence_ids": [
+                "dock-dev-a:details:host_interface"
+              ]
+            },
+            {
+              "constraint_id": "displays",
+              "evidence_ids": [
+                "dock-dev-a:details:display_count"
+              ]
+            },
+            {
+              "constraint_id": "power",
+              "evidence_ids": [
+                "dock-dev-a:reviews:power_w"
+              ]
+            }
+          ]
+        }
+      },
+      "observation": {
+        "recommended_product": {
+          "product_id": "dock-dev-a",
+          "title": "Iris WorkBridge E USB-C office dock"
+        },
+        "reasoning": "Scripted S1 acceptance against fictional catalog facts.",
+        "remaining_steps": 33
+      },
+      "done": true,
+      "step_reward": 0,
+      "terminal_reward": 1.0,
+      "verifier_events": [],
+      "terminal_validation": {
+        "success": true,
+        "terminal_reward": 1.0,
+        "delivery_success": true,
+        "valid_product": true,
+        "budget_exhausted": false,
+        "constraint_satisfaction": 1.0,
+        "constraints_by_source": {
+          "query": {
+            "total": 1,
+            "satisfied": 1,
+            "rate": 1.0
+          },
+          "persona": {
+            "total": 1,
+            "satisfied": 1,
+            "rate": 1.0
+          },
+          "clarification": {
+            "total": 2,
+            "satisfied": 2,
+            "rate": 1.0
+          }
+        },
+        "constraint_results": [
+          {
+            "constraint_id": "budget",
+            "source": "query",
+            "field": "price",
+            "satisfied": true,
+            "revealed": true,
+            "evidence_valid": true,
+            "evidence_ids": [
+              "dock-dev-a:details:price"
+            ],
+            "errors": []
+          },
+          {
+            "constraint_id": "interface",
+            "source": "persona",
+            "field": "host_interface",
+            "satisfied": true,
+            "revealed": true,
+            "evidence_valid": true,
+            "evidence_ids": [
+              "dock-dev-a:details:host_interface"
+            ],
+            "errors": []
+          },
+          {
+            "constraint_id": "displays",
+            "source": "clarification",
+            "field": "display_count",
+            "satisfied": true,
+            "revealed": true,
+            "evidence_valid": true,
+            "evidence_ids": [
+              "dock-dev-a:details:display_count"
+            ],
+            "errors": []
+          },
+          {
+            "constraint_id": "power",
+            "source": "clarification",
+            "field": "power_w",
+            "satisfied": true,
+            "revealed": true,
+            "evidence_valid": true,
+            "evidence_ids": [
+              "dock-dev-a:reviews:power_w"
+            ],
+            "errors": []
+          }
+        ],
+        "errors": []
+      },
+      "action_index": 6
+    }
+  ],
+  "step_rewards": [
+    0,
+    0.13333333333333333,
+    0.13333333333333333,
+    0.13333333333333333,
+    0.44999999999999996,
+    0.15,
+    0
+  ],
+  "verifier_events": [
+    [],
+    [
+      {
+        "kind": "hidden_requirement",
+        "key": "interface",
+        "constraint_id": "interface",
+        "source": "persona",
+        "reward": 0.13333333333333333
+      }
+    ],
+    [
+      {
+        "kind": "hidden_requirement",
+        "key": "displays",
+        "constraint_id": "displays",
+        "source": "clarification",
+        "reward": 0.13333333333333333
+      }
+    ],
+    [
+      {
+        "kind": "hidden_requirement",
+        "key": "power",
+        "constraint_id": "power",
+        "source": "clarification",
+        "reward": 0.13333333333333333
+      }
+    ],
+    [
+      {
+        "kind": "evidence",
+        "key": "displays",
+        "constraint_id": "displays",
+        "evidence_id": "dock-dev-a:details:display_count",
+        "product_id": "dock-dev-a",
+        "field": "display_count",
+        "supports": true,
+        "reward": 0.15
+      },
+      {
+        "kind": "evidence",
+        "key": "interface",
+        "constraint_id": "interface",
+        "evidence_id": "dock-dev-a:details:host_interface",
+        "product_id": "dock-dev-a",
+        "field": "host_interface",
+        "supports": true,
+        "reward": 0.15
+      },
+      {
+        "kind": "evidence",
+        "key": "budget",
+        "constraint_id": "budget",
+        "evidence_id": "dock-dev-a:details:price",
+        "product_id": "dock-dev-a",
+        "field": "price",
+        "supports": true,
+        "reward": 0.15
+      }
+    ],
+    [
+      {
+        "kind": "evidence",
+        "key": "power",
+        "constraint_id": "power",
+        "evidence_id": "dock-dev-a:reviews:power_w",
+        "product_id": "dock-dev-a",
+        "field": "power_w",
+        "supports": true,
+        "reward": 0.15
+      }
+    ],
+    []
+  ],
+  "turn_spans": [],
+  "tokenization_status": "not_tokenized_S1_CPU_tools_only",
+  "done": true,
+  "terminal_validation": {
+    "success": true,
+    "terminal_reward": 1.0,
+    "delivery_success": true,
+    "valid_product": true,
+    "budget_exhausted": false,
+    "constraint_satisfaction": 1.0,
+    "constraints_by_source": {
+      "query": {
+        "total": 1,
+        "satisfied": 1,
+        "rate": 1.0
+      },
+      "persona": {
+        "total": 1,
+        "satisfied": 1,
+        "rate": 1.0
+      },
+      "clarification": {
+        "total": 2,
+        "satisfied": 2,
+        "rate": 1.0
+      }
+    },
+    "constraint_results": [
+      {
+        "constraint_id": "budget",
+        "source": "query",
+        "field": "price",
+        "satisfied": true,
+        "revealed": true,
+        "evidence_valid": true,
+        "evidence_ids": [
+          "dock-dev-a:details:price"
+        ],
+        "errors": []
+      },
+      {
+        "constraint_id": "interface",
+        "source": "persona",
+        "field": "host_interface",
+        "satisfied": true,
+        "revealed": true,
+        "evidence_valid": true,
+        "evidence_ids": [
+          "dock-dev-a:details:host_interface"
+        ],
+        "errors": []
+      },
+      {
+        "constraint_id": "displays",
+        "source": "clarification",
+        "field": "display_count",
+        "satisfied": true,
+        "revealed": true,
+        "evidence_valid": true,
+        "evidence_ids": [
+          "dock-dev-a:details:display_count"
+        ],
+        "errors": []
+      },
+      {
+        "constraint_id": "power",
+        "source": "clarification",
+        "field": "power_w",
+        "satisfied": true,
+        "revealed": true,
+        "evidence_valid": true,
+        "evidence_ids": [
+          "dock-dev-a:reviews:power_w"
+        ],
+        "errors": []
+      }
+    ],
+    "errors": []
+  }
+}

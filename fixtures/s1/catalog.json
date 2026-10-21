@@ -1,0 +1,500 @@
+{
+  "revision": "s1-fixture-v1",
+  "products": [
+    {
+      "product_id": "dock-train-a",
+      "family": "Orchid DeskLink A",
+      "split": "train",
+      "title": "Orchid DeskLink A USB-C office dock",
+      "price": 119,
+      "specs": {
+        "host_interface": "USB-C",
+        "display_count": 2,
+        "power_w": 90,
+        "weight_g": 240
+      },
+      "evidence": [
+        {
+          "evidence_id": "dock-train-a:details:price",
+          "product_id": "dock-train-a",
+          "field": "price",
+          "value": 119,
+          "channel": "details",
+          "text": "The listed price of this dock is 119 USD."
+        },
+        {
+          "evidence_id": "dock-train-a:details:host_interface",
+          "product_id": "dock-train-a",
+          "field": "host_interface",
+          "value": "USB-C",
+          "channel": "details",
+          "text": "This dock connects to its host laptop through a USB-C port."
+        },
+        {
+          "evidence_id": "dock-train-a:details:display_count",
+          "product_id": "dock-train-a",
+          "field": "display_count",
+          "value": 2,
+          "channel": "details",
+          "text": "This dock supports 2 simultaneous external displays."
+        },
+        {
+          "evidence_id": "dock-train-a:reviews:power_w",
+          "product_id": "dock-train-a",
+          "field": "power_w",
+          "value": 90,
+          "channel": "reviews",
+          "text": "An office test confirmed that this dock delivers 90 W of power to its host laptop."
+        },
+        {
+          "evidence_id": "dock-train-a:details:weight_g",
+          "product_id": "dock-train-a",
+          "field": "weight_g",
+          "value": 240,
+          "channel": "details",
+          "text": "This dock weighs 240 g."
+        }
+      ]
+    },
+    {
+      "product_id": "dock-train-b",
+      "family": "Birch TwinPort B",
+      "split": "train",
+      "title": "Birch TwinPort B USB-C office dock",
+      "price": 139,
+      "specs": {
+        "host_interface": "USB-C",
+        "display_count": 2,
+        "power_w": 65,
+        "weight_g": 310
+      },
+      "evidence": [
+        {
+          "evidence_id": "dock-train-b:details:price",
+          "product_id": "dock-train-b",
+          "field": "price",
+          "value": 139,
+          "channel": "details",
+          "text": "The listed price of this dock is 139 USD."
+        },
+        {
+          "evidence_id": "dock-train-b:details:host_interface",
+          "product_id": "dock-train-b",
+          "field": "host_interface",
+          "value": "USB-C",
+          "channel": "details",
+          "text": "This dock connects to its host laptop through a USB-C port."
+        },
+        {
+          "evidence_id": "dock-train-b:details:display_count",
+          "product_id": "dock-train-b",
+          "field": "display_count",
+          "value": 2,
+          "channel": "details",
+          "text": "This dock supports 2 simultaneous external displays."
+        },
+        {
+          "evidence_id": "dock-train-b:reviews:power_w",
+          "product_id": "dock-train-b",
+          "field": "power_w",
+          "value": 65,
+          "channel": "reviews",
+          "text": "An office test confirmed that this dock delivers 65 W of power to its host laptop."
+        },
+        {
+          "evidence_id": "dock-train-b:details:weight_g",
+          "product_id": "dock-train-b",
+          "field": "weight_g",
+          "value": 310,
+          "channel": "details",
+          "text": "This dock weighs 310 g."
+        }
+      ]
+    },
+    {
+      "product_id": "dock-train-one",
+      "family": "Cedar SoloView C",
+      "split": "train",
+      "title": "Cedar SoloView C USB-C office dock",
+      "price": 99,
+      "specs": {
+        "host_interface": "USB-C",
+        "display_count": 1,
+        "power_w": 90,
+        "weight_g": 190
+      },
+      "evidence": [
+        {
+          "evidence_id": "dock-train-one:details:price",
+          "product_id": "dock-train-one",
+          "field": "price",
+          "value": 99,
+          "channel": "details",
+          "text": "The listed price of this dock is 99 USD."
+        },
+        {
+          "evidence_id": "dock-train-one:details:host_interface",
+          "product_id": "dock-train-one",
+          "field": "host_interface",
+          "value": "USB-C",
+          "channel": "details",
+          "text": "This dock connects to its host laptop through a USB-C port."
+        },
+        {
+          "evidence_id": "dock-train-one:details:display_count",
+          "product_id": "dock-train-one",
+          "field": "display_count",
+          "value": 1,
+          "channel": "details",
+          "text": "This dock supports 1 simultaneous external display."
+        },
+        {
+          "evidence_id": "dock-train-one:reviews:power_w",
+          "product_id": "dock-train-one",
+          "field": "power_w",
+          "value": 90,
+          "channel": "reviews",
+          "text": "An office test confirmed that this dock delivers 90 W of power to its host laptop."
+        },
+        {
+          "evidence_id": "dock-train-one:details:weight_g",
+          "product_id": "dock-train-one",
+          "field": "weight_g",
+          "value": 190,
+          "channel": "details",
+          "text": "This dock weighs 190 g."
+        }
+      ]
+    },
+    {
+      "product_id": "dock-train-low",
+      "family": "Maple LitePower D",
+      "split": "train",
+      "title": "Maple LitePower D USB-C office dock",
+      "price": 109,
+      "specs": {
+        "host_interface": "USB-C",
+        "display_count": 2,
+        "power_w": 45,
+        "weight_g": 220
+      },
+      "evidence": [
+        {
+          "evidence_id": "dock-train-low:details:price",
+          "product_id": "dock-train-low",
+          "field": "price",
+          "value": 109,
+          "channel": "details",
+          "text": "The listed price of this dock is 109 USD."
+        },
+        {
+          "evidence_id": "dock-train-low:details:host_interface",
+          "product_id": "dock-train-low",
+          "field": "host_interface",
+          "value": "USB-C",
+          "channel": "details",
+          "text": "This dock connects to its host laptop through a USB-C port."
+        },
+        {
+          "evidence_id": "dock-train-low:details:display_count",
+          "product_id": "dock-train-low",
+          "field": "display_count",
+          "value": 2,
+          "channel": "details",
+          "text": "This dock supports 2 simultaneous external displays."
+        },
+        {
+          "evidence_id": "dock-train-low:reviews:power_w",
+          "product_id": "dock-train-low",
+          "field": "power_w",
+          "value": 45,
+          "channel": "reviews",
+          "text": "An office test confirmed that this dock delivers 45 W of power to its host laptop."
+        },
+        {
+          "evidence_id": "dock-train-low:details:weight_g",
+          "product_id": "dock-train-low",
+          "field": "weight_g",
+          "value": 220,
+          "channel": "details",
+          "text": "This dock weighs 220 g."
+        }
+      ]
+    },
+    {
+      "product_id": "dock-dev-a",
+      "family": "Iris WorkBridge E",
+      "split": "dev",
+      "title": "Iris WorkBridge E USB-C office dock",
+      "price": 129,
+      "specs": {
+        "host_interface": "USB-C",
+        "display_count": 2,
+        "power_w": 85,
+        "weight_g": 260
+      },
+      "evidence": [
+        {
+          "evidence_id": "dock-dev-a:details:price",
+          "product_id": "dock-dev-a",
+          "field": "price",
+          "value": 129,
+          "channel": "details",
+          "text": "The listed price of this dock is 129 USD."
+        },
+        {
+          "evidence_id": "dock-dev-a:details:host_interface",
+          "product_id": "dock-dev-a",
+          "field": "host_interface",
+          "value": "USB-C",
+          "channel": "details",
+          "text": "This dock connects to its host laptop through a USB-C port."
+        },
+        {
+          "evidence_id": "dock-dev-a:details:display_count",
+          "product_id": "dock-dev-a",
+          "field": "display_count",
+          "value": 2,
+          "channel": "details",
+          "text": "This dock supports 2 simultaneous external displays."
+        },
+        {
+          "evidence_id": "dock-dev-a:reviews:power_w",
+          "product_id": "dock-dev-a",
+          "field": "power_w",
+          "value": 85,
+          "channel": "reviews",
+          "text": "An office test confirmed that this dock delivers 85 W of power to its host laptop."
+        },
+        {
+          "evidence_id": "dock-dev-a:details:weight_g",
+          "product_id": "dock-dev-a",
+          "field": "weight_g",
+          "value": 260,
+          "channel": "details",
+          "text": "This dock weighs 260 g."
+        }
+      ]
+    },
+    {
+      "product_id": "dock-dev-expensive",
+      "family": "Willow PremiumHub F",
+      "split": "dev",
+      "title": "Willow PremiumHub F USB-C office dock",
+      "price": 179,
+      "specs": {
+        "host_interface": "USB-C",
+        "display_count": 2,
+        "power_w": 100,
+        "weight_g": 330
+      },
+      "evidence": [
+        {
+          "evidence_id": "dock-dev-expensive:details:price",
+          "product_id": "dock-dev-expensive",
+          "field": "price",
+          "value": 179,
+          "channel": "details",
+          "text": "The listed price of this dock is 179 USD."
+        },
+        {
+          "evidence_id": "dock-dev-expensive:details:host_interface",
+          "product_id": "dock-dev-expensive",
+          "field": "host_interface",
+          "value": "USB-C",
+          "channel": "details",
+          "text": "This dock connects to its host laptop through a USB-C port."
+        },
+        {
+          "evidence_id": "dock-dev-expensive:details:display_count",
+          "product_id": "dock-dev-expensive",
+          "field": "display_count",
+          "value": 2,
+          "channel": "details",
+          "text": "This dock supports 2 simultaneous external displays."
+        },
+        {
+          "evidence_id": "dock-dev-expensive:reviews:power_w",
+          "product_id": "dock-dev-expensive",
+          "field": "power_w",
+          "value": 100,
+          "channel": "reviews",
+          "text": "An office test confirmed that this dock delivers 100 W of power to its host laptop."
+        },
+        {
+          "evidence_id": "dock-dev-expensive:details:weight_g",
+          "product_id": "dock-dev-expensive",
+          "field": "weight_g",
+          "value": 330,
+          "channel": "details",
+          "text": "This dock weighs 330 g."
+        }
+      ]
+    },
+    {
+      "product_id": "dock-dev-legacy",
+      "family": "Hazel LegacyDesk G",
+      "split": "dev",
+      "title": "Hazel LegacyDesk G USB-A office dock",
+      "price": 89,
+      "specs": {
+        "host_interface": "USB-A",
+        "display_count": 2,
+        "power_w": 90,
+        "weight_g": 280
+      },
+      "evidence": [
+        {
+          "evidence_id": "dock-dev-legacy:details:price",
+          "product_id": "dock-dev-legacy",
+          "field": "price",
+          "value": 89,
+          "channel": "details",
+          "text": "The listed price of this dock is 89 USD."
+        },
+        {
+          "evidence_id": "dock-dev-legacy:details:host_interface",
+          "product_id": "dock-dev-legacy",
+          "field": "host_interface",
+          "value": "USB-A",
+          "channel": "details",
+          "text": "This dock connects to its host laptop through a USB-A port."
+        },
+        {
+          "evidence_id": "dock-dev-legacy:details:display_count",
+          "product_id": "dock-dev-legacy",
+          "field": "display_count",
+          "value": 2,
+          "channel": "details",
+          "text": "This dock supports 2 simultaneous external displays."
+        },
+        {
+          "evidence_id": "dock-dev-legacy:reviews:power_w",
+          "product_id": "dock-dev-legacy",
+          "field": "power_w",
+          "value": 90,
+          "channel": "reviews",
+          "text": "An office test confirmed that this dock delivers 90 W of power to its host laptop."
+        },
+        {
+          "evidence_id": "dock-dev-legacy:details:weight_g",
+          "product_id": "dock-dev-legacy",
+          "field": "weight_g",
+          "value": 280,
+          "channel": "details",
+          "text": "This dock weighs 280 g."
+        }
+      ]
+    },
+    {
+      "product_id": "dock-sealed-a",
+      "family": "Poppy ReservedLink H",
+      "split": "sealed_test",
+      "title": "Poppy ReservedLink H USB-C office dock",
+      "price": 125,
+      "specs": {
+        "host_interface": "USB-C",
+        "display_count": 2,
+        "power_w": 80,
+        "weight_g": 255
+      },
+      "evidence": [
+        {
+          "evidence_id": "dock-sealed-a:details:price",
+          "product_id": "dock-sealed-a",
+          "field": "price",
+          "value": 125,
+          "channel": "details",
+          "text": "The listed price of this dock is 125 USD."
+        },
+        {
+          "evidence_id": "dock-sealed-a:details:host_interface",
+          "product_id": "dock-sealed-a",
+          "field": "host_interface",
+          "value": "USB-C",
+          "channel": "details",
+          "text": "This dock connects to its host laptop through a USB-C port."
+        },
+        {
+          "evidence_id": "dock-sealed-a:details:display_count",
+          "product_id": "dock-sealed-a",
+          "field": "display_count",
+          "value": 2,
+          "channel": "details",
+          "text": "This dock supports 2 simultaneous external displays."
+        },
+        {
+          "evidence_id": "dock-sealed-a:reviews:power_w",
+          "product_id": "dock-sealed-a",
+          "field": "power_w",
+          "value": 80,
+          "channel": "reviews",
+          "text": "An office test confirmed that this dock delivers 80 W of power to its host laptop."
+        },
+        {
+          "evidence_id": "dock-sealed-a:details:weight_g",
+          "product_id": "dock-sealed-a",
+          "field": "weight_g",
+          "value": 255,
+          "channel": "details",
+          "text": "This dock weighs 255 g."
+        }
+      ]
+    },
+    {
+      "product_id": "dock-official-a",
+      "family": "Aster IsolationProbe I",
+      "split": "official_test",
+      "title": "Aster IsolationProbe I USB-C office dock",
+      "price": 135,
+      "specs": {
+        "host_interface": "USB-C",
+        "display_count": 2,
+        "power_w": 75,
+        "weight_g": 275
+      },
+      "evidence": [
+        {
+          "evidence_id": "dock-official-a:details:price",
+          "product_id": "dock-official-a",
+          "field": "price",
+          "value": 135,
+          "channel": "details",
+          "text": "The listed price of this dock is 135 USD."
+        },
+        {
+          "evidence_id": "dock-official-a:details:host_interface",
+          "product_id": "dock-official-a",
+          "field": "host_interface",
+          "value": "USB-C",
+          "channel": "details",
+          "text": "This dock connects to its host laptop through a USB-C port."
+        },
+        {
+          "evidence_id": "dock-official-a:details:display_count",
+          "product_id": "dock-official-a",
+          "field": "display_count",
+          "value": 2,
+          "channel": "details",
+          "text": "This dock supports 2 simultaneous external displays."
+        },
+        {
+          "evidence_id": "dock-official-a:reviews:power_w",
+          "product_id": "dock-official-a",
+          "field": "power_w",
+          "value": 75,
+          "channel": "reviews",
+          "text": "An office test confirmed that this dock delivers 75 W of power to its host laptop."
+        },
+        {
+          "evidence_id": "dock-official-a:details:weight_g",
+          "product_id": "dock-official-a",
+          "field": "weight_g",
+          "value": 275,
+          "channel": "details",
+          "text": "This dock weighs 275 g."
+        }
+      ]
+    }
+  ]
+}

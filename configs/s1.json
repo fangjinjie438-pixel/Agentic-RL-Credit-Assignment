@@ -1,0 +1,7 @@
+{
+  "stage": "S1",
+  "fixture_directory": "fixtures/s1",
+  "policy_version": "scripted-s1-v1",
+  "seed": 0,
+  "scope": "CPU engineering acceptance; fictional data; no model, teacher API or official evaluation"
+}

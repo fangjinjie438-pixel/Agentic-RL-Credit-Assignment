@@ -1,0 +1,107 @@
+{
+  "revision": "s1-fixture-v1",
+  "authorship": "Manually authored fictional facts and expected decisions; not computed by the project verifier.",
+  "scope": "S1 engineering acceptance only. No S2 training dataset and no actual official benchmark products or tasks.",
+  "tasks": {
+    "task-train-dual": {
+      "acceptable_product_ids": [
+        "dock-train-a",
+        "dock-train-b"
+      ],
+      "rejected_products": {
+        "dock-train-one": {
+          "failed_constraint_ids": [
+            "displays"
+          ],
+          "fact": "One simultaneous external display is fewer than the required two."
+        },
+        "dock-train-low": {
+          "failed_constraint_ids": [
+            "power"
+          ],
+          "fact": "45 W is below the required 65 W."
+        }
+      },
+      "constraint_truth": {
+        "dock-train-a": {
+          "budget": true,
+          "interface": true,
+          "displays": true,
+          "power": true
+        },
+        "dock-train-b": {
+          "budget": true,
+          "interface": true,
+          "displays": true,
+          "power": true
+        },
+        "dock-train-one": {
+          "budget": true,
+          "interface": true,
+          "displays": false,
+          "power": true
+        },
+        "dock-train-low": {
+          "budget": true,
+          "interface": true,
+          "displays": true,
+          "power": false
+        }
+      }
+    },
+    "task-dev-dual": {
+      "acceptable_product_ids": [
+        "dock-dev-a"
+      ],
+      "rejected_products": {
+        "dock-dev-expensive": {
+          "failed_constraint_ids": [
+            "budget"
+          ],
+          "fact": "179 USD exceeds the 150 USD budget."
+        },
+        "dock-dev-legacy": {
+          "failed_constraint_ids": [
+            "interface"
+          ],
+          "fact": "A USB-A host connection does not satisfy the USB-C host requirement."
+        }
+      },
+      "constraint_truth": {
+        "dock-dev-a": {
+          "budget": true,
+          "interface": true,
+          "displays": true,
+          "power": true
+        },
+        "dock-dev-expensive": {
+          "budget": false,
+          "interface": true,
+          "displays": true,
+          "power": true
+        },
+        "dock-dev-legacy": {
+          "budget": true,
+          "interface": false,
+          "displays": true,
+          "power": true
+        }
+      }
+    }
+  },
+  "isolation_only_product_ids": [
+    "dock-sealed-a",
+    "dock-official-a"
+  ],
+  "hidden_requirements": [
+    "displays",
+    "power"
+  ],
+  "evidence_channels": {
+    "price": "details",
+    "host_interface": "details",
+    "display_count": "details",
+    "power_w": "reviews",
+    "weight_g": "details"
+  }
+}

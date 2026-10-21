@@ -1,9 +1,9 @@
-"""S0 CLI for configuration, inventory, isolated imports and guarded GPU probes.
+"""CLI for S0 runtime probes and S1 CPU procurement environment acceptance.
 
 Run with python -m procure_rl (PYTHONPATH=src), or the packaged procure-rl entry.
 Inputs are a JSON config / new output path; outputs are run manifests and reports.
-GPU probes require explicit execute and allocation arguments. No training or
-environment-install subcommand exists at this stage.
+GPU probes require explicit execute and allocation arguments. S1 executes only
+native CPU tools on fictional fixtures; no training subcommand exists.
 """
 
 from __future__ import annotations
@@ -19,13 +19,16 @@ from .runtime import RunRecord
 
 
 def main(argv: list[str] | None = None) -> int:
-    """Execute an explicit S0 operation and save evidence and its actual exit code."""
+    """Execute one explicit stage operation and retain its actual evidence."""
     args_list = sys.argv[1:] if argv is None else argv
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="action", required=True)
     check = sub.add_parser("check-config", help="Validate candidate planning config")
     check.add_argument("--config", type=Path, default=Path("configs/s0.json"))
     check.add_argument("--output", type=Path, required=True)
+    smoke = sub.add_parser("s1-smoke", help="Real CPU environment acceptance on fictional engineering fixtures")
+    smoke.add_argument("--config", type=Path, default=Path("configs/s1.json"))
+    smoke.add_argument("--output", type=Path, required=True)
     doctor = sub.add_parser("doctor", help="Read-only hardware and dependency inventory")
     doctor.add_argument("--output", type=Path, required=True)
     doctor.add_argument("--timeout", type=float, default=10.0)
@@ -51,8 +54,10 @@ def main(argv: list[str] | None = None) -> int:
     try:
         run = RunRecord(args.output, project_root,
                         [sys.executable, "-m", "procure_rl", *args_list],
-                        args.config if args.action == "check-config" else None,
-                        execution_kind="guarded_gpu" if args.action == "gpu-probe" and args.execute else "cpu_read_only")
+                        args.config if args.action in ("check-config", "s1-smoke") else None,
+                        execution_kind=("guarded_gpu" if args.action == "gpu-probe" and args.execute else
+                                        "cpu_environment" if args.action == "s1-smoke" else "cpu_read_only"),
+                        stage="S1" if args.action == "s1-smoke" else "S0")
         status = "succeeded"
         if args.action == "check-config":
             config = load_config(args.config)
@@ -61,6 +66,18 @@ def main(argv: list[str] | None = None) -> int:
                             encoding="utf-8")
             artifacts = {"config": str(path)}
             level = "cpu_schema_only"
+        elif args.action == "s1-smoke":
+            from .env.smoke import run_smoke
+            config = json.loads(args.config.read_text(encoding="utf-8"))
+            run.record.update(policy_version=config.get("policy_version"), seed=config.get("seed"),
+                              model_revision=None, checkpoint=None)
+            artifacts = run_smoke(project_root, args.output, config)
+            report = json.loads(Path(artifacts["json"]).read_text(encoding="utf-8"))
+            status = "succeeded" if report["status"] == "passed" else "failed"
+            level = report["validation_level"]
+            run.record.update(data_revision=report["data_revision"], fixture_sha256=report["fixture_sha256"],
+                              upstream_revision=report["upstream_revision"], dependencies=report["dependencies"],
+                              sqlite_version=report["sqlite_version"])
         elif args.action == "doctor":
             from .doctor import run_doctor
             artifacts = run_doctor(project_root, args.output, args.timeout)

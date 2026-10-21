@@ -1,0 +1,62 @@
+[
+  {
+    "observation": {
+      "user_response": "I need to use two external displays at the same time.",
+      "turns_remaining": 9,
+      "requirements": [
+        {
+          "id": "displays",
+          "source": "clarification",
+          "field": "display_count",
+          "op": "gte",
+          "value": 2
+        }
+      ],
+      "remaining_steps": 39
+    },
+    "done": false,
+    "step_reward": 0.13333333333333333,
+    "terminal_reward": 0.0,
+    "verifier_events": [
+      {
+        "kind": "hidden_requirement",
+        "key": "displays",
+        "constraint_id": "displays",
+        "source": "clarification",
+        "reward": 0.13333333333333333
+      }
+    ],
+    "terminal_validation": null,
+    "action_index": 0
+  },
+  {
+    "observation": {
+      "user_response": "The dock must deliver at least 65 W to my laptop.",
+      "turns_remaining": 9,
+      "requirements": [
+        {
+          "id": "power",
+          "source": "clarification",
+          "field": "power_w",
+          "op": "gte",
+          "value": 65
+        }
+      ],
+      "remaining_steps": 39
+    },
+    "done": false,
+    "step_reward": 0.13333333333333333,
+    "terminal_reward": 0.0,
+    "verifier_events": [
+      {
+        "kind": "hidden_requirement",
+        "key": "power",
+        "constraint_id": "power",
+        "source": "clarification",
+        "reward": 0.13333333333333333
+      }
+    ],
+    "terminal_validation": null,
+    "action_index": 0
+  }
+]

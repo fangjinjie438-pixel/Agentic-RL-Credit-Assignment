@@ -1,0 +1,159 @@
+{
+  "stage": "S1",
+  "next_stage": "S2_not_started",
+  "recorded_at": "2026-10-22T03:12:14+08:00",
+  "machine": "A6000",
+  "executable": "/home/fangjinjie/project/credit_assign/.venv-cpu/bin/python",
+  "command": "PYTHONPATH=src .venv-cpu/bin/python - (handoff evidence audit)",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "acceptance-final:source_hashes",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "acceptance-final:succeeded_cpu",
+      "passed": true
+    },
+    {
+      "name": "tests-final:source_hashes",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "tests-final:succeeded_cpu",
+      "passed": true
+    },
+    {
+      "name": "test_hash:tests/test_config_runtime.py",
+      "passed": true
+    },
+    {
+      "name": "test_hash:tests/test_doctor.py",
+      "passed": true
+    },
+    {
+      "name": "test_hash:tests/test_environment_probe.py",
+      "passed": true
+    },
+    {
+      "name": "test_hash:tests/test_gpu_probe.py",
+      "passed": true
+    },
+    {
+      "name": "test_hash:tests/test_session.py",
+      "passed": true
+    },
+    {
+      "name": "test_hash:tests/test_upstream.py",
+      "passed": true
+    },
+    {
+      "name": "test_hash:tests/test_verifier.py",
+      "passed": true
+    },
+    {
+      "name": "acceptance_27",
+      "passed": true
+    },
+    {
+      "name": "tests_82",
+      "passed": true
+    },
+    {
+      "name": "fixture_hash:catalog.json",
+      "passed": true
+    },
+    {
+      "name": "fixture_hash:tasks.json",
+      "passed": true
+    },
+    {
+      "name": "fixture_hash:expectations.json",
+      "passed": true
+    },
+    {
+      "name": "config_hash",
+      "passed": true
+    },
+    {
+      "name": "database_hash:train",
+      "passed": true
+    },
+    {
+      "name": "database_hash:dev",
+      "passed": true
+    },
+    {
+      "name": "database_hash:sealed_test",
+      "passed": true
+    },
+    {
+      "name": "database_hash:official_test",
+      "passed": true
+    },
+    {
+      "name": "upstream_75_unchanged",
+      "passed": true,
+      "modified": []
+    },
+    {
+      "name": "module_docstrings",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "code_directory_readmes",
+      "passed": true,
+      "missing": []
+    }
+  ],
+  "document_sha256": {
+    "README.md": "77f7342857b170e5422445aeceba6525019aaeb3d84cf8945bff357f1789d2a3",
+    "PROGRESS.md": "9e70f7a56e15277c0f0e4a898903332f0acfc232c055d5aedb9ac170dbf8ceca",
+    "src/README.md": "f3ed93806948e0f022e1a53dd9412f9b5149ec15aacd1747963d719c875a1e79",
+    "src/procure_rl/README.md": "9c5c13b06cc3bfbb2b9ed01f8421adffb275c2972f3c092e18430e5f33a80aca",
+    "src/procure_rl/env/README.md": "3ff3cf4caf4c2f2cef9567b683c01d5d50f1ba78eb99e6ab8a39b1ef5f85f063",
+    "tests/README.md": "72804aaf2643608d0a0ef1e43f038f25b931a14731e0788178e4bc25b157238c",
+    "configs/README.md": "c677dcf3b9cdf4cf27580db8be34e638831244a2c8f9e26ec8baa362b0bd185c",
+    "docs/README.md": "675ebfb3b3da0393013582525aafc69c3fc4412328faaa30b939e8b389809f6c",
+    "docs/stages/README.md": "484d835757d5bee8b5874ee597a0d79e79069549ad5b9c7737fd5cf04009e7b3",
+    "docs/stages/S1.md": "a39f1d4287c8919ec9e264bf858036889665b3db20ec4185903b4d115c2fc1bc",
+    "docs/ecom-upstream-audit.md": "54516c49a5736574033a0963a4aa36bfb4ecf85ed600985d022627559095ee72",
+    "fixtures/README.md": "8ebf494771079e5da1c918fe9f44474d6fe4895fa59831c55d0aab5afedbb243",
+    "fixtures/s1/README.md": "ea51e0040892529782538f94728c7317bd8aa46084f6eabb519b35743b00269d",
+    "third_party/README.md": "15c7d687288b6b646eb38d569770e2a89839123af4121f12334abbc77a371a53",
+    "logs/README.md": "1d89dc9ba7155fb8bcfc6f5c764204f40e4fa5e07dbeb92f7ae4a082f8f48a1d"
+  },
+  "artifact_sha256": {
+    "logs/s1-20261022/acceptance-final/budget-and-invalid.json": "a494f16792fae1bdabbfdd129e06ad8210beebff544ec17b5e8960868551fb79",
+    "logs/s1-20261022/acceptance-final/catalog/dev.sqlite": "9848753a08088fc6c00d9e29e2aa44e08817fc356a864b42846ff0ac51ef5820",
+    "logs/s1-20261022/acceptance-final/catalog/manifest.json": "0db2f0d6c8ed7dce00b841a83788079195c1f0a55b5739db5d2999dfaec63695",
+    "logs/s1-20261022/acceptance-final/catalog/official_test.sqlite": "b200cbf517b76732f6b5e15e9fd981aa7eb38586f05547a94ab04e455ef2a0a5",
+    "logs/s1-20261022/acceptance-final/catalog/sealed_test.sqlite": "8d9ffb7c90cfb2a69ef150be01314ea8b2c80bbbf786e06a8177602218bae406",
+    "logs/s1-20261022/acceptance-final/catalog/train.sqlite": "feb1a383a458e31d97fdaf415c742d77e20eb2d9a698c6454fdbdc38120826ae",
+    "logs/s1-20261022/acceptance-final/concurrent.json": "9862a2d503ce29127a47444f751634b77312a62ac00848188c8a59017b86d75a",
+    "logs/s1-20261022/acceptance-final/report.json": "6247925740e45a4ee1bfedf4f6098f573573beb6a27c735e72a49ca0527cc047",
+    "logs/s1-20261022/acceptance-final/report.md": "56c81242fcd7c8480d144258db5132498e3437bc85e3857eaeb48d9f27fc6132",
+    "logs/s1-20261022/acceptance-final/run.json": "9716098ce18d5a9b54dee9db8e64831b604a7e8b14302f2566df3b746bf72aa5",
+    "logs/s1-20261022/acceptance-final/run.log": "cf0bf7414918eacc4f609214325a35139de0e1a1d430885f915710fae9b1af35",
+    "logs/s1-20261022/acceptance-final/trajectories/task-dev-dual--dock-dev-a--preterminal.json": "2e8b31c2eadbc86b9a904f9d1ea17ddb703c7389c60edf45f08a35790d1a673b",
+    "logs/s1-20261022/acceptance-final/trajectories/task-dev-dual--dock-dev-a.json": "8236d9c347c7afe46ff958fdf7605ceb471dd34626fc458d8f790df9e3be03b0",
+    "logs/s1-20261022/acceptance-final/trajectories/task-dev-dual--dock-dev-expensive--preterminal.json": "b85dbf2619f6ca0b4532401fc1ead7c629c17f260eaeaeb2d68cc0d4c02efdce",
+    "logs/s1-20261022/acceptance-final/trajectories/task-dev-dual--dock-dev-expensive.json": "a8f0ce592e2ea3106df651141392fede90fb81a1bb0054bac6602dc372de45e9",
+    "logs/s1-20261022/acceptance-final/trajectories/task-dev-dual--dock-dev-legacy--preterminal.json": "214745d699a87c48e628e41af255ccf71675b7d29c72ae7183f9d38fcb76b256",
+    "logs/s1-20261022/acceptance-final/trajectories/task-dev-dual--dock-dev-legacy.json": "bd6e3d921731d5e36c1b27a6c87ddc1f1c9ab7a369793848486729efe7bd4430",
+    "logs/s1-20261022/acceptance-final/trajectories/task-train-dual--dock-train-a--preterminal.json": "cba19696df363c74988a329b2ceb49a3fabe511359978a4da5cf3af1f2ac8664",
+    "logs/s1-20261022/acceptance-final/trajectories/task-train-dual--dock-train-a.json": "534e31eddf8e2d56952d5f9409a02dac44bb591d3c26396fe1edb0f6262688f0",
+    "logs/s1-20261022/acceptance-final/trajectories/task-train-dual--dock-train-b--preterminal.json": "0a983e03dd840217a2a41802833b4a327962a87148446237fbc5e9a3d5415cbb",
+    "logs/s1-20261022/acceptance-final/trajectories/task-train-dual--dock-train-b.json": "2dce8f3a893d5154ef5036b5846c8257b7c8709fe1713b05ff20938d15b02c26",
+    "logs/s1-20261022/acceptance-final/trajectories/task-train-dual--dock-train-low--preterminal.json": "b7afc3993caa514c4638fc17f8a24b11ecdd1e4f42b1e1746242668af89f4048",
+    "logs/s1-20261022/acceptance-final/trajectories/task-train-dual--dock-train-low.json": "c6bdb46afa22095d36ea372a00b623afd073a8865225ea39a03838faa9ad935c",
+    "logs/s1-20261022/acceptance-final/trajectories/task-train-dual--dock-train-one--preterminal.json": "2db9c89db25cf24c4f720d2cb78f01acc23796852f27392935117a4640cf26cc",
+    "logs/s1-20261022/acceptance-final/trajectories/task-train-dual--dock-train-one.json": "09614dea76e13d0645e58f92ad662a0de139873c23042fb4f84328462fe10755"
+  },
+  "gpu_compute_performed": false,
+  "model_revision": null,
+  "checkpoint": null
+}

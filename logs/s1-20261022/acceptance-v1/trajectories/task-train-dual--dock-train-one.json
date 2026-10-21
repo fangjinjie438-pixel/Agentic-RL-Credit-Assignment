@@ -1,0 +1,603 @@
+{
+  "initial_observation": {
+    "task_id": "task-train-dual",
+    "query": "Please recommend one office dock costing no more than 150 USD.",
+    "requirements": [
+      {
+        "id": "budget",
+        "source": "query",
+        "field": "price",
+        "op": "lte",
+        "value": 150
+      }
+    ],
+    "remaining_steps": 40,
+    "protocol_version": "procure-ecom-v1"
+  },
+  "schema_version": 1,
+  "task_id": "task-train-dual",
+  "split": "train",
+  "data_revision": "s1-fixture-v1",
+  "catalog_sha256": "feb1a383a458e31d97fdaf415c742d77e20eb2d9a698c6454fdbdc38120826ae",
+  "task_sha256": "1778e3c2ac3aadf94342f18f2939328f27d7ec051c3a4c8cc7cf98541e70a047",
+  "policy_version": "scripted-s1-v1",
+  "seed": 0,
+  "transitions": [
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "dock"
+        }
+      },
+      "observation": {
+        "products": [
+          {
+            "product_id": "dock-train-a",
+            "title": "Orchid DeskLink A USB-C office dock"
+          },
+          {
+            "product_id": "dock-train-b",
+            "title": "Birch TwinPort B USB-C office dock"
+          },
+          {
+            "product_id": "dock-train-one",
+            "title": "Cedar SoloView C USB-C office dock"
+          },
+          {
+            "product_id": "dock-train-low",
+            "title": "Maple LitePower D USB-C office dock"
+          }
+        ],
+        "page": 0,
+        "total_found": 4,
+        "remaining_steps": 39
+      },
+      "done": false,
+      "step_reward": 0,
+      "terminal_reward": 0.0,
+      "verifier_events": [],
+      "terminal_validation": null,
+      "action_index": 0
+    },
+    {
+      "action": {
+        "name": "get_user_profile",
+        "arguments": {}
+      },
+      "observation": {
+        "profile": {
+          "description": "My work laptop has a USB-C port available for connecting a dock."
+        },
+        "requirements": [
+          {
+            "id": "interface",
+            "source": "persona",
+            "field": "host_interface",
+            "op": "eq",
+            "value": "USB-C"
+          }
+        ],
+        "remaining_steps": 38
+      },
+      "done": false,
+      "step_reward": 0.13333333333333333,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "hidden_requirement",
+          "key": "interface",
+          "constraint_id": "interface",
+          "source": "persona",
+          "reward": 0.13333333333333333
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 1
+    },
+    {
+      "action": {
+        "name": "ask_user",
+        "arguments": {
+          "question": "How many displays?"
+        }
+      },
+      "observation": {
+        "user_response": "I need to use two external displays at the same time.",
+        "turns_remaining": 9,
+        "requirements": [
+          {
+            "id": "displays",
+            "source": "clarification",
+            "field": "display_count",
+            "op": "gte",
+            "value": 2
+          }
+        ],
+        "remaining_steps": 37
+      },
+      "done": false,
+      "step_reward": 0.13333333333333333,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "hidden_requirement",
+          "key": "displays",
+          "constraint_id": "displays",
+          "source": "clarification",
+          "reward": 0.13333333333333333
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 2
+    },
+    {
+      "action": {
+        "name": "ask_user",
+        "arguments": {
+          "question": "How much power?"
+        }
+      },
+      "observation": {
+        "user_response": "The dock must deliver at least 65 W to my laptop.",
+        "turns_remaining": 8,
+        "requirements": [
+          {
+            "id": "power",
+            "source": "clarification",
+            "field": "power_w",
+            "op": "gte",
+            "value": 65
+          }
+        ],
+        "remaining_steps": 36
+      },
+      "done": false,
+      "step_reward": 0.13333333333333333,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "hidden_requirement",
+          "key": "power",
+          "constraint_id": "power",
+          "source": "clarification",
+          "reward": 0.13333333333333333
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 3
+    },
+    {
+      "action": {
+        "name": "get_product_details",
+        "arguments": {
+          "product_id": "dock-train-one"
+        }
+      },
+      "observation": {
+        "product": {
+          "product_id": "dock-train-one",
+          "title": "Cedar SoloView C USB-C office dock",
+          "main_category": "Office Electronics",
+          "store": "Cedar SoloView C",
+          "price": 99,
+          "features": [],
+          "description": [],
+          "details": {
+            "price": 99,
+            "host_interface": "USB-C",
+            "display_count": 1,
+            "weight_g": 190
+          },
+          "bought_together": null
+        },
+        "evidence": [
+          {
+            "evidence_id": "dock-train-one:details:display_count",
+            "product_id": "dock-train-one",
+            "field": "display_count",
+            "value": 1,
+            "channel": "details",
+            "text": "This dock supports 1 simultaneous external display."
+          },
+          {
+            "evidence_id": "dock-train-one:details:host_interface",
+            "product_id": "dock-train-one",
+            "field": "host_interface",
+            "value": "USB-C",
+            "channel": "details",
+            "text": "This dock connects to its host laptop through a USB-C port."
+          },
+          {
+            "evidence_id": "dock-train-one:details:price",
+            "product_id": "dock-train-one",
+            "field": "price",
+            "value": 99,
+            "channel": "details",
+            "text": "The listed price of this dock is 99 USD."
+          },
+          {
+            "evidence_id": "dock-train-one:details:weight_g",
+            "product_id": "dock-train-one",
+            "field": "weight_g",
+            "value": 190,
+            "channel": "details",
+            "text": "This dock weighs 190 g."
+          }
+        ],
+        "remaining_steps": 35
+      },
+      "done": false,
+      "step_reward": 0.44999999999999996,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "evidence",
+          "key": "displays",
+          "constraint_id": "displays",
+          "evidence_id": "dock-train-one:details:display_count",
+          "product_id": "dock-train-one",
+          "field": "display_count",
+          "supports": false,
+          "reward": 0.15
+        },
+        {
+          "kind": "evidence",
+          "key": "interface",
+          "constraint_id": "interface",
+          "evidence_id": "dock-train-one:details:host_interface",
+          "product_id": "dock-train-one",
+          "field": "host_interface",
+          "supports": true,
+          "reward": 0.15
+        },
+        {
+          "kind": "evidence",
+          "key": "budget",
+          "constraint_id": "budget",
+          "evidence_id": "dock-train-one:details:price",
+          "product_id": "dock-train-one",
+          "field": "price",
+          "supports": true,
+          "reward": 0.15
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 4
+    },
+    {
+      "action": {
+        "name": "get_review_content",
+        "arguments": {
+          "product_id": "dock-train-one",
+          "query": "power"
+        }
+      },
+      "observation": {
+        "reviews": [
+          {
+            "product_id": "dock-train-one",
+            "rating": 4.0,
+            "title": "power_w",
+            "text": "An office test confirmed that this dock delivers 90 W of power to its host laptop."
+          }
+        ],
+        "evidence": [
+          {
+            "evidence_id": "dock-train-one:reviews:power_w",
+            "product_id": "dock-train-one",
+            "field": "power_w",
+            "value": 90,
+            "channel": "reviews",
+            "text": "An office test confirmed that this dock delivers 90 W of power to its host laptop."
+          }
+        ],
+        "remaining_steps": 34
+      },
+      "done": false,
+      "step_reward": 0.15,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "evidence",
+          "key": "power",
+          "constraint_id": "power",
+          "evidence_id": "dock-train-one:reviews:power_w",
+          "product_id": "dock-train-one",
+          "field": "power_w",
+          "supports": true,
+          "reward": 0.15
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 5
+    },
+    {
+      "action": {
+        "name": "recommend_product",
+        "arguments": {
+          "product_id": "dock-train-one",
+          "reasoning": "Scripted S1 acceptance against fictional catalog facts.",
+          "checks": [
+            {
+              "constraint_id": "budget",
+              "evidence_ids": [
+                "dock-train-one:details:price"
+              ]
+            },
+            {
+              "constraint_id": "interface",
+              "evidence_ids": [
+                "dock-train-one:details:host_interface"
+              ]
+            },
+            {
+              "constraint_id": "displays",
+              "evidence_ids": [
+                "dock-train-one:details:display_count"
+              ]
+            },
+            {
+              "constraint_id": "power",
+              "evidence_ids": [
+                "dock-train-one:reviews:power_w"
+              ]
+            }
+          ]
+        }
+      },
+      "observation": {
+        "recommended_product": {
+          "product_id": "dock-train-one",
+          "title": "Cedar SoloView C USB-C office dock"
+        },
+        "reasoning": "Scripted S1 acceptance against fictional catalog facts.",
+        "remaining_steps": 33
+      },
+      "done": true,
+      "step_reward": 0,
+      "terminal_reward": 0.0,
+      "verifier_events": [],
+      "terminal_validation": {
+        "success": false,
+        "terminal_reward": 0.0,
+        "delivery_success": false,
+        "valid_product": true,
+        "budget_exhausted": false,
+        "constraint_satisfaction": 0.75,
+        "constraints_by_source": {
+          "query": {
+            "total": 1,
+            "satisfied": 1,
+            "rate": 1.0
+          },
+          "persona": {
+            "total": 1,
+            "satisfied": 1,
+            "rate": 1.0
+          },
+          "clarification": {
+            "total": 2,
+            "satisfied": 1,
+            "rate": 0.5
+          }
+        },
+        "constraint_results": [
+          {
+            "constraint_id": "budget",
+            "source": "query",
+            "field": "price",
+            "satisfied": true,
+            "revealed": true,
+            "evidence_valid": true,
+            "evidence_ids": [
+              "dock-train-one:details:price"
+            ],
+            "errors": []
+          },
+          {
+            "constraint_id": "interface",
+            "source": "persona",
+            "field": "host_interface",
+            "satisfied": true,
+            "revealed": true,
+            "evidence_valid": true,
+            "evidence_ids": [
+              "dock-train-one:details:host_interface"
+            ],
+            "errors": []
+          },
+          {
+            "constraint_id": "displays",
+            "source": "clarification",
+            "field": "display_count",
+            "satisfied": false,
+            "revealed": true,
+            "evidence_valid": true,
+            "evidence_ids": [
+              "dock-train-one:details:display_count"
+            ],
+            "errors": []
+          },
+          {
+            "constraint_id": "power",
+            "source": "clarification",
+            "field": "power_w",
+            "satisfied": true,
+            "revealed": true,
+            "evidence_valid": true,
+            "evidence_ids": [
+              "dock-train-one:reviews:power_w"
+            ],
+            "errors": []
+          }
+        ],
+        "errors": []
+      },
+      "action_index": 6
+    }
+  ],
+  "step_rewards": [
+    0,
+    0.13333333333333333,
+    0.13333333333333333,
+    0.13333333333333333,
+    0.44999999999999996,
+    0.15,
+    0
+  ],
+  "verifier_events": [
+    [],
+    [
+      {
+        "kind": "hidden_requirement",
+        "key": "interface",
+        "constraint_id": "interface",
+        "source": "persona",
+        "reward": 0.13333333333333333
+      }
+    ],
+    [
+      {
+        "kind": "hidden_requirement",
+        "key": "displays",
+        "constraint_id": "displays",
+        "source": "clarification",
+        "reward": 0.13333333333333333
+      }
+    ],
+    [
+      {
+        "kind": "hidden_requirement",
+        "key": "power",
+        "constraint_id": "power",
+        "source": "clarification",
+        "reward": 0.13333333333333333
+      }
+    ],
+    [
+      {
+        "kind": "evidence",
+        "key": "displays",
+        "constraint_id": "displays",
+        "evidence_id": "dock-train-one:details:display_count",
+        "product_id": "dock-train-one",
+        "field": "display_count",
+        "supports": false,
+        "reward": 0.15
+      },
+      {
+        "kind": "evidence",
+        "key": "interface",
+        "constraint_id": "interface",
+        "evidence_id": "dock-train-one:details:host_interface",
+        "product_id": "dock-train-one",
+        "field": "host_interface",
+        "supports": true,
+        "reward": 0.15
+      },
+      {
+        "kind": "evidence",
+        "key": "budget",
+        "constraint_id": "budget",
+        "evidence_id": "dock-train-one:details:price",
+        "product_id": "dock-train-one",
+        "field": "price",
+        "supports": true,
+        "reward": 0.15
+      }
+    ],
+    [
+      {
+        "kind": "evidence",
+        "key": "power",
+        "constraint_id": "power",
+        "evidence_id": "dock-train-one:reviews:power_w",
+        "product_id": "dock-train-one",
+        "field": "power_w",
+        "supports": true,
+        "reward": 0.15
+      }
+    ],
+    []
+  ],
+  "turn_spans": [],
+  "tokenization_status": "not_tokenized_S1_CPU_tools_only",
+  "done": true,
+  "terminal_validation": {
+    "success": false,
+    "terminal_reward": 0.0,
+    "delivery_success": false,
+    "valid_product": true,
+    "budget_exhausted": false,
+    "constraint_satisfaction": 0.75,
+    "constraints_by_source": {
+      "query": {
+        "total": 1,
+        "satisfied": 1,
+        "rate": 1.0
+      },
+      "persona": {
+        "total": 1,
+        "satisfied": 1,
+        "rate": 1.0
+      },
+      "clarification": {
+        "total": 2,
+        "satisfied": 1,
+        "rate": 0.5
+      }
+    },
+    "constraint_results": [
+      {
+        "constraint_id": "budget",
+        "source": "query",
+        "field": "price",
+        "satisfied": true,
+        "revealed": true,
+        "evidence_valid": true,
+        "evidence_ids": [
+          "dock-train-one:details:price"
+        ],
+        "errors": []
+      },
+      {
+        "constraint_id": "interface",
+        "source": "persona",
+        "field": "host_interface",
+        "satisfied": true,
+        "revealed": true,
+        "evidence_valid": true,
+        "evidence_ids": [
+          "dock-train-one:details:host_interface"
+        ],
+        "errors": []
+      },
+      {
+        "constraint_id": "displays",
+        "source": "clarification",
+        "field": "display_count",
+        "satisfied": false,
+        "revealed": true,
+        "evidence_valid": true,
+        "evidence_ids": [
+          "dock-train-one:details:display_count"
+        ],
+        "errors": []
+      },
+      {
+        "constraint_id": "power",
+        "source": "clarification",
+        "field": "power_w",
+        "satisfied": true,
+        "revealed": true,
+        "evidence_valid": true,
+        "evidence_ids": [
+          "dock-train-one:reviews:power_w"
+        ],
+        "errors": []
+      }
+    ],
+    "errors": []
+  }
+}

@@ -1,0 +1,1785 @@
+{
+  "schema_version": 1,
+  "task_id": "task-train-dual",
+  "split": "train",
+  "data_revision": "s1-fixture-v1",
+  "catalog_sha256": "feb1a383a458e31d97fdaf415c742d77e20eb2d9a698c6454fdbdc38120826ae",
+  "task_sha256": "1778e3c2ac3aadf94342f18f2939328f27d7ec051c3a4c8cc7cf98541e70a047",
+  "policy_version": "scripted-s1-v1",
+  "seed": 0,
+  "transitions": [
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "dock"
+        }
+      },
+      "observation": {
+        "products": [
+          {
+            "product_id": "dock-train-a",
+            "title": "Orchid DeskLink A USB-C office dock"
+          },
+          {
+            "product_id": "dock-train-b",
+            "title": "Birch TwinPort B USB-C office dock"
+          },
+          {
+            "product_id": "dock-train-one",
+            "title": "Cedar SoloView C USB-C office dock"
+          },
+          {
+            "product_id": "dock-train-low",
+            "title": "Maple LitePower D USB-C office dock"
+          }
+        ],
+        "page": 0,
+        "total_found": 4,
+        "remaining_steps": 39
+      },
+      "done": false,
+      "step_reward": 0,
+      "terminal_reward": 0.0,
+      "verifier_events": [],
+      "terminal_validation": null,
+      "action_index": 0
+    },
+    {
+      "action": {
+        "name": "python_execute",
+        "arguments": {
+          "code": "pass"
+        }
+      },
+      "observation": {
+        "error": {
+          "code": "invalid_action",
+          "message": "Unknown or disabled tool: python_execute"
+        },
+        "remaining_steps": 38
+      },
+      "done": false,
+      "step_reward": -0.05,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "invalid",
+          "key": "invalid_call",
+          "reward": -0.05
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 1
+    },
+    {
+      "action": {
+        "name": "get_product_details",
+        "arguments": {
+          "product_id": "dock-train-a"
+        }
+      },
+      "observation": {
+        "product": {
+          "product_id": "dock-train-a",
+          "title": "Orchid DeskLink A USB-C office dock",
+          "main_category": "Office Electronics",
+          "store": "Orchid DeskLink A",
+          "price": 119,
+          "features": [],
+          "description": [],
+          "details": {
+            "price": 119,
+            "host_interface": "USB-C",
+            "display_count": 2,
+            "weight_g": 240
+          },
+          "bought_together": null
+        },
+        "evidence": [
+          {
+            "evidence_id": "dock-train-a:details:display_count",
+            "product_id": "dock-train-a",
+            "field": "display_count",
+            "value": 2,
+            "channel": "details",
+            "text": "This dock supports 2 simultaneous external displays."
+          },
+          {
+            "evidence_id": "dock-train-a:details:host_interface",
+            "product_id": "dock-train-a",
+            "field": "host_interface",
+            "value": "USB-C",
+            "channel": "details",
+            "text": "This dock connects to its host laptop through a USB-C port."
+          },
+          {
+            "evidence_id": "dock-train-a:details:price",
+            "product_id": "dock-train-a",
+            "field": "price",
+            "value": 119,
+            "channel": "details",
+            "text": "The listed price of this dock is 119 USD."
+          },
+          {
+            "evidence_id": "dock-train-a:details:weight_g",
+            "product_id": "dock-train-a",
+            "field": "weight_g",
+            "value": 240,
+            "channel": "details",
+            "text": "This dock weighs 240 g."
+          }
+        ],
+        "remaining_steps": 37
+      },
+      "done": false,
+      "step_reward": 0.44999999999999996,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "evidence",
+          "key": "displays",
+          "constraint_id": "displays",
+          "evidence_id": "dock-train-a:details:display_count",
+          "product_id": "dock-train-a",
+          "field": "display_count",
+          "supports": true,
+          "reward": 0.15
+        },
+        {
+          "kind": "evidence",
+          "key": "interface",
+          "constraint_id": "interface",
+          "evidence_id": "dock-train-a:details:host_interface",
+          "product_id": "dock-train-a",
+          "field": "host_interface",
+          "supports": true,
+          "reward": 0.15
+        },
+        {
+          "kind": "evidence",
+          "key": "budget",
+          "constraint_id": "budget",
+          "evidence_id": "dock-train-a:details:price",
+          "product_id": "dock-train-a",
+          "field": "price",
+          "supports": true,
+          "reward": 0.15
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 2
+    },
+    {
+      "action": {
+        "name": "get_product_details",
+        "arguments": {
+          "product_id": "dock-train-a"
+        }
+      },
+      "observation": {
+        "product": {
+          "product_id": "dock-train-a",
+          "title": "Orchid DeskLink A USB-C office dock",
+          "main_category": "Office Electronics",
+          "store": "Orchid DeskLink A",
+          "price": 119,
+          "features": [],
+          "description": [],
+          "details": {
+            "price": 119,
+            "host_interface": "USB-C",
+            "display_count": 2,
+            "weight_g": 240
+          },
+          "bought_together": null
+        },
+        "evidence": [
+          {
+            "evidence_id": "dock-train-a:details:display_count",
+            "product_id": "dock-train-a",
+            "field": "display_count",
+            "value": 2,
+            "channel": "details",
+            "text": "This dock supports 2 simultaneous external displays."
+          },
+          {
+            "evidence_id": "dock-train-a:details:host_interface",
+            "product_id": "dock-train-a",
+            "field": "host_interface",
+            "value": "USB-C",
+            "channel": "details",
+            "text": "This dock connects to its host laptop through a USB-C port."
+          },
+          {
+            "evidence_id": "dock-train-a:details:price",
+            "product_id": "dock-train-a",
+            "field": "price",
+            "value": 119,
+            "channel": "details",
+            "text": "The listed price of this dock is 119 USD."
+          },
+          {
+            "evidence_id": "dock-train-a:details:weight_g",
+            "product_id": "dock-train-a",
+            "field": "weight_g",
+            "value": 240,
+            "channel": "details",
+            "text": "This dock weighs 240 g."
+          }
+        ],
+        "remaining_steps": 36
+      },
+      "done": false,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 3
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "remaining_steps": 35
+      },
+      "done": false,
+      "step_reward": 0,
+      "terminal_reward": 0.0,
+      "verifier_events": [],
+      "terminal_validation": null,
+      "action_index": 4
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "remaining_steps": 34
+      },
+      "done": false,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 5
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "remaining_steps": 33
+      },
+      "done": false,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 6
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "remaining_steps": 32
+      },
+      "done": false,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 7
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "remaining_steps": 31
+      },
+      "done": false,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 8
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "remaining_steps": 30
+      },
+      "done": false,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 9
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "remaining_steps": 29
+      },
+      "done": false,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 10
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "remaining_steps": 28
+      },
+      "done": false,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 11
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "remaining_steps": 27
+      },
+      "done": false,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 12
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "remaining_steps": 26
+      },
+      "done": false,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 13
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "remaining_steps": 25
+      },
+      "done": false,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 14
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "remaining_steps": 24
+      },
+      "done": false,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 15
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "remaining_steps": 23
+      },
+      "done": false,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 16
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "remaining_steps": 22
+      },
+      "done": false,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 17
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "remaining_steps": 21
+      },
+      "done": false,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 18
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "remaining_steps": 20
+      },
+      "done": false,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 19
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "remaining_steps": 19
+      },
+      "done": false,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 20
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "remaining_steps": 18
+      },
+      "done": false,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 21
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "remaining_steps": 17
+      },
+      "done": false,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 22
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "remaining_steps": 16
+      },
+      "done": false,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 23
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "remaining_steps": 15
+      },
+      "done": false,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 24
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "remaining_steps": 14
+      },
+      "done": false,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 25
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "remaining_steps": 13
+      },
+      "done": false,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 26
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "remaining_steps": 12
+      },
+      "done": false,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 27
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "remaining_steps": 11
+      },
+      "done": false,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 28
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "remaining_steps": 10
+      },
+      "done": false,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 29
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "remaining_steps": 9
+      },
+      "done": false,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 30
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "remaining_steps": 8
+      },
+      "done": false,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 31
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "remaining_steps": 7
+      },
+      "done": false,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 32
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "remaining_steps": 6
+      },
+      "done": false,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 33
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "remaining_steps": 5
+      },
+      "done": false,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 34
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "remaining_steps": 4
+      },
+      "done": false,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 35
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "remaining_steps": 3
+      },
+      "done": false,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 36
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "remaining_steps": 2
+      },
+      "done": false,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 37
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "remaining_steps": 1
+      },
+      "done": false,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": null,
+      "action_index": 38
+    },
+    {
+      "action": {
+        "name": "search_products",
+        "arguments": {
+          "query": "unmatched"
+        }
+      },
+      "observation": {
+        "products": [],
+        "page": 0,
+        "total_found": 0,
+        "termination": "budget_exhausted",
+        "remaining_steps": 0
+      },
+      "done": true,
+      "step_reward": -0.02,
+      "terminal_reward": 0.0,
+      "verifier_events": [
+        {
+          "kind": "repeat",
+          "key": "no_progress",
+          "reward": -0.02
+        }
+      ],
+      "terminal_validation": {
+        "success": false,
+        "terminal_reward": 0.0,
+        "delivery_success": false,
+        "valid_product": false,
+        "budget_exhausted": true,
+        "constraint_satisfaction": 0.0,
+        "constraints_by_source": {
+          "query": {
+            "total": 1,
+            "satisfied": 0,
+            "rate": 0.0
+          },
+          "persona": {
+            "total": 1,
+            "satisfied": 0,
+            "rate": 0.0
+          },
+          "clarification": {
+            "total": 2,
+            "satisfied": 0,
+            "rate": 0.0
+          }
+        },
+        "constraint_results": [
+          {
+            "constraint_id": "budget",
+            "source": "query",
+            "field": "price",
+            "satisfied": false,
+            "revealed": true,
+            "evidence_valid": false,
+            "evidence_ids": [],
+            "errors": [
+              "missing_check",
+              "missing_evidence"
+            ]
+          },
+          {
+            "constraint_id": "interface",
+            "source": "persona",
+            "field": "host_interface",
+            "satisfied": false,
+            "revealed": false,
+            "evidence_valid": false,
+            "evidence_ids": [],
+            "errors": [
+              "missing_check",
+              "missing_evidence",
+              "unrevealed_requirement"
+            ]
+          },
+          {
+            "constraint_id": "displays",
+            "source": "clarification",
+            "field": "display_count",
+            "satisfied": false,
+            "revealed": false,
+            "evidence_valid": false,
+            "evidence_ids": [],
+            "errors": [
+              "missing_check",
+              "missing_evidence",
+              "unrevealed_requirement"
+            ]
+          },
+          {
+            "constraint_id": "power",
+            "source": "clarification",
+            "field": "power_w",
+            "satisfied": false,
+            "revealed": false,
+            "evidence_valid": false,
+            "evidence_ids": [],
+            "errors": [
+              "missing_check",
+              "missing_evidence",
+              "unrevealed_requirement"
+            ]
+          }
+        ],
+        "errors": [
+          {
+            "code": "invalid_product"
+          },
+          {
+            "code": "budget_exhausted"
+          },
+          {
+            "code": "missing_check",
+            "constraint_id": "budget"
+          },
+          {
+            "code": "missing_evidence",
+            "constraint_id": "budget"
+          },
+          {
+            "code": "missing_check",
+            "constraint_id": "interface"
+          },
+          {
+            "code": "missing_evidence",
+            "constraint_id": "interface"
+          },
+          {
+            "code": "unrevealed_requirement",
+            "constraint_id": "interface"
+          },
+          {
+            "code": "missing_check",
+            "constraint_id": "displays"
+          },
+          {
+            "code": "missing_evidence",
+            "constraint_id": "displays"
+          },
+          {
+            "code": "unrevealed_requirement",
+            "constraint_id": "displays"
+          },
+          {
+            "code": "missing_check",
+            "constraint_id": "power"
+          },
+          {
+            "code": "missing_evidence",
+            "constraint_id": "power"
+          },
+          {
+            "code": "unrevealed_requirement",
+            "constraint_id": "power"
+          }
+        ]
+      },
+      "action_index": 39
+    }
+  ],
+  "step_rewards": [
+    0,
+    -0.05,
+    0.44999999999999996,
+    -0.02,
+    0,
+    -0.02,
+    -0.02,
+    -0.02,
+    -0.02,
+    -0.02,
+    -0.02,
+    -0.02,
+    -0.02,
+    -0.02,
+    -0.02,
+    -0.02,
+    -0.02,
+    -0.02,
+    -0.02,
+    -0.02,
+    -0.02,
+    -0.02,
+    -0.02,
+    -0.02,
+    -0.02,
+    -0.02,
+    -0.02,
+    -0.02,
+    -0.02,
+    -0.02,
+    -0.02,
+    -0.02,
+    -0.02,
+    -0.02,
+    -0.02,
+    -0.02,
+    -0.02,
+    -0.02,
+    -0.02,
+    -0.02
+  ],
+  "verifier_events": [
+    [],
+    [
+      {
+        "kind": "invalid",
+        "key": "invalid_call",
+        "reward": -0.05
+      }
+    ],
+    [
+      {
+        "kind": "evidence",
+        "key": "displays",
+        "constraint_id": "displays",
+        "evidence_id": "dock-train-a:details:display_count",
+        "product_id": "dock-train-a",
+        "field": "display_count",
+        "supports": true,
+        "reward": 0.15
+      },
+      {
+        "kind": "evidence",
+        "key": "interface",
+        "constraint_id": "interface",
+        "evidence_id": "dock-train-a:details:host_interface",
+        "product_id": "dock-train-a",
+        "field": "host_interface",
+        "supports": true,
+        "reward": 0.15
+      },
+      {
+        "kind": "evidence",
+        "key": "budget",
+        "constraint_id": "budget",
+        "evidence_id": "dock-train-a:details:price",
+        "product_id": "dock-train-a",
+        "field": "price",
+        "supports": true,
+        "reward": 0.15
+      }
+    ],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ],
+    [],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ],
+    [
+      {
+        "kind": "repeat",
+        "key": "no_progress",
+        "reward": -0.02
+      }
+    ]
+  ],
+  "turn_spans": [],
+  "tokenization_status": "not_tokenized_S1_CPU_tools_only",
+  "done": true,
+  "terminal_validation": {
+    "success": false,
+    "terminal_reward": 0.0,
+    "delivery_success": false,
+    "valid_product": false,
+    "budget_exhausted": true,
+    "constraint_satisfaction": 0.0,
+    "constraints_by_source": {
+      "query": {
+        "total": 1,
+        "satisfied": 0,
+        "rate": 0.0
+      },
+      "persona": {
+        "total": 1,
+        "satisfied": 0,
+        "rate": 0.0
+      },
+      "clarification": {
+        "total": 2,
+        "satisfied": 0,
+        "rate": 0.0
+      }
+    },
+    "constraint_results": [
+      {
+        "constraint_id": "budget",
+        "source": "query",
+        "field": "price",
+        "satisfied": false,
+        "revealed": true,
+        "evidence_valid": false,
+        "evidence_ids": [],
+        "errors": [
+          "missing_check",
+          "missing_evidence"
+        ]
+      },
+      {
+        "constraint_id": "interface",
+        "source": "persona",
+        "field": "host_interface",
+        "satisfied": false,
+        "revealed": false,
+        "evidence_valid": false,
+        "evidence_ids": [],
+        "errors": [
+          "missing_check",
+          "missing_evidence",
+          "unrevealed_requirement"
+        ]
+      },
+      {
+        "constraint_id": "displays",
+        "source": "clarification",
+        "field": "display_count",
+        "satisfied": false,
+        "revealed": false,
+        "evidence_valid": false,
+        "evidence_ids": [],
+        "errors": [
+          "missing_check",
+          "missing_evidence",
+          "unrevealed_requirement"
+        ]
+      },
+      {
+        "constraint_id": "power",
+        "source": "clarification",
+        "field": "power_w",
+        "satisfied": false,
+        "revealed": false,
+        "evidence_valid": false,
+        "evidence_ids": [],
+        "errors": [
+          "missing_check",
+          "missing_evidence",
+          "unrevealed_requirement"
+        ]
+      }
+    ],
+    "errors": [
+      {
+        "code": "invalid_product"
+      },
+      {
+        "code": "budget_exhausted"
+      },
+      {
+        "code": "missing_check",
+        "constraint_id": "budget"
+      },
+      {
+        "code": "missing_evidence",
+        "constraint_id": "budget"
+      },
+      {
+        "code": "missing_check",
+        "constraint_id": "interface"
+      },
+      {
+        "code": "missing_evidence",
+        "constraint_id": "interface"
+      },
+      {
+        "code": "unrevealed_requirement",
+        "constraint_id": "interface"
+      },
+      {
+        "code": "missing_check",
+        "constraint_id": "displays"
+      },
+      {
+        "code": "missing_evidence",
+        "constraint_id": "displays"
+      },
+      {
+        "code": "unrevealed_requirement",
+        "constraint_id": "displays"
+      },
+      {
+        "code": "missing_check",
+        "constraint_id": "power"
+      },
+      {
+        "code": "missing_evidence",
+        "constraint_id": "power"
+      },
+      {
+        "code": "unrevealed_requirement",
+        "constraint_id": "power"
+      }
+    ]
+  }
+}

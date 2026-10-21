@@ -1,4 +1,4 @@
-"""Persist run manifests and event logs for the S0 CLI without reading secrets.
+"""Persist S0/S1 run manifests and event logs without reading secrets.
 
 The CLI passes a new output directory and argv; this module records timestamps,
 machine/interpreter, source hashes, optional config hash and explicit validation
@@ -32,12 +32,12 @@ class RunRecord:
 
     def __init__(self, output: Path, project_root: Path, argv: list[str],
                  config_path: Path | None = None,
-                 execution_kind: str = "cpu_read_only") -> None:
+                 execution_kind: str = "cpu_read_only", stage: str = "S0") -> None:
         output.mkdir(parents=True, exist_ok=False)
         self.output = output
         source_root = project_root / "src"
         self.record: dict[str, Any] = {
-            "schema_version": 1, "stage": "S0", "status": "running",
+            "schema_version": 1, "stage": stage, "status": "running",
             "execution_kind": execution_kind,
             "started_at": timestamp(), "finished_at": None,
             "machine": platform.node(), "platform": platform.platform(),
@@ -66,7 +66,7 @@ class RunRecord:
             except OSError as exc:
                 self.record["config"]["read_error"] = f"{type(exc).__name__}: {exc}"
         self._save()
-        self.log(f"S0 run started: {execution_kind}; GPU has not been used by this run yet")
+        self.log(f"{stage} run started: {execution_kind}; GPU has not been used by this run yet")
 
     def _save(self) -> None:
         (self.output / "run.json").write_text(

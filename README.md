@@ -2,9 +2,9 @@
 
 训练办公电子设备采购 Agent 发现隐藏需求、核验证据并恢复失败，研究动作级信用分配与专家纠错监督。
 
-**唯一现行计划是 [PLAN.md](PLAN.md)**；开始工作先读 [AGENTS.md](AGENTS.md)、计划、[PROGRESS.md](PROGRESS.md) 和 [S0 操作文档](docs/stages/S0.md)。两份原稿已原样归档到 [docs/archive](docs/archive/README.md)，不再作为并行计划。
+**唯一现行计划是 [PLAN.md](PLAN.md)**；开始工作先读 [AGENTS.md](AGENTS.md)、计划、[PROGRESS.md](PROGRESS.md) 和当前 [S1 操作文档](docs/stages/S1.md)。两份原稿已原样归档到 [docs/archive](docs/archive/README.md)，不再作为并行计划。
 
-**S0已按声明范围完成验收**：工程入口、独立环境、CPU测试、学校只读盘点和最小真实GPU检查通过；证据与边界见 [PROGRESS](PROGRESS.md) 和 [validation-s0.json](requirements/validation-s0.json)。尚无采购环境适配、训练代码或checkpoint。本轮在S0停止，不自动开始S1；单提示推理不等于多轮LoRA/FSDP2训练兼容。
+**S1 环境与验证器已完成 CPU 验收**：固定 ECom 源码上的九个原生工具、只读 split 商品库、独立会话、快照回放及终局/过程验证器已实现；证据见 [PROGRESS](PROGRESS.md)。S1 使用自建虚构工程夹具，无模型、教师 API 或 GPU。S0 的独立环境与最小 GPU 验收仍见 [validation-s0.json](requirements/validation-s0.json)。本轮在 S1 停止；S2 数据流水线与训练尚未实施。
 
 ## 最短运行路径
 
@@ -15,12 +15,15 @@ UV_CACHE_DIR="$PWD/.cache/uv" UV_PYTHON_INSTALL_DIR="$PWD/.tools/python" uv pyth
 UV_CACHE_DIR="$PWD/.cache/uv" UV_PYTHON_INSTALL_DIR="$PWD/.tools/python" uv venv --managed-python --python 3.11 .venv-cpu
 PYTHONPATH=src .venv-cpu/bin/python -m procure_rl check-config --config configs/s0.json --output logs/my-config-check
 PYTHONPATH=src .venv-cpu/bin/python -m procure_rl doctor --output logs/my-doctor
+PYTHONPATH=src .venv-cpu/bin/python -m procure_rl s1-smoke --config configs/s1.json --output logs/my-s1-acceptance
 PYTHONPATH=src .venv-cpu/bin/python -m unittest discover -s tests -v
 ```
 
 本次实际创建环境的完整命令和每条验证结果见 [S0](docs/stages/S0.md)。项目 CPU 工具的源码支持 Python 3.10+，**本项目实际环境与 GPU 候选均使用独立 Python 3.11**。已有项目环境无需重建。输出目录必须是新的，重复执行换目录，避免覆盖证据。
 
 `doctor` 仅读取 NVIDIA 管理信息、Toolkit 路径与包元数据，不执行系统 nvcc、不导入 torch、不创建 CUDA 上下文；输出 `report.json`、`report.md`、`run.json`、`run.log`。检查配置只证明本项目 JSON 符合计划，不能证明 verl 配置可运行。
+
+S1 的 `s1-smoke` 在新运行目录构建四个物理独立的 split SQLite 文件，执行七条真实工具脚本轨迹，保存终局前快照、逐步事件、独立规格真值比较及 `report.json`。上游 commit、代码许可和评分差异见 [ECom 审计](docs/ecom-upstream-audit.md)；完整官方数据库和 LLM judge 未运行。终局奖励检查硬约束，证据是否完整交付另由 `delivery_success` 诊断。
 
 安装候选依赖后，可用 CPU 入口分别启动隐藏 GPU 的独立导入进程；GPU 探针默认只生成配置，不启动子进程、不导入 ML 包：
 
@@ -48,7 +51,9 @@ PYTHONPATH=src .venv-cpu/bin/python -m procure_rl gpu-probe --output logs/my-gpu
 | `PLAN.md` / `AGENTS.md` / `PROGRESS.md` | 计划、协作约束与唯一进度 |
 | [src](src/README.md) | Python 包；子目录 README 逐文件解释 |
 | [tests](tests/README.md) | CPU 回归与探针边界测试；mock 不替代 GPU 执行 |
-| [configs](configs/README.md) | S0 候选规划配置，非可运行 verl 训练配置 |
+| [configs](configs/README.md) | S0 候选规划和 S1 CPU 工程验收配置，非 verl 训练配置 |
+| [fixtures](fixtures/README.md) | S1 虚构事实、任务和独立预期矩阵，非正式训练数据 |
+| [third_party](third_party/README.md) | 固定 ECom 原样源码、许可和逐文件哈希 |
 | [requirements](requirements/README.md) | CPU 零依赖、GPU 候选和锁定流程 |
 | [scripts](scripts/README.md) | 单命令代理包装与项目独立编译器入口 |
 | [docs](docs/README.md) | 阶段操作、原稿归档和依赖来源审计 |
@@ -61,7 +66,8 @@ PYTHONPATH=src .venv-cpu/bin/python -m procure_rl gpu-probe --output logs/my-gpu
 | 阶段 | 操作文档 | 当前状态 |
 | --- | --- | --- |
 | S0 工程与运行环境 | [S0.md](docs/stages/S0.md) | 声明范围验收通过；逐项证据见PROGRESS |
-| S1 环境和验证器 → S7 正式评测 | 按阶段实施时创建 | 尚未实现 |
+| S1 环境和验证器 | [S1.md](docs/stages/S1.md) | 固定小数据 CPU 验收通过，阶段结束 |
+| S2 数据流水线 → S7 正式评测 | 按阶段实施时创建 | 尚未实现 |
 | S8 多教师 OPD | 主项目完成后独立开展 | 可选，尚未实现 |
 
 出现 `ModuleNotFoundError` 时检查当前目录与 `PYTHONPATH=src`。输出目录已存在时使用新路径；缺少 `nvcc` 的 PATH 结果不代表系统没有其他 Toolkit。CPU 工具可重新运行无需恢复 checkpoint；真实训练与跨卡数恢复规则见 PLAN。

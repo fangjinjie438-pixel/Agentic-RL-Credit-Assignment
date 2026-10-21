@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "stage": "S1",
+  "status": "succeeded",
+  "execution_kind": "cpu_tests",
+  "started_at": "2026-10-22T03:06:53+08:00",
+  "finished_at": "2026-10-22T03:06:54+08:00",
+  "machine": "A6000",
+  "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+  "python": "3.11.16 (main, Sep  1 2026, 14:18:37) [Clang 22.1.3 ]",
+  "executable": "/home/fangjinjie/project/credit_assign/.venv-cpu/bin/python",
+  "resolved_executable": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu/bin/python3.11",
+  "prefix": "/home/fangjinjie/project/credit_assign/.venv-cpu",
+  "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+  "working_directory": "/home/fangjinjie/project/credit_assign",
+  "argv": [
+    "/home/fangjinjie/project/credit_assign/.venv-cpu/bin/python",
+    "-"
+  ],
+  "command": "PYTHONPATH=src /home/fangjinjie/project/credit_assign/.venv-cpu/bin/python - <<'PY' (exact source in command-source.txt)",
+  "project_root": "/home/fangjinjie/project/credit_assign",
+  "source_sha256": {
+    "src/procure_rl/__init__.py": "e037c64e0aaa18186824ffe1d0c978c3d36aa6cb6e665fd884f1943eaccf099e",
+    "src/procure_rl/__main__.py": "7661dce6f6d1c562c3a652357713b6f471d4bb1a47f77d43e325c2b6f386b337",
+    "src/procure_rl/config.py": "c4d33fab0fa29054b2f1327f9d623f52889c8d8d4d7bb2c250a518bfcd0f6b91",
+    "src/procure_rl/doctor.py": "c886316cf3ff97da13717d30f3bc0f1e302fb59421525b49c34fdcbaa0d77bf9",
+    "src/procure_rl/env/__init__.py": "4fc42beb75d9da21a365026e19ed0e0b334180ab15278d4dbc6b7923bd30eafe",
+    "src/procure_rl/env/catalog.py": "a3c28c2d99f19e9e5c722d142fd9aff1bb5ecd75bab1f0cbfcedfcdce2695906",
+    "src/procure_rl/env/protocol.py": "acdee854e4a950337b75a363378631cf4e8eb58e39a99676405de06778caab89",
+    "src/procure_rl/env/session.py": "130e72a1074b32990d87094e8e831717d3578aaccd91ca35c122da3e509ffeb4",
+    "src/procure_rl/env/smoke.py": "9d2d0096f07d4359b0a7b8cbc153d78ff18c81e82ab5e9b29e6b77545308f95d",
+    "src/procure_rl/env/upstream.py": "d1821dc4cc73b8a0d372875091d70241ca2fac5b93381214ad02845aa58978e0",
+    "src/procure_rl/env/verifier.py": "a6d6d93f57124f8947c8501075cfdd7a5f005623383212f63e3e42748a10a86d",
+    "src/procure_rl/environment_probe.py": "754ad3926a6680f142087435dd12246efb0cb901a24176d74963992cca06c618",
+    "src/procure_rl/gpu_probe.py": "3100554cf26e10883ce64d741af97affcf79501ae44a4cd257dac3f7df4fa90b",
+    "src/procure_rl/runtime.py": "692a6ddaed101d82297632983c816aaba60df7fafb0cfee6b1ef2916f2a55b48"
+  },
+  "config": null,
+  "data_revision": "s1-fixture-v1",
+  "model_revision": null,
+  "policy_version": "scripted-s1-v1",
+  "seed": null,
+  "checkpoint": null,
+  "gpu_compute_performed": false,
+  "gpu_validation": "not_run",
+  "artifacts": {
+    "log": "/home/fangjinjie/project/credit_assign/logs/s1-20261022/tests-final/unittest.log",
+    "summary": "/home/fangjinjie/project/credit_assign/logs/s1-20261022/tests-final/result.json",
+    "command_source": "/home/fangjinjie/project/credit_assign/logs/s1-20261022/tests-final/command-source.txt"
+  },
+  "dependencies": {},
+  "test_sha256": {
+    "tests/test_config_runtime.py": "f03957f563a0b9693b02b63ecc4713107d137b48eb9ff68c03b6e631d0b25c07",
+    "tests/test_doctor.py": "1613caa2bd2c8b5d5f991dff001b6c06166a2b5926ca197e5fdf7d244e029da0",
+    "tests/test_environment_probe.py": "b904dde4d579ba93e2ec01445d5bd122520472679f3eb4c5628fcf7d86d9682a",
+    "tests/test_gpu_probe.py": "0ab78866f2a0d1c4578d829f908907797db2fc7ff04a074eb16d5762965e8038",
+    "tests/test_session.py": "ce7ef2c40ac54aaa232a690aedc0ad1039e9716d24bc32a744a421c2c71407e1",
+    "tests/test_upstream.py": "dc2b4978060183da9119c96f74165eb6daee93e68a4b197bb917e4bb88250651",
+    "tests/test_verifier.py": "002b0ece7c9a222b567ba5f53e5deb8372d4e443c2d297f0bdc08b74b187a0bb"
+  },
+  "error": null,
+  "validation_level": "cpu_unit_and_native_integration_tests",
+  "equivalent_cli_argv": [
+    "/home/fangjinjie/project/credit_assign/.venv-cpu/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ],
+  "equivalent_cli_command": "/home/fangjinjie/project/credit_assign/.venv-cpu/bin/python -m unittest discover -s tests -v",
+  "provenance_correction": {
+    "recorded_at": "2026-10-22T03:12:14+08:00",
+    "reason": "The tests ran through a stdin wrapper using unittest discovery/runner; original argv encoded equivalent CLI selection.",
+    "initial_manifest": "run-initial.json",
+    "initial_manifest_sha256": "d90ecb0cbe7138df89573544a4edba714e1c10a3528eb9afbe85ddda22c14942",
+    "wrapper_source": "command-source.txt",
+    "wrapper_source_sha256": "5a86c6b85917bb91c9060b33ef535544d61e17da1919425720d4896ca29d27a2"
+  }
+}

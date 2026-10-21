@@ -1,0 +1,463 @@
+{
+  "repository": "https://github.com/Morizeyao/EComAgentBench_",
+  "revision": "97eff345811fdf652a2135d38d874f2932e11702",
+  "revision_source": "git ls-remote refs/heads/main",
+  "retrieved_at_utc": "2026-10-21T18:56:20.396816+00:00",
+  "archive_url": "https://codeload.github.com/Morizeyao/EComAgentBench_/tar.gz/97eff345811fdf652a2135d38d874f2932e11702",
+  "archive_bytes": 1242679,
+  "archive_sha256": "df5c96b2de11f336ac5c2a90a6a547286765fc96c1d956419b327fa96ecdfcd3",
+  "unmodified_files": [
+    {
+      "path": ".env.example",
+      "bytes": 947,
+      "sha256": "2d2d5a965d1e6b2fcc64dc4c390d10e28d8d1e85aa9c61efb078861d7c28e332",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/.env.example"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 404,
+      "sha256": "a793cfb6f73bd030f0f9fef458cb0e65e8d68c1dfb63e5a01b4e3069d50367ca",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/.gitignore"
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 835,
+      "sha256": "5e125c57e635090c28233e22abfab480a46829e13b1cc2c62ee1bb47755970d6",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/CITATION.cff"
+    },
+    {
+      "path": "DATA.md",
+      "bytes": 2108,
+      "sha256": "9027db129c9b4001b8852a4dc3e42718dd5699c3bba09f3277901d9d57e5ab70",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/DATA.md"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1423,
+      "sha256": "524027149d8c1689f635e86cebf9522645d5eaecb5c82cfcbeb32fa379464dfe",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/LICENSE"
+    },
+    {
+      "path": "README.md",
+      "bytes": 14940,
+      "sha256": "7c07ffb59ca2c941ad8163ec4ac4d56d29459b844e4be6260982429e734e5d63",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/README.md"
+    },
+    {
+      "path": "configs/settings.yaml",
+      "bytes": 2804,
+      "sha256": "8ee7bc5cb7d0cfe2d58e07a8e2a2d051a3816c33657412475ebd38f7edeedd06",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/configs/settings.yaml"
+    },
+    {
+      "path": "data/benchmark/benchmark.jsonl",
+      "bytes": 6039017,
+      "sha256": "c6585d7adade0bf898dcc6b5377fb4534a699b874bd21ec796acfa96547c9b52",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/data/benchmark/benchmark.jsonl"
+    },
+    {
+      "path": "data/products/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/data/products/.gitkeep"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 414,
+      "sha256": "fc2109e6f062f8e86c324ed53b54fe6907aeac835b3a1a6eaa89391a5affa2b2",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/pyproject.toml"
+    },
+    {
+      "path": "scripts/build_product_index.py",
+      "bytes": 11609,
+      "sha256": "b0672f89d55ebd9ab34a70a551b67b4398a57fe8fbb91ac92cbcbe44591110d9",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/scripts/build_product_index.py"
+    },
+    {
+      "path": "scripts/download_amazon_reviews.py",
+      "bytes": 5183,
+      "sha256": "76db57d1e43a0450ed4423f319492d1e43878284a0f13dbc76bd3e6328d4617b",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/scripts/download_amazon_reviews.py"
+    },
+    {
+      "path": "scripts/download_db.py",
+      "bytes": 2264,
+      "sha256": "7f55a0cd3d85639d8b1764d2bebc31e2e30e38b7d98068bea6de6ff29bd4915b",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/scripts/download_db.py"
+    },
+    {
+      "path": "scripts/evaluate.sh",
+      "bytes": 787,
+      "sha256": "0fb5d4f0641e3b619a6c915eb4de51df451f2dd328ca2a1803e2d5105dc26c38",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/scripts/evaluate.sh"
+    },
+    {
+      "path": "scripts/generate.sh",
+      "bytes": 493,
+      "sha256": "2887f569eb238048efbcc60df3a9b5620f931541d1c95d5f8029c5a7a24a242e",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/scripts/generate.sh"
+    },
+    {
+      "path": "scripts/predict.sh",
+      "bytes": 277,
+      "sha256": "1baf016764447f65798298840a8f1202bc4d477b70c08dd5e95bc11f48b85d9f",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/scripts/predict.sh"
+    },
+    {
+      "path": "src/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/__init__.py"
+    },
+    {
+      "path": "src/database/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/database/__init__.py"
+    },
+    {
+      "path": "src/database/product_db.py",
+      "bytes": 13920,
+      "sha256": "65543222e56086c8918e21903bebdc22c4390cdbcd497a2197c2a5f7617ea026",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/database/product_db.py"
+    },
+    {
+      "path": "src/evaluation/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/evaluation/__init__.py"
+    },
+    {
+      "path": "src/evaluation/judge.py",
+      "bytes": 5715,
+      "sha256": "b3d78d150e7ebfe0e0af1c51ec1d6c78e47bc3c1cd5f5f2efeee2dac5b4bf95b",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/evaluation/judge.py"
+    },
+    {
+      "path": "src/evaluation/metrics.py",
+      "bytes": 9856,
+      "sha256": "6d395847dd707c1c698f7686f7b3281cc91c2b5c429e5e676d2fb00a36156e00",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/evaluation/metrics.py"
+    },
+    {
+      "path": "src/evaluation/run_eval.py",
+      "bytes": 14701,
+      "sha256": "d6c8beb40023b85e7940a33d57ba8019fa56b27f36c5348986ccdbdc2459d3e1",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/evaluation/run_eval.py"
+    },
+    {
+      "path": "src/generation/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/generation/__init__.py"
+    },
+    {
+      "path": "src/generation/__main__.py",
+      "bytes": 114,
+      "sha256": "761928fc0911c4953e446dfaaa5201121b64960e070c8dc59abdabf509486c90",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/generation/__main__.py"
+    },
+    {
+      "path": "src/generation/composition/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/generation/composition/__init__.py"
+    },
+    {
+      "path": "src/generation/composition/clarification_builder.py",
+      "bytes": 8418,
+      "sha256": "614eedfa1381b5291dcd6bc40c7bb4a90299fc064f0396ff8accfad6003834cd",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/generation/composition/clarification_builder.py"
+    },
+    {
+      "path": "src/generation/composition/persona_builder.py",
+      "bytes": 4582,
+      "sha256": "60dc5caad439a8a225b2adf842a8964dbc632c3ad463fc53dd7fea54e0f1d683",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/generation/composition/persona_builder.py"
+    },
+    {
+      "path": "src/generation/composition/prompt_builder.py",
+      "bytes": 6230,
+      "sha256": "fcdd1153b4415a113f1c98ca2ce8466b3e23f0c92590bebca46956388839f074",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/generation/composition/prompt_builder.py"
+    },
+    {
+      "path": "src/generation/composition/query_builder.py",
+      "bytes": 3188,
+      "sha256": "90e4ce77d63afdc6a010056c42dc3c619e3417f9049cc6408092153c7979b9fb",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/generation/composition/query_builder.py"
+    },
+    {
+      "path": "src/generation/composition/rubric_builder.py",
+      "bytes": 11342,
+      "sha256": "59ed0c4d6ef896e22e69ce59c7292f94680f75f351b4e21e2f1e81d6a8d4f891",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/generation/composition/rubric_builder.py"
+    },
+    {
+      "path": "src/generation/composition/rubric_compiler.py",
+      "bytes": 7352,
+      "sha256": "405353e3068e9e76f004f78c0b7b56ac2b956ac089e53d749a96e7d5d8a58c09",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/generation/composition/rubric_compiler.py"
+    },
+    {
+      "path": "src/generation/config.py",
+      "bytes": 15167,
+      "sha256": "c4537e53a11675d54ae0bcca53c7e0df9c53948a01f4837044682ed809419cb7",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/generation/config.py"
+    },
+    {
+      "path": "src/generation/pipeline.py",
+      "bytes": 18731,
+      "sha256": "1a0e0e4c4009095acebb14de624f6658eb8a4559254974cc70ca7cf0b1bc3a66",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/generation/pipeline.py"
+    },
+    {
+      "path": "src/generation/planning/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/generation/planning/__init__.py"
+    },
+    {
+      "path": "src/generation/planning/feature_extractor.py",
+      "bytes": 8932,
+      "sha256": "52ea60a00e238ea3ac478ed6a5bd32419f71122f20cc594d3922a6691fd8a1be",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/generation/planning/feature_extractor.py"
+    },
+    {
+      "path": "src/generation/planning/partition.py",
+      "bytes": 4784,
+      "sha256": "303e2d6a2dd9a6271b9cfedadc843022ca2883677b9961bd9f446668988d4c3e",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/generation/planning/partition.py"
+    },
+    {
+      "path": "src/generation/planning/review_opinion_extractor.py",
+      "bytes": 3204,
+      "sha256": "d26bedccaf360cb8eca42636c95bd4a9155c57e05721f42bdd06f6b4cc7153c6",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/generation/planning/review_opinion_extractor.py"
+    },
+    {
+      "path": "src/generation/planning/sampler.py",
+      "bytes": 2714,
+      "sha256": "e30d7b2b22bd2a313af4e321d14f78a1fabe4d06db5370a839d6de5da1075bf5",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/generation/planning/sampler.py"
+    },
+    {
+      "path": "src/generation/planning/voucher_generator.py",
+      "bytes": 6865,
+      "sha256": "a4a8df385f700c3e3cf41b70b6efa9d4e3150bba180836ed1af27d4c60e48d30",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/generation/planning/voucher_generator.py"
+    },
+    {
+      "path": "src/generation/utils.py",
+      "bytes": 1832,
+      "sha256": "f317fcd99554964539df84ab1e97d3dbdfe5b33a6551793c95e37298aaf62530",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/generation/utils.py"
+    },
+    {
+      "path": "src/generation/validation/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/generation/validation/__init__.py"
+    },
+    {
+      "path": "src/generation/validation/sample_validator.py",
+      "bytes": 7159,
+      "sha256": "eef20ad04968fb441cffe7d50e3ae445a9e8a66db9a80afc4f39f299de4cb49d",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/generation/validation/sample_validator.py"
+    },
+    {
+      "path": "src/intents/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/intents/__init__.py"
+    },
+    {
+      "path": "src/intents/catalog.json",
+      "bytes": 11881,
+      "sha256": "cbdba2957927ebbffa0b105b845e5cfebcf82a0469b0c9f87227ebe2b46c3c1c",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/intents/catalog.json"
+    },
+    {
+      "path": "src/llm/__init__.py",
+      "bytes": 219,
+      "sha256": "7448e3676069fff60a8f41e01e8d969ac20764e33dbc613a0f995b0bc80f2463",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/llm/__init__.py"
+    },
+    {
+      "path": "src/llm/client.py",
+      "bytes": 9419,
+      "sha256": "af530eb39aa0b5cc62b18ff7c63bd8616f2314d8cc33b00454cb4ee7892ca4ee",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/llm/client.py"
+    },
+    {
+      "path": "src/llm/config.py",
+      "bytes": 2691,
+      "sha256": "ca2a3223be16cfc75d0d36ddbaf7676885d8007d6e4765d751e099a9f8a55e90",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/llm/config.py"
+    },
+    {
+      "path": "src/llm/providers/__init__.py",
+      "bytes": 877,
+      "sha256": "6736c3ee5c811e334b2a5bb54a2c57117d9ade53b000ea673389ac48648b1945",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/llm/providers/__init__.py"
+    },
+    {
+      "path": "src/llm/providers/base.py",
+      "bytes": 540,
+      "sha256": "9311a9faa7546b760da154d4bdfc4ba5e2c63cc0a5ce84a44a1696b1e6adda5e",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/llm/providers/base.py"
+    },
+    {
+      "path": "src/llm/providers/claude.py",
+      "bytes": 6547,
+      "sha256": "d09fcd4a8a59d36c89658ae2d6b96037bbfbdcda17e82e75096a0e1b63fca7eb",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/llm/providers/claude.py"
+    },
+    {
+      "path": "src/llm/providers/gemini.py",
+      "bytes": 8685,
+      "sha256": "cd50e0d357e750574372513355cc050606f8414d22c8c6465ffec4264b57004c",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/llm/providers/gemini.py"
+    },
+    {
+      "path": "src/llm/providers/openai.py",
+      "bytes": 11152,
+      "sha256": "0eaa428f303bfcd4a3dd6856660dd5ec39cfdd4c9b4b8465dd43d7df2cb4318f",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/llm/providers/openai.py"
+    },
+    {
+      "path": "src/llm/providers/openrouter.py",
+      "bytes": 6189,
+      "sha256": "1606fb65cb120ca6a3df88e4b252687ea5565184f3f15219e309e9c814ecddc8",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/llm/providers/openrouter.py"
+    },
+    {
+      "path": "src/llm/utils.py",
+      "bytes": 14817,
+      "sha256": "21e4c5f8775a8e40f0d1b312815168e0b2d33bafee55e2e8ffc22b064a60a607",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/llm/utils.py"
+    },
+    {
+      "path": "src/prediction/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/prediction/__init__.py"
+    },
+    {
+      "path": "src/prediction/agent.py",
+      "bytes": 7496,
+      "sha256": "a5b477ed6f4282f8cb846ea5e8e4b9f6c06a2c9a339a875369bb2597920444bb",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/prediction/agent.py"
+    },
+    {
+      "path": "src/prediction/run_predict.py",
+      "bytes": 4913,
+      "sha256": "898b2de9be9c4de3ad9c3782d71342ad14278d15ba5ecfa18752b2437e5e5d74",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/prediction/run_predict.py"
+    },
+    {
+      "path": "src/prompts/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/prompts/__init__.py"
+    },
+    {
+      "path": "src/prompts/agent.py",
+      "bytes": 1441,
+      "sha256": "78017b830a97ba5a496a6fdff2c83653a16b2049c562a0956072db0ab704cf50",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/prompts/agent.py"
+    },
+    {
+      "path": "src/prompts/evaluation.py",
+      "bytes": 9083,
+      "sha256": "46dd04ffde0da1f9e6b6f82e35330d03e9a3be35fac76ee6d15bf995ecf37098",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/prompts/evaluation.py"
+    },
+    {
+      "path": "src/prompts/generation.py",
+      "bytes": 15973,
+      "sha256": "d86193d6d15323ad079e4c03abe70272bf4c5fa1caea98f868d559f91c69d27b",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/prompts/generation.py"
+    },
+    {
+      "path": "src/tools/__init__.py",
+      "bytes": 1884,
+      "sha256": "d983e46a50b07784290ab5186633ed0a51b5f3c6227e3c63cc4cbd9c862fc30c",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/tools/__init__.py"
+    },
+    {
+      "path": "src/tools/answer.py",
+      "bytes": 1132,
+      "sha256": "c554e8635c6652b475ebb9eda18c33be3eba0a830c213ca1973531472f52fa5c",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/tools/answer.py"
+    },
+    {
+      "path": "src/tools/ask_user.py",
+      "bytes": 3066,
+      "sha256": "a7a4917ee6386061751a1d505bd3a7d26ef1562ad47d581be85198f426a5de84",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/tools/ask_user.py"
+    },
+    {
+      "path": "src/tools/base.py",
+      "bytes": 727,
+      "sha256": "bb9d04966c6689a0ec75c472a0b026086675523b703588ff7df1b48fb0d50356",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/tools/base.py"
+    },
+    {
+      "path": "src/tools/detail.py",
+      "bytes": 1345,
+      "sha256": "135b54dcb416cf383b0f122e3737fddb14d6a6055a3099a82932c491efdaa635",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/tools/detail.py"
+    },
+    {
+      "path": "src/tools/filter.py",
+      "bytes": 2038,
+      "sha256": "98894217649235b8080c9db11ed75696d1b487089e54cb44e4a4c70b6a89ecb6",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/tools/filter.py"
+    },
+    {
+      "path": "src/tools/get_user_profile.py",
+      "bytes": 903,
+      "sha256": "80967e89f15285307b6c3a472b79671615f7271fa95cb3a67c3ac8b6f325266b",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/tools/get_user_profile.py"
+    },
+    {
+      "path": "src/tools/python_execute.py",
+      "bytes": 1560,
+      "sha256": "92e3d2b2907845683ef0e55357e21a848ecaffc718d9d7db2b4f673458069253",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/tools/python_execute.py"
+    },
+    {
+      "path": "src/tools/review_content.py",
+      "bytes": 1411,
+      "sha256": "246b3472e726a77fb8424c10f3211541c60531deb224ceecfc3cefe82ea91490",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/tools/review_content.py"
+    },
+    {
+      "path": "src/tools/review_stats.py",
+      "bytes": 1205,
+      "sha256": "431bcee265dd7e657b4643dad00d9049211e6510c1ef0b71f03bc3d4f7d8ab97",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/tools/review_stats.py"
+    },
+    {
+      "path": "src/tools/search_products.py",
+      "bytes": 1462,
+      "sha256": "7c20d781a02f18f1dfd214ac60e02e235cdebf5d3625031e49b0185100115238",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/tools/search_products.py"
+    },
+    {
+      "path": "src/tools/store.py",
+      "bytes": 1372,
+      "sha256": "490778d808ebd400073d3735dc91e145298b8b325f9672ecba0fa9d64af426ea",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/src/tools/store.py"
+    },
+    {
+      "path": "uv.lock",
+      "bytes": 78461,
+      "sha256": "a28fb595a9eff2a82b1f2dd435a27850895d3a23eb62e875205c9871157103fc",
+      "url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/uv.lock"
+    }
+  ],
+  "license": "MIT applies to code only; original data terms apply to Amazon Reviews 2023",
+  "excluded_from_training": "Released benchmark and target-product families are official external evaluation data, never training/dev reward tuning."
+}

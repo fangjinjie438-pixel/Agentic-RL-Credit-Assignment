@@ -1,16 +1,17 @@
-# procure_rl 包（S0）
+# procure_rl 包（S0–S1）
 
-当前仅实现 S0。配置与诊断入口不使用 GPU；`gpu-probe` 默认 dry-run，显式 `--execute`、完整 UUID 和分配来源后才运行指定计算。没有采购环境、教师 API、SFT 或 RL 实现。
+S0 与 S1 已实现。配置、诊断和采购环境的 CPU 入口不使用 GPU；`gpu-probe` 仍默认 dry-run。S1 复用固定 ECom 原生工具，提供项目新增会话、快照、确定性验证与固定小样本验收；教师 API、SFT 与 RL 尚未实现。
 
 | 文件 | 用途、输入输出及调用关系 | 执行方式 |
 | --- | --- | --- |
 | `__init__.py` | 包版本元数据；导入不加载 GPU 库 | 由 CLI 导入，无独立运行需求 |
-| `__main__.py` | argparse 入口，调用 config / doctor / environment_probe / gpu_probe 与 runtime；输入子命令、配置/新输出目录和授权，输出状态 JSON、退出码和日志 | `python -m procure_rl`，见下方完整命令 |
+| `__main__.py` | argparse 入口，调用 S0 探针、S1 env.smoke 与 runtime；输入子命令、配置/新输出目录和授权，输出状态 JSON、退出码和日志 | `python -m procure_rl`，见下方完整命令 |
 | `config.py` | 读取 S0 JSON，校验候选版本、模型分工、只读 GPU 边界和规划参数；输出字典或异常；不是 verl 配置验证器 | 由 `check-config` 调用 |
 | `doctor.py` | 固定只读 NVIDIA/git 查询、CPU/内存/文件系统、Toolkit 路径元数据与依赖 metadata；不执行 nvcc；`collect_report` 返回字典，`write_report` 写报告，`run_doctor` 返回报告路径 | 由 `doctor` 调用 |
 | `environment_probe.py` | 生成固定探针规格；在项目 `.venv-gpu` 的独立子进程检查包 metadata、verl commit、FSDP2/LoRA/AgentLoop 等入口。隐藏 GPU，禁止子进程再启动编译器/Toolkit，保留每项结构化结果与原始输出 | `check-environment` 调用；输入项目解释器/超时，输出 JSON/Markdown 报告；不是 GPU 验收 |
 | `gpu_probe.py` | 按完整 UUID 隔离并二次检查授权，在有界子进程运行 BF16 前反向、双卡小量拷贝/NCCL、单卡独立 FlashAttention 或本地 Qwen3-0.6B 单提示；JSON 文件传递状态，stdout/stderr仅作诊断 | `gpu-probe` 调用；输入授权/探针/本地模型与revision，输出逐探针结果；默认无 GPU 操作 |
 | `runtime.py` | 记录命令、解释器、源文件/配置 SHA256、起止时间、执行种类、验证级别和产物；未知 revision、种子或 checkpoint 为 null；GPU 入口补实际授权与模型信息 | 所有 CLI 子命令调用，写 `run.json` / `run.log` |
+| [env/](env/README.md) | S1 原生工具适配、split 只读 SQLite、JSON 动作协议、独立会话、快照回放、终局与过程验证器、CPU 验收；各文件用途和 API 见子目录 | `s1-smoke`；固定数据，无模型/API/GPU |
 
 项目根目录执行（CPU 开发 / 学校 Linux 相同）：
 
@@ -19,6 +20,7 @@ PYTHONPATH=src .venv-cpu/bin/python -m procure_rl check-config --config configs/
 PYTHONPATH=src .venv-cpu/bin/python -m procure_rl doctor --output logs/my-doctor --timeout 10
 PYTHONPATH=src .venv-cpu/bin/python -m procure_rl check-environment --output logs/my-environment --python .venv-gpu/bin/python --timeout 120
 PYTHONPATH=src .venv-cpu/bin/python -m procure_rl gpu-probe --output logs/my-gpu-dry-run
+PYTHONPATH=src .venv-cpu/bin/python -m procure_rl s1-smoke --config configs/s1.json --output logs/my-s1-acceptance
 ```
 
 doctor 输出目录内的 `report.json` 保留每条探针的命令、退出码、原始 stdout/stderr、超时和耗时；`report.md` 为人可读索引。NVIDIA 显存字段单位 MiB，内存/文件系统字段为 bytes；进程/显存随时间变化。缺失工具与失败探针记录为 unavailable/failed，CLI 完成报告并不等于每个探针通过。运行目录存在时拒绝覆盖，换新路径重跑；无 checkpoint 恢复步骤。

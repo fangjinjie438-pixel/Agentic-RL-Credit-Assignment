@@ -1,0 +1,161 @@
+{
+  "revision": "s1-fixture-v1",
+  "tasks": [
+    {
+      "task_id": "task-train-dual",
+      "split": "train",
+      "query": "Please recommend one office dock costing no more than 150 USD.",
+      "persona": "My work laptop has a USB-C port available for connecting a dock.",
+      "clarifications": [
+        {
+          "question_id": "displays",
+          "question": "How many external displays must the dock support?",
+          "answer": "I need to use two external displays at the same time.",
+          "constraint_ids": [
+            "displays"
+          ]
+        },
+        {
+          "question_id": "power",
+          "question": "How much power must the dock deliver to the laptop?",
+          "answer": "The dock must deliver at least 65 W to my laptop.",
+          "constraint_ids": [
+            "power"
+          ]
+        }
+      ],
+      "constraints": [
+        {
+          "id": "budget",
+          "source": "query",
+          "field": "price",
+          "op": "lte",
+          "value": 150,
+          "evidence_ids": [
+            "dock-train-a:details:price",
+            "dock-train-b:details:price",
+            "dock-train-one:details:price",
+            "dock-train-low:details:price"
+          ]
+        },
+        {
+          "id": "interface",
+          "source": "persona",
+          "field": "host_interface",
+          "op": "eq",
+          "value": "USB-C",
+          "evidence_ids": [
+            "dock-train-a:details:host_interface",
+            "dock-train-b:details:host_interface",
+            "dock-train-one:details:host_interface",
+            "dock-train-low:details:host_interface"
+          ]
+        },
+        {
+          "id": "displays",
+          "source": "clarification",
+          "field": "display_count",
+          "op": "gte",
+          "value": 2,
+          "evidence_ids": [
+            "dock-train-a:details:display_count",
+            "dock-train-b:details:display_count",
+            "dock-train-one:details:display_count",
+            "dock-train-low:details:display_count"
+          ]
+        },
+        {
+          "id": "power",
+          "source": "clarification",
+          "field": "power_w",
+          "op": "gte",
+          "value": 65,
+          "evidence_ids": [
+            "dock-train-a:reviews:power_w",
+            "dock-train-b:reviews:power_w",
+            "dock-train-one:reviews:power_w",
+            "dock-train-low:reviews:power_w"
+          ]
+        }
+      ],
+      "max_steps": 40,
+      "max_clarifications": 10
+    },
+    {
+      "task_id": "task-dev-dual",
+      "split": "dev",
+      "query": "Please recommend one office dock costing no more than 150 USD.",
+      "persona": "My work laptop has a USB-C port available for connecting a dock.",
+      "clarifications": [
+        {
+          "question_id": "displays",
+          "question": "How many external displays must the dock support?",
+          "answer": "I need to use two external displays at the same time.",
+          "constraint_ids": [
+            "displays"
+          ]
+        },
+        {
+          "question_id": "power",
+          "question": "How much power must the dock deliver to the laptop?",
+          "answer": "The dock must deliver at least 65 W to my laptop.",
+          "constraint_ids": [
+            "power"
+          ]
+        }
+      ],
+      "constraints": [
+        {
+          "id": "budget",
+          "source": "query",
+          "field": "price",
+          "op": "lte",
+          "value": 150,
+          "evidence_ids": [
+            "dock-dev-a:details:price",
+            "dock-dev-expensive:details:price",
+            "dock-dev-legacy:details:price"
+          ]
+        },
+        {
+          "id": "interface",
+          "source": "persona",
+          "field": "host_interface",
+          "op": "eq",
+          "value": "USB-C",
+          "evidence_ids": [
+            "dock-dev-a:details:host_interface",
+            "dock-dev-expensive:details:host_interface",
+            "dock-dev-legacy:details:host_interface"
+          ]
+        },
+        {
+          "id": "displays",
+          "source": "clarification",
+          "field": "display_count",
+          "op": "gte",
+          "value": 2,
+          "evidence_ids": [
+            "dock-dev-a:details:display_count",
+            "dock-dev-expensive:details:display_count",
+            "dock-dev-legacy:details:display_count"
+          ]
+        },
+        {
+          "id": "power",
+          "source": "clarification",
+          "field": "power_w",
+          "op": "gte",
+          "value": 65,
+          "evidence_ids": [
+            "dock-dev-a:reviews:power_w",
+            "dock-dev-expensive:reviews:power_w",
+            "dock-dev-legacy:reviews:power_w"
+          ]
+        }
+      ],
+      "max_steps": 40,
+      "max_clarifications": 10
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "stage": "S1",
+  "status": "succeeded",
+  "execution_kind": "cpu_environment",
+  "started_at": "2026-10-22T03:03:22+08:00",
+  "finished_at": "2026-10-22T03:03:23+08:00",
+  "machine": "A6000",
+  "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+  "python": "3.11.16 (main, Sep  1 2026, 14:18:37) [Clang 22.1.3 ]",
+  "executable": "/home/fangjinjie/project/credit_assign/.venv-cpu/bin/python",
+  "resolved_executable": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu/bin/python3.11",
+  "prefix": "/home/fangjinjie/project/credit_assign/.venv-cpu",
+  "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+  "working_directory": "/home/fangjinjie/project/credit_assign",
+  "argv": [
+    "/home/fangjinjie/project/credit_assign/.venv-cpu/bin/python",
+    "-m",
+    "procure_rl",
+    "s1-smoke",
+    "--config",
+    "configs/s1.json",
+    "--output",
+    "logs/s1-20261022/acceptance-v1"
+  ],
+  "command": "/home/fangjinjie/project/credit_assign/.venv-cpu/bin/python -m procure_rl s1-smoke --config configs/s1.json --output logs/s1-20261022/acceptance-v1",
+  "project_root": "/home/fangjinjie/project/credit_assign",
+  "source_sha256": {
+    "src/procure_rl/__init__.py": "e037c64e0aaa18186824ffe1d0c978c3d36aa6cb6e665fd884f1943eaccf099e",
+    "src/procure_rl/__main__.py": "7661dce6f6d1c562c3a652357713b6f471d4bb1a47f77d43e325c2b6f386b337",
+    "src/procure_rl/config.py": "c4d33fab0fa29054b2f1327f9d623f52889c8d8d4d7bb2c250a518bfcd0f6b91",
+    "src/procure_rl/doctor.py": "c886316cf3ff97da13717d30f3bc0f1e302fb59421525b49c34fdcbaa0d77bf9",
+    "src/procure_rl/env/__init__.py": "4fc42beb75d9da21a365026e19ed0e0b334180ab15278d4dbc6b7923bd30eafe",
+    "src/procure_rl/env/catalog.py": "a3c28c2d99f19e9e5c722d142fd9aff1bb5ecd75bab1f0cbfcedfcdce2695906",
+    "src/procure_rl/env/protocol.py": "3041b11607af446eccc2f2956c67d292cf37014b6c770ed8cc3b53bb2adc3588",
+    "src/procure_rl/env/session.py": "130e72a1074b32990d87094e8e831717d3578aaccd91ca35c122da3e509ffeb4",
+    "src/procure_rl/env/smoke.py": "9d2d0096f07d4359b0a7b8cbc153d78ff18c81e82ab5e9b29e6b77545308f95d",
+    "src/procure_rl/env/upstream.py": "d1821dc4cc73b8a0d372875091d70241ca2fac5b93381214ad02845aa58978e0",
+    "src/procure_rl/env/verifier.py": "a6d6d93f57124f8947c8501075cfdd7a5f005623383212f63e3e42748a10a86d",
+    "src/procure_rl/environment_probe.py": "754ad3926a6680f142087435dd12246efb0cb901a24176d74963992cca06c618",
+    "src/procure_rl/gpu_probe.py": "3100554cf26e10883ce64d741af97affcf79501ae44a4cd257dac3f7df4fa90b",
+    "src/procure_rl/runtime.py": "035b9f647d6c18782507b0c909476191d55094e48a552ea94c6100894cd6eaa0"
+  },
+  "config": {
+    "path": "/home/fangjinjie/project/credit_assign/configs/s1.json",
+    "sha256": "850c7007272fd097035725b97651a9d57b71a9aad0f5ae29c96d8309c8f2c962"
+  },
+  "data_revision": "s1-fixture-v1",
+  "model_revision": null,
+  "policy_version": "scripted-s1-v1",
+  "seed": 0,
+  "checkpoint": null,
+  "gpu_compute_performed": false,
+  "gpu_validation": "not_run",
+  "artifacts": {
+    "json": "logs/s1-20261022/acceptance-v1/report.json",
+    "markdown": "logs/s1-20261022/acceptance-v1/report.md",
+    "catalog_manifest": "logs/s1-20261022/acceptance-v1/catalog/manifest.json",
+    "trajectories": "logs/s1-20261022/acceptance-v1/trajectories"
+  },
+  "fixture_sha256": {
+    "catalog.json": "9c9cc95ebf52b2e47bc6174e9ed57bab4a6419b3ba1bc51c33a8e778e017b71e",
+    "tasks.json": "344b3a424403d43960860181c53219e26c7bc9f3d131dbb715999b5ef4adfd91",
+    "expectations.json": "a01729c2953ba47f39c4ba17d0dbbb76a6bc92293df00fb406a3578c4fa70207"
+  },
+  "upstream_revision": "97eff345811fdf652a2135d38d874f2932e11702",
+  "dependencies": "Python standard library only; no ML packages imported",
+  "sqlite_version": "3.53.1",
+  "error": null,
+  "validation_level": "cpu_native_tools_and_project_environment"
+}

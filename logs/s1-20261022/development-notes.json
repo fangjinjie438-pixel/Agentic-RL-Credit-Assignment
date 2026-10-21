@@ -1,0 +1,53 @@
+{
+  "stage": "S1",
+  "date": "2026-10-22",
+  "timezone": "Asia/Shanghai",
+  "machine": "A6000",
+  "interpreter": ".venv-cpu/bin/python (project-managed Python 3.11.16)",
+  "provenance": "Development observations retained from tool output and independent agent reports; exact early timestamps and missing original stderr were not captured and are not reconstructed.",
+  "failures": [
+    {
+      "operation": "Initial isolated test_upstream/test_verifier discovery during parallel file creation",
+      "error": "ModuleNotFoundError for procure_rl.env.session before session.py existed",
+      "resolution": "Executed after real session module landed; final 82-test log passes",
+      "exact_time": null,
+      "raw_log": null
+    },
+    {
+      "operation": "Complete real native recommend_product with product_id/reasoning/checks",
+      "error": "unknown_recommendation_fields made delivery_success false",
+      "resolution": "Pass only product_id/checks to project verifier; retain reasoning in action/native tool",
+      "regression": "test_manual_matrix_all_candidates_and_multiple_legal_answers"
+    },
+    {
+      "operation": "ask_user with >100 characters or exhausted clarification turns",
+      "error": "Native user_response rejection had no error field and was not penalized",
+      "resolution": "Use actual question length and native structured turn count; emit invalid_clarification and -0.05",
+      "regression": "test_reward_cap_repeat_keyword_stuffing_and_self_repair; test_clarification_limit_preserved_in_snapshot"
+    },
+    {
+      "operation": "snapshot/restore after a dict action containing NaN",
+      "error": "Snapshot does not match deterministic replay",
+      "resolution": "Normalize rejected non-JSON actions before parsing and recording",
+      "regression": "test_non_json_action_rejection_can_be_restored"
+    },
+    {
+      "operation": "step with a 1200-level nested JSON array",
+      "error": "RecursionError escaped without recording a budgeted attempt",
+      "resolution": "Convert deep serialization/parsing recursion failures into recorded invalid actions",
+      "regression": "test_deep_json_is_a_recorded_invalid_attempt"
+    },
+    {
+      "operation": "env.step({'name':'search_products','arguments':{'query':'dock','page':10**30}})",
+      "observed_output": {"error": "OverflowError", "message": "Python int too large to convert to SQLite INTEGER", "recorded": 0},
+      "resolution": "Reject integers outside supported signed 32-bit tool range before native execution",
+      "regression": "test_invalid_actions_are_logged_penalized_and_consume_budget",
+      "earlier_acceptance": "acceptance-v1 did not cover this input; acceptance-final and final tests use fixed code"
+    }
+  ],
+  "network_notes": "GitHub REST sandbox/network attempt failed and anonymous API was rate limited; authorized proxy git ls-remote and fixed codeload archive succeeded. See docs/ecom-upstream-audit.md.",
+  "final_results": {"acceptance_checks": 27, "acceptance_passed": 27, "tests": 82, "failures": 0, "errors": 0, "skipped": 0},
+  "gpu_compute_performed": false,
+  "model_revision": null,
+  "checkpoint": null
+}
