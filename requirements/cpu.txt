@@ -1,0 +1,2 @@
+# S0 CPU tools and unittest use only Python's standard library (Python >=3.10).
+# No third-party development packages are required. GPU candidate: separate file.

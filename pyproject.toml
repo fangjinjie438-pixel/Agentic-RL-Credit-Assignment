@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "procure-rl"
+version = "0.0.1"
+description = "Verifiable procurement agent research; S0 CPU tooling"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+procure-rl = "procure_rl.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

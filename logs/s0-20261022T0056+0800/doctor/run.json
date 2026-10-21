@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "stage": "S0",
+  "status": "succeeded",
+  "started_at": "2026-10-22T00:56:14+08:00",
+  "finished_at": "2026-10-22T00:56:14+08:00",
+  "machine": "A6000",
+  "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+  "python": "3.11.16 (main, Sep  1 2026, 14:18:37) [Clang 22.1.3 ]",
+  "executable": "/home/fangjinjie/project/credit_assign/.venv-cpu/bin/python",
+  "working_directory": "/home/fangjinjie/project/credit_assign",
+  "argv": [
+    "/home/fangjinjie/project/credit_assign/.venv-cpu/bin/python",
+    "-m",
+    "procure_rl",
+    "doctor",
+    "--output",
+    "logs/s0-20261022T0056+0800/doctor"
+  ],
+  "command": "/home/fangjinjie/project/credit_assign/.venv-cpu/bin/python -m procure_rl doctor --output logs/s0-20261022T0056+0800/doctor",
+  "project_root": "/home/fangjinjie/project/credit_assign",
+  "source_sha256": {
+    "src/procure_rl/__init__.py": "e037c64e0aaa18186824ffe1d0c978c3d36aa6cb6e665fd884f1943eaccf099e",
+    "src/procure_rl/__main__.py": "ab6568ad93f996807ade657acb08de1b7a4d5c515e2192402d81695ea80f31e5",
+    "src/procure_rl/config.py": "c4d33fab0fa29054b2f1327f9d623f52889c8d8d4d7bb2c250a518bfcd0f6b91",
+    "src/procure_rl/doctor.py": "6fe260d646732e8658195c7bb5e5ce67edc5c4757f605c2b68579a9ff2a44612",
+    "src/procure_rl/runtime.py": "733ebb2ba238ecb09ab8e23f86619c1da9e925fad4cc208f4aaad74f0021dee9"
+  },
+  "config": null,
+  "data_revision": null,
+  "model_revision": null,
+  "policy_version": null,
+  "seed": null,
+  "checkpoint": null,
+  "gpu_compute_performed": false,
+  "gpu_validation": "not_run",
+  "artifacts": {
+    "json": "/home/fangjinjie/project/credit_assign/logs/s0-20261022T0056+0800/doctor/report.json",
+    "markdown": "/home/fangjinjie/project/credit_assign/logs/s0-20261022T0056+0800/doctor/report.md"
+  },
+  "error": null,
+  "validation_level": "read_only_inventory_only"
+}

@@ -1,0 +1,11 @@
+{
+  "commit": "d62da4950573d7a4b7ef2362337952e7ab59e78d",
+  "reviewed_files": {
+    "setup.py": "9fc63f6b97e466964465a5dafb5e6ba29cdefc3f07ad384da9c58e6109aaf923",
+    "pyproject.toml": "d9493816a37e67483282e1489262da737336b3af4ac274953b44d470068d1d07"
+  },
+  "review_conclusion": "setuptools metadata; verl build files reviewed; no CUDA compiler invocation in these files",
+  "build_scope": "Allow verl and pure-Python pylatexenc metadata only; binary-only for all other distributions",
+  "environment": "project .venv-gpu backed by project .tools/python",
+  "gpu_compute_performed": false
+}

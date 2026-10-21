@@ -1,0 +1,17 @@
+{
+  "status": "historical_only",
+  "files": [
+    {
+      "original_name": "Procure-RL（1）.md",
+      "archive_path": "docs/archive/Procure-RL（1）.md",
+      "size_bytes": 19100,
+      "sha256": "e40c5d3b10043bfff56b5d4111e6ab4ae814ca870037c2eaec30f8836b5014cb"
+    },
+    {
+      "original_name": "Procure-RL 修订计划（2）.md",
+      "archive_path": "docs/archive/Procure-RL 修订计划（2）.md",
+      "size_bytes": 18872,
+      "sha256": "d9bd21f8b4dc1d98dae95aeee130ab54ac546ad8e26b6cdd65f11e113e17c96c"
+    }
+  ]
+}

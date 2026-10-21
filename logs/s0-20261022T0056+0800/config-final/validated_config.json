@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "stage": "S0",
+  "status": "candidate_unverified",
+  "stack": {
+    "python": "3.11",
+    "verl": "0.6.1",
+    "torch": "2.7.1+cu126",
+    "vllm": "0.10.0+cu126",
+    "transformers": "4.53.2"
+  },
+  "models": {
+    "smoke": "Qwen/Qwen3-0.6B",
+    "main": "Qwen/Qwen3-4B-Instruct-2507",
+    "extension": "Qwen/Qwen3-8B",
+    "extension_gate": "dev_diagnostics"
+  },
+  "resources": {
+    "gpu_compute_enabled": false,
+    "assigned_gpu_uuids": []
+  },
+  "planned_training": {
+    "prompt_batch": 6,
+    "rollouts_per_prompt": 4,
+    "tensor_parallel": 1,
+    "sequence_parallel": 1,
+    "lora_rank": 32,
+    "lora_alpha": 64,
+    "microbatch": 1,
+    "initial_rollout_concurrency_per_gpu": 1,
+    "smoke_context_tokens": 4096,
+    "main_context_tokens": 12288
+  }
+}

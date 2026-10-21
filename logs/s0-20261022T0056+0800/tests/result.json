@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/home/fangjinjie/project/credit_assign/.venv-cpu/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ],
+  "returncode": 0,
+  "machine": "A6000",
+  "python": "3.11.16 (main, Sep  1 2026, 14:18:37) [Clang 22.1.3 ]",
+  "executable": "/home/fangjinjie/project/credit_assign/.venv-cpu/bin/python",
+  "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+  "gpu_compute_performed": false,
+  "scope": "CPU unittest only; includes mocked commands; no GPU validation"
+}

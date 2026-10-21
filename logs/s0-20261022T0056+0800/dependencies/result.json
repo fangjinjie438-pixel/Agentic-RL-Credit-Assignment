@@ -1,0 +1,19 @@
+{
+  "attempts": [
+    {
+      "log": "resolve.log",
+      "exit_code": 1,
+      "outcome": "fixed verl metadata build blocked by --no-build"
+    },
+    {
+      "log": "resolve-reviewed.log",
+      "exit_code": 130,
+      "outcome": "interrupted during official vLLM wheel streaming; no full resolution"
+    }
+  ],
+  "candidate_file": "requirements/gpu-candidate.in",
+  "resolved_candidate_generated": false,
+  "installed": false,
+  "gpu_validation": "not_run",
+  "lock_generated": false
+}

@@ -1,0 +1,17 @@
+{
+  "scope": "document and evidence consistency; not GPU validation",
+  "checks": {
+    "archives_unchanged": true,
+    "code_files_have_readme_and_docstring": true,
+    "source_parent_readme": true,
+    "required_docs_present": true,
+    "original_plans_only_archived": true,
+    "independent_interpreter_in_report": true,
+    "no_toolkit_or_gpu_execution": true,
+    "hardware_eight_gpus": true,
+    "nvidia_readonly_probes_passed": true,
+    "doctor-final_hashes_match": true,
+    "tests-final_hashes_match": true,
+    "config-final_hashes_match": true
+  }
+}

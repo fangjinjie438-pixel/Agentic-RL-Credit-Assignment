@@ -1,0 +1,15 @@
+test_current_config_and_no_gpu (test_config_runtime.ConfigTests.test_current_config_and_no_gpu) ... ok
+test_unverified_versions_and_assignment_are_enforced (test_config_runtime.ConfigTests.test_unverified_versions_and_assignment_are_enforced) ... ok
+test_manifest_failure_has_evidence_and_does_not_claim_gpu (test_config_runtime.RuntimeTests.test_manifest_failure_has_evidence_and_does_not_claim_gpu) ... ok
+test_missing_config_has_failed_manifest (test_config_runtime.RuntimeTests.test_missing_config_has_failed_manifest) ... ok
+test_failed_command_preserves_exit_code_and_output (test_doctor.DoctorTests.test_failed_command_preserves_exit_code_and_output) ... ok
+test_free_memory_and_allocation_hint_do_not_authorize_compute (test_doctor.DoctorTests.test_free_memory_and_allocation_hint_do_not_authorize_compute) ... ok
+test_invalid_timeout_is_rejected_before_running_commands (test_doctor.DoctorTests.test_invalid_timeout_is_rejected_before_running_commands) ... ok
+test_missing_tools_are_recorded_without_confirming_allocation (test_doctor.DoctorTests.test_missing_tools_are_recorded_without_confirming_allocation) ... ok
+test_report_artifacts_are_written_only_to_requested_directory (test_doctor.DoctorTests.test_report_artifacts_are_written_only_to_requested_directory) ... ok
+test_timeout_preserves_partial_bytes (test_doctor.DoctorTests.test_timeout_preserves_partial_bytes) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.045s
+
+OK

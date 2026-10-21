@@ -1,0 +1,29 @@
+{
+  "type": "summary_of_observed_tool_results_not_raw_transcript",
+  "python": "3.11.16",
+  "uv": "0.12.16",
+  "project_python_directory": "/home/fangjinjie/project/credit_assign/.tools/python",
+  "cpu": {
+    "executable": "/home/fangjinjie/project/credit_assign/.venv-cpu/bin/python",
+    "prefix": "/home/fangjinjie/project/credit_assign/.venv-cpu",
+    "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+    "resolved_executable": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu/bin/python3.11"
+  },
+  "gpu_venv": "/home/fangjinjie/project/credit_assign/.venv-gpu",
+  "initial_python_download": {
+    "result": "network_denied_in_sandbox",
+    "error": "Operation not permitted (os error 1)"
+  },
+  "approved_network_python_download": {
+    "result": "success",
+    "download_size_displayed": "29.4 MiB",
+    "install_seconds_displayed": 18.24
+  },
+  "toolkit_execution_after_user_instruction": false,
+  "gpu_compute_performed": false,
+  "commands": [
+    "UV_CACHE_DIR=\"$PWD/.cache/uv\" UV_PYTHON_INSTALL_DIR=\"$PWD/.tools/python\" uv python install 3.11 --no-bin",
+    "UV_CACHE_DIR=\"$PWD/.cache/uv\" UV_PYTHON_INSTALL_DIR=\"$PWD/.tools/python\" uv venv --managed-python --python 3.11 --clear .venv-cpu",
+    "UV_CACHE_DIR=\"$PWD/.cache/uv\" UV_PYTHON_INSTALL_DIR=\"$PWD/.tools/python\" uv venv --managed-python --python 3.11 .venv-gpu"
+  ]
+}

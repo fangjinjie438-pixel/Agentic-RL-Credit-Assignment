@@ -1,0 +1,12 @@
+{
+  "status": "preflight_interrupted_not_resolved",
+  "first_attempt": "No matching process was visible from sandbox; no process was signaled",
+  "actual_interruption": {
+    "method": "exec session stdin Ctrl-C",
+    "session_id": 72557,
+    "observed_exit_code": 130
+  },
+  "reason": "Official vLLM wheel metadata fell back to full streaming; bounded S0 preflight stopped after several minutes without a complete result. This is not a dependency incompatibility finding.",
+  "gpu_installation_attempted": false,
+  "gpu_compute_performed": false
+}

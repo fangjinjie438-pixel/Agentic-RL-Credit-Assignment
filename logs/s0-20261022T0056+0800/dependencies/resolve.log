@@ -1,0 +1,5 @@
+   Updating https://github.com/verl-project/verl.git (d62da4950573d7a4b7ef2362337952e7ab59e78d)
+WARN Range requests not supported for vllm-0.10.0+cu126-cp38-abi3-manylinux1_x86_64.whl; streaming wheel
+    Updated https://github.com/verl-project/verl.git (d62da4950573d7a4b7ef2362337952e7ab59e78d)
+error: Failed to download and build `verl @ git+https://github.com/verl-project/verl.git@d62da4950573d7a4b7ef2362337952e7ab59e78d`
+  cause: Building source distributions for `verl` is disabled
