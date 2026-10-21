@@ -1,0 +1,37 @@
+{
+  "id": "peft",
+  "argv": [
+    "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+    "-I",
+    "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+    "--child",
+    "{\"kind\": \"import\", \"id\": \"peft\", \"module\": \"peft\", \"attributes\": [\"LoraConfig\", \"get_peft_model\"]}"
+  ],
+  "timeout_seconds": 120.0,
+  "status": "passed",
+  "returncode": 0,
+  "stdout": "PROCURE_RL_ENV_PROBE_RESULT={\"id\": \"peft\", \"status\": \"passed\", \"python\": {\"executable\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python\", \"prefix\": \"/home/fangjinjie/project/credit_assign/.venv-gpu\", \"base_prefix\": \"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu\", \"version\": \"3.11.16\"}, \"cuda_visible_devices\": \"\", \"module\": \"peft\", \"module_file\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/peft/__init__.py\", \"attributes\": {\"LoraConfig\": \"present_only_not_executed\", \"get_peft_model\": \"present_only_not_executed\"}, \"torch_cuda_initialized_after_import\": false, \"blocked_process_executables\": [\"lscpu\"]}\n",
+  "stderr": "",
+  "result": {
+    "id": "peft",
+    "status": "passed",
+    "python": {
+      "executable": "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+      "prefix": "/home/fangjinjie/project/credit_assign/.venv-gpu",
+      "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+      "version": "3.11.16"
+    },
+    "cuda_visible_devices": "",
+    "module": "peft",
+    "module_file": "/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/peft/__init__.py",
+    "attributes": {
+      "LoraConfig": "present_only_not_executed",
+      "get_peft_model": "present_only_not_executed"
+    },
+    "torch_cuda_initialized_after_import": false,
+    "blocked_process_executables": [
+      "lscpu"
+    ]
+  },
+  "elapsed_seconds": 11.223
+}

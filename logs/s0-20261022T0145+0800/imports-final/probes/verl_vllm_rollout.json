@@ -1,0 +1,39 @@
+{
+  "id": "verl_vllm_rollout",
+  "argv": [
+    "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+    "-I",
+    "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+    "--child",
+    "{\"kind\": \"import\", \"id\": \"verl_vllm_rollout\", \"module\": \"verl.workers.rollout.vllm_rollout.vllm_rollout_spmd\", \"attributes\": [\"vLLMRollout\", \"vLLMAsyncRollout\"]}"
+  ],
+  "timeout_seconds": 120.0,
+  "status": "passed",
+  "returncode": 0,
+  "stdout": "INFO 10-22 02:40:18 [__init__.py:239] No platform detected, vLLM is running on UnspecifiedPlatform\nPROCURE_RL_ENV_PROBE_RESULT={\"id\": \"verl_vllm_rollout\", \"status\": \"passed\", \"python\": {\"executable\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python\", \"prefix\": \"/home/fangjinjie/project/credit_assign/.venv-gpu\", \"base_prefix\": \"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu\", \"version\": \"3.11.16\"}, \"cuda_visible_devices\": \"\", \"module\": \"verl.workers.rollout.vllm_rollout.vllm_rollout_spmd\", \"module_file\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/verl/workers/rollout/vllm_rollout/vllm_rollout_spmd.py\", \"attributes\": {\"vLLMRollout\": \"present_only_not_executed\", \"vLLMAsyncRollout\": \"present_only_not_executed\"}, \"torch_cuda_initialized_after_import\": false, \"blocked_process_executables\": [\"lscpu\", \"file\", \"uname\"]}\n",
+  "stderr": "",
+  "result": {
+    "id": "verl_vllm_rollout",
+    "status": "passed",
+    "python": {
+      "executable": "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+      "prefix": "/home/fangjinjie/project/credit_assign/.venv-gpu",
+      "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+      "version": "3.11.16"
+    },
+    "cuda_visible_devices": "",
+    "module": "verl.workers.rollout.vllm_rollout.vllm_rollout_spmd",
+    "module_file": "/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/verl/workers/rollout/vllm_rollout/vllm_rollout_spmd.py",
+    "attributes": {
+      "vLLMRollout": "present_only_not_executed",
+      "vLLMAsyncRollout": "present_only_not_executed"
+    },
+    "torch_cuda_initialized_after_import": false,
+    "blocked_process_executables": [
+      "lscpu",
+      "file",
+      "uname"
+    ]
+  },
+  "elapsed_seconds": 16.367
+}

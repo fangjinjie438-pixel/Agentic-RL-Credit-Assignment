@@ -1,0 +1,4 @@
+# Binary candidate for the actor's independent flash_attn namespace.
+# CUDA12 / Torch2.7 / CPython3.11 / CXX11 ABI=True, NOT cu126-specific.
+# Check installed torch ABI before installation; then verify imports/kernels.
+flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.8.3/flash_attn-2.8.3%2Bcu12torch2.7cxx11abiTRUE-cp311-cp311-linux_x86_64.whl#sha256=cd1a45ebfc1731a13e55ad68e0c9ad92390ddfffba306f9222be67c6d5a805af

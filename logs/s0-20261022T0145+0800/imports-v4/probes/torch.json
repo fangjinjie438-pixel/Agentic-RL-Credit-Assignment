@@ -1,0 +1,43 @@
+{
+  "id": "torch",
+  "argv": [
+    "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+    "-I",
+    "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+    "--child",
+    "{\"kind\": \"import\", \"id\": \"torch\", \"module\": \"torch\", \"attributes\": [\"bfloat16\"]}"
+  ],
+  "timeout_seconds": 120.0,
+  "status": "passed",
+  "returncode": 0,
+  "stdout": "PROCURE_RL_ENV_PROBE_RESULT={\"id\": \"torch\", \"status\": \"passed\", \"python\": {\"executable\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python\", \"prefix\": \"/home/fangjinjie/project/credit_assign/.venv-gpu\", \"base_prefix\": \"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu\", \"version\": \"3.11.16\"}, \"cuda_visible_devices\": \"\", \"module\": \"torch\", \"module_file\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/torch/__init__.py\", \"attributes\": {\"bfloat16\": \"present_only_not_executed\"}, \"torch\": {\"version\": \"2.7.1+cu126\", \"compiled_cuda_runtime\": \"12.6\", \"candidate_compiled_cuda_runtime\": \"12.6\", \"cuda_runtime_comparison\": \"matches_build_metadata_only\", \"bfloat16_dtype_present\": true, \"hardware_bf16_support\": \"not_queried_no_gpu_execution\", \"nccl_runtime_version\": \"not_queried_no_gpu_execution\"}, \"torch_cuda_initialized_after_import\": false, \"blocked_process_executables\": []}\n",
+  "stderr": "",
+  "result": {
+    "id": "torch",
+    "status": "passed",
+    "python": {
+      "executable": "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+      "prefix": "/home/fangjinjie/project/credit_assign/.venv-gpu",
+      "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+      "version": "3.11.16"
+    },
+    "cuda_visible_devices": "",
+    "module": "torch",
+    "module_file": "/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/torch/__init__.py",
+    "attributes": {
+      "bfloat16": "present_only_not_executed"
+    },
+    "torch": {
+      "version": "2.7.1+cu126",
+      "compiled_cuda_runtime": "12.6",
+      "candidate_compiled_cuda_runtime": "12.6",
+      "cuda_runtime_comparison": "matches_build_metadata_only",
+      "bfloat16_dtype_present": true,
+      "hardware_bf16_support": "not_queried_no_gpu_execution",
+      "nccl_runtime_version": "not_queried_no_gpu_execution"
+    },
+    "torch_cuda_initialized_after_import": false,
+    "blocked_process_executables": []
+  },
+  "elapsed_seconds": 3.853
+}

@@ -31,12 +31,14 @@ class RunRecord:
     """Write run.json/run.log; refuse to overwrite earlier evidence directories."""
 
     def __init__(self, output: Path, project_root: Path, argv: list[str],
-                 config_path: Path | None = None) -> None:
+                 config_path: Path | None = None,
+                 execution_kind: str = "cpu_read_only") -> None:
         output.mkdir(parents=True, exist_ok=False)
         self.output = output
         source_root = project_root / "src"
         self.record: dict[str, Any] = {
             "schema_version": 1, "stage": "S0", "status": "running",
+            "execution_kind": execution_kind,
             "started_at": timestamp(), "finished_at": None,
             "machine": platform.node(), "platform": platform.platform(),
             "python": sys.version, "executable": sys.executable,
@@ -64,7 +66,7 @@ class RunRecord:
             except OSError as exc:
                 self.record["config"]["read_error"] = f"{type(exc).__name__}: {exc}"
         self._save()
-        self.log("S0 CPU/read-only run started; no GPU compute")
+        self.log(f"S0 run started: {execution_kind}; GPU has not been used by this run yet")
 
     def _save(self) -> None:
         (self.output / "run.json").write_text(

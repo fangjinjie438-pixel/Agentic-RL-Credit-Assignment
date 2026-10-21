@@ -1,0 +1,1624 @@
+{
+  "schema_version": 1,
+  "collected_at_utc": "2026-10-21T18:34:53.437659+00:00",
+  "status": "failed",
+  "failed_probes": [
+    "xformers_ops",
+    "verl_vllm_async_server"
+  ],
+  "project_root": "/home/fangjinjie/project/credit_assign",
+  "python_executable": "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+  "probe_spec": {
+    "schema_version": 1,
+    "project_root": "/home/fangjinjie/project/credit_assign",
+    "python_executable": "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+    "resolved_python": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu/bin/python3.11",
+    "environment_overrides": {
+      "CUDA_VISIBLE_DEVICES": "",
+      "NVIDIA_VISIBLE_DEVICES": "none",
+      "PYTORCH_NVML_BASED_CUDA_CHECK": "1",
+      "HF_HUB_OFFLINE": "1",
+      "TRANSFORMERS_OFFLINE": "1",
+      "HF_HUB_DISABLE_TELEMETRY": "1",
+      "VLLM_NO_USAGE_STATS": "1",
+      "DO_NOT_TRACK": "1",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "TOKENIZERS_PARALLELISM": "false",
+      "OMP_NUM_THREADS": "2",
+      "MKL_NUM_THREADS": "2"
+    },
+    "policy": {
+      "parent_imports_ml_libraries": false,
+      "gpu_devices_hidden": true,
+      "imports_run_in_independent_subprocesses": true,
+      "child_process_execution": "forbidden",
+      "runs_toolkit_binaries": false,
+      "runs_models_or_training": false,
+      "runs_gpu_compute": false,
+      "metadata_and_imports_are_not_gpu_validation": true
+    },
+    "commands": [
+      {
+        "id": "metadata",
+        "definition": {
+          "id": "metadata",
+          "kind": "metadata"
+        },
+        "argv": [
+          "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "-I",
+          "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+          "--child",
+          "{\"id\": \"metadata\", \"kind\": \"metadata\"}"
+        ],
+        "timeout_seconds": 120.0
+      },
+      {
+        "id": "torch",
+        "definition": {
+          "kind": "import",
+          "id": "torch",
+          "module": "torch",
+          "attributes": [
+            "bfloat16"
+          ]
+        },
+        "argv": [
+          "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "-I",
+          "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+          "--child",
+          "{\"kind\": \"import\", \"id\": \"torch\", \"module\": \"torch\", \"attributes\": [\"bfloat16\"]}"
+        ],
+        "timeout_seconds": 120.0
+      },
+      {
+        "id": "torchvision",
+        "definition": {
+          "kind": "import",
+          "id": "torchvision",
+          "module": "torchvision",
+          "attributes": [
+            "ops"
+          ]
+        },
+        "argv": [
+          "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "-I",
+          "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+          "--child",
+          "{\"kind\": \"import\", \"id\": \"torchvision\", \"module\": \"torchvision\", \"attributes\": [\"ops\"]}"
+        ],
+        "timeout_seconds": 120.0
+      },
+      {
+        "id": "torchaudio",
+        "definition": {
+          "kind": "import",
+          "id": "torchaudio",
+          "module": "torchaudio",
+          "attributes": [
+            "load"
+          ]
+        },
+        "argv": [
+          "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "-I",
+          "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+          "--child",
+          "{\"kind\": \"import\", \"id\": \"torchaudio\", \"module\": \"torchaudio\", \"attributes\": [\"load\"]}"
+        ],
+        "timeout_seconds": 120.0
+      },
+      {
+        "id": "xformers_ops",
+        "definition": {
+          "kind": "import",
+          "id": "xformers_ops",
+          "module": "xformers.ops",
+          "attributes": [
+            "memory_efficient_attention"
+          ]
+        },
+        "argv": [
+          "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "-I",
+          "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+          "--child",
+          "{\"kind\": \"import\", \"id\": \"xformers_ops\", \"module\": \"xformers.ops\", \"attributes\": [\"memory_efficient_attention\"]}"
+        ],
+        "timeout_seconds": 120.0
+      },
+      {
+        "id": "torch_fsdp2",
+        "definition": {
+          "kind": "import",
+          "id": "torch_fsdp2",
+          "module": "torch.distributed.fsdp",
+          "attributes": [
+            "fully_shard",
+            "FSDPModule",
+            "MixedPrecisionPolicy",
+            "CPUOffloadPolicy"
+          ]
+        },
+        "argv": [
+          "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "-I",
+          "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+          "--child",
+          "{\"kind\": \"import\", \"id\": \"torch_fsdp2\", \"module\": \"torch.distributed.fsdp\", \"attributes\": [\"fully_shard\", \"FSDPModule\", \"MixedPrecisionPolicy\", \"CPUOffloadPolicy\"]}"
+        ],
+        "timeout_seconds": 120.0
+      },
+      {
+        "id": "transformers",
+        "definition": {
+          "kind": "import",
+          "id": "transformers",
+          "module": "transformers",
+          "attributes": [
+            "AutoTokenizer",
+            "AutoModelForCausalLM"
+          ]
+        },
+        "argv": [
+          "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "-I",
+          "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+          "--child",
+          "{\"kind\": \"import\", \"id\": \"transformers\", \"module\": \"transformers\", \"attributes\": [\"AutoTokenizer\", \"AutoModelForCausalLM\"]}"
+        ],
+        "timeout_seconds": 120.0
+      },
+      {
+        "id": "qwen3_config",
+        "definition": {
+          "kind": "import",
+          "id": "qwen3_config",
+          "module": "transformers.models.qwen3.configuration_qwen3",
+          "attributes": [
+            "Qwen3Config"
+          ]
+        },
+        "argv": [
+          "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "-I",
+          "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+          "--child",
+          "{\"kind\": \"import\", \"id\": \"qwen3_config\", \"module\": \"transformers.models.qwen3.configuration_qwen3\", \"attributes\": [\"Qwen3Config\"]}"
+        ],
+        "timeout_seconds": 120.0
+      },
+      {
+        "id": "qwen3_model",
+        "definition": {
+          "kind": "import",
+          "id": "qwen3_model",
+          "module": "transformers.models.qwen3.modeling_qwen3",
+          "attributes": [
+            "Qwen3ForCausalLM"
+          ]
+        },
+        "argv": [
+          "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "-I",
+          "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+          "--child",
+          "{\"kind\": \"import\", \"id\": \"qwen3_model\", \"module\": \"transformers.models.qwen3.modeling_qwen3\", \"attributes\": [\"Qwen3ForCausalLM\"]}"
+        ],
+        "timeout_seconds": 120.0
+      },
+      {
+        "id": "peft",
+        "definition": {
+          "kind": "import",
+          "id": "peft",
+          "module": "peft",
+          "attributes": [
+            "LoraConfig",
+            "get_peft_model"
+          ]
+        },
+        "argv": [
+          "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "-I",
+          "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+          "--child",
+          "{\"kind\": \"import\", \"id\": \"peft\", \"module\": \"peft\", \"attributes\": [\"LoraConfig\", \"get_peft_model\"]}"
+        ],
+        "timeout_seconds": 120.0
+      },
+      {
+        "id": "accelerate",
+        "definition": {
+          "kind": "import",
+          "id": "accelerate",
+          "module": "accelerate",
+          "attributes": [
+            "Accelerator"
+          ]
+        },
+        "argv": [
+          "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "-I",
+          "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+          "--child",
+          "{\"kind\": \"import\", \"id\": \"accelerate\", \"module\": \"accelerate\", \"attributes\": [\"Accelerator\"]}"
+        ],
+        "timeout_seconds": 120.0
+      },
+      {
+        "id": "torchdata",
+        "definition": {
+          "kind": "import",
+          "id": "torchdata",
+          "module": "torchdata.stateful_dataloader",
+          "attributes": [
+            "StatefulDataLoader"
+          ]
+        },
+        "argv": [
+          "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "-I",
+          "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+          "--child",
+          "{\"kind\": \"import\", \"id\": \"torchdata\", \"module\": \"torchdata.stateful_dataloader\", \"attributes\": [\"StatefulDataLoader\"]}"
+        ],
+        "timeout_seconds": 120.0
+      },
+      {
+        "id": "ray",
+        "definition": {
+          "kind": "import",
+          "id": "ray",
+          "module": "ray",
+          "attributes": [
+            "init",
+            "remote"
+          ]
+        },
+        "argv": [
+          "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "-I",
+          "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+          "--child",
+          "{\"kind\": \"import\", \"id\": \"ray\", \"module\": \"ray\", \"attributes\": [\"init\", \"remote\"]}"
+        ],
+        "timeout_seconds": 120.0
+      },
+      {
+        "id": "tensordict",
+        "definition": {
+          "kind": "import",
+          "id": "tensordict",
+          "module": "tensordict",
+          "attributes": [
+            "TensorDict"
+          ]
+        },
+        "argv": [
+          "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "-I",
+          "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+          "--child",
+          "{\"kind\": \"import\", \"id\": \"tensordict\", \"module\": \"tensordict\", \"attributes\": [\"TensorDict\"]}"
+        ],
+        "timeout_seconds": 120.0
+      },
+      {
+        "id": "vllm",
+        "definition": {
+          "kind": "import",
+          "id": "vllm",
+          "module": "vllm",
+          "attributes": [
+            "LLM",
+            "SamplingParams"
+          ]
+        },
+        "argv": [
+          "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "-I",
+          "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+          "--child",
+          "{\"kind\": \"import\", \"id\": \"vllm\", \"module\": \"vllm\", \"attributes\": [\"LLM\", \"SamplingParams\"]}"
+        ],
+        "timeout_seconds": 120.0
+      },
+      {
+        "id": "verl",
+        "definition": {
+          "kind": "import",
+          "id": "verl",
+          "module": "verl",
+          "attributes": [
+            "DataProto"
+          ]
+        },
+        "argv": [
+          "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "-I",
+          "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+          "--child",
+          "{\"kind\": \"import\", \"id\": \"verl\", \"module\": \"verl\", \"attributes\": [\"DataProto\"]}"
+        ],
+        "timeout_seconds": 120.0
+      },
+      {
+        "id": "verl_main_ppo",
+        "definition": {
+          "kind": "import",
+          "id": "verl_main_ppo",
+          "module": "verl.trainer.main_ppo",
+          "attributes": [
+            "main",
+            "run_ppo"
+          ]
+        },
+        "argv": [
+          "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "-I",
+          "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+          "--child",
+          "{\"kind\": \"import\", \"id\": \"verl_main_ppo\", \"module\": \"verl.trainer.main_ppo\", \"attributes\": [\"main\", \"run_ppo\"]}"
+        ],
+        "timeout_seconds": 120.0
+      },
+      {
+        "id": "verl_core_algos",
+        "definition": {
+          "kind": "import",
+          "id": "verl_core_algos",
+          "module": "verl.trainer.ppo.core_algos",
+          "attributes": [
+            "register_adv_est",
+            "compute_grpo_outcome_advantage"
+          ]
+        },
+        "argv": [
+          "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "-I",
+          "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+          "--child",
+          "{\"kind\": \"import\", \"id\": \"verl_core_algos\", \"module\": \"verl.trainer.ppo.core_algos\", \"attributes\": [\"register_adv_est\", \"compute_grpo_outcome_advantage\"]}"
+        ],
+        "timeout_seconds": 120.0
+      },
+      {
+        "id": "verl_fsdp_utils",
+        "definition": {
+          "kind": "import",
+          "id": "verl_fsdp_utils",
+          "module": "verl.utils.fsdp_utils",
+          "attributes": [
+            "apply_fsdp2",
+            "collect_lora_params"
+          ]
+        },
+        "argv": [
+          "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "-I",
+          "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+          "--child",
+          "{\"kind\": \"import\", \"id\": \"verl_fsdp_utils\", \"module\": \"verl.utils.fsdp_utils\", \"attributes\": [\"apply_fsdp2\", \"collect_lora_params\"]}"
+        ],
+        "timeout_seconds": 120.0
+      },
+      {
+        "id": "verl_fsdp_worker",
+        "definition": {
+          "kind": "import",
+          "id": "verl_fsdp_worker",
+          "module": "verl.workers.fsdp_workers",
+          "attributes": [
+            "ActorRolloutRefWorker",
+            "AsyncActorRolloutRefWorker"
+          ]
+        },
+        "argv": [
+          "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "-I",
+          "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+          "--child",
+          "{\"kind\": \"import\", \"id\": \"verl_fsdp_worker\", \"module\": \"verl.workers.fsdp_workers\", \"attributes\": [\"ActorRolloutRefWorker\", \"AsyncActorRolloutRefWorker\"]}"
+        ],
+        "timeout_seconds": 120.0
+      },
+      {
+        "id": "verl_vllm_rollout",
+        "definition": {
+          "kind": "import",
+          "id": "verl_vllm_rollout",
+          "module": "verl.workers.rollout.vllm_rollout.vllm_rollout_spmd",
+          "attributes": [
+            "vLLMRollout",
+            "vLLMAsyncRollout"
+          ]
+        },
+        "argv": [
+          "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "-I",
+          "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+          "--child",
+          "{\"kind\": \"import\", \"id\": \"verl_vllm_rollout\", \"module\": \"verl.workers.rollout.vllm_rollout.vllm_rollout_spmd\", \"attributes\": [\"vLLMRollout\", \"vLLMAsyncRollout\"]}"
+        ],
+        "timeout_seconds": 120.0
+      },
+      {
+        "id": "verl_vllm_async_server",
+        "definition": {
+          "kind": "import",
+          "id": "verl_vllm_async_server",
+          "module": "verl.workers.rollout.vllm_rollout.vllm_async_server",
+          "attributes": [
+            "vLLMAsyncServer"
+          ]
+        },
+        "argv": [
+          "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "-I",
+          "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+          "--child",
+          "{\"kind\": \"import\", \"id\": \"verl_vllm_async_server\", \"module\": \"verl.workers.rollout.vllm_rollout.vllm_async_server\", \"attributes\": [\"vLLMAsyncServer\"]}"
+        ],
+        "timeout_seconds": 120.0
+      },
+      {
+        "id": "verl_agent_loop",
+        "definition": {
+          "kind": "import",
+          "id": "verl_agent_loop",
+          "module": "verl.experimental.agent_loop.agent_loop",
+          "attributes": [
+            "AgentLoopBase",
+            "AgentLoopOutput",
+            "AgentLoopManager"
+          ]
+        },
+        "argv": [
+          "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "-I",
+          "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+          "--child",
+          "{\"kind\": \"import\", \"id\": \"verl_agent_loop\", \"module\": \"verl.experimental.agent_loop.agent_loop\", \"attributes\": [\"AgentLoopBase\", \"AgentLoopOutput\", \"AgentLoopManager\"]}"
+        ],
+        "timeout_seconds": 120.0
+      },
+      {
+        "id": "verl_tool_agent_loop",
+        "definition": {
+          "kind": "import",
+          "id": "verl_tool_agent_loop",
+          "module": "verl.experimental.agent_loop.tool_agent_loop",
+          "attributes": [
+            "ToolAgentLoop"
+          ]
+        },
+        "argv": [
+          "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "-I",
+          "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+          "--child",
+          "{\"kind\": \"import\", \"id\": \"verl_tool_agent_loop\", \"module\": \"verl.experimental.agent_loop.tool_agent_loop\", \"attributes\": [\"ToolAgentLoop\"]}"
+        ],
+        "timeout_seconds": 120.0
+      }
+    ]
+  },
+  "commands": {
+    "metadata": {
+      "id": "metadata",
+      "argv": [
+        "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+        "-I",
+        "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+        "--child",
+        "{\"id\": \"metadata\", \"kind\": \"metadata\"}"
+      ],
+      "timeout_seconds": 120.0,
+      "status": "passed",
+      "returncode": 0,
+      "stdout": "PROCURE_RL_ENV_PROBE_RESULT={\"id\": \"metadata\", \"status\": \"passed\", \"python\": {\"executable\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python\", \"prefix\": \"/home/fangjinjie/project/credit_assign/.venv-gpu\", \"base_prefix\": \"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu\", \"version\": \"3.11.16\"}, \"cuda_visible_devices\": \"\", \"distributions\": {\"torch\": {\"candidate_version\": \"2.7.1+cu126\", \"status\": \"installed\", \"installed_version\": \"2.7.1+cu126\", \"version_comparison\": \"matches_metadata_only\", \"direct_url\": {\"url_omitted_to_protect_credentials\": true}}, \"torchvision\": {\"candidate_version\": \"0.22.1+cu126\", \"status\": \"installed\", \"installed_version\": \"0.22.1+cu126\", \"version_comparison\": \"matches_metadata_only\", \"direct_url\": {\"url_omitted_to_protect_credentials\": true}}, \"torchaudio\": {\"candidate_version\": \"2.7.1+cu126\", \"status\": \"installed\", \"installed_version\": \"2.7.1+cu126\", \"version_comparison\": \"matches_metadata_only\", \"direct_url\": {\"url_omitted_to_protect_credentials\": true}}, \"vllm\": {\"candidate_version\": \"0.10.0+cu126\", \"status\": \"installed\", \"installed_version\": \"0.10.0+cu126\", \"version_comparison\": \"matches_metadata_only\", \"direct_url\": {\"url_omitted_to_protect_credentials\": true}}, \"transformers\": {\"candidate_version\": \"4.53.2\", \"status\": \"installed\", \"installed_version\": \"4.53.2\", \"version_comparison\": \"matches_metadata_only\"}, \"verl\": {\"candidate_version\": \"0.6.1\", \"status\": \"installed\", \"installed_version\": \"0.6.1\", \"version_comparison\": \"matches_metadata_only\", \"direct_url\": {\"url_omitted_to_protect_credentials\": true, \"vcs_info\": {\"vcs\": \"git\", \"commit_id\": \"d62da4950573d7a4b7ef2362337952e7ab59e78d\", \"requested_revision\": \"d62da4950573d7a4b7ef2362337952e7ab59e78d\"}}, \"candidate_commit\": \"d62da4950573d7a4b7ef2362337952e7ab59e78d\", \"commit_comparison\": \"matches_commit_only\"}, \"peft\": {\"candidate_version\": \"0.16.0\", \"status\": \"installed\", \"installed_version\": \"0.16.0\", \"version_comparison\": \"matches_metadata_only\"}, \"accelerate\": {\"candidate_version\": \"1.8.1\", \"status\": \"installed\", \"installed_version\": \"1.8.1\", \"version_comparison\": \"matches_metadata_only\"}, \"torchdata\": {\"candidate_version\": \"0.11.0\", \"status\": \"installed\", \"installed_version\": \"0.11.0\", \"version_comparison\": \"matches_metadata_only\"}, \"xformers\": {\"candidate_version\": \"0.0.31\", \"status\": \"installed\", \"installed_version\": \"0.0.31\", \"version_comparison\": \"matches_metadata_only\", \"direct_url\": {\"url_omitted_to_protect_credentials\": true}}, \"ray\": {\"candidate_version\": null, \"status\": \"installed\", \"installed_version\": \"2.59.0\", \"version_comparison\": \"unconstrained\"}, \"tensordict\": {\"candidate_version\": null, \"status\": \"installed\", \"installed_version\": \"0.8.3\", \"version_comparison\": \"unconstrained\"}, \"flash-attn\": {\"candidate_version\": null, \"status\": \"installed\", \"installed_version\": \"2.8.3\", \"version_comparison\": \"unconstrained\", \"direct_url\": {\"url_omitted_to_protect_credentials\": true}}, \"nvidia-cuda-runtime-cu12\": {\"candidate_version\": null, \"status\": \"installed\", \"installed_version\": \"12.6.77\", \"version_comparison\": \"unconstrained\"}, \"nvidia-nccl-cu12\": {\"candidate_version\": null, \"status\": \"installed\", \"installed_version\": \"2.26.2\", \"version_comparison\": \"unconstrained\"}}, \"candidate_metadata_violations\": [], \"blocked_process_executables\": []}\n",
+      "stderr": "",
+      "result": {
+        "id": "metadata",
+        "status": "passed",
+        "python": {
+          "executable": "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "prefix": "/home/fangjinjie/project/credit_assign/.venv-gpu",
+          "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+          "version": "3.11.16"
+        },
+        "cuda_visible_devices": "",
+        "distributions": {
+          "torch": {
+            "candidate_version": "2.7.1+cu126",
+            "status": "installed",
+            "installed_version": "2.7.1+cu126",
+            "version_comparison": "matches_metadata_only",
+            "direct_url": {
+              "url_omitted_to_protect_credentials": true
+            }
+          },
+          "torchvision": {
+            "candidate_version": "0.22.1+cu126",
+            "status": "installed",
+            "installed_version": "0.22.1+cu126",
+            "version_comparison": "matches_metadata_only",
+            "direct_url": {
+              "url_omitted_to_protect_credentials": true
+            }
+          },
+          "torchaudio": {
+            "candidate_version": "2.7.1+cu126",
+            "status": "installed",
+            "installed_version": "2.7.1+cu126",
+            "version_comparison": "matches_metadata_only",
+            "direct_url": {
+              "url_omitted_to_protect_credentials": true
+            }
+          },
+          "vllm": {
+            "candidate_version": "0.10.0+cu126",
+            "status": "installed",
+            "installed_version": "0.10.0+cu126",
+            "version_comparison": "matches_metadata_only",
+            "direct_url": {
+              "url_omitted_to_protect_credentials": true
+            }
+          },
+          "transformers": {
+            "candidate_version": "4.53.2",
+            "status": "installed",
+            "installed_version": "4.53.2",
+            "version_comparison": "matches_metadata_only"
+          },
+          "verl": {
+            "candidate_version": "0.6.1",
+            "status": "installed",
+            "installed_version": "0.6.1",
+            "version_comparison": "matches_metadata_only",
+            "direct_url": {
+              "url_omitted_to_protect_credentials": true,
+              "vcs_info": {
+                "vcs": "git",
+                "commit_id": "d62da4950573d7a4b7ef2362337952e7ab59e78d",
+                "requested_revision": "d62da4950573d7a4b7ef2362337952e7ab59e78d"
+              }
+            },
+            "candidate_commit": "d62da4950573d7a4b7ef2362337952e7ab59e78d",
+            "commit_comparison": "matches_commit_only"
+          },
+          "peft": {
+            "candidate_version": "0.16.0",
+            "status": "installed",
+            "installed_version": "0.16.0",
+            "version_comparison": "matches_metadata_only"
+          },
+          "accelerate": {
+            "candidate_version": "1.8.1",
+            "status": "installed",
+            "installed_version": "1.8.1",
+            "version_comparison": "matches_metadata_only"
+          },
+          "torchdata": {
+            "candidate_version": "0.11.0",
+            "status": "installed",
+            "installed_version": "0.11.0",
+            "version_comparison": "matches_metadata_only"
+          },
+          "xformers": {
+            "candidate_version": "0.0.31",
+            "status": "installed",
+            "installed_version": "0.0.31",
+            "version_comparison": "matches_metadata_only",
+            "direct_url": {
+              "url_omitted_to_protect_credentials": true
+            }
+          },
+          "ray": {
+            "candidate_version": null,
+            "status": "installed",
+            "installed_version": "2.59.0",
+            "version_comparison": "unconstrained"
+          },
+          "tensordict": {
+            "candidate_version": null,
+            "status": "installed",
+            "installed_version": "0.8.3",
+            "version_comparison": "unconstrained"
+          },
+          "flash-attn": {
+            "candidate_version": null,
+            "status": "installed",
+            "installed_version": "2.8.3",
+            "version_comparison": "unconstrained",
+            "direct_url": {
+              "url_omitted_to_protect_credentials": true
+            }
+          },
+          "nvidia-cuda-runtime-cu12": {
+            "candidate_version": null,
+            "status": "installed",
+            "installed_version": "12.6.77",
+            "version_comparison": "unconstrained"
+          },
+          "nvidia-nccl-cu12": {
+            "candidate_version": null,
+            "status": "installed",
+            "installed_version": "2.26.2",
+            "version_comparison": "unconstrained"
+          }
+        },
+        "candidate_metadata_violations": [],
+        "blocked_process_executables": []
+      },
+      "elapsed_seconds": 0.174
+    },
+    "torch": {
+      "id": "torch",
+      "argv": [
+        "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+        "-I",
+        "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+        "--child",
+        "{\"kind\": \"import\", \"id\": \"torch\", \"module\": \"torch\", \"attributes\": [\"bfloat16\"]}"
+      ],
+      "timeout_seconds": 120.0,
+      "status": "passed",
+      "returncode": 0,
+      "stdout": "PROCURE_RL_ENV_PROBE_RESULT={\"id\": \"torch\", \"status\": \"passed\", \"python\": {\"executable\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python\", \"prefix\": \"/home/fangjinjie/project/credit_assign/.venv-gpu\", \"base_prefix\": \"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu\", \"version\": \"3.11.16\"}, \"cuda_visible_devices\": \"\", \"module\": \"torch\", \"module_file\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/torch/__init__.py\", \"attributes\": {\"bfloat16\": \"present_only_not_executed\"}, \"torch\": {\"version\": \"2.7.1+cu126\", \"compiled_cuda_runtime\": \"12.6\", \"candidate_compiled_cuda_runtime\": \"12.6\", \"cuda_runtime_comparison\": \"matches_build_metadata_only\", \"bfloat16_dtype_present\": true, \"hardware_bf16_support\": \"not_queried_no_gpu_execution\", \"nccl_runtime_version\": \"not_queried_no_gpu_execution\"}, \"torch_cuda_initialized_after_import\": false, \"blocked_process_executables\": []}\n",
+      "stderr": "",
+      "result": {
+        "id": "torch",
+        "status": "passed",
+        "python": {
+          "executable": "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "prefix": "/home/fangjinjie/project/credit_assign/.venv-gpu",
+          "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+          "version": "3.11.16"
+        },
+        "cuda_visible_devices": "",
+        "module": "torch",
+        "module_file": "/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/torch/__init__.py",
+        "attributes": {
+          "bfloat16": "present_only_not_executed"
+        },
+        "torch": {
+          "version": "2.7.1+cu126",
+          "compiled_cuda_runtime": "12.6",
+          "candidate_compiled_cuda_runtime": "12.6",
+          "cuda_runtime_comparison": "matches_build_metadata_only",
+          "bfloat16_dtype_present": true,
+          "hardware_bf16_support": "not_queried_no_gpu_execution",
+          "nccl_runtime_version": "not_queried_no_gpu_execution"
+        },
+        "torch_cuda_initialized_after_import": false,
+        "blocked_process_executables": []
+      },
+      "elapsed_seconds": 3.853
+    },
+    "torchvision": {
+      "id": "torchvision",
+      "argv": [
+        "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+        "-I",
+        "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+        "--child",
+        "{\"kind\": \"import\", \"id\": \"torchvision\", \"module\": \"torchvision\", \"attributes\": [\"ops\"]}"
+      ],
+      "timeout_seconds": 120.0,
+      "status": "passed",
+      "returncode": 0,
+      "stdout": "PROCURE_RL_ENV_PROBE_RESULT={\"id\": \"torchvision\", \"status\": \"passed\", \"python\": {\"executable\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python\", \"prefix\": \"/home/fangjinjie/project/credit_assign/.venv-gpu\", \"base_prefix\": \"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu\", \"version\": \"3.11.16\"}, \"cuda_visible_devices\": \"\", \"module\": \"torchvision\", \"module_file\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/torchvision/__init__.py\", \"attributes\": {\"ops\": \"present_only_not_executed\"}, \"torch_cuda_initialized_after_import\": false, \"blocked_process_executables\": []}\n",
+      "stderr": "",
+      "result": {
+        "id": "torchvision",
+        "status": "passed",
+        "python": {
+          "executable": "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "prefix": "/home/fangjinjie/project/credit_assign/.venv-gpu",
+          "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+          "version": "3.11.16"
+        },
+        "cuda_visible_devices": "",
+        "module": "torchvision",
+        "module_file": "/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/torchvision/__init__.py",
+        "attributes": {
+          "ops": "present_only_not_executed"
+        },
+        "torch_cuda_initialized_after_import": false,
+        "blocked_process_executables": []
+      },
+      "elapsed_seconds": 6.429
+    },
+    "torchaudio": {
+      "id": "torchaudio",
+      "argv": [
+        "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+        "-I",
+        "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+        "--child",
+        "{\"kind\": \"import\", \"id\": \"torchaudio\", \"module\": \"torchaudio\", \"attributes\": [\"load\"]}"
+      ],
+      "timeout_seconds": 120.0,
+      "status": "passed",
+      "returncode": 0,
+      "stdout": "PROCURE_RL_ENV_PROBE_RESULT={\"id\": \"torchaudio\", \"status\": \"passed\", \"python\": {\"executable\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python\", \"prefix\": \"/home/fangjinjie/project/credit_assign/.venv-gpu\", \"base_prefix\": \"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu\", \"version\": \"3.11.16\"}, \"cuda_visible_devices\": \"\", \"module\": \"torchaudio\", \"module_file\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/torchaudio/__init__.py\", \"attributes\": {\"load\": \"present_only_not_executed\"}, \"torch_cuda_initialized_after_import\": false, \"blocked_process_executables\": []}\n",
+      "stderr": "",
+      "result": {
+        "id": "torchaudio",
+        "status": "passed",
+        "python": {
+          "executable": "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "prefix": "/home/fangjinjie/project/credit_assign/.venv-gpu",
+          "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+          "version": "3.11.16"
+        },
+        "cuda_visible_devices": "",
+        "module": "torchaudio",
+        "module_file": "/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/torchaudio/__init__.py",
+        "attributes": {
+          "load": "present_only_not_executed"
+        },
+        "torch_cuda_initialized_after_import": false,
+        "blocked_process_executables": []
+      },
+      "elapsed_seconds": 4.258
+    },
+    "xformers_ops": {
+      "id": "xformers_ops",
+      "argv": [
+        "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+        "-I",
+        "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+        "--child",
+        "{\"kind\": \"import\", \"id\": \"xformers_ops\", \"module\": \"xformers.ops\", \"attributes\": [\"memory_efficient_attention\"]}"
+      ],
+      "timeout_seconds": 120.0,
+      "status": "failed",
+      "returncode": 1,
+      "stdout": "PROCURE_RL_ENV_PROBE_RESULT={\"id\": \"xformers_ops\", \"status\": \"failed\", \"python\": {\"executable\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python\", \"prefix\": \"/home/fangjinjie/project/credit_assign/.venv-gpu\", \"base_prefix\": \"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu\", \"version\": \"3.11.16\"}, \"cuda_visible_devices\": \"\", \"module\": \"xformers.ops\", \"error_type\": \"ImportError\", \"error\": \"Requires Flash-Attention version >=2.7.1,<=2.8.0 but got 2.8.3.\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py\\\", line 205, in _execute_child_probe\\n    module = importlib.import_module(definition[\\\"module\\\"])\\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/importlib/__init__.py\\\", line 126, in import_module\\n    return _bootstrap._gcd_import(name[level:], package, level)\\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"<frozen importlib._bootstrap>\\\", line 1204, in _gcd_import\\n  File \\\"<frozen importlib._bootstrap>\\\", line 1176, in _find_and_load\\n  File \\\"<frozen importlib._bootstrap>\\\", line 1147, in _find_and_load_unlocked\\n  File \\\"<frozen importlib._bootstrap>\\\", line 690, in _load_unlocked\\n  File \\\"<frozen importlib._bootstrap_external>\\\", line 940, in exec_module\\n  File \\\"<frozen importlib._bootstrap>\\\", line 241, in _call_with_frames_removed\\n  File \\\"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/xformers/ops/__init__.py\\\", line 9, in <module>\\n    from .fmha import (\\n  File \\\"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/xformers/ops/fmha/__init__.py\\\", line 10, in <module>\\n    from . import (\\n  File \\\"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/xformers/ops/fmha/flash.py\\\", line 81, in <module>\\n    raise ImportError(\\nImportError: Requires Flash-Attention version >=2.7.1,<=2.8.0 but got 2.8.3.\\n\", \"torch_cuda_initialized_after_import\": false, \"blocked_process_executables\": [\"lscpu\"]}\n",
+      "stderr": "",
+      "result": {
+        "id": "xformers_ops",
+        "status": "failed",
+        "python": {
+          "executable": "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "prefix": "/home/fangjinjie/project/credit_assign/.venv-gpu",
+          "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+          "version": "3.11.16"
+        },
+        "cuda_visible_devices": "",
+        "module": "xformers.ops",
+        "error_type": "ImportError",
+        "error": "Requires Flash-Attention version >=2.7.1,<=2.8.0 but got 2.8.3.",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py\", line 205, in _execute_child_probe\n    module = importlib.import_module(definition[\"module\"])\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/importlib/__init__.py\", line 126, in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen importlib._bootstrap>\", line 1204, in _gcd_import\n  File \"<frozen importlib._bootstrap>\", line 1176, in _find_and_load\n  File \"<frozen importlib._bootstrap>\", line 1147, in _find_and_load_unlocked\n  File \"<frozen importlib._bootstrap>\", line 690, in _load_unlocked\n  File \"<frozen importlib._bootstrap_external>\", line 940, in exec_module\n  File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n  File \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/xformers/ops/__init__.py\", line 9, in <module>\n    from .fmha import (\n  File \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/xformers/ops/fmha/__init__.py\", line 10, in <module>\n    from . import (\n  File \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/xformers/ops/fmha/flash.py\", line 81, in <module>\n    raise ImportError(\nImportError: Requires Flash-Attention version >=2.7.1,<=2.8.0 but got 2.8.3.\n",
+        "torch_cuda_initialized_after_import": false,
+        "blocked_process_executables": [
+          "lscpu"
+        ]
+      },
+      "elapsed_seconds": 8.272
+    },
+    "torch_fsdp2": {
+      "id": "torch_fsdp2",
+      "argv": [
+        "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+        "-I",
+        "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+        "--child",
+        "{\"kind\": \"import\", \"id\": \"torch_fsdp2\", \"module\": \"torch.distributed.fsdp\", \"attributes\": [\"fully_shard\", \"FSDPModule\", \"MixedPrecisionPolicy\", \"CPUOffloadPolicy\"]}"
+      ],
+      "timeout_seconds": 120.0,
+      "status": "passed",
+      "returncode": 0,
+      "stdout": "PROCURE_RL_ENV_PROBE_RESULT={\"id\": \"torch_fsdp2\", \"status\": \"passed\", \"python\": {\"executable\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python\", \"prefix\": \"/home/fangjinjie/project/credit_assign/.venv-gpu\", \"base_prefix\": \"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu\", \"version\": \"3.11.16\"}, \"cuda_visible_devices\": \"\", \"module\": \"torch.distributed.fsdp\", \"module_file\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/torch/distributed/fsdp/__init__.py\", \"attributes\": {\"fully_shard\": \"present_only_not_executed\", \"FSDPModule\": \"present_only_not_executed\", \"MixedPrecisionPolicy\": \"present_only_not_executed\", \"CPUOffloadPolicy\": \"present_only_not_executed\"}, \"torch_cuda_initialized_after_import\": false, \"blocked_process_executables\": []}\n",
+      "stderr": "",
+      "result": {
+        "id": "torch_fsdp2",
+        "status": "passed",
+        "python": {
+          "executable": "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "prefix": "/home/fangjinjie/project/credit_assign/.venv-gpu",
+          "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+          "version": "3.11.16"
+        },
+        "cuda_visible_devices": "",
+        "module": "torch.distributed.fsdp",
+        "module_file": "/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/torch/distributed/fsdp/__init__.py",
+        "attributes": {
+          "fully_shard": "present_only_not_executed",
+          "FSDPModule": "present_only_not_executed",
+          "MixedPrecisionPolicy": "present_only_not_executed",
+          "CPUOffloadPolicy": "present_only_not_executed"
+        },
+        "torch_cuda_initialized_after_import": false,
+        "blocked_process_executables": []
+      },
+      "elapsed_seconds": 6.229
+    },
+    "transformers": {
+      "id": "transformers",
+      "argv": [
+        "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+        "-I",
+        "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+        "--child",
+        "{\"kind\": \"import\", \"id\": \"transformers\", \"module\": \"transformers\", \"attributes\": [\"AutoTokenizer\", \"AutoModelForCausalLM\"]}"
+      ],
+      "timeout_seconds": 120.0,
+      "status": "passed",
+      "returncode": 0,
+      "stdout": "PROCURE_RL_ENV_PROBE_RESULT={\"id\": \"transformers\", \"status\": \"passed\", \"python\": {\"executable\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python\", \"prefix\": \"/home/fangjinjie/project/credit_assign/.venv-gpu\", \"base_prefix\": \"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu\", \"version\": \"3.11.16\"}, \"cuda_visible_devices\": \"\", \"module\": \"transformers\", \"module_file\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/transformers/__init__.py\", \"attributes\": {\"AutoTokenizer\": \"present_only_not_executed\", \"AutoModelForCausalLM\": \"present_only_not_executed\"}, \"torch_cuda_initialized_after_import\": false, \"blocked_process_executables\": []}\n",
+      "stderr": "",
+      "result": {
+        "id": "transformers",
+        "status": "passed",
+        "python": {
+          "executable": "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "prefix": "/home/fangjinjie/project/credit_assign/.venv-gpu",
+          "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+          "version": "3.11.16"
+        },
+        "cuda_visible_devices": "",
+        "module": "transformers",
+        "module_file": "/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/transformers/__init__.py",
+        "attributes": {
+          "AutoTokenizer": "present_only_not_executed",
+          "AutoModelForCausalLM": "present_only_not_executed"
+        },
+        "torch_cuda_initialized_after_import": false,
+        "blocked_process_executables": []
+      },
+      "elapsed_seconds": 7.806
+    },
+    "qwen3_config": {
+      "id": "qwen3_config",
+      "argv": [
+        "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+        "-I",
+        "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+        "--child",
+        "{\"kind\": \"import\", \"id\": \"qwen3_config\", \"module\": \"transformers.models.qwen3.configuration_qwen3\", \"attributes\": [\"Qwen3Config\"]}"
+      ],
+      "timeout_seconds": 120.0,
+      "status": "passed",
+      "returncode": 0,
+      "stdout": "PROCURE_RL_ENV_PROBE_RESULT={\"id\": \"qwen3_config\", \"status\": \"passed\", \"python\": {\"executable\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python\", \"prefix\": \"/home/fangjinjie/project/credit_assign/.venv-gpu\", \"base_prefix\": \"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu\", \"version\": \"3.11.16\"}, \"cuda_visible_devices\": \"\", \"module\": \"transformers.models.qwen3.configuration_qwen3\", \"module_file\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/transformers/models/qwen3/configuration_qwen3.py\", \"attributes\": {\"Qwen3Config\": \"present_only_not_executed\"}, \"torch_cuda_initialized_after_import\": false, \"blocked_process_executables\": []}\n",
+      "stderr": "",
+      "result": {
+        "id": "qwen3_config",
+        "status": "passed",
+        "python": {
+          "executable": "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "prefix": "/home/fangjinjie/project/credit_assign/.venv-gpu",
+          "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+          "version": "3.11.16"
+        },
+        "cuda_visible_devices": "",
+        "module": "transformers.models.qwen3.configuration_qwen3",
+        "module_file": "/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/transformers/models/qwen3/configuration_qwen3.py",
+        "attributes": {
+          "Qwen3Config": "present_only_not_executed"
+        },
+        "torch_cuda_initialized_after_import": false,
+        "blocked_process_executables": []
+      },
+      "elapsed_seconds": 5.545
+    },
+    "qwen3_model": {
+      "id": "qwen3_model",
+      "argv": [
+        "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+        "-I",
+        "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+        "--child",
+        "{\"kind\": \"import\", \"id\": \"qwen3_model\", \"module\": \"transformers.models.qwen3.modeling_qwen3\", \"attributes\": [\"Qwen3ForCausalLM\"]}"
+      ],
+      "timeout_seconds": 120.0,
+      "status": "passed",
+      "returncode": 0,
+      "stdout": "PROCURE_RL_ENV_PROBE_RESULT={\"id\": \"qwen3_model\", \"status\": \"passed\", \"python\": {\"executable\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python\", \"prefix\": \"/home/fangjinjie/project/credit_assign/.venv-gpu\", \"base_prefix\": \"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu\", \"version\": \"3.11.16\"}, \"cuda_visible_devices\": \"\", \"module\": \"transformers.models.qwen3.modeling_qwen3\", \"module_file\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/transformers/models/qwen3/modeling_qwen3.py\", \"attributes\": {\"Qwen3ForCausalLM\": \"present_only_not_executed\"}, \"torch_cuda_initialized_after_import\": false, \"blocked_process_executables\": [\"lscpu\"]}\n",
+      "stderr": "",
+      "result": {
+        "id": "qwen3_model",
+        "status": "passed",
+        "python": {
+          "executable": "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "prefix": "/home/fangjinjie/project/credit_assign/.venv-gpu",
+          "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+          "version": "3.11.16"
+        },
+        "cuda_visible_devices": "",
+        "module": "transformers.models.qwen3.modeling_qwen3",
+        "module_file": "/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/transformers/models/qwen3/modeling_qwen3.py",
+        "attributes": {
+          "Qwen3ForCausalLM": "present_only_not_executed"
+        },
+        "torch_cuda_initialized_after_import": false,
+        "blocked_process_executables": [
+          "lscpu"
+        ]
+      },
+      "elapsed_seconds": 9.826
+    },
+    "peft": {
+      "id": "peft",
+      "argv": [
+        "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+        "-I",
+        "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+        "--child",
+        "{\"kind\": \"import\", \"id\": \"peft\", \"module\": \"peft\", \"attributes\": [\"LoraConfig\", \"get_peft_model\"]}"
+      ],
+      "timeout_seconds": 120.0,
+      "status": "passed",
+      "returncode": 0,
+      "stdout": "PROCURE_RL_ENV_PROBE_RESULT={\"id\": \"peft\", \"status\": \"passed\", \"python\": {\"executable\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python\", \"prefix\": \"/home/fangjinjie/project/credit_assign/.venv-gpu\", \"base_prefix\": \"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu\", \"version\": \"3.11.16\"}, \"cuda_visible_devices\": \"\", \"module\": \"peft\", \"module_file\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/peft/__init__.py\", \"attributes\": {\"LoraConfig\": \"present_only_not_executed\", \"get_peft_model\": \"present_only_not_executed\"}, \"torch_cuda_initialized_after_import\": false, \"blocked_process_executables\": [\"lscpu\"]}\n",
+      "stderr": "",
+      "result": {
+        "id": "peft",
+        "status": "passed",
+        "python": {
+          "executable": "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "prefix": "/home/fangjinjie/project/credit_assign/.venv-gpu",
+          "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+          "version": "3.11.16"
+        },
+        "cuda_visible_devices": "",
+        "module": "peft",
+        "module_file": "/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/peft/__init__.py",
+        "attributes": {
+          "LoraConfig": "present_only_not_executed",
+          "get_peft_model": "present_only_not_executed"
+        },
+        "torch_cuda_initialized_after_import": false,
+        "blocked_process_executables": [
+          "lscpu"
+        ]
+      },
+      "elapsed_seconds": 11.223
+    },
+    "accelerate": {
+      "id": "accelerate",
+      "argv": [
+        "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+        "-I",
+        "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+        "--child",
+        "{\"kind\": \"import\", \"id\": \"accelerate\", \"module\": \"accelerate\", \"attributes\": [\"Accelerator\"]}"
+      ],
+      "timeout_seconds": 120.0,
+      "status": "passed",
+      "returncode": 0,
+      "stdout": "PROCURE_RL_ENV_PROBE_RESULT={\"id\": \"accelerate\", \"status\": \"passed\", \"python\": {\"executable\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python\", \"prefix\": \"/home/fangjinjie/project/credit_assign/.venv-gpu\", \"base_prefix\": \"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu\", \"version\": \"3.11.16\"}, \"cuda_visible_devices\": \"\", \"module\": \"accelerate\", \"module_file\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/accelerate/__init__.py\", \"attributes\": {\"Accelerator\": \"present_only_not_executed\"}, \"torch_cuda_initialized_after_import\": false, \"blocked_process_executables\": []}\n",
+      "stderr": "",
+      "result": {
+        "id": "accelerate",
+        "status": "passed",
+        "python": {
+          "executable": "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "prefix": "/home/fangjinjie/project/credit_assign/.venv-gpu",
+          "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+          "version": "3.11.16"
+        },
+        "cuda_visible_devices": "",
+        "module": "accelerate",
+        "module_file": "/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/accelerate/__init__.py",
+        "attributes": {
+          "Accelerator": "present_only_not_executed"
+        },
+        "torch_cuda_initialized_after_import": false,
+        "blocked_process_executables": []
+      },
+      "elapsed_seconds": 4.066
+    },
+    "torchdata": {
+      "id": "torchdata",
+      "argv": [
+        "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+        "-I",
+        "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+        "--child",
+        "{\"kind\": \"import\", \"id\": \"torchdata\", \"module\": \"torchdata.stateful_dataloader\", \"attributes\": [\"StatefulDataLoader\"]}"
+      ],
+      "timeout_seconds": 120.0,
+      "status": "passed",
+      "returncode": 0,
+      "stdout": "PROCURE_RL_ENV_PROBE_RESULT={\"id\": \"torchdata\", \"status\": \"passed\", \"python\": {\"executable\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python\", \"prefix\": \"/home/fangjinjie/project/credit_assign/.venv-gpu\", \"base_prefix\": \"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu\", \"version\": \"3.11.16\"}, \"cuda_visible_devices\": \"\", \"module\": \"torchdata.stateful_dataloader\", \"module_file\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/torchdata/stateful_dataloader/__init__.py\", \"attributes\": {\"StatefulDataLoader\": \"present_only_not_executed\"}, \"torch_cuda_initialized_after_import\": false, \"blocked_process_executables\": []}\n",
+      "stderr": "",
+      "result": {
+        "id": "torchdata",
+        "status": "passed",
+        "python": {
+          "executable": "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "prefix": "/home/fangjinjie/project/credit_assign/.venv-gpu",
+          "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+          "version": "3.11.16"
+        },
+        "cuda_visible_devices": "",
+        "module": "torchdata.stateful_dataloader",
+        "module_file": "/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/torchdata/stateful_dataloader/__init__.py",
+        "attributes": {
+          "StatefulDataLoader": "present_only_not_executed"
+        },
+        "torch_cuda_initialized_after_import": false,
+        "blocked_process_executables": []
+      },
+      "elapsed_seconds": 3.563
+    },
+    "ray": {
+      "id": "ray",
+      "argv": [
+        "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+        "-I",
+        "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+        "--child",
+        "{\"kind\": \"import\", \"id\": \"ray\", \"module\": \"ray\", \"attributes\": [\"init\", \"remote\"]}"
+      ],
+      "timeout_seconds": 120.0,
+      "status": "passed",
+      "returncode": 0,
+      "stdout": "PROCURE_RL_ENV_PROBE_RESULT={\"id\": \"ray\", \"status\": \"passed\", \"python\": {\"executable\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python\", \"prefix\": \"/home/fangjinjie/project/credit_assign/.venv-gpu\", \"base_prefix\": \"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu\", \"version\": \"3.11.16\"}, \"cuda_visible_devices\": \"\", \"module\": \"ray\", \"module_file\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/ray/__init__.py\", \"attributes\": {\"init\": \"present_only_not_executed\", \"remote\": \"present_only_not_executed\"}, \"blocked_process_executables\": []}\n",
+      "stderr": "",
+      "result": {
+        "id": "ray",
+        "status": "passed",
+        "python": {
+          "executable": "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "prefix": "/home/fangjinjie/project/credit_assign/.venv-gpu",
+          "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+          "version": "3.11.16"
+        },
+        "cuda_visible_devices": "",
+        "module": "ray",
+        "module_file": "/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/ray/__init__.py",
+        "attributes": {
+          "init": "present_only_not_executed",
+          "remote": "present_only_not_executed"
+        },
+        "blocked_process_executables": []
+      },
+      "elapsed_seconds": 0.832
+    },
+    "tensordict": {
+      "id": "tensordict",
+      "argv": [
+        "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+        "-I",
+        "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+        "--child",
+        "{\"kind\": \"import\", \"id\": \"tensordict\", \"module\": \"tensordict\", \"attributes\": [\"TensorDict\"]}"
+      ],
+      "timeout_seconds": 120.0,
+      "status": "passed",
+      "returncode": 0,
+      "stdout": "PROCURE_RL_ENV_PROBE_RESULT={\"id\": \"tensordict\", \"status\": \"passed\", \"python\": {\"executable\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python\", \"prefix\": \"/home/fangjinjie/project/credit_assign/.venv-gpu\", \"base_prefix\": \"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu\", \"version\": \"3.11.16\"}, \"cuda_visible_devices\": \"\", \"module\": \"tensordict\", \"module_file\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/tensordict/__init__.py\", \"attributes\": {\"TensorDict\": \"present_only_not_executed\"}, \"torch_cuda_initialized_after_import\": false, \"blocked_process_executables\": []}\n",
+      "stderr": "",
+      "result": {
+        "id": "tensordict",
+        "status": "passed",
+        "python": {
+          "executable": "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "prefix": "/home/fangjinjie/project/credit_assign/.venv-gpu",
+          "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+          "version": "3.11.16"
+        },
+        "cuda_visible_devices": "",
+        "module": "tensordict",
+        "module_file": "/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/tensordict/__init__.py",
+        "attributes": {
+          "TensorDict": "present_only_not_executed"
+        },
+        "torch_cuda_initialized_after_import": false,
+        "blocked_process_executables": []
+      },
+      "elapsed_seconds": 6.414
+    },
+    "vllm": {
+      "id": "vllm",
+      "argv": [
+        "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+        "-I",
+        "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+        "--child",
+        "{\"kind\": \"import\", \"id\": \"vllm\", \"module\": \"vllm\", \"attributes\": [\"LLM\", \"SamplingParams\"]}"
+      ],
+      "timeout_seconds": 120.0,
+      "status": "passed",
+      "returncode": 0,
+      "stdout": "INFO 10-22 02:32:48 [__init__.py:239] No platform detected, vLLM is running on UnspecifiedPlatform\nPROCURE_RL_ENV_PROBE_RESULT={\"id\": \"vllm\", \"status\": \"passed\", \"python\": {\"executable\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python\", \"prefix\": \"/home/fangjinjie/project/credit_assign/.venv-gpu\", \"base_prefix\": \"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu\", \"version\": \"3.11.16\"}, \"cuda_visible_devices\": \"\", \"module\": \"vllm\", \"module_file\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/vllm/__init__.py\", \"attributes\": {\"LLM\": \"present_only_not_executed\", \"SamplingParams\": \"present_only_not_executed\"}, \"torch_cuda_initialized_after_import\": false, \"blocked_process_executables\": [\"lscpu\", \"file\", \"uname\"]}\n",
+      "stderr": "",
+      "result": {
+        "id": "vllm",
+        "status": "passed",
+        "python": {
+          "executable": "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "prefix": "/home/fangjinjie/project/credit_assign/.venv-gpu",
+          "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+          "version": "3.11.16"
+        },
+        "cuda_visible_devices": "",
+        "module": "vllm",
+        "module_file": "/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/vllm/__init__.py",
+        "attributes": {
+          "LLM": "present_only_not_executed",
+          "SamplingParams": "present_only_not_executed"
+        },
+        "torch_cuda_initialized_after_import": false,
+        "blocked_process_executables": [
+          "lscpu",
+          "file",
+          "uname"
+        ]
+      },
+      "elapsed_seconds": 14.87
+    },
+    "verl": {
+      "id": "verl",
+      "argv": [
+        "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+        "-I",
+        "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+        "--child",
+        "{\"kind\": \"import\", \"id\": \"verl\", \"module\": \"verl\", \"attributes\": [\"DataProto\"]}"
+      ],
+      "timeout_seconds": 120.0,
+      "status": "passed",
+      "returncode": 0,
+      "stdout": "PROCURE_RL_ENV_PROBE_RESULT={\"id\": \"verl\", \"status\": \"passed\", \"python\": {\"executable\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python\", \"prefix\": \"/home/fangjinjie/project/credit_assign/.venv-gpu\", \"base_prefix\": \"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu\", \"version\": \"3.11.16\"}, \"cuda_visible_devices\": \"\", \"module\": \"verl\", \"module_file\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/verl/__init__.py\", \"attributes\": {\"DataProto\": \"present_only_not_executed\"}, \"torch_cuda_initialized_after_import\": false, \"blocked_process_executables\": []}\n",
+      "stderr": "",
+      "result": {
+        "id": "verl",
+        "status": "passed",
+        "python": {
+          "executable": "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "prefix": "/home/fangjinjie/project/credit_assign/.venv-gpu",
+          "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+          "version": "3.11.16"
+        },
+        "cuda_visible_devices": "",
+        "module": "verl",
+        "module_file": "/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/verl/__init__.py",
+        "attributes": {
+          "DataProto": "present_only_not_executed"
+        },
+        "torch_cuda_initialized_after_import": false,
+        "blocked_process_executables": []
+      },
+      "elapsed_seconds": 8.774
+    },
+    "verl_main_ppo": {
+      "id": "verl_main_ppo",
+      "argv": [
+        "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+        "-I",
+        "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+        "--child",
+        "{\"kind\": \"import\", \"id\": \"verl_main_ppo\", \"module\": \"verl.trainer.main_ppo\", \"attributes\": [\"main\", \"run_ppo\"]}"
+      ],
+      "timeout_seconds": 120.0,
+      "status": "passed",
+      "returncode": 0,
+      "stdout": "PROCURE_RL_ENV_PROBE_RESULT={\"id\": \"verl_main_ppo\", \"status\": \"passed\", \"python\": {\"executable\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python\", \"prefix\": \"/home/fangjinjie/project/credit_assign/.venv-gpu\", \"base_prefix\": \"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu\", \"version\": \"3.11.16\"}, \"cuda_visible_devices\": \"\", \"module\": \"verl.trainer.main_ppo\", \"module_file\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/verl/trainer/main_ppo.py\", \"attributes\": {\"main\": \"present_only_not_executed\", \"run_ppo\": \"present_only_not_executed\"}, \"torch_cuda_initialized_after_import\": false, \"blocked_process_executables\": [\"lscpu\"]}\n",
+      "stderr": "",
+      "result": {
+        "id": "verl_main_ppo",
+        "status": "passed",
+        "python": {
+          "executable": "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "prefix": "/home/fangjinjie/project/credit_assign/.venv-gpu",
+          "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+          "version": "3.11.16"
+        },
+        "cuda_visible_devices": "",
+        "module": "verl.trainer.main_ppo",
+        "module_file": "/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/verl/trainer/main_ppo.py",
+        "attributes": {
+          "main": "present_only_not_executed",
+          "run_ppo": "present_only_not_executed"
+        },
+        "torch_cuda_initialized_after_import": false,
+        "blocked_process_executables": [
+          "lscpu"
+        ]
+      },
+      "elapsed_seconds": 16.873
+    },
+    "verl_core_algos": {
+      "id": "verl_core_algos",
+      "argv": [
+        "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+        "-I",
+        "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+        "--child",
+        "{\"kind\": \"import\", \"id\": \"verl_core_algos\", \"module\": \"verl.trainer.ppo.core_algos\", \"attributes\": [\"register_adv_est\", \"compute_grpo_outcome_advantage\"]}"
+      ],
+      "timeout_seconds": 120.0,
+      "status": "passed",
+      "returncode": 0,
+      "stdout": "PROCURE_RL_ENV_PROBE_RESULT={\"id\": \"verl_core_algos\", \"status\": \"passed\", \"python\": {\"executable\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python\", \"prefix\": \"/home/fangjinjie/project/credit_assign/.venv-gpu\", \"base_prefix\": \"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu\", \"version\": \"3.11.16\"}, \"cuda_visible_devices\": \"\", \"module\": \"verl.trainer.ppo.core_algos\", \"module_file\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/verl/trainer/ppo/core_algos.py\", \"attributes\": {\"register_adv_est\": \"present_only_not_executed\", \"compute_grpo_outcome_advantage\": \"present_only_not_executed\"}, \"torch_cuda_initialized_after_import\": false, \"blocked_process_executables\": [\"lscpu\"]}\n",
+      "stderr": "",
+      "result": {
+        "id": "verl_core_algos",
+        "status": "passed",
+        "python": {
+          "executable": "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "prefix": "/home/fangjinjie/project/credit_assign/.venv-gpu",
+          "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+          "version": "3.11.16"
+        },
+        "cuda_visible_devices": "",
+        "module": "verl.trainer.ppo.core_algos",
+        "module_file": "/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/verl/trainer/ppo/core_algos.py",
+        "attributes": {
+          "register_adv_est": "present_only_not_executed",
+          "compute_grpo_outcome_advantage": "present_only_not_executed"
+        },
+        "torch_cuda_initialized_after_import": false,
+        "blocked_process_executables": [
+          "lscpu"
+        ]
+      },
+      "elapsed_seconds": 10.662
+    },
+    "verl_fsdp_utils": {
+      "id": "verl_fsdp_utils",
+      "argv": [
+        "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+        "-I",
+        "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+        "--child",
+        "{\"kind\": \"import\", \"id\": \"verl_fsdp_utils\", \"module\": \"verl.utils.fsdp_utils\", \"attributes\": [\"apply_fsdp2\", \"collect_lora_params\"]}"
+      ],
+      "timeout_seconds": 120.0,
+      "status": "passed",
+      "returncode": 0,
+      "stdout": "PROCURE_RL_ENV_PROBE_RESULT={\"id\": \"verl_fsdp_utils\", \"status\": \"passed\", \"python\": {\"executable\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python\", \"prefix\": \"/home/fangjinjie/project/credit_assign/.venv-gpu\", \"base_prefix\": \"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu\", \"version\": \"3.11.16\"}, \"cuda_visible_devices\": \"\", \"module\": \"verl.utils.fsdp_utils\", \"module_file\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/verl/utils/fsdp_utils.py\", \"attributes\": {\"apply_fsdp2\": \"present_only_not_executed\", \"collect_lora_params\": \"present_only_not_executed\"}, \"torch_cuda_initialized_after_import\": false, \"blocked_process_executables\": [\"lscpu\"]}\n",
+      "stderr": "",
+      "result": {
+        "id": "verl_fsdp_utils",
+        "status": "passed",
+        "python": {
+          "executable": "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "prefix": "/home/fangjinjie/project/credit_assign/.venv-gpu",
+          "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+          "version": "3.11.16"
+        },
+        "cuda_visible_devices": "",
+        "module": "verl.utils.fsdp_utils",
+        "module_file": "/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/verl/utils/fsdp_utils.py",
+        "attributes": {
+          "apply_fsdp2": "present_only_not_executed",
+          "collect_lora_params": "present_only_not_executed"
+        },
+        "torch_cuda_initialized_after_import": false,
+        "blocked_process_executables": [
+          "lscpu"
+        ]
+      },
+      "elapsed_seconds": 10.282
+    },
+    "verl_fsdp_worker": {
+      "id": "verl_fsdp_worker",
+      "argv": [
+        "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+        "-I",
+        "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+        "--child",
+        "{\"kind\": \"import\", \"id\": \"verl_fsdp_worker\", \"module\": \"verl.workers.fsdp_workers\", \"attributes\": [\"ActorRolloutRefWorker\", \"AsyncActorRolloutRefWorker\"]}"
+      ],
+      "timeout_seconds": 120.0,
+      "status": "passed",
+      "returncode": 0,
+      "stdout": "PROCURE_RL_ENV_PROBE_RESULT={\"id\": \"verl_fsdp_worker\", \"status\": \"passed\", \"python\": {\"executable\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python\", \"prefix\": \"/home/fangjinjie/project/credit_assign/.venv-gpu\", \"base_prefix\": \"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu\", \"version\": \"3.11.16\"}, \"cuda_visible_devices\": \"\", \"module\": \"verl.workers.fsdp_workers\", \"module_file\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/verl/workers/fsdp_workers.py\", \"attributes\": {\"ActorRolloutRefWorker\": \"present_only_not_executed\", \"AsyncActorRolloutRefWorker\": \"present_only_not_executed\"}, \"torch_cuda_initialized_after_import\": false, \"blocked_process_executables\": [\"lscpu\"]}\n",
+      "stderr": "",
+      "result": {
+        "id": "verl_fsdp_worker",
+        "status": "passed",
+        "python": {
+          "executable": "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "prefix": "/home/fangjinjie/project/credit_assign/.venv-gpu",
+          "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+          "version": "3.11.16"
+        },
+        "cuda_visible_devices": "",
+        "module": "verl.workers.fsdp_workers",
+        "module_file": "/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/verl/workers/fsdp_workers.py",
+        "attributes": {
+          "ActorRolloutRefWorker": "present_only_not_executed",
+          "AsyncActorRolloutRefWorker": "present_only_not_executed"
+        },
+        "torch_cuda_initialized_after_import": false,
+        "blocked_process_executables": [
+          "lscpu"
+        ]
+      },
+      "elapsed_seconds": 10.778
+    },
+    "verl_vllm_rollout": {
+      "id": "verl_vllm_rollout",
+      "argv": [
+        "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+        "-I",
+        "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+        "--child",
+        "{\"kind\": \"import\", \"id\": \"verl_vllm_rollout\", \"module\": \"verl.workers.rollout.vllm_rollout.vllm_rollout_spmd\", \"attributes\": [\"vLLMRollout\", \"vLLMAsyncRollout\"]}"
+      ],
+      "timeout_seconds": 120.0,
+      "status": "passed",
+      "returncode": 0,
+      "stdout": "INFO 10-22 02:34:00 [__init__.py:239] No platform detected, vLLM is running on UnspecifiedPlatform\nPROCURE_RL_ENV_PROBE_RESULT={\"id\": \"verl_vllm_rollout\", \"status\": \"passed\", \"python\": {\"executable\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python\", \"prefix\": \"/home/fangjinjie/project/credit_assign/.venv-gpu\", \"base_prefix\": \"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu\", \"version\": \"3.11.16\"}, \"cuda_visible_devices\": \"\", \"module\": \"verl.workers.rollout.vllm_rollout.vllm_rollout_spmd\", \"module_file\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/verl/workers/rollout/vllm_rollout/vllm_rollout_spmd.py\", \"attributes\": {\"vLLMRollout\": \"present_only_not_executed\", \"vLLMAsyncRollout\": \"present_only_not_executed\"}, \"torch_cuda_initialized_after_import\": false, \"blocked_process_executables\": [\"lscpu\", \"file\", \"uname\"]}\n",
+      "stderr": "",
+      "result": {
+        "id": "verl_vllm_rollout",
+        "status": "passed",
+        "python": {
+          "executable": "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "prefix": "/home/fangjinjie/project/credit_assign/.venv-gpu",
+          "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+          "version": "3.11.16"
+        },
+        "cuda_visible_devices": "",
+        "module": "verl.workers.rollout.vllm_rollout.vllm_rollout_spmd",
+        "module_file": "/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/verl/workers/rollout/vllm_rollout/vllm_rollout_spmd.py",
+        "attributes": {
+          "vLLMRollout": "present_only_not_executed",
+          "vLLMAsyncRollout": "present_only_not_executed"
+        },
+        "torch_cuda_initialized_after_import": false,
+        "blocked_process_executables": [
+          "lscpu",
+          "file",
+          "uname"
+        ]
+      },
+      "elapsed_seconds": 16.97
+    },
+    "verl_vllm_async_server": {
+      "id": "verl_vllm_async_server",
+      "argv": [
+        "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+        "-I",
+        "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+        "--child",
+        "{\"kind\": \"import\", \"id\": \"verl_vllm_async_server\", \"module\": \"verl.workers.rollout.vllm_rollout.vllm_async_server\", \"attributes\": [\"vLLMAsyncServer\"]}"
+      ],
+      "timeout_seconds": 120.0,
+      "status": "failed",
+      "returncode": 1,
+      "stdout": "INFO 10-22 02:34:17 [__init__.py:239] No platform detected, vLLM is running on UnspecifiedPlatform\nPROCURE_RL_ENV_PROBE_RESULT={\"id\": \"verl_vllm_async_server\", \"status\": \"failed\", \"python\": {\"executable\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python\", \"prefix\": \"/home/fangjinjie/project/credit_assign/.venv-gpu\", \"base_prefix\": \"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu\", \"version\": \"3.11.16\"}, \"cuda_visible_devices\": \"\", \"module\": \"verl.workers.rollout.vllm_rollout.vllm_async_server\", \"module_file\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/verl/workers/rollout/vllm_rollout/vllm_async_server.py\", \"error_type\": \"AttributeError\", \"error\": \"module 'verl.workers.rollout.vllm_rollout.vllm_async_server' has no attribute 'vLLMAsyncServer'\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py\\\", line 209, in _execute_child_probe\\n    getattr(module, name)\\nAttributeError: module 'verl.workers.rollout.vllm_rollout.vllm_async_server' has no attribute 'vLLMAsyncServer'\\n\", \"torch_cuda_initialized_after_import\": false, \"blocked_process_executables\": [\"lscpu\", \"file\", \"uname\"]}\n",
+      "stderr": "",
+      "result": {
+        "id": "verl_vllm_async_server",
+        "status": "failed",
+        "python": {
+          "executable": "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "prefix": "/home/fangjinjie/project/credit_assign/.venv-gpu",
+          "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+          "version": "3.11.16"
+        },
+        "cuda_visible_devices": "",
+        "module": "verl.workers.rollout.vllm_rollout.vllm_async_server",
+        "module_file": "/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/verl/workers/rollout/vllm_rollout/vllm_async_server.py",
+        "error_type": "AttributeError",
+        "error": "module 'verl.workers.rollout.vllm_rollout.vllm_async_server' has no attribute 'vLLMAsyncServer'",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py\", line 209, in _execute_child_probe\n    getattr(module, name)\nAttributeError: module 'verl.workers.rollout.vllm_rollout.vllm_async_server' has no attribute 'vLLMAsyncServer'\n",
+        "torch_cuda_initialized_after_import": false,
+        "blocked_process_executables": [
+          "lscpu",
+          "file",
+          "uname"
+        ]
+      },
+      "elapsed_seconds": 18.763
+    },
+    "verl_agent_loop": {
+      "id": "verl_agent_loop",
+      "argv": [
+        "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+        "-I",
+        "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+        "--child",
+        "{\"kind\": \"import\", \"id\": \"verl_agent_loop\", \"module\": \"verl.experimental.agent_loop.agent_loop\", \"attributes\": [\"AgentLoopBase\", \"AgentLoopOutput\", \"AgentLoopManager\"]}"
+      ],
+      "timeout_seconds": 120.0,
+      "status": "passed",
+      "returncode": 0,
+      "stdout": "PROCURE_RL_ENV_PROBE_RESULT={\"id\": \"verl_agent_loop\", \"status\": \"passed\", \"python\": {\"executable\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python\", \"prefix\": \"/home/fangjinjie/project/credit_assign/.venv-gpu\", \"base_prefix\": \"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu\", \"version\": \"3.11.16\"}, \"cuda_visible_devices\": \"\", \"module\": \"verl.experimental.agent_loop.agent_loop\", \"module_file\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/verl/experimental/agent_loop/agent_loop.py\", \"attributes\": {\"AgentLoopBase\": \"present_only_not_executed\", \"AgentLoopOutput\": \"present_only_not_executed\", \"AgentLoopManager\": \"present_only_not_executed\"}, \"torch_cuda_initialized_after_import\": false, \"blocked_process_executables\": [\"lscpu\"]}\n",
+      "stderr": "",
+      "result": {
+        "id": "verl_agent_loop",
+        "status": "passed",
+        "python": {
+          "executable": "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "prefix": "/home/fangjinjie/project/credit_assign/.venv-gpu",
+          "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+          "version": "3.11.16"
+        },
+        "cuda_visible_devices": "",
+        "module": "verl.experimental.agent_loop.agent_loop",
+        "module_file": "/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/verl/experimental/agent_loop/agent_loop.py",
+        "attributes": {
+          "AgentLoopBase": "present_only_not_executed",
+          "AgentLoopOutput": "present_only_not_executed",
+          "AgentLoopManager": "present_only_not_executed"
+        },
+        "torch_cuda_initialized_after_import": false,
+        "blocked_process_executables": [
+          "lscpu"
+        ]
+      },
+      "elapsed_seconds": 13.113
+    },
+    "verl_tool_agent_loop": {
+      "id": "verl_tool_agent_loop",
+      "argv": [
+        "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+        "-I",
+        "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+        "--child",
+        "{\"kind\": \"import\", \"id\": \"verl_tool_agent_loop\", \"module\": \"verl.experimental.agent_loop.tool_agent_loop\", \"attributes\": [\"ToolAgentLoop\"]}"
+      ],
+      "timeout_seconds": 120.0,
+      "status": "passed",
+      "returncode": 0,
+      "stdout": "PROCURE_RL_ENV_PROBE_RESULT={\"id\": \"verl_tool_agent_loop\", \"status\": \"passed\", \"python\": {\"executable\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python\", \"prefix\": \"/home/fangjinjie/project/credit_assign/.venv-gpu\", \"base_prefix\": \"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu\", \"version\": \"3.11.16\"}, \"cuda_visible_devices\": \"\", \"module\": \"verl.experimental.agent_loop.tool_agent_loop\", \"module_file\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/verl/experimental/agent_loop/tool_agent_loop.py\", \"attributes\": {\"ToolAgentLoop\": \"present_only_not_executed\"}, \"torch_cuda_initialized_after_import\": false, \"blocked_process_executables\": [\"lscpu\"]}\n",
+      "stderr": "",
+      "result": {
+        "id": "verl_tool_agent_loop",
+        "status": "passed",
+        "python": {
+          "executable": "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+          "prefix": "/home/fangjinjie/project/credit_assign/.venv-gpu",
+          "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+          "version": "3.11.16"
+        },
+        "cuda_visible_devices": "",
+        "module": "verl.experimental.agent_loop.tool_agent_loop",
+        "module_file": "/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/verl/experimental/agent_loop/tool_agent_loop.py",
+        "attributes": {
+          "ToolAgentLoop": "present_only_not_executed"
+        },
+        "torch_cuda_initialized_after_import": false,
+        "blocked_process_executables": [
+          "lscpu"
+        ]
+      },
+      "elapsed_seconds": 12.468
+    }
+  },
+  "dependencies": {
+    "torch": {
+      "candidate_version": "2.7.1+cu126",
+      "status": "installed",
+      "installed_version": "2.7.1+cu126",
+      "version_comparison": "matches_metadata_only",
+      "direct_url": {
+        "url_omitted_to_protect_credentials": true
+      }
+    },
+    "torchvision": {
+      "candidate_version": "0.22.1+cu126",
+      "status": "installed",
+      "installed_version": "0.22.1+cu126",
+      "version_comparison": "matches_metadata_only",
+      "direct_url": {
+        "url_omitted_to_protect_credentials": true
+      }
+    },
+    "torchaudio": {
+      "candidate_version": "2.7.1+cu126",
+      "status": "installed",
+      "installed_version": "2.7.1+cu126",
+      "version_comparison": "matches_metadata_only",
+      "direct_url": {
+        "url_omitted_to_protect_credentials": true
+      }
+    },
+    "vllm": {
+      "candidate_version": "0.10.0+cu126",
+      "status": "installed",
+      "installed_version": "0.10.0+cu126",
+      "version_comparison": "matches_metadata_only",
+      "direct_url": {
+        "url_omitted_to_protect_credentials": true
+      }
+    },
+    "transformers": {
+      "candidate_version": "4.53.2",
+      "status": "installed",
+      "installed_version": "4.53.2",
+      "version_comparison": "matches_metadata_only"
+    },
+    "verl": {
+      "candidate_version": "0.6.1",
+      "status": "installed",
+      "installed_version": "0.6.1",
+      "version_comparison": "matches_metadata_only",
+      "direct_url": {
+        "url_omitted_to_protect_credentials": true,
+        "vcs_info": {
+          "vcs": "git",
+          "commit_id": "d62da4950573d7a4b7ef2362337952e7ab59e78d",
+          "requested_revision": "d62da4950573d7a4b7ef2362337952e7ab59e78d"
+        }
+      },
+      "candidate_commit": "d62da4950573d7a4b7ef2362337952e7ab59e78d",
+      "commit_comparison": "matches_commit_only"
+    },
+    "peft": {
+      "candidate_version": "0.16.0",
+      "status": "installed",
+      "installed_version": "0.16.0",
+      "version_comparison": "matches_metadata_only"
+    },
+    "accelerate": {
+      "candidate_version": "1.8.1",
+      "status": "installed",
+      "installed_version": "1.8.1",
+      "version_comparison": "matches_metadata_only"
+    },
+    "torchdata": {
+      "candidate_version": "0.11.0",
+      "status": "installed",
+      "installed_version": "0.11.0",
+      "version_comparison": "matches_metadata_only"
+    },
+    "xformers": {
+      "candidate_version": "0.0.31",
+      "status": "installed",
+      "installed_version": "0.0.31",
+      "version_comparison": "matches_metadata_only",
+      "direct_url": {
+        "url_omitted_to_protect_credentials": true
+      }
+    },
+    "ray": {
+      "candidate_version": null,
+      "status": "installed",
+      "installed_version": "2.59.0",
+      "version_comparison": "unconstrained"
+    },
+    "tensordict": {
+      "candidate_version": null,
+      "status": "installed",
+      "installed_version": "0.8.3",
+      "version_comparison": "unconstrained"
+    },
+    "flash-attn": {
+      "candidate_version": null,
+      "status": "installed",
+      "installed_version": "2.8.3",
+      "version_comparison": "unconstrained",
+      "direct_url": {
+        "url_omitted_to_protect_credentials": true
+      }
+    },
+    "nvidia-cuda-runtime-cu12": {
+      "candidate_version": null,
+      "status": "installed",
+      "installed_version": "12.6.77",
+      "version_comparison": "unconstrained"
+    },
+    "nvidia-nccl-cu12": {
+      "candidate_version": null,
+      "status": "installed",
+      "installed_version": "2.26.2",
+      "version_comparison": "unconstrained"
+    }
+  },
+  "validation": {
+    "metadata_and_cpu_imports": "failed",
+    "dependency_consistency": "not_checked_run_uv_pip_check_separately",
+    "candidate_stack_compatibility": "not_validated_by_imports",
+    "real_gpu_execution": "not_run",
+    "hardware_bf16": "not_run",
+    "p2p_transfer": "not_run",
+    "nccl_collective": "not_run",
+    "vllm_inference": "not_run",
+    "multi_turn_lora_sync": "not_run"
+  }
+}

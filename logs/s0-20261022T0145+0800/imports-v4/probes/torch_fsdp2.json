@@ -1,0 +1,37 @@
+{
+  "id": "torch_fsdp2",
+  "argv": [
+    "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+    "-I",
+    "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+    "--child",
+    "{\"kind\": \"import\", \"id\": \"torch_fsdp2\", \"module\": \"torch.distributed.fsdp\", \"attributes\": [\"fully_shard\", \"FSDPModule\", \"MixedPrecisionPolicy\", \"CPUOffloadPolicy\"]}"
+  ],
+  "timeout_seconds": 120.0,
+  "status": "passed",
+  "returncode": 0,
+  "stdout": "PROCURE_RL_ENV_PROBE_RESULT={\"id\": \"torch_fsdp2\", \"status\": \"passed\", \"python\": {\"executable\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python\", \"prefix\": \"/home/fangjinjie/project/credit_assign/.venv-gpu\", \"base_prefix\": \"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu\", \"version\": \"3.11.16\"}, \"cuda_visible_devices\": \"\", \"module\": \"torch.distributed.fsdp\", \"module_file\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/torch/distributed/fsdp/__init__.py\", \"attributes\": {\"fully_shard\": \"present_only_not_executed\", \"FSDPModule\": \"present_only_not_executed\", \"MixedPrecisionPolicy\": \"present_only_not_executed\", \"CPUOffloadPolicy\": \"present_only_not_executed\"}, \"torch_cuda_initialized_after_import\": false, \"blocked_process_executables\": []}\n",
+  "stderr": "",
+  "result": {
+    "id": "torch_fsdp2",
+    "status": "passed",
+    "python": {
+      "executable": "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+      "prefix": "/home/fangjinjie/project/credit_assign/.venv-gpu",
+      "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+      "version": "3.11.16"
+    },
+    "cuda_visible_devices": "",
+    "module": "torch.distributed.fsdp",
+    "module_file": "/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/torch/distributed/fsdp/__init__.py",
+    "attributes": {
+      "fully_shard": "present_only_not_executed",
+      "FSDPModule": "present_only_not_executed",
+      "MixedPrecisionPolicy": "present_only_not_executed",
+      "CPUOffloadPolicy": "present_only_not_executed"
+    },
+    "torch_cuda_initialized_after_import": false,
+    "blocked_process_executables": []
+  },
+  "elapsed_seconds": 6.229
+}

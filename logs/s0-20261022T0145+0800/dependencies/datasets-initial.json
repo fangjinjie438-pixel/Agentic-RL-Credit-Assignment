@@ -1,0 +1,8 @@
+{
+  "gpu_visible_devices": "",
+  "scope": "actual datasets import; no GPU",
+  "status": "failed",
+  "error_type": "ImportError",
+  "error": "pyarrow requires NumPy 2.0 or newer, found 1.26.4",
+  "traceback": "Traceback (most recent call last):\n  File \"<stdin>\", line 5, in <module>\n  File \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/datasets/__init__.py\", line 22, in <module>\n    from .arrow_dataset import Dataset\n  File \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/datasets/arrow_dataset.py\", line 59, in <module>\n    import pyarrow as pa\n  File \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/pyarrow/__init__.py\", line 59, in <module>\n    from pyarrow.lib import (BuildInfo, CppBuildInfo, RuntimeInfo, set_timezone_db_path,\n  File \"pyarrow/lib.pyx\", line 42, in init pyarrow.lib\nImportError: pyarrow requires NumPy 2.0 or newer, found 1.26.4\n"
+}

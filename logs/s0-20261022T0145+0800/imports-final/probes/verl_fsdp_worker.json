@@ -1,0 +1,37 @@
+{
+  "id": "verl_fsdp_worker",
+  "argv": [
+    "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+    "-I",
+    "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+    "--child",
+    "{\"kind\": \"import\", \"id\": \"verl_fsdp_worker\", \"module\": \"verl.workers.fsdp_workers\", \"attributes\": [\"ActorRolloutRefWorker\", \"AsyncActorRolloutRefWorker\"]}"
+  ],
+  "timeout_seconds": 120.0,
+  "status": "passed",
+  "returncode": 0,
+  "stdout": "PROCURE_RL_ENV_PROBE_RESULT={\"id\": \"verl_fsdp_worker\", \"status\": \"passed\", \"python\": {\"executable\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python\", \"prefix\": \"/home/fangjinjie/project/credit_assign/.venv-gpu\", \"base_prefix\": \"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu\", \"version\": \"3.11.16\"}, \"cuda_visible_devices\": \"\", \"module\": \"verl.workers.fsdp_workers\", \"module_file\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/verl/workers/fsdp_workers.py\", \"attributes\": {\"ActorRolloutRefWorker\": \"present_only_not_executed\", \"AsyncActorRolloutRefWorker\": \"present_only_not_executed\"}, \"torch_cuda_initialized_after_import\": false, \"blocked_process_executables\": [\"lscpu\"]}\n",
+  "stderr": "",
+  "result": {
+    "id": "verl_fsdp_worker",
+    "status": "passed",
+    "python": {
+      "executable": "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+      "prefix": "/home/fangjinjie/project/credit_assign/.venv-gpu",
+      "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+      "version": "3.11.16"
+    },
+    "cuda_visible_devices": "",
+    "module": "verl.workers.fsdp_workers",
+    "module_file": "/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/verl/workers/fsdp_workers.py",
+    "attributes": {
+      "ActorRolloutRefWorker": "present_only_not_executed",
+      "AsyncActorRolloutRefWorker": "present_only_not_executed"
+    },
+    "torch_cuda_initialized_after_import": false,
+    "blocked_process_executables": [
+      "lscpu"
+    ]
+  },
+  "elapsed_seconds": 11.064
+}

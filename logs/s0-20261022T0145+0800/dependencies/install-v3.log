@@ -1,0 +1,25 @@
+Using Python 3.11.16 environment at: .venv-gpu
+Resolved 202 packages in 2.13s
+Downloading pandas (12.5MiB)
+Downloading pyarrow (40.1MiB)
+ Downloaded pandas
+ Downloaded pyarrow
+Prepared 9 packages in 25.08s
+Uninstalled 7 packages in 72ms
+Installed 9 packages in 418ms
+ - datasets==2.14.4
+ + datasets==3.6.0
+ - dill==0.3.7
+ + dill==0.3.8
+ - fastapi==0.158.0
+ + fastapi==0.158.1
+ - fsspec==2026.9.0
+ + fsspec==2025.3.0
+ - multiprocess==0.70.15
+ + multiprocess==0.70.16
+ - pandas==3.0.6
+ + pandas==2.2.3
+ - pyarrow==26.0.0
+ + pyarrow==19.0.1
+ + pytz==2026.5
+ + tzdata==2026.5

@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "stage": "S0",
+  "status": "passed",
+  "allocation": {
+    "gpu_uuids": [
+      "GPU-4c457a8a-39a3-5346-1f3c-5993b3102d03"
+    ],
+    "source": "user confirmation in this conversation: physical GPU 7",
+    "status": "explicit_user_claim"
+  },
+  "execute": true,
+  "requested_probes": [
+    "attention"
+  ],
+  "model_path": null,
+  "model_revision": null,
+  "seed": 0,
+  "gpu_execution_attempted": true,
+  "gpu_compute_performed": true,
+  "gpu_validation": "passed",
+  "validation_level": "real_gpu_probe_subset",
+  "candidate_stack_compatibility": "not_established",
+  "training_lora_fsdp2_validation": "not_run",
+  "checks": {
+    "attention": {
+      "probe": "attention",
+      "argv": [
+        "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+        "-m",
+        "procure_rl.gpu_probe",
+        "--worker"
+      ],
+      "visible_gpu_uuids": [
+        "GPU-4c457a8a-39a3-5346-1f3c-5993b3102d03"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "timeout": false,
+      "gpu_compute_performed": true,
+      "stdout": "",
+      "stderr": "",
+      "worker": {
+        "status": "passed",
+        "gpu_compute_performed": true,
+        "evidence": {
+          "torch_version": "2.7.1+cu126",
+          "torch_cuda_runtime": "12.6",
+          "nccl_runtime_version": [
+            2,
+            26,
+            2
+          ],
+          "devices": [
+            {
+              "logical_index": 0,
+              "allocated_uuid": "GPU-4c457a8a-39a3-5346-1f3c-5993b3102d03",
+              "runtime_uuid": "4c457a8a-39a3-5346-1f3c-5993b3102d03",
+              "name": "NVIDIA RTX A6000",
+              "total_memory_bytes": 50928943104,
+              "compute_capability": [
+                8,
+                6
+              ]
+            }
+          ],
+          "flash_attn_version": "2.8.3",
+          "torch_cxx11_abi": true,
+          "logical_gpu": 0,
+          "shape_qkv": [
+            1,
+            16,
+            2,
+            64
+          ],
+          "dtype": "bfloat16",
+          "causal": true,
+          "dropout_p": 0.0,
+          "forward": "passed",
+          "backward_qkv": "passed",
+          "loss": 0.3579108715057373,
+          "peak_allocated_bytes": 101376,
+          "duration_seconds": 1.7847411409020424,
+          "scope": "tiny wheel kernel forward/backward only; not LoRA, FSDP2, multi-turn or training validation"
+        }
+      },
+      "duration_seconds": 6.539882
+    }
+  }
+}

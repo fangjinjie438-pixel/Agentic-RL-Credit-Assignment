@@ -1,0 +1,39 @@
+{
+  "id": "vllm",
+  "argv": [
+    "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+    "-I",
+    "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+    "--child",
+    "{\"kind\": \"import\", \"id\": \"vllm\", \"module\": \"vllm\", \"attributes\": [\"LLM\", \"SamplingParams\"]}"
+  ],
+  "timeout_seconds": 120.0,
+  "status": "passed",
+  "returncode": 0,
+  "stdout": "INFO 10-22 02:39:13 [__init__.py:239] No platform detected, vLLM is running on UnspecifiedPlatform\nPROCURE_RL_ENV_PROBE_RESULT={\"id\": \"vllm\", \"status\": \"passed\", \"python\": {\"executable\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python\", \"prefix\": \"/home/fangjinjie/project/credit_assign/.venv-gpu\", \"base_prefix\": \"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu\", \"version\": \"3.11.16\"}, \"cuda_visible_devices\": \"\", \"module\": \"vllm\", \"module_file\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/vllm/__init__.py\", \"attributes\": {\"LLM\": \"present_only_not_executed\", \"SamplingParams\": \"present_only_not_executed\"}, \"torch_cuda_initialized_after_import\": false, \"blocked_process_executables\": [\"lscpu\", \"file\", \"uname\"]}\n",
+  "stderr": "",
+  "result": {
+    "id": "vllm",
+    "status": "passed",
+    "python": {
+      "executable": "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+      "prefix": "/home/fangjinjie/project/credit_assign/.venv-gpu",
+      "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+      "version": "3.11.16"
+    },
+    "cuda_visible_devices": "",
+    "module": "vllm",
+    "module_file": "/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/vllm/__init__.py",
+    "attributes": {
+      "LLM": "present_only_not_executed",
+      "SamplingParams": "present_only_not_executed"
+    },
+    "torch_cuda_initialized_after_import": false,
+    "blocked_process_executables": [
+      "lscpu",
+      "file",
+      "uname"
+    ]
+  },
+  "elapsed_seconds": 11.719
+}

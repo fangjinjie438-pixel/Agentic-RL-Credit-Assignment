@@ -1,0 +1,9 @@
+{
+  "url": "https://github.com/Dao-AILab/flash-attention/releases/download/v2.8.0.post2/flash_attn-2.8.0.post2%2Bcu12torch2.7cxx11abiTRUE-cp311-cp311-linux_x86_64.whl",
+  "path": ".cache/wheels/flash_attn-2.8.0.post2+cu12torch2.7cxx11abiTRUE-cp311-cp311-linux_x86_64.whl",
+  "bytes": 255941661,
+  "sha256": "8ed71ac092f80b079d2e6043b769135904d6e834916cb6da7d372b394581447b",
+  "expected_sha256": "8ed71ac092f80b079d2e6043b769135904d6e834916cb6da7d372b394581447b",
+  "verified": true,
+  "elapsed_s": 93.24533867835999
+}

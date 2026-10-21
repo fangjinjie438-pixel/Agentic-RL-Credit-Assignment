@@ -1,0 +1,647 @@
+# S0 read-only environment report
+
+Collected (UTC): 2026-10-21T18:13:09.962027+00:00
+Project: `/home/fangjinjie/project/credit_assign`
+
+GPU allocation: **not confirmed**. Real GPU computation: **pending**.
+The candidate verl 0.6.1 + vLLM 0.10.0/cu126 + PyTorch 2.7.1/cu126 stack is **not validated**.
+nvidia-smi CUDA Version is a driver capability. Toolkit paths are metadata only; no Toolkit executable was invoked and Toolkit versions remain unverified.
+PIX and P2P capability matrices describe topology/capability only; no GPU transfer or NCCL operation was executed.
+
+## Python and dependencies
+
+Python: `3.11.16`; executable: `/home/fangjinjie/project/credit_assign/.venv-cpu/bin/python`; target: 3.11.
+
+| Distribution | Installed | Candidate | Version comparison |
+| --- | --- | --- | --- |
+| torch | not_installed | 2.7.1 | missing |
+| verl | not_installed | 0.6.1 | missing |
+| vllm | not_installed | 0.10.0 | missing |
+| transformers | not_installed | 4.53.2 | missing |
+| ray | not_installed | not pinned | missing |
+| peft | not_installed | not pinned | missing |
+| flash-attn | not_installed | not pinned | missing |
+| accelerate | not_installed | not pinned | missing |
+| numpy | not_installed | not pinned | missing |
+| nvidia-nccl-cu12 | not_installed | not pinned | missing |
+| nvidia-cuda-runtime-cu12 | not_installed | not pinned | missing |
+
+## Host, CPU, memory and filesystems
+
+```json
+{
+  "hostname": "A6000",
+  "os": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+  "libc": {
+    "implementation": "glibc",
+    "version": "2.35"
+  },
+  "os_release": {
+    "NAME": "Ubuntu",
+    "ID": "ubuntu",
+    "PRETTY_NAME": "Ubuntu 22.04.5 LTS",
+    "VERSION_ID": "22.04",
+    "VERSION": "22.04.5 LTS (Jammy Jellyfish)",
+    "VERSION_CODENAME": "jammy",
+    "ID_LIKE": "debian",
+    "HOME_URL": "https://www.ubuntu.com/",
+    "SUPPORT_URL": "https://help.ubuntu.com/",
+    "BUG_REPORT_URL": "https://bugs.launchpad.net/ubuntu/",
+    "PRIVACY_POLICY_URL": "https://www.ubuntu.com/legal/terms-and-policies/privacy-policy",
+    "UBUNTU_CODENAME": "jammy"
+  },
+  "cpu": {
+    "logical_cpu_count": 48,
+    "machine": "x86_64",
+    "model_names": [
+      "Intel(R) Xeon(R) Silver 4214 CPU @ 2.20GHz"
+    ],
+    "physical_socket_count": 2,
+    "process_affinity_cpu_count": 48
+  },
+  "memory": {
+    "status": "observed",
+    "bytes": {
+      "MemTotal": 539610329088,
+      "MemAvailable": 435754905600,
+      "SwapTotal": 17179865088,
+      "SwapFree": 11448901632
+    }
+  },
+  "filesystems": [
+    {
+      "path": "/home/fangjinjie/project/credit_assign",
+      "status": "observed",
+      "total_bytes": 47809250451456,
+      "used_bytes": 43681292169216,
+      "free_bytes": 1967892471808,
+      "used_percent": 91.37
+    },
+    {
+      "path": "/tmp",
+      "status": "observed",
+      "total_bytes": 233581228032,
+      "used_bytes": 187302924288,
+      "free_bytes": 34338484224,
+      "used_percent": 80.19
+    },
+    {
+      "path": "/dev/shm",
+      "status": "observed",
+      "total_bytes": 269805162496,
+      "used_bytes": 141967360,
+      "free_bytes": 269663195136,
+      "used_percent": 0.05
+    }
+  ]
+}
+```
+
+## Project top-level state
+
+```json
+{
+  "path": "/home/fangjinjie/project/credit_assign",
+  "inspection_depth": 1,
+  "hidden_entries_omitted": 7,
+  "top_level_entries": [
+    {
+      "name": "AGENTS.md",
+      "type": "file"
+    },
+    {
+      "name": "PLAN.md",
+      "type": "file"
+    },
+    {
+      "name": "PROGRESS.md",
+      "type": "file"
+    },
+    {
+      "name": "README.md",
+      "type": "file"
+    },
+    {
+      "name": "configs",
+      "type": "directory"
+    },
+    {
+      "name": "docs",
+      "type": "directory"
+    },
+    {
+      "name": "logs",
+      "type": "directory"
+    },
+    {
+      "name": "models",
+      "type": "directory"
+    },
+    {
+      "name": "pyproject.toml",
+      "type": "file"
+    },
+    {
+      "name": "requirements",
+      "type": "directory"
+    },
+    {
+      "name": "scripts",
+      "type": "directory"
+    },
+    {
+      "name": "src",
+      "type": "directory"
+    },
+    {
+      "name": "tests",
+      "type": "directory"
+    }
+  ],
+  "git_directory_present": true,
+  "git_note": "Directory presence is metadata only; consult git command results to establish repository validity.",
+  "status": "observed"
+}
+```
+
+## Toolkit metadata (no Toolkit execution)
+
+```json
+{
+  "status": "metadata_only",
+  "execution_policy": "no_toolkit_execution",
+  "installed_versions": "not_verified_no_toolkit_execution",
+  "installations": [
+    {
+      "path": "/usr/local/cuda",
+      "is_symlink": true,
+      "resolved_path": "/usr/local/cuda-11.3",
+      "is_directory": true,
+      "nvcc_path_exists": true,
+      "symlink_target": "/usr/local/cuda-11.3/"
+    },
+    {
+      "path": "/usr/local/cuda-10.2",
+      "is_symlink": false,
+      "resolved_path": "/usr/local/cuda-10.2",
+      "is_directory": true,
+      "nvcc_path_exists": true
+    },
+    {
+      "path": "/usr/local/cuda-11.3",
+      "is_symlink": false,
+      "resolved_path": "/usr/local/cuda-11.3",
+      "is_directory": true,
+      "nvcc_path_exists": true
+    },
+    {
+      "path": "/usr/local/cuda-11.7",
+      "is_symlink": false,
+      "resolved_path": "/usr/local/cuda-11.7",
+      "is_directory": true,
+      "nvcc_path_exists": true
+    }
+  ],
+  "nvcc_on_path": null
+}
+```
+
+## Allocation hints (not authorization)
+
+```json
+{
+  "status": "not_confirmed",
+  "environment_hints": {},
+  "note": "Environment hints and free memory do not authorize GPU use. Confirm assigned GPU UUIDs externally before computing."
+}
+```
+
+## GPU inventory and processes
+
+```json
+{
+  "inventory": {
+    "status": "observed",
+    "rows": [
+      {
+        "index": "0",
+        "uuid": "GPU-3032353e-1a50-d282-c97a-9359dd81765f",
+        "name": "NVIDIA GeForce RTX 3090",
+        "memory.total": "24576",
+        "memory.used": "15773",
+        "memory.free": "8382",
+        "driver_version": "560.35.03",
+        "pci.bus_id": "00000000:1B:00.0"
+      },
+      {
+        "index": "1",
+        "uuid": "GPU-595536f6-a9e7-a60d-ab7e-c0341726e449",
+        "name": "NVIDIA RTX A6000",
+        "memory.total": "49140",
+        "memory.used": "9888",
+        "memory.free": "38683",
+        "driver_version": "560.35.03",
+        "pci.bus_id": "00000000:1C:00.0"
+      },
+      {
+        "index": "2",
+        "uuid": "GPU-9fc58bf8-5c1d-170d-d506-ff01af38be1a",
+        "name": "NVIDIA GeForce RTX 3090",
+        "memory.total": "24576",
+        "memory.used": "7271",
+        "memory.free": "16884",
+        "driver_version": "560.35.03",
+        "pci.bus_id": "00000000:1D:00.0"
+      },
+      {
+        "index": "3",
+        "uuid": "GPU-c8e79920-bd45-2d86-d5d4-1b622bb89872",
+        "name": "NVIDIA GeForce RTX 3090",
+        "memory.total": "24576",
+        "memory.used": "6087",
+        "memory.free": "18068",
+        "driver_version": "560.35.03",
+        "pci.bus_id": "00000000:1E:00.0"
+      },
+      {
+        "index": "4",
+        "uuid": "GPU-f772dd3f-e279-8cdc-62dd-7b39740b2063",
+        "name": "NVIDIA RTX A6000",
+        "memory.total": "49140",
+        "memory.used": "10487",
+        "memory.free": "38083",
+        "driver_version": "560.35.03",
+        "pci.bus_id": "00000000:3E:00.0"
+      },
+      {
+        "index": "5",
+        "uuid": "GPU-2e81c395-ac38-bfde-adba-34f3d967f7af",
+        "name": "NVIDIA RTX A6000",
+        "memory.total": "49140",
+        "memory.used": "9155",
+        "memory.free": "39416",
+        "driver_version": "560.35.03",
+        "pci.bus_id": "00000000:3F:00.0"
+      },
+      {
+        "index": "6",
+        "uuid": "GPU-16662740-b048-cf14-153f-715029deba47",
+        "name": "NVIDIA GeForce RTX 3090",
+        "memory.total": "24576",
+        "memory.used": "15",
+        "memory.free": "24140",
+        "driver_version": "560.35.03",
+        "pci.bus_id": "00000000:40:00.0"
+      },
+      {
+        "index": "7",
+        "uuid": "GPU-4c457a8a-39a3-5346-1f3c-5993b3102d03",
+        "name": "NVIDIA RTX A6000",
+        "memory.total": "49140",
+        "memory.used": "3729",
+        "memory.free": "44842",
+        "driver_version": "560.35.03",
+        "pci.bus_id": "00000000:41:00.0"
+      }
+    ],
+    "malformed_rows": []
+  },
+  "compute_processes": {
+    "status": "observed",
+    "rows": [
+      {
+        "gpu_uuid": "GPU-3032353e-1a50-d282-c97a-9359dd81765f",
+        "pid": "2924522",
+        "process_name": "/home/zhengyingxiong/conda/ENTER/bin/python3",
+        "used_gpu_memory": "10332"
+      },
+      {
+        "gpu_uuid": "GPU-3032353e-1a50-d282-c97a-9359dd81765f",
+        "pid": "3525422",
+        "process_name": "/home/wangcheng/project/RNA/ReGRA/.venv/bin/python",
+        "used_gpu_memory": "1832"
+      },
+      {
+        "gpu_uuid": "GPU-3032353e-1a50-d282-c97a-9359dd81765f",
+        "pid": "3526157",
+        "process_name": "/home/wangcheng/project/RNA/ReGRA/.venv/bin/python",
+        "used_gpu_memory": "1784"
+      },
+      {
+        "gpu_uuid": "GPU-3032353e-1a50-d282-c97a-9359dd81765f",
+        "pid": "3526646",
+        "process_name": "/home/wangcheng/project/RNA/ReGRA/.venv/bin/python",
+        "used_gpu_memory": "1784"
+      },
+      {
+        "gpu_uuid": "GPU-595536f6-a9e7-a60d-ab7e-c0341726e449",
+        "pid": "3524864",
+        "process_name": "/home/wangcheng/project/RNA/ReGRA/.venv/bin/python",
+        "used_gpu_memory": "1870"
+      },
+      {
+        "gpu_uuid": "GPU-595536f6-a9e7-a60d-ab7e-c0341726e449",
+        "pid": "3525048",
+        "process_name": "/home/wangcheng/project/RNA/ReGRA/.venv/bin/python",
+        "used_gpu_memory": "1840"
+      },
+      {
+        "gpu_uuid": "GPU-595536f6-a9e7-a60d-ab7e-c0341726e449",
+        "pid": "3525205",
+        "process_name": "/home/wangcheng/project/RNA/ReGRA/.venv/bin/python",
+        "used_gpu_memory": "1840"
+      },
+      {
+        "gpu_uuid": "GPU-595536f6-a9e7-a60d-ab7e-c0341726e449",
+        "pid": "3526158",
+        "process_name": "/home/wangcheng/project/RNA/ReGRA/.venv/bin/python",
+        "used_gpu_memory": "1794"
+      },
+      {
+        "gpu_uuid": "GPU-595536f6-a9e7-a60d-ab7e-c0341726e449",
+        "pid": "3526505",
+        "process_name": "/home/wangcheng/project/RNA/ReGRA/.venv/bin/python",
+        "used_gpu_memory": "1796"
+      },
+      {
+        "gpu_uuid": "GPU-595536f6-a9e7-a60d-ab7e-c0341726e449",
+        "pid": "3526868",
+        "process_name": "/home/wangcheng/project/RNA/ReGRA/.venv/bin/python",
+        "used_gpu_memory": "700"
+      },
+      {
+        "gpu_uuid": "GPU-9fc58bf8-5c1d-170d-d506-ff01af38be1a",
+        "pid": "3525423",
+        "process_name": "/home/wangcheng/project/RNA/ReGRA/.venv/bin/python",
+        "used_gpu_memory": "1832"
+      },
+      {
+        "gpu_uuid": "GPU-9fc58bf8-5c1d-170d-d506-ff01af38be1a",
+        "pid": "3525796",
+        "process_name": "/home/wangcheng/project/RNA/ReGRA/.venv/bin/python",
+        "used_gpu_memory": "1832"
+      },
+      {
+        "gpu_uuid": "GPU-9fc58bf8-5c1d-170d-d506-ff01af38be1a",
+        "pid": "3525981",
+        "process_name": "/home/wangcheng/project/RNA/ReGRA/.venv/bin/python",
+        "used_gpu_memory": "1784"
+      },
+      {
+        "gpu_uuid": "GPU-9fc58bf8-5c1d-170d-d506-ff01af38be1a",
+        "pid": "3526159",
+        "process_name": "/home/wangcheng/project/RNA/ReGRA/.venv/bin/python",
+        "used_gpu_memory": "1784"
+      },
+      {
+        "gpu_uuid": "GPU-c8e79920-bd45-2d86-d5d4-1b622bb89872",
+        "pid": "3525982",
+        "process_name": "/home/wangcheng/project/RNA/ReGRA/.venv/bin/python",
+        "used_gpu_memory": "1784"
+      },
+      {
+        "gpu_uuid": "GPU-c8e79920-bd45-2d86-d5d4-1b622bb89872",
+        "pid": "3526160",
+        "process_name": "/home/wangcheng/project/RNA/ReGRA/.venv/bin/python",
+        "used_gpu_memory": "1786"
+      },
+      {
+        "gpu_uuid": "GPU-c8e79920-bd45-2d86-d5d4-1b622bb89872",
+        "pid": "3526647",
+        "process_name": "/home/wangcheng/project/RNA/ReGRA/.venv/bin/python",
+        "used_gpu_memory": "1786"
+      },
+      {
+        "gpu_uuid": "GPU-c8e79920-bd45-2d86-d5d4-1b622bb89872",
+        "pid": "3526869",
+        "process_name": "/home/wangcheng/project/RNA/ReGRA/.venv/bin/python",
+        "used_gpu_memory": "692"
+      },
+      {
+        "gpu_uuid": "GPU-f772dd3f-e279-8cdc-62dd-7b39740b2063",
+        "pid": "446549",
+        "process_name": "/home/zhengyingxiong/conda/ENTER/bin/python3",
+        "used_gpu_memory": "10460"
+      },
+      {
+        "gpu_uuid": "GPU-2e81c395-ac38-bfde-adba-34f3d967f7af",
+        "pid": "3525206",
+        "process_name": "/home/wangcheng/project/RNA/ReGRA/.venv/bin/python",
+        "used_gpu_memory": "1840"
+      },
+      {
+        "gpu_uuid": "GPU-2e81c395-ac38-bfde-adba-34f3d967f7af",
+        "pid": "3525424",
+        "process_name": "/home/wangcheng/project/RNA/ReGRA/.venv/bin/python",
+        "used_gpu_memory": "1840"
+      },
+      {
+        "gpu_uuid": "GPU-2e81c395-ac38-bfde-adba-34f3d967f7af",
+        "pid": "3525797",
+        "process_name": "/home/wangcheng/project/RNA/ReGRA/.venv/bin/python",
+        "used_gpu_memory": "1840"
+      },
+      {
+        "gpu_uuid": "GPU-2e81c395-ac38-bfde-adba-34f3d967f7af",
+        "pid": "3526161",
+        "process_name": "/home/wangcheng/project/RNA/ReGRA/.venv/bin/python",
+        "used_gpu_memory": "1796"
+      },
+      {
+        "gpu_uuid": "GPU-2e81c395-ac38-bfde-adba-34f3d967f7af",
+        "pid": "3526648",
+        "process_name": "/home/wangcheng/project/RNA/ReGRA/.venv/bin/python",
+        "used_gpu_memory": "1794"
+      },
+      {
+        "gpu_uuid": "GPU-4c457a8a-39a3-5346-1f3c-5993b3102d03",
+        "pid": "1939306",
+        "process_name": "python3",
+        "used_gpu_memory": "2024"
+      },
+      {
+        "gpu_uuid": "GPU-4c457a8a-39a3-5346-1f3c-5993b3102d03",
+        "pid": "3180510",
+        "process_name": "python3",
+        "used_gpu_memory": "1674"
+      }
+    ],
+    "malformed_rows": []
+  },
+  "memory_unit": "MiB (nvidia-smi CSV without unit labels)",
+  "topology_note": "PIX is a PCIe switch path, not NVLink or proof of working P2P. Capability queries are not transfer tests.",
+  "cuda_version_note": "nvidia-smi CUDA Version is driver capability, not installed Toolkit or PyTorch CUDA runtime.",
+  "torch_cuda_runtime": "not_verified_no_torch_import",
+  "nccl_runtime": "not_verified_no_gpu_execution"
+}
+```
+
+## Validation status
+
+```json
+{
+  "read_only_inventory": "collected_with_per_probe_status",
+  "gpu_allocation": "pending",
+  "dependency_installation": "pending",
+  "candidate_stack_compatibility": "pending",
+  "real_gpu_execution": "pending",
+  "p2p_transfer": "pending",
+  "nccl_collective": "pending",
+  "torch_cuda_runtime": "pending",
+  "multi_turn_lora_sync": "pending"
+}
+```
+
+## Command evidence
+
+### nvidia_smi
+
+```json
+{
+  "argv": [
+    "nvidia-smi"
+  ],
+  "timeout_seconds": 10.0,
+  "returncode": 0,
+  "stdout": "Thu Oct 22 02:13:06 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 560.35.03              Driver Version: 560.35.03      CUDA Version: 12.6     |\n|-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce RTX 3090        Off |   00000000:1B:00.0 Off |                  N/A |\n|100%   86C    P0            290W /  350W |   15773MiB /  24576MiB |     99%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n|   1  NVIDIA RTX A6000               Off |   00000000:1C:00.0 Off |                  Off |\n| 64%   84C    P0            266W /  300W |    9888MiB /  49140MiB |     99%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n|   2  NVIDIA GeForce RTX 3090        Off |   00000000:1D:00.0 Off |                  N/A |\n|100%   79C    P0            329W /  350W |    7271MiB /  24576MiB |    100%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n|   3  NVIDIA GeForce RTX 3090        Off |   00000000:1E:00.0 Off |                  N/A |\n| 91%   70C    P0            312W /  350W |    6001MiB /  24576MiB |     78%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n|   4  NVIDIA RTX A6000               Off |   00000000:3E:00.0 Off |                  Off |\n| 65%   84C    P0            261W /  300W |   10487MiB /  49140MiB |     88%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n|   5  NVIDIA RTX A6000               Off |   00000000:3F:00.0 Off |                  Off |\n| 57%   83C    P0            280W /  300W |    9155MiB /  49140MiB |    100%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n|   6  NVIDIA GeForce RTX 3090        Off |   00000000:40:00.0 Off |                  N/A |\n| 90%   68C    P0            169W /  350W |    1855MiB /  24576MiB |      0%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n|   7  NVIDIA RTX A6000               Off |   00000000:41:00.0 Off |                  Off |\n| 58%   84C    P0            148W /  300W |    3729MiB /  49140MiB |     84%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n                                                                                         \n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A      4106      G   /usr/lib/xorg/Xorg                              4MiB |\n|    0   N/A  N/A   2924522      C   ...ngyingxiong/conda/ENTER/bin/python3      10332MiB |\n|    0   N/A  N/A   3525422      C   .../project/RNA/ReGRA/.venv/bin/python       1832MiB |\n|    0   N/A  N/A   3526157      C   .../project/RNA/ReGRA/.venv/bin/python       1784MiB |\n|    0   N/A  N/A   3526646      C   .../project/RNA/ReGRA/.venv/bin/python       1784MiB |\n|    1   N/A  N/A      4106      G   /usr/lib/xorg/Xorg                              4MiB |\n|    1   N/A  N/A   3524864      C   .../project/RNA/ReGRA/.venv/bin/python       1870MiB |\n|    1   N/A  N/A   3525048      C   .../project/RNA/ReGRA/.venv/bin/python       1840MiB |\n|    1   N/A  N/A   3525205      C   .../project/RNA/ReGRA/.venv/bin/python       1840MiB |\n|    1   N/A  N/A   3526158      C   .../project/RNA/ReGRA/.venv/bin/python       1794MiB |\n|    1   N/A  N/A   3526505      C   .../project/RNA/ReGRA/.venv/bin/python       1796MiB |\n|    1   N/A  N/A   3526868      C   .../project/RNA/ReGRA/.venv/bin/python        698MiB |\n|    2   N/A  N/A      4106      G   /usr/lib/xorg/Xorg                              4MiB |\n|    2   N/A  N/A   3525423      C   .../project/RNA/ReGRA/.venv/bin/python       1832MiB |\n|    2   N/A  N/A   3525796      C   .../project/RNA/ReGRA/.venv/bin/python       1832MiB |\n|    2   N/A  N/A   3525981      C   .../project/RNA/ReGRA/.venv/bin/python       1784MiB |\n|    2   N/A  N/A   3526159      C   .../project/RNA/ReGRA/.venv/bin/python       1784MiB |\n|    3   N/A  N/A      4106      G   /usr/lib/xorg/Xorg                              4MiB |\n|    3   N/A  N/A   3525982      C   .../project/RNA/ReGRA/.venv/bin/python       1784MiB |\n|    3   N/A  N/A   3526160      C   .../project/RNA/ReGRA/.venv/bin/python       1786MiB |\n|    3   N/A  N/A   3526647      C   .../project/RNA/ReGRA/.venv/bin/python       1786MiB |\n|    3   N/A  N/A   3526869      C   .../project/RNA/ReGRA/.venv/bin/python        610MiB |\n|    4   N/A  N/A      4106      G   /usr/lib/xorg/Xorg                              4MiB |\n|    4   N/A  N/A    446549      C   ...ngyingxiong/conda/ENTER/bin/python3      10460MiB |\n|    5   N/A  N/A      4106      G   /usr/lib/xorg/Xorg                              4MiB |\n|    5   N/A  N/A   3525206      C   .../project/RNA/ReGRA/.venv/bin/python       1840MiB |\n|    5   N/A  N/A   3525424      C   .../project/RNA/ReGRA/.venv/bin/python       1840MiB |\n|    5   N/A  N/A   3525797      C   .../project/RNA/ReGRA/.venv/bin/python       1840MiB |\n|    5   N/A  N/A   3526161      C   .../project/RNA/ReGRA/.venv/bin/python       1796MiB |\n|    5   N/A  N/A   3526648      C   .../project/RNA/ReGRA/.venv/bin/python       1794MiB |\n|    6   N/A  N/A      4106      G   /usr/lib/xorg/Xorg                              4MiB |\n|    6   N/A  N/A   3525425      C   .../project/RNA/ReGRA/.venv/bin/python       1832MiB |\n|    7   N/A  N/A      4106      G   /usr/lib/xorg/Xorg                              4MiB |\n|    7   N/A  N/A   1939306      C   python3                                      2024MiB |\n|    7   N/A  N/A   3180510      C   python3                                      1674MiB |\n+-----------------------------------------------------------------------------------------+\n",
+  "stderr": "",
+  "status": "ok",
+  "elapsed_seconds": 1.392
+}
+```
+
+### gpu_inventory
+
+```json
+{
+  "argv": [
+    "nvidia-smi",
+    "--query-gpu=index,uuid,name,memory.total,memory.used,memory.free,driver_version,pci.bus_id",
+    "--format=csv,noheader,nounits"
+  ],
+  "timeout_seconds": 10.0,
+  "returncode": 0,
+  "stdout": "0, GPU-3032353e-1a50-d282-c97a-9359dd81765f, NVIDIA GeForce RTX 3090, 24576, 15773, 8382, 560.35.03, 00000000:1B:00.0\n1, GPU-595536f6-a9e7-a60d-ab7e-c0341726e449, NVIDIA RTX A6000, 49140, 9888, 38683, 560.35.03, 00000000:1C:00.0\n2, GPU-9fc58bf8-5c1d-170d-d506-ff01af38be1a, NVIDIA GeForce RTX 3090, 24576, 7271, 16884, 560.35.03, 00000000:1D:00.0\n3, GPU-c8e79920-bd45-2d86-d5d4-1b622bb89872, NVIDIA GeForce RTX 3090, 24576, 6087, 18068, 560.35.03, 00000000:1E:00.0\n4, GPU-f772dd3f-e279-8cdc-62dd-7b39740b2063, NVIDIA RTX A6000, 49140, 10487, 38083, 560.35.03, 00000000:3E:00.0\n5, GPU-2e81c395-ac38-bfde-adba-34f3d967f7af, NVIDIA RTX A6000, 49140, 9155, 39416, 560.35.03, 00000000:3F:00.0\n6, GPU-16662740-b048-cf14-153f-715029deba47, NVIDIA GeForce RTX 3090, 24576, 15, 24140, 560.35.03, 00000000:40:00.0\n7, GPU-4c457a8a-39a3-5346-1f3c-5993b3102d03, NVIDIA RTX A6000, 49140, 3729, 44842, 560.35.03, 00000000:41:00.0\n",
+  "stderr": "",
+  "status": "ok",
+  "elapsed_seconds": 0.359
+}
+```
+
+### gpu_processes
+
+```json
+{
+  "argv": [
+    "nvidia-smi",
+    "--query-compute-apps=gpu_uuid,pid,process_name,used_gpu_memory",
+    "--format=csv,noheader,nounits"
+  ],
+  "timeout_seconds": 10.0,
+  "returncode": 0,
+  "stdout": "GPU-3032353e-1a50-d282-c97a-9359dd81765f, 2924522, /home/zhengyingxiong/conda/ENTER/bin/python3, 10332\nGPU-3032353e-1a50-d282-c97a-9359dd81765f, 3525422, /home/wangcheng/project/RNA/ReGRA/.venv/bin/python, 1832\nGPU-3032353e-1a50-d282-c97a-9359dd81765f, 3526157, /home/wangcheng/project/RNA/ReGRA/.venv/bin/python, 1784\nGPU-3032353e-1a50-d282-c97a-9359dd81765f, 3526646, /home/wangcheng/project/RNA/ReGRA/.venv/bin/python, 1784\nGPU-595536f6-a9e7-a60d-ab7e-c0341726e449, 3524864, /home/wangcheng/project/RNA/ReGRA/.venv/bin/python, 1870\nGPU-595536f6-a9e7-a60d-ab7e-c0341726e449, 3525048, /home/wangcheng/project/RNA/ReGRA/.venv/bin/python, 1840\nGPU-595536f6-a9e7-a60d-ab7e-c0341726e449, 3525205, /home/wangcheng/project/RNA/ReGRA/.venv/bin/python, 1840\nGPU-595536f6-a9e7-a60d-ab7e-c0341726e449, 3526158, /home/wangcheng/project/RNA/ReGRA/.venv/bin/python, 1794\nGPU-595536f6-a9e7-a60d-ab7e-c0341726e449, 3526505, /home/wangcheng/project/RNA/ReGRA/.venv/bin/python, 1796\nGPU-595536f6-a9e7-a60d-ab7e-c0341726e449, 3526868, /home/wangcheng/project/RNA/ReGRA/.venv/bin/python, 700\nGPU-9fc58bf8-5c1d-170d-d506-ff01af38be1a, 3525423, /home/wangcheng/project/RNA/ReGRA/.venv/bin/python, 1832\nGPU-9fc58bf8-5c1d-170d-d506-ff01af38be1a, 3525796, /home/wangcheng/project/RNA/ReGRA/.venv/bin/python, 1832\nGPU-9fc58bf8-5c1d-170d-d506-ff01af38be1a, 3525981, /home/wangcheng/project/RNA/ReGRA/.venv/bin/python, 1784\nGPU-9fc58bf8-5c1d-170d-d506-ff01af38be1a, 3526159, /home/wangcheng/project/RNA/ReGRA/.venv/bin/python, 1784\nGPU-c8e79920-bd45-2d86-d5d4-1b622bb89872, 3525982, /home/wangcheng/project/RNA/ReGRA/.venv/bin/python, 1784\nGPU-c8e79920-bd45-2d86-d5d4-1b622bb89872, 3526160, /home/wangcheng/project/RNA/ReGRA/.venv/bin/python, 1786\nGPU-c8e79920-bd45-2d86-d5d4-1b622bb89872, 3526647, /home/wangcheng/project/RNA/ReGRA/.venv/bin/python, 1786\nGPU-c8e79920-bd45-2d86-d5d4-1b622bb89872, 3526869, /home/wangcheng/project/RNA/ReGRA/.venv/bin/python, 692\nGPU-f772dd3f-e279-8cdc-62dd-7b39740b2063, 446549, /home/zhengyingxiong/conda/ENTER/bin/python3, 10460\nGPU-2e81c395-ac38-bfde-adba-34f3d967f7af, 3525206, /home/wangcheng/project/RNA/ReGRA/.venv/bin/python, 1840\nGPU-2e81c395-ac38-bfde-adba-34f3d967f7af, 3525424, /home/wangcheng/project/RNA/ReGRA/.venv/bin/python, 1840\nGPU-2e81c395-ac38-bfde-adba-34f3d967f7af, 3525797, /home/wangcheng/project/RNA/ReGRA/.venv/bin/python, 1840\nGPU-2e81c395-ac38-bfde-adba-34f3d967f7af, 3526161, /home/wangcheng/project/RNA/ReGRA/.venv/bin/python, 1796\nGPU-2e81c395-ac38-bfde-adba-34f3d967f7af, 3526648, /home/wangcheng/project/RNA/ReGRA/.venv/bin/python, 1794\nGPU-4c457a8a-39a3-5346-1f3c-5993b3102d03, 1939306, python3, 2024\nGPU-4c457a8a-39a3-5346-1f3c-5993b3102d03, 3180510, python3, 1674\n",
+  "stderr": "",
+  "status": "ok",
+  "elapsed_seconds": 0.11
+}
+```
+
+### gpu_topology
+
+```json
+{
+  "argv": [
+    "nvidia-smi",
+    "topo",
+    "-m"
+  ],
+  "timeout_seconds": 10.0,
+  "returncode": 0,
+  "stdout": "\t\u001b[4mGPU0\tGPU1\tGPU2\tGPU3\tGPU4\tGPU5\tGPU6\tGPU7\tCPU Affinity\tNUMA Affinity\tGPU NUMA ID\u001b[0m\nGPU0\t X \tPIX\tPIX\tPIX\tNODE\tNODE\tNODE\tNODE\t0-11,24-35\t0\t\tN/A\nGPU1\tPIX\t X \tPIX\tPIX\tNODE\tNODE\tNODE\tNODE\t0-11,24-35\t0\t\tN/A\nGPU2\tPIX\tPIX\t X \tPIX\tNODE\tNODE\tNODE\tNODE\t0-11,24-35\t0\t\tN/A\nGPU3\tPIX\tPIX\tPIX\t X \tNODE\tNODE\tNODE\tNODE\t0-11,24-35\t0\t\tN/A\nGPU4\tNODE\tNODE\tNODE\tNODE\t X \tPIX\tPIX\tPIX\t0-11,24-35\t0\t\tN/A\nGPU5\tNODE\tNODE\tNODE\tNODE\tPIX\t X \tPIX\tPIX\t0-11,24-35\t0\t\tN/A\nGPU6\tNODE\tNODE\tNODE\tNODE\tPIX\tPIX\t X \tPIX\t0-11,24-35\t0\t\tN/A\nGPU7\tNODE\tNODE\tNODE\tNODE\tPIX\tPIX\tPIX\t X \t0-11,24-35\t0\t\tN/A\n\nLegend:\n\n  X    = Self\n  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)\n  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node\n  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)\n  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)\n  PIX  = Connection traversing at most a single PCIe bridge\n  NV#  = Connection traversing a bonded set of # NVLinks\n",
+  "stderr": "",
+  "status": "ok",
+  "elapsed_seconds": 1.421
+}
+```
+
+### p2p_read_capability
+
+```json
+{
+  "argv": [
+    "nvidia-smi",
+    "topo",
+    "-p2p",
+    "r"
+  ],
+  "timeout_seconds": 10.0,
+  "returncode": 0,
+  "stdout": " \t\u001b[4mGPU0\tGPU1\tGPU2\tGPU3\tGPU4\tGPU5\tGPU6\tGPU7\t\u001b[0m\n GPU0\tX\tCNS\tCNS\tCNS\tCNS\tCNS\tCNS\tCNS\t\n GPU1\tCNS\tX\tCNS\tCNS\tOK\tOK\tCNS\tOK\t\n GPU2\tCNS\tCNS\tX\tCNS\tCNS\tCNS\tCNS\tCNS\t\n GPU3\tCNS\tCNS\tCNS\tX\tCNS\tCNS\tCNS\tCNS\t\n GPU4\tCNS\tOK\tCNS\tCNS\tX\tOK\tCNS\tOK\t\n GPU5\tCNS\tOK\tCNS\tCNS\tOK\tX\tCNS\tOK\t\n GPU6\tCNS\tCNS\tCNS\tCNS\tCNS\tCNS\tX\tCNS\t\n GPU7\tCNS\tOK\tCNS\tCNS\tOK\tOK\tCNS\tX\t\n\nLegend:\n\n  X    = Self\n  OK   = Status Ok\n  CNS  = Chipset not supported\n  GNS  = GPU not supported\n  TNS  = Topology not supported\n  NS   = Not supported\n  U    = Unknown\n",
+  "stderr": "",
+  "status": "ok",
+  "elapsed_seconds": 0.094
+}
+```
+
+### p2p_write_capability
+
+```json
+{
+  "argv": [
+    "nvidia-smi",
+    "topo",
+    "-p2p",
+    "w"
+  ],
+  "timeout_seconds": 10.0,
+  "returncode": 0,
+  "stdout": " \t\u001b[4mGPU0\tGPU1\tGPU2\tGPU3\tGPU4\tGPU5\tGPU6\tGPU7\t\u001b[0m\n GPU0\tX\tCNS\tCNS\tCNS\tCNS\tCNS\tCNS\tCNS\t\n GPU1\tCNS\tX\tCNS\tCNS\tOK\tOK\tCNS\tOK\t\n GPU2\tCNS\tCNS\tX\tCNS\tCNS\tCNS\tCNS\tCNS\t\n GPU3\tCNS\tCNS\tCNS\tX\tCNS\tCNS\tCNS\tCNS\t\n GPU4\tCNS\tOK\tCNS\tCNS\tX\tOK\tCNS\tOK\t\n GPU5\tCNS\tOK\tCNS\tCNS\tOK\tX\tCNS\tOK\t\n GPU6\tCNS\tCNS\tCNS\tCNS\tCNS\tCNS\tX\tCNS\t\n GPU7\tCNS\tOK\tCNS\tCNS\tOK\tOK\tCNS\tX\t\n\nLegend:\n\n  X    = Self\n  OK   = Status Ok\n  CNS  = Chipset not supported\n  GNS  = GPU not supported\n  TNS  = Topology not supported\n  NS   = Not supported\n  U    = Unknown\n",
+  "stderr": "",
+  "status": "ok",
+  "elapsed_seconds": 0.1
+}
+```
+
+### git_revision
+
+```json
+{
+  "argv": [
+    "git",
+    "--no-optional-locks",
+    "-C",
+    "/home/fangjinjie/project/credit_assign",
+    "rev-parse",
+    "HEAD"
+  ],
+  "timeout_seconds": 10.0,
+  "returncode": 0,
+  "stdout": "155299644a68cc311e804ad53c55c93877a67ddd\n",
+  "stderr": "",
+  "status": "ok",
+  "elapsed_seconds": 0.003
+}
+```
+
+### git_status
+
+```json
+{
+  "argv": [
+    "git",
+    "--no-optional-locks",
+    "-C",
+    "/home/fangjinjie/project/credit_assign",
+    "status",
+    "--short",
+    "--untracked-files=no"
+  ],
+  "timeout_seconds": 10.0,
+  "returncode": 0,
+  "stdout": " M AGENTS.md\n M README.md\n M docs/dependency-audit.md\n M docs/stages/S0.md\n M requirements/README.md\n M requirements/gpu-candidate.in\n M src/README.md\n M src/procure_rl/README.md\n M src/procure_rl/__main__.py\n M src/procure_rl/runtime.py\n M tests/README.md\n M tests/test_config_runtime.py\n",
+  "stderr": "",
+  "status": "ok",
+  "elapsed_seconds": 0.004
+}
+```
+

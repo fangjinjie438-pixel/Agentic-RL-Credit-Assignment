@@ -1,0 +1,38 @@
+{
+  "id": "verl_vllm_async_server",
+  "argv": [
+    "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+    "-I",
+    "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+    "--child",
+    "{\"kind\": \"import\", \"id\": \"verl_vllm_async_server\", \"module\": \"verl.workers.rollout.vllm_rollout.vllm_async_server\", \"attributes\": [\"vLLMAsyncServer\"]}"
+  ],
+  "timeout_seconds": 120.0,
+  "status": "failed",
+  "returncode": 1,
+  "stdout": "INFO 10-22 02:34:17 [__init__.py:239] No platform detected, vLLM is running on UnspecifiedPlatform\nPROCURE_RL_ENV_PROBE_RESULT={\"id\": \"verl_vllm_async_server\", \"status\": \"failed\", \"python\": {\"executable\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python\", \"prefix\": \"/home/fangjinjie/project/credit_assign/.venv-gpu\", \"base_prefix\": \"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu\", \"version\": \"3.11.16\"}, \"cuda_visible_devices\": \"\", \"module\": \"verl.workers.rollout.vllm_rollout.vllm_async_server\", \"module_file\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/verl/workers/rollout/vllm_rollout/vllm_async_server.py\", \"error_type\": \"AttributeError\", \"error\": \"module 'verl.workers.rollout.vllm_rollout.vllm_async_server' has no attribute 'vLLMAsyncServer'\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py\\\", line 209, in _execute_child_probe\\n    getattr(module, name)\\nAttributeError: module 'verl.workers.rollout.vllm_rollout.vllm_async_server' has no attribute 'vLLMAsyncServer'\\n\", \"torch_cuda_initialized_after_import\": false, \"blocked_process_executables\": [\"lscpu\", \"file\", \"uname\"]}\n",
+  "stderr": "",
+  "result": {
+    "id": "verl_vllm_async_server",
+    "status": "failed",
+    "python": {
+      "executable": "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+      "prefix": "/home/fangjinjie/project/credit_assign/.venv-gpu",
+      "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+      "version": "3.11.16"
+    },
+    "cuda_visible_devices": "",
+    "module": "verl.workers.rollout.vllm_rollout.vllm_async_server",
+    "module_file": "/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/verl/workers/rollout/vllm_rollout/vllm_async_server.py",
+    "error_type": "AttributeError",
+    "error": "module 'verl.workers.rollout.vllm_rollout.vllm_async_server' has no attribute 'vLLMAsyncServer'",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py\", line 209, in _execute_child_probe\n    getattr(module, name)\nAttributeError: module 'verl.workers.rollout.vllm_rollout.vllm_async_server' has no attribute 'vLLMAsyncServer'\n",
+    "torch_cuda_initialized_after_import": false,
+    "blocked_process_executables": [
+      "lscpu",
+      "file",
+      "uname"
+    ]
+  },
+  "elapsed_seconds": 18.763
+}

@@ -10,6 +10,7 @@ import json
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 from procure_rl.config import load_config
 from procure_rl.__main__ import main
@@ -39,6 +40,30 @@ class ConfigTests(unittest.TestCase):
 
 
 class RuntimeTests(unittest.TestCase):
+    def test_gpu_cli_default_is_configuration_only(self):
+        with tempfile.TemporaryDirectory() as directory, contextlib.redirect_stdout(io.StringIO()):
+            output = Path(directory) / "dry-run"
+            self.assertEqual(main(["gpu-probe", "--output", str(output)]), 0)
+            report = json.loads((output / "report.json").read_text())
+            record = json.loads((output / "run.json").read_text())
+            self.assertEqual(report["status"], "dry_run")
+            self.assertFalse(record["gpu_compute_performed"])
+            self.assertEqual(record["gpu_validation"], "not_run")
+
+    def test_gpu_cli_propagates_failed_and_unknown_execution(self):
+        from procure_rl.gpu_probe import run_gpu_probe
+        report = run_gpu_probe()
+        report.update(status="failed", gpu_compute_performed=None, gpu_validation="failed",
+                      validation_level="real_gpu_probe_subset")
+        with tempfile.TemporaryDirectory() as directory, contextlib.redirect_stdout(io.StringIO()):
+            output = Path(directory) / "failed"
+            with patch("procure_rl.gpu_probe.run_gpu_probe", return_value=report):
+                self.assertEqual(main(["gpu-probe", "--execute", "--output", str(output)]), 1)
+            record = json.loads((output / "run.json").read_text())
+            self.assertEqual(record["status"], "failed")
+            self.assertIsNone(record["gpu_compute_performed"])
+            self.assertEqual(record["gpu_validation"], "failed")
+
     def test_missing_config_has_failed_manifest(self):
         with tempfile.TemporaryDirectory() as directory:
             output = Path(directory) / "missing-config-run"

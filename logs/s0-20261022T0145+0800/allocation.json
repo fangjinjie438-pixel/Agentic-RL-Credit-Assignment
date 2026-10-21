@@ -1,0 +1,20 @@
+{
+  "source": "user confirmation in this conversation",
+  "allowed_compute_physical_indices": [
+    5,
+    7
+  ],
+  "allowed_compute_uuids": [
+    "GPU-2e81c395-ac38-bfde-adba-34f3d967f7af",
+    "GPU-4c457a8a-39a3-5346-1f3c-5993b3102d03"
+  ],
+  "single_gpu_initial_choice": 7,
+  "physical_index_4": "conditional only if zero GPU memory; real CUDA/NCCL consumes memory, so no compute authorization used for GPU4",
+  "topology_readonly_indices": [
+    4,
+    5,
+    7
+  ],
+  "expires": "not specified; recheck current availability before expensive work",
+  "other_process_policy": "do not terminate, reconfigure, or occupy their allocations"
+}

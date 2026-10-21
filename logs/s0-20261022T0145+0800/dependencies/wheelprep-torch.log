@@ -1,0 +1,16 @@
+Using CPython 3.11.16
+Creating virtual environment at: .venv-wheelprep
+Activate with: source .venv-wheelprep/bin/activate
+{
+  "time": "2026-10-22T02:09:46.032902+08:00",
+  "action": "wheelprep_install_skipped",
+  "reason": "Parent confirmed primary installer began torch/triton downloads before wheelprep installation; avoid duplicate transfers.",
+  "venv_create_exit_code": 0,
+  "install_started": false,
+  "python": "/home/fangjinjie/project/credit_assign/.venv-wheelprep/bin/python",
+  "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+  "torch_or_triton_imported": false,
+  "gpu_used": false,
+  "uv_cache_safety_source": "https://docs.astral.sh/uv/concepts/cache/#cache-safety"
+}
+Root removed the empty project .venv-wheelprep; no extra download/install was started.

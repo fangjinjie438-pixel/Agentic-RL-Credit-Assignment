@@ -1,0 +1,46 @@
+{
+  "scope": "vendored NVML metadata only; no CUDA context",
+  "gpu_compute_performed": false,
+  "devices": [
+    {
+      "index": 0,
+      "uuid": "GPU-3032353e-1a50-d282-c97a-9359dd81765f",
+      "pci_bus_id": "00000000:1B:00.0"
+    },
+    {
+      "index": 1,
+      "uuid": "GPU-595536f6-a9e7-a60d-ab7e-c0341726e449",
+      "pci_bus_id": "00000000:1C:00.0"
+    },
+    {
+      "index": 2,
+      "uuid": "GPU-9fc58bf8-5c1d-170d-d506-ff01af38be1a",
+      "pci_bus_id": "00000000:1D:00.0"
+    },
+    {
+      "index": 3,
+      "uuid": "GPU-c8e79920-bd45-2d86-d5d4-1b622bb89872",
+      "pci_bus_id": "00000000:1E:00.0"
+    },
+    {
+      "index": 4,
+      "uuid": "GPU-f772dd3f-e279-8cdc-62dd-7b39740b2063",
+      "pci_bus_id": "00000000:3E:00.0"
+    },
+    {
+      "index": 5,
+      "uuid": "GPU-2e81c395-ac38-bfde-adba-34f3d967f7af",
+      "pci_bus_id": "00000000:3F:00.0"
+    },
+    {
+      "index": 6,
+      "uuid": "GPU-16662740-b048-cf14-153f-715029deba47",
+      "pci_bus_id": "00000000:40:00.0"
+    },
+    {
+      "index": 7,
+      "uuid": "GPU-4c457a8a-39a3-5346-1f3c-5993b3102d03",
+      "pci_bus_id": "00000000:41:00.0"
+    }
+  ]
+}

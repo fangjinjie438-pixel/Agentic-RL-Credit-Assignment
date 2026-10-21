@@ -1,0 +1,3 @@
+# Project-only Zig; C/Python.h/driver link and S0 vLLM launcher verified.
+# Full Torch Inductor C++ and CUDA Toolkit compilation remain unverified.
+ziglang==0.17.0

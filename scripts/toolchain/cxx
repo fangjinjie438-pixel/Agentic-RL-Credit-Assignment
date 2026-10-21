@@ -1,0 +1,9 @@
+#!/bin/sh
+# Project C++ compiler entry. Receives compiler arguments and delegates to
+# project-local ziglang; S0 C tests do not establish general C++ compatibility.
+set -eu
+wrapper_directory=${0%/*}
+project_directory=$(CDPATH= cd -- "$wrapper_directory/../.." && pwd)
+export ZIG_GLOBAL_CACHE_DIR="$project_directory/.cache/zig/global"
+export ZIG_LOCAL_CACHE_DIR="$project_directory/.cache/zig/local"
+exec "$project_directory/.venv-toolchain/bin/python" -m ziglang c++ "$@"

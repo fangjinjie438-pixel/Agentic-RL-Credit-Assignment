@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "stage": "S0",
+  "status": "passed",
+  "allocation": {
+    "gpu_uuids": [
+      "GPU-2e81c395-ac38-bfde-adba-34f3d967f7af"
+    ],
+    "source": "user confirmation in this conversation: physical GPU 5; UUID verified before vLLM numeric mapping",
+    "status": "explicit_user_claim"
+  },
+  "execute": true,
+  "requested_probes": [
+    "vllm"
+  ],
+  "model_path": "/home/fangjinjie/project/credit_assign/models/Qwen3-0.6B/c1899de289a04d12100db370d81485cdf75e47ca",
+  "model_revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+  "seed": 0,
+  "gpu_execution_attempted": true,
+  "gpu_compute_performed": true,
+  "gpu_validation": "passed",
+  "validation_level": "real_gpu_probe_subset",
+  "candidate_stack_compatibility": "not_established",
+  "training_lora_fsdp2_validation": "not_run",
+  "checks": {
+    "vllm": {
+      "probe": "vllm",
+      "argv": [
+        "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+        "-m",
+        "procure_rl.gpu_probe",
+        "--worker"
+      ],
+      "visible_gpu_uuids": [
+        "GPU-2e81c395-ac38-bfde-adba-34f3d967f7af"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "timeout": false,
+      "gpu_compute_performed": true,
+      "stdout": "INFO 10-22 02:41:55 [__init__.py:235] Automatically detected platform cuda.\nINFO 10-22 02:42:10 [config.py:1604] Using max model len 512\nINFO 10-22 02:42:10 [config.py:2434] Chunked prefill is enabled with max_num_batched_tokens=512.\nINFO 10-22 02:42:19 [__init__.py:235] Automatically detected platform cuda.\nINFO 10-22 02:42:21 [core.py:572] Waiting for init message from front-end.\nINFO 10-22 02:42:21 [core.py:71] Initializing a V1 LLM engine (v0.10.0) with config: model='/home/fangjinjie/project/credit_assign/models/Qwen3-0.6B/c1899de289a04d12100db370d81485cdf75e47ca', speculative_config=None, tokenizer='/home/fangjinjie/project/credit_assign/models/Qwen3-0.6B/c1899de289a04d12100db370d81485cdf75e47ca', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config={}, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=512, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=True, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(backend='auto', disable_fallback=False, disable_any_whitespace=False, disable_additional_properties=False, reasoning_backend=''), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None), seed=0, served_model_name=/home/fangjinjie/project/credit_assign/models/Qwen3-0.6B/c1899de289a04d12100db370d81485cdf75e47ca, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=True, use_async_output_proc=True, pooler_config=None, compilation_config={\"level\":0,\"debug_dump_path\":\"\",\"cache_dir\":\"\",\"backend\":\"\",\"custom_ops\":[],\"splitting_ops\":[],\"use_inductor\":true,\"compile_sizes\":[],\"inductor_compile_config\":{\"enable_auto_functionalized_v2\":false},\"inductor_passes\":{},\"use_cudagraph\":true,\"cudagraph_num_of_warmups\":0,\"cudagraph_capture_sizes\":[],\"cudagraph_copy_inputs\":false,\"full_cuda_graph\":false,\"max_capture_size\":0,\"local_cache_dir\":null}\nINFO 10-22 02:42:36 [parallel_state.py:1102] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, TP rank 0, EP rank 0\nWARNING 10-22 02:42:36 [topk_topp_sampler.py:59] FlashInfer is not available. Falling back to the PyTorch-native implementation of top-p & top-k sampling. For the best performance, please install FlashInfer.\nINFO 10-22 02:42:36 [gpu_model_runner.py:1843] Starting to load model /home/fangjinjie/project/credit_assign/models/Qwen3-0.6B/c1899de289a04d12100db370d81485cdf75e47ca...\nINFO 10-22 02:42:36 [gpu_model_runner.py:1875] Loading model from scratch...\nINFO 10-22 02:42:36 [cuda.py:259] Using Flash Attention backend on V1 engine.\nINFO 10-22 02:42:37 [default_loader.py:262] Loading weights took 0.64 seconds\nINFO 10-22 02:42:38 [gpu_model_runner.py:1892] Model loading took 1.1201 GiB and 1.105021 seconds\nINFO 10-22 02:42:40 [gpu_worker.py:255] Available KV cache memory: 8.33 GiB\nINFO 10-22 02:42:40 [kv_cache_utils.py:833] GPU KV cache size: 77,968 tokens\nINFO 10-22 02:42:40 [kv_cache_utils.py:837] Maximum concurrency for 512 tokens per request: 152.28x\nINFO 10-22 02:42:40 [core.py:193] init engine (profile, create kv cache, warmup model) took 2.08 seconds\n",
+      "stderr": "In file included from /tmp/tmpyhirlwx_/main.c:5:\nIn file included from /home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu/include/python3.11/Python.h:12:\n/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu/include/python3.11/pyconfig.h:1796:9: warning: '_POSIX_C_SOURCE' macro redefined [-Wmacro-redefined]\n 1796 | #define _POSIX_C_SOURCE 200809L\n      |         ^\n.venv-toolchain/lib/python3.11/site-packages/ziglang/lib/libc/include/generic-glibc/features.h:324:10: note: previous definition is here\n  324 | # define _POSIX_C_SOURCE        202405L\n      |          ^\n1 warning generated.\n\nLoading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]\n\nLoading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00,  1.90it/s]\n\nLoading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00,  1.90it/s]\n\n[rank0]:[W1022 02:42:43.089695064 ProcessGroupNCCL.cpp:1479] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())\n",
+      "worker": {
+        "status": "passed",
+        "gpu_compute_performed": true,
+        "visibility_conversion": {
+          "uuid_visibility": "GPU-2e81c395-ac38-bfde-adba-34f3d967f7af",
+          "numeric_visibility": "5",
+          "cuda_device_order": "PCI_BUS_ID",
+          "nvml_pci_index_order_verified": true,
+          "mapping": [
+            {
+              "allocated_uuid": "GPU-2e81c395-ac38-bfde-adba-34f3d967f7af",
+              "nvml_index": 5,
+              "gpu_uuid": "GPU-2e81c395-ac38-bfde-adba-34f3d967f7af",
+              "pci_bus_id": "00000000:3F:00.0"
+            }
+          ],
+          "reason": "vLLM 0.10.0 platform physical_device_id requires numeric identifiers; UUID authorization and CUDA identity were verified before this conversion"
+        },
+        "evidence": {
+          "torch_version": "2.7.1+cu126",
+          "torch_cuda_runtime": "12.6",
+          "nccl_runtime_version": [
+            2,
+            26,
+            2
+          ],
+          "devices": [
+            {
+              "logical_index": 0,
+              "allocated_uuid": "GPU-2e81c395-ac38-bfde-adba-34f3d967f7af",
+              "runtime_uuid": "2e81c395-ac38-bfde-adba-34f3d967f7af",
+              "name": "NVIDIA RTX A6000",
+              "total_memory_bytes": 50928943104,
+              "compute_capability": [
+                8,
+                6
+              ]
+            }
+          ],
+          "vllm_version": "0.10.0",
+          "engine_options": {
+            "model": "/home/fangjinjie/project/credit_assign/models/Qwen3-0.6B/c1899de289a04d12100db370d81485cdf75e47ca",
+            "tokenizer": "/home/fangjinjie/project/credit_assign/models/Qwen3-0.6B/c1899de289a04d12100db370d81485cdf75e47ca",
+            "tensor_parallel_size": 1,
+            "dtype": "bfloat16",
+            "max_model_len": 512,
+            "max_num_seqs": 1,
+            "gpu_memory_utilization": 0.2,
+            "enforce_eager": true,
+            "disable_log_stats": true,
+            "trust_remote_code": false,
+            "enable_prefix_caching": false,
+            "seed": 0,
+            "max_num_batched_tokens": 512,
+            "swap_space": 0,
+            "compilation_config": 0
+          },
+          "visibility_conversion": {
+            "uuid_visibility": "GPU-2e81c395-ac38-bfde-adba-34f3d967f7af",
+            "numeric_visibility": "5",
+            "cuda_device_order": "PCI_BUS_ID",
+            "nvml_pci_index_order_verified": true,
+            "mapping": [
+              {
+                "allocated_uuid": "GPU-2e81c395-ac38-bfde-adba-34f3d967f7af",
+                "nvml_index": 5,
+                "gpu_uuid": "GPU-2e81c395-ac38-bfde-adba-34f3d967f7af",
+                "pci_bus_id": "00000000:3F:00.0"
+              }
+            ],
+            "reason": "vLLM 0.10.0 platform physical_device_id requires numeric identifiers; UUID authorization and CUDA identity were verified before this conversion"
+          },
+          "enable_thinking": false,
+          "max_output_tokens": 16,
+          "generated_token_ids": [
+            3925,
+            13,
+            151645
+          ],
+          "text": "OK.",
+          "finish_reason": "stop",
+          "duration_seconds": 0.3506462313234806,
+          "model_revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+          "scope": "single prompt only; not multi-turn, LoRA, FSDP2 or RL validation"
+        }
+      },
+      "duration_seconds": 58.797513
+    }
+  }
+}

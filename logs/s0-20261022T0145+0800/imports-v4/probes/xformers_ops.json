@@ -1,0 +1,35 @@
+{
+  "id": "xformers_ops",
+  "argv": [
+    "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+    "-I",
+    "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+    "--child",
+    "{\"kind\": \"import\", \"id\": \"xformers_ops\", \"module\": \"xformers.ops\", \"attributes\": [\"memory_efficient_attention\"]}"
+  ],
+  "timeout_seconds": 120.0,
+  "status": "failed",
+  "returncode": 1,
+  "stdout": "PROCURE_RL_ENV_PROBE_RESULT={\"id\": \"xformers_ops\", \"status\": \"failed\", \"python\": {\"executable\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python\", \"prefix\": \"/home/fangjinjie/project/credit_assign/.venv-gpu\", \"base_prefix\": \"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu\", \"version\": \"3.11.16\"}, \"cuda_visible_devices\": \"\", \"module\": \"xformers.ops\", \"error_type\": \"ImportError\", \"error\": \"Requires Flash-Attention version >=2.7.1,<=2.8.0 but got 2.8.3.\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py\\\", line 205, in _execute_child_probe\\n    module = importlib.import_module(definition[\\\"module\\\"])\\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/importlib/__init__.py\\\", line 126, in import_module\\n    return _bootstrap._gcd_import(name[level:], package, level)\\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"<frozen importlib._bootstrap>\\\", line 1204, in _gcd_import\\n  File \\\"<frozen importlib._bootstrap>\\\", line 1176, in _find_and_load\\n  File \\\"<frozen importlib._bootstrap>\\\", line 1147, in _find_and_load_unlocked\\n  File \\\"<frozen importlib._bootstrap>\\\", line 690, in _load_unlocked\\n  File \\\"<frozen importlib._bootstrap_external>\\\", line 940, in exec_module\\n  File \\\"<frozen importlib._bootstrap>\\\", line 241, in _call_with_frames_removed\\n  File \\\"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/xformers/ops/__init__.py\\\", line 9, in <module>\\n    from .fmha import (\\n  File \\\"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/xformers/ops/fmha/__init__.py\\\", line 10, in <module>\\n    from . import (\\n  File \\\"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/xformers/ops/fmha/flash.py\\\", line 81, in <module>\\n    raise ImportError(\\nImportError: Requires Flash-Attention version >=2.7.1,<=2.8.0 but got 2.8.3.\\n\", \"torch_cuda_initialized_after_import\": false, \"blocked_process_executables\": [\"lscpu\"]}\n",
+  "stderr": "",
+  "result": {
+    "id": "xformers_ops",
+    "status": "failed",
+    "python": {
+      "executable": "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+      "prefix": "/home/fangjinjie/project/credit_assign/.venv-gpu",
+      "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+      "version": "3.11.16"
+    },
+    "cuda_visible_devices": "",
+    "module": "xformers.ops",
+    "error_type": "ImportError",
+    "error": "Requires Flash-Attention version >=2.7.1,<=2.8.0 but got 2.8.3.",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py\", line 205, in _execute_child_probe\n    module = importlib.import_module(definition[\"module\"])\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/importlib/__init__.py\", line 126, in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen importlib._bootstrap>\", line 1204, in _gcd_import\n  File \"<frozen importlib._bootstrap>\", line 1176, in _find_and_load\n  File \"<frozen importlib._bootstrap>\", line 1147, in _find_and_load_unlocked\n  File \"<frozen importlib._bootstrap>\", line 690, in _load_unlocked\n  File \"<frozen importlib._bootstrap_external>\", line 940, in exec_module\n  File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n  File \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/xformers/ops/__init__.py\", line 9, in <module>\n    from .fmha import (\n  File \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/xformers/ops/fmha/__init__.py\", line 10, in <module>\n    from . import (\n  File \"/home/fangjinjie/project/credit_assign/.venv-gpu/lib/python3.11/site-packages/xformers/ops/fmha/flash.py\", line 81, in <module>\n    raise ImportError(\nImportError: Requires Flash-Attention version >=2.7.1,<=2.8.0 but got 2.8.3.\n",
+    "torch_cuda_initialized_after_import": false,
+    "blocked_process_executables": [
+      "lscpu"
+    ]
+  },
+  "elapsed_seconds": 8.272
+}

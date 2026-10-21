@@ -1,0 +1,35 @@
+{
+  "checks": [
+    {
+      "argv": [
+        "uv",
+        "pip",
+        "check",
+        "--python",
+        ".venv-toolchain/bin/python"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "error: Could not acquire lock\n  cause: Could not create temporary file\n  cause: Read-only file system (os error 30) at path \"/home/fangjinjie/.cache/uv/.tmpT9CUvG\"\n"
+    },
+    {
+      "argv": [
+        "scripts/toolchain/cc",
+        "--version"
+      ],
+      "returncode": 0,
+      "stdout": "clang version 22.1.8\nTarget: x86_64-unknown-linux6.8.0-gnu2.35.0\nThread model: posix\nInstalledDir: /home/fangjinjie/project/credit_assign/.venv-toolchain/lib/python3.11/site-packages/ziglang\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "scripts/toolchain/cxx",
+        "--version"
+      ],
+      "returncode": 0,
+      "stdout": "clang version 22.1.8\nTarget: x86_64-unknown-linux6.8.0-gnu2.35.0\nThread model: posix\nInstalledDir: /home/fangjinjie/project/credit_assign/.venv-toolchain/lib/python3.11/site-packages/ziglang\n",
+      "stderr": ""
+    }
+  ],
+  "scope": "project compiler installation checks; no GPU use"
+}

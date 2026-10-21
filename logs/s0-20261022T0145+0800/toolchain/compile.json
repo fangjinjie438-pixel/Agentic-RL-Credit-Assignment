@@ -1,0 +1,26 @@
+{
+  "command": [
+    "/home/fangjinjie/project/credit_assign/scripts/toolchain/cc",
+    "-x",
+    "c",
+    "-",
+    "-O3",
+    "-shared",
+    "-fPIC",
+    "-Wno-psabi",
+    "-I/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu/include/python3.11",
+    "-L/home/fangjinjie/project/credit_assign/.tools/cuda-driver/lib",
+    "-Wl,-rpath,/home/fangjinjie/project/credit_assign/.tools/cuda-driver/lib",
+    "-lcuda",
+    "-o",
+    "/home/fangjinjie/project/credit_assign/logs/s0-20261022T0145+0800/toolchain/compiler-smoke.so"
+  ],
+  "source_stdin": "#include <Python.h>\nextern int cuDriverGetVersion(int *);\nint procure_add(int a,int b){ return a+b; }\nvoid *procure_driver_symbol(void){ return (void *)&cuDriverGetVersion; }\n",
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "",
+  "scope": "C/Python.h/shared library/NVIDIA driver link only; no driver function call or GPU context",
+  "gpu_compute_performed": false,
+  "observed_result": 42,
+  "passed": true
+}

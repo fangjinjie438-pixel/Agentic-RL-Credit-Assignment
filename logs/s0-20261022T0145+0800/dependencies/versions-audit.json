@@ -1,0 +1,22 @@
+{
+  "core_candidate_unchanged": {
+    "verl": "0.6.1",
+    "torch": "2.7.1+cu126",
+    "vllm": "0.10.0+cu126",
+    "transformers": "4.53.2"
+  },
+  "added_candidates": {
+    "peft": "0.16.0",
+    "accelerate": "1.8.1",
+    "torchdata": "0.11.0"
+  },
+  "reason": "Qwen3/Transformers-era APIs and explicit StatefulDataLoader path; static rationale only until installed import and GPU evidence",
+  "source_policy": "Torch wheels have explicit cu126 URLs; other packages use PyPI, no global PyTorch extra index",
+  "known_pending_import_issue": "Resolved datasets2.14.4 uses PyExtensionType; selected pyarrow26 removed that API. Preserve actual import result before applying targeted constraints.",
+  "sources": [
+    "https://github.com/huggingface/peft/tree/v0.16.0",
+    "https://github.com/huggingface/accelerate/blob/v1.8.1/src/accelerate/utils/constants.py",
+    "https://github.com/pytorch/data/blob/v0.11.0/README.md",
+    "https://docs.astral.sh/uv/pip/compatibility/#packages-that-exist-on-multiple-indexes"
+  ]
+}

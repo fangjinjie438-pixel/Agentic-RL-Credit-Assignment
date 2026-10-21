@@ -1,0 +1,7 @@
+Using Python 3.11.16 environment at: .venv-toolchain
+Resolved 1 package in 14.69s
+Downloading ziglang (96.3MiB)
+ Downloaded ziglang
+Prepared 1 package in 2m 53s
+Installed 1 package in 3.38s
+ + ziglang==0.17.0

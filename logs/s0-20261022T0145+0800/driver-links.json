@@ -1,0 +1,9 @@
+{
+  "kind": "system NVIDIA driver library links, not a Toolkit",
+  "source": "/usr/lib/x86_64-linux-gnu/libcuda.so.560.35.03",
+  "project_links": [
+    "/home/fangjinjie/project/credit_assign/.tools/cuda-driver/lib/libcuda.so",
+    "/home/fangjinjie/project/credit_assign/.tools/cuda-driver/lib/libcuda.so.1"
+  ],
+  "system_files_modified": false
+}

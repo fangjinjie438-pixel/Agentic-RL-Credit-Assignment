@@ -1,0 +1,5 @@
+Using Python 3.11.16 environment at: .venv-gpu
+Resolved 1 package in 2ms
+Prepared 1 package in 4.36s
+Installed 1 package in 45ms
+ + flash-attn==2.8.3+cu12torch2.7cxx11abitrue (from file:///home/fangjinjie/project/credit_assign/.cache/wheels/flash_attn-2.8.3+cu12torch2.7cxx11abiTRUE-cp311-cp311-linux_x86_64.whl)

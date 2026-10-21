@@ -1,0 +1,248 @@
+{
+  "schema_version": 1,
+  "stage": "S0",
+  "status": "passed",
+  "allocation": {
+    "gpu_uuids": [
+      "GPU-2e81c395-ac38-bfde-adba-34f3d967f7af",
+      "GPU-4c457a8a-39a3-5346-1f3c-5993b3102d03"
+    ],
+    "source": "user confirmation in this conversation: physical GPU 5 and 7",
+    "status": "explicit_user_claim"
+  },
+  "execute": true,
+  "requested_probes": [
+    "torch",
+    "nccl"
+  ],
+  "model_path": null,
+  "model_revision": null,
+  "seed": 0,
+  "gpu_execution_attempted": true,
+  "gpu_compute_performed": true,
+  "gpu_validation": "passed",
+  "validation_level": "real_gpu_probe_subset",
+  "candidate_stack_compatibility": "not_established",
+  "training_lora_fsdp2_validation": "not_run",
+  "checks": {
+    "torch": {
+      "probe": "torch",
+      "argv": [
+        "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+        "-m",
+        "procure_rl.gpu_probe",
+        "--worker"
+      ],
+      "visible_gpu_uuids": [
+        "GPU-2e81c395-ac38-bfde-adba-34f3d967f7af",
+        "GPU-4c457a8a-39a3-5346-1f3c-5993b3102d03"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "timeout": false,
+      "gpu_compute_performed": true,
+      "stdout": "",
+      "stderr": "",
+      "worker": {
+        "status": "passed",
+        "gpu_compute_performed": true,
+        "evidence": {
+          "torch_version": "2.7.1+cu126",
+          "torch_cuda_runtime": "12.6",
+          "nccl_runtime_version": [
+            2,
+            26,
+            2
+          ],
+          "devices": [
+            {
+              "logical_index": 0,
+              "allocated_uuid": "GPU-2e81c395-ac38-bfde-adba-34f3d967f7af",
+              "runtime_uuid": "2e81c395-ac38-bfde-adba-34f3d967f7af",
+              "name": "NVIDIA RTX A6000",
+              "total_memory_bytes": 50928943104,
+              "compute_capability": [
+                8,
+                6
+              ]
+            },
+            {
+              "logical_index": 1,
+              "allocated_uuid": "GPU-4c457a8a-39a3-5346-1f3c-5993b3102d03",
+              "runtime_uuid": "4c457a8a-39a3-5346-1f3c-5993b3102d03",
+              "name": "NVIDIA RTX A6000",
+              "total_memory_bytes": 50928943104,
+              "compute_capability": [
+                8,
+                6
+              ]
+            }
+          ],
+          "bf16": [
+            {
+              "logical_index": 0,
+              "dtype": "bfloat16",
+              "shape": [
+                64,
+                64
+              ],
+              "loss": 64.0,
+              "backward": "passed",
+              "peak_allocated_bytes": 17084928
+            },
+            {
+              "logical_index": 1,
+              "dtype": "bfloat16",
+              "shape": [
+                64,
+                64
+              ],
+              "loss": 64.0,
+              "backward": "passed",
+              "peak_allocated_bytes": 17084928
+            }
+          ],
+          "p2p": [
+            {
+              "source": 0,
+              "target": 1,
+              "peer_access": true,
+              "copy": "passed",
+              "bytes": 4096,
+              "duration_seconds": 0.004468958824872971,
+              "note": "small correctness check; not a bandwidth benchmark"
+            },
+            {
+              "source": 1,
+              "target": 0,
+              "peer_access": true,
+              "copy": "passed",
+              "bytes": 4096,
+              "duration_seconds": 0.0008990243077278137,
+              "note": "small correctness check; not a bandwidth benchmark"
+            }
+          ],
+          "p2p_status": "passed"
+        }
+      },
+      "duration_seconds": 5.721648
+    },
+    "nccl": {
+      "probe": "nccl",
+      "argv": [
+        "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+        "-m",
+        "procure_rl.gpu_probe",
+        "--worker"
+      ],
+      "visible_gpu_uuids": [
+        "GPU-2e81c395-ac38-bfde-adba-34f3d967f7af",
+        "GPU-4c457a8a-39a3-5346-1f3c-5993b3102d03"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "timeout": false,
+      "gpu_compute_performed": true,
+      "stdout": "",
+      "stderr": "",
+      "worker": {
+        "status": "passed",
+        "gpu_compute_performed": true,
+        "evidence": {
+          "torch_version": "2.7.1+cu126",
+          "torch_cuda_runtime": "12.6",
+          "nccl_runtime_version": [
+            2,
+            26,
+            2
+          ],
+          "devices": [
+            {
+              "logical_index": 0,
+              "allocated_uuid": "GPU-2e81c395-ac38-bfde-adba-34f3d967f7af",
+              "runtime_uuid": "2e81c395-ac38-bfde-adba-34f3d967f7af",
+              "name": "NVIDIA RTX A6000",
+              "total_memory_bytes": 50928943104,
+              "compute_capability": [
+                8,
+                6
+              ]
+            },
+            {
+              "logical_index": 1,
+              "allocated_uuid": "GPU-4c457a8a-39a3-5346-1f3c-5993b3102d03",
+              "runtime_uuid": "4c457a8a-39a3-5346-1f3c-5993b3102d03",
+              "name": "NVIDIA RTX A6000",
+              "total_memory_bytes": 50928943104,
+              "compute_capability": [
+                8,
+                6
+              ]
+            }
+          ],
+          "backend": "nccl",
+          "world_size": 2,
+          "start_method": "spawn",
+          "ranks": [
+            {
+              "rank": 0,
+              "logical_gpu": 0,
+              "status": "passed",
+              "elements": 16,
+              "dtype": "float32",
+              "expected": 3.0,
+              "result": [
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0
+              ],
+              "duration_seconds": 0.64056646078825
+            },
+            {
+              "rank": 1,
+              "logical_gpu": 1,
+              "status": "passed",
+              "elements": 16,
+              "dtype": "float32",
+              "expected": 3.0,
+              "result": [
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0
+              ],
+              "duration_seconds": 0.5022094734013081
+            }
+          ],
+          "note": "tiny correctness check; not throughput or training validation"
+        }
+      },
+      "duration_seconds": 9.922329
+    }
+  }
+}

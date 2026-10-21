@@ -1,0 +1,11 @@
+{
+  "own_project_gpu_processes": [],
+  "own_project_gpu_processes_remaining": 0,
+  "other_processes_untouched": true,
+  "visible_processes_checked": 1299,
+  "nvml_process_rows": 27,
+  "nvml_pids_not_visible_in_proc_namespace": 10,
+  "nvml_pid_visibility_note": "Missing /proc entry does not prove a remote host process exited; cleanup assertion is limited to own visible project GPU Python/vLLM workers plus completed probe process exits.",
+  "scope": "Read-only nvidia-smi and current /proc namespace; no signals or modifications to other users",
+  "passed": true
+}

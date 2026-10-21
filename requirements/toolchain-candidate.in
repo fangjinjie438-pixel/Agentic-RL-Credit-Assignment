@@ -1,0 +1,3 @@
+# Project-local compiler for Triton C launchers; not a CUDA Toolkit.
+# Static candidate until the S0 compile/link and GPU checks have passed.
+ziglang==0.17.0

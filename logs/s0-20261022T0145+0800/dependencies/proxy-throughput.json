@@ -1,0 +1,8 @@
+{
+  "proxy_on": true,
+  "range_probe_bytes": 8388608,
+  "http_status": 206,
+  "elapsed_seconds": 21.07419490814209,
+  "mib_per_second_including_connection": 0.37961118015992024,
+  "scope": "read-only download route diagnosis; no installation/GPU"
+}

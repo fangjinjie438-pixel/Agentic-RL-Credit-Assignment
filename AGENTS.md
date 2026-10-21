@@ -19,7 +19,7 @@
 
 - 学校 4×A6000 与 4×3090 按先到先得协调使用；用户确认通常容易获得 2×A6000，偶尔 3×A6000，规划无需依赖排队系统。**实际任务仍只使用本次明确归属的设备，记录 UUID；空闲显存、低利用率、无进程或 `CUDA_VISIBLE_DEVICES` 本身都不是资源归属证据。**
 - 具体设备未确认时，只运行 CPU 和只读硬件查询；不创建 CUDA 上下文、不启动模型、P2P 传输、NCCL 或训练。确认后先记录协调来源、GPU UUID 和可用时段（如有作业号一并记录），再将任务限制到获分配设备。
-- **用户要求不使用系统/根目录的 Python、Toolkit 等开发工具。** 允许用 uv 引导，将独立解释器安装到项目 `.tools/python`，再创建项目 `.venv-cpu` / `.venv-gpu`；所有 Python 命令明确使用项目虚拟环境。不得执行 `/usr/bin/python*`、全局 conda Python、用户共享 uv Python 或 `/usr/local/cuda*/bin/nvcc`；不调用系统 Toolkit，未来需要编译时在项目内独立安装并记录。系统路径可只读列举；`nvidia-smi` 仅作必要的驱动管理信息只读查询。
+- **用户要求不使用系统/根目录的 Python、Toolkit 等开发工具。** 允许用 uv 引导，将独立解释器安装到项目 `.tools/python`，再创建项目 `.venv-cpu` / `.venv-gpu` / `.venv-toolchain`；所有 Python 命令明确使用项目虚拟环境。不得执行 `/usr/bin/python*`、全局 conda Python、用户共享 uv Python 或 `/usr/local/cuda*/bin/nvcc`；不调用系统 Toolkit/GCC，编译入口限定项目 `scripts/toolchain/cc,cxx`（独立Zig）。必要的系统NVIDIA驱动库可由项目链接使用，它与开发Toolkit分开；系统路径可只读列举，`nvidia-smi`仅作驱动管理信息只读查询。
 - 不结束他人进程，不调整系统驱动、共享 CUDA、时钟或其他用户环境。依赖与工具缓存写项目目录或允许目录；不借用现有共享环境。遵循分配的 CPU/内存配额。
 - PIX 是拓扑路径，`nvidia-smi topo -p2p` 是能力查询，均不能标为实际 P2P/NCCL 测试通过。第三张卡先做实测再加入训练；不设 `TP=3`，不默认将第四卡或不同型号卡加入同步训练。
 - `nvidia-smi` CUDA 标签、Toolkit `nvcc` 版本、Torch runtime 和实际 NCCL 版本独立记录。

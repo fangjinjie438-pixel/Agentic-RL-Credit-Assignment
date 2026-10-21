@@ -1,0 +1,149 @@
+{
+  "id": "metadata",
+  "argv": [
+    "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+    "-I",
+    "/home/fangjinjie/project/credit_assign/src/procure_rl/environment_probe.py",
+    "--child",
+    "{\"id\": \"metadata\", \"kind\": \"metadata\"}"
+  ],
+  "timeout_seconds": 120.0,
+  "status": "passed",
+  "returncode": 0,
+  "stdout": "PROCURE_RL_ENV_PROBE_RESULT={\"id\": \"metadata\", \"status\": \"passed\", \"python\": {\"executable\": \"/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python\", \"prefix\": \"/home/fangjinjie/project/credit_assign/.venv-gpu\", \"base_prefix\": \"/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu\", \"version\": \"3.11.16\"}, \"cuda_visible_devices\": \"\", \"distributions\": {\"torch\": {\"candidate_version\": \"2.7.1+cu126\", \"status\": \"installed\", \"installed_version\": \"2.7.1+cu126\", \"version_comparison\": \"matches_metadata_only\", \"direct_url\": {\"url_omitted_to_protect_credentials\": true}}, \"torchvision\": {\"candidate_version\": \"0.22.1+cu126\", \"status\": \"installed\", \"installed_version\": \"0.22.1+cu126\", \"version_comparison\": \"matches_metadata_only\", \"direct_url\": {\"url_omitted_to_protect_credentials\": true}}, \"torchaudio\": {\"candidate_version\": \"2.7.1+cu126\", \"status\": \"installed\", \"installed_version\": \"2.7.1+cu126\", \"version_comparison\": \"matches_metadata_only\", \"direct_url\": {\"url_omitted_to_protect_credentials\": true}}, \"vllm\": {\"candidate_version\": \"0.10.0+cu126\", \"status\": \"installed\", \"installed_version\": \"0.10.0+cu126\", \"version_comparison\": \"matches_metadata_only\", \"direct_url\": {\"url_omitted_to_protect_credentials\": true}}, \"transformers\": {\"candidate_version\": \"4.53.2\", \"status\": \"installed\", \"installed_version\": \"4.53.2\", \"version_comparison\": \"matches_metadata_only\"}, \"verl\": {\"candidate_version\": \"0.6.1\", \"status\": \"installed\", \"installed_version\": \"0.6.1\", \"version_comparison\": \"matches_metadata_only\", \"direct_url\": {\"url_omitted_to_protect_credentials\": true, \"vcs_info\": {\"vcs\": \"git\", \"commit_id\": \"d62da4950573d7a4b7ef2362337952e7ab59e78d\", \"requested_revision\": \"d62da4950573d7a4b7ef2362337952e7ab59e78d\"}}, \"candidate_commit\": \"d62da4950573d7a4b7ef2362337952e7ab59e78d\", \"commit_comparison\": \"matches_commit_only\"}, \"peft\": {\"candidate_version\": \"0.16.0\", \"status\": \"installed\", \"installed_version\": \"0.16.0\", \"version_comparison\": \"matches_metadata_only\"}, \"accelerate\": {\"candidate_version\": \"1.8.1\", \"status\": \"installed\", \"installed_version\": \"1.8.1\", \"version_comparison\": \"matches_metadata_only\"}, \"torchdata\": {\"candidate_version\": \"0.11.0\", \"status\": \"installed\", \"installed_version\": \"0.11.0\", \"version_comparison\": \"matches_metadata_only\"}, \"xformers\": {\"candidate_version\": \"0.0.31\", \"status\": \"installed\", \"installed_version\": \"0.0.31\", \"version_comparison\": \"matches_metadata_only\", \"direct_url\": {\"url_omitted_to_protect_credentials\": true}}, \"ray\": {\"candidate_version\": null, \"status\": \"installed\", \"installed_version\": \"2.59.0\", \"version_comparison\": \"unconstrained\"}, \"tensordict\": {\"candidate_version\": null, \"status\": \"installed\", \"installed_version\": \"0.8.3\", \"version_comparison\": \"unconstrained\"}, \"flash-attn\": {\"candidate_version\": null, \"status\": \"installed\", \"installed_version\": \"2.8.0.post2\", \"version_comparison\": \"unconstrained\", \"direct_url\": {\"url_omitted_to_protect_credentials\": true}}, \"nvidia-cuda-runtime-cu12\": {\"candidate_version\": null, \"status\": \"installed\", \"installed_version\": \"12.6.77\", \"version_comparison\": \"unconstrained\"}, \"nvidia-nccl-cu12\": {\"candidate_version\": null, \"status\": \"installed\", \"installed_version\": \"2.26.2\", \"version_comparison\": \"unconstrained\"}}, \"candidate_metadata_violations\": [], \"blocked_process_executables\": []}\n",
+  "stderr": "",
+  "result": {
+    "id": "metadata",
+    "status": "passed",
+    "python": {
+      "executable": "/home/fangjinjie/project/credit_assign/.venv-gpu/bin/python",
+      "prefix": "/home/fangjinjie/project/credit_assign/.venv-gpu",
+      "base_prefix": "/home/fangjinjie/project/credit_assign/.tools/python/cpython-3.11.16-linux-x86_64-gnu",
+      "version": "3.11.16"
+    },
+    "cuda_visible_devices": "",
+    "distributions": {
+      "torch": {
+        "candidate_version": "2.7.1+cu126",
+        "status": "installed",
+        "installed_version": "2.7.1+cu126",
+        "version_comparison": "matches_metadata_only",
+        "direct_url": {
+          "url_omitted_to_protect_credentials": true
+        }
+      },
+      "torchvision": {
+        "candidate_version": "0.22.1+cu126",
+        "status": "installed",
+        "installed_version": "0.22.1+cu126",
+        "version_comparison": "matches_metadata_only",
+        "direct_url": {
+          "url_omitted_to_protect_credentials": true
+        }
+      },
+      "torchaudio": {
+        "candidate_version": "2.7.1+cu126",
+        "status": "installed",
+        "installed_version": "2.7.1+cu126",
+        "version_comparison": "matches_metadata_only",
+        "direct_url": {
+          "url_omitted_to_protect_credentials": true
+        }
+      },
+      "vllm": {
+        "candidate_version": "0.10.0+cu126",
+        "status": "installed",
+        "installed_version": "0.10.0+cu126",
+        "version_comparison": "matches_metadata_only",
+        "direct_url": {
+          "url_omitted_to_protect_credentials": true
+        }
+      },
+      "transformers": {
+        "candidate_version": "4.53.2",
+        "status": "installed",
+        "installed_version": "4.53.2",
+        "version_comparison": "matches_metadata_only"
+      },
+      "verl": {
+        "candidate_version": "0.6.1",
+        "status": "installed",
+        "installed_version": "0.6.1",
+        "version_comparison": "matches_metadata_only",
+        "direct_url": {
+          "url_omitted_to_protect_credentials": true,
+          "vcs_info": {
+            "vcs": "git",
+            "commit_id": "d62da4950573d7a4b7ef2362337952e7ab59e78d",
+            "requested_revision": "d62da4950573d7a4b7ef2362337952e7ab59e78d"
+          }
+        },
+        "candidate_commit": "d62da4950573d7a4b7ef2362337952e7ab59e78d",
+        "commit_comparison": "matches_commit_only"
+      },
+      "peft": {
+        "candidate_version": "0.16.0",
+        "status": "installed",
+        "installed_version": "0.16.0",
+        "version_comparison": "matches_metadata_only"
+      },
+      "accelerate": {
+        "candidate_version": "1.8.1",
+        "status": "installed",
+        "installed_version": "1.8.1",
+        "version_comparison": "matches_metadata_only"
+      },
+      "torchdata": {
+        "candidate_version": "0.11.0",
+        "status": "installed",
+        "installed_version": "0.11.0",
+        "version_comparison": "matches_metadata_only"
+      },
+      "xformers": {
+        "candidate_version": "0.0.31",
+        "status": "installed",
+        "installed_version": "0.0.31",
+        "version_comparison": "matches_metadata_only",
+        "direct_url": {
+          "url_omitted_to_protect_credentials": true
+        }
+      },
+      "ray": {
+        "candidate_version": null,
+        "status": "installed",
+        "installed_version": "2.59.0",
+        "version_comparison": "unconstrained"
+      },
+      "tensordict": {
+        "candidate_version": null,
+        "status": "installed",
+        "installed_version": "0.8.3",
+        "version_comparison": "unconstrained"
+      },
+      "flash-attn": {
+        "candidate_version": null,
+        "status": "installed",
+        "installed_version": "2.8.0.post2",
+        "version_comparison": "unconstrained",
+        "direct_url": {
+          "url_omitted_to_protect_credentials": true
+        }
+      },
+      "nvidia-cuda-runtime-cu12": {
+        "candidate_version": null,
+        "status": "installed",
+        "installed_version": "12.6.77",
+        "version_comparison": "unconstrained"
+      },
+      "nvidia-nccl-cu12": {
+        "candidate_version": null,
+        "status": "installed",
+        "installed_version": "2.26.2",
+        "version_comparison": "unconstrained"
+      }
+    },
+    "candidate_metadata_violations": [],
+    "blocked_process_executables": []
+  },
+  "elapsed_seconds": 0.174
+}
