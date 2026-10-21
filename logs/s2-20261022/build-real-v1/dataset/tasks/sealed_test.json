@@ -1,0 +1,69 @@
+{
+  "revision": "s2-625b5312397606c85c9c2dc8",
+  "tasks": [
+    {
+      "template_id": "office-color-weight-v1",
+      "split": "sealed_test",
+      "constraints": [
+        {
+          "id": "budget",
+          "source": "query",
+          "field": "price",
+          "op": "lte",
+          "value": 158,
+          "evidence_ids": [
+            "B09SJ9192T:details:price"
+          ]
+        },
+        {
+          "id": "color",
+          "source": "persona",
+          "field": "color",
+          "op": "eq",
+          "value": "Black",
+          "evidence_ids": [
+            "B09SJ9192T:details:color"
+          ]
+        },
+        {
+          "id": "weight",
+          "source": "clarification",
+          "field": "weight_g",
+          "op": "lte",
+          "value": 3084.428116,
+          "evidence_ids": [
+            "B09SJ9192T:details:weight_g"
+          ]
+        }
+      ],
+      "max_steps": 40,
+      "max_clarifications": 10,
+      "construction_anchor": "B09SJ9192T",
+      "variant_kind": "base",
+      "feasible_product_ids": [
+        "B09SJ9192T"
+      ],
+      "task_id": "task-3fbe9b9f3644a5b8a7f9",
+      "root_task_id": "task-3fbe9b9f3644a5b8a7f9",
+      "query": "Please recommend one office electronic device. My required price in USD is at most 158.",
+      "persona": "My required color is exactly Black.",
+      "clarifications": [
+        {
+          "question_id": "weight",
+          "question": "What is your maximum device weight?",
+          "answer": "My required weight in grams is at most 3084.428116.",
+          "constraint_ids": [
+            "weight"
+          ],
+          "trigger_keywords": [
+            "weight",
+            "mass"
+          ]
+        }
+      ],
+      "expression_method": "grounded_template_v1",
+      "teacher_expression_review": "not_run",
+      "human_review": "pending"
+    }
+  ]
+}

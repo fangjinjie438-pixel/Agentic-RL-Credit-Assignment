@@ -2,9 +2,11 @@
 
 训练办公电子设备采购 Agent 发现隐藏需求、核验证据并恢复失败，研究动作级信用分配与专家纠错监督。
 
-**唯一现行计划是 [PLAN.md](PLAN.md)**；开始工作先读 [AGENTS.md](AGENTS.md)、计划、[PROGRESS.md](PROGRESS.md) 和当前 [S1 操作文档](docs/stages/S1.md)。两份原稿已原样归档到 [docs/archive](docs/archive/README.md)，不再作为并行计划。
+**唯一现行计划是 [PLAN.md](PLAN.md)**；开始工作先读 [AGENTS.md](AGENTS.md)、计划、[PROGRESS.md](PROGRESS.md) 和当前 [S2 操作文档](docs/stages/S2.md)。两份原稿已原样归档到 [docs/archive](docs/archive/README.md)，不再作为并行计划。
 
-**S1 环境与验证器已完成 CPU 验收**：固定 ECom 源码上的九个原生工具、只读 split 商品库、独立会话、快照回放及终局/过程验证器已实现；证据见 [PROGRESS](PROGRESS.md)。S1 使用自建虚构工程夹具，无模型、教师 API 或 GPU。S0 的独立环境与最小 GPU 验收仍见 [validation-s0.json](requirements/validation-s0.json)。本轮在 S1 停止；S2 数据流水线与训练尚未实施。
+**S2 数据流水线代码与 CPU pilot 已实现，真实教师与数据审核尚待验收。** 固定来源的真实商品归一化、家族先划分、去重、反事实、教师客户端、回放过滤和审核门槛已实现；正式数据 withheld，尚未开始 S3。S0/S1 验收状态与逐项证据见 [PROGRESS](PROGRESS.md)。
+
+**教师默认值由 Codex 根据本轮授权暂选，可修改：[configs/s2-teacher.json](configs/s2-teacher.json)。** 当前为 `deepseek-flash`、关闭 thinking，未实测为本项目最优；密钥单独放 `.secrets/deepseek_api_key`，当前尚缺。选择理由、别名/价格边界及操作见 [S2](docs/stages/S2.md)。
 
 ## 最短运行路径
 
@@ -16,6 +18,8 @@ UV_CACHE_DIR="$PWD/.cache/uv" UV_PYTHON_INSTALL_DIR="$PWD/.tools/python" uv venv
 PYTHONPATH=src .venv-cpu/bin/python -m procure_rl check-config --config configs/s0.json --output logs/my-config-check
 PYTHONPATH=src .venv-cpu/bin/python -m procure_rl doctor --output logs/my-doctor
 PYTHONPATH=src .venv-cpu/bin/python -m procure_rl s1-smoke --config configs/s1.json --output logs/my-s1-acceptance
+PYTHONPATH=src .venv-cpu/bin/python -m procure_rl s2-build --config configs/s2.json --output logs/my-s2-build
+PYTHONPATH=src .venv-cpu/bin/python -m procure_rl s2-collect --config configs/s2.json --dataset logs/my-s2-build/dataset --output logs/my-s2-engineering --engineering --limit 2
 PYTHONPATH=src .venv-cpu/bin/python -m unittest discover -s tests -v
 ```
 
@@ -51,8 +55,8 @@ PYTHONPATH=src .venv-cpu/bin/python -m procure_rl gpu-probe --output logs/my-gpu
 | `PLAN.md` / `AGENTS.md` / `PROGRESS.md` | 计划、协作约束与唯一进度 |
 | [src](src/README.md) | Python 包；子目录 README 逐文件解释 |
 | [tests](tests/README.md) | CPU 回归与探针边界测试；mock 不替代 GPU 执行 |
-| [configs](configs/README.md) | S0 候选规划和 S1 CPU 工程验收配置，非 verl 训练配置 |
-| [fixtures](fixtures/README.md) | S1 虚构事实、任务和独立预期矩阵，非正式训练数据 |
+| [configs](configs/README.md) | S0/S1 工程配置、S2真实/工程来源和可修改教师默认值，非 verl 训练配置 |
+| [fixtures](fixtures/README.md) | S1虚构工程夹具、S2真实来源摘录与官方排除索引，非已放行训练集 |
 | [third_party](third_party/README.md) | 固定 ECom 原样源码、许可和逐文件哈希 |
 | [requirements](requirements/README.md) | CPU 零依赖、GPU 候选和锁定流程 |
 | [scripts](scripts/README.md) | 单命令代理包装与项目独立编译器入口 |
@@ -67,7 +71,8 @@ PYTHONPATH=src .venv-cpu/bin/python -m procure_rl gpu-probe --output logs/my-gpu
 | --- | --- | --- |
 | S0 工程与运行环境 | [S0.md](docs/stages/S0.md) | 声明范围验收通过；逐项证据见PROGRESS |
 | S1 环境和验证器 | [S1.md](docs/stages/S1.md) | 固定小数据 CPU 验收通过，阶段结束 |
-| S2 数据流水线 → S7 正式评测 | 按阶段实施时创建 | 尚未实现 |
+| S2 数据流水线 | [S2.md](docs/stages/S2.md) | 代码/CPU pilot实现；真实教师、人工/语义/官方家族审核待验收 |
+| S3 SFT → S7 正式评测 | 按阶段实施时创建 | 尚未实现 |
 | S8 多教师 OPD | 主项目完成后独立开展 | 可选，尚未实现 |
 
 出现 `ModuleNotFoundError` 时检查当前目录与 `PYTHONPATH=src`。输出目录已存在时使用新路径；缺少 `nvcc` 的 PATH 结果不代表系统没有其他 Toolkit。CPU 工具可重新运行无需恢复 checkpoint；真实训练与跨卡数恢复规则见 PLAN。

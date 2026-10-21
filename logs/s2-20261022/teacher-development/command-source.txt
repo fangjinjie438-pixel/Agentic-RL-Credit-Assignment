@@ -1,0 +1,1 @@
+PYTHONPATH=src .venv-cpu/bin/python -m unittest discover -s tests -p test_data_teacher.py -v

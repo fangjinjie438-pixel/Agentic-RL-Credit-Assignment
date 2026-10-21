@@ -1,4 +1,4 @@
-"""Persist S0/S1 run manifests and event logs without reading secrets.
+"""Persist stage run manifests and event logs without reading secrets.
 
 The CLI passes a new output directory and argv; this module records timestamps,
 machine/interpreter, source hashes, optional config hash and explicit validation

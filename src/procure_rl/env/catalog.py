@@ -1,4 +1,4 @@
-"""Build engineering SQLite fixtures and expose immutable split-scoped facts.
+"""Build versioned SQLite catalogs and expose immutable split-scoped facts.
 
 build_catalog consumes a versioned product JSON and writes one native-compatible
 database per split plus a content manifest. Catalog opens only one split read-only;
@@ -63,12 +63,13 @@ def build_catalog(source: Path, output: Path) -> dict:
                 # Native details expose only details-channel facts. Review-only facts
                 # remain gated behind a real native FTS review result.
                 details = {e["field"]: e["value"] for e in p["evidence"] if e["channel"] == "details"}
+                store, brand = p.get("store", p["family"]), p.get("brand", p["family"])
                 native = {"product_id": p["product_id"], "title": p["title"],
-                          "price": p["price"], "store": p["family"], "brand": p["family"],
+                          "price": p["price"], "store": store, "brand": brand,
                           "main_category": "Office Electronics", "details": details,
                           "features": [], "description": [], "average_rating": 4.0, "rating_number": 1}
                 conn.execute("INSERT INTO products VALUES(?,?,?,?,?)", (p["product_id"], p["title"],
-                             p["family"], p["family"], json.dumps(native)))
+                             store, brand, json.dumps(native)))
                 conn.execute("INSERT INTO facts VALUES(?,?)", (p["product_id"], json.dumps(p)))
                 for e in p["evidence"]:
                     conn.execute("INSERT INTO evidence VALUES(?,?,?,?)", (e["evidence_id"], p["product_id"],
@@ -126,12 +127,13 @@ class Catalog:
             conn.close()
 
 
-def load_tasks(path: Path) -> tuple[str, dict[str, dict]]:
-    """Load versioned private tasks, rejecting ambiguous or unsupported rubrics."""
+def load_tasks(path: Path, *, include_sealed_test: bool = False) -> tuple[str, dict[str, dict]]:
+    """Load private tasks; sealed tests require an explicit opt-in, never official."""
     data = json.loads(path.read_text())
     tasks = {}
     for task in data["tasks"]:
-        if task["task_id"] in tasks or task["split"] not in ("train", "dev"):
+        allowed = ("train", "dev", "sealed_test") if include_sealed_test else ("train", "dev")
+        if task["task_id"] in tasks or task["split"] not in allowed:
             raise ValueError("Duplicate task or test task used for engineering")
         if type(task["max_steps"]) is not int or task["max_steps"] not in range(1, 81):
             raise ValueError("Task budget must be 1..80")

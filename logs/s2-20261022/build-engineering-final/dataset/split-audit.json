@@ -1,0 +1,169 @@
+{
+  "method": "connected-product-clusters-seeded-sha256-v1",
+  "seed": 0,
+  "ratios": {
+    "train": 0.7272727272727273,
+    "dev": 0.09090909090909091,
+    "sealed_test": 0.18181818181818182
+  },
+  "input_products": 9,
+  "assigned_products": 9,
+  "quarantined_products": 0,
+  "clusters": [
+    {
+      "cluster_id": "cluster-aa01372439e693dbc1b417d8",
+      "product_ids": [
+        "dock-dev-a"
+      ],
+      "split": "train",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-309e4bf5545365624fd7d702",
+      "product_ids": [
+        "dock-dev-expensive"
+      ],
+      "split": "dev",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-adee90844813c32ae72332ad",
+      "product_ids": [
+        "dock-dev-legacy"
+      ],
+      "split": "train",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-a3ae5193860cf25999f6d1e9",
+      "product_ids": [
+        "dock-official-a"
+      ],
+      "split": "train",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-351c51f674dbcf313cc3d88a",
+      "product_ids": [
+        "dock-sealed-a"
+      ],
+      "split": "dev",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-6043df6fa8a7c6e5c4cfb000",
+      "product_ids": [
+        "dock-train-a"
+      ],
+      "split": "dev",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-8692060ccff3e87f44d84b05",
+      "product_ids": [
+        "dock-train-b"
+      ],
+      "split": "sealed_test",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-556fcb8ac2feb0846d85646d",
+      "product_ids": [
+        "dock-train-low"
+      ],
+      "split": "train",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-b390623e49b04572242c877c",
+      "product_ids": [
+        "dock-train-one"
+      ],
+      "split": "dev",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    }
+  ],
+  "cluster_count": 9,
+  "split_counts": {
+    "train": 4,
+    "dev": 4,
+    "sealed_test": 1,
+    "quarantine": 0
+  },
+  "ignored_input_split_count": 0,
+  "input_sha256": "5ebe988f2fef267af26c39a320e88f640cf81cd0d0018dd2374e87fb35fa2524",
+  "assignments_sha256": "a52e2bf26995c1c946c913b38c4bfc051ffb7a355891659e61f842119a8a2584",
+  "official_exclusions_sha256": "278e085f923ab71c777028110cb83c071333517c63f85ea4eea551a470a01350",
+  "official_exclusions_source_revision": "97eff345811fdf652a2135d38d874f2932e11702",
+  "official_exclusion_coverage": "provided_metadata_only",
+  "normalization": "NFKC-casefold-unicode-word-tokens-v1",
+  "link_edges": [],
+  "title_deduplication": {
+    "method": "sha256-token-minhash-128-v1",
+    "permutations": 128,
+    "bands": 16,
+    "jaccard_threshold": 0.85,
+    "minhash_candidate_pairs": 48,
+    "overlap_guard_pairs": 1,
+    "exact_comparisons": 48,
+    "confirmed_pairs": 1,
+    "overlap_guard": "exact token overlap prevents probabilistic LSH false negatives"
+  },
+  "semantic_review": "not_run; lexical candidates cannot prove semantic disjointness",
+  "assignments": {
+    "dock-dev-a": {
+      "split": "train",
+      "cluster_id": "cluster-aa01372439e693dbc1b417d8",
+      "reasons": []
+    },
+    "dock-dev-expensive": {
+      "split": "dev",
+      "cluster_id": "cluster-309e4bf5545365624fd7d702",
+      "reasons": []
+    },
+    "dock-dev-legacy": {
+      "split": "train",
+      "cluster_id": "cluster-adee90844813c32ae72332ad",
+      "reasons": []
+    },
+    "dock-official-a": {
+      "split": "train",
+      "cluster_id": "cluster-a3ae5193860cf25999f6d1e9",
+      "reasons": []
+    },
+    "dock-sealed-a": {
+      "split": "dev",
+      "cluster_id": "cluster-351c51f674dbcf313cc3d88a",
+      "reasons": []
+    },
+    "dock-train-a": {
+      "split": "dev",
+      "cluster_id": "cluster-6043df6fa8a7c6e5c4cfb000",
+      "reasons": []
+    },
+    "dock-train-b": {
+      "split": "sealed_test",
+      "cluster_id": "cluster-8692060ccff3e87f44d84b05",
+      "reasons": []
+    },
+    "dock-train-low": {
+      "split": "train",
+      "cluster_id": "cluster-556fcb8ac2feb0846d85646d",
+      "reasons": []
+    },
+    "dock-train-one": {
+      "split": "dev",
+      "cluster_id": "cluster-b390623e49b04572242c877c",
+      "reasons": []
+    }
+  }
+}

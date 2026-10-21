@@ -1,0 +1,96 @@
+{
+  "stage": "S2",
+  "status": "blocked",
+  "validation_level": "not_run_missing_credentials",
+  "mode": "api",
+  "data_revision": "s2-ee9902b8fc67ad1b39533598",
+  "dataset_manifest_sha256": "24d7f3a7b0e5e3427864bd28b59a45ef3f2f13f4ccc7d55f0306c83b9f6e1b3c",
+  "policy_version": "s2-expert-tool-v1",
+  "seed": 0,
+  "attempted": 1,
+  "replay_accepted": 0,
+  "rejected": 1,
+  "expert_candidates": 0,
+  "cost_estimate_usd": null,
+  "billed_cost_usd": null,
+  "release_gate": {
+    "ready_for_formal_training": false,
+    "status": "withheld",
+    "reasons": [
+      "official_family_and_near_duplicate_metadata_incomplete",
+      "product_family_identities_pending_review",
+      "fewer_than_200_hash_bound_human_task_reviews",
+      "independent_semantic_review_pending",
+      "no_replay_accepted_real_teacher_training_episodes"
+    ],
+    "human_review_count": 0,
+    "independent_review_count": 0,
+    "expert_candidate_task_count": 0,
+    "invalid_review_task_ids": [],
+    "human_rejected_task_ids": [],
+    "conflicting_task_ids": [],
+    "unadjudicated_task_ids": [],
+    "quantity_targets": {
+      "train": 1600,
+      "dev": 200,
+      "sealed_test": 400,
+      "counterfactual_pairs": 100,
+      "expert_successes": 600
+    },
+    "quantity_targets_are_not_claimed_achieved": true
+  },
+  "stage_complete": false,
+  "blockers": [
+    "teacher_credentials_missing"
+  ],
+  "gpu_compute_performed": false,
+  "teacher": {
+    "kind": "http_teacher",
+    "engineering_only": false,
+    "model": "deepseek-flash",
+    "model_revision": null,
+    "expected_model_revision": "DeepSeek-V4.1-Flash-1017 (documented alias target on 2026-10-22; not an immutable pin)",
+    "selection_status": "agent_selected_provisional",
+    "prompt_version": "procure-teacher-visible-v1",
+    "identity": {
+      "config": {
+        "selection_status": "agent_selected_provisional",
+        "selection_notice": "DEFAULT CHOSEN BY CODEX FOR THIS PROJECT; not benchmarked as optimal. Review and edit this file before a large collection.",
+        "selection_reason": "Low-cost nonthinking tool calls for fact-grounded expression and expert execution; deterministic replay and independent review remain required.",
+        "base_url": "https://api.deepseek.com",
+        "model": "deepseek-flash",
+        "expected_model_revision": "DeepSeek-V4.1-Flash-1017 (documented alias target on 2026-10-22; not an immutable pin)",
+        "model_revision": null,
+        "thinking": {
+          "type": "disabled"
+        },
+        "max_requests": 80,
+        "max_cost_usd": 2.0,
+        "request_cost_cap_usd": 0.025,
+        "max_tokens": 1024,
+        "temperature": 0,
+        "timeout_seconds": 60,
+        "input_per_million_usd": 0.3,
+        "output_per_million_usd": 1.2,
+        "price_policy": "Conservative peak cache-miss prices; provider billed amount unknown until supplied. USD budget is a pilot ceiling, not a CNY budget conversion.",
+        "documentation_verified_at": "2026-10-22",
+        "sources": [
+          "https://api-docs.deepseek.com/quick_start/pricing/",
+          "https://api-docs.deepseek.com/guides/tool_calls/"
+        ]
+      },
+      "policy_version": "s2-expert-tool-v1",
+      "prompt_version": "procure-teacher-visible-v1"
+    },
+    "identity_sha256": "b7df38e091fbb3f521c93e61286c07eefea63e51dcd287c94a9d48f7c4771d7a",
+    "requests": [],
+    "usage": [],
+    "cost_usd": null,
+    "new_request_cost_estimate_usd": null,
+    "new_api_calls": 0,
+    "billed_cost_usd": null,
+    "cost_reservation_usd": 0,
+    "cost_limit_usd": 2.0,
+    "cost_accounting": "estimate_from_configured_prices_and_provider_usage; billed_amount_unknown; configured reservations bound admission"
+  }
+}

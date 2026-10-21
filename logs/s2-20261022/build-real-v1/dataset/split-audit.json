@@ -1,0 +1,211 @@
+{
+  "method": "connected-product-clusters-seeded-sha256-v1",
+  "seed": 0,
+  "ratios": {
+    "train": 0.7272727272727273,
+    "dev": 0.09090909090909091,
+    "sealed_test": 0.18181818181818182
+  },
+  "input_products": 12,
+  "assigned_products": 12,
+  "quarantined_products": 0,
+  "clusters": [
+    {
+      "cluster_id": "cluster-a39723f7ad37d398a1195168",
+      "product_ids": [
+        "B00SK0FOHG"
+      ],
+      "split": "train",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-3a69f18933bd533fa756b888",
+      "product_ids": [
+        "B01FB654PI"
+      ],
+      "split": "train",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-a7f9cd39f02091caf3a005ff",
+      "product_ids": [
+        "B09H2JQD48"
+      ],
+      "split": "train",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-4514f07128e1e564fb5e7c0c",
+      "product_ids": [
+        "B09SJ9192T"
+      ],
+      "split": "sealed_test",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-d7d70d32d3da7f6f31583431",
+      "product_ids": [
+        "B09X983942"
+      ],
+      "split": "train",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-a99ce8eecec4cbc929d6e0a1",
+      "product_ids": [
+        "B0B5LDPJLD"
+      ],
+      "split": "train",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-bf234ca851179e5207f16d8f",
+      "product_ids": [
+        "B0B97BKQJV"
+      ],
+      "split": "dev",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-756a9f5b0617e3cec402b537",
+      "product_ids": [
+        "B0BCV6K63S"
+      ],
+      "split": "train",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-3deb135d08fd2af07ddd821f",
+      "product_ids": [
+        "B0BKFX6FWW"
+      ],
+      "split": "train",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-6f0801cca96823b26d559597",
+      "product_ids": [
+        "B0BKS1K986"
+      ],
+      "split": "train",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-0d4c1bc487ac4a5f3bd8f75a",
+      "product_ids": [
+        "B0BMXFDSKM"
+      ],
+      "split": "train",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-5b2addaa78c85f19652a9aa4",
+      "product_ids": [
+        "B0BWYJJLSF"
+      ],
+      "split": "train",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    }
+  ],
+  "cluster_count": 12,
+  "split_counts": {
+    "train": 10,
+    "dev": 1,
+    "sealed_test": 1,
+    "quarantine": 0
+  },
+  "ignored_input_split_count": 0,
+  "input_sha256": "059017fdd753dc60e3e8a94088aa91f8a7764ae4097529b62125ebad73e6d6fa",
+  "assignments_sha256": "357a82922bce863ae5752b96a47d18d1bf5d1daae66e31b65617f07320303197",
+  "official_exclusions_sha256": "3d69ff463937290a030f144713538f6929e4db76b4740c42d6b6383a040a0f1a",
+  "official_exclusions_source_revision": "97eff345811fdf652a2135d38d874f2932e11702",
+  "official_exclusion_coverage": "provided_metadata_only",
+  "normalization": "NFKC-casefold-unicode-word-tokens-v1",
+  "link_edges": [],
+  "title_deduplication": {
+    "method": "sha256-token-minhash-128-v1",
+    "permutations": 128,
+    "bands": 16,
+    "jaccard_threshold": 0.85,
+    "minhash_candidate_pairs": 0,
+    "overlap_guard_pairs": 0,
+    "exact_comparisons": 0,
+    "confirmed_pairs": 0,
+    "overlap_guard": "exact token overlap prevents probabilistic LSH false negatives"
+  },
+  "semantic_review": "not_run; lexical candidates cannot prove semantic disjointness",
+  "assignments": {
+    "B00SK0FOHG": {
+      "split": "train",
+      "cluster_id": "cluster-a39723f7ad37d398a1195168",
+      "reasons": []
+    },
+    "B01FB654PI": {
+      "split": "train",
+      "cluster_id": "cluster-3a69f18933bd533fa756b888",
+      "reasons": []
+    },
+    "B09H2JQD48": {
+      "split": "train",
+      "cluster_id": "cluster-a7f9cd39f02091caf3a005ff",
+      "reasons": []
+    },
+    "B09SJ9192T": {
+      "split": "sealed_test",
+      "cluster_id": "cluster-4514f07128e1e564fb5e7c0c",
+      "reasons": []
+    },
+    "B09X983942": {
+      "split": "train",
+      "cluster_id": "cluster-d7d70d32d3da7f6f31583431",
+      "reasons": []
+    },
+    "B0B5LDPJLD": {
+      "split": "train",
+      "cluster_id": "cluster-a99ce8eecec4cbc929d6e0a1",
+      "reasons": []
+    },
+    "B0B97BKQJV": {
+      "split": "dev",
+      "cluster_id": "cluster-bf234ca851179e5207f16d8f",
+      "reasons": []
+    },
+    "B0BCV6K63S": {
+      "split": "train",
+      "cluster_id": "cluster-756a9f5b0617e3cec402b537",
+      "reasons": []
+    },
+    "B0BKFX6FWW": {
+      "split": "train",
+      "cluster_id": "cluster-3deb135d08fd2af07ddd821f",
+      "reasons": []
+    },
+    "B0BKS1K986": {
+      "split": "train",
+      "cluster_id": "cluster-6f0801cca96823b26d559597",
+      "reasons": []
+    },
+    "B0BMXFDSKM": {
+      "split": "train",
+      "cluster_id": "cluster-0d4c1bc487ac4a5f3bd8f75a",
+      "reasons": []
+    },
+    "B0BWYJJLSF": {
+      "split": "train",
+      "cluster_id": "cluster-5b2addaa78c85f19652a9aa4",
+      "reasons": []
+    }
+  }
+}

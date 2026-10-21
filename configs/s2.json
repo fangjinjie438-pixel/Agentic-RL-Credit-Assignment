@@ -1,0 +1,27 @@
+{
+  "stage": "S2",
+  "source_kind": "attributed_raw_records",
+  "source_path": "fixtures/s2/amazon-electronics.json",
+  "official_exclusions_path": "fixtures/s2/official-exclusions.json",
+  "seed": 0,
+  "split_ratios": {"train": 8, "dev": 1, "sealed_test": 2},
+  "max_base_per_split": 8,
+  "require_disjoint_counterfactual": true,
+  "templates": [{
+    "template_id": "office-color-weight-v1",
+    "item_description": "office electronic device",
+    "constraints": [
+      {"id": "budget", "source": "query", "field": "price", "op": "lte", "label": "price in USD"},
+      {"id": "color", "source": "persona", "field": "color", "op": "eq", "label": "color"},
+      {"id": "weight", "source": "clarification", "field": "weight_g", "op": "lte", "label": "weight in grams", "question": "What is your maximum device weight?", "trigger_keywords": ["weight", "mass"]}
+    ],
+    "counterfactual_constraint_ids": ["color", "budget", "weight"]
+  }],
+  "engineering_policy": {
+    "search_queries": ["keyboard", "docking", "monitor", "laptop", "router"],
+    "clarification_questions": ["What is your maximum device weight?"],
+    "review_query": "weight"
+  },
+  "pilot_collection_limit": 2,
+  "notice": "Small research pilot. Official families, 200 human reviews, independent semantic review and real teacher acceptance remain release gates. No automatic expansion to target counts."
+}

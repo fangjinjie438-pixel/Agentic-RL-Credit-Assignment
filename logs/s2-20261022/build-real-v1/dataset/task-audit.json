@@ -1,0 +1,125 @@
+{
+  "method": "fact_first_v1",
+  "base_counts": {
+    "train": 7,
+    "dev": 0,
+    "sealed_test": 1
+  },
+  "counterfactual_pairs": 4,
+  "expression_augmentation_count": 0,
+  "human_review": "pending",
+  "teacher_expression_review": "not_run",
+  "target_counts_are_not_completion_evidence": true,
+  "split_audit": {
+    "passed": true,
+    "task_count": 12,
+    "group_count": 8,
+    "groups": [
+      [
+        "task-3fbe9b9f3644a5b8a7f9"
+      ],
+      [
+        "task-6607b386f9ff56233996",
+        "task-6607b386f9ff56233996-cf-5ee29266"
+      ],
+      [
+        "task-72e45343984d6a3ce84c",
+        "task-72e45343984d6a3ce84c-cf-f13bafd5"
+      ],
+      [
+        "task-964a2c1b4a9586d4b9ea"
+      ],
+      [
+        "task-9e9c41995b5779485caa",
+        "task-9e9c41995b5779485caa-cf-f13bafd5"
+      ],
+      [
+        "task-ac53e878d2c50893225c",
+        "task-ac53e878d2c50893225c-cf-5ee29266"
+      ],
+      [
+        "task-d517dd7dd49de37d4410"
+      ],
+      [
+        "task-eab64e1f7a0884441a5f"
+      ]
+    ],
+    "violations": [],
+    "task_records_sha256": "5739ab4f99704c43bb99fe7959f56e1adff0a04f215372163c44e355747e73c2",
+    "scope": "declared sibling fields and explicit product/evidence references"
+  },
+  "expression_audits": {
+    "task-3fbe9b9f3644a5b8a7f9": {
+      "passed": true,
+      "errors": [],
+      "method": "literal_value_coverage_v1",
+      "semantic_review": "pending; lexical checks do not establish semantic fidelity"
+    },
+    "task-6607b386f9ff56233996": {
+      "passed": true,
+      "errors": [],
+      "method": "literal_value_coverage_v1",
+      "semantic_review": "pending; lexical checks do not establish semantic fidelity"
+    },
+    "task-6607b386f9ff56233996-cf-5ee29266": {
+      "passed": true,
+      "errors": [],
+      "method": "literal_value_coverage_v1",
+      "semantic_review": "pending; lexical checks do not establish semantic fidelity"
+    },
+    "task-72e45343984d6a3ce84c": {
+      "passed": true,
+      "errors": [],
+      "method": "literal_value_coverage_v1",
+      "semantic_review": "pending; lexical checks do not establish semantic fidelity"
+    },
+    "task-72e45343984d6a3ce84c-cf-f13bafd5": {
+      "passed": true,
+      "errors": [],
+      "method": "literal_value_coverage_v1",
+      "semantic_review": "pending; lexical checks do not establish semantic fidelity"
+    },
+    "task-964a2c1b4a9586d4b9ea": {
+      "passed": true,
+      "errors": [],
+      "method": "literal_value_coverage_v1",
+      "semantic_review": "pending; lexical checks do not establish semantic fidelity"
+    },
+    "task-9e9c41995b5779485caa": {
+      "passed": true,
+      "errors": [],
+      "method": "literal_value_coverage_v1",
+      "semantic_review": "pending; lexical checks do not establish semantic fidelity"
+    },
+    "task-9e9c41995b5779485caa-cf-f13bafd5": {
+      "passed": true,
+      "errors": [],
+      "method": "literal_value_coverage_v1",
+      "semantic_review": "pending; lexical checks do not establish semantic fidelity"
+    },
+    "task-ac53e878d2c50893225c": {
+      "passed": true,
+      "errors": [],
+      "method": "literal_value_coverage_v1",
+      "semantic_review": "pending; lexical checks do not establish semantic fidelity"
+    },
+    "task-ac53e878d2c50893225c-cf-5ee29266": {
+      "passed": true,
+      "errors": [],
+      "method": "literal_value_coverage_v1",
+      "semantic_review": "pending; lexical checks do not establish semantic fidelity"
+    },
+    "task-d517dd7dd49de37d4410": {
+      "passed": true,
+      "errors": [],
+      "method": "literal_value_coverage_v1",
+      "semantic_review": "pending; lexical checks do not establish semantic fidelity"
+    },
+    "task-eab64e1f7a0884441a5f": {
+      "passed": true,
+      "errors": [],
+      "method": "literal_value_coverage_v1",
+      "semantic_review": "pending; lexical checks do not establish semantic fidelity"
+    }
+  }
+}

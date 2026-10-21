@@ -1,0 +1,562 @@
+[
+  {
+    "product_id": "B00SK0FOHG",
+    "title": "Logitech Wireless Touch Keyboard K400 with Built-In Multi-Touch Touchpad, Black (Renewed)",
+    "price": 21.95,
+    "specs": {
+      "weight_g": 430.9127515,
+      "color": "Black",
+      "connectivity": "USB",
+      "operating_system": "Windows 10"
+    },
+    "family": "brand:logitech",
+    "brand": "Logitech",
+    "model": "920-003070RFB",
+    "identity_review_required": true,
+    "units": {
+      "price": "USD",
+      "weight_g": "g",
+      "color": null,
+      "connectivity": null,
+      "operating_system": null
+    },
+    "evidence": [
+      {
+        "evidence_id": "B00SK0FOHG:details:price",
+        "product_id": "B00SK0FOHG",
+        "field": "price",
+        "value": 21.95,
+        "channel": "details",
+        "text": "21.95",
+        "provenance": {
+          "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+          "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+          "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+          "source_field": [
+            "price"
+          ],
+          "raw_value": "21.95",
+          "raw_unit": "USD",
+          "unit": "USD",
+          "source_row_index": 895,
+          "raw_record_sha256": "c921d44bf9656fa21c963e1951f6ffd03b0b27d7ba62ffe2eae4d5899512b2a9"
+        }
+      },
+      {
+        "evidence_id": "B00SK0FOHG:details:weight_g",
+        "product_id": "B00SK0FOHG",
+        "field": "weight_g",
+        "value": 430.9127515,
+        "channel": "details",
+        "text": "15.2 ounces",
+        "provenance": {
+          "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+          "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+          "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+          "source_field": [
+            "details",
+            "Item Weight"
+          ],
+          "raw_value": "15.2 ounces",
+          "raw_unit": "ounces",
+          "unit": "g",
+          "source_row_index": 895,
+          "raw_record_sha256": "c921d44bf9656fa21c963e1951f6ffd03b0b27d7ba62ffe2eae4d5899512b2a9"
+        }
+      },
+      {
+        "evidence_id": "B00SK0FOHG:details:color",
+        "product_id": "B00SK0FOHG",
+        "field": "color",
+        "value": "Black",
+        "channel": "details",
+        "text": "Black",
+        "provenance": {
+          "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+          "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+          "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+          "source_field": [
+            "details",
+            "Color"
+          ],
+          "raw_value": "Black",
+          "raw_unit": null,
+          "unit": null,
+          "source_row_index": 895,
+          "raw_record_sha256": "c921d44bf9656fa21c963e1951f6ffd03b0b27d7ba62ffe2eae4d5899512b2a9"
+        }
+      },
+      {
+        "evidence_id": "B00SK0FOHG:details:connectivity",
+        "product_id": "B00SK0FOHG",
+        "field": "connectivity",
+        "value": "USB",
+        "channel": "details",
+        "text": "USB",
+        "provenance": {
+          "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+          "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+          "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+          "source_field": [
+            "details",
+            "Connectivity Technology"
+          ],
+          "raw_value": "USB",
+          "raw_unit": null,
+          "unit": null,
+          "source_row_index": 895,
+          "raw_record_sha256": "c921d44bf9656fa21c963e1951f6ffd03b0b27d7ba62ffe2eae4d5899512b2a9"
+        }
+      },
+      {
+        "evidence_id": "B00SK0FOHG:details:operating_system",
+        "product_id": "B00SK0FOHG",
+        "field": "operating_system",
+        "value": "Windows 10",
+        "channel": "details",
+        "text": "Windows 10",
+        "provenance": {
+          "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+          "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+          "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+          "source_field": [
+            "details",
+            "Operating System"
+          ],
+          "raw_value": "Windows 10",
+          "raw_unit": null,
+          "unit": null,
+          "source_row_index": 895,
+          "raw_record_sha256": "c921d44bf9656fa21c963e1951f6ffd03b0b27d7ba62ffe2eae4d5899512b2a9"
+        }
+      }
+    ],
+    "provenance": {
+      "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+      "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+      "raw_record_sha256": "c921d44bf9656fa21c963e1951f6ffd03b0b27d7ba62ffe2eae4d5899512b2a9",
+      "source_row_index": 895,
+      "family_method": "conservative_all_products_of_source_brand",
+      "family_status": "pending_manual_review"
+    },
+    "split": "quarantine",
+    "quarantine_reasons": [
+      "official_family",
+      "official_overlap_cluster_quarantine"
+    ]
+  },
+  {
+    "product_id": "B09SJ9192T",
+    "title": "SAMSUNG 23.5” CF396 Curved Computer Monitor, AMD FreeSync for Advanced Gaming, 4ms Response Time, Wide Viewing Angle, Ultra Slim Design, LC24F396FHNXZA, Black",
+    "price": 158,
+    "specs": {
+      "weight_g": 3084.428116,
+      "color": "Black",
+      "screen_size": "23.5 Inches",
+      "display_resolution": "1920 x 1080 Pixels"
+    },
+    "family": "brand:samsung",
+    "brand": "SAMSUNG",
+    "model": "LC24F396FHNXZA",
+    "identity_review_required": true,
+    "units": {
+      "price": "USD",
+      "weight_g": "g",
+      "color": null,
+      "screen_size": null,
+      "display_resolution": null
+    },
+    "evidence": [
+      {
+        "evidence_id": "B09SJ9192T:details:price",
+        "product_id": "B09SJ9192T",
+        "field": "price",
+        "value": 158,
+        "channel": "details",
+        "text": "158.0",
+        "provenance": {
+          "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+          "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+          "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+          "source_field": [
+            "price"
+          ],
+          "raw_value": "158.0",
+          "raw_unit": "USD",
+          "unit": "USD",
+          "source_row_index": 429,
+          "raw_record_sha256": "9f2f91fe9f0af64d83cbd4326e2946bf1a1015dbee8aff8af279c4572d08c8e0"
+        }
+      },
+      {
+        "evidence_id": "B09SJ9192T:details:weight_g",
+        "product_id": "B09SJ9192T",
+        "field": "weight_g",
+        "value": 3084.428116,
+        "channel": "details",
+        "text": "6.8 pounds",
+        "provenance": {
+          "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+          "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+          "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+          "source_field": [
+            "details",
+            "Item Weight"
+          ],
+          "raw_value": "6.8 pounds",
+          "raw_unit": "pounds",
+          "unit": "g",
+          "source_row_index": 429,
+          "raw_record_sha256": "9f2f91fe9f0af64d83cbd4326e2946bf1a1015dbee8aff8af279c4572d08c8e0"
+        }
+      },
+      {
+        "evidence_id": "B09SJ9192T:details:color",
+        "product_id": "B09SJ9192T",
+        "field": "color",
+        "value": "Black",
+        "channel": "details",
+        "text": "Black",
+        "provenance": {
+          "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+          "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+          "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+          "source_field": [
+            "details",
+            "Color"
+          ],
+          "raw_value": "Black",
+          "raw_unit": null,
+          "unit": null,
+          "source_row_index": 429,
+          "raw_record_sha256": "9f2f91fe9f0af64d83cbd4326e2946bf1a1015dbee8aff8af279c4572d08c8e0"
+        }
+      },
+      {
+        "evidence_id": "B09SJ9192T:details:screen_size",
+        "product_id": "B09SJ9192T",
+        "field": "screen_size",
+        "value": "23.5 Inches",
+        "channel": "details",
+        "text": "23.5 Inches",
+        "provenance": {
+          "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+          "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+          "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+          "source_field": [
+            "details",
+            "Screen Size"
+          ],
+          "raw_value": "23.5 Inches",
+          "raw_unit": null,
+          "unit": null,
+          "source_row_index": 429,
+          "raw_record_sha256": "9f2f91fe9f0af64d83cbd4326e2946bf1a1015dbee8aff8af279c4572d08c8e0"
+        }
+      },
+      {
+        "evidence_id": "B09SJ9192T:details:display_resolution",
+        "product_id": "B09SJ9192T",
+        "field": "display_resolution",
+        "value": "1920 x 1080 Pixels",
+        "channel": "details",
+        "text": "1920 x 1080 Pixels",
+        "provenance": {
+          "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+          "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+          "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+          "source_field": [
+            "details",
+            "Display Resolution Maximum"
+          ],
+          "raw_value": "1920 x 1080 Pixels",
+          "raw_unit": null,
+          "unit": null,
+          "source_row_index": 429,
+          "raw_record_sha256": "9f2f91fe9f0af64d83cbd4326e2946bf1a1015dbee8aff8af279c4572d08c8e0"
+        }
+      }
+    ],
+    "provenance": {
+      "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+      "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+      "raw_record_sha256": "9f2f91fe9f0af64d83cbd4326e2946bf1a1015dbee8aff8af279c4572d08c8e0",
+      "source_row_index": 429,
+      "family_method": "conservative_all_products_of_source_brand",
+      "family_status": "pending_manual_review"
+    },
+    "split": "quarantine",
+    "quarantine_reasons": [
+      "official_family",
+      "official_overlap_cluster_quarantine"
+    ]
+  },
+  {
+    "product_id": "B0BCV6K63S",
+    "title": "Dell Inspiron 15.6\" HD Laptop, Intel Celeron Processor N4020, 8GB RAM, 128GB PCIe SSD, Intel UHD Graphics 600, HD Audio, HD Webcam, Black, Windows 11 Home",
+    "price": 379,
+    "specs": {
+      "weight_g": 1846.1209459,
+      "color": "Black",
+      "operating_system": "Windows 11 Home",
+      "screen_size": "15.6 Inches"
+    },
+    "family": "brand:dell",
+    "brand": "Dell",
+    "model": "DELL",
+    "identity_review_required": true,
+    "units": {
+      "price": "USD",
+      "weight_g": "g",
+      "color": null,
+      "operating_system": null,
+      "screen_size": null
+    },
+    "evidence": [
+      {
+        "evidence_id": "B0BCV6K63S:details:price",
+        "product_id": "B0BCV6K63S",
+        "field": "price",
+        "value": 379,
+        "channel": "details",
+        "text": "379.0",
+        "provenance": {
+          "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+          "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+          "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+          "source_field": [
+            "price"
+          ],
+          "raw_value": "379.0",
+          "raw_unit": "USD",
+          "unit": "USD",
+          "source_row_index": 762,
+          "raw_record_sha256": "7ce245f4cc425c6ab8595e8c988cc0a122009591f239dc192259124b44e2512d"
+        }
+      },
+      {
+        "evidence_id": "B0BCV6K63S:details:weight_g",
+        "product_id": "B0BCV6K63S",
+        "field": "weight_g",
+        "value": 1846.1209459,
+        "channel": "details",
+        "text": "4.07 pounds",
+        "provenance": {
+          "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+          "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+          "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+          "source_field": [
+            "details",
+            "Item Weight"
+          ],
+          "raw_value": "4.07 pounds",
+          "raw_unit": "pounds",
+          "unit": "g",
+          "source_row_index": 762,
+          "raw_record_sha256": "7ce245f4cc425c6ab8595e8c988cc0a122009591f239dc192259124b44e2512d"
+        }
+      },
+      {
+        "evidence_id": "B0BCV6K63S:details:color",
+        "product_id": "B0BCV6K63S",
+        "field": "color",
+        "value": "Black",
+        "channel": "details",
+        "text": "Black",
+        "provenance": {
+          "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+          "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+          "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+          "source_field": [
+            "details",
+            "Color"
+          ],
+          "raw_value": "Black",
+          "raw_unit": null,
+          "unit": null,
+          "source_row_index": 762,
+          "raw_record_sha256": "7ce245f4cc425c6ab8595e8c988cc0a122009591f239dc192259124b44e2512d"
+        }
+      },
+      {
+        "evidence_id": "B0BCV6K63S:details:operating_system",
+        "product_id": "B0BCV6K63S",
+        "field": "operating_system",
+        "value": "Windows 11 Home",
+        "channel": "details",
+        "text": "Windows 11 Home",
+        "provenance": {
+          "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+          "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+          "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+          "source_field": [
+            "details",
+            "Operating System"
+          ],
+          "raw_value": "Windows 11 Home",
+          "raw_unit": null,
+          "unit": null,
+          "source_row_index": 762,
+          "raw_record_sha256": "7ce245f4cc425c6ab8595e8c988cc0a122009591f239dc192259124b44e2512d"
+        }
+      },
+      {
+        "evidence_id": "B0BCV6K63S:details:screen_size",
+        "product_id": "B0BCV6K63S",
+        "field": "screen_size",
+        "value": "15.6 Inches",
+        "channel": "details",
+        "text": "15.6 Inches",
+        "provenance": {
+          "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+          "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+          "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+          "source_field": [
+            "details",
+            "Screen Size"
+          ],
+          "raw_value": "15.6 Inches",
+          "raw_unit": null,
+          "unit": null,
+          "source_row_index": 762,
+          "raw_record_sha256": "7ce245f4cc425c6ab8595e8c988cc0a122009591f239dc192259124b44e2512d"
+        }
+      }
+    ],
+    "provenance": {
+      "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+      "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+      "raw_record_sha256": "7ce245f4cc425c6ab8595e8c988cc0a122009591f239dc192259124b44e2512d",
+      "source_row_index": 762,
+      "family_method": "conservative_all_products_of_source_brand",
+      "family_status": "pending_manual_review"
+    },
+    "split": "quarantine",
+    "quarantine_reasons": [
+      "official_family",
+      "official_overlap_cluster_quarantine"
+    ]
+  },
+  {
+    "product_id": "B0BMXFDSKM",
+    "title": "HP 15.6\" Micro-Edge HD Laptop, Intel Core i3-1115G4 up to 4.1GHz (Beat i5-1035G4), 16GB RAM, 512GB PCIe SSD, Wi-Fi 6, Lightweight, Bluetooth, Webcam, Fast Charge, 11 Hours Battery Life, HDMI, Win11",
+    "price": 599,
+    "specs": {
+      "weight_g": 2558.2609668,
+      "operating_system": "Windows 11 Home",
+      "screen_size": "15.6 Inches"
+    },
+    "family": "brand:hp",
+    "brand": "HP",
+    "model": "HP Laptop",
+    "identity_review_required": true,
+    "units": {
+      "price": "USD",
+      "weight_g": "g",
+      "operating_system": null,
+      "screen_size": null
+    },
+    "evidence": [
+      {
+        "evidence_id": "B0BMXFDSKM:details:price",
+        "product_id": "B0BMXFDSKM",
+        "field": "price",
+        "value": 599,
+        "channel": "details",
+        "text": "599.0",
+        "provenance": {
+          "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+          "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+          "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+          "source_field": [
+            "price"
+          ],
+          "raw_value": "599.0",
+          "raw_unit": "USD",
+          "unit": "USD",
+          "source_row_index": 185,
+          "raw_record_sha256": "5d5ce9cbaa55c3adf89d5d6eed59e3e90ad6b4228e9ca085b24baac7a3332dce"
+        }
+      },
+      {
+        "evidence_id": "B0BMXFDSKM:details:weight_g",
+        "product_id": "B0BMXFDSKM",
+        "field": "weight_g",
+        "value": 2558.2609668,
+        "channel": "details",
+        "text": "5.64 pounds",
+        "provenance": {
+          "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+          "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+          "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+          "source_field": [
+            "details",
+            "Item Weight"
+          ],
+          "raw_value": "5.64 pounds",
+          "raw_unit": "pounds",
+          "unit": "g",
+          "source_row_index": 185,
+          "raw_record_sha256": "5d5ce9cbaa55c3adf89d5d6eed59e3e90ad6b4228e9ca085b24baac7a3332dce"
+        }
+      },
+      {
+        "evidence_id": "B0BMXFDSKM:details:operating_system",
+        "product_id": "B0BMXFDSKM",
+        "field": "operating_system",
+        "value": "Windows 11 Home",
+        "channel": "details",
+        "text": "Windows 11 Home",
+        "provenance": {
+          "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+          "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+          "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+          "source_field": [
+            "details",
+            "Operating System"
+          ],
+          "raw_value": "Windows 11 Home",
+          "raw_unit": null,
+          "unit": null,
+          "source_row_index": 185,
+          "raw_record_sha256": "5d5ce9cbaa55c3adf89d5d6eed59e3e90ad6b4228e9ca085b24baac7a3332dce"
+        }
+      },
+      {
+        "evidence_id": "B0BMXFDSKM:details:screen_size",
+        "product_id": "B0BMXFDSKM",
+        "field": "screen_size",
+        "value": "15.6 Inches",
+        "channel": "details",
+        "text": "15.6 Inches",
+        "provenance": {
+          "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+          "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+          "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+          "source_field": [
+            "details",
+            "Screen Size"
+          ],
+          "raw_value": "15.6 Inches",
+          "raw_unit": null,
+          "unit": null,
+          "source_row_index": 185,
+          "raw_record_sha256": "5d5ce9cbaa55c3adf89d5d6eed59e3e90ad6b4228e9ca085b24baac7a3332dce"
+        }
+      }
+    ],
+    "provenance": {
+      "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+      "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+      "raw_record_sha256": "5d5ce9cbaa55c3adf89d5d6eed59e3e90ad6b4228e9ca085b24baac7a3332dce",
+      "source_row_index": 185,
+      "family_method": "conservative_all_products_of_source_brand",
+      "family_status": "pending_manual_review"
+    },
+    "split": "quarantine",
+    "quarantine_reasons": [
+      "official_family",
+      "official_overlap_cluster_quarantine"
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "schema_version": 1,
+    "accepted": true,
+    "expert_eligible": false,
+    "engineering_only": true,
+    "task_id": "task-2de4765f4ff1d6036518",
+    "split": "train",
+    "trajectory_sha256": "6c55d6c2d12762c4fceac38eab96b287e9074410c1ce091e73e8ab7b68c326fe",
+    "replay_state_sha256": "1438879ea3d9c2d57db25edc7a937fd5963846ef2b7b6441d8984988e99cf088",
+    "terminal_success": true,
+    "delivery_success": true,
+    "failure_types": [],
+    "details": [],
+    "expert_exclusion": "engineering_only"
+  },
+  {
+    "schema_version": 1,
+    "accepted": true,
+    "expert_eligible": false,
+    "engineering_only": true,
+    "task_id": "task-5f98913c8ba87eb19be3",
+    "split": "train",
+    "trajectory_sha256": "e12d8b21b1f12584286a5e357bad944ed89e5188db92a722ea1a8df9f636593a",
+    "replay_state_sha256": "bf7da7d2eb1bf8094ac5c7fd3818a3a46a7543c37d2bfa9c79284f6725ab7d9a",
+    "terminal_success": true,
+    "delivery_success": true,
+    "failure_types": [],
+    "details": [],
+    "expert_exclusion": "engineering_only"
+  }
+]

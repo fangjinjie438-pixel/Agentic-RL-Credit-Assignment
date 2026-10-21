@@ -1,0 +1,76 @@
+{
+  "stage": "S2",
+  "status": "passed",
+  "validation_level": "cpu_dataset_construction_only",
+  "checks": [
+    {
+      "name": "nonempty_source_and_tasks",
+      "passed": true
+    },
+    {
+      "name": "declared_sibling_and_product_split_isolation",
+      "passed": true
+    },
+    {
+      "name": "feasible_solution_sets_match_full_retrieval_split",
+      "passed": true
+    },
+    {
+      "name": "literal_hidden_value_checks",
+      "passed": true
+    },
+    {
+      "name": "provided_official_id_quarantine",
+      "passed": true
+    },
+    {
+      "name": "single_constraint_counterfactual:task-5f98913c8ba87eb19be3-cf-a5275d09",
+      "passed": true
+    },
+    {
+      "name": "single_constraint_counterfactual:task-80448c56f2f157080065-cf-a5275d09",
+      "passed": true
+    },
+    {
+      "name": "single_constraint_counterfactual:task-cf3b3c8967e5f31898ff-cf-a5275d09",
+      "passed": true
+    }
+  ],
+  "data_revision": "s2-03a1cb83aa92a8f4bd15a6f4",
+  "counts": {
+    "train": 7,
+    "dev": 4,
+    "sealed_test": 1
+  },
+  "products": 9,
+  "counterfactual_pairs": 3,
+  "release_gate": {
+    "ready_for_formal_training": false,
+    "status": "withheld",
+    "reasons": [
+      "engineering_fixture_not_formal_data",
+      "official_family_and_near_duplicate_metadata_incomplete",
+      "fewer_than_200_hash_bound_human_task_reviews",
+      "independent_semantic_review_pending",
+      "no_replay_accepted_real_teacher_training_episodes"
+    ],
+    "human_review_count": 0,
+    "independent_review_count": 0,
+    "expert_candidate_task_count": 0,
+    "invalid_review_task_ids": [],
+    "quantity_targets": {
+      "train": 1600,
+      "dev": 200,
+      "sealed_test": 400,
+      "counterfactual_pairs": 100,
+      "expert_successes": 600
+    },
+    "quantity_targets_are_not_claimed_achieved": true
+  },
+  "stage_complete": false,
+  "gpu_compute_performed": false,
+  "limitations": [
+    "CPU build acceptance does not validate a real expert teacher",
+    "Official-family coverage, independent semantic review and human reviews remain explicit gates"
+  ]
+}

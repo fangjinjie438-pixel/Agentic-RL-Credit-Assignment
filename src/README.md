@@ -1,6 +1,6 @@
-# 源码目录（S0–S1）
+# 源码目录（S0–S2）
 
-`procure_rl/` 是唯一自主 Python 包，逐文件说明在其 [README](procure_rl/README.md)。S0 提供配置检查、运行记录、只读 doctor、隔离导入检查与授权 GPU 预检；S1 的 [env](procure_rl/env/README.md) 提供原生 ECom CPU 工具、只读商品访问、任务会话与验证器。S2 及以后未实现。
+`procure_rl/` 是唯一自主 Python 包，逐文件说明在其 [README](procure_rl/README.md)。S0 提供工程与授权运行边界；S1 [env](procure_rl/env/README.md) 提供原生工具、只读商品访问、会话与验证器；S2 [data](procure_rl/data/README.md) 提供事实先行、划分/去重/反事实、教师采集/回放及审核门槛。S3 及以后未实现。
 
 本机 CPU / 学校 Linux 均从项目根目录运行：
 

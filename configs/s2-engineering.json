@@ -1,0 +1,24 @@
+{
+  "stage": "S2",
+  "source_kind": "engineering_fixture",
+  "source_path": "fixtures/s1/catalog.json",
+  "official_exclusions_path": "fixtures/s2/official-exclusions.json",
+  "seed": 0,
+  "split_ratios": {"train": 8, "dev": 1, "sealed_test": 2},
+  "max_base_per_split": 8,
+  "require_disjoint_counterfactual": true,
+  "templates": [{
+    "template_id": "engineering-dock-v1",
+    "item_description": "office electronic device",
+    "constraints": [
+      {"id": "budget", "source": "query", "field": "price", "op": "lte", "label": "price in USD"},
+      {"id": "interface", "source": "persona", "field": "host_interface", "op": "eq", "label": "host interface"},
+      {"id": "displays", "source": "clarification", "field": "display_count", "op": "gte", "label": "simultaneous display count", "question": "How many external displays do you need?", "trigger_keywords": ["displays", "monitors"]},
+      {"id": "power", "source": "clarification", "field": "power_w", "op": "gte", "label": "laptop power in W", "question": "How much laptop power do you need?", "trigger_keywords": ["power", "charging"]}
+    ],
+    "counterfactual_constraint_ids": ["interface", "budget", "displays", "power"]
+  }],
+  "engineering_policy": {"search_query": "dock", "clarification_questions": ["How many external displays?", "How much laptop power?"], "review_query": "power"},
+  "pilot_collection_limit": 2,
+  "notice": "Fictional S1 fixtures are deliberately reused only for S2 offline engineering acceptance, never formal training or expert demonstrations."
+}

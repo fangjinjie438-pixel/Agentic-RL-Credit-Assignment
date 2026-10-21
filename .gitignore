@@ -7,9 +7,10 @@ __pycache__/
 .pytest_cache/
 build/
 dist/
-data/
+/data/
 models/
 checkpoints/
 .env
 .env.*
+.secrets/
 

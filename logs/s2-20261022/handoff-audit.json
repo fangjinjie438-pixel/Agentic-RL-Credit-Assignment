@@ -1,0 +1,358 @@
+{
+  "stage": "S2",
+  "recorded_at": "2026-10-22T04:07:48+08:00",
+  "machine": "A6000",
+  "executable": "/home/fangjinjie/project/credit_assign/.venv-cpu/bin/python",
+  "argv": [
+    "/home/fangjinjie/project/credit_assign/.venv-cpu/bin/python",
+    "logs/s2-20261022/handoff-source.txt"
+  ],
+  "audit_source_sha256": "590bfecf43df5f22c0dc05e8b84298e7aff6080779fca12065776abaf005a79a",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "tests-v1:source_hashes",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "tests-v1:cpu_only",
+      "passed": true
+    },
+    {
+      "name": "tests-v1:actual_status",
+      "passed": true
+    },
+    {
+      "name": "tests-v1:config_hash",
+      "passed": true
+    },
+    {
+      "name": "build-real-final:source_hashes",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "build-real-final:cpu_only",
+      "passed": true
+    },
+    {
+      "name": "build-real-final:actual_status",
+      "passed": true
+    },
+    {
+      "name": "build-real-final:config_hash",
+      "passed": true
+    },
+    {
+      "name": "build-engineering-final:source_hashes",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "build-engineering-final:cpu_only",
+      "passed": true
+    },
+    {
+      "name": "build-engineering-final:actual_status",
+      "passed": true
+    },
+    {
+      "name": "build-engineering-final:config_hash",
+      "passed": true
+    },
+    {
+      "name": "collect-real-engineering-final:source_hashes",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "collect-real-engineering-final:cpu_only",
+      "passed": true
+    },
+    {
+      "name": "collect-real-engineering-final:actual_status",
+      "passed": true
+    },
+    {
+      "name": "collect-real-engineering-final:config_hash",
+      "passed": true
+    },
+    {
+      "name": "collect-fixture-engineering-final:source_hashes",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "collect-fixture-engineering-final:cpu_only",
+      "passed": true
+    },
+    {
+      "name": "collect-fixture-engineering-final:actual_status",
+      "passed": true
+    },
+    {
+      "name": "collect-fixture-engineering-final:config_hash",
+      "passed": true
+    },
+    {
+      "name": "teacher-credentials-final:source_hashes",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "teacher-credentials-final:cpu_only",
+      "passed": true
+    },
+    {
+      "name": "teacher-credentials-final:actual_status",
+      "passed": true
+    },
+    {
+      "name": "teacher-credentials-final:config_hash",
+      "passed": true
+    },
+    {
+      "name": "release-audit-final:source_hashes",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "release-audit-final:cpu_only",
+      "passed": true
+    },
+    {
+      "name": "release-audit-final:actual_status",
+      "passed": true
+    },
+    {
+      "name": "test_sha256",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "fixture_sha256",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "name": "test_runner_hash",
+      "passed": true
+    },
+    {
+      "name": "136_tests_zero_failures",
+      "passed": true
+    },
+    {
+      "name": "build-real-final:inventory_hashes",
+      "passed": true,
+      "revision": "s2-ee9902b8fc67ad1b39533598",
+      "products": 8,
+      "tasks": 7
+    },
+    {
+      "name": "build-real-final:release_withheld",
+      "passed": true
+    },
+    {
+      "name": "build-engineering-final:inventory_hashes",
+      "passed": true,
+      "revision": "s2-3321fd0522d817eee8ae8e62",
+      "products": 9,
+      "tasks": 11
+    },
+    {
+      "name": "build-engineering-final:release_withheld",
+      "passed": true
+    },
+    {
+      "name": "source_rows_bound",
+      "passed": true,
+      "binding": {
+        "path": "logs/s2-source-parquet-v1/rows.json",
+        "sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+        "rows": 1000,
+        "verified_excerpt_rows": 12
+      }
+    },
+    {
+      "name": "partial_parquet_not_claimed_complete",
+      "passed": true
+    },
+    {
+      "name": "official_index_and_remaining_unknowns",
+      "passed": true
+    },
+    {
+      "name": "final_real_counts",
+      "passed": true
+    },
+    {
+      "name": "collect-real-engineering-final:replay_and_no_expert_export",
+      "passed": true
+    },
+    {
+      "name": "collect-fixture-engineering-final:replay_and_no_expert_export",
+      "passed": true
+    },
+    {
+      "name": "credentials_blocked_without_external_call",
+      "passed": true
+    },
+    {
+      "name": "formal_release_withheld",
+      "passed": true
+    },
+    {
+      "name": "editable_provisional_teacher",
+      "passed": true
+    },
+    {
+      "name": "module_docstrings",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "code_directory_readmes",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "data_code_not_ignored_and_secrets_ignored",
+      "passed": true
+    },
+    {
+      "name": "local_document_links",
+      "passed": true,
+      "broken": []
+    }
+  ],
+  "stage_complete": false,
+  "next_stage_started": false,
+  "gpu_compute_performed": false,
+  "document_sha256": {
+    "AGENTS.md": "933331f0f3684b827d8b9379521ec5c5405ad526346b1e271596a1459633f3f3",
+    "PLAN.md": "e2d7e789a171859d70045e0db596483f79555ea597863d8e35fa4a6e76851298",
+    "PROGRESS.md": "42523015c8edf3bc3f319a1f50b87a55a0a9c4dd9b591a6417c4605b6b931365",
+    "README.md": "a01f0a766d61e3fe502230413eb26d1ad55fb0bc2d480eb187eb4ad38e6bd70e",
+    "src/README.md": "affc1e5302f2ce8aff841d5ec0d6ba3126c15ee69138b55247ad70c8f37f74d8",
+    "src/procure_rl/README.md": "9ec0743e301a06f28736a863bf498e401bf443eda468021c78ac890641051a09",
+    "src/procure_rl/env/README.md": "84218e7f5efd82f2806e9f5ec8b4e937d9dd6794d2ba0aad1a602ebf3ec3a33e",
+    "src/procure_rl/data/README.md": "d72dce4eeffe0a8514522eedf5a8aef96d3b5e29c59844376ea7970a77f5360c",
+    "tests/README.md": "5ba58065150b15754a5133f02a1e5b33e1b0e7ffc6510c0c6ab69a3562b5e979",
+    "configs/README.md": "472675a1181a6b78d568b3bb285caf768bafd1b1d7223a75ad493bee64a1c11f",
+    "fixtures/README.md": "94f7a47190e422945cc7caf43845465b9343b1dd4e444f706a96603ab23ee1da",
+    "fixtures/s2/README.md": "e448af38d320db56d9fe76933f66bd7947ca39147c7bfb30989d88e88bfc12ea",
+    "docs/README.md": "8eb485fac3fe0a934be694a563758ef58f5c80090a98a30da434ecfc76035545",
+    "docs/stages/README.md": "eba5d2d449ab8c1dca5ef19c70c889bc72da80acd251cfbea8d086d0567b08bc",
+    "docs/stages/S2.md": "68b6cb841fb774cab859fed1556e2c40385d25c6768a6cbf3c2d4cc89031088d",
+    "docs/s2-source-audit.md": "50b38821430e912c4a039ee8545221b17806f377441fe404b5829bf0b504ddde",
+    "logs/README.md": "c10c89d0bdb4b751f93a1f151c4aa0dc6a3696d4f8c8c61d9d72d237616d639c",
+    "scripts/README.md": "c3cf6b3bd0ee80edcbcbe155fe5340b8a40b3cf1a14aa736691b6f72c5261c11",
+    "scripts/data/README.md": "49602bb1b471a8b35120b2cdaf9558c57f2ad7e043fbc905b67aab45fc1c0cba",
+    "requirements/README.md": "c49789f15adb271ab6cc1bb27b28bab144037db0a989142facf59b086f999a06"
+  },
+  "configuration_sha256": {
+    "configs/s0.json": "8cc02cf2717c56d61586aa4ed5aaaabe8256b4b0550dae8b582f67489d5f0d0f",
+    "configs/s1.json": "850c7007272fd097035725b97651a9d57b71a9aad0f5ae29c96d8309c8f2c962",
+    "configs/s2-engineering.json": "b380e81b70c9306756297f24a924a4bea6b5bde37b9046bd3d9ea9ade961ec21",
+    "configs/s2-teacher.json": "4e77f7ea8a9a7c1288e395fa6db4b043fe1bd72ba823d64d569c8a75136bdc27",
+    "configs/s2.json": "26037d4277d1d8e6d1348a6c14d89a5b04b822987623bfbd4e6f693e177eea22"
+  },
+  "artifact_sha256": {
+    "logs/s2-20261022/tests-v1/result.json": "9c8cb519d392cce7e7e20f3c34a08ae7f38a1feb6031fe96a0917a2a3b16431b",
+    "logs/s2-20261022/tests-v1/run.json": "ffe4f936632b149ea1a6ccb64e7ba40667a8919258076e2cfcb58b6cdd316e52",
+    "logs/s2-20261022/tests-v1/run.log": "9e0b03888562b7787fe39b05b3d276292df10f699994be2a525e5f99bc635f1e",
+    "logs/s2-20261022/tests-v1/unittest.log": "82076e48df6f58cc03e084bfd980f29f96674b352ffc3098f3fe83b56db84ab8",
+    "logs/s2-20261022/build-real-final/dataset/catalog/dev.sqlite": "2502b5ce9a82f320ba1f6d216a9baba5d3e9e17aef5a8bf9f89e8a0d259b5e5c",
+    "logs/s2-20261022/build-real-final/dataset/catalog/manifest.json": "89a745ba0ee4083083762ae4f4623df6c2fbead704286a59ab70c2d3976d8630",
+    "logs/s2-20261022/build-real-final/dataset/catalog/official_test.sqlite": "983873749aac04e208861184a901e964c372b8d75ab184d4e2f8c8ec249caabb",
+    "logs/s2-20261022/build-real-final/dataset/catalog/sealed_test.sqlite": "983873749aac04e208861184a901e964c372b8d75ab184d4e2f8c8ec249caabb",
+    "logs/s2-20261022/build-real-final/dataset/catalog/train.sqlite": "86e1602df8cafeb24ec24ff630f05c18364fac2dded8caa44f7567b1661afa5a",
+    "logs/s2-20261022/build-real-final/dataset/catalog.json": "66f9ae330871779344a8087960d9422bb7c70ee787ecab16b8ba25201b774f40",
+    "logs/s2-20261022/build-real-final/dataset/manifest.json": "24d7f3a7b0e5e3427864bd28b59a45ef3f2f13f4ccc7d55f0306c83b9f6e1b3c",
+    "logs/s2-20261022/build-real-final/dataset/official-exclusions.json": "5e212690530b97ad86fe75d0bc22ce2d2e2538ee43ca62cf04a3ad4c4410b253",
+    "logs/s2-20261022/build-real-final/dataset/quarantine.json": "5ed2bc9eed821fb7f06dc82a2ca4469f639175433c098f4d04162ada3fc8deb4",
+    "logs/s2-20261022/build-real-final/dataset/rejections.json": "b8794a96be1f4148ec0f3e4c3baf8bbd93388dbc4e65149dad4f16b2d9dbfa56",
+    "logs/s2-20261022/build-real-final/dataset/release-gate.json": "fd34e8a45654dda1759cdbed0794914645eec2748f95ca589f73dd40875b93cf",
+    "logs/s2-20261022/build-real-final/dataset/review-queue.json": "53fe2dfc3dddf3c72c20c6a4a538424b2e7c95db57b316af6942589e43ff27eb",
+    "logs/s2-20261022/build-real-final/dataset/source-manifest.json": "80b345126584efee532d13df0edc295d062c79ab61e494d03a3a9df925f2eede",
+    "logs/s2-20261022/build-real-final/dataset/split-audit.json": "4fee74a919c1cb1b068643567589933e4032c36c9739da9764515a1887f698cc",
+    "logs/s2-20261022/build-real-final/dataset/task-audit.json": "5bc040fa26fa58874da774c58cef662c637adb1d82d34ee05869b47cce2ce337",
+    "logs/s2-20261022/build-real-final/dataset/tasks/dev.json": "f741afb9c6a2132d60b4e87d27b61970c32e5ca5e13e06e04fd963b8d884be3c",
+    "logs/s2-20261022/build-real-final/dataset/tasks/sealed_test.json": "f741afb9c6a2132d60b4e87d27b61970c32e5ca5e13e06e04fd963b8d884be3c",
+    "logs/s2-20261022/build-real-final/dataset/tasks/train.json": "2d0438c8b75d5cbdf1bf2e5ee388b8a9f85b0280b582cc6daf6bb6a4126b4780",
+    "logs/s2-20261022/build-real-final/report.json": "f25ece3bc8b68a1f7c79208085dc3caf4bca18f7efa5ac0a7eb5111107955661",
+    "logs/s2-20261022/build-real-final/run.json": "e0317f41e4956575c633427aa236a5a9d8147f95eea6b1cbb1b7f8431b14b955",
+    "logs/s2-20261022/build-real-final/run.log": "f1e6d30f5857d29239ecf2ed9ce6ac3af908acb1077d0c8e127d162f0bbbfae4",
+    "logs/s2-20261022/build-engineering-final/dataset/catalog/dev.sqlite": "79cd918e9078c30eb591aa0254971bb170b246492375463fcb587ee4bf89d3e9",
+    "logs/s2-20261022/build-engineering-final/dataset/catalog/manifest.json": "d259d3f8c77c7300ba4156143788a98fa87de632eb492493f07f7eafb8e62db1",
+    "logs/s2-20261022/build-engineering-final/dataset/catalog/official_test.sqlite": "983873749aac04e208861184a901e964c372b8d75ab184d4e2f8c8ec249caabb",
+    "logs/s2-20261022/build-engineering-final/dataset/catalog/sealed_test.sqlite": "5301da215aee9f7e36faf72b9f392e500a8328f6109d142b6d6b978a91ff69bb",
+    "logs/s2-20261022/build-engineering-final/dataset/catalog/train.sqlite": "22fd56005aaf94e0e1c6fb7add8aeb11d30437dfbe6944ecb8c3caeca4ab10f3",
+    "logs/s2-20261022/build-engineering-final/dataset/catalog.json": "181dff4532abcd01fdd36ec0eecc6198226f60c491a5670dcf23252ce3cca0c4",
+    "logs/s2-20261022/build-engineering-final/dataset/manifest.json": "9d75e938f13530b99d10787b20a9c5892597462153507f4cd7e9416fe30f71aa",
+    "logs/s2-20261022/build-engineering-final/dataset/official-exclusions.json": "5e212690530b97ad86fe75d0bc22ce2d2e2538ee43ca62cf04a3ad4c4410b253",
+    "logs/s2-20261022/build-engineering-final/dataset/quarantine.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "logs/s2-20261022/build-engineering-final/dataset/rejections.json": "c1f629c7c6b23b12c3c93d894d0160c9fa35421e2120f122e2111f9837c3d5df",
+    "logs/s2-20261022/build-engineering-final/dataset/release-gate.json": "2b6a5350022a1c429687c06de1d672d18816c4ba99a001df0603e6e5eb16436f",
+    "logs/s2-20261022/build-engineering-final/dataset/review-queue.json": "be6778f9d947989cb034d4f886fd0125e861a6a71cd249b284ee0a72cec54ce8",
+    "logs/s2-20261022/build-engineering-final/dataset/source-manifest.json": "f30274885a5e1b899177eee15c3513952195c8a7ee7121d3013c12cb2ae7a03f",
+    "logs/s2-20261022/build-engineering-final/dataset/split-audit.json": "9a601279c1ea7c5f3d10e3d368254ad564cc4012f5afac29897bba66a20624f9",
+    "logs/s2-20261022/build-engineering-final/dataset/task-audit.json": "39de50beb5bf88f6499754fa6fa911ee90113f6bd51b79289697e6103e31efc7",
+    "logs/s2-20261022/build-engineering-final/dataset/tasks/dev.json": "c38713fd88e3719c2484e1ce355baa827112ac2d6ea16a249ab5309be64f4e5e",
+    "logs/s2-20261022/build-engineering-final/dataset/tasks/sealed_test.json": "8c3436475657840a44744aa55ce06bde36ef547705b03d9dae2153fcce8e65eb",
+    "logs/s2-20261022/build-engineering-final/dataset/tasks/train.json": "59021c4cc2fe03beac5abecaaa6a9b81b4c7ef1beec3d2061902fae7abcac8d0",
+    "logs/s2-20261022/build-engineering-final/report.json": "5abeb7906d3cc2eafe38ac57c77a22c1efd6ce04804fec3f979c7c93e9d4d218",
+    "logs/s2-20261022/build-engineering-final/run.json": "32b4bcb9133db58b6454749ac61580c1911e744fe66da91dcabff25c2739a82c",
+    "logs/s2-20261022/build-engineering-final/run.log": "f1e6d30f5857d29239ecf2ed9ce6ac3af908acb1077d0c8e127d162f0bbbfae4",
+    "logs/s2-20261022/collect-real-engineering-final/accept-reject-ledger.json": "bb19de03d5427717574e7b11be8247aacba5824703d77e507c1d0400e1cf1f0b",
+    "logs/s2-20261022/collect-real-engineering-final/episodes/task-72e45343984d6a3ce84c/episode.json": "e1b81fac0bdacf6185a11739abe2ed7c37e373f63d08adda5568b7380539a72b",
+    "logs/s2-20261022/collect-real-engineering-final/episodes/task-72e45343984d6a3ce84c/messages.json": "bae9a170ef21a10785465d2cfd29976e620207c5c4d36bbf0a743f40436281a4",
+    "logs/s2-20261022/collect-real-engineering-final/episodes/task-72e45343984d6a3ce84c/tools.json": "6d7a7176a68dd77f88448a8d5c67420fdd79d5b26d287a759bf577ded84298a6",
+    "logs/s2-20261022/collect-real-engineering-final/episodes/task-964a2c1b4a9586d4b9ea/episode.json": "fae8a12dde61288a8f15f35f1d3513e733096adbdca3c362a66566815cd8af52",
+    "logs/s2-20261022/collect-real-engineering-final/episodes/task-964a2c1b4a9586d4b9ea/messages.json": "8f330d4cc8907c0a4b31fe2ca6f5bc679887b2f2ad5833e6f1c20b1bd5f5d322",
+    "logs/s2-20261022/collect-real-engineering-final/episodes/task-964a2c1b4a9586d4b9ea/tools.json": "6d7a7176a68dd77f88448a8d5c67420fdd79d5b26d287a759bf577ded84298a6",
+    "logs/s2-20261022/collect-real-engineering-final/expert-candidates.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/s2-20261022/collect-real-engineering-final/release-gate.json": "fd34e8a45654dda1759cdbed0794914645eec2748f95ca589f73dd40875b93cf",
+    "logs/s2-20261022/collect-real-engineering-final/report.json": "aeb4eaf995cf078e43434945c56380d0b69d7973228e9f31431efceaea58b9a4",
+    "logs/s2-20261022/collect-real-engineering-final/run.json": "4a06690b724e8b20f1a7e117bd8b102d6488730575ee8be18ba957afa6613b51",
+    "logs/s2-20261022/collect-real-engineering-final/run.log": "70e94ac8130ad0dfa5a929d32ace9ded6d48be7cb87d36a54179b5465730cb92",
+    "logs/s2-20261022/collect-fixture-engineering-final/accept-reject-ledger.json": "fc5ec0f7c72f1fe589f99d3609c3a0085d171e6ea6e4708f23f84b3317749540",
+    "logs/s2-20261022/collect-fixture-engineering-final/episodes/task-2de4765f4ff1d6036518/episode.json": "fd0c109cd9c3c5aad166038e321534f32ac9137c32877e885dab494b711c79ed",
+    "logs/s2-20261022/collect-fixture-engineering-final/episodes/task-2de4765f4ff1d6036518/messages.json": "fbf2b006c3293c23e126a61f448466490fa6be3c44698216af08bd8923810df9",
+    "logs/s2-20261022/collect-fixture-engineering-final/episodes/task-2de4765f4ff1d6036518/tools.json": "6d7a7176a68dd77f88448a8d5c67420fdd79d5b26d287a759bf577ded84298a6",
+    "logs/s2-20261022/collect-fixture-engineering-final/episodes/task-5f98913c8ba87eb19be3/episode.json": "0aea0c381578e41259a96063946e2e63ab8bb446284a0491f814497a778783e2",
+    "logs/s2-20261022/collect-fixture-engineering-final/episodes/task-5f98913c8ba87eb19be3/messages.json": "1e80662480db8d579468c5e61dda2e17924abcf51b036c280e44bae43fc8ceef",
+    "logs/s2-20261022/collect-fixture-engineering-final/episodes/task-5f98913c8ba87eb19be3/tools.json": "6d7a7176a68dd77f88448a8d5c67420fdd79d5b26d287a759bf577ded84298a6",
+    "logs/s2-20261022/collect-fixture-engineering-final/expert-candidates.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/s2-20261022/collect-fixture-engineering-final/release-gate.json": "2b6a5350022a1c429687c06de1d672d18816c4ba99a001df0603e6e5eb16436f",
+    "logs/s2-20261022/collect-fixture-engineering-final/report.json": "ba482538cf10433a47ebb75ebb7199a9077a381ac2e494fa02756103a13aacf0",
+    "logs/s2-20261022/collect-fixture-engineering-final/run.json": "2cc119de07c3d56d5d9c682af237813c0d851d17997eec373b048e1db7e61844",
+    "logs/s2-20261022/collect-fixture-engineering-final/run.log": "70e94ac8130ad0dfa5a929d32ace9ded6d48be7cb87d36a54179b5465730cb92",
+    "logs/s2-20261022/teacher-credentials-final/accept-reject-ledger.json": "80042e712e886b70d4caa49005f9a0d8341488796714d71fe416615fbecd9eae",
+    "logs/s2-20261022/teacher-credentials-final/episodes/task-72e45343984d6a3ce84c/episode.json": "14e7a139b52cd703cf72601d55a275f6cc4aa81cb74ba55c0001fb20eb15a805",
+    "logs/s2-20261022/teacher-credentials-final/episodes/task-72e45343984d6a3ce84c/messages.json": "b9bb70a36ca3c7bd0cd0b270aa1bcb72c6a28c1912941895ddc5ba8a29509b45",
+    "logs/s2-20261022/teacher-credentials-final/episodes/task-72e45343984d6a3ce84c/tools.json": "6d7a7176a68dd77f88448a8d5c67420fdd79d5b26d287a759bf577ded84298a6",
+    "logs/s2-20261022/teacher-credentials-final/expert-candidates.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/s2-20261022/teacher-credentials-final/release-gate.json": "fd34e8a45654dda1759cdbed0794914645eec2748f95ca589f73dd40875b93cf",
+    "logs/s2-20261022/teacher-credentials-final/report.json": "ceb19c79e34edb6dc1c442df98182a025a0ab0250ee24dcf905bc665a548ca6a",
+    "logs/s2-20261022/teacher-credentials-final/run.json": "eb110e14514744be3e4d48d70f562aa1300bd771fef4c414c37705aad5b49d58",
+    "logs/s2-20261022/teacher-credentials-final/run.log": "e91ac7c631f18dff2e664109ff54ba164fbc7c63ad2d006e65b71ded30474030",
+    "logs/s2-20261022/teacher-credentials-final/teacher-cache/.request.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/s2-20261022/release-audit-final/release-decision.json": "9d0c83dc60a38ad854856f49fb938a8ce903cdc9cbb2817e5343d2d31a233650",
+    "logs/s2-20261022/release-audit-final/replay-ledger.json": "bb19de03d5427717574e7b11be8247aacba5824703d77e507c1d0400e1cf1f0b",
+    "logs/s2-20261022/release-audit-final/report.json": "0f3c3b161dc1be6b311049dda5c34c878d1bc8da8efe669329460f08abd210cc",
+    "logs/s2-20261022/release-audit-final/run.json": "82c05f2709ffb8a0e41ba061d42298a12133a253ca6511dde47da5d7f800ff8e",
+    "logs/s2-20261022/release-audit-final/run.log": "96f6d8569b0cb44fe1aece488df540c7f62b322a5b9cf27028cdc52fafe328e2"
+  },
+  "model_revision": null,
+  "billed_cost_usd": null,
+  "pending": [
+    "official_family_and_near_duplicate_metadata_incomplete",
+    "product_family_identities_pending_review",
+    "fewer_than_200_hash_bound_human_task_reviews",
+    "independent_semantic_review_pending",
+    "no_replay_accepted_real_teacher_training_episodes"
+  ]
+}

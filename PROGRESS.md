@@ -1,6 +1,6 @@
 # Procure-RL 进度与交接
 
-最近更新：2026-10-22 03:12（Asia/Shanghai；精确起止时间见各run.json）。执行机器：学校 Linux `A6000`。当前阶段：**S1 已完成并通过固定小数据 CPU 验收**。下一阶段 S2 尚未开始；本轮按阶段边界停止。S0 完成状态保留，S1 没有运行 GPU。
+最近更新：2026-10-22 04:07（Asia/Shanghai；精确起止时间见各run.json）。执行机器：学校 Linux `A6000`。当前阶段：**S2 代码与离线 CPU pilot 完成，整阶段尚未验收**。真实教师缺密钥，人工/独立语义/官方剩余家族审核待完成；正式数据 withheld。先继续完成 S2，不进入 S3。S0/S1历史验收保留，本轮未运行GPU。
 
 ## 初始基线（实施开始时的事实）
 
@@ -12,7 +12,7 @@
 | --- | --- | --- | --- |
 | S0 工程与运行环境 | 配置、运行清单、doctor、隔离导入、授权GPU预检、代理与独立工具链完成 | 39项CPU测试、25项隐藏GPU依赖检查通过；实际硬件盘点完成 | 双卡BF16/P2P/NCCL、FlashAttention前反向、0.6B单提示推理通过；训练兼容待后续阶段 |
 | S1 环境与验证器 | 固定 ECom 适配、只读商品库、协议/会话/快照、终局/过程验证器完成 | 新增43项S1测试，合计82项全过；27项真实CPU端到端验收全过 | 不适用：S1固定小样本验收不需要GPU；本轮未运行 |
-| S2 数据流水线 | 未实现 | 未执行 | 未执行 |
+| S2 数据流水线 | 来源归一化、先划分/去重/任务/反事实、受限教师、真实回放、审核队列/发布门槛完成 | 新增54项，合计136项全过；真实/工程两源构建、各2条工程轨迹及发布审计通过；真实教师blocked | 未执行：无CUDA上下文/模型；独立8B语义复核待验收，不以CPU代替 |
 | S3 SFT与真实多轮推理 | 未实现 | 未执行 | 未执行 |
 | S4 终局RL baseline | 未实现 | 未执行 | 未执行 |
 | S5 动作级信用分配 | 未实现 | 未执行 | 未执行 |
@@ -20,7 +20,68 @@
 | S7 正式评测与交付 | 未实现 | 未执行 | 未执行 |
 | S8 可选OPD | 未实现，独立扩展 | 未执行 | 未执行 |
 
-## 本轮 S1 实施、结果与交接
+## 本轮 S2 实施、证据与未完成项
+
+用户授权继续S2，并明确让agent先选择教师、在文档醒目标注便于修改。本轮已按AGENTS→PLAN→PROGRESS读取，S2操作文件缺失时先建立并读取范围；仅实现S2，没有实现S3训练。
+
+### 暂定教师与配置入口
+
+**由Codex暂选 `deepseek-flash`，关闭thinking，可修改 [configs/s2-teacher.json](configs/s2-teacher.json)。** 这是低成本工具采集起点，未实测为项目最优。官方2026-10-22文档映射为DeepSeek-V4.1-Flash-1017；该别名会漂移，actual model_revision仍null，不将网页映射当不可变pin。base_url为`https://api.deepseek.com`；默认最多80请求、2 USD估算预算、每请求预留0.025 USD，峰值未命中输入0.30/输出1.20 USD每百万token。模型/价格/协议依据与原HTML留证见[S2来源审计](docs/s2-source-audit.md)。
+
+密钥独立放项目 `.secrets/deepseek_api_key`（已gitignore），或配置改env_var（两者选一）。当前不存在有效配置凭据，实际入口在发请求前停止，`status=blocked/validation_level=not_run_missing_credentials`。**外部教师请求0、真实专家成功0、人工签核0、独立8B复核0**。HTTP loopback测试不是外部教师验收；费用按配置价×provider usage估算，新请求费用排除本地缓存重复使用，真实账单字段保持null。
+
+### 完成的代码与真实小样本
+
+- `data.sources`：真实原字段/原句/raw哈希、USD及g/kg/lb/oz/W数值校验，缺失/冲突拒收。`pipeline.verify_raw_artifact`进一步将每条摘录绑定到原始rows.json行号与文件SHA，修改raw并重算自哈希也不能冒充原始下载内容。
+- `data.split`：先把家族/品牌型号/显式近重复/规范标题/MinHash+精确Jaccard并为连通簇，再固定seed0整簇划分。已提供官方ID/家族/型号/标题命中整簇quarantine。词项余弦与受控同义词只作为人工语义候选，不称独立模型复核通过。
+- `data.builder`：先在完整检索split求全部合法解，再渲染英文请求、画像、确定性澄清；兄弟root/parent/pair同split。反事实只改一条约束值且合法集非空/不相交；改写单列、当前表达增强0。最终base与cf再次审查跨split同定义重复。
+- `data.teacher/replay`：策略只见公开observation/schema/对话；真实工具执行、逐动作重放比对观测/事件/奖励/公共工具ID/请求响应/状态哈希。网络客户端独立密钥、显式执行、持久限额锁、缓存身份绑定、原响应脱敏留存、不自动重发计费不确定请求。工程策略/工程来源均禁止专家导出。
+- `data.review/pipeline`：生成hash绑定的人工、家族、语义待审队列；重新回放后按真实审核记录评估放行。人工reject/冲突、过期审核、独立模型分歧未裁决均withheld；需真实人工accept裁决才能解除模型分歧门槛。不写虚构审核记录、不自动开始训练。
+- S1 Catalog兼容扩展：原生brand/store优先来源字段、旧夹具family兜底；默认任务加载仍只train/dev，封存须显式开关，教师迭代器仅train。S0/S1原82项回归全部保留通过。
+
+真实来源固定HF **`2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e`**，Parquet首rowgroup1000条选定列，实传 **1,222,800 bytes**；保留12个办公设备原始摘录，8个有可信颜色。只核验实际Range和选定列JSON哈希，未本地验证整个219,918,692-byte源片LFS SHA，也未下载26.9GB官方商品库。源价格是历史采集价，不是当前报价。代码MIT与Amazon研究数据条款分开记录。
+
+官方目标metadata索引来自固定ECom commit `97eff345811fdf652a2135d38d874f2932e11702`，只读取target_product商品ID/标题/结构化Brand/明确型号，不读取query/persona/rubric作为训练输入。662任务得到660唯一ID、660标题、558保守整品牌家族、420品牌型号；659目标有Brand、3个缺品牌仍待审，metadata_complete=false。Logitech/Samsung/Dell/HP四条pilot商品因品牌重合进入quarantine，未以“ID不重合”代替家族隔离。
+
+最终真实数据 **`s2-ee9902b8fc67ad1b39533598`**：原12商品，quarantine4，保留8（产品train/dev/sealed=7/1/0）；base5+cf2=7任务（7/0/0），2对反事实；固定dev商品缺颜色所以未造开发任务，没有换seed补数。工程数据 **`s2-3321fd0522d817eee8ae8e62`**：9个虚构商品，base9+cf3=12任务（7/4/1），3对反事实。后者只验证工程，不属于正式训练集。
+
+### 实际命令、机器、结果与日志
+
+学校Linux `A6000`，项目`.venv-cpu/bin/python`→`.tools/python` Python3.11.16；SQLite3.53.1；普通流程仅标准库。源Parquet抽取单次用`.venv-gpu`已有CPU PyArrow19.0.1并隐藏GPU，未import Torch/vLLM或创建CUDA上下文。无新依赖安装、无新lock、无模型下载、无教师费用或GPU训练证据。
+
+| 命令/动作 | 实际结果 | 日志 |
+| --- | --- | --- |
+| `PYTHONPATH=src .venv-cpu/bin/python scripts/run_cpu_tests.py --stage S2 --config configs/s2.json --output logs/s2-20261022/tests-v1` | **136项，0失败/错误/跳过**；S0/S1旧82+S2新54（sources11、split14、teacher16、builder13）；含真实本地HTTP及真实SQLite | [unittest.log](logs/s2-20261022/tests-v1/unittest.log)、result.json/run.json；03:58:56–03:59:11+08:00 |
+| `s2-build --config configs/s2.json --output logs/s2-20261022/build-real-final` | CPU构建通过；真实来源、排除/分组/可行性/反事实/manifest/审核门槛留存 | [report](logs/s2-20261022/build-real-final/report.json)、dataset/；03:58:53–03:59:06 |
+| `s2-build --config configs/s2-engineering.json --output logs/s2-20261022/build-engineering-final` | CPU构建通过；工程来源明确标记 | build-engineering-final/；03:58:53–03:59:06 |
+| `s2-collect --config configs/s2.json --dataset logs/s2-20261022/build-real-final/dataset --output logs/s2-20261022/collect-real-engineering-final --engineering --limit 2` | **2/2回放接收**，14/16次真实工具调用，expert_candidates=0 | [report](logs/s2-20261022/collect-real-engineering-final/report.json)、episodes/、accept-reject-ledger.json；03:59:25 |
+| 同上改为engineering配置/build-engineering-final，输出collect-fixture-engineering-final | **2/2回放接收**，9/7次真实调用，专家候选0 | collect-fixture-engineering-final/；03:59:25 |
+| `s2-collect --config configs/s2.json --teacher-config configs/s2-teacher.json --dataset logs/s2-20261022/build-real-final/dataset --output logs/s2-20261022/teacher-credentials-final --execute-api --limit 1` | **blocked**，退出1，缺key在发送前停止；无HTTP请求/响应，不算教师失败或通过 | [report](logs/s2-20261022/teacher-credentials-final/report.json)、失败episode/ledger、run.json；03:59:25 |
+| `s2-audit --dataset logs/s2-20261022/build-real-final/dataset --collection logs/s2-20261022/collect-real-engineering-final --output logs/s2-20261022/release-audit-final` | 审计执行通过、2条重放接收；**发布withheld，stage_complete=false** | [release-decision](logs/s2-20261022/release-audit-final/release-decision.json)、report/run.json；04:00:21 |
+
+表内CLI缩写均以前缀 `PYTHONPATH=src .venv-cpu/bin/python -m procure_rl` 运行，完整实际argv/配置/source SHA见各run.json；换新输出目录即可复跑。核验源码、测试、fixture、模型默认配置、库和产物一致性见`logs/s2-20261022/handoff-audit.json`。真实教师默认选择的提示与修改入口在根README、configs README、S2操作文档三处醒目记录。
+
+### 修改文件、失败与限制
+
+新增`src/procure_rl/data/{__init__,sources,split,builder,teacher,replay,review,pipeline}.py`及README；`tests/test_data_{sources,split,teacher,builder}.py`；`configs/s2.json/s2-engineering.json/s2-teacher.json`；`fixtures/s2`真实摘录/官方索引/README；`scripts/data/fetch_amazon_pilot.py`及README、`scripts/run_cpu_tests.py`；S2阶段与来源审计；来源字节和最终运行日志。修改CLI/runtime说明、S1 Catalog兼容接口、各层README/本PROGRESS；`.gitignore`将`data/`锚定为`/data/`避免误忽略自主data代码，另排除.secrets；CPU依赖说明仍零外部包。PLAN算法与GPU依赖不变。
+
+早期网络沙箱、HF viewer404/501和旧UCSD链接404保留，不称数据不可用；改固定revision有界Parquet Range成功。源Color语义异常不转成颜色事实。教师测试首轮本机socket受限、随后本地代理未绕过失败；允许本机临时server并显式绕过loopback代理后通过，原失败/复验日志在teacher-development/。新正式全量测试136项无失败；这些loopback运行不访问外部API。
+
+代码审阅修正了：只按anchor标题子池求解漏掉真实catalog候选；cf生成后的跨split重复；工程源搭远程教师仍可能误标专家；env/空key/双凭据来源错误状态；人工reject/conflict门槛；原始摘录与原rows绑定；缓存费用不重复计算。均在最终代码/测试或源审计中留证。历史`*-v1`构建/采集使用ID-only排除表，4个后续应隔离品牌当时仅工程运行且未放行；原索引副本保留，最终不沿用旧数据包。
+
+### 当前阻塞与可直接执行的下一步
+
+**不能把S2整阶段写成完成。** 代码/CPU小流水线通过，但仍需：有效教师密钥与2条真实教师工具轨迹验收；3个官方缺品牌目标与近家族映射审核；商品身份、人工抽检至少200条及全部分歧裁决；独立语义复核。当前pilot不足正式数量且没有真实专家，正式release withheld，S3不启动。当前没有本项目GPU任务、训练任务或付费实例。
+
+密钥写入`.secrets/deepseek_api_key`后可直接执行：
+
+```bash
+PYTHONPATH=src .venv-cpu/bin/python -m procure_rl s2-collect --config configs/s2.json --teacher-config configs/s2-teacher.json --dataset logs/s2-20261022/build-real-final/dataset --output logs/my-s2-real-teacher --cache-directory .cache/s2-teacher --execute-api --limit 2
+```
+
+检查格式/真实回放/估算费用后，按[S2操作](docs/stages/S2.md)完成人工与独立模型复核，小规模验收后再扩量。审核另存JSON供`s2-audit --reviews`，不要修改已哈希数据包；改来源/模板/排除规则须建新revision。1600/200/400、100对与600专家均为未达目标，报告实际数，不用工程轨迹填充。
+
+## S1 历史：实施、结果与交接
 
 用户已明确授权从完成的 S0 继续 S1。开始依次读取 AGENTS→PLAN→PROGRESS；发现 `S1.md` 尚未建立后先建立并读取实施范围，再实现。未扩大到 S2 或训练。
 

@@ -1,0 +1,129 @@
+{
+  "revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+  "url": "https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023/resolve/2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e/raw_meta_Electronics/full-00000-of-00010.parquet",
+  "file_size": 219918692,
+  "transferred_bytes": 1222800,
+  "requests": [
+    {
+      "url": "https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023/resolve/2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e/raw_meta_Electronics/full-00000-of-00010.parquet",
+      "range": [
+        0,
+        0
+      ],
+      "status": 206,
+      "content_range": "bytes 0-0/219918692",
+      "bytes": 1,
+      "sha256": "5c62e091b8c0565f1bafad0dad5934276143ae2ccef7a5381e8ada5b1a8d26d2",
+      "file": "range-000-0-0.bin"
+    },
+    {
+      "url": "https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023/resolve/2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e/raw_meta_Electronics/full-00000-of-00010.parquet",
+      "range": [
+        219853156,
+        219918691
+      ],
+      "status": 206,
+      "content_range": "bytes 219853156-219918691/219918692",
+      "bytes": 65536,
+      "sha256": "13fb7b4215dd9fb70f8917bb229dcb8379e9c9129356552f30382ad8f6c5c4aa",
+      "file": "range-001-219853156-219918691.bin"
+    },
+    {
+      "url": "https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023/resolve/2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e/raw_meta_Electronics/full-00000-of-00010.parquet",
+      "range": [
+        219051857,
+        219918683
+      ],
+      "status": 206,
+      "content_range": "bytes 219051857-219918683/219918692",
+      "bytes": 866827,
+      "sha256": "6f7ba4446e6a8e124c6890686af6b93708a441f6c2ab4c890fca2b5ebe3be72d",
+      "file": "range-002-219051857-219918683.bin"
+    },
+    {
+      "url": "https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023/resolve/2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e/raw_meta_Electronics/full-00000-of-00010.parquet",
+      "range": [
+        4,
+        1132
+      ],
+      "status": 206,
+      "content_range": "bytes 4-1132/219918692",
+      "bytes": 1129,
+      "sha256": "bd01623e4c9244092376a725733fcda37b0334e0455eac58958c311f05a085e1",
+      "file": "range-003-4-1132.bin"
+    },
+    {
+      "url": "https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023/resolve/2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e/raw_meta_Electronics/full-00000-of-00010.parquet",
+      "range": [
+        1133,
+        87240
+      ],
+      "status": 206,
+      "content_range": "bytes 1133-87240/219918692",
+      "bytes": 86108,
+      "sha256": "d0dba20b348c0f73a65601bd361ac0822b2b3d60fbfca4bc4028e4308129aa41",
+      "file": "range-004-1133-87240.bin"
+    },
+    {
+      "url": "https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023/resolve/2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e/raw_meta_Electronics/full-00000-of-00010.parquet",
+      "range": [
+        720700,
+        722987
+      ],
+      "status": 206,
+      "content_range": "bytes 720700-722987/219918692",
+      "bytes": 2288,
+      "sha256": "613906851927438cf05baf7057ec2d594682a58595839c649e74d63fce8041f3",
+      "file": "range-005-720700-722987.bin"
+    },
+    {
+      "url": "https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023/resolve/2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e/raw_meta_Electronics/full-00000-of-00010.parquet",
+      "range": [
+        1147942,
+        1157731
+      ],
+      "status": 206,
+      "content_range": "bytes 1147942-1157731/219918692",
+      "bytes": 9790,
+      "sha256": "ed11bb907f6cb87b86f8eb01e978bd480c8f800a58b25447d311fe384f600e60",
+      "file": "range-006-1147942-1157731.bin"
+    },
+    {
+      "url": "https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023/resolve/2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e/raw_meta_Electronics/full-00000-of-00010.parquet",
+      "range": [
+        1157732,
+        1167604
+      ],
+      "status": 206,
+      "content_range": "bytes 1157732-1167604/219918692",
+      "bytes": 9873,
+      "sha256": "60dae156824ac5179480caa1496aaf3fab22287f15e089fb94f60eb332b0bd16",
+      "file": "range-007-1157732-1167604.bin"
+    },
+    {
+      "url": "https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023/resolve/2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e/raw_meta_Electronics/full-00000-of-00010.parquet",
+      "range": [
+        1167605,
+        1337768
+      ],
+      "status": 206,
+      "content_range": "bytes 1167605-1337768/219918692",
+      "bytes": 170164,
+      "sha256": "211242ee381467292a1d3045a9dd9b43481afae99dc9b06c19c610e0ead115e1",
+      "file": "range-008-1167605-1337768.bin"
+    },
+    {
+      "url": "https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023/resolve/2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e/raw_meta_Electronics/full-00000-of-00010.parquet",
+      "range": [
+        1337769,
+        1348852
+      ],
+      "status": 206,
+      "content_range": "bytes 1337769-1348852/219918692",
+      "bytes": 11084,
+      "sha256": "f18da8f9e0e465c80124fb6e05646c15e4660216b7f7f4a0104d5a8e988f3884",
+      "file": "range-009-1337769-1348852.bin"
+    }
+  ],
+  "retrieved_at": "2026-10-21T19:22:26.397354+00:00"
+}

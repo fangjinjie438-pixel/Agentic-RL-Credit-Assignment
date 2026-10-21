@@ -1,0 +1,33 @@
+{
+  "command": ".venv-cpu/bin/python /tmp/s2-extract-official-metadata.py",
+  "started_at": "2026-10-21T19:45:55.319838+00:00",
+  "finished_at": "2026-10-21T19:45:55.587485+00:00",
+  "machine": "A6000",
+  "interpreter": "/home/fangjinjie/project/credit_assign/.venv-cpu/bin/python",
+  "python_version": "3.11.16 (main, Sep  1 2026, 14:18:37) [Clang 22.1.3 ]",
+  "script_sha256": "902771f02bcb441086aad41acd605bdd148068828fee8502900895e1c0829edb",
+  "source_revision": "97eff345811fdf652a2135d38d874f2932e11702",
+  "source_sha256": "c6585d7adade0bf898dcc6b5377fb4534a699b874bd21ec796acfa96547c9b52",
+  "output_sha256": "5e212690530b97ad86fe75d0bc22ce2d2e2538ee43ca62cf04a3ad4c4410b253",
+  "counts": {
+    "tasks_with_brand": 659,
+    "tasks_with_explicit_model_number_and_brand": 423,
+    "unique_product_ids": 660,
+    "unique_titles": 660,
+    "unique_brand_families": 558,
+    "unique_brand_models": 420,
+    "unknown_family_product_ids": 3
+  },
+  "accessed_fields": [
+    "target_product.product_id",
+    "target_product.title",
+    "target_product.details.Brand",
+    "target_product.details.Item model number",
+    "target_product.details.Model Number"
+  ],
+  "gpu_compute_performed": false,
+  "teacher_calls": 0,
+  "seed": null,
+  "model_revision": null,
+  "checkpoint": null
+}

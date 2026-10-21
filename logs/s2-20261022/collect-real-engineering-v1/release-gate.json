@@ -1,0 +1,23 @@
+{
+  "ready_for_formal_training": false,
+  "status": "withheld",
+  "reasons": [
+    "official_family_and_near_duplicate_metadata_incomplete",
+    "product_family_identities_pending_review",
+    "fewer_than_200_hash_bound_human_task_reviews",
+    "independent_semantic_review_pending",
+    "no_replay_accepted_real_teacher_training_episodes"
+  ],
+  "human_review_count": 0,
+  "independent_review_count": 0,
+  "expert_candidate_task_count": 0,
+  "invalid_review_task_ids": [],
+  "quantity_targets": {
+    "train": 1600,
+    "dev": 200,
+    "sealed_test": 400,
+    "counterfactual_pairs": 100,
+    "expert_successes": 600
+  },
+  "quantity_targets_are_not_claimed_achieved": true
+}

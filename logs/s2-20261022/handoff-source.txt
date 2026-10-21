@@ -1,0 +1,118 @@
+"""Generated S2 handoff evidence audit; reads existing results without rerunning tests.
+
+Run from the project root with PYTHONPATH=src .venv-cpu/bin/python and this file.
+Output is a new handoff-audit.json with code/config/data/artifact checks and hashes.
+No network, teacher, model or GPU is invoked.
+"""
+import ast
+import json
+from pathlib import Path
+import re
+import sys
+
+from procure_rl.data.pipeline import load_dataset, verify_raw_artifact
+from procure_rl.runtime import sha256_file, timestamp
+
+root = Path.cwd().resolve()
+base = root / 'logs/s2-20261022'
+target = base / 'handoff-audit.json'
+if target.exists():
+    raise FileExistsError('Handoff evidence already exists; use a new artifact path')
+progress = root / 'PROGRESS.md'
+progress.write_text(re.sub(r'最近更新：\d{4}-\d{2}-\d{2} \d{2}:\d{2}',
+                          '最近更新：' + timestamp()[:16].replace('T', ' '), progress.read_text(), count=1))
+checks = []
+def check(name, passed, **detail):
+    checks.append({'name': name, 'passed': bool(passed), **detail})
+
+run_names = ['tests-v1', 'build-real-final', 'build-engineering-final',
+             'collect-real-engineering-final', 'collect-fixture-engineering-final',
+             'teacher-credentials-final', 'release-audit-final']
+for name in run_names:
+    run = json.loads((base/name/'run.json').read_text())
+    drift = [p for p, h in run['source_sha256'].items() if sha256_file(root/p) != h]
+    check(name + ':source_hashes', not drift, mismatches=drift)
+    check(name + ':cpu_only', run['stage'] == 'S2' and run['gpu_compute_performed'] is False)
+    check(name + ':actual_status', run['status'] == ('blocked' if name == 'teacher-credentials-final' else 'succeeded'))
+    if run.get('config'):
+        check(name + ':config_hash', sha256_file(Path(run['config']['path'])) == run['config']['sha256'])
+tests = json.loads((base/'tests-v1/run.json').read_text())
+for kind in ('test_sha256', 'fixture_sha256'):
+    mismatches = [p for p, h in tests[kind].items() if sha256_file(root/p) != h]
+    check(kind, not mismatches, mismatches=mismatches)
+check('test_runner_hash', sha256_file(root/'scripts/run_cpu_tests.py') == tests['runner_sha256'])
+summary = json.loads((base/'tests-v1/result.json').read_text())
+check('136_tests_zero_failures', summary == {'tests':136, 'failures':0, 'errors':0, 'skipped':0, 'successful':True})
+for name in ('build-real-final', 'build-engineering-final'):
+    manifest, products, tasks = load_dataset(base/name/'dataset')
+    check(name + ':inventory_hashes', True, revision=manifest['revision'], products=len(products), tasks=len(tasks))
+    check(name + ':release_withheld', manifest['release_status'] == 'withheld')
+payload = json.loads((root/'fixtures/s2/amazon-electronics.json').read_text())
+binding = verify_raw_artifact(root, payload)
+check('source_rows_bound', binding['verified_excerpt_rows'] == 12, binding=binding)
+check('partial_parquet_not_claimed_complete', payload['source']['upstream_lfs_sha256_verified'] is False)
+exclusions = json.loads((root/'fixtures/s2/official-exclusions.json').read_text())
+check('official_index_and_remaining_unknowns', len(exclusions['product_ids']) == 660 and
+      len(exclusions['titles']) == 660 and len(exclusions['families']) == 558 and
+      len(exclusions['brand_models']) == 420 and len(exclusions['unknown_family_product_ids']) == 3 and
+      exclusions['metadata_complete'] is False)
+real_manifest = json.loads((base/'build-real-final/dataset/manifest.json').read_text())
+check('final_real_counts', real_manifest['products'] == 8 and real_manifest['quarantined_products'] == 4 and
+      real_manifest['task_counts'] == {'train':7, 'dev':0, 'sealed_test':0} and real_manifest['counterfactual_pairs'] == 2)
+for name in ('collect-real-engineering-final', 'collect-fixture-engineering-final'):
+    report = json.loads((base/name/'report.json').read_text())
+    ledger = json.loads((base/name/'accept-reject-ledger.json').read_text())
+    check(name + ':replay_and_no_expert_export', report['replay_accepted'] == 2 and
+          report['expert_candidates'] == 0 and all(r['accepted'] and not r['expert_eligible'] for r in ledger) and
+          (base/name/'expert-candidates.jsonl').stat().st_size == 0)
+credentials = json.loads((base/'teacher-credentials-final/report.json').read_text())
+check('credentials_blocked_without_external_call', credentials['status'] == 'blocked' and
+      credentials['validation_level'] == 'not_run_missing_credentials' and
+      credentials['teacher']['requests'] == [] and credentials['teacher']['new_api_calls'] == 0)
+decision = json.loads((base/'release-audit-final/release-decision.json').read_text())
+check('formal_release_withheld', decision['status'] == 'withheld' and not decision['ready_for_formal_training'] and
+      decision['approved_expert_task_ids'] == [])
+teacher = json.loads((root/'configs/s2-teacher.json').read_text())
+check('editable_provisional_teacher', teacher['selection_status'] == 'agent_selected_provisional' and
+      teacher['model'] == 'deepseek-flash' and teacher['thinking'] == {'type':'disabled'} and
+      teacher['model_revision'] is None and teacher['key_file'] == '.secrets/deepseek_api_key')
+code_paths = [*sorted((root/'src').rglob('*.py')), *sorted((root/'tests').glob('*.py')),
+              *sorted((root/'scripts').rglob('*.py'))]
+missing = [str(p.relative_to(root)) for p in code_paths if not ast.get_docstring(ast.parse(p.read_text()))]
+check('module_docstrings', not missing, missing=missing)
+missing = [str(p.relative_to(root)) for p in {p.parent for p in code_paths} if not (p/'README.md').is_file()]
+check('code_directory_readmes', not missing, missing=missing)
+ignore = (root/'.gitignore').read_text().splitlines()
+check('data_code_not_ignored_and_secrets_ignored', '/data/' in ignore and 'data/' not in ignore and '.secrets/' in ignore)
+documents = ['AGENTS.md','PLAN.md','PROGRESS.md','README.md','src/README.md','src/procure_rl/README.md',
+             'src/procure_rl/env/README.md','src/procure_rl/data/README.md','tests/README.md',
+             'configs/README.md','fixtures/README.md','fixtures/s2/README.md','docs/README.md',
+             'docs/stages/README.md','docs/stages/S2.md','docs/s2-source-audit.md','logs/README.md',
+             'scripts/README.md','scripts/data/README.md','requirements/README.md']
+broken = []
+for relative in documents:
+    path = root/relative
+    for link in re.findall(r'\[[^\]]*\]\(([^)]+)\)', path.read_text()):
+        if '://' in link or link.startswith(('#', 'mailto:')):
+            continue
+        link = link.strip('<>').split('#')[0]
+        if link and not (path.parent/link).exists():
+            broken.append({'document':relative, 'link':link})
+check('local_document_links', not broken, broken=broken)
+artifacts = {}
+for name in run_names:
+    artifacts.update({str(p.relative_to(root)):sha256_file(p) for p in sorted((base/name).rglob('*')) if p.is_file()})
+result = {'stage':'S2', 'recorded_at':timestamp(), 'machine':tests['machine'], 'executable':sys.executable,
+          'argv':[sys.executable,*sys.argv], 'audit_source_sha256':sha256_file(Path(__file__)),
+          'status':'passed' if all(c['passed'] for c in checks) else 'failed',
+          'checks':checks, 'stage_complete':False, 'next_stage_started':False, 'gpu_compute_performed':False,
+          'document_sha256':{p:sha256_file(root/p) for p in documents},
+          'configuration_sha256':{str(p.relative_to(root)):sha256_file(p) for p in sorted((root/'configs').glob('*.json'))},
+          'artifact_sha256':artifacts, 'model_revision':None, 'billed_cost_usd':None,
+          'pending':decision['reasons']}
+with target.open('x') as handle:
+    json.dump(result, handle, ensure_ascii=False, indent=2)
+    handle.write('\n')
+print(json.dumps({'status':result['status'], 'checks':len(checks), 'failed':[c for c in checks if not c['passed']],
+                  'tests':summary, 'stage_complete':False}))
+raise SystemExit(0 if result['status'] == 'passed' else 1)

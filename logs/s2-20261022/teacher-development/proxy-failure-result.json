@@ -1,0 +1,20 @@
+{
+  "command": "PYTHONPATH=src .venv-cpu/bin/python -m unittest discover -s tests -p test_data_teacher.py -v",
+  "started_at": "2026-10-21T19:25:55.829273+00:00",
+  "finished_at": "2026-10-21T19:26:08.860400+00:00",
+  "machine": "A6000",
+  "python": "/home/fangjinjie/project/credit_assign/.venv-cpu/bin/python",
+  "python_version": "3.11.16",
+  "tests_run": 15,
+  "failures": 1,
+  "errors": 3,
+  "skipped": 0,
+  "successful": false,
+  "http_boundary": "actual urllib transport to loopback ephemeral server only; no external teacher",
+  "gpu_compute_performed": false,
+  "source_sha256": {
+    "src/procure_rl/data/teacher.py": "4ecc6e72f1a1ba717e3092318fcb8afe7ea55ea19d2628fdd60e96fe32ec3acd",
+    "src/procure_rl/data/replay.py": "f8869bad91c7ce57bfc7a1f6769e2b0c6b86ca3f5755e3c77b7ec7a09319a873",
+    "tests/test_data_teacher.py": "63dd751c6bf4a438e21c0cfc29e29a1ef52d241331d7fcc2f38c82cc5e4dadd4"
+  }
+}

@@ -2,7 +2,7 @@
 
 | 文件 | 用途 |
 | --- | --- |
-| `cpu.txt` | S0 标准库零外部依赖，CPU 无需 pip 安装即可执行 |
+| `cpu.txt` | S0–S2离线流水线和测试为标准库零外部依赖，CPU 无需 pip 安装即可执行 |
 | `gpu-candidate.in` | 待验证 GPU 直接依赖输入，Python 3.11/Linux x86_64，显式选择官方 cu126 构建与 verl commit；不是解析结果或 lock |
 | `attention-candidate.in` | 独立 `flash_attn` 的官方2.8.0.post2二进制候选，CUDA12 / Torch2.7 / CPython3.11 / CXX11 ABI=True；由2.8.3导入冲突修订，最终复验见PROGRESS；不是cu126专用声明 |
 | `toolchain-candidate.in` | 项目专属 `.venv-toolchain` 的 Ziglang0.17.0 编译器候选，用于Triton C launcher；与GPU包环境分开，不是系统Toolkit |
@@ -22,6 +22,8 @@ PYTHONPATH=src .venv-cpu/bin/python -m unittest discover -s tests -v
 ```
 
 学校的实际解释器路径和已验证命令见 S0。源码可支持3.10，但本项目执行全部使用项目独立3.11，不使用系统/共享 Python 或 Toolkit。CPU 运行不导入 ML 库。
+
+S2 未安装新依赖或生成新锁。普通构建/教师HTTP/回放仍用 `.venv-cpu` 标准库；一次性真实 Parquet 来源抽取使用 `.venv-gpu` 已安装的CPU PyArrow19.0.1，明确隐藏GPU、不导入Torch/vLLM，命令与字节证据见 [S2来源审计](../docs/s2-source-audit.md)。该读取不构成任何新GPU验收。
 
 ## 从S0实际锁重建
 

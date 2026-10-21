@@ -1,0 +1,49 @@
+{
+  "stage": "S2",
+  "date": "2026-10-22",
+  "timezone": "Asia/Shanghai",
+  "machine": "A6000",
+  "provenance": "Development findings and actual retained run logs. Missing early exact timestamps or stderr are not reconstructed.",
+  "source_acquisition": {
+    "initial_failures": ["Sandbox HTTPS access denied", "HF first-rows 404 and splits 501", "Old UCSD gzip URL 404"],
+    "resolution": "Same official HF dataset fixed revision, bounded HTTP Range Parquet extraction using project CPU PyArrow with GPU hidden",
+    "logs": ["logs/s2-source-audit", "logs/s2-source-parquet-v1"],
+    "transferred_bytes": 1222800,
+    "full_parquet_lfs_sha_verified_locally": false
+  },
+  "teacher_transport_development": {
+    "initial_failures": ["Local socket creation EPERM in restricted sandbox", "Machine proxy did not bypass loopback and local HTTP failed"],
+    "resolution": "Allowed CPU loopback test context and explicit proxy bypass for localhost",
+    "logs": "logs/s2-20261022/teacher-development",
+    "external_teacher_calls": 0
+  },
+  "review_findings_fixed_before_final_tests": [
+    "Feasibility enumerates the full actual retrieval split rather than only anchor-title-selected products",
+    "Counterfactual variants are rechecked for cross-split identical definitions",
+    "Engineering sources remain ineligible even with a non-local HTTP teacher",
+    "Missing, empty or ambiguous credential sources are blocked before network use",
+    "Human rejection/conflict prevents release; model rejection needs explicit human adjudication",
+    "Curated records bind to original row artifact SHA and source_row_index, not merely self-computed raw hashes",
+    "Local request-cache reuse is excluded from new-request cost estimates",
+    "Root /data/ ignore pattern preserves autonomous source and script data directories"
+  ],
+  "official_exclusion_revision": {
+    "initial_scope": "target IDs only; old v1 pilot packages were always withheld",
+    "final_scope": "available target IDs, structured brands, explicit item models and titles only",
+    "target_ids": 660,
+    "titles": 660,
+    "whole_brand_families": 558,
+    "brand_models": 420,
+    "unknown_brand_target_ids": 3,
+    "pilot_quarantined_products": 4,
+    "metadata_complete": false,
+    "rubrics_used_for_training_or_rewards": false
+  },
+  "final_results": {"tests": 136, "failures": 0, "errors": 0, "skipped": 0, "real_source_engineering_replay": "2/2", "fictional_source_engineering_replay": "2/2", "expert_candidates": 0},
+  "pending": ["Valid teacher credentials and real expert pilot", "Remaining official family metadata review", "Product identities and 200 human task reviews", "Independent semantic review"],
+  "gpu_compute_performed": false,
+  "model_revision": null,
+  "billed_cost_usd": null,
+  "stage_complete": false,
+  "next_stage_started": false
+}

@@ -1,0 +1,63 @@
+{
+  "stage": "S2",
+  "status": "passed",
+  "validation_level": "cpu_engineering_collection_and_replay",
+  "mode": "engineering",
+  "data_revision": "s2-625b5312397606c85c9c2dc8",
+  "dataset_manifest_sha256": "f34cee0879a32bccfacc72582bb5835989e00754d7d0e43c5850669450ca6fac",
+  "policy_version": "s2-scripted-observation-v1",
+  "seed": 0,
+  "attempted": 2,
+  "replay_accepted": 2,
+  "rejected": 0,
+  "expert_candidates": 0,
+  "cost_estimate_usd": null,
+  "billed_cost_usd": null,
+  "release_gate": {
+    "ready_for_formal_training": false,
+    "status": "withheld",
+    "reasons": [
+      "official_family_and_near_duplicate_metadata_incomplete",
+      "product_family_identities_pending_review",
+      "fewer_than_200_hash_bound_human_task_reviews",
+      "independent_semantic_review_pending",
+      "no_replay_accepted_real_teacher_training_episodes"
+    ],
+    "human_review_count": 0,
+    "independent_review_count": 0,
+    "expert_candidate_task_count": 0,
+    "invalid_review_task_ids": [],
+    "quantity_targets": {
+      "train": 1600,
+      "dev": 200,
+      "sealed_test": 400,
+      "counterfactual_pairs": 100,
+      "expert_successes": 600
+    },
+    "quantity_targets_are_not_claimed_achieved": true
+  },
+  "stage_complete": false,
+  "blockers": [],
+  "gpu_compute_performed": false,
+  "teacher": {
+    "kind": "scripted_engineering",
+    "engineering_only": true,
+    "model": null,
+    "model_revision": null,
+    "prompt_version": "procure-teacher-visible-v1",
+    "search_query": "dock",
+    "search_queries": [
+      "keyboard",
+      "docking",
+      "monitor",
+      "laptop",
+      "router"
+    ],
+    "clarification_questions": [
+      "What is your maximum device weight?"
+    ],
+    "review_query": "weight",
+    "usage": null,
+    "cost_usd": null
+  }
+}

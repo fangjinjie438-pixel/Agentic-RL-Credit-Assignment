@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "stage": "S2",
+  "revision": "s2-3321fd0522d817eee8ae8e62",
+  "created_at": "2026-10-22T03:59:06+08:00",
+  "source_kind": "engineering_fixture",
+  "engineering_only": true,
+  "source_path": "/home/fangjinjie/project/credit_assign/fixtures/s1/catalog.json",
+  "source_sha256": "9c9cc95ebf52b2e47bc6174e9ed57bab4a6419b3ba1bc51c33a8e778e017b71e",
+  "source_revision": "s1-fixture-v1",
+  "source_manifest": {
+    "source_kind": "engineering_fixture",
+    "revision": "s1-fixture-v1",
+    "source_sha256": "9c9cc95ebf52b2e47bc6174e9ed57bab4a6419b3ba1bc51c33a8e778e017b71e",
+    "formal_training_eligible": false
+  },
+  "seed": 0,
+  "official_exclusions_sha256": "5e212690530b97ad86fe75d0bc22ce2d2e2538ee43ca62cf04a3ad4c4410b253",
+  "products": 9,
+  "quarantined_products": 0,
+  "task_counts": {
+    "train": 7,
+    "dev": 4,
+    "sealed_test": 1
+  },
+  "base_counts": {
+    "train": 4,
+    "dev": 4,
+    "sealed_test": 1
+  },
+  "counterfactual_pairs": 3,
+  "expression_augmentations": 0,
+  "source_rejections": 0,
+  "task_rejections": 6,
+  "teacher_successes": 0,
+  "human_review_count": 0,
+  "independent_model_reviews": 0,
+  "release_status": "withheld",
+  "artifact_sha256": {
+    "catalog/dev.sqlite": "79cd918e9078c30eb591aa0254971bb170b246492375463fcb587ee4bf89d3e9",
+    "catalog/manifest.json": "d259d3f8c77c7300ba4156143788a98fa87de632eb492493f07f7eafb8e62db1",
+    "catalog/official_test.sqlite": "983873749aac04e208861184a901e964c372b8d75ab184d4e2f8c8ec249caabb",
+    "catalog/sealed_test.sqlite": "5301da215aee9f7e36faf72b9f392e500a8328f6109d142b6d6b978a91ff69bb",
+    "catalog/train.sqlite": "22fd56005aaf94e0e1c6fb7add8aeb11d30437dfbe6944ecb8c3caeca4ab10f3",
+    "catalog.json": "181dff4532abcd01fdd36ec0eecc6198226f60c491a5670dcf23252ce3cca0c4",
+    "official-exclusions.json": "5e212690530b97ad86fe75d0bc22ce2d2e2538ee43ca62cf04a3ad4c4410b253",
+    "quarantine.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "rejections.json": "c1f629c7c6b23b12c3c93d894d0160c9fa35421e2120f122e2111f9837c3d5df",
+    "release-gate.json": "2b6a5350022a1c429687c06de1d672d18816c4ba99a001df0603e6e5eb16436f",
+    "review-queue.json": "be6778f9d947989cb034d4f886fd0125e861a6a71cd249b284ee0a72cec54ce8",
+    "source-manifest.json": "f30274885a5e1b899177eee15c3513952195c8a7ee7121d3013c12cb2ae7a03f",
+    "split-audit.json": "9a601279c1ea7c5f3d10e3d368254ad564cc4012f5afac29897bba66a20624f9",
+    "task-audit.json": "39de50beb5bf88f6499754fa6fa911ee90113f6bd51b79289697e6103e31efc7",
+    "tasks/dev.json": "c38713fd88e3719c2484e1ce355baa827112ac2d6ea16a249ab5309be64f4e5e",
+    "tasks/sealed_test.json": "8c3436475657840a44744aa55ce06bde36ef547705b03d9dae2153fcce8e65eb",
+    "tasks/train.json": "59021c4cc2fe03beac5abecaaa6a9b81b4c7ef1beec3d2061902fae7abcac8d0"
+  }
+}

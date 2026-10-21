@@ -1,0 +1,936 @@
+{
+  "schema_version": 1,
+  "source": {
+    "id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+    "url": "https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023/resolve/2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e/raw_meta_Electronics/full-00000-of-00010.parquet",
+    "revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+    "sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+    "hash_scope": "local_first_row_group_selected_columns_rows_json",
+    "retrieved_at": "2026-10-21T19:22:26.397354+00:00",
+    "license": {
+      "id": null,
+      "usage": "research purpose; no blanket data license granted",
+      "url": "https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023/discussions/1"
+    },
+    "currency_evidence_url": "https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023/blob/2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e/README.md",
+    "currency": "USD",
+    "upstream_lfs_sha256": "116fe3967889da3d2fd1f5785f46532955d7c952649aa8eebf6eb6434bb9db16",
+    "upstream_lfs_sha256_verified": false,
+    "upstream_file_bytes": 219918692,
+    "transferred_bytes": 1222800,
+    "retrieval_method": "HTTP Range: Parquet first row group with selected columns",
+    "ranges_manifest": "logs/s2-source-parquet-v1/ranges.json",
+    "raw_rows_artifact": "logs/s2-source-parquet-v1/rows.json",
+    "selected_rows": [
+      47,
+      176,
+      182,
+      185,
+      429,
+      514,
+      630,
+      691,
+      762,
+      808,
+      869,
+      895
+    ],
+    "model_revision": null,
+    "teacher_calls": 0
+  },
+  "records": [
+    {
+      "raw": {
+        "main_category": "All Electronics",
+        "title": "LENTION USB C Docking Station, 10 Gbps USB C&USB A Ports, 4K 60Hz HDMI, 100W PD, Ethernet, Card Reader, USB 3.0, AUX, USB C Dock for MacBook/Surface, More, Stable Driver USB C Hub(CB-D65, Space Gray)",
+        "price": "89.99",
+        "store": "LENTION",
+        "categories": [
+          "Electronics",
+          "Computers & Accessories",
+          "Laptop Accessories",
+          "Docking Stations"
+        ],
+        "details": "{\"Package Dimensions\": \"9.17 x 4.33 x 1.54 inches\", \"Item Weight\": \"15.8 ounces\", \"Best Sellers Rank\": {\"Electronics\": 263405, \"Laptop Docking Stations\": 1852}, \"Date First Available\": \"October 28, 2022\", \"Manufacturer\": \"LENTION\", \"Brand\": \"LENTION\", \"Color\": \"Space Gray\", \"Hardware Interface\": \"MicroSD, USB Type C, Ethernet, HDMI, USB 3.0, USB 3.2 Gen 2\", \"Compatible Devices\": \"The devices with full-function USB-C or Thunderbolt 3/4 port\\uff1aMacBook Pro 13/14/15/16 2016-2023, New MacBook Air 2018-2022, MacBook Pro/Air M1, M2, New iMac, MacBook 12, Steam Deck, Surface Pro 7/8/Book 2/Go, Chromebook, Dell XPS/Inspiron, HP Spectre/ENVY, Lenovo Yoga and moreThe devices with full-function USB-C or Thunderbolt 3/4 port\\uff1aMacBook Pro 13/14/15/16 2016-2023, New MacBook Air 2018-2022, MacBook Pro/Air M1, M2, New iMac, MacBook 12, Steam Deck, Surface Pro 7/8/Book 2/Go, Chrome\\u2026  See more\", \"Total USB Ports\": \"4\", \"Number of Ports\": \"10\", \"Total HDMI Ports\": \"1\", \"Wattage\": \"100 watts\"}",
+        "parent_asin": "B0BKS1K986"
+      },
+      "facts": [
+        {
+          "field": "price",
+          "value": "89.99",
+          "unit": "USD",
+          "source_field": [
+            "price"
+          ],
+          "quote": "89.99"
+        },
+        {
+          "field": "weight_g",
+          "value": "15.8",
+          "unit": "ounces",
+          "source_field": [
+            "details",
+            "Item Weight"
+          ],
+          "quote": "15.8 ounces"
+        },
+        {
+          "field": "color",
+          "value": "Space Gray",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Color"
+          ],
+          "quote": "Space Gray"
+        },
+        {
+          "field": "hardware_interface",
+          "value": "MicroSD, USB Type C, Ethernet, HDMI, USB 3.0, USB 3.2 Gen 2",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Hardware Interface"
+          ],
+          "quote": "MicroSD, USB Type C, Ethernet, HDMI, USB 3.0, USB 3.2 Gen 2"
+        }
+      ],
+      "source_row_index": 47,
+      "identity": {
+        "brand_source_field": [
+          "details",
+          "Brand"
+        ]
+      },
+      "review_status": "agent_extracted_not_human_signed",
+      "selection_reason": "office_electronics_pilot",
+      "review_notes": [],
+      "raw_sha256": "07de1c15ac494f03c8265a1a8c87c1941acb0707864b1b99ec0a45fd243cd74b"
+    },
+    {
+      "raw": {
+        "main_category": "Computers",
+        "title": "KECOP Baby Pink USB Wire Keyboard with Rainbow LED Backlight Full 104 Keys Water-Resistant Mechanical Feeling Game Keyboard for Desktop, Computer, PC (Baby Pink)",
+        "price": "23.99",
+        "store": "KECOP",
+        "categories": [
+          "Electronics",
+          "Computers & Accessories",
+          "Computer Accessories & Peripherals",
+          "Keyboards, Mice & Accessories",
+          "Keyboards"
+        ],
+        "details": "{\"Product Dimensions\": \"10 x 2 x 2.7 inches\", \"Item Weight\": \"1 pounds\", \"Manufacturer\": \"KECOP\", \"Best Sellers Rank\": {\"Computer Keyboards\": 1490}, \"Date First Available\": \"July 27, 2021\", \"Brand\": \"KECOP\", \"Compatible Devices\": \"Laptop\", \"Connectivity Technology\": \"USB\", \"Keyboard Description\": \"Mechanical,Gaming\", \"Special Feature\": \"Waterproof\", \"Color\": \"Baby Pink\", \"Operating System\": \"Linux, Windows Vista, Windows XP, Windows 8, Windows 7, Windows 10\", \"Number of Keys\": \"104\", \"Keyboard backlighting color support\": \"RGB\", \"Style\": \"Modern\"}",
+        "parent_asin": "B09H2JQD48"
+      },
+      "facts": [
+        {
+          "field": "price",
+          "value": "23.99",
+          "unit": "USD",
+          "source_field": [
+            "price"
+          ],
+          "quote": "23.99"
+        },
+        {
+          "field": "weight_g",
+          "value": "1",
+          "unit": "pounds",
+          "source_field": [
+            "details",
+            "Item Weight"
+          ],
+          "quote": "1 pounds"
+        },
+        {
+          "field": "color",
+          "value": "Baby Pink",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Color"
+          ],
+          "quote": "Baby Pink"
+        },
+        {
+          "field": "connectivity",
+          "value": "USB",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Connectivity Technology"
+          ],
+          "quote": "USB"
+        },
+        {
+          "field": "operating_system",
+          "value": "Linux, Windows Vista, Windows XP, Windows 8, Windows 7, Windows 10",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Operating System"
+          ],
+          "quote": "Linux, Windows Vista, Windows XP, Windows 8, Windows 7, Windows 10"
+        }
+      ],
+      "source_row_index": 176,
+      "identity": {
+        "brand_source_field": [
+          "details",
+          "Brand"
+        ]
+      },
+      "review_status": "agent_extracted_not_human_signed",
+      "selection_reason": "office_electronics_pilot",
+      "review_notes": [],
+      "raw_sha256": "900cb12381dfa5a68aff04f8ede75ef4df5ee242ddaa6a5ed6c9768f4bdbe974"
+    },
+    {
+      "raw": {
+        "main_category": "Computers",
+        "title": "Macally 2.4G USB Wireless Keyboard for Laptop or Computer - Keep it Simple - Full Size Keyboard with Numeric Keypad & 13 Shortcut Keys - Plug and Play PC Keyboard Wireless - White Keyboard Cordless",
+        "price": "19.99",
+        "store": "Macally",
+        "categories": [
+          "Electronics",
+          "Computers & Accessories",
+          "Computer Accessories & Peripherals",
+          "Keyboards, Mice & Accessories",
+          "Keyboards"
+        ],
+        "details": "{\"Package Dimensions\": \"17.3 x 6 x 1 inches\", \"Item Weight\": \"1.36 pounds\", \"Manufacturer\": \"Mace Group Inc / Macally Peripherals\", \"Country of Origin\": \"China\", \"Batteries\": \"1 AAA batteries required. (included)\", \"Best Sellers Rank\": {\"Computer Keyboards\": 146}, \"Date First Available\": \"April 18, 2022\", \"Brand\": \"Macally\", \"Compatible Devices\": \"Laptop, PC, Smart TV\", \"Connectivity Technology\": \"RF, USB\", \"Keyboard Description\": \"USB Wireless Keyboard\", \"Recommended Uses For Product\": \"Office, School, Everyday Use, Education, Home\", \"Special Feature\": \"Laptop Keyboard, White Keyboard Wireless, Wireless Keyboard with Number Pad, Wireless Computer Keyboard White, Teclado InalambricoLaptop Keyboard, White Keyboard Wireless, Wireless Keyboard with Number Pad, Wireless Computer Keyboard White, Teclado Inalambrico  See more\", \"Color\": \"White\", \"Operating System\": \"Windows 7\", \"Number of Keys\": \"13\", \"Keyboard backlighting color support\": \"Single Color\"}",
+        "parent_asin": "B09X983942"
+      },
+      "facts": [
+        {
+          "field": "price",
+          "value": "19.99",
+          "unit": "USD",
+          "source_field": [
+            "price"
+          ],
+          "quote": "19.99"
+        },
+        {
+          "field": "weight_g",
+          "value": "1.36",
+          "unit": "pounds",
+          "source_field": [
+            "details",
+            "Item Weight"
+          ],
+          "quote": "1.36 pounds"
+        },
+        {
+          "field": "color",
+          "value": "White",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Color"
+          ],
+          "quote": "White"
+        },
+        {
+          "field": "connectivity",
+          "value": "RF, USB",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Connectivity Technology"
+          ],
+          "quote": "RF, USB"
+        },
+        {
+          "field": "operating_system",
+          "value": "Windows 7",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Operating System"
+          ],
+          "quote": "Windows 7"
+        }
+      ],
+      "source_row_index": 182,
+      "identity": {
+        "brand_source_field": [
+          "details",
+          "Brand"
+        ]
+      },
+      "review_status": "agent_extracted_not_human_signed",
+      "selection_reason": "office_electronics_pilot",
+      "review_notes": [],
+      "raw_sha256": "66fd7e2ef6634b7de2b4850a3b1d4b11f51b76882a590f9a65f78a15bc774160"
+    },
+    {
+      "raw": {
+        "main_category": "Computers",
+        "title": "HP 15.6\" Micro-Edge HD Laptop, Intel Core i3-1115G4 up to 4.1GHz (Beat i5-1035G4), 16GB RAM, 512GB PCIe SSD, Wi-Fi 6, Lightweight, Bluetooth, Webcam, Fast Charge, 11 Hours Battery Life, HDMI, Win11",
+        "price": "599.0",
+        "store": "HP",
+        "categories": [
+          "Electronics",
+          "Computers & Accessories",
+          "Computers & Tablets",
+          "Laptops",
+          "Traditional Laptops"
+        ],
+        "details": "{\"Standing screen display size\": \"15.6 Inches\", \"Max Screen Resolution\": \"1366x768 Pixels\", \"Processor\": \"4.1 GHz core_i3_1115g4\", \"RAM\": \"16 GB DDR4\", \"Memory Speed\": \"4.1 GHz\", \"Hard Drive\": \"512 GB SSD\", \"Graphics Coprocessor\": \"Intel UHD Graphics\", \"Chipset Brand\": \"Intel\", \"Card Description\": \"Integrated\", \"Wireless Type\": \"Bluetooth, 802.11a/b/g/n/ac\", \"Number of USB 2.0 Ports\": \"1\", \"Number of USB 3.0 Ports\": \"2\", \"Brand\": \"HP\", \"Series\": \"HP Laptop\", \"Operating System\": \"Windows 11 Home\", \"Item Weight\": \"5.64 pounds\", \"Product Dimensions\": \"20.47 x 2.72 x 12.01 inches\", \"Item Dimensions  LxWxH\": \"20.47 x 2.72 x 12.01 inches\", \"Color\": \"Non-Touchsceen\", \"Processor Brand\": \"Intel\", \"Number of Processors\": \"2\", \"Computer Memory Type\": \"DDR4 SDRAM\", \"Flash Memory Size\": \"512 GB\", \"Hard Drive Interface\": \"Solid State\", \"Optical Drive Type\": \"No Optical Drive\", \"Batteries\": \"1 Lithium Ion batteries required. (included)\", \"Best Sellers Rank\": {\"Computers & Accessories\": 47254, \"Traditional Laptop Computers\": 8819}, \"Date First Available\": \"November 19, 2022\", \"Model Name\": \"HP Laptop\", \"Screen Size\": \"15.6 Inches\", \"Hard Disk Size\": \"512 GB\", \"CPU Model\": \"Core I3 1115G4\", \"Ram Memory Installed Size\": \"16 GB\", \"Graphics Card Description\": \"Integrated\"}",
+        "parent_asin": "B0BMXFDSKM"
+      },
+      "facts": [
+        {
+          "field": "price",
+          "value": "599.0",
+          "unit": "USD",
+          "source_field": [
+            "price"
+          ],
+          "quote": "599.0"
+        },
+        {
+          "field": "weight_g",
+          "value": "5.64",
+          "unit": "pounds",
+          "source_field": [
+            "details",
+            "Item Weight"
+          ],
+          "quote": "5.64 pounds"
+        },
+        {
+          "field": "operating_system",
+          "value": "Windows 11 Home",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Operating System"
+          ],
+          "quote": "Windows 11 Home"
+        },
+        {
+          "field": "screen_size",
+          "value": "15.6 Inches",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Screen Size"
+          ],
+          "quote": "15.6 Inches"
+        }
+      ],
+      "source_row_index": 185,
+      "identity": {
+        "brand_source_field": [
+          "details",
+          "Brand"
+        ],
+        "model_source_field": [
+          "details",
+          "Model Name"
+        ]
+      },
+      "review_status": "agent_extracted_not_human_signed",
+      "selection_reason": "office_electronics_pilot",
+      "review_notes": [
+        "raw Color semantically not a color; excluded from normalized facts"
+      ],
+      "raw_sha256": "5d5ce9cbaa55c3adf89d5d6eed59e3e90ad6b4228e9ca085b24baac7a3332dce"
+    },
+    {
+      "raw": {
+        "main_category": "Computers",
+        "title": "SAMSUNG 23.5” CF396 Curved Computer Monitor, AMD FreeSync for Advanced Gaming, 4ms Response Time, Wide Viewing Angle, Ultra Slim Design, LC24F396FHNXZA, Black",
+        "price": "158.0",
+        "store": "SAMSUNG",
+        "categories": [
+          "Electronics",
+          "Computers & Accessories",
+          "Monitors"
+        ],
+        "details": "{\"Standing screen display size\": \"23.5 Inches\", \"Max Screen Resolution\": \"1920 x 1080 Pixels\", \"Brand\": \"SAMSUNG\", \"Series\": \"CF396\", \"Item model number\": \"LC24F396FHNXZA\", \"Item Weight\": \"6.8 pounds\", \"Product Dimensions\": \"8.61 x 21.56 x 16.68 inches\", \"Item Dimensions  LxWxH\": \"8.61 x 21.56 x 16.68 inches\", \"Color\": \"Black\", \"Manufacturer\": \"Samsung\", \"Is Discontinued By Manufacturer\": \"No\", \"Date First Available\": \"February 27, 2018\", \"Best Sellers Rank\": {\"Electronics\": 2837, \"Computer Monitors\": 108}, \"Screen Size\": \"23.5 Inches\", \"Display Resolution Maximum\": \"1920 x 1080 Pixels\", \"Special Feature\": \"Curved\", \"Refresh Rate\": \"60 Hz\"}",
+        "parent_asin": "B09SJ9192T"
+      },
+      "facts": [
+        {
+          "field": "price",
+          "value": "158.0",
+          "unit": "USD",
+          "source_field": [
+            "price"
+          ],
+          "quote": "158.0"
+        },
+        {
+          "field": "weight_g",
+          "value": "6.8",
+          "unit": "pounds",
+          "source_field": [
+            "details",
+            "Item Weight"
+          ],
+          "quote": "6.8 pounds"
+        },
+        {
+          "field": "color",
+          "value": "Black",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Color"
+          ],
+          "quote": "Black"
+        },
+        {
+          "field": "screen_size",
+          "value": "23.5 Inches",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Screen Size"
+          ],
+          "quote": "23.5 Inches"
+        },
+        {
+          "field": "display_resolution",
+          "value": "1920 x 1080 Pixels",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Display Resolution Maximum"
+          ],
+          "quote": "1920 x 1080 Pixels"
+        }
+      ],
+      "source_row_index": 429,
+      "identity": {
+        "brand_source_field": [
+          "details",
+          "Brand"
+        ],
+        "model_source_field": [
+          "details",
+          "Item model number"
+        ]
+      },
+      "review_status": "agent_extracted_not_human_signed",
+      "selection_reason": "office_electronics_pilot",
+      "review_notes": [],
+      "raw_sha256": "9f2f91fe9f0af64d83cbd4326e2946bf1a1015dbee8aff8af279c4572d08c8e0"
+    },
+    {
+      "raw": {
+        "main_category": "Computers",
+        "title": "mafiti RK101 Computer Keyboard Mouse Combo Wired, RGB Backlit USB Keyboard for PC Mac Laptop Desktop, Gaming Office",
+        "price": "19.99",
+        "store": "mafiti",
+        "categories": [
+          "Electronics",
+          "Computers & Accessories",
+          "Computer Accessories & Peripherals",
+          "Keyboards, Mice & Accessories",
+          "Keyboard & Mouse Combos"
+        ],
+        "details": "{\"Product Dimensions\": \"17.1 x 5.4 x 1.1 inches\", \"Item Weight\": \"1.65 pounds\", \"Manufacturer\": \"mafiti\", \"Item model number\": \"Mafiti RK101\", \"Best Sellers Rank\": {\"Computer Keyboard & Mouse Combos\": 330}, \"Is Discontinued By Manufacturer\": \"No\", \"Date First Available\": \"November 21, 2018\", \"Brand\": \"Mafiti\", \"Color\": \"Keyboard mouse combo with RGB backlit\", \"Connectivity Technology\": \"Usb\", \"Special Feature\": \"Hotkeys_and_media_keys\", \"Compatible Devices\": \"Laptop, Personal Computer, Windows, Mac\"}",
+        "parent_asin": "B0BKFX6FWW"
+      },
+      "facts": [
+        {
+          "field": "price",
+          "value": "19.99",
+          "unit": "USD",
+          "source_field": [
+            "price"
+          ],
+          "quote": "19.99"
+        },
+        {
+          "field": "weight_g",
+          "value": "1.65",
+          "unit": "pounds",
+          "source_field": [
+            "details",
+            "Item Weight"
+          ],
+          "quote": "1.65 pounds"
+        },
+        {
+          "field": "connectivity",
+          "value": "Usb",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Connectivity Technology"
+          ],
+          "quote": "Usb"
+        }
+      ],
+      "source_row_index": 514,
+      "identity": {
+        "brand_source_field": [
+          "details",
+          "Brand"
+        ],
+        "model_source_field": [
+          "details",
+          "Item model number"
+        ]
+      },
+      "review_status": "agent_extracted_not_human_signed",
+      "selection_reason": "office_electronics_pilot",
+      "review_notes": [
+        "raw Color semantically not a color; excluded from normalized facts"
+      ],
+      "raw_sha256": "7b810c3b957df44a3637736e3c86e8987d9d4c7e6a7e4418a56fcdba32c8a2bd"
+    },
+    {
+      "raw": {
+        "main_category": "All Electronics",
+        "title": "Wireless Keyboard and Mouse Combo, EDJO Full-Sized Ergonomic Computer Keyboard with Wrist Rest and 3 Level DPI Adjustable Wireless Mouse for Windows, Mac OS Desktop/Laptop/PC (White)",
+        "price": "34.99",
+        "store": "EDJO",
+        "categories": [
+          "Electronics",
+          "Computers & Accessories",
+          "Computer Accessories & Peripherals",
+          "Keyboards, Mice & Accessories",
+          "Keyboard & Mouse Combos"
+        ],
+        "details": "{\"Package Dimensions\": \"17.83 x 10 x 1.97 inches\", \"Item Weight\": \"1.72 pounds\", \"Best Sellers Rank\": {\"Computer Keyboard & Mouse Combos\": 305}, \"Date First Available\": \"March 3, 2023\", \"Manufacturer\": \"EDJO\", \"Brand\": \"EDJO\", \"Color\": \"White\", \"Connectivity Technology\": \"Usb, Radio Frequency\", \"Special Feature\": \"Ergonomic\", \"Compatible Devices\": \"Laptop, Personal Computer\"}",
+        "parent_asin": "B0BWYJJLSF"
+      },
+      "facts": [
+        {
+          "field": "price",
+          "value": "34.99",
+          "unit": "USD",
+          "source_field": [
+            "price"
+          ],
+          "quote": "34.99"
+        },
+        {
+          "field": "weight_g",
+          "value": "1.72",
+          "unit": "pounds",
+          "source_field": [
+            "details",
+            "Item Weight"
+          ],
+          "quote": "1.72 pounds"
+        },
+        {
+          "field": "color",
+          "value": "White",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Color"
+          ],
+          "quote": "White"
+        },
+        {
+          "field": "connectivity",
+          "value": "Usb, Radio Frequency",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Connectivity Technology"
+          ],
+          "quote": "Usb, Radio Frequency"
+        }
+      ],
+      "source_row_index": 630,
+      "identity": {
+        "brand_source_field": [
+          "details",
+          "Brand"
+        ]
+      },
+      "review_status": "agent_extracted_not_human_signed",
+      "selection_reason": "office_electronics_pilot",
+      "review_notes": [],
+      "raw_sha256": "dd0aa7b96c37769d1b03fbc4b86491b5256df185ad86ddc6e306b4f3114421af"
+    },
+    {
+      "raw": {
+        "main_category": "Computers",
+        "title": "Thinlerain 15 inch PC Monitor Desktop Monitor with 1440×900, Small Monitor with 16:10 LED Monitor, TFT Panel, 60 Hz, 5Ms, VGA, HDMI, Built-in Speakers",
+        "price": "85.99",
+        "store": "Thinlerain",
+        "categories": [
+          "Electronics",
+          "Computers & Accessories",
+          "Monitors"
+        ],
+        "details": "{\"Product Dimensions\": \"1.3 x 14.7 x 9.8 inches\", \"Item Weight\": \"3.34 pounds\", \"Manufacturer\": \"Thinlerain\", \"Best Sellers Rank\": {\"Electronics\": 27911, \"Computer Monitors\": 809}, \"Date First Available\": \"November 16, 2021\", \"Screen Size\": \"15 Inches\", \"Display Resolution Maximum\": \"1440 x 900 Pixels\", \"Brand\": \"Thinlerain\", \"Special Feature\": \"Built In Speakers\", \"Refresh Rate\": \"60 Hz\"}",
+        "parent_asin": "B0B97BKQJV"
+      },
+      "facts": [
+        {
+          "field": "price",
+          "value": "85.99",
+          "unit": "USD",
+          "source_field": [
+            "price"
+          ],
+          "quote": "85.99"
+        },
+        {
+          "field": "weight_g",
+          "value": "3.34",
+          "unit": "pounds",
+          "source_field": [
+            "details",
+            "Item Weight"
+          ],
+          "quote": "3.34 pounds"
+        },
+        {
+          "field": "screen_size",
+          "value": "15 Inches",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Screen Size"
+          ],
+          "quote": "15 Inches"
+        },
+        {
+          "field": "display_resolution",
+          "value": "1440 x 900 Pixels",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Display Resolution Maximum"
+          ],
+          "quote": "1440 x 900 Pixels"
+        }
+      ],
+      "source_row_index": 691,
+      "identity": {
+        "brand_source_field": [
+          "details",
+          "Brand"
+        ]
+      },
+      "review_status": "agent_extracted_not_human_signed",
+      "selection_reason": "office_electronics_pilot",
+      "review_notes": [],
+      "raw_sha256": "8805b91d86779db64358b47576ff9dea981dfe8e9d95f8f8008585bba3961b1b"
+    },
+    {
+      "raw": {
+        "main_category": "Computers",
+        "title": "Dell Inspiron 15.6\" HD Laptop, Intel Celeron Processor N4020, 8GB RAM, 128GB PCIe SSD, Intel UHD Graphics 600, HD Audio, HD Webcam, Black, Windows 11 Home",
+        "price": "379.0",
+        "store": "Dell",
+        "categories": [
+          "Electronics",
+          "Computers & Accessories",
+          "Computers & Tablets",
+          "Laptops",
+          "Traditional Laptops"
+        ],
+        "details": "{\"Standing screen display size\": \"15.6 Inches\", \"Max Screen Resolution\": \"1366 x 768 Pixels\", \"Processor\": \"1.1 GHz celeron_n\", \"RAM\": \"8 GB DDR4\", \"Hard Drive\": \"128 GB SSD\", \"Graphics Coprocessor\": \"Intel HD Graphics 600\", \"Chipset Brand\": \"Intel\", \"Card Description\": \"Integrated\", \"Wireless Type\": \"802.11ac\", \"Number of USB 2.0 Ports\": \"1\", \"Number of USB 3.0 Ports\": \"1\", \"Brand\": \"Dell\", \"Series\": \"DELL\", \"Item model number\": \"DELL\", \"Hardware Platform\": \"PC\", \"Operating System\": \"Windows 11 Home\", \"Item Weight\": \"4.07 pounds\", \"Product Dimensions\": \"14.1 x 10.1 x 1.1 inches\", \"Item Dimensions  LxWxH\": \"14.1 x 10.1 x 1.1 inches\", \"Color\": \"Black\", \"Processor Brand\": \"Intel\", \"Number of Processors\": \"4\", \"Computer Memory Type\": \"DDR4 SDRAM\", \"Flash Memory Size\": \"8 GB\", \"Hard Drive Interface\": \"Solid State\", \"Hard Drive Rotational Speed\": \"7200.00\", \"Power Source\": \"AC & Battery\", \"Voltage\": \"24 Volts\", \"Best Sellers Rank\": {\"Computers & Accessories\": 57018, \"Traditional Laptop Computers\": 10795}, \"Date First Available\": \"September 2, 2022\", \"Model Name\": \"DELL\", \"Screen Size\": \"15.6 Inches\", \"Hard Disk Size\": \"128 GB\", \"CPU Model\": \"Celeron N\", \"Ram Memory Installed Size\": \"8 GB\", \"Special Feature\": \"Stereo Speakers\", \"Graphics Card Description\": \"Integrated\"}",
+        "parent_asin": "B0BCV6K63S"
+      },
+      "facts": [
+        {
+          "field": "price",
+          "value": "379.0",
+          "unit": "USD",
+          "source_field": [
+            "price"
+          ],
+          "quote": "379.0"
+        },
+        {
+          "field": "weight_g",
+          "value": "4.07",
+          "unit": "pounds",
+          "source_field": [
+            "details",
+            "Item Weight"
+          ],
+          "quote": "4.07 pounds"
+        },
+        {
+          "field": "color",
+          "value": "Black",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Color"
+          ],
+          "quote": "Black"
+        },
+        {
+          "field": "operating_system",
+          "value": "Windows 11 Home",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Operating System"
+          ],
+          "quote": "Windows 11 Home"
+        },
+        {
+          "field": "screen_size",
+          "value": "15.6 Inches",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Screen Size"
+          ],
+          "quote": "15.6 Inches"
+        }
+      ],
+      "source_row_index": 762,
+      "identity": {
+        "brand_source_field": [
+          "details",
+          "Brand"
+        ],
+        "model_source_field": [
+          "details",
+          "Item model number"
+        ]
+      },
+      "review_status": "agent_extracted_not_human_signed",
+      "selection_reason": "office_electronics_pilot",
+      "review_notes": [],
+      "raw_sha256": "7ce245f4cc425c6ab8595e8c988cc0a122009591f239dc192259124b44e2512d"
+    },
+    {
+      "raw": {
+        "main_category": "Computers",
+        "title": "Mini Bluetooth Keyboard Wireless Keyboard - Ultra-Slim, Silent, Multi-Device, Illuminated, 7 Colors RGB, for Apple iPad iPhone Samsung Tablet Phone Smartphone iOS Android Windows",
+        "price": "39.99",
+        "store": "RunElves",
+        "categories": [
+          "Electronics",
+          "Computers & Accessories",
+          "Laptop Accessories",
+          "Stands"
+        ],
+        "details": "{\"Product Dimensions\": \"9.84 x 5.91 x 0.79 inches\", \"Item Weight\": \"8.5 ounces\", \"Manufacturer\": \"RunElves\", \"Language\": \"English\", \"Country of Origin\": \"China\", \"Item model number\": \"RE-20220702\", \"Best Sellers Rank\": {\"Laptop Stands\": 7059}, \"Date First Available\": \"July 13, 2022\", \"Brand\": \"RunElves\", \"Compatible Devices\": \"iPad/iPhone/Windows/Android/Linux/iOS\", \"Connectivity Technology\": \"Bluetooth\", \"Keyboard Description\": \"Wireless\", \"Special Feature\": \"Backlit\", \"Color\": \"Pink\", \"Operating System\": \"Windows/Android/Linux/iOS\", \"Number of Keys\": \"78\", \"Keyboard backlighting color support\": \"RGB\", \"Style\": \"future\"}",
+        "parent_asin": "B0B5LDPJLD"
+      },
+      "facts": [
+        {
+          "field": "price",
+          "value": "39.99",
+          "unit": "USD",
+          "source_field": [
+            "price"
+          ],
+          "quote": "39.99"
+        },
+        {
+          "field": "weight_g",
+          "value": "8.5",
+          "unit": "ounces",
+          "source_field": [
+            "details",
+            "Item Weight"
+          ],
+          "quote": "8.5 ounces"
+        },
+        {
+          "field": "color",
+          "value": "Pink",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Color"
+          ],
+          "quote": "Pink"
+        },
+        {
+          "field": "connectivity",
+          "value": "Bluetooth",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Connectivity Technology"
+          ],
+          "quote": "Bluetooth"
+        },
+        {
+          "field": "operating_system",
+          "value": "Windows/Android/Linux/iOS",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Operating System"
+          ],
+          "quote": "Windows/Android/Linux/iOS"
+        }
+      ],
+      "source_row_index": 808,
+      "identity": {
+        "brand_source_field": [
+          "details",
+          "Brand"
+        ],
+        "model_source_field": [
+          "details",
+          "Item model number"
+        ]
+      },
+      "review_status": "agent_extracted_not_human_signed",
+      "selection_reason": "office_electronics_pilot",
+      "review_notes": [],
+      "raw_sha256": "e1c82179b3ca70cf9bea88002f3e9440ca52460ac2da08a8ff564414e91ed756"
+    },
+    {
+      "raw": {
+        "main_category": "Computers",
+        "title": "NETGEAR AC1600 WiFi VDSL/ADSL Modem Router – 802.11ac Dual Band Gigabit (D6400-100NAS)",
+        "price": "130.0",
+        "store": "NETGEAR",
+        "categories": [
+          "Electronics",
+          "Computers & Accessories",
+          "Networking Products",
+          "Modem Router Combos"
+        ],
+        "details": "{\"Wireless Type\": \"802.11n, 802.11ac\", \"Brand\": \"NETGEAR\", \"Series\": \"D6400\", \"Item model number\": \"D6400-100NAS\", \"Item Weight\": \"14.88 Ounces\", \"Product Dimensions\": \"12.02 x 10.13 x 2.84 inches\", \"Item Dimensions  LxWxH\": \"12.02 x 10.13 x 2.84 inches\", \"Voltage\": \"100240 Volts\", \"Manufacturer\": \"Netgear Inc\", \"Is Discontinued By Manufacturer\": \"No\", \"Date First Available\": \"February 22, 2016\", \"Best Sellers Rank\": {\"Computers & Accessories\": 42086, \"Modem Router Combos\": 92}, \"Special Feature\": \"WPS\", \"Frequency Band Class\": \"Dual-Band\", \"Compatible Devices\": \"Personal Computer, Tablet, Smartphone\", \"Recommended Uses For Product\": \"Gaming\", \"Included Components\": \"AC1600 WiFi VDSL/ADSL Modem Router (D6400)^Ethernet cable^Phone cable^DSL filter^Quick start guide^Power adapterAC1600 WiFi VDSL/ADSL Modem Router (D6400)^Ethernet cable^Phone cable^DSL filter^Quick start guide^Power adapter  See more\", \"Connectivity Technology\": \"Wi Fi\"}",
+        "parent_asin": "B01FB654PI"
+      },
+      "facts": [
+        {
+          "field": "price",
+          "value": "130.0",
+          "unit": "USD",
+          "source_field": [
+            "price"
+          ],
+          "quote": "130.0"
+        },
+        {
+          "field": "weight_g",
+          "value": "14.88",
+          "unit": "Ounces",
+          "source_field": [
+            "details",
+            "Item Weight"
+          ],
+          "quote": "14.88 Ounces"
+        },
+        {
+          "field": "connectivity",
+          "value": "Wi Fi",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Connectivity Technology"
+          ],
+          "quote": "Wi Fi"
+        }
+      ],
+      "source_row_index": 869,
+      "identity": {
+        "brand_source_field": [
+          "details",
+          "Brand"
+        ],
+        "model_source_field": [
+          "details",
+          "Item model number"
+        ]
+      },
+      "review_status": "agent_extracted_not_human_signed",
+      "selection_reason": "office_electronics_pilot",
+      "review_notes": [],
+      "raw_sha256": "46c4fcf5a5e60cdb2ee20f3ccc2a5fd3e31a8d24fa90a802a67718dbd716060a"
+    },
+    {
+      "raw": {
+        "main_category": "Computers",
+        "title": "Logitech Wireless Touch Keyboard K400 with Built-In Multi-Touch Touchpad, Black (Renewed)",
+        "price": "21.95",
+        "store": "Amazon Renewed",
+        "categories": [
+          "Electronics",
+          "Computers & Accessories",
+          "Computer Accessories & Peripherals",
+          "Keyboards, Mice & Accessories",
+          "Keyboards"
+        ],
+        "details": "{\"Product Dimensions\": \"5.4 x 0.9 x 13.9 inches\", \"Item Weight\": \"15.2 ounces\", \"Manufacturer\": \"Logitech\", \"Item model number\": \"920-003070RFB\", \"Batteries\": \"2 AA batteries required. (included)\", \"Best Sellers Rank\": {\"Amazon Renewed\": 766, \"Computer Keyboards\": 228, \"Climate Pledge Friendly: Computers\": 589}, \"Is Discontinued By Manufacturer\": \"No\", \"Date First Available\": \"January 21, 2015\", \"Brand\": \"Logitech\", \"Compatible Devices\": \"Laptop\", \"Connectivity Technology\": \"USB\", \"Keyboard Description\": \"USB\", \"Special Feature\": \"Wireless\", \"Color\": \"Black\", \"Operating System\": \"Windows 10\", \"Number of Keys\": \"90\", \"Style\": \"Modern\", \"Item Dimensions LxWxH\": \"5.4 x 0.9 x 13.9 inches\"}",
+        "parent_asin": "B00SK0FOHG"
+      },
+      "facts": [
+        {
+          "field": "price",
+          "value": "21.95",
+          "unit": "USD",
+          "source_field": [
+            "price"
+          ],
+          "quote": "21.95"
+        },
+        {
+          "field": "weight_g",
+          "value": "15.2",
+          "unit": "ounces",
+          "source_field": [
+            "details",
+            "Item Weight"
+          ],
+          "quote": "15.2 ounces"
+        },
+        {
+          "field": "color",
+          "value": "Black",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Color"
+          ],
+          "quote": "Black"
+        },
+        {
+          "field": "connectivity",
+          "value": "USB",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Connectivity Technology"
+          ],
+          "quote": "USB"
+        },
+        {
+          "field": "operating_system",
+          "value": "Windows 10",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Operating System"
+          ],
+          "quote": "Windows 10"
+        }
+      ],
+      "source_row_index": 895,
+      "identity": {
+        "brand_source_field": [
+          "details",
+          "Brand"
+        ],
+        "model_source_field": [
+          "details",
+          "Item model number"
+        ]
+      },
+      "review_status": "agent_extracted_not_human_signed",
+      "selection_reason": "office_electronics_pilot",
+      "review_notes": [],
+      "raw_sha256": "c921d44bf9656fa21c963e1951f6ffd03b0b27d7ba62ffe2eae4d5899512b2a9"
+    }
+  ]
+}

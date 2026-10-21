@@ -1,0 +1,41 @@
+{
+  "source": [],
+  "tasks": [
+    {
+      "product_id": "B01FB654PI",
+      "template_id": "office-color-weight-v1",
+      "reason": "missing_grounded_template_fact"
+    },
+    {
+      "product_id": "B0B97BKQJV",
+      "template_id": "office-color-weight-v1",
+      "reason": "missing_grounded_template_fact"
+    },
+    {
+      "product_id": "B0BKFX6FWW",
+      "template_id": "office-color-weight-v1",
+      "reason": "missing_grounded_template_fact"
+    },
+    {
+      "product_id": "B0BMXFDSKM",
+      "template_id": "office-color-weight-v1",
+      "reason": "missing_grounded_template_fact"
+    },
+    {
+      "task_id": "task-eab64e1f7a0884441a5f",
+      "reason": "no_nonempty_disjoint_single_change_counterfactual"
+    },
+    {
+      "task_id": "task-3fbe9b9f3644a5b8a7f9",
+      "reason": "no_nonempty_disjoint_single_change_counterfactual"
+    },
+    {
+      "task_id": "task-d517dd7dd49de37d4410",
+      "reason": "no_nonempty_disjoint_single_change_counterfactual"
+    },
+    {
+      "task_id": "task-964a2c1b4a9586d4b9ea",
+      "reason": "no_nonempty_disjoint_single_change_counterfactual"
+    }
+  ]
+}

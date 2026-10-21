@@ -1,0 +1,29 @@
+{
+  "source": [],
+  "tasks": [
+    {
+      "task_id": "task-642973d19ffbd2830ecc",
+      "reason": "no_nonempty_disjoint_single_change_counterfactual"
+    },
+    {
+      "task_id": "task-3695422f6430a2ce7cb3",
+      "reason": "no_nonempty_disjoint_single_change_counterfactual"
+    },
+    {
+      "task_id": "task-2de4765f4ff1d6036518",
+      "reason": "no_nonempty_disjoint_single_change_counterfactual"
+    },
+    {
+      "task_id": "task-f15bb8217797490ab0a5",
+      "reason": "no_nonempty_disjoint_single_change_counterfactual"
+    },
+    {
+      "task_id": "task-72d6d9266aa6f46b9882",
+      "reason": "no_nonempty_disjoint_single_change_counterfactual"
+    },
+    {
+      "task_id": "task-5931e3b0eedc141ce005",
+      "reason": "no_nonempty_disjoint_single_change_counterfactual"
+    }
+  ]
+}

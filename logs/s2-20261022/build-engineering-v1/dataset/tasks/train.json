@@ -1,0 +1,707 @@
+{
+  "revision": "s2-03a1cb83aa92a8f4bd15a6f4",
+  "tasks": [
+    {
+      "template_id": "engineering-dock-v1",
+      "split": "train",
+      "constraints": [
+        {
+          "id": "budget",
+          "source": "query",
+          "field": "price",
+          "op": "lte",
+          "value": 89,
+          "evidence_ids": [
+            "dock-dev-a:details:price",
+            "dock-dev-legacy:details:price",
+            "dock-official-a:details:price",
+            "dock-train-low:details:price"
+          ]
+        },
+        {
+          "id": "interface",
+          "source": "persona",
+          "field": "host_interface",
+          "op": "eq",
+          "value": "USB-A",
+          "evidence_ids": [
+            "dock-dev-a:details:host_interface",
+            "dock-dev-legacy:details:host_interface",
+            "dock-official-a:details:host_interface",
+            "dock-train-low:details:host_interface"
+          ]
+        },
+        {
+          "id": "displays",
+          "source": "clarification",
+          "field": "display_count",
+          "op": "gte",
+          "value": 2,
+          "evidence_ids": [
+            "dock-dev-a:details:display_count",
+            "dock-dev-legacy:details:display_count",
+            "dock-official-a:details:display_count",
+            "dock-train-low:details:display_count"
+          ]
+        },
+        {
+          "id": "power",
+          "source": "clarification",
+          "field": "power_w",
+          "op": "gte",
+          "value": 90,
+          "evidence_ids": [
+            "dock-dev-a:reviews:power_w",
+            "dock-dev-legacy:reviews:power_w",
+            "dock-official-a:reviews:power_w",
+            "dock-train-low:reviews:power_w"
+          ]
+        }
+      ],
+      "max_steps": 40,
+      "max_clarifications": 10,
+      "construction_anchor": "dock-dev-legacy",
+      "variant_kind": "base",
+      "feasible_product_ids": [
+        "dock-dev-legacy"
+      ],
+      "task_id": "task-2de4765f4ff1d6036518",
+      "root_task_id": "task-2de4765f4ff1d6036518",
+      "query": "Please recommend one office electronic device. My required price in USD is at most 89.",
+      "persona": "My required host interface is exactly USB-A.",
+      "clarifications": [
+        {
+          "question_id": "displays",
+          "question": "How many external displays do you need?",
+          "answer": "My required simultaneous display count is at least 2.",
+          "constraint_ids": [
+            "displays"
+          ],
+          "trigger_keywords": [
+            "displays",
+            "monitors"
+          ]
+        },
+        {
+          "question_id": "power",
+          "question": "How much laptop power do you need?",
+          "answer": "My required laptop power in W is at least 90.",
+          "constraint_ids": [
+            "power"
+          ],
+          "trigger_keywords": [
+            "power",
+            "charging"
+          ]
+        }
+      ],
+      "expression_method": "grounded_template_v1",
+      "teacher_expression_review": "not_run",
+      "human_review": "pending"
+    },
+    {
+      "template_id": "engineering-dock-v1",
+      "split": "train",
+      "constraints": [
+        {
+          "id": "budget",
+          "source": "query",
+          "field": "price",
+          "op": "lte",
+          "value": 129,
+          "evidence_ids": [
+            "dock-dev-a:details:price",
+            "dock-dev-legacy:details:price",
+            "dock-official-a:details:price",
+            "dock-train-low:details:price"
+          ]
+        },
+        {
+          "id": "interface",
+          "source": "persona",
+          "field": "host_interface",
+          "op": "eq",
+          "value": "USB-C",
+          "evidence_ids": [
+            "dock-dev-a:details:host_interface",
+            "dock-dev-legacy:details:host_interface",
+            "dock-official-a:details:host_interface",
+            "dock-train-low:details:host_interface"
+          ]
+        },
+        {
+          "id": "displays",
+          "source": "clarification",
+          "field": "display_count",
+          "op": "gte",
+          "value": 2,
+          "evidence_ids": [
+            "dock-dev-a:details:display_count",
+            "dock-dev-legacy:details:display_count",
+            "dock-official-a:details:display_count",
+            "dock-train-low:details:display_count"
+          ]
+        },
+        {
+          "id": "power",
+          "source": "clarification",
+          "field": "power_w",
+          "op": "gte",
+          "value": 85,
+          "evidence_ids": [
+            "dock-dev-a:reviews:power_w",
+            "dock-dev-legacy:reviews:power_w",
+            "dock-official-a:reviews:power_w",
+            "dock-train-low:reviews:power_w"
+          ]
+        }
+      ],
+      "max_steps": 40,
+      "max_clarifications": 10,
+      "construction_anchor": "dock-dev-a",
+      "variant_kind": "base",
+      "feasible_product_ids": [
+        "dock-dev-a"
+      ],
+      "task_id": "task-5f98913c8ba87eb19be3",
+      "root_task_id": "task-5f98913c8ba87eb19be3",
+      "query": "Please recommend one office electronic device. My required price in USD is at most 129.",
+      "persona": "My required host interface is exactly USB-C.",
+      "clarifications": [
+        {
+          "question_id": "displays",
+          "question": "How many external displays do you need?",
+          "answer": "My required simultaneous display count is at least 2.",
+          "constraint_ids": [
+            "displays"
+          ],
+          "trigger_keywords": [
+            "displays",
+            "monitors"
+          ]
+        },
+        {
+          "question_id": "power",
+          "question": "How much laptop power do you need?",
+          "answer": "My required laptop power in W is at least 85.",
+          "constraint_ids": [
+            "power"
+          ],
+          "trigger_keywords": [
+            "power",
+            "charging"
+          ]
+        }
+      ],
+      "expression_method": "grounded_template_v1",
+      "teacher_expression_review": "not_run",
+      "human_review": "pending",
+      "pair_id": "pair-f32272db376aae0a"
+    },
+    {
+      "template_id": "engineering-dock-v1",
+      "split": "train",
+      "constraints": [
+        {
+          "id": "budget",
+          "source": "query",
+          "field": "price",
+          "op": "lte",
+          "value": 129,
+          "evidence_ids": [
+            "dock-dev-a:details:price",
+            "dock-dev-legacy:details:price",
+            "dock-official-a:details:price",
+            "dock-train-low:details:price"
+          ]
+        },
+        {
+          "id": "interface",
+          "source": "persona",
+          "field": "host_interface",
+          "op": "eq",
+          "value": "USB-A",
+          "evidence_ids": [
+            "dock-dev-a:details:host_interface",
+            "dock-dev-legacy:details:host_interface",
+            "dock-official-a:details:host_interface",
+            "dock-train-low:details:host_interface"
+          ]
+        },
+        {
+          "id": "displays",
+          "source": "clarification",
+          "field": "display_count",
+          "op": "gte",
+          "value": 2,
+          "evidence_ids": [
+            "dock-dev-a:details:display_count",
+            "dock-dev-legacy:details:display_count",
+            "dock-official-a:details:display_count",
+            "dock-train-low:details:display_count"
+          ]
+        },
+        {
+          "id": "power",
+          "source": "clarification",
+          "field": "power_w",
+          "op": "gte",
+          "value": 85,
+          "evidence_ids": [
+            "dock-dev-a:reviews:power_w",
+            "dock-dev-legacy:reviews:power_w",
+            "dock-official-a:reviews:power_w",
+            "dock-train-low:reviews:power_w"
+          ]
+        }
+      ],
+      "max_steps": 40,
+      "max_clarifications": 10,
+      "construction_anchor": "dock-dev-a",
+      "variant_kind": "counterfactual",
+      "feasible_product_ids": [
+        "dock-dev-legacy"
+      ],
+      "task_id": "task-5f98913c8ba87eb19be3-cf-a5275d09",
+      "root_task_id": "task-5f98913c8ba87eb19be3",
+      "query": "Please recommend one office electronic device. My required price in USD is at most 129.",
+      "persona": "My required host interface is exactly USB-A.",
+      "clarifications": [
+        {
+          "question_id": "displays",
+          "question": "How many external displays do you need?",
+          "answer": "My required simultaneous display count is at least 2.",
+          "constraint_ids": [
+            "displays"
+          ],
+          "trigger_keywords": [
+            "displays",
+            "monitors"
+          ]
+        },
+        {
+          "question_id": "power",
+          "question": "How much laptop power do you need?",
+          "answer": "My required laptop power in W is at least 85.",
+          "constraint_ids": [
+            "power"
+          ],
+          "trigger_keywords": [
+            "power",
+            "charging"
+          ]
+        }
+      ],
+      "expression_method": "grounded_template_v1",
+      "teacher_expression_review": "not_run",
+      "human_review": "pending",
+      "parent_task_id": "task-5f98913c8ba87eb19be3",
+      "changed_constraint_id": "interface",
+      "decision_change_required": true,
+      "pair_id": "pair-f32272db376aae0a"
+    },
+    {
+      "template_id": "engineering-dock-v1",
+      "split": "train",
+      "constraints": [
+        {
+          "id": "budget",
+          "source": "query",
+          "field": "price",
+          "op": "lte",
+          "value": 135,
+          "evidence_ids": [
+            "dock-dev-a:details:price",
+            "dock-dev-legacy:details:price",
+            "dock-official-a:details:price",
+            "dock-train-low:details:price"
+          ]
+        },
+        {
+          "id": "interface",
+          "source": "persona",
+          "field": "host_interface",
+          "op": "eq",
+          "value": "USB-C",
+          "evidence_ids": [
+            "dock-dev-a:details:host_interface",
+            "dock-dev-legacy:details:host_interface",
+            "dock-official-a:details:host_interface",
+            "dock-train-low:details:host_interface"
+          ]
+        },
+        {
+          "id": "displays",
+          "source": "clarification",
+          "field": "display_count",
+          "op": "gte",
+          "value": 2,
+          "evidence_ids": [
+            "dock-dev-a:details:display_count",
+            "dock-dev-legacy:details:display_count",
+            "dock-official-a:details:display_count",
+            "dock-train-low:details:display_count"
+          ]
+        },
+        {
+          "id": "power",
+          "source": "clarification",
+          "field": "power_w",
+          "op": "gte",
+          "value": 75,
+          "evidence_ids": [
+            "dock-dev-a:reviews:power_w",
+            "dock-dev-legacy:reviews:power_w",
+            "dock-official-a:reviews:power_w",
+            "dock-train-low:reviews:power_w"
+          ]
+        }
+      ],
+      "max_steps": 40,
+      "max_clarifications": 10,
+      "construction_anchor": "dock-official-a",
+      "variant_kind": "base",
+      "feasible_product_ids": [
+        "dock-dev-a",
+        "dock-official-a"
+      ],
+      "task_id": "task-80448c56f2f157080065",
+      "root_task_id": "task-80448c56f2f157080065",
+      "query": "Please recommend one office electronic device. My required price in USD is at most 135.",
+      "persona": "My required host interface is exactly USB-C.",
+      "clarifications": [
+        {
+          "question_id": "displays",
+          "question": "How many external displays do you need?",
+          "answer": "My required simultaneous display count is at least 2.",
+          "constraint_ids": [
+            "displays"
+          ],
+          "trigger_keywords": [
+            "displays",
+            "monitors"
+          ]
+        },
+        {
+          "question_id": "power",
+          "question": "How much laptop power do you need?",
+          "answer": "My required laptop power in W is at least 75.",
+          "constraint_ids": [
+            "power"
+          ],
+          "trigger_keywords": [
+            "power",
+            "charging"
+          ]
+        }
+      ],
+      "expression_method": "grounded_template_v1",
+      "teacher_expression_review": "not_run",
+      "human_review": "pending",
+      "pair_id": "pair-5a2fd222b3e0869d"
+    },
+    {
+      "template_id": "engineering-dock-v1",
+      "split": "train",
+      "constraints": [
+        {
+          "id": "budget",
+          "source": "query",
+          "field": "price",
+          "op": "lte",
+          "value": 135,
+          "evidence_ids": [
+            "dock-dev-a:details:price",
+            "dock-dev-legacy:details:price",
+            "dock-official-a:details:price",
+            "dock-train-low:details:price"
+          ]
+        },
+        {
+          "id": "interface",
+          "source": "persona",
+          "field": "host_interface",
+          "op": "eq",
+          "value": "USB-A",
+          "evidence_ids": [
+            "dock-dev-a:details:host_interface",
+            "dock-dev-legacy:details:host_interface",
+            "dock-official-a:details:host_interface",
+            "dock-train-low:details:host_interface"
+          ]
+        },
+        {
+          "id": "displays",
+          "source": "clarification",
+          "field": "display_count",
+          "op": "gte",
+          "value": 2,
+          "evidence_ids": [
+            "dock-dev-a:details:display_count",
+            "dock-dev-legacy:details:display_count",
+            "dock-official-a:details:display_count",
+            "dock-train-low:details:display_count"
+          ]
+        },
+        {
+          "id": "power",
+          "source": "clarification",
+          "field": "power_w",
+          "op": "gte",
+          "value": 75,
+          "evidence_ids": [
+            "dock-dev-a:reviews:power_w",
+            "dock-dev-legacy:reviews:power_w",
+            "dock-official-a:reviews:power_w",
+            "dock-train-low:reviews:power_w"
+          ]
+        }
+      ],
+      "max_steps": 40,
+      "max_clarifications": 10,
+      "construction_anchor": "dock-official-a",
+      "variant_kind": "counterfactual",
+      "feasible_product_ids": [
+        "dock-dev-legacy"
+      ],
+      "task_id": "task-80448c56f2f157080065-cf-a5275d09",
+      "root_task_id": "task-80448c56f2f157080065",
+      "query": "Please recommend one office electronic device. My required price in USD is at most 135.",
+      "persona": "My required host interface is exactly USB-A.",
+      "clarifications": [
+        {
+          "question_id": "displays",
+          "question": "How many external displays do you need?",
+          "answer": "My required simultaneous display count is at least 2.",
+          "constraint_ids": [
+            "displays"
+          ],
+          "trigger_keywords": [
+            "displays",
+            "monitors"
+          ]
+        },
+        {
+          "question_id": "power",
+          "question": "How much laptop power do you need?",
+          "answer": "My required laptop power in W is at least 75.",
+          "constraint_ids": [
+            "power"
+          ],
+          "trigger_keywords": [
+            "power",
+            "charging"
+          ]
+        }
+      ],
+      "expression_method": "grounded_template_v1",
+      "teacher_expression_review": "not_run",
+      "human_review": "pending",
+      "parent_task_id": "task-80448c56f2f157080065",
+      "changed_constraint_id": "interface",
+      "decision_change_required": true,
+      "pair_id": "pair-5a2fd222b3e0869d"
+    },
+    {
+      "template_id": "engineering-dock-v1",
+      "split": "train",
+      "constraints": [
+        {
+          "id": "budget",
+          "source": "query",
+          "field": "price",
+          "op": "lte",
+          "value": 109,
+          "evidence_ids": [
+            "dock-dev-a:details:price",
+            "dock-dev-legacy:details:price",
+            "dock-official-a:details:price",
+            "dock-train-low:details:price"
+          ]
+        },
+        {
+          "id": "interface",
+          "source": "persona",
+          "field": "host_interface",
+          "op": "eq",
+          "value": "USB-C",
+          "evidence_ids": [
+            "dock-dev-a:details:host_interface",
+            "dock-dev-legacy:details:host_interface",
+            "dock-official-a:details:host_interface",
+            "dock-train-low:details:host_interface"
+          ]
+        },
+        {
+          "id": "displays",
+          "source": "clarification",
+          "field": "display_count",
+          "op": "gte",
+          "value": 2,
+          "evidence_ids": [
+            "dock-dev-a:details:display_count",
+            "dock-dev-legacy:details:display_count",
+            "dock-official-a:details:display_count",
+            "dock-train-low:details:display_count"
+          ]
+        },
+        {
+          "id": "power",
+          "source": "clarification",
+          "field": "power_w",
+          "op": "gte",
+          "value": 45,
+          "evidence_ids": [
+            "dock-dev-a:reviews:power_w",
+            "dock-dev-legacy:reviews:power_w",
+            "dock-official-a:reviews:power_w",
+            "dock-train-low:reviews:power_w"
+          ]
+        }
+      ],
+      "max_steps": 40,
+      "max_clarifications": 10,
+      "construction_anchor": "dock-train-low",
+      "variant_kind": "base",
+      "feasible_product_ids": [
+        "dock-train-low"
+      ],
+      "task_id": "task-cf3b3c8967e5f31898ff",
+      "root_task_id": "task-cf3b3c8967e5f31898ff",
+      "query": "Please recommend one office electronic device. My required price in USD is at most 109.",
+      "persona": "My required host interface is exactly USB-C.",
+      "clarifications": [
+        {
+          "question_id": "displays",
+          "question": "How many external displays do you need?",
+          "answer": "My required simultaneous display count is at least 2.",
+          "constraint_ids": [
+            "displays"
+          ],
+          "trigger_keywords": [
+            "displays",
+            "monitors"
+          ]
+        },
+        {
+          "question_id": "power",
+          "question": "How much laptop power do you need?",
+          "answer": "My required laptop power in W is at least 45.",
+          "constraint_ids": [
+            "power"
+          ],
+          "trigger_keywords": [
+            "power",
+            "charging"
+          ]
+        }
+      ],
+      "expression_method": "grounded_template_v1",
+      "teacher_expression_review": "not_run",
+      "human_review": "pending",
+      "pair_id": "pair-cad389eb2cb52368"
+    },
+    {
+      "template_id": "engineering-dock-v1",
+      "split": "train",
+      "constraints": [
+        {
+          "id": "budget",
+          "source": "query",
+          "field": "price",
+          "op": "lte",
+          "value": 109,
+          "evidence_ids": [
+            "dock-dev-a:details:price",
+            "dock-dev-legacy:details:price",
+            "dock-official-a:details:price",
+            "dock-train-low:details:price"
+          ]
+        },
+        {
+          "id": "interface",
+          "source": "persona",
+          "field": "host_interface",
+          "op": "eq",
+          "value": "USB-A",
+          "evidence_ids": [
+            "dock-dev-a:details:host_interface",
+            "dock-dev-legacy:details:host_interface",
+            "dock-official-a:details:host_interface",
+            "dock-train-low:details:host_interface"
+          ]
+        },
+        {
+          "id": "displays",
+          "source": "clarification",
+          "field": "display_count",
+          "op": "gte",
+          "value": 2,
+          "evidence_ids": [
+            "dock-dev-a:details:display_count",
+            "dock-dev-legacy:details:display_count",
+            "dock-official-a:details:display_count",
+            "dock-train-low:details:display_count"
+          ]
+        },
+        {
+          "id": "power",
+          "source": "clarification",
+          "field": "power_w",
+          "op": "gte",
+          "value": 45,
+          "evidence_ids": [
+            "dock-dev-a:reviews:power_w",
+            "dock-dev-legacy:reviews:power_w",
+            "dock-official-a:reviews:power_w",
+            "dock-train-low:reviews:power_w"
+          ]
+        }
+      ],
+      "max_steps": 40,
+      "max_clarifications": 10,
+      "construction_anchor": "dock-train-low",
+      "variant_kind": "counterfactual",
+      "feasible_product_ids": [
+        "dock-dev-legacy"
+      ],
+      "task_id": "task-cf3b3c8967e5f31898ff-cf-a5275d09",
+      "root_task_id": "task-cf3b3c8967e5f31898ff",
+      "query": "Please recommend one office electronic device. My required price in USD is at most 109.",
+      "persona": "My required host interface is exactly USB-A.",
+      "clarifications": [
+        {
+          "question_id": "displays",
+          "question": "How many external displays do you need?",
+          "answer": "My required simultaneous display count is at least 2.",
+          "constraint_ids": [
+            "displays"
+          ],
+          "trigger_keywords": [
+            "displays",
+            "monitors"
+          ]
+        },
+        {
+          "question_id": "power",
+          "question": "How much laptop power do you need?",
+          "answer": "My required laptop power in W is at least 45.",
+          "constraint_ids": [
+            "power"
+          ],
+          "trigger_keywords": [
+            "power",
+            "charging"
+          ]
+        }
+      ],
+      "expression_method": "grounded_template_v1",
+      "teacher_expression_review": "not_run",
+      "human_review": "pending",
+      "parent_task_id": "task-cf3b3c8967e5f31898ff",
+      "changed_constraint_id": "interface",
+      "decision_change_required": true,
+      "pair_id": "pair-cad389eb2cb52368"
+    }
+  ]
+}

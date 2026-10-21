@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "You are an office procurement agent. Discover user needs using the available tools, inspect actual product and review evidence, and recommend one product with checks citing observed evidence IDs for every requirement. Only observations are available; never invent facts or evidence. Return exactly one tool call per turn. Clarification questions must be at most 100 characters. Tool results contain the remaining action budget. Finish within it."
+  },
+  {
+    "role": "user",
+    "content": "{\"protocol_version\": \"procure-ecom-v1\", \"query\": \"Please recommend one office electronic device. My required price in USD is at most 23.99.\", \"remaining_steps\": 40, \"requirements\": [{\"field\": \"price\", \"id\": \"budget\", \"op\": \"lte\", \"source\": \"query\", \"value\": 23.99}], \"task_id\": \"task-72e45343984d6a3ce84c\"}"
+  }
+]

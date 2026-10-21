@@ -1,0 +1,67 @@
+test_billing_uncertain_call_is_not_retried (test_data_teacher.DataTeacherTests.test_billing_uncertain_call_is_not_retried) ... ok
+test_cache_identity_bound_to_policy_and_response_checksum (test_data_teacher.DataTeacherTests.test_cache_identity_bound_to_policy_and_response_checksum) ... ERROR
+test_changing_engineering_flag_does_not_forge_expert_provenance (test_data_teacher.DataTeacherTests.test_changing_engineering_flag_does_not_forge_expert_provenance) ... ok
+test_collection_failure_retained_and_no_existing_output_overwrite (test_data_teacher.DataTeacherTests.test_collection_failure_retained_and_no_existing_output_overwrite) ... ok
+test_final_reward_alone_does_not_accept_missing_evidence (test_data_teacher.DataTeacherTests.test_final_reward_alone_does_not_accept_missing_evidence) ... ok
+test_loopback_http_boundary_cache_resume_redaction_and_raw_tool_ids (test_data_teacher.DataTeacherTests.test_loopback_http_boundary_cache_resume_redaction_and_raw_tool_ids) ... FAIL
+test_missing_credentials_or_limits_fail_without_http (test_data_teacher.DataTeacherTests.test_missing_credentials_or_limits_fail_without_http) ... ok
+test_observation_driven_script_real_success_and_engineering_exclusion (test_data_teacher.DataTeacherTests.test_observation_driven_script_real_success_and_engineering_exclusion) ... ok
+test_replay_rejects_cross_task_catalog_revision_missing_terminal (test_data_teacher.DataTeacherTests.test_replay_rejects_cross_task_catalog_revision_missing_terminal) ... ok
+test_replay_rejects_history_rewards_events_budget_state_and_dialogue_tampering (test_data_teacher.DataTeacherTests.test_replay_rejects_history_rewards_events_budget_state_and_dialogue_tampering) ... ok
+test_request_budget_persists_across_instances (test_data_teacher.DataTeacherTests.test_request_budget_persists_across_instances) ... ERROR
+test_teacher_receives_only_public_observations_and_schemas (test_data_teacher.DataTeacherTests.test_teacher_receives_only_public_observations_and_schemas) ... ok
+test_test_splits_cannot_enter_collection (test_data_teacher.DataTeacherTests.test_test_splits_cannot_enter_collection) ... ok
+test_unknown_cost_remains_null_and_unconfigured_network_is_blocked (test_data_teacher.DataTeacherTests.test_unknown_cost_remains_null_and_unconfigured_network_is_blocked) ... ERROR
+test_valid_public_dialogue_hash_cannot_hide_forged_history (test_data_teacher.DataTeacherTests.test_valid_public_dialogue_hash_cannot_hide_forged_history) ... ok
+
+======================================================================
+ERROR: test_cache_identity_bound_to_policy_and_response_checksum (test_data_teacher.DataTeacherTests.test_cache_identity_bound_to_policy_and_response_checksum)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/fangjinjie/project/credit_assign/tests/test_data_teacher.py", line 258, in test_cache_identity_bound_to_policy_and_response_checksum
+    self.http_teacher(config, allow_network=True).next_action([], [])
+  File "/home/fangjinjie/project/credit_assign/src/procure_rl/data/teacher.py", line 249, in next_action
+    return self._next_action(messages, tools)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fangjinjie/project/credit_assign/src/procure_rl/data/teacher.py", line 350, in _next_action
+    raise TeacherError("Teacher request failed or response invalid; inspect sanitized journal; no automatic retry") from None
+procure_rl.data.teacher.TeacherError: Teacher request failed or response invalid; inspect sanitized journal; no automatic retry
+
+======================================================================
+ERROR: test_request_budget_persists_across_instances (test_data_teacher.DataTeacherTests.test_request_budget_persists_across_instances)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/fangjinjie/project/credit_assign/tests/test_data_teacher.py", line 230, in test_request_budget_persists_across_instances
+    first.next_action([], [])
+  File "/home/fangjinjie/project/credit_assign/src/procure_rl/data/teacher.py", line 249, in next_action
+    return self._next_action(messages, tools)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fangjinjie/project/credit_assign/src/procure_rl/data/teacher.py", line 350, in _next_action
+    raise TeacherError("Teacher request failed or response invalid; inspect sanitized journal; no automatic retry") from None
+procure_rl.data.teacher.TeacherError: Teacher request failed or response invalid; inspect sanitized journal; no automatic retry
+
+======================================================================
+ERROR: test_unknown_cost_remains_null_and_unconfigured_network_is_blocked (test_data_teacher.DataTeacherTests.test_unknown_cost_remains_null_and_unconfigured_network_is_blocked)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/fangjinjie/project/credit_assign/tests/test_data_teacher.py", line 209, in test_unknown_cost_remains_null_and_unconfigured_network_is_blocked
+    teacher.next_action([], [])
+  File "/home/fangjinjie/project/credit_assign/src/procure_rl/data/teacher.py", line 249, in next_action
+    return self._next_action(messages, tools)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fangjinjie/project/credit_assign/src/procure_rl/data/teacher.py", line 350, in _next_action
+    raise TeacherError("Teacher request failed or response invalid; inspect sanitized journal; no automatic retry") from None
+procure_rl.data.teacher.TeacherError: Teacher request failed or response invalid; inspect sanitized journal; no automatic retry
+
+======================================================================
+FAIL: test_loopback_http_boundary_cache_resume_redaction_and_raw_tool_ids (test_data_teacher.DataTeacherTests.test_loopback_http_boundary_cache_resume_redaction_and_raw_tool_ids)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/fangjinjie/project/credit_assign/tests/test_data_teacher.py", line 182, in test_loopback_http_boundary_cache_resume_redaction_and_raw_tool_ids
+    self.assertGreater(count, 3)
+AssertionError: 0 not greater than 3
+
+----------------------------------------------------------------------
+Ran 15 tests in 12.919s
+
+FAILED (failures=1, errors=3)

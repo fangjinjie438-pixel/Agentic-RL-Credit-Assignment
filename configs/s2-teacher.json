@@ -1,0 +1,22 @@
+{
+  "selection_status": "agent_selected_provisional",
+  "selection_notice": "DEFAULT CHOSEN BY CODEX FOR THIS PROJECT; not benchmarked as optimal. Review and edit this file before a large collection.",
+  "selection_reason": "Low-cost nonthinking tool calls for fact-grounded expression and expert execution; deterministic replay and independent review remain required.",
+  "base_url": "https://api.deepseek.com",
+  "model": "deepseek-flash",
+  "expected_model_revision": "DeepSeek-V4.1-Flash-1017 (documented alias target on 2026-10-22; not an immutable pin)",
+  "model_revision": null,
+  "thinking": {"type": "disabled"},
+  "key_file": ".secrets/deepseek_api_key",
+  "max_requests": 80,
+  "max_cost_usd": 2.0,
+  "request_cost_cap_usd": 0.025,
+  "max_tokens": 1024,
+  "temperature": 0,
+  "timeout_seconds": 60,
+  "input_per_million_usd": 0.30,
+  "output_per_million_usd": 1.20,
+  "price_policy": "Conservative peak cache-miss prices; provider billed amount unknown until supplied. USD budget is a pilot ceiling, not a CNY budget conversion.",
+  "documentation_verified_at": "2026-10-22",
+  "sources": ["https://api-docs.deepseek.com/quick_start/pricing/", "https://api-docs.deepseek.com/guides/tool_calls/"]
+}

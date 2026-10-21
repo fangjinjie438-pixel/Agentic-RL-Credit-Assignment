@@ -1,0 +1,576 @@
+{
+  "revision": "s2-ee9902b8fc67ad1b39533598",
+  "tasks": [
+    {
+      "template_id": "office-color-weight-v1",
+      "split": "train",
+      "constraints": [
+        {
+          "id": "budget",
+          "source": "query",
+          "field": "price",
+          "op": "lte",
+          "value": 23.99,
+          "evidence_ids": [
+            "B01FB654PI:details:price",
+            "B09H2JQD48:details:price",
+            "B09X983942:details:price",
+            "B0B5LDPJLD:details:price",
+            "B0BKFX6FWW:details:price",
+            "B0BKS1K986:details:price",
+            "B0BWYJJLSF:details:price"
+          ]
+        },
+        {
+          "id": "color",
+          "source": "persona",
+          "field": "color",
+          "op": "eq",
+          "value": "Baby Pink",
+          "evidence_ids": [
+            "B09H2JQD48:details:color",
+            "B09X983942:details:color",
+            "B0B5LDPJLD:details:color",
+            "B0BKS1K986:details:color",
+            "B0BWYJJLSF:details:color"
+          ]
+        },
+        {
+          "id": "weight",
+          "source": "clarification",
+          "field": "weight_g",
+          "op": "lte",
+          "value": 453.59237,
+          "evidence_ids": [
+            "B01FB654PI:details:weight_g",
+            "B09H2JQD48:details:weight_g",
+            "B09X983942:details:weight_g",
+            "B0B5LDPJLD:details:weight_g",
+            "B0BKFX6FWW:details:weight_g",
+            "B0BKS1K986:details:weight_g",
+            "B0BWYJJLSF:details:weight_g"
+          ]
+        }
+      ],
+      "max_steps": 40,
+      "max_clarifications": 10,
+      "construction_anchor": "B09H2JQD48",
+      "variant_kind": "base",
+      "feasible_product_ids": [
+        "B09H2JQD48"
+      ],
+      "task_id": "task-72e45343984d6a3ce84c",
+      "root_task_id": "task-72e45343984d6a3ce84c",
+      "query": "Please recommend one office electronic device. My required price in USD is at most 23.99.",
+      "persona": "My required color is exactly Baby Pink.",
+      "clarifications": [
+        {
+          "question_id": "weight",
+          "question": "What is your maximum device weight?",
+          "answer": "My required weight in grams is at most 453.59237.",
+          "constraint_ids": [
+            "weight"
+          ],
+          "trigger_keywords": [
+            "weight",
+            "mass"
+          ]
+        }
+      ],
+      "expression_method": "grounded_template_v1",
+      "teacher_expression_review": "not_run",
+      "human_review": "pending"
+    },
+    {
+      "template_id": "office-color-weight-v1",
+      "split": "train",
+      "constraints": [
+        {
+          "id": "budget",
+          "source": "query",
+          "field": "price",
+          "op": "lte",
+          "value": 39.99,
+          "evidence_ids": [
+            "B01FB654PI:details:price",
+            "B09H2JQD48:details:price",
+            "B09X983942:details:price",
+            "B0B5LDPJLD:details:price",
+            "B0BKFX6FWW:details:price",
+            "B0BKS1K986:details:price",
+            "B0BWYJJLSF:details:price"
+          ]
+        },
+        {
+          "id": "color",
+          "source": "persona",
+          "field": "color",
+          "op": "eq",
+          "value": "Pink",
+          "evidence_ids": [
+            "B09H2JQD48:details:color",
+            "B09X983942:details:color",
+            "B0B5LDPJLD:details:color",
+            "B0BKS1K986:details:color",
+            "B0BWYJJLSF:details:color"
+          ]
+        },
+        {
+          "id": "weight",
+          "source": "clarification",
+          "field": "weight_g",
+          "op": "lte",
+          "value": 240.9709465625,
+          "evidence_ids": [
+            "B01FB654PI:details:weight_g",
+            "B09H2JQD48:details:weight_g",
+            "B09X983942:details:weight_g",
+            "B0B5LDPJLD:details:weight_g",
+            "B0BKFX6FWW:details:weight_g",
+            "B0BKS1K986:details:weight_g",
+            "B0BWYJJLSF:details:weight_g"
+          ]
+        }
+      ],
+      "max_steps": 40,
+      "max_clarifications": 10,
+      "construction_anchor": "B0B5LDPJLD",
+      "variant_kind": "base",
+      "feasible_product_ids": [
+        "B0B5LDPJLD"
+      ],
+      "task_id": "task-964a2c1b4a9586d4b9ea",
+      "root_task_id": "task-964a2c1b4a9586d4b9ea",
+      "query": "Please recommend one office electronic device. My required price in USD is at most 39.99.",
+      "persona": "My required color is exactly Pink.",
+      "clarifications": [
+        {
+          "question_id": "weight",
+          "question": "What is your maximum device weight?",
+          "answer": "My required weight in grams is at most 240.9709465625.",
+          "constraint_ids": [
+            "weight"
+          ],
+          "trigger_keywords": [
+            "weight",
+            "mass"
+          ]
+        }
+      ],
+      "expression_method": "grounded_template_v1",
+      "teacher_expression_review": "not_run",
+      "human_review": "pending"
+    },
+    {
+      "template_id": "office-color-weight-v1",
+      "split": "train",
+      "constraints": [
+        {
+          "id": "budget",
+          "source": "query",
+          "field": "price",
+          "op": "lte",
+          "value": 89.99,
+          "evidence_ids": [
+            "B01FB654PI:details:price",
+            "B09H2JQD48:details:price",
+            "B09X983942:details:price",
+            "B0B5LDPJLD:details:price",
+            "B0BKFX6FWW:details:price",
+            "B0BKS1K986:details:price",
+            "B0BWYJJLSF:details:price"
+          ]
+        },
+        {
+          "id": "color",
+          "source": "persona",
+          "field": "color",
+          "op": "eq",
+          "value": "Space Gray",
+          "evidence_ids": [
+            "B09H2JQD48:details:color",
+            "B09X983942:details:color",
+            "B0B5LDPJLD:details:color",
+            "B0BKS1K986:details:color",
+            "B0BWYJJLSF:details:color"
+          ]
+        },
+        {
+          "id": "weight",
+          "source": "clarification",
+          "field": "weight_g",
+          "op": "lte",
+          "value": 447.922465375,
+          "evidence_ids": [
+            "B01FB654PI:details:weight_g",
+            "B09H2JQD48:details:weight_g",
+            "B09X983942:details:weight_g",
+            "B0B5LDPJLD:details:weight_g",
+            "B0BKFX6FWW:details:weight_g",
+            "B0BKS1K986:details:weight_g",
+            "B0BWYJJLSF:details:weight_g"
+          ]
+        }
+      ],
+      "max_steps": 40,
+      "max_clarifications": 10,
+      "construction_anchor": "B0BKS1K986",
+      "variant_kind": "base",
+      "feasible_product_ids": [
+        "B0BKS1K986"
+      ],
+      "task_id": "task-9e9c41995b5779485caa",
+      "root_task_id": "task-9e9c41995b5779485caa",
+      "query": "Please recommend one office electronic device. My required price in USD is at most 89.99.",
+      "persona": "My required color is exactly Space Gray.",
+      "clarifications": [
+        {
+          "question_id": "weight",
+          "question": "What is your maximum device weight?",
+          "answer": "My required weight in grams is at most 447.922465375.",
+          "constraint_ids": [
+            "weight"
+          ],
+          "trigger_keywords": [
+            "weight",
+            "mass"
+          ]
+        }
+      ],
+      "expression_method": "grounded_template_v1",
+      "teacher_expression_review": "not_run",
+      "human_review": "pending",
+      "pair_id": "pair-86e73f281e2bcdf8"
+    },
+    {
+      "template_id": "office-color-weight-v1",
+      "split": "train",
+      "constraints": [
+        {
+          "id": "budget",
+          "source": "query",
+          "field": "price",
+          "op": "lte",
+          "value": 89.99,
+          "evidence_ids": [
+            "B01FB654PI:details:price",
+            "B09H2JQD48:details:price",
+            "B09X983942:details:price",
+            "B0B5LDPJLD:details:price",
+            "B0BKFX6FWW:details:price",
+            "B0BKS1K986:details:price",
+            "B0BWYJJLSF:details:price"
+          ]
+        },
+        {
+          "id": "color",
+          "source": "persona",
+          "field": "color",
+          "op": "eq",
+          "value": "Pink",
+          "evidence_ids": [
+            "B09H2JQD48:details:color",
+            "B09X983942:details:color",
+            "B0B5LDPJLD:details:color",
+            "B0BKS1K986:details:color",
+            "B0BWYJJLSF:details:color"
+          ]
+        },
+        {
+          "id": "weight",
+          "source": "clarification",
+          "field": "weight_g",
+          "op": "lte",
+          "value": 447.922465375,
+          "evidence_ids": [
+            "B01FB654PI:details:weight_g",
+            "B09H2JQD48:details:weight_g",
+            "B09X983942:details:weight_g",
+            "B0B5LDPJLD:details:weight_g",
+            "B0BKFX6FWW:details:weight_g",
+            "B0BKS1K986:details:weight_g",
+            "B0BWYJJLSF:details:weight_g"
+          ]
+        }
+      ],
+      "max_steps": 40,
+      "max_clarifications": 10,
+      "construction_anchor": "B0BKS1K986",
+      "variant_kind": "counterfactual",
+      "feasible_product_ids": [
+        "B0B5LDPJLD"
+      ],
+      "task_id": "task-9e9c41995b5779485caa-cf-018340a0",
+      "root_task_id": "task-9e9c41995b5779485caa",
+      "query": "Please recommend one office electronic device. My required price in USD is at most 89.99.",
+      "persona": "My required color is exactly Pink.",
+      "clarifications": [
+        {
+          "question_id": "weight",
+          "question": "What is your maximum device weight?",
+          "answer": "My required weight in grams is at most 447.922465375.",
+          "constraint_ids": [
+            "weight"
+          ],
+          "trigger_keywords": [
+            "weight",
+            "mass"
+          ]
+        }
+      ],
+      "expression_method": "grounded_template_v1",
+      "teacher_expression_review": "not_run",
+      "human_review": "pending",
+      "parent_task_id": "task-9e9c41995b5779485caa",
+      "changed_constraint_id": "color",
+      "decision_change_required": true,
+      "pair_id": "pair-86e73f281e2bcdf8"
+    },
+    {
+      "template_id": "office-color-weight-v1",
+      "split": "train",
+      "constraints": [
+        {
+          "id": "budget",
+          "source": "query",
+          "field": "price",
+          "op": "lte",
+          "value": 34.99,
+          "evidence_ids": [
+            "B01FB654PI:details:price",
+            "B09H2JQD48:details:price",
+            "B09X983942:details:price",
+            "B0B5LDPJLD:details:price",
+            "B0BKFX6FWW:details:price",
+            "B0BKS1K986:details:price",
+            "B0BWYJJLSF:details:price"
+          ]
+        },
+        {
+          "id": "color",
+          "source": "persona",
+          "field": "color",
+          "op": "eq",
+          "value": "White",
+          "evidence_ids": [
+            "B09H2JQD48:details:color",
+            "B09X983942:details:color",
+            "B0B5LDPJLD:details:color",
+            "B0BKS1K986:details:color",
+            "B0BWYJJLSF:details:color"
+          ]
+        },
+        {
+          "id": "weight",
+          "source": "clarification",
+          "field": "weight_g",
+          "op": "lte",
+          "value": 780.1788764,
+          "evidence_ids": [
+            "B01FB654PI:details:weight_g",
+            "B09H2JQD48:details:weight_g",
+            "B09X983942:details:weight_g",
+            "B0B5LDPJLD:details:weight_g",
+            "B0BKFX6FWW:details:weight_g",
+            "B0BKS1K986:details:weight_g",
+            "B0BWYJJLSF:details:weight_g"
+          ]
+        }
+      ],
+      "max_steps": 40,
+      "max_clarifications": 10,
+      "construction_anchor": "B0BWYJJLSF",
+      "variant_kind": "base",
+      "feasible_product_ids": [
+        "B09X983942",
+        "B0BWYJJLSF"
+      ],
+      "task_id": "task-ac53e878d2c50893225c",
+      "root_task_id": "task-ac53e878d2c50893225c",
+      "query": "Please recommend one office electronic device. My required price in USD is at most 34.99.",
+      "persona": "My required color is exactly White.",
+      "clarifications": [
+        {
+          "question_id": "weight",
+          "question": "What is your maximum device weight?",
+          "answer": "My required weight in grams is at most 780.1788764.",
+          "constraint_ids": [
+            "weight"
+          ],
+          "trigger_keywords": [
+            "weight",
+            "mass"
+          ]
+        }
+      ],
+      "expression_method": "grounded_template_v1",
+      "teacher_expression_review": "not_run",
+      "human_review": "pending",
+      "pair_id": "pair-eacd45b6d08c199d"
+    },
+    {
+      "template_id": "office-color-weight-v1",
+      "split": "train",
+      "constraints": [
+        {
+          "id": "budget",
+          "source": "query",
+          "field": "price",
+          "op": "lte",
+          "value": 34.99,
+          "evidence_ids": [
+            "B01FB654PI:details:price",
+            "B09H2JQD48:details:price",
+            "B09X983942:details:price",
+            "B0B5LDPJLD:details:price",
+            "B0BKFX6FWW:details:price",
+            "B0BKS1K986:details:price",
+            "B0BWYJJLSF:details:price"
+          ]
+        },
+        {
+          "id": "color",
+          "source": "persona",
+          "field": "color",
+          "op": "eq",
+          "value": "Baby Pink",
+          "evidence_ids": [
+            "B09H2JQD48:details:color",
+            "B09X983942:details:color",
+            "B0B5LDPJLD:details:color",
+            "B0BKS1K986:details:color",
+            "B0BWYJJLSF:details:color"
+          ]
+        },
+        {
+          "id": "weight",
+          "source": "clarification",
+          "field": "weight_g",
+          "op": "lte",
+          "value": 780.1788764,
+          "evidence_ids": [
+            "B01FB654PI:details:weight_g",
+            "B09H2JQD48:details:weight_g",
+            "B09X983942:details:weight_g",
+            "B0B5LDPJLD:details:weight_g",
+            "B0BKFX6FWW:details:weight_g",
+            "B0BKS1K986:details:weight_g",
+            "B0BWYJJLSF:details:weight_g"
+          ]
+        }
+      ],
+      "max_steps": 40,
+      "max_clarifications": 10,
+      "construction_anchor": "B0BWYJJLSF",
+      "variant_kind": "counterfactual",
+      "feasible_product_ids": [
+        "B09H2JQD48"
+      ],
+      "task_id": "task-ac53e878d2c50893225c-cf-5ee29266",
+      "root_task_id": "task-ac53e878d2c50893225c",
+      "query": "Please recommend one office electronic device. My required price in USD is at most 34.99.",
+      "persona": "My required color is exactly Baby Pink.",
+      "clarifications": [
+        {
+          "question_id": "weight",
+          "question": "What is your maximum device weight?",
+          "answer": "My required weight in grams is at most 780.1788764.",
+          "constraint_ids": [
+            "weight"
+          ],
+          "trigger_keywords": [
+            "weight",
+            "mass"
+          ]
+        }
+      ],
+      "expression_method": "grounded_template_v1",
+      "teacher_expression_review": "not_run",
+      "human_review": "pending",
+      "parent_task_id": "task-ac53e878d2c50893225c",
+      "changed_constraint_id": "color",
+      "decision_change_required": true,
+      "pair_id": "pair-eacd45b6d08c199d"
+    },
+    {
+      "template_id": "office-color-weight-v1",
+      "split": "train",
+      "constraints": [
+        {
+          "id": "budget",
+          "source": "query",
+          "field": "price",
+          "op": "lte",
+          "value": 19.99,
+          "evidence_ids": [
+            "B01FB654PI:details:price",
+            "B09H2JQD48:details:price",
+            "B09X983942:details:price",
+            "B0B5LDPJLD:details:price",
+            "B0BKFX6FWW:details:price",
+            "B0BKS1K986:details:price",
+            "B0BWYJJLSF:details:price"
+          ]
+        },
+        {
+          "id": "color",
+          "source": "persona",
+          "field": "color",
+          "op": "eq",
+          "value": "White",
+          "evidence_ids": [
+            "B09H2JQD48:details:color",
+            "B09X983942:details:color",
+            "B0B5LDPJLD:details:color",
+            "B0BKS1K986:details:color",
+            "B0BWYJJLSF:details:color"
+          ]
+        },
+        {
+          "id": "weight",
+          "source": "clarification",
+          "field": "weight_g",
+          "op": "lte",
+          "value": 616.8856232,
+          "evidence_ids": [
+            "B01FB654PI:details:weight_g",
+            "B09H2JQD48:details:weight_g",
+            "B09X983942:details:weight_g",
+            "B0B5LDPJLD:details:weight_g",
+            "B0BKFX6FWW:details:weight_g",
+            "B0BKS1K986:details:weight_g",
+            "B0BWYJJLSF:details:weight_g"
+          ]
+        }
+      ],
+      "max_steps": 40,
+      "max_clarifications": 10,
+      "construction_anchor": "B09X983942",
+      "variant_kind": "base",
+      "feasible_product_ids": [
+        "B09X983942"
+      ],
+      "task_id": "task-eab64e1f7a0884441a5f",
+      "root_task_id": "task-eab64e1f7a0884441a5f",
+      "query": "Please recommend one office electronic device. My required price in USD is at most 19.99.",
+      "persona": "My required color is exactly White.",
+      "clarifications": [
+        {
+          "question_id": "weight",
+          "question": "What is your maximum device weight?",
+          "answer": "My required weight in grams is at most 616.8856232.",
+          "constraint_ids": [
+            "weight"
+          ],
+          "trigger_keywords": [
+            "weight",
+            "mass"
+          ]
+        }
+      ],
+      "expression_method": "grounded_template_v1",
+      "teacher_expression_review": "not_run",
+      "human_review": "pending"
+    }
+  ]
+}

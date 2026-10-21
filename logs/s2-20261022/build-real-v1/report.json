@@ -1,0 +1,80 @@
+{
+  "stage": "S2",
+  "status": "passed",
+  "validation_level": "cpu_dataset_construction_only",
+  "checks": [
+    {
+      "name": "nonempty_source_and_tasks",
+      "passed": true
+    },
+    {
+      "name": "declared_sibling_and_product_split_isolation",
+      "passed": true
+    },
+    {
+      "name": "feasible_solution_sets_match_full_retrieval_split",
+      "passed": true
+    },
+    {
+      "name": "literal_hidden_value_checks",
+      "passed": true
+    },
+    {
+      "name": "provided_official_id_quarantine",
+      "passed": true
+    },
+    {
+      "name": "single_constraint_counterfactual:task-6607b386f9ff56233996-cf-5ee29266",
+      "passed": true
+    },
+    {
+      "name": "single_constraint_counterfactual:task-72e45343984d6a3ce84c-cf-f13bafd5",
+      "passed": true
+    },
+    {
+      "name": "single_constraint_counterfactual:task-9e9c41995b5779485caa-cf-f13bafd5",
+      "passed": true
+    },
+    {
+      "name": "single_constraint_counterfactual:task-ac53e878d2c50893225c-cf-5ee29266",
+      "passed": true
+    }
+  ],
+  "data_revision": "s2-625b5312397606c85c9c2dc8",
+  "counts": {
+    "train": 11,
+    "dev": 0,
+    "sealed_test": 1
+  },
+  "products": 12,
+  "counterfactual_pairs": 4,
+  "release_gate": {
+    "ready_for_formal_training": false,
+    "status": "withheld",
+    "reasons": [
+      "official_family_and_near_duplicate_metadata_incomplete",
+      "product_family_identities_pending_review",
+      "fewer_than_200_hash_bound_human_task_reviews",
+      "independent_semantic_review_pending",
+      "no_replay_accepted_real_teacher_training_episodes"
+    ],
+    "human_review_count": 0,
+    "independent_review_count": 0,
+    "expert_candidate_task_count": 0,
+    "invalid_review_task_ids": [],
+    "quantity_targets": {
+      "train": 1600,
+      "dev": 200,
+      "sealed_test": 400,
+      "counterfactual_pairs": 100,
+      "expert_successes": 600
+    },
+    "quantity_targets_are_not_claimed_achieved": true
+  },
+  "stage_complete": false,
+  "gpu_compute_performed": false,
+  "limitations": [
+    "CPU build acceptance does not validate a real expert teacher",
+    "Official-family coverage, independent semantic review and human reviews remain explicit gates"
+  ]
+}

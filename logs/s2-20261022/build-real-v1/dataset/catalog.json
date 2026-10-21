@@ -1,0 +1,1517 @@
+{
+  "revision": "s2-625b5312397606c85c9c2dc8",
+  "products": [
+    {
+      "product_id": "B00SK0FOHG",
+      "title": "Logitech Wireless Touch Keyboard K400 with Built-In Multi-Touch Touchpad, Black (Renewed)",
+      "price": 21.95,
+      "specs": {
+        "weight_g": 430.9127515,
+        "color": "Black",
+        "connectivity": "USB",
+        "operating_system": "Windows 10"
+      },
+      "family": "brand:logitech",
+      "brand": "Logitech",
+      "model": "920-003070RFB",
+      "identity_review_required": true,
+      "units": {
+        "price": "USD",
+        "weight_g": "g",
+        "color": null,
+        "connectivity": null,
+        "operating_system": null
+      },
+      "evidence": [
+        {
+          "evidence_id": "B00SK0FOHG:details:price",
+          "product_id": "B00SK0FOHG",
+          "field": "price",
+          "value": 21.95,
+          "channel": "details",
+          "text": "21.95",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "price"
+            ],
+            "raw_value": "21.95",
+            "raw_unit": "USD",
+            "unit": "USD",
+            "source_row_index": 895,
+            "raw_record_sha256": "c921d44bf9656fa21c963e1951f6ffd03b0b27d7ba62ffe2eae4d5899512b2a9"
+          }
+        },
+        {
+          "evidence_id": "B00SK0FOHG:details:weight_g",
+          "product_id": "B00SK0FOHG",
+          "field": "weight_g",
+          "value": 430.9127515,
+          "channel": "details",
+          "text": "15.2 ounces",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Item Weight"
+            ],
+            "raw_value": "15.2 ounces",
+            "raw_unit": "ounces",
+            "unit": "g",
+            "source_row_index": 895,
+            "raw_record_sha256": "c921d44bf9656fa21c963e1951f6ffd03b0b27d7ba62ffe2eae4d5899512b2a9"
+          }
+        },
+        {
+          "evidence_id": "B00SK0FOHG:details:color",
+          "product_id": "B00SK0FOHG",
+          "field": "color",
+          "value": "Black",
+          "channel": "details",
+          "text": "Black",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Color"
+            ],
+            "raw_value": "Black",
+            "raw_unit": null,
+            "unit": null,
+            "source_row_index": 895,
+            "raw_record_sha256": "c921d44bf9656fa21c963e1951f6ffd03b0b27d7ba62ffe2eae4d5899512b2a9"
+          }
+        },
+        {
+          "evidence_id": "B00SK0FOHG:details:connectivity",
+          "product_id": "B00SK0FOHG",
+          "field": "connectivity",
+          "value": "USB",
+          "channel": "details",
+          "text": "USB",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Connectivity Technology"
+            ],
+            "raw_value": "USB",
+            "raw_unit": null,
+            "unit": null,
+            "source_row_index": 895,
+            "raw_record_sha256": "c921d44bf9656fa21c963e1951f6ffd03b0b27d7ba62ffe2eae4d5899512b2a9"
+          }
+        },
+        {
+          "evidence_id": "B00SK0FOHG:details:operating_system",
+          "product_id": "B00SK0FOHG",
+          "field": "operating_system",
+          "value": "Windows 10",
+          "channel": "details",
+          "text": "Windows 10",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Operating System"
+            ],
+            "raw_value": "Windows 10",
+            "raw_unit": null,
+            "unit": null,
+            "source_row_index": 895,
+            "raw_record_sha256": "c921d44bf9656fa21c963e1951f6ffd03b0b27d7ba62ffe2eae4d5899512b2a9"
+          }
+        }
+      ],
+      "provenance": {
+        "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+        "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+        "raw_record_sha256": "c921d44bf9656fa21c963e1951f6ffd03b0b27d7ba62ffe2eae4d5899512b2a9",
+        "source_row_index": 895,
+        "family_method": "conservative_all_products_of_source_brand",
+        "family_status": "pending_manual_review"
+      },
+      "split": "train"
+    },
+    {
+      "product_id": "B01FB654PI",
+      "title": "NETGEAR AC1600 WiFi VDSL/ADSL Modem Router – 802.11ac Dual Band Gigabit (D6400-100NAS)",
+      "price": 130,
+      "specs": {
+        "weight_g": 421.8409041,
+        "connectivity": "Wi Fi"
+      },
+      "family": "brand:netgear",
+      "brand": "NETGEAR",
+      "model": "D6400-100NAS",
+      "identity_review_required": true,
+      "units": {
+        "price": "USD",
+        "weight_g": "g",
+        "connectivity": null
+      },
+      "evidence": [
+        {
+          "evidence_id": "B01FB654PI:details:price",
+          "product_id": "B01FB654PI",
+          "field": "price",
+          "value": 130,
+          "channel": "details",
+          "text": "130.0",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "price"
+            ],
+            "raw_value": "130.0",
+            "raw_unit": "USD",
+            "unit": "USD",
+            "source_row_index": 869,
+            "raw_record_sha256": "46c4fcf5a5e60cdb2ee20f3ccc2a5fd3e31a8d24fa90a802a67718dbd716060a"
+          }
+        },
+        {
+          "evidence_id": "B01FB654PI:details:weight_g",
+          "product_id": "B01FB654PI",
+          "field": "weight_g",
+          "value": 421.8409041,
+          "channel": "details",
+          "text": "14.88 Ounces",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Item Weight"
+            ],
+            "raw_value": "14.88 Ounces",
+            "raw_unit": "Ounces",
+            "unit": "g",
+            "source_row_index": 869,
+            "raw_record_sha256": "46c4fcf5a5e60cdb2ee20f3ccc2a5fd3e31a8d24fa90a802a67718dbd716060a"
+          }
+        },
+        {
+          "evidence_id": "B01FB654PI:details:connectivity",
+          "product_id": "B01FB654PI",
+          "field": "connectivity",
+          "value": "Wi Fi",
+          "channel": "details",
+          "text": "Wi Fi",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Connectivity Technology"
+            ],
+            "raw_value": "Wi Fi",
+            "raw_unit": null,
+            "unit": null,
+            "source_row_index": 869,
+            "raw_record_sha256": "46c4fcf5a5e60cdb2ee20f3ccc2a5fd3e31a8d24fa90a802a67718dbd716060a"
+          }
+        }
+      ],
+      "provenance": {
+        "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+        "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+        "raw_record_sha256": "46c4fcf5a5e60cdb2ee20f3ccc2a5fd3e31a8d24fa90a802a67718dbd716060a",
+        "source_row_index": 869,
+        "family_method": "conservative_all_products_of_source_brand",
+        "family_status": "pending_manual_review"
+      },
+      "split": "train"
+    },
+    {
+      "product_id": "B09H2JQD48",
+      "title": "KECOP Baby Pink USB Wire Keyboard with Rainbow LED Backlight Full 104 Keys Water-Resistant Mechanical Feeling Game Keyboard for Desktop, Computer, PC (Baby Pink)",
+      "price": 23.99,
+      "specs": {
+        "weight_g": 453.59237,
+        "color": "Baby Pink",
+        "connectivity": "USB",
+        "operating_system": "Linux, Windows Vista, Windows XP, Windows 8, Windows 7, Windows 10"
+      },
+      "family": "brand:kecop",
+      "brand": "KECOP",
+      "model": null,
+      "identity_review_required": true,
+      "units": {
+        "price": "USD",
+        "weight_g": "g",
+        "color": null,
+        "connectivity": null,
+        "operating_system": null
+      },
+      "evidence": [
+        {
+          "evidence_id": "B09H2JQD48:details:price",
+          "product_id": "B09H2JQD48",
+          "field": "price",
+          "value": 23.99,
+          "channel": "details",
+          "text": "23.99",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "price"
+            ],
+            "raw_value": "23.99",
+            "raw_unit": "USD",
+            "unit": "USD",
+            "source_row_index": 176,
+            "raw_record_sha256": "900cb12381dfa5a68aff04f8ede75ef4df5ee242ddaa6a5ed6c9768f4bdbe974"
+          }
+        },
+        {
+          "evidence_id": "B09H2JQD48:details:weight_g",
+          "product_id": "B09H2JQD48",
+          "field": "weight_g",
+          "value": 453.59237,
+          "channel": "details",
+          "text": "1 pounds",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Item Weight"
+            ],
+            "raw_value": "1 pounds",
+            "raw_unit": "pounds",
+            "unit": "g",
+            "source_row_index": 176,
+            "raw_record_sha256": "900cb12381dfa5a68aff04f8ede75ef4df5ee242ddaa6a5ed6c9768f4bdbe974"
+          }
+        },
+        {
+          "evidence_id": "B09H2JQD48:details:color",
+          "product_id": "B09H2JQD48",
+          "field": "color",
+          "value": "Baby Pink",
+          "channel": "details",
+          "text": "Baby Pink",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Color"
+            ],
+            "raw_value": "Baby Pink",
+            "raw_unit": null,
+            "unit": null,
+            "source_row_index": 176,
+            "raw_record_sha256": "900cb12381dfa5a68aff04f8ede75ef4df5ee242ddaa6a5ed6c9768f4bdbe974"
+          }
+        },
+        {
+          "evidence_id": "B09H2JQD48:details:connectivity",
+          "product_id": "B09H2JQD48",
+          "field": "connectivity",
+          "value": "USB",
+          "channel": "details",
+          "text": "USB",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Connectivity Technology"
+            ],
+            "raw_value": "USB",
+            "raw_unit": null,
+            "unit": null,
+            "source_row_index": 176,
+            "raw_record_sha256": "900cb12381dfa5a68aff04f8ede75ef4df5ee242ddaa6a5ed6c9768f4bdbe974"
+          }
+        },
+        {
+          "evidence_id": "B09H2JQD48:details:operating_system",
+          "product_id": "B09H2JQD48",
+          "field": "operating_system",
+          "value": "Linux, Windows Vista, Windows XP, Windows 8, Windows 7, Windows 10",
+          "channel": "details",
+          "text": "Linux, Windows Vista, Windows XP, Windows 8, Windows 7, Windows 10",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Operating System"
+            ],
+            "raw_value": "Linux, Windows Vista, Windows XP, Windows 8, Windows 7, Windows 10",
+            "raw_unit": null,
+            "unit": null,
+            "source_row_index": 176,
+            "raw_record_sha256": "900cb12381dfa5a68aff04f8ede75ef4df5ee242ddaa6a5ed6c9768f4bdbe974"
+          }
+        }
+      ],
+      "provenance": {
+        "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+        "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+        "raw_record_sha256": "900cb12381dfa5a68aff04f8ede75ef4df5ee242ddaa6a5ed6c9768f4bdbe974",
+        "source_row_index": 176,
+        "family_method": "conservative_all_products_of_source_brand",
+        "family_status": "pending_manual_review"
+      },
+      "split": "train"
+    },
+    {
+      "product_id": "B09SJ9192T",
+      "title": "SAMSUNG 23.5” CF396 Curved Computer Monitor, AMD FreeSync for Advanced Gaming, 4ms Response Time, Wide Viewing Angle, Ultra Slim Design, LC24F396FHNXZA, Black",
+      "price": 158,
+      "specs": {
+        "weight_g": 3084.428116,
+        "color": "Black",
+        "screen_size": "23.5 Inches",
+        "display_resolution": "1920 x 1080 Pixels"
+      },
+      "family": "brand:samsung",
+      "brand": "SAMSUNG",
+      "model": "LC24F396FHNXZA",
+      "identity_review_required": true,
+      "units": {
+        "price": "USD",
+        "weight_g": "g",
+        "color": null,
+        "screen_size": null,
+        "display_resolution": null
+      },
+      "evidence": [
+        {
+          "evidence_id": "B09SJ9192T:details:price",
+          "product_id": "B09SJ9192T",
+          "field": "price",
+          "value": 158,
+          "channel": "details",
+          "text": "158.0",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "price"
+            ],
+            "raw_value": "158.0",
+            "raw_unit": "USD",
+            "unit": "USD",
+            "source_row_index": 429,
+            "raw_record_sha256": "9f2f91fe9f0af64d83cbd4326e2946bf1a1015dbee8aff8af279c4572d08c8e0"
+          }
+        },
+        {
+          "evidence_id": "B09SJ9192T:details:weight_g",
+          "product_id": "B09SJ9192T",
+          "field": "weight_g",
+          "value": 3084.428116,
+          "channel": "details",
+          "text": "6.8 pounds",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Item Weight"
+            ],
+            "raw_value": "6.8 pounds",
+            "raw_unit": "pounds",
+            "unit": "g",
+            "source_row_index": 429,
+            "raw_record_sha256": "9f2f91fe9f0af64d83cbd4326e2946bf1a1015dbee8aff8af279c4572d08c8e0"
+          }
+        },
+        {
+          "evidence_id": "B09SJ9192T:details:color",
+          "product_id": "B09SJ9192T",
+          "field": "color",
+          "value": "Black",
+          "channel": "details",
+          "text": "Black",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Color"
+            ],
+            "raw_value": "Black",
+            "raw_unit": null,
+            "unit": null,
+            "source_row_index": 429,
+            "raw_record_sha256": "9f2f91fe9f0af64d83cbd4326e2946bf1a1015dbee8aff8af279c4572d08c8e0"
+          }
+        },
+        {
+          "evidence_id": "B09SJ9192T:details:screen_size",
+          "product_id": "B09SJ9192T",
+          "field": "screen_size",
+          "value": "23.5 Inches",
+          "channel": "details",
+          "text": "23.5 Inches",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Screen Size"
+            ],
+            "raw_value": "23.5 Inches",
+            "raw_unit": null,
+            "unit": null,
+            "source_row_index": 429,
+            "raw_record_sha256": "9f2f91fe9f0af64d83cbd4326e2946bf1a1015dbee8aff8af279c4572d08c8e0"
+          }
+        },
+        {
+          "evidence_id": "B09SJ9192T:details:display_resolution",
+          "product_id": "B09SJ9192T",
+          "field": "display_resolution",
+          "value": "1920 x 1080 Pixels",
+          "channel": "details",
+          "text": "1920 x 1080 Pixels",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Display Resolution Maximum"
+            ],
+            "raw_value": "1920 x 1080 Pixels",
+            "raw_unit": null,
+            "unit": null,
+            "source_row_index": 429,
+            "raw_record_sha256": "9f2f91fe9f0af64d83cbd4326e2946bf1a1015dbee8aff8af279c4572d08c8e0"
+          }
+        }
+      ],
+      "provenance": {
+        "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+        "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+        "raw_record_sha256": "9f2f91fe9f0af64d83cbd4326e2946bf1a1015dbee8aff8af279c4572d08c8e0",
+        "source_row_index": 429,
+        "family_method": "conservative_all_products_of_source_brand",
+        "family_status": "pending_manual_review"
+      },
+      "split": "sealed_test"
+    },
+    {
+      "product_id": "B09X983942",
+      "title": "Macally 2.4G USB Wireless Keyboard for Laptop or Computer - Keep it Simple - Full Size Keyboard with Numeric Keypad & 13 Shortcut Keys - Plug and Play PC Keyboard Wireless - White Keyboard Cordless",
+      "price": 19.99,
+      "specs": {
+        "weight_g": 616.8856232,
+        "color": "White",
+        "connectivity": "RF, USB",
+        "operating_system": "Windows 7"
+      },
+      "family": "brand:macally",
+      "brand": "Macally",
+      "model": null,
+      "identity_review_required": true,
+      "units": {
+        "price": "USD",
+        "weight_g": "g",
+        "color": null,
+        "connectivity": null,
+        "operating_system": null
+      },
+      "evidence": [
+        {
+          "evidence_id": "B09X983942:details:price",
+          "product_id": "B09X983942",
+          "field": "price",
+          "value": 19.99,
+          "channel": "details",
+          "text": "19.99",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "price"
+            ],
+            "raw_value": "19.99",
+            "raw_unit": "USD",
+            "unit": "USD",
+            "source_row_index": 182,
+            "raw_record_sha256": "66fd7e2ef6634b7de2b4850a3b1d4b11f51b76882a590f9a65f78a15bc774160"
+          }
+        },
+        {
+          "evidence_id": "B09X983942:details:weight_g",
+          "product_id": "B09X983942",
+          "field": "weight_g",
+          "value": 616.8856232,
+          "channel": "details",
+          "text": "1.36 pounds",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Item Weight"
+            ],
+            "raw_value": "1.36 pounds",
+            "raw_unit": "pounds",
+            "unit": "g",
+            "source_row_index": 182,
+            "raw_record_sha256": "66fd7e2ef6634b7de2b4850a3b1d4b11f51b76882a590f9a65f78a15bc774160"
+          }
+        },
+        {
+          "evidence_id": "B09X983942:details:color",
+          "product_id": "B09X983942",
+          "field": "color",
+          "value": "White",
+          "channel": "details",
+          "text": "White",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Color"
+            ],
+            "raw_value": "White",
+            "raw_unit": null,
+            "unit": null,
+            "source_row_index": 182,
+            "raw_record_sha256": "66fd7e2ef6634b7de2b4850a3b1d4b11f51b76882a590f9a65f78a15bc774160"
+          }
+        },
+        {
+          "evidence_id": "B09X983942:details:connectivity",
+          "product_id": "B09X983942",
+          "field": "connectivity",
+          "value": "RF, USB",
+          "channel": "details",
+          "text": "RF, USB",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Connectivity Technology"
+            ],
+            "raw_value": "RF, USB",
+            "raw_unit": null,
+            "unit": null,
+            "source_row_index": 182,
+            "raw_record_sha256": "66fd7e2ef6634b7de2b4850a3b1d4b11f51b76882a590f9a65f78a15bc774160"
+          }
+        },
+        {
+          "evidence_id": "B09X983942:details:operating_system",
+          "product_id": "B09X983942",
+          "field": "operating_system",
+          "value": "Windows 7",
+          "channel": "details",
+          "text": "Windows 7",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Operating System"
+            ],
+            "raw_value": "Windows 7",
+            "raw_unit": null,
+            "unit": null,
+            "source_row_index": 182,
+            "raw_record_sha256": "66fd7e2ef6634b7de2b4850a3b1d4b11f51b76882a590f9a65f78a15bc774160"
+          }
+        }
+      ],
+      "provenance": {
+        "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+        "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+        "raw_record_sha256": "66fd7e2ef6634b7de2b4850a3b1d4b11f51b76882a590f9a65f78a15bc774160",
+        "source_row_index": 182,
+        "family_method": "conservative_all_products_of_source_brand",
+        "family_status": "pending_manual_review"
+      },
+      "split": "train"
+    },
+    {
+      "product_id": "B0B5LDPJLD",
+      "title": "Mini Bluetooth Keyboard Wireless Keyboard - Ultra-Slim, Silent, Multi-Device, Illuminated, 7 Colors RGB, for Apple iPad iPhone Samsung Tablet Phone Smartphone iOS Android Windows",
+      "price": 39.99,
+      "specs": {
+        "weight_g": 240.9709465625,
+        "color": "Pink",
+        "connectivity": "Bluetooth",
+        "operating_system": "Windows/Android/Linux/iOS"
+      },
+      "family": "brand:runelves",
+      "brand": "RunElves",
+      "model": "RE-20220702",
+      "identity_review_required": true,
+      "units": {
+        "price": "USD",
+        "weight_g": "g",
+        "color": null,
+        "connectivity": null,
+        "operating_system": null
+      },
+      "evidence": [
+        {
+          "evidence_id": "B0B5LDPJLD:details:price",
+          "product_id": "B0B5LDPJLD",
+          "field": "price",
+          "value": 39.99,
+          "channel": "details",
+          "text": "39.99",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "price"
+            ],
+            "raw_value": "39.99",
+            "raw_unit": "USD",
+            "unit": "USD",
+            "source_row_index": 808,
+            "raw_record_sha256": "e1c82179b3ca70cf9bea88002f3e9440ca52460ac2da08a8ff564414e91ed756"
+          }
+        },
+        {
+          "evidence_id": "B0B5LDPJLD:details:weight_g",
+          "product_id": "B0B5LDPJLD",
+          "field": "weight_g",
+          "value": 240.9709465625,
+          "channel": "details",
+          "text": "8.5 ounces",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Item Weight"
+            ],
+            "raw_value": "8.5 ounces",
+            "raw_unit": "ounces",
+            "unit": "g",
+            "source_row_index": 808,
+            "raw_record_sha256": "e1c82179b3ca70cf9bea88002f3e9440ca52460ac2da08a8ff564414e91ed756"
+          }
+        },
+        {
+          "evidence_id": "B0B5LDPJLD:details:color",
+          "product_id": "B0B5LDPJLD",
+          "field": "color",
+          "value": "Pink",
+          "channel": "details",
+          "text": "Pink",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Color"
+            ],
+            "raw_value": "Pink",
+            "raw_unit": null,
+            "unit": null,
+            "source_row_index": 808,
+            "raw_record_sha256": "e1c82179b3ca70cf9bea88002f3e9440ca52460ac2da08a8ff564414e91ed756"
+          }
+        },
+        {
+          "evidence_id": "B0B5LDPJLD:details:connectivity",
+          "product_id": "B0B5LDPJLD",
+          "field": "connectivity",
+          "value": "Bluetooth",
+          "channel": "details",
+          "text": "Bluetooth",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Connectivity Technology"
+            ],
+            "raw_value": "Bluetooth",
+            "raw_unit": null,
+            "unit": null,
+            "source_row_index": 808,
+            "raw_record_sha256": "e1c82179b3ca70cf9bea88002f3e9440ca52460ac2da08a8ff564414e91ed756"
+          }
+        },
+        {
+          "evidence_id": "B0B5LDPJLD:details:operating_system",
+          "product_id": "B0B5LDPJLD",
+          "field": "operating_system",
+          "value": "Windows/Android/Linux/iOS",
+          "channel": "details",
+          "text": "Windows/Android/Linux/iOS",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Operating System"
+            ],
+            "raw_value": "Windows/Android/Linux/iOS",
+            "raw_unit": null,
+            "unit": null,
+            "source_row_index": 808,
+            "raw_record_sha256": "e1c82179b3ca70cf9bea88002f3e9440ca52460ac2da08a8ff564414e91ed756"
+          }
+        }
+      ],
+      "provenance": {
+        "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+        "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+        "raw_record_sha256": "e1c82179b3ca70cf9bea88002f3e9440ca52460ac2da08a8ff564414e91ed756",
+        "source_row_index": 808,
+        "family_method": "conservative_all_products_of_source_brand",
+        "family_status": "pending_manual_review"
+      },
+      "split": "train"
+    },
+    {
+      "product_id": "B0B97BKQJV",
+      "title": "Thinlerain 15 inch PC Monitor Desktop Monitor with 1440×900, Small Monitor with 16:10 LED Monitor, TFT Panel, 60 Hz, 5Ms, VGA, HDMI, Built-in Speakers",
+      "price": 85.99,
+      "specs": {
+        "weight_g": 1514.9985158,
+        "screen_size": "15 Inches",
+        "display_resolution": "1440 x 900 Pixels"
+      },
+      "family": "brand:thinlerain",
+      "brand": "Thinlerain",
+      "model": null,
+      "identity_review_required": true,
+      "units": {
+        "price": "USD",
+        "weight_g": "g",
+        "screen_size": null,
+        "display_resolution": null
+      },
+      "evidence": [
+        {
+          "evidence_id": "B0B97BKQJV:details:price",
+          "product_id": "B0B97BKQJV",
+          "field": "price",
+          "value": 85.99,
+          "channel": "details",
+          "text": "85.99",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "price"
+            ],
+            "raw_value": "85.99",
+            "raw_unit": "USD",
+            "unit": "USD",
+            "source_row_index": 691,
+            "raw_record_sha256": "8805b91d86779db64358b47576ff9dea981dfe8e9d95f8f8008585bba3961b1b"
+          }
+        },
+        {
+          "evidence_id": "B0B97BKQJV:details:weight_g",
+          "product_id": "B0B97BKQJV",
+          "field": "weight_g",
+          "value": 1514.9985158,
+          "channel": "details",
+          "text": "3.34 pounds",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Item Weight"
+            ],
+            "raw_value": "3.34 pounds",
+            "raw_unit": "pounds",
+            "unit": "g",
+            "source_row_index": 691,
+            "raw_record_sha256": "8805b91d86779db64358b47576ff9dea981dfe8e9d95f8f8008585bba3961b1b"
+          }
+        },
+        {
+          "evidence_id": "B0B97BKQJV:details:screen_size",
+          "product_id": "B0B97BKQJV",
+          "field": "screen_size",
+          "value": "15 Inches",
+          "channel": "details",
+          "text": "15 Inches",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Screen Size"
+            ],
+            "raw_value": "15 Inches",
+            "raw_unit": null,
+            "unit": null,
+            "source_row_index": 691,
+            "raw_record_sha256": "8805b91d86779db64358b47576ff9dea981dfe8e9d95f8f8008585bba3961b1b"
+          }
+        },
+        {
+          "evidence_id": "B0B97BKQJV:details:display_resolution",
+          "product_id": "B0B97BKQJV",
+          "field": "display_resolution",
+          "value": "1440 x 900 Pixels",
+          "channel": "details",
+          "text": "1440 x 900 Pixels",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Display Resolution Maximum"
+            ],
+            "raw_value": "1440 x 900 Pixels",
+            "raw_unit": null,
+            "unit": null,
+            "source_row_index": 691,
+            "raw_record_sha256": "8805b91d86779db64358b47576ff9dea981dfe8e9d95f8f8008585bba3961b1b"
+          }
+        }
+      ],
+      "provenance": {
+        "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+        "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+        "raw_record_sha256": "8805b91d86779db64358b47576ff9dea981dfe8e9d95f8f8008585bba3961b1b",
+        "source_row_index": 691,
+        "family_method": "conservative_all_products_of_source_brand",
+        "family_status": "pending_manual_review"
+      },
+      "split": "dev"
+    },
+    {
+      "product_id": "B0BCV6K63S",
+      "title": "Dell Inspiron 15.6\" HD Laptop, Intel Celeron Processor N4020, 8GB RAM, 128GB PCIe SSD, Intel UHD Graphics 600, HD Audio, HD Webcam, Black, Windows 11 Home",
+      "price": 379,
+      "specs": {
+        "weight_g": 1846.1209459,
+        "color": "Black",
+        "operating_system": "Windows 11 Home",
+        "screen_size": "15.6 Inches"
+      },
+      "family": "brand:dell",
+      "brand": "Dell",
+      "model": "DELL",
+      "identity_review_required": true,
+      "units": {
+        "price": "USD",
+        "weight_g": "g",
+        "color": null,
+        "operating_system": null,
+        "screen_size": null
+      },
+      "evidence": [
+        {
+          "evidence_id": "B0BCV6K63S:details:price",
+          "product_id": "B0BCV6K63S",
+          "field": "price",
+          "value": 379,
+          "channel": "details",
+          "text": "379.0",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "price"
+            ],
+            "raw_value": "379.0",
+            "raw_unit": "USD",
+            "unit": "USD",
+            "source_row_index": 762,
+            "raw_record_sha256": "7ce245f4cc425c6ab8595e8c988cc0a122009591f239dc192259124b44e2512d"
+          }
+        },
+        {
+          "evidence_id": "B0BCV6K63S:details:weight_g",
+          "product_id": "B0BCV6K63S",
+          "field": "weight_g",
+          "value": 1846.1209459,
+          "channel": "details",
+          "text": "4.07 pounds",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Item Weight"
+            ],
+            "raw_value": "4.07 pounds",
+            "raw_unit": "pounds",
+            "unit": "g",
+            "source_row_index": 762,
+            "raw_record_sha256": "7ce245f4cc425c6ab8595e8c988cc0a122009591f239dc192259124b44e2512d"
+          }
+        },
+        {
+          "evidence_id": "B0BCV6K63S:details:color",
+          "product_id": "B0BCV6K63S",
+          "field": "color",
+          "value": "Black",
+          "channel": "details",
+          "text": "Black",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Color"
+            ],
+            "raw_value": "Black",
+            "raw_unit": null,
+            "unit": null,
+            "source_row_index": 762,
+            "raw_record_sha256": "7ce245f4cc425c6ab8595e8c988cc0a122009591f239dc192259124b44e2512d"
+          }
+        },
+        {
+          "evidence_id": "B0BCV6K63S:details:operating_system",
+          "product_id": "B0BCV6K63S",
+          "field": "operating_system",
+          "value": "Windows 11 Home",
+          "channel": "details",
+          "text": "Windows 11 Home",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Operating System"
+            ],
+            "raw_value": "Windows 11 Home",
+            "raw_unit": null,
+            "unit": null,
+            "source_row_index": 762,
+            "raw_record_sha256": "7ce245f4cc425c6ab8595e8c988cc0a122009591f239dc192259124b44e2512d"
+          }
+        },
+        {
+          "evidence_id": "B0BCV6K63S:details:screen_size",
+          "product_id": "B0BCV6K63S",
+          "field": "screen_size",
+          "value": "15.6 Inches",
+          "channel": "details",
+          "text": "15.6 Inches",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Screen Size"
+            ],
+            "raw_value": "15.6 Inches",
+            "raw_unit": null,
+            "unit": null,
+            "source_row_index": 762,
+            "raw_record_sha256": "7ce245f4cc425c6ab8595e8c988cc0a122009591f239dc192259124b44e2512d"
+          }
+        }
+      ],
+      "provenance": {
+        "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+        "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+        "raw_record_sha256": "7ce245f4cc425c6ab8595e8c988cc0a122009591f239dc192259124b44e2512d",
+        "source_row_index": 762,
+        "family_method": "conservative_all_products_of_source_brand",
+        "family_status": "pending_manual_review"
+      },
+      "split": "train"
+    },
+    {
+      "product_id": "B0BKFX6FWW",
+      "title": "mafiti RK101 Computer Keyboard Mouse Combo Wired, RGB Backlit USB Keyboard for PC Mac Laptop Desktop, Gaming Office",
+      "price": 19.99,
+      "specs": {
+        "weight_g": 748.4274105,
+        "connectivity": "Usb"
+      },
+      "family": "brand:mafiti",
+      "brand": "Mafiti",
+      "model": "Mafiti RK101",
+      "identity_review_required": true,
+      "units": {
+        "price": "USD",
+        "weight_g": "g",
+        "connectivity": null
+      },
+      "evidence": [
+        {
+          "evidence_id": "B0BKFX6FWW:details:price",
+          "product_id": "B0BKFX6FWW",
+          "field": "price",
+          "value": 19.99,
+          "channel": "details",
+          "text": "19.99",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "price"
+            ],
+            "raw_value": "19.99",
+            "raw_unit": "USD",
+            "unit": "USD",
+            "source_row_index": 514,
+            "raw_record_sha256": "7b810c3b957df44a3637736e3c86e8987d9d4c7e6a7e4418a56fcdba32c8a2bd"
+          }
+        },
+        {
+          "evidence_id": "B0BKFX6FWW:details:weight_g",
+          "product_id": "B0BKFX6FWW",
+          "field": "weight_g",
+          "value": 748.4274105,
+          "channel": "details",
+          "text": "1.65 pounds",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Item Weight"
+            ],
+            "raw_value": "1.65 pounds",
+            "raw_unit": "pounds",
+            "unit": "g",
+            "source_row_index": 514,
+            "raw_record_sha256": "7b810c3b957df44a3637736e3c86e8987d9d4c7e6a7e4418a56fcdba32c8a2bd"
+          }
+        },
+        {
+          "evidence_id": "B0BKFX6FWW:details:connectivity",
+          "product_id": "B0BKFX6FWW",
+          "field": "connectivity",
+          "value": "Usb",
+          "channel": "details",
+          "text": "Usb",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Connectivity Technology"
+            ],
+            "raw_value": "Usb",
+            "raw_unit": null,
+            "unit": null,
+            "source_row_index": 514,
+            "raw_record_sha256": "7b810c3b957df44a3637736e3c86e8987d9d4c7e6a7e4418a56fcdba32c8a2bd"
+          }
+        }
+      ],
+      "provenance": {
+        "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+        "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+        "raw_record_sha256": "7b810c3b957df44a3637736e3c86e8987d9d4c7e6a7e4418a56fcdba32c8a2bd",
+        "source_row_index": 514,
+        "family_method": "conservative_all_products_of_source_brand",
+        "family_status": "pending_manual_review"
+      },
+      "split": "train"
+    },
+    {
+      "product_id": "B0BKS1K986",
+      "title": "LENTION USB C Docking Station, 10 Gbps USB C&USB A Ports, 4K 60Hz HDMI, 100W PD, Ethernet, Card Reader, USB 3.0, AUX, USB C Dock for MacBook/Surface, More, Stable Driver USB C Hub(CB-D65, Space Gray)",
+      "price": 89.99,
+      "specs": {
+        "weight_g": 447.922465375,
+        "color": "Space Gray",
+        "hardware_interface": "MicroSD, USB Type C, Ethernet, HDMI, USB 3.0, USB 3.2 Gen 2"
+      },
+      "family": "brand:lention",
+      "brand": "LENTION",
+      "model": null,
+      "identity_review_required": true,
+      "units": {
+        "price": "USD",
+        "weight_g": "g",
+        "color": null,
+        "hardware_interface": null
+      },
+      "evidence": [
+        {
+          "evidence_id": "B0BKS1K986:details:price",
+          "product_id": "B0BKS1K986",
+          "field": "price",
+          "value": 89.99,
+          "channel": "details",
+          "text": "89.99",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "price"
+            ],
+            "raw_value": "89.99",
+            "raw_unit": "USD",
+            "unit": "USD",
+            "source_row_index": 47,
+            "raw_record_sha256": "07de1c15ac494f03c8265a1a8c87c1941acb0707864b1b99ec0a45fd243cd74b"
+          }
+        },
+        {
+          "evidence_id": "B0BKS1K986:details:weight_g",
+          "product_id": "B0BKS1K986",
+          "field": "weight_g",
+          "value": 447.922465375,
+          "channel": "details",
+          "text": "15.8 ounces",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Item Weight"
+            ],
+            "raw_value": "15.8 ounces",
+            "raw_unit": "ounces",
+            "unit": "g",
+            "source_row_index": 47,
+            "raw_record_sha256": "07de1c15ac494f03c8265a1a8c87c1941acb0707864b1b99ec0a45fd243cd74b"
+          }
+        },
+        {
+          "evidence_id": "B0BKS1K986:details:color",
+          "product_id": "B0BKS1K986",
+          "field": "color",
+          "value": "Space Gray",
+          "channel": "details",
+          "text": "Space Gray",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Color"
+            ],
+            "raw_value": "Space Gray",
+            "raw_unit": null,
+            "unit": null,
+            "source_row_index": 47,
+            "raw_record_sha256": "07de1c15ac494f03c8265a1a8c87c1941acb0707864b1b99ec0a45fd243cd74b"
+          }
+        },
+        {
+          "evidence_id": "B0BKS1K986:details:hardware_interface",
+          "product_id": "B0BKS1K986",
+          "field": "hardware_interface",
+          "value": "MicroSD, USB Type C, Ethernet, HDMI, USB 3.0, USB 3.2 Gen 2",
+          "channel": "details",
+          "text": "MicroSD, USB Type C, Ethernet, HDMI, USB 3.0, USB 3.2 Gen 2",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Hardware Interface"
+            ],
+            "raw_value": "MicroSD, USB Type C, Ethernet, HDMI, USB 3.0, USB 3.2 Gen 2",
+            "raw_unit": null,
+            "unit": null,
+            "source_row_index": 47,
+            "raw_record_sha256": "07de1c15ac494f03c8265a1a8c87c1941acb0707864b1b99ec0a45fd243cd74b"
+          }
+        }
+      ],
+      "provenance": {
+        "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+        "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+        "raw_record_sha256": "07de1c15ac494f03c8265a1a8c87c1941acb0707864b1b99ec0a45fd243cd74b",
+        "source_row_index": 47,
+        "family_method": "conservative_all_products_of_source_brand",
+        "family_status": "pending_manual_review"
+      },
+      "split": "train"
+    },
+    {
+      "product_id": "B0BMXFDSKM",
+      "title": "HP 15.6\" Micro-Edge HD Laptop, Intel Core i3-1115G4 up to 4.1GHz (Beat i5-1035G4), 16GB RAM, 512GB PCIe SSD, Wi-Fi 6, Lightweight, Bluetooth, Webcam, Fast Charge, 11 Hours Battery Life, HDMI, Win11",
+      "price": 599,
+      "specs": {
+        "weight_g": 2558.2609668,
+        "operating_system": "Windows 11 Home",
+        "screen_size": "15.6 Inches"
+      },
+      "family": "brand:hp",
+      "brand": "HP",
+      "model": "HP Laptop",
+      "identity_review_required": true,
+      "units": {
+        "price": "USD",
+        "weight_g": "g",
+        "operating_system": null,
+        "screen_size": null
+      },
+      "evidence": [
+        {
+          "evidence_id": "B0BMXFDSKM:details:price",
+          "product_id": "B0BMXFDSKM",
+          "field": "price",
+          "value": 599,
+          "channel": "details",
+          "text": "599.0",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "price"
+            ],
+            "raw_value": "599.0",
+            "raw_unit": "USD",
+            "unit": "USD",
+            "source_row_index": 185,
+            "raw_record_sha256": "5d5ce9cbaa55c3adf89d5d6eed59e3e90ad6b4228e9ca085b24baac7a3332dce"
+          }
+        },
+        {
+          "evidence_id": "B0BMXFDSKM:details:weight_g",
+          "product_id": "B0BMXFDSKM",
+          "field": "weight_g",
+          "value": 2558.2609668,
+          "channel": "details",
+          "text": "5.64 pounds",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Item Weight"
+            ],
+            "raw_value": "5.64 pounds",
+            "raw_unit": "pounds",
+            "unit": "g",
+            "source_row_index": 185,
+            "raw_record_sha256": "5d5ce9cbaa55c3adf89d5d6eed59e3e90ad6b4228e9ca085b24baac7a3332dce"
+          }
+        },
+        {
+          "evidence_id": "B0BMXFDSKM:details:operating_system",
+          "product_id": "B0BMXFDSKM",
+          "field": "operating_system",
+          "value": "Windows 11 Home",
+          "channel": "details",
+          "text": "Windows 11 Home",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Operating System"
+            ],
+            "raw_value": "Windows 11 Home",
+            "raw_unit": null,
+            "unit": null,
+            "source_row_index": 185,
+            "raw_record_sha256": "5d5ce9cbaa55c3adf89d5d6eed59e3e90ad6b4228e9ca085b24baac7a3332dce"
+          }
+        },
+        {
+          "evidence_id": "B0BMXFDSKM:details:screen_size",
+          "product_id": "B0BMXFDSKM",
+          "field": "screen_size",
+          "value": "15.6 Inches",
+          "channel": "details",
+          "text": "15.6 Inches",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Screen Size"
+            ],
+            "raw_value": "15.6 Inches",
+            "raw_unit": null,
+            "unit": null,
+            "source_row_index": 185,
+            "raw_record_sha256": "5d5ce9cbaa55c3adf89d5d6eed59e3e90ad6b4228e9ca085b24baac7a3332dce"
+          }
+        }
+      ],
+      "provenance": {
+        "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+        "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+        "raw_record_sha256": "5d5ce9cbaa55c3adf89d5d6eed59e3e90ad6b4228e9ca085b24baac7a3332dce",
+        "source_row_index": 185,
+        "family_method": "conservative_all_products_of_source_brand",
+        "family_status": "pending_manual_review"
+      },
+      "split": "train"
+    },
+    {
+      "product_id": "B0BWYJJLSF",
+      "title": "Wireless Keyboard and Mouse Combo, EDJO Full-Sized Ergonomic Computer Keyboard with Wrist Rest and 3 Level DPI Adjustable Wireless Mouse for Windows, Mac OS Desktop/Laptop/PC (White)",
+      "price": 34.99,
+      "specs": {
+        "weight_g": 780.1788764,
+        "color": "White",
+        "connectivity": "Usb, Radio Frequency"
+      },
+      "family": "brand:edjo",
+      "brand": "EDJO",
+      "model": null,
+      "identity_review_required": true,
+      "units": {
+        "price": "USD",
+        "weight_g": "g",
+        "color": null,
+        "connectivity": null
+      },
+      "evidence": [
+        {
+          "evidence_id": "B0BWYJJLSF:details:price",
+          "product_id": "B0BWYJJLSF",
+          "field": "price",
+          "value": 34.99,
+          "channel": "details",
+          "text": "34.99",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "price"
+            ],
+            "raw_value": "34.99",
+            "raw_unit": "USD",
+            "unit": "USD",
+            "source_row_index": 630,
+            "raw_record_sha256": "dd0aa7b96c37769d1b03fbc4b86491b5256df185ad86ddc6e306b4f3114421af"
+          }
+        },
+        {
+          "evidence_id": "B0BWYJJLSF:details:weight_g",
+          "product_id": "B0BWYJJLSF",
+          "field": "weight_g",
+          "value": 780.1788764,
+          "channel": "details",
+          "text": "1.72 pounds",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Item Weight"
+            ],
+            "raw_value": "1.72 pounds",
+            "raw_unit": "pounds",
+            "unit": "g",
+            "source_row_index": 630,
+            "raw_record_sha256": "dd0aa7b96c37769d1b03fbc4b86491b5256df185ad86ddc6e306b4f3114421af"
+          }
+        },
+        {
+          "evidence_id": "B0BWYJJLSF:details:color",
+          "product_id": "B0BWYJJLSF",
+          "field": "color",
+          "value": "White",
+          "channel": "details",
+          "text": "White",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Color"
+            ],
+            "raw_value": "White",
+            "raw_unit": null,
+            "unit": null,
+            "source_row_index": 630,
+            "raw_record_sha256": "dd0aa7b96c37769d1b03fbc4b86491b5256df185ad86ddc6e306b4f3114421af"
+          }
+        },
+        {
+          "evidence_id": "B0BWYJJLSF:details:connectivity",
+          "product_id": "B0BWYJJLSF",
+          "field": "connectivity",
+          "value": "Usb, Radio Frequency",
+          "channel": "details",
+          "text": "Usb, Radio Frequency",
+          "provenance": {
+            "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+            "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+            "source_sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+            "source_field": [
+              "details",
+              "Connectivity Technology"
+            ],
+            "raw_value": "Usb, Radio Frequency",
+            "raw_unit": null,
+            "unit": null,
+            "source_row_index": 630,
+            "raw_record_sha256": "dd0aa7b96c37769d1b03fbc4b86491b5256df185ad86ddc6e306b4f3114421af"
+          }
+        }
+      ],
+      "provenance": {
+        "source_id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+        "source_revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+        "raw_record_sha256": "dd0aa7b96c37769d1b03fbc4b86491b5256df185ad86ddc6e306b4f3114421af",
+        "source_row_index": 630,
+        "family_method": "conservative_all_products_of_source_brand",
+        "family_status": "pending_manual_review"
+      },
+      "split": "train"
+    }
+  ]
+}

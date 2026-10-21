@@ -1,0 +1,181 @@
+[
+  {
+    "role": "system",
+    "content": "You are an office procurement agent. Discover user needs using the available tools, inspect actual product and review evidence, and recommend one product with checks citing observed evidence IDs for every requirement. Only observations are available; never invent facts or evidence. Return exactly one tool call per turn. Clarification questions must be at most 100 characters. Tool results contain the remaining action budget. Finish within it."
+  },
+  {
+    "role": "user",
+    "content": "{\"protocol_version\": \"procure-ecom-v1\", \"query\": \"Please recommend one office electronic device. My required price in USD is at most 89.\", \"remaining_steps\": 40, \"requirements\": [{\"field\": \"price\", \"id\": \"budget\", \"op\": \"lte\", \"source\": \"query\", \"value\": 89}], \"task_id\": \"task-2de4765f4ff1d6036518\"}"
+  },
+  {
+    "role": "assistant",
+    "content": null,
+    "tool_calls": [
+      {
+        "id": "call_0",
+        "type": "function",
+        "function": {
+          "name": "get_user_profile",
+          "arguments": "{}"
+        }
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_0",
+    "content": "{\"profile\": {\"description\": \"My required host interface is exactly USB-A.\"}, \"remaining_steps\": 39, \"requirements\": [{\"field\": \"host_interface\", \"id\": \"interface\", \"op\": \"eq\", \"source\": \"persona\", \"value\": \"USB-A\"}]}"
+  },
+  {
+    "role": "assistant",
+    "content": null,
+    "tool_calls": [
+      {
+        "id": "call_1",
+        "type": "function",
+        "function": {
+          "name": "ask_user",
+          "arguments": "{\"question\": \"How many external displays?\"}"
+        }
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_1",
+    "content": "{\"remaining_steps\": 38, \"requirements\": [{\"field\": \"display_count\", \"id\": \"displays\", \"op\": \"gte\", \"source\": \"clarification\", \"value\": 2}], \"turns_remaining\": 9, \"user_response\": \"My required simultaneous display count is at least 2.\"}"
+  },
+  {
+    "role": "assistant",
+    "content": null,
+    "tool_calls": [
+      {
+        "id": "call_2",
+        "type": "function",
+        "function": {
+          "name": "ask_user",
+          "arguments": "{\"question\": \"How much laptop power?\"}"
+        }
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_2",
+    "content": "{\"remaining_steps\": 37, \"requirements\": [{\"field\": \"power_w\", \"id\": \"power\", \"op\": \"gte\", \"source\": \"clarification\", \"value\": 90}], \"turns_remaining\": 8, \"user_response\": \"My required laptop power in W is at least 90.\"}"
+  },
+  {
+    "role": "assistant",
+    "content": null,
+    "tool_calls": [
+      {
+        "id": "call_3",
+        "type": "function",
+        "function": {
+          "name": "search_products",
+          "arguments": "{\"query\": \"dock\"}"
+        }
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_3",
+    "content": "{\"page\": 0, \"products\": [{\"product_id\": \"dock-dev-a\", \"title\": \"Iris WorkBridge E USB-C office dock\"}, {\"product_id\": \"dock-dev-legacy\", \"title\": \"Hazel LegacyDesk G USB-A office dock\"}, {\"product_id\": \"dock-official-a\", \"title\": \"Aster IsolationProbe I USB-C office dock\"}, {\"product_id\": \"dock-train-low\", \"title\": \"Maple LitePower D USB-C office dock\"}], \"remaining_steps\": 36, \"total_found\": 4}"
+  },
+  {
+    "role": "assistant",
+    "content": null,
+    "tool_calls": [
+      {
+        "id": "call_4",
+        "type": "function",
+        "function": {
+          "name": "get_product_details",
+          "arguments": "{\"product_id\": \"dock-dev-a\"}"
+        }
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_4",
+    "content": "{\"evidence\": [{\"channel\": \"details\", \"evidence_id\": \"dock-dev-a:details:display_count\", \"field\": \"display_count\", \"product_id\": \"dock-dev-a\", \"text\": \"This dock supports 2 simultaneous external displays.\", \"value\": 2}, {\"channel\": \"details\", \"evidence_id\": \"dock-dev-a:details:host_interface\", \"field\": \"host_interface\", \"product_id\": \"dock-dev-a\", \"text\": \"This dock connects to its host laptop through a USB-C port.\", \"value\": \"USB-C\"}, {\"channel\": \"details\", \"evidence_id\": \"dock-dev-a:details:price\", \"field\": \"price\", \"product_id\": \"dock-dev-a\", \"text\": \"The listed price of this dock is 129 USD.\", \"value\": 129}, {\"channel\": \"details\", \"evidence_id\": \"dock-dev-a:details:weight_g\", \"field\": \"weight_g\", \"product_id\": \"dock-dev-a\", \"text\": \"This dock weighs 260 g.\", \"value\": 260}], \"product\": {\"bought_together\": null, \"description\": [], \"details\": {\"display_count\": 2, \"host_interface\": \"USB-C\", \"price\": 129, \"weight_g\": 260}, \"features\": [], \"main_category\": \"Office Electronics\", \"price\": 129, \"product_id\": \"dock-dev-a\", \"store\": \"Iris WorkBridge E\", \"title\": \"Iris WorkBridge E USB-C office dock\"}, \"remaining_steps\": 35}"
+  },
+  {
+    "role": "assistant",
+    "content": null,
+    "tool_calls": [
+      {
+        "id": "call_5",
+        "type": "function",
+        "function": {
+          "name": "get_review_content",
+          "arguments": "{\"product_id\": \"dock-dev-a\", \"query\": \"power\"}"
+        }
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_5",
+    "content": "{\"evidence\": [{\"channel\": \"reviews\", \"evidence_id\": \"dock-dev-a:reviews:power_w\", \"field\": \"power_w\", \"product_id\": \"dock-dev-a\", \"text\": \"An office test confirmed that this dock delivers 85 W of power to its host laptop.\", \"value\": 85}], \"remaining_steps\": 34, \"reviews\": [{\"product_id\": \"dock-dev-a\", \"rating\": 4.0, \"text\": \"An office test confirmed that this dock delivers 85 W of power to its host laptop.\", \"title\": \"power_w\"}]}"
+  },
+  {
+    "role": "assistant",
+    "content": null,
+    "tool_calls": [
+      {
+        "id": "call_6",
+        "type": "function",
+        "function": {
+          "name": "get_product_details",
+          "arguments": "{\"product_id\": \"dock-dev-legacy\"}"
+        }
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_6",
+    "content": "{\"evidence\": [{\"channel\": \"details\", \"evidence_id\": \"dock-dev-legacy:details:display_count\", \"field\": \"display_count\", \"product_id\": \"dock-dev-legacy\", \"text\": \"This dock supports 2 simultaneous external displays.\", \"value\": 2}, {\"channel\": \"details\", \"evidence_id\": \"dock-dev-legacy:details:host_interface\", \"field\": \"host_interface\", \"product_id\": \"dock-dev-legacy\", \"text\": \"This dock connects to its host laptop through a USB-A port.\", \"value\": \"USB-A\"}, {\"channel\": \"details\", \"evidence_id\": \"dock-dev-legacy:details:price\", \"field\": \"price\", \"product_id\": \"dock-dev-legacy\", \"text\": \"The listed price of this dock is 89 USD.\", \"value\": 89}, {\"channel\": \"details\", \"evidence_id\": \"dock-dev-legacy:details:weight_g\", \"field\": \"weight_g\", \"product_id\": \"dock-dev-legacy\", \"text\": \"This dock weighs 280 g.\", \"value\": 280}], \"product\": {\"bought_together\": null, \"description\": [], \"details\": {\"display_count\": 2, \"host_interface\": \"USB-A\", \"price\": 89, \"weight_g\": 280}, \"features\": [], \"main_category\": \"Office Electronics\", \"price\": 89, \"product_id\": \"dock-dev-legacy\", \"store\": \"Hazel LegacyDesk G\", \"title\": \"Hazel LegacyDesk G USB-A office dock\"}, \"remaining_steps\": 33}"
+  },
+  {
+    "role": "assistant",
+    "content": null,
+    "tool_calls": [
+      {
+        "id": "call_7",
+        "type": "function",
+        "function": {
+          "name": "get_review_content",
+          "arguments": "{\"product_id\": \"dock-dev-legacy\", \"query\": \"power\"}"
+        }
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_7",
+    "content": "{\"evidence\": [{\"channel\": \"reviews\", \"evidence_id\": \"dock-dev-legacy:reviews:power_w\", \"field\": \"power_w\", \"product_id\": \"dock-dev-legacy\", \"text\": \"An office test confirmed that this dock delivers 90 W of power to its host laptop.\", \"value\": 90}], \"remaining_steps\": 32, \"reviews\": [{\"product_id\": \"dock-dev-legacy\", \"rating\": 4.0, \"text\": \"An office test confirmed that this dock delivers 90 W of power to its host laptop.\", \"title\": \"power_w\"}]}"
+  },
+  {
+    "role": "assistant",
+    "content": null,
+    "tool_calls": [
+      {
+        "id": "call_8",
+        "type": "function",
+        "function": {
+          "name": "recommend_product",
+          "arguments": "{\"checks\": [{\"constraint_id\": \"budget\", \"evidence_ids\": [\"dock-dev-legacy:details:price\"]}, {\"constraint_id\": \"interface\", \"evidence_ids\": [\"dock-dev-legacy:details:host_interface\"]}, {\"constraint_id\": \"displays\", \"evidence_ids\": [\"dock-dev-legacy:details:display_count\"]}, {\"constraint_id\": \"power\", \"evidence_ids\": [\"dock-dev-legacy:reviews:power_w\"]}], \"product_id\": \"dock-dev-legacy\", \"reasoning\": \"Engineering probe checked the visible requirements against observed evidence.\"}"
+        }
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_8",
+    "content": "{\"reasoning\": \"Engineering probe checked the visible requirements against observed evidence.\", \"recommended_product\": {\"product_id\": \"dock-dev-legacy\", \"title\": \"Hazel LegacyDesk G USB-A office dock\"}, \"remaining_steps\": 31}"
+  }
+]

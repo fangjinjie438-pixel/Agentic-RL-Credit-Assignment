@@ -1,0 +1,31 @@
+[
+  {
+    "schema_version": 1,
+    "accepted": false,
+    "expert_eligible": false,
+    "engineering_only": false,
+    "task_id": "task-6607b386f9ff56233996",
+    "split": "train",
+    "trajectory_sha256": "826c8a0e5adfd2e8d5adeef9f9a0d7a0f7f195a5c5636893a93ca4843695f50e",
+    "replay_state_sha256": null,
+    "terminal_success": false,
+    "delivery_success": false,
+    "failure_types": [
+      "invalid_transition_count",
+      "missing_terminal",
+      "collection_failure"
+    ],
+    "details": [
+      {
+        "code": "invalid_transition_count"
+      },
+      {
+        "code": "missing_terminal"
+      },
+      {
+        "code": "collection_failure"
+      }
+    ],
+    "expert_exclusion": "rejected"
+  }
+]
