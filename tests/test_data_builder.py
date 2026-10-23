@@ -16,6 +16,7 @@ import unittest
 
 from procure_rl.data.builder import (apply_expression_rewrite, audit_expression,
                                     build_tasks, feasible_products)
+from procure_rl.data.independent import CHECKS
 from procure_rl.data.pipeline import (_source_gate, audit_release, build_dataset,
                                      collect_dataset, load_dataset, verify_raw_artifact)
 from procure_rl.data.review import make_review_queue, release_gate
@@ -169,7 +170,14 @@ class DataBuilderTests(unittest.TestCase):
         task = _base()
         ledger = {"task_id": task["task_id"], "accepted": True, "expert_eligible": True}
         independent = {"task_id": task["task_id"], "task_sha256": digest(task),
-                       "status": "completed", "model_revision": "synthetic-test-only", "decision": "reject"}
+                       "status": "completed", "model": "synthetic-independent-test-model",
+                       "model_revision": "synthetic-test-only", "decision": "reject",
+                       "reviewed_at": "2026-10-22T00:00:00+08:00", "prompt_version": "synthetic-test-v1",
+                       "prompt": {"task": task, "task_sha256": digest(task)}, "raw_response": {"decision": "reject"},
+                       "independence_basis": {"method": "different_model", "generation_models": ["synthetic-teacher"]}}
+        independent.update(checks={key: "uncertain" for key in CHECKS}, reasons=["Synthetic test disagreement."])
+        independent["raw_response"] = {key: independent[key] for key in ("decision", "checks", "reasons")}
+        independent.update(prompt_sha256=digest(independent["prompt"]), response_sha256=digest(independent["raw_response"]))
         gate = release_gate([], [task], [ledger], {"metadata_complete": True},
                             human_reviews=[_review(task), _review(task, decision="reject")],
                             independent_reviews=[independent])

@@ -1,0 +1,220 @@
+{
+  "method": "connected-product-clusters-seeded-sha256-v1",
+  "seed": 0,
+  "ratios": {
+    "train": 0.7272727272727273,
+    "dev": 0.09090909090909091,
+    "sealed_test": 0.18181818181818182
+  },
+  "input_products": 18,
+  "assigned_products": 11,
+  "quarantined_products": 7,
+  "clusters": [
+    {
+      "cluster_id": "cluster-a39723f7ad37d398a1195168",
+      "product_ids": [
+        "B00SK0FOHG"
+      ],
+      "split": "quarantine",
+      "official_overlap_members": [
+        "B00SK0FOHG"
+      ],
+      "official_overlap_reasons": [
+        "official_family"
+      ]
+    },
+    {
+      "cluster_id": "cluster-252f31ba17e60bc8dda8716b",
+      "product_ids": [
+        "B00VBTJCJE"
+      ],
+      "split": "sealed_test",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-a79a0c9b20c600fb87aee5c6",
+      "product_ids": [
+        "B0174X43LM"
+      ],
+      "split": "sealed_test",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-902578bc802a4df9c6425125",
+      "product_ids": [
+        "B01N6BOWFJ",
+        "B077BNJHVJ"
+      ],
+      "split": "train",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-85b2b38e5247f4f925ba3f05",
+      "product_ids": [
+        "B076DKFYF9",
+        "B0BCV6K63S"
+      ],
+      "split": "quarantine",
+      "official_overlap_members": [
+        "B076DKFYF9",
+        "B0BCV6K63S"
+      ],
+      "official_overlap_reasons": [
+        "official_family"
+      ]
+    },
+    {
+      "cluster_id": "cluster-1d2f86e1f5495217ca2c8852",
+      "product_ids": [
+        "B079J395DC",
+        "B09TF8J7LS"
+      ],
+      "split": "quarantine",
+      "official_overlap_members": [
+        "B079J395DC",
+        "B09TF8J7LS"
+      ],
+      "official_overlap_reasons": [
+        "official_family"
+      ]
+    },
+    {
+      "cluster_id": "cluster-21966c9e02a31ba571b6cd9e",
+      "product_ids": [
+        "B07H8QWTPH"
+      ],
+      "split": "train",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-1981269cf6088057c4d25855",
+      "product_ids": [
+        "B07K89WHJH"
+      ],
+      "split": "quarantine",
+      "official_overlap_members": [
+        "B07K89WHJH"
+      ],
+      "official_overlap_reasons": [
+        "official_family"
+      ]
+    },
+    {
+      "cluster_id": "cluster-4514f07128e1e564fb5e7c0c",
+      "product_ids": [
+        "B09SJ9192T"
+      ],
+      "split": "quarantine",
+      "official_overlap_members": [
+        "B09SJ9192T"
+      ],
+      "official_overlap_reasons": [
+        "official_family"
+      ]
+    },
+    {
+      "cluster_id": "cluster-035c56635294888c6eddbf6f",
+      "product_ids": [
+        "B09X8LNVSY"
+      ],
+      "split": "train",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-d7d70d32d3da7f6f31583431",
+      "product_ids": [
+        "B09X983942"
+      ],
+      "split": "train",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-cea775fffe38c16a5e19bbf1",
+      "product_ids": [
+        "B0BGMJX4RN"
+      ],
+      "split": "train",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-6f0801cca96823b26d559597",
+      "product_ids": [
+        "B0BKS1K986"
+      ],
+      "split": "train",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-5b2addaa78c85f19652a9aa4",
+      "product_ids": [
+        "B0BWYJJLSF"
+      ],
+      "split": "train",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-bdee59e2275411c64b8df608",
+      "product_ids": [
+        "B0BYBG1PPD"
+      ],
+      "split": "train",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    }
+  ],
+  "cluster_count": 15,
+  "split_counts": {
+    "train": 9,
+    "dev": 0,
+    "sealed_test": 2,
+    "quarantine": 7
+  },
+  "ignored_input_split_count": 0,
+  "input_sha256": "3adea963a55f2069e6f0081512e8390b415cc2ceed98748f1e92a996eb228b68",
+  "assignments_sha256": "1732c0207eb360e06640f1bf87781496f843911e93a8fb120466604fc5a2896d",
+  "official_exclusions_sha256": "fc387ce33ad174c92f7fcf5c8a53708cc0defa1b9bbd6c7747f50710aaadf192",
+  "official_exclusions_source_revision": "97eff345811fdf652a2135d38d874f2932e11702",
+  "official_exclusion_coverage": "provided_metadata_only",
+  "normalization": "NFKC-casefold-unicode-word-tokens-v1",
+  "link_edges": [
+    {
+      "left_id": "B01N6BOWFJ",
+      "right_id": "B077BNJHVJ",
+      "method": "family",
+      "value_hash": "4fa33dc7e74180545ad4c088b7be87573188e0682a1417f8496105816c75bf5d"
+    },
+    {
+      "left_id": "B076DKFYF9",
+      "right_id": "B0BCV6K63S",
+      "method": "family",
+      "value_hash": "3a30a9b46316ddc5e105aa547b18394fb1b8646f1f37b03f562422b95f7ec25c"
+    },
+    {
+      "left_id": "B079J395DC",
+      "right_id": "B09TF8J7LS",
+      "method": "family",
+      "value_hash": "57265c02bd310232a6fab1c6a983231c65f3d8fc778bf53a3b4f8e73147f7866"
+    }
+  ],
+  "title_deduplication": {
+    "method": "sha256-token-minhash-128-v1",
+    "permutations": 128,
+    "bands": 16,
+    "jaccard_threshold": 0.85,
+    "minhash_candidate_pairs": 48,
+    "overlap_guard_pairs": 1,
+    "exact_comparisons": 48,
+    "confirmed_pairs": 1,
+    "overlap_guard": "exact token overlap prevents probabilistic LSH false negatives"
+  },
+  "semantic_review": "not_run; lexical candidates cannot prove semantic disjointness"
+}

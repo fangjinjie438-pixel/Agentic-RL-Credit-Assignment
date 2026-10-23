@@ -1,0 +1,22 @@
+[
+  {
+    "record_index": 7,
+    "product_id": "B09SJ9192T",
+    "reason": "raw_record_hash_mismatch"
+  },
+  {
+    "record_index": 14,
+    "product_id": "B0BCV6K63S",
+    "reason": "raw_record_hash_mismatch"
+  },
+  {
+    "record_index": 15,
+    "product_id": "B01N6BOWFJ",
+    "reason": "raw_record_hash_mismatch"
+  },
+  {
+    "record_index": 16,
+    "product_id": "B09TF8J7LS",
+    "reason": "raw_record_hash_mismatch"
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "stage": "S2",
+  "status": "passed",
+  "validation_level": "cpu_replay_and_release_gate_audit",
+  "data_revision": "s2-f692f21320912220be59d4a5",
+  "release_gate": {
+    "ready_for_formal_training": false,
+    "status": "withheld",
+    "reasons": [
+      "official_family_and_near_duplicate_metadata_incomplete",
+      "product_family_identities_pending_review",
+      "fewer_than_200_hash_bound_human_task_reviews",
+      "unadjudicated_model_disagreement",
+      "expert_candidates_not_human_approved"
+    ],
+    "human_review_count": 0,
+    "independent_review_count": 7,
+    "expert_candidate_task_count": 1,
+    "invalid_review_task_ids": [],
+    "invalid_independent_review_task_ids": [],
+    "independence_validation": "declared_different_model_and_bound_raw_artifacts; execution_provenance_requires_audit",
+    "human_rejected_task_ids": [],
+    "conflicting_task_ids": [],
+    "unadjudicated_task_ids": [
+      "task-72e45343984d6a3ce84c",
+      "task-964a2c1b4a9586d4b9ea",
+      "task-9e9c41995b5779485caa",
+      "task-9e9c41995b5779485caa-cf-018340a0",
+      "task-ac53e878d2c50893225c",
+      "task-ac53e878d2c50893225c-cf-5ee29266",
+      "task-eab64e1f7a0884441a5f"
+    ],
+    "quantity_targets": {
+      "train": 1600,
+      "dev": 200,
+      "sealed_test": 400,
+      "counterfactual_pairs": 100,
+      "expert_successes": 600
+    },
+    "quantity_targets_are_not_claimed_achieved": true
+  },
+  "review_file": {
+    "path": "logs/s2-20261022-api/independent-review-v1/reviews.json",
+    "sha256": "6c2bf4a017f1c14dbe2facd8771841d91e12ae3ccf4ad887a7c3ddbaf284caee"
+  },
+  "replay_accepted": 1,
+  "episodes": 2,
+  "stage_complete": false,
+  "gpu_compute_performed": false
+}

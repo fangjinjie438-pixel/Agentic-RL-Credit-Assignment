@@ -1,0 +1,29 @@
+{
+  "recorded_at": "2026-10-22T05:12:10+08:00",
+  "stage": "S2",
+  "work_status": "paused_after_requested_nonhuman_scope",
+  "pause_source": "User: S2的真实人工审核我稍后进行，你先完成其它不依赖这个的就可以暂停了",
+  "nonhuman_scope_completed": true,
+  "stage_complete": false,
+  "formal_release": "withheld",
+  "next_stage_started": false,
+  "teacher_new_api_calls": 72,
+  "teacher_cost_estimate_usd": 0.0754485,
+  "billed_cost_usd": null,
+  "cpu_tests": 160,
+  "handoff_checks_passed": 220,
+  "independent_reviews_completed": 7,
+  "independent_model_accept": 0,
+  "independent_model_reject": 7,
+  "human_reviews_completed": 0,
+  "gpu_cleanup_evidence": {
+    "path": "logs/s2-20261022-api/independent-review-cleanup-v1.json",
+    "sha256": "d4199bdcc7c903e1cca4bc91694bffbf78c4b66bb51e7abf462d2889353db736"
+  },
+  "progress_sha256": "48aee49f37d903d7e96401df6b17361564413f1d953ae77e1a34849a67a2255e",
+  "resume_inputs": [
+    "Real human task/identity decisions and adjudication of all seven model disagreements",
+    "Additional curated source/tasks and actual human review to meet formal 200-sample gate",
+    "Approval of official identity/family coverage; rebuild immutable dataset if source changes"
+  ]
+}

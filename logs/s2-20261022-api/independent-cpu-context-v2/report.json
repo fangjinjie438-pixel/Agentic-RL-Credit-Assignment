@@ -1,0 +1,42 @@
+{
+  "tasks": [
+    {
+      "task_id": "task-72e45343984d6a3ce84c",
+      "input_tokens": 7489,
+      "fits_16384_with_1024_output": true
+    },
+    {
+      "task_id": "task-964a2c1b4a9586d4b9ea",
+      "input_tokens": 7499,
+      "fits_16384_with_1024_output": true
+    },
+    {
+      "task_id": "task-9e9c41995b5779485caa",
+      "input_tokens": 7761,
+      "fits_16384_with_1024_output": true
+    },
+    {
+      "task_id": "task-9e9c41995b5779485caa-cf-018340a0",
+      "input_tokens": 7822,
+      "fits_16384_with_1024_output": true
+    },
+    {
+      "task_id": "task-ac53e878d2c50893225c",
+      "input_tokens": 7764,
+      "fits_16384_with_1024_output": true
+    },
+    {
+      "task_id": "task-ac53e878d2c50893225c-cf-5ee29266",
+      "input_tokens": 7822,
+      "fits_16384_with_1024_output": true
+    },
+    {
+      "task_id": "task-eab64e1f7a0884441a5f",
+      "input_tokens": 7490,
+      "fits_16384_with_1024_output": true
+    }
+  ],
+  "all_fit": true,
+  "cuda_initialized": false,
+  "model_weights_loaded": false
+}

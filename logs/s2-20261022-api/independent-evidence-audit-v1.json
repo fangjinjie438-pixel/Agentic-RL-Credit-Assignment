@@ -1,0 +1,16 @@
+{
+  "audited_at": "2026-10-22T05:09:51+08:00",
+  "dataset_revision": "s2-f692f21320912220be59d4a5",
+  "review_records": 7,
+  "all_traceable": true,
+  "all_expected_tasks_reviewed": true,
+  "run_status": "succeeded",
+  "frozen_runner_matches_record": true,
+  "current_runner_matches_record": true,
+  "input_tokens": 53647,
+  "output_tokens": 2794,
+  "generation_elapsed_seconds": 253.17453153058887,
+  "reviews_sha256": "6c2bf4a017f1c14dbe2facd8771841d91e12ae3ccf4ad887a7c3ddbaf284caee",
+  "model_report_sha256": "9ad12fd0e0024a11fa82edc65f7b469f18ceb00708d33f5d973b325cc5cb926f",
+  "human_review_performed": false
+}

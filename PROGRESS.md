@@ -1,6 +1,6 @@
 # Procure-RL 进度与交接
 
-最近更新：2026-10-22 04:07（Asia/Shanghai；精确起止时间见各run.json）。执行机器：学校 Linux `A6000`。当前阶段：**S2 代码与离线 CPU pilot 完成，整阶段尚未验收**。真实教师缺密钥，人工/独立语义/官方剩余家族审核待完成；正式数据 withheld。先继续完成 S2，不进入 S3。S0/S1历史验收保留，本轮未运行GPU。
+最近更新：2026-10-22T05:12:10+08:00（Asia/Shanghai）。执行机器：学校Linux `A6000`。当前阶段：**S2 不依赖人工的本轮实施与验证已完成，按用户要求暂停等待人工审核**。真实教师/API缓存、独立8B真实GPU推理、CPU测试与发布审计均已执行；正式数据仍withheld，整阶段未放行。人工抽检、商品/官方身份确认与7条模型分歧由用户稍后裁决；下一步仍是S2，不自动进入S3。
 
 ## 初始基线（实施开始时的事实）
 
@@ -12,7 +12,7 @@
 | --- | --- | --- | --- |
 | S0 工程与运行环境 | 配置、运行清单、doctor、隔离导入、授权GPU预检、代理与独立工具链完成 | 39项CPU测试、25项隐藏GPU依赖检查通过；实际硬件盘点完成 | 双卡BF16/P2P/NCCL、FlashAttention前反向、0.6B单提示推理通过；训练兼容待后续阶段 |
 | S1 环境与验证器 | 固定 ECom 适配、只读商品库、协议/会话/快照、终局/过程验证器完成 | 新增43项S1测试，合计82项全过；27项真实CPU端到端验收全过 | 不适用：S1固定小样本验收不需要GPU；本轮未运行 |
-| S2 数据流水线 | 来源归一化、先划分/去重/任务/反事实、受限教师、真实回放、审核队列/发布门槛完成 | 新增54项，合计136项全过；真实/工程两源构建、各2条工程轨迹及发布审计通过；真实教师blocked | 未执行：无CUDA上下文/模型；独立8B语义复核待验收，不以CPU代替 |
+| S2 数据流水线 | 构建/家族隔离/去重/反事实、受限HTTP、真实回放、独立审核与人工材料代码已实现 | 最终160项全量通过（含上下文修复）；真实教师v2=1/2接收，缓存重现一致且新增请求0 | 独立Qwen3-8B在本次确认GPU5真实完成7/7推理，7条模型reject待人工裁决；本进程已退出，非训练/LoRA验收 |
 | S3 SFT与真实多轮推理 | 未实现 | 未执行 | 未执行 |
 | S4 终局RL baseline | 未实现 | 未执行 | 未执行 |
 | S5 动作级信用分配 | 未实现 | 未执行 | 未执行 |
@@ -20,7 +20,75 @@
 | S7 正式评测与交付 | 未实现 | 未执行 | 未执行 |
 | S8 可选OPD | 未实现，独立扩展 | 未执行 | 未执行 |
 
-## 本轮 S2 实施、证据与未完成项
+## S2 接续：用户配置密钥后的真实执行
+
+用户明确表示API key已配置，继续完成S2；沿用用户授权的暂定DeepSeek配置，未要求重复确认。按AGENTS→PLAN→PROGRESS→S2顺序读取并检查目录README；不进入S3。
+
+### 已实际完成
+
+- 密钥只核对存在/非空，在内存用于Bearer；不打印或哈希秘密内容。首次自动审批拒绝外发请求，随后核实1000行公开Amazon源的原始SHA与12条摘录绑定、全部任务按固定模板可精确重建，产出 `outbound-provenance-audit.json`，证明仅公开商品与合成采购需求、不含真实用户/组织数据或私有解。相同请求经证据复审批准后执行，未绕过拒绝。
+- 首批 `teacher-pilot-v1`：18次真实请求，0/2接收。教师未主动澄清隐藏重量，一条还把Pink与Baby Pink当等值，全部保留失败原始响应。
+- 通用提示升级 `procure-teacher-visible-v2`、策略 `s2-expert-tool-v2`：要求主动澄清采购维度并按结构化值精确比较，不注入私有约束/合法解，不放宽验证器。提示注册表保留v1以回放历史。缓存目录跨策略/模型/提示共享80请求/2 USD预留上限，防止改版本重置预算；loopback资格根据绑定endpoint重算，不能翻engineering标志变专家。
+- 第二批 `teacher-pilot-v2`：54次请求，15/39步，**1接收、1拒收**；接收者满足全部硬约束、发现需求并引用完整证据，成为1条尚待人工批准的专家候选。失败者反复窄检索未找到合法候选，最终仍推荐已知超重/颜色不符商品；不把它计入专家。
+- `teacher-cache-v2`：两条动作、公开对话、最终状态与第二批逐项一致，仍1接收1拒收，**新请求0、新估算费用0**。采集命令因存在质量拒收返回1，非网络/凭据失败。两批共72个新请求均completed，按配置峰值未命中价估算 **0.0754485 USD**，provider实际账单未知/null。模型响应为deepseek-flash，immutable revision未知/null；system_fingerprint仅作另存观测值。72次动作格式合法，不能据两条训练pilot推断一般成功率。
+- 三个官方缺Brand目标仅用target_product身份字段审计：store/Manufacturer/title提供候选佐证，新增Alphaline、EtherealKiller、Reolink Digital三个整品牌排除别名。新 `fixtures/s2/official-exclusions-candidate.json` 由当前s2.json采用，原索引/unknown IDs保持；metadata_complete仍false，不伪造Brand或人工确认。
+- 新数据revision **s2-f692f21320912220be59d4a5**：12源记录、4quarantine、8保留，产品train/dev/sealed=7/1/0；任务7/0/0、2对反事实，缺字段不补造。旧数据包保持不可变。
+- 审阅包 `review-material-v2/review.md`、私有事实/全解集JSON、空白签核表和模型输入已生成：7任务、8商品，实际人工完成0；就样本供给而言，至少200抽检还差193，不能复制补数。已向用户请求真实签核文件路径；尚未收到时继续独立工作。
+- 独立review gate加强为模型身份/实际revision/时区时间、完整prompt.task与SHA、raw response与SHA、声明不同模型；从真实generated_text严格重解析并核对decision/checks/reasons，矛盾/截断/不明输出拒收。哈希与声明无法自行认证实际执行或模型别名独立，真实执行来源仍要核查。
+
+### 命令、机器、日志
+
+以下均在学校Linux A6000，Python3.11.16项目独立 `.venv-cpu` 执行；CLI前缀 `PYTHONPATH=src .venv-cpu/bin/python -m procure_rl`。外部教师另用 `.venv-cpu/bin/python scripts/with_proxy.py --` 包装子命令，只有公开/合成的观测与schema发送至 `https://api.deepseek.com/chat/completions`。新日志根 **logs/s2-20261022-api/**。
+
+| 实际动作 | 结果与时间（+08:00） | 日志相对新根 |
+| --- | --- | --- |
+| `s2-build --config configs/s2.json --output logs/s2-20261022-api/build-identity-v2` | 通过；04:41:47–04:41:53，新revision | build-identity-v2/report.json、dataset/、run.json |
+| `s2-collect --config configs/s2.json --teacher-config configs/s2-teacher.json --dataset logs/s2-20261022/build-real-final/dataset --output logs/s2-20261022-api/teacher-pilot-v1 --cache-directory .cache/s2-teacher --execute-api --limit 2` | 实际API完成，0/2接收，退出1；04:39:26–04:39:44 | teacher-pilot-v1/report.json、episodes、ledger、run.json |
+| 同上，dataset改build-identity-v2/dataset、output改teacher-pilot-v2 | 实际API完成，1/2接收，退出1；04:42:08–04:43:08 | teacher-pilot-v2/；expert-candidates.jsonl仅1条候选 |
+| 同第二批，`--cache-only`替换`--execute-api`，output改teacher-cache-v2 | 无联网重现，1接收1拒收，退出1；04:43:57–04:43:58 | teacher-cache-v2/ |
+| `PYTHONPATH=src .venv-cpu/bin/python logs/s2-20261022-api/evaluate-pilot.py` | 留存产物统计/缓存内容核对通过 | pilot-analysis-v2/summary.json；早期统计kind名称修正前源码留pilot-analysis/executed-source.py，实际无invalid事件，数量结论相同 |
+| `PYTHONPATH=src .venv-cpu/bin/python scripts/run_cpu_tests.py --stage S2 --config configs/s2.json --output logs/s2-20261022-api/tests-final` | **151项全过**，0失败/错误/跳过；04:50:36–04:51:02。之后发现raw决定核对漏洞有针对补验 | tests-final/result.json、unittest.log、run.json |
+| `PYTHONPATH=src .venv-cpu/bin/python scripts/data/prepare_s2_review.py --dataset logs/s2-20261022-api/build-identity-v2/dataset --output logs/s2-20261022-api/review-material-v2` | 7条任务/8商品材料导出通过；无人工/模型签核 | review-material-v2/run.json、review.md、reviews-template.json |
+
+官方身份审计实际命令 `PYTHONPATH=src .venv-cpu/bin/python scripts/data/audit_official_identities.py --output logs/s2-official-identity-audit-20261022-v2`；逐条证据和SHA见该目录run.json/identity-audit.json，新增5项CPU测试通过。独立Qwen3-8B模型固定官方commit `b968826d9c46dd6066d109eabc6255188de91218`，5个权重共16,381,516,776 bytes；下载已完成，镜像只作传输加速，身份与验收SHA以官方metadata为准。继承本会话GPU5授权UUID `GPU-2e81c395-ac38-bfde-adba-34f3d967f7af`，实际推理前再只读核验容量/UUID；下载不初始化CUDA。
+
+### 接续追加：来源下界、上下文与当前设备确认
+
+来源覆盖诊断实际 `scripts/data/audit_source_coverage.py --output logs/s2-source-coverage-20261022-v3`（项目CPU解释器）：1000行→74办公设备范围→19严格price/Brand/weight/color齐全并归一化通过→官方quarantine7→12商品/11品牌家族，其中4条已在原fixture、8条新增未人工审核候选。74条中价格缺45、颜色缺28/模糊9，未猜测补充；不是总体容量推断，也不提供接口/兼容性长程证据。候选raw/原行/source/hash/facts保留且diagnostic_only，未生成任务、未改当前数据包。新增8项测试全过，早期Unicode raw digest与合成标题重复的开发失败均留存并修正。
+
+独立8B官方固定commit已完成13文件内容核验，5权重16,381,516,776 bytes；下载v1官方代理慢，04:51:43仅中断本任务PID保留partial，v2镜像直连最多3连接续传，04:51:55–04:57:02完成，metadata/内容标识仍来自官方。首次GPU执行自动审批要求本次用户直接确认，未创建CUDA，拒绝原文保留 `independent-review-blocked-v1/`；用户随后明确“确认，本次可使用该GPU5”，本次授权保存 `allocation-user-confirmed.json`，仅GPU5 UUID、7任务推理不训练，未换卡绕过。
+
+CPU tokenizer预检v1真实发现输入16,791–17,431 token，超过16K预算；未加载权重或初始化CUDA。修复只移除比较摘要重复evidence-ID和重复provenance哈希，保留完整当前task、全部商品facts/quotes/raw与规范units/source_field，并绑定完整输入及dataset manifest SHA。v2实际输入7,489–7,822 tokens，加1024输出均<16K，无截断。既有4项针对测试扩展通过；最终完整 **160项、0失败/错误/跳过** 为 `tests-final-v3/`，由实际上下文问题修复触发复验，源码哈希对应最终纯CPU模块。独立GPU进程见 `independent-review-v1/`，启动后先重新核验权重，再核验runtime UUID/实际推理；不以进程启动当推理通过。
+
+用户最新明确：真实人工审核稍后进行，先完成其它不依赖人工的工作后暂停。人工完成数保持0，不要求用户现在签核，不自动S3。
+
+### 最终独立推理、发布审计与暂停
+
+用户新确认后，仅物理GPU5、UUID `GPU-2e81c395-ac38-bfde-adba-34f3d967f7af` 执行。`independent-review-v1/run.json`：05:02:57–05:08:51+08:00，**7/7实际模型审核完成、0accept/7reject、failures=[]，进程退出0**。模型Qwen3-8B官方固定commit b968826d9c46dd6066d109eabc6255188de91218，13文件全部内容核验；实际Torch2.7.1+cu126、Transformers4.53.2、Accelerate1.8.1、safetensors0.8.0，实际驱动560.35.03只读查询、Torch CUDA runtime12.6与NCCL2.26.2分别记录；未执行系统Toolkit/nvcc。BF16/SDPA、thinking关闭、并发1、CPU线程2、16K上下文/最多1024输出，输入共53,647/输出2,794 token；生成累计253.17秒。整个进程354秒含CPU逐权重SHA预检，不将它冒充纯GPU计算时间。峰值allocated18,382,922,240 bytes、reserved19,744,686,080 bytes；没有训练或checkpoint。
+
+7条模型决定均可严格重解析且与raw prompt/response哈希及decision/checks/reasons一致；`independent-evidence-audit-v1.json` all_traceable=true。**模型执行完成不等于模型意见正确或数据审核通过。** 一些模型理由把已归一化g与保留原lb/oz称不一致、把额外商品属性称query泄漏、要求无CF的base必须有CF，均可能是模型误判，不能据此改程序真值；浅层模板/不自然精确阈值等质量意见也留给真实人工核验。全部7条进入强制裁决列表，不重采样以筛出同意，不代替人审。
+
+`independent-review-cleanup-v1.json` 核验精确本次PID3696476已退出且不在GPU compute apps；只查询GPU5，不结束他人进程。`runtime-process.json`、授权原文/文件SHA、CUDA runtime UUID和冻结runner源副本均保留，未使用其他设备。
+
+最终真实回放审计已执行：
+
+```bash
+PYTHONPATH=src .venv-cpu/bin/python -m procure_rl s2-audit --dataset logs/s2-20261022-api/build-identity-v2/dataset --collection logs/s2-20261022-api/teacher-pilot-v2 --reviews logs/s2-20261022-api/independent-review-v1/reviews.json --output logs/s2-20261022-api/release-audit-final
+```
+
+审计退出0，实际重放两条教师轨迹仍1接收1拒收；独立记录7有效/0无效，1条未人工批准专家候选，人工0、未裁决7，approved_expert_task_ids=[]，stage_complete=false。正式withheld的剩余原因仅为官方家族/近重复覆盖、商品身份、至少200人工抽检、模型分歧裁决、专家人工批准。不能把CPU审计status=passed理解为正式放行。
+
+最后完整CPU命令 `PYTHONPATH=src .venv-cpu/bin/python scripts/run_cpu_tests.py --stage S2 --config configs/s2.json --output logs/s2-20261022-api/tests-final-v3`：**160项、0失败/错误/跳过**；涵盖最终上下文投影修复。早期151/160结果和每次实际问题修复的针对测试均保留，没有覆盖历史。`handoff-final/audit.json` 已实际完成 **220/220一致性检查**：最终source/tests/fixtures/config与真实产物、预算/缓存、模块文档和credential未落入日志，`handoff-final/human-next.md` 汇总模型分歧与后续真实签核动作。
+
+**按用户最新要求在此暂停。** 其它本轮不依赖人工的工作完成，S2不标整阶段完成、不进入S3。用户稍后先读 `review-material-v2/review.md` 与 `handoff-final/human-next.md`；在原模板副本填写真实身份/时间/accept或reject/理由，真实裁决后才填adjudicates_model_disagreement=true。后续将人工human_reviews/identity_reviews与independent-review-v1/reviews.json中的independent_reviews合并另存新文件，确保revision一致，然后用上述s2-audit命令替换--reviews与新--output。被人工拒收任务需先从源/模板修复并重建新revision；不要原地改已哈希数据包。当前7条不足200抽检目标，后续扩充须真实来源和相同防污染/质量门槛，不以复制补数。
+
+### 文件与后续
+
+新增官方身份审计/模型下载/独立模型执行/审阅导出脚本、data independent/review_material模块与对应测试、保守候选索引；修改teacher/replay/pipeline、review gate、s2配置、层级README、S2来源/操作文档。所有自主模块提供说明，目录README登记；模型/缓存/生成日志不作新框架锁。没有更换verl/Torch/Transformers或SFT/RL实现。
+
+**S2未整阶段完成**：小流水线已经有真实教师正/负回放证据，但人工抽检/身份与官方映射待签，独立语义复核状态需见后续实际结果；正式数量远未达目标。下一步等待用户稍后真实人工裁决，再按训练pilot诊断改检索/完善任务品类与事实来源，质量通过后扩充并完成至少200条真实人工抽检。禁止以工程脚本、复制数据或程序签核代替。实际human JSON收到后用`s2-audit --reviews`评估，不修改旧包；修改来源/模板/官方边界必须重建新revision。不进入S3。
+
+## S2 首轮历史：代码与离线 pilot（当时缺密钥）
 
 用户授权继续S2，并明确让agent先选择教师、在文档醒目标注便于修改。本轮已按AGENTS→PLAN→PROGRESS读取，S2操作文件缺失时先建立并读取范围；仅实现S2，没有实现S3训练。
 

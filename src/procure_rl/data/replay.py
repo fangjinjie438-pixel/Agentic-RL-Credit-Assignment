@@ -10,10 +10,11 @@ from __future__ import annotations
 
 import copy
 import json
+from urllib.parse import urlsplit
 
 from ..env import ProcurementEnv
 from ..env.catalog import digest
-from .teacher import OpenAIHTTPTeacher, PROMPT_VERSION, SYSTEM_PROMPT
+from .teacher import OpenAIHTTPTeacher, PROMPTS
 
 
 def replay_episode(catalog, task: dict, trajectory: dict) -> dict:
@@ -45,6 +46,9 @@ def replay_episode(catalog, task: dict, trajectory: dict) -> dict:
         fail("missing_terminal")
     if not isinstance(trajectory.get("final_state_sha256"), str):
         fail("missing_state_hash")
+    prompt_version = trajectory.get("collection", {}).get("prompt_version")
+    if not isinstance(prompt_version, str) or prompt_version not in PROMPTS:
+        fail("unknown_prompt_version")
     final = None
     state_hash = None
     if not failures:
@@ -58,7 +62,7 @@ def replay_episode(catalog, task: dict, trajectory: dict) -> dict:
                     trajectory.get("messages_sha256") != digest(messages)):
                 fail("public_dialogue_mismatch")
                 messages = None
-            elif (messages[0] != {"role": "system", "content": SYSTEM_PROMPT} or
+            elif (messages[0] != {"role": "system", "content": PROMPTS[prompt_version]} or
                   messages[1] != {"role": "user", "content": json.dumps(initial, ensure_ascii=False, sort_keys=True)}):
                 fail("public_dialogue_mismatch")
             for index, transition in enumerate(transitions):
@@ -100,7 +104,7 @@ def replay_episode(catalog, task: dict, trajectory: dict) -> dict:
                             assistant["role"] = "assistant"
                             if (record.get("status") != "completed" or
                                     record.get("policy_version") != trajectory["policy_version"] or
-                                    record.get("prompt_version") != PROMPT_VERSION or
+                                    record.get("prompt_version") != prompt_version or
                                     record.get("identity_sha256") != digest(identity) or
                                     record.get("payload_sha256") != digest(payload) or
                                     record.get("request_sha256") != digest({"identity": identity, "payload": payload}) or
@@ -139,6 +143,12 @@ def replay_episode(catalog, task: dict, trajectory: dict) -> dict:
         fail("collection_failure")
     teacher = collection.get("teacher", {})
     engineering = teacher.get("engineering_only") is not False or teacher.get("kind") != "http_teacher"
+    try:
+        endpoint = urlsplit(teacher.get("identity", {}).get("config", {}).get("base_url", ""))
+        if endpoint.scheme != "https" or endpoint.hostname in (None, "localhost", "127.0.0.1", "::1"):
+            engineering = True
+    except (TypeError, ValueError):
+        engineering = True
     accepted = not failures
     eligible = accepted and not engineering and catalog.split == "train"
     return {"schema_version": 1, "accepted": accepted, "expert_eligible": eligible,

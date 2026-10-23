@@ -1,0 +1,42 @@
+[
+  {
+    "schema_version": 1,
+    "accepted": true,
+    "expert_eligible": true,
+    "engineering_only": false,
+    "task_id": "task-72e45343984d6a3ce84c",
+    "split": "train",
+    "trajectory_sha256": "cf0bb626f7c84c0f5e920f00bf70718d846abf608a1d5f9f9bee1a8cb79c5bba",
+    "replay_state_sha256": "59da0db2afc5393e4a590db170bee997c004aac1a1b7c8552207d9311a454535",
+    "terminal_success": true,
+    "delivery_success": true,
+    "failure_types": [],
+    "details": [],
+    "expert_exclusion": null
+  },
+  {
+    "schema_version": 1,
+    "accepted": false,
+    "expert_eligible": false,
+    "engineering_only": false,
+    "task_id": "task-964a2c1b4a9586d4b9ea",
+    "split": "train",
+    "trajectory_sha256": "6fac71dd8cc4842c6515324149acf5285c97bf8b4fb3cefd23cd4a13121d4ce5",
+    "replay_state_sha256": "bb79d305352a8d8182a71ca3ca6fb699da1e71e0409f08380d16bb8650a70579",
+    "terminal_success": false,
+    "delivery_success": false,
+    "failure_types": [
+      "hard_constraint_failure",
+      "incomplete_delivery"
+    ],
+    "details": [
+      {
+        "code": "hard_constraint_failure"
+      },
+      {
+        "code": "incomplete_delivery"
+      }
+    ],
+    "expert_exclusion": "rejected"
+  }
+]

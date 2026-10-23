@@ -1,0 +1,265 @@
+{
+  "collections": {
+    "teacher-pilot-v1": {
+      "report_sha256": "960490b3905b7f5ca3092676f02dd4a2eb43ed79e13edce4a10aa2d4989818b6",
+      "dataset_revision": "s2-ee9902b8fc67ad1b39533598",
+      "attempted": 2,
+      "replay_accepted": 0,
+      "expert_candidates": 0,
+      "steps": {
+        "task-72e45343984d6a3ce84c": 10,
+        "task-964a2c1b4a9586d4b9ea": 8
+      },
+      "new_api_calls": 18,
+      "new_cost_estimate_usd": 0.0136017,
+      "billed_cost_usd": null,
+      "response_status_counts": {
+        "completed": 18
+      },
+      "prompt_tokens": 41355,
+      "completion_tokens": 996,
+      "actual_tool_attempts": 18,
+      "invalid_tool_attempts": 0,
+      "tool_format_legal_rate": 1.0,
+      "model_response_identifiers": [
+        "deepseek-flash"
+      ],
+      "model_revision": null,
+      "provider_fingerprints_not_immutable_revisions": [
+        "e72d3c7f663d3e1383b00b3884cb4501"
+      ],
+      "failures": [
+        {
+          "schema_version": 1,
+          "accepted": false,
+          "expert_eligible": false,
+          "engineering_only": false,
+          "task_id": "task-72e45343984d6a3ce84c",
+          "split": "train",
+          "trajectory_sha256": "996d43edb405f6e6fb4d57906db48a6d7b9c4741bb121a1a671126b312cfcb7d",
+          "replay_state_sha256": "fe87cb64461c153d150861945edd7eae9c4cbf31ef4a49b03b4b5631a0bb8400",
+          "terminal_success": true,
+          "delivery_success": false,
+          "failure_types": [
+            "incomplete_delivery",
+            "delivery_missing_check",
+            "delivery_missing_evidence",
+            "delivery_unrevealed_requirement"
+          ],
+          "details": [
+            {
+              "code": "incomplete_delivery"
+            },
+            {
+              "code": "delivery_missing_check"
+            },
+            {
+              "code": "delivery_missing_evidence"
+            },
+            {
+              "code": "delivery_unrevealed_requirement"
+            }
+          ],
+          "expert_exclusion": "rejected"
+        },
+        {
+          "schema_version": 1,
+          "accepted": false,
+          "expert_eligible": false,
+          "engineering_only": false,
+          "task_id": "task-964a2c1b4a9586d4b9ea",
+          "split": "train",
+          "trajectory_sha256": "da5f97a965ad4f6bf33162df23e173b3763bd7d020b0de6d4bf4e8d8510190ad",
+          "replay_state_sha256": "4d09aad2a4a30f148ce14fe38286f4b4bf2dc578b59ae2bca34bea5c81ef818a",
+          "terminal_success": false,
+          "delivery_success": false,
+          "failure_types": [
+            "hard_constraint_failure",
+            "incomplete_delivery",
+            "delivery_missing_check",
+            "delivery_missing_evidence",
+            "delivery_unrevealed_requirement"
+          ],
+          "details": [
+            {
+              "code": "hard_constraint_failure"
+            },
+            {
+              "code": "incomplete_delivery"
+            },
+            {
+              "code": "delivery_missing_check"
+            },
+            {
+              "code": "delivery_missing_evidence"
+            },
+            {
+              "code": "delivery_unrevealed_requirement"
+            }
+          ],
+          "expert_exclusion": "rejected"
+        }
+      ]
+    },
+    "teacher-pilot-v2": {
+      "report_sha256": "1fcbe2a09424246fe63eb60e360bc7aaa69089e676351146fcbf2bac8b586b14",
+      "dataset_revision": "s2-f692f21320912220be59d4a5",
+      "attempted": 2,
+      "replay_accepted": 1,
+      "expert_candidates": 1,
+      "steps": {
+        "task-72e45343984d6a3ce84c": 15,
+        "task-964a2c1b4a9586d4b9ea": 39
+      },
+      "new_api_calls": 54,
+      "new_cost_estimate_usd": 0.06184679999999999,
+      "billed_cost_usd": null,
+      "response_status_counts": {
+        "completed": 54
+      },
+      "prompt_tokens": 196516,
+      "completion_tokens": 2410,
+      "actual_tool_attempts": 54,
+      "invalid_tool_attempts": 0,
+      "tool_format_legal_rate": 1.0,
+      "model_response_identifiers": [
+        "deepseek-flash"
+      ],
+      "model_revision": null,
+      "provider_fingerprints_not_immutable_revisions": [
+        "e72d3c7f663d3e1383b00b3884cb4501"
+      ],
+      "failures": [
+        {
+          "schema_version": 1,
+          "accepted": true,
+          "expert_eligible": true,
+          "engineering_only": false,
+          "task_id": "task-72e45343984d6a3ce84c",
+          "split": "train",
+          "trajectory_sha256": "9994dd7d4fb91dc46cfd3d4eac4775def7df7f15124dd8dd482500906c8b88f0",
+          "replay_state_sha256": "59da0db2afc5393e4a590db170bee997c004aac1a1b7c8552207d9311a454535",
+          "terminal_success": true,
+          "delivery_success": true,
+          "failure_types": [],
+          "details": [],
+          "expert_exclusion": null
+        },
+        {
+          "schema_version": 1,
+          "accepted": false,
+          "expert_eligible": false,
+          "engineering_only": false,
+          "task_id": "task-964a2c1b4a9586d4b9ea",
+          "split": "train",
+          "trajectory_sha256": "68f8dce512703bd51a725f5323ffd6b6b4d78ec2cefd8a3ec2bd1c4ccfe77ea9",
+          "replay_state_sha256": "bb79d305352a8d8182a71ca3ca6fb699da1e71e0409f08380d16bb8650a70579",
+          "terminal_success": false,
+          "delivery_success": false,
+          "failure_types": [
+            "hard_constraint_failure",
+            "incomplete_delivery"
+          ],
+          "details": [
+            {
+              "code": "hard_constraint_failure"
+            },
+            {
+              "code": "incomplete_delivery"
+            }
+          ],
+          "expert_exclusion": "rejected"
+        }
+      ]
+    },
+    "teacher-cache-v2": {
+      "report_sha256": "ab8c7b6d2e82aa3b02af82d3379801704e65d26d5c696b84003ed3d3fecf65e7",
+      "dataset_revision": "s2-f692f21320912220be59d4a5",
+      "attempted": 2,
+      "replay_accepted": 1,
+      "expert_candidates": 1,
+      "steps": {
+        "task-72e45343984d6a3ce84c": 15,
+        "task-964a2c1b4a9586d4b9ea": 39
+      },
+      "new_api_calls": 0,
+      "new_cost_estimate_usd": 0.0,
+      "billed_cost_usd": null,
+      "response_status_counts": {
+        "completed": 54
+      },
+      "prompt_tokens": 196516,
+      "completion_tokens": 2410,
+      "actual_tool_attempts": 54,
+      "invalid_tool_attempts": 0,
+      "tool_format_legal_rate": 1.0,
+      "model_response_identifiers": [
+        "deepseek-flash"
+      ],
+      "model_revision": null,
+      "provider_fingerprints_not_immutable_revisions": [
+        "e72d3c7f663d3e1383b00b3884cb4501"
+      ],
+      "failures": [
+        {
+          "schema_version": 1,
+          "accepted": true,
+          "expert_eligible": true,
+          "engineering_only": false,
+          "task_id": "task-72e45343984d6a3ce84c",
+          "split": "train",
+          "trajectory_sha256": "cf0bb626f7c84c0f5e920f00bf70718d846abf608a1d5f9f9bee1a8cb79c5bba",
+          "replay_state_sha256": "59da0db2afc5393e4a590db170bee997c004aac1a1b7c8552207d9311a454535",
+          "terminal_success": true,
+          "delivery_success": true,
+          "failure_types": [],
+          "details": [],
+          "expert_exclusion": null
+        },
+        {
+          "schema_version": 1,
+          "accepted": false,
+          "expert_eligible": false,
+          "engineering_only": false,
+          "task_id": "task-964a2c1b4a9586d4b9ea",
+          "split": "train",
+          "trajectory_sha256": "6fac71dd8cc4842c6515324149acf5285c97bf8b4fb3cefd23cd4a13121d4ce5",
+          "replay_state_sha256": "bb79d305352a8d8182a71ca3ca6fb699da1e71e0409f08380d16bb8650a70579",
+          "terminal_success": false,
+          "delivery_success": false,
+          "failure_types": [
+            "hard_constraint_failure",
+            "incomplete_delivery"
+          ],
+          "details": [
+            {
+              "code": "hard_constraint_failure"
+            },
+            {
+              "code": "incomplete_delivery"
+            }
+          ],
+          "expert_exclusion": "rejected"
+        }
+      ]
+    }
+  },
+  "cache_reproduction_identical": true,
+  "total_new_api_calls": 72,
+  "total_cost_estimate_usd": 0.07544849999999999,
+  "billed_cost_usd": null,
+  "stage_complete": false,
+  "engineering_acceptance": "HTTP, real environment execution, positive/negative filtering and offline reproduction observed",
+  "quality_conclusion": "1/2 accepted under v2 on two training pilot tasks; do not infer general success rate or scale collection yet",
+  "failure_classification": {
+    "v1": [
+      "hidden requirement not clarified",
+      "similar color treated as equal"
+    ],
+    "v2": [
+      "search did not retrieve the legal product",
+      "recommendation violates observed color/weight despite evidence"
+    ]
+  },
+  "next_diagnostic": "Review broad single-term search and actual filter/detail use on training tasks; never change the verifier to accept failed recommendations"
+}

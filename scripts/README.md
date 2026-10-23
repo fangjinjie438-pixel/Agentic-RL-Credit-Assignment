@@ -2,7 +2,7 @@
 
 | 子目录 | 用途 |
 | --- | --- |
-| [data](data/README.md) | S2 固定来源的有界 HTTP Range 元数据抽取；隐藏 GPU，仅一次性来源获取依赖已装 PyArrow |
+| [data](data/README.md) | S2固定来源有界抽取、官方身份候选审计、私有人工材料与独立8B审核；离线材料CPU执行，tokenizer预检使用隐藏GPU的项目环境，真实语义审核另需明确分配UUID |
 | [toolchain](toolchain/README.md) | 项目独立 C/C++ 编译器入口，禁止回落系统 GCC/Toolkit |
 
 | 文件 | 用途与执行 |

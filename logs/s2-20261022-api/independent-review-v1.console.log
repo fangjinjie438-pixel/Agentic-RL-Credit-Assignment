@@ -1,0 +1,8 @@
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:01<00:07,  1.86s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.81s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:05<00:03,  1.77s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:06<00:01,  1.62s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:07<00:00,  1.44s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:07<00:00,  1.57s/it]
+{"task_id": "task-72e45343984d6a3ce84c", "decision": "reject", "input_tokens": 7489, "output_tokens": 362}
+{"task_id": "task-964a2c1b4a9586d4b9ea", "decision": "reject", "input_tokens": 7499, "output_tokens": 399}
+{"task_id": "task-9e9c41995b5779485caa", "decision": "reject", "input_tokens": 7761, "output_tokens": 328}
+{"task_id": "task-9e9c41995b5779485caa-cf-018340a0", "decision": "reject", "input_tokens": 7822, "output_tokens": 444}
+{"task_id": "task-ac53e878d2c50893225c", "decision": "reject", "input_tokens": 7764, "output_tokens": 319}
+{"task_id": "task-ac53e878d2c50893225c-cf-5ee29266", "decision": "reject", "input_tokens": 7822, "output_tokens": 519}
+{"task_id": "task-eab64e1f7a0884441a5f", "decision": "reject", "input_tokens": 7490, "output_tokens": 423}

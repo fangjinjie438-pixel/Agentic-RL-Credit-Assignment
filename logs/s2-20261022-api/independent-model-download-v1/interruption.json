@@ -1,0 +1,6 @@
+{
+  "at": "2026-10-22T04:51:43+08:00",
+  "own_download_pid": 3677323,
+  "signal": "SIGTERM",
+  "reason": "Official proxy transport slow; explicitly interrupted own downloader to resume same bytes via verified mirror direct transport"
+}

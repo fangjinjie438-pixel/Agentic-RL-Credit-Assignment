@@ -1,6 +1,6 @@
 # S2 来源与教师文档核验
 
-核验日期：2026-10-22（Asia/Shanghai）。本轮取得 12 条真实商品原始 metadata 摘录，完成离线归一化与只读 SQLite 验证。教师端只查官方文档，**没有调用教师 API**，没有下载模型或创建 CUDA 上下文。数据不因归一化成功成为已通过人工事实审核或可发布的正式训练集。
+核验日期：2026-10-22（Asia/Shanghai）。来源获取时取得12条真实商品摘录、完成离线归一化与只读SQLite验证；当时只查教师文档。用户配置密钥后的接续已实际调用DeepSeek两批共72次，v2接收1/2，缓存重现一致，估算0.0754485 USD、账单未知。原始响应/usage在 `logs/s2-20261022-api/`，独立8B状态见PROGRESS。数据不因归一化或API执行成功成为已通过人工审核的正式训练集。
 
 ## 固定真实数据及字节证据
 
@@ -44,7 +44,9 @@ EComAgentBench 固定 [MIT LICENSE](https://raw.githubusercontent.com/Morizeyao/
 
 [官方思考模式说明](https://api-docs.deepseek.com/guides/thinking_mode/) 说明 thinking 模式的工具回合必须传回完整 `reasoning_content`；本轮建议关闭 thinking，降低采集与后续 action-only 监督的协议复杂度。严格模式需独立 Beta base URL 和受限 JSON schema，本轮不默认为其已验证；本地 S1 协议仍强制校验教师生成的工具参数。
 
-只核文档不等于账号实际可用：未执行 `/models`、未发生成请求、没有费用与模型能力测量。别名可能漂移，官方当前展示版本不能作为 API 端不可变 snapshot ID；真实采集必须保存请求配置、日期、响应 model、原始响应、usage、收费估计与提示哈希，复现以缓存产物优先。价格/工具 HTML 原样存于 `logs/s2-source-audit/deepseek-{pricing,tools}.html`，SHA256 分别 `b856a6e93fa4793ecc8f3fd03a01bb7d8f7572f78a4739da8ce6dbdb09328d66`、`75e870459ba551f018193f65dfe769eb95ec1d7b72523b319370fbecd26faf30`。
+来源获取时未执行 `/models` 或生成；接续生成现已确认账号可调用 `deepseek-flash`，原始响应 model 同名。别名仍可能漂移，provider system_fingerprint只是另存的观测值，不是已认证的不可变revision；actual model_revision保持null。请求配置、日期、原始响应、usage、收费估计和提示哈希均保留，离线复现优先缓存。价格/工具 HTML 原样存于 `logs/s2-source-audit/deepseek-{pricing,tools}.html`，SHA256 分别 `b856a6e93fa4793ecc8f3fd03a01bb7d8f7572f78a4739da8ce6dbdb09328d66`、`75e870459ba551f018193f65dfe769eb95ec1d7b72523b319370fbecd26faf30`。
+
+缺 Brand 三目标的接续审计只投影 target_product 的身份字段；`logs/s2-official-identity-audit-20261022-v2/identity-audit.json` 保存逐项原字段和佐证。`fixtures/s2/official-exclusions-candidate.json` 增加 Alphaline、EtherealKiller、Reolink Digital 三个保守排除别名，原始unknown_family_product_ids和metadata_complete=false保留；当前s2.json使用该候选，新数据revision `s2-f692f21320912220be59d4a5`。它没有用官方任务表达构建训练需求。
 
 ## 失败与恢复记录
 

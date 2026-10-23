@@ -1,0 +1,897 @@
+{
+  "checks": [
+    {
+      "name": "160_tests_zero_failures_errors_skips",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/procure_rl/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/procure_rl/__main__.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/procure_rl/config.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/procure_rl/data/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/procure_rl/data/builder.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/procure_rl/data/independent.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/procure_rl/data/pipeline.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/procure_rl/data/replay.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/procure_rl/data/review.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/procure_rl/data/review_material.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/procure_rl/data/sources.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/procure_rl/data/split.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/procure_rl/data/teacher.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/procure_rl/doctor.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/procure_rl/env/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/procure_rl/env/catalog.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/procure_rl/env/protocol.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/procure_rl/env/session.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/procure_rl/env/smoke.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/procure_rl/env/upstream.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/procure_rl/env/verifier.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/procure_rl/environment_probe.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/procure_rl/gpu_probe.py",
+      "passed": true
+    },
+    {
+      "name": "source_sha256:src/procure_rl/runtime.py",
+      "passed": true
+    },
+    {
+      "name": "test_sha256:tests/test_config_runtime.py",
+      "passed": true
+    },
+    {
+      "name": "test_sha256:tests/test_data_builder.py",
+      "passed": true
+    },
+    {
+      "name": "test_sha256:tests/test_data_independent.py",
+      "passed": true
+    },
+    {
+      "name": "test_sha256:tests/test_data_review_material.py",
+      "passed": true
+    },
+    {
+      "name": "test_sha256:tests/test_data_sources.py",
+      "passed": true
+    },
+    {
+      "name": "test_sha256:tests/test_data_split.py",
+      "passed": true
+    },
+    {
+      "name": "test_sha256:tests/test_data_teacher.py",
+      "passed": true
+    },
+    {
+      "name": "test_sha256:tests/test_doctor.py",
+      "passed": true
+    },
+    {
+      "name": "test_sha256:tests/test_environment_probe.py",
+      "passed": true
+    },
+    {
+      "name": "test_sha256:tests/test_gpu_probe.py",
+      "passed": true
+    },
+    {
+      "name": "test_sha256:tests/test_official_identity_audit.py",
+      "passed": true
+    },
+    {
+      "name": "test_sha256:tests/test_session.py",
+      "passed": true
+    },
+    {
+      "name": "test_sha256:tests/test_source_coverage.py",
+      "passed": true
+    },
+    {
+      "name": "test_sha256:tests/test_upstream.py",
+      "passed": true
+    },
+    {
+      "name": "test_sha256:tests/test_verifier.py",
+      "passed": true
+    },
+    {
+      "name": "fixture_sha256:fixtures/s1/catalog.json",
+      "passed": true
+    },
+    {
+      "name": "fixture_sha256:fixtures/s1/expectations.json",
+      "passed": true
+    },
+    {
+      "name": "fixture_sha256:fixtures/s1/tasks.json",
+      "passed": true
+    },
+    {
+      "name": "fixture_sha256:fixtures/s2/amazon-electronics.json",
+      "passed": true
+    },
+    {
+      "name": "fixture_sha256:fixtures/s2/official-exclusions-candidate.json",
+      "passed": true
+    },
+    {
+      "name": "fixture_sha256:fixtures/s2/official-exclusions.json",
+      "passed": true
+    },
+    {
+      "name": "tested_config_unchanged",
+      "passed": true
+    },
+    {
+      "name": "current_dataset_revision",
+      "passed": true
+    },
+    {
+      "name": "actual_small_counts_preserved",
+      "passed": true
+    },
+    {
+      "name": "one_expert_candidate_one_quality_rejection",
+      "passed": true
+    },
+    {
+      "name": "cached_replay_no_new_billing",
+      "passed": true
+    },
+    {
+      "name": "cached_actual_dialogue_and_state:task-72e45343984d6a3ce84c",
+      "passed": true
+    },
+    {
+      "name": "cached_actual_dialogue_and_state:task-964a2c1b4a9586d4b9ea",
+      "passed": true
+    },
+    {
+      "name": "72_requests_all_completed",
+      "passed": true
+    },
+    {
+      "name": "provisional_teacher_visible_and_budget_respected",
+      "passed": true
+    },
+    {
+      "name": "teacher_actual_revision_not_invented",
+      "passed": true
+    },
+    {
+      "name": "official_model_content_verified",
+      "passed": true
+    },
+    {
+      "name": "real_allocated_gpu_inference_performed",
+      "passed": true
+    },
+    {
+      "name": "all_seven_model_attempts_accounted_for",
+      "passed": true
+    },
+    {
+      "name": "formal_release_withheld_without_fake_human_approval",
+      "passed": true
+    },
+    {
+      "name": "model_disagreements_queued_for_real_human",
+      "passed": true
+    },
+    {
+      "name": "review_material_bound_to_current_dataset",
+      "passed": true
+    },
+    {
+      "name": "module_description:src/procure_rl/runtime.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:src/procure_rl/runtime.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:src/procure_rl/config.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:src/procure_rl/config.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:src/procure_rl/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:src/procure_rl/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:src/procure_rl/environment_probe.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:src/procure_rl/environment_probe.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:src/procure_rl/doctor.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:src/procure_rl/doctor.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:src/procure_rl/gpu_probe.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:src/procure_rl/gpu_probe.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:src/procure_rl/__main__.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:src/procure_rl/__main__.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:src/procure_rl/env/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:src/procure_rl/env/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:src/procure_rl/env/verifier.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:src/procure_rl/env/verifier.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:src/procure_rl/env/upstream.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:src/procure_rl/env/upstream.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:src/procure_rl/env/session.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:src/procure_rl/env/session.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:src/procure_rl/env/catalog.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:src/procure_rl/env/catalog.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:src/procure_rl/env/protocol.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:src/procure_rl/env/protocol.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:src/procure_rl/env/smoke.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:src/procure_rl/env/smoke.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:src/procure_rl/data/review_material.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:src/procure_rl/data/review_material.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:src/procure_rl/data/independent.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:src/procure_rl/data/independent.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:src/procure_rl/data/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:src/procure_rl/data/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:src/procure_rl/data/review.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:src/procure_rl/data/review.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:src/procure_rl/data/builder.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:src/procure_rl/data/builder.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:src/procure_rl/data/teacher.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:src/procure_rl/data/teacher.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:src/procure_rl/data/replay.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:src/procure_rl/data/replay.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:src/procure_rl/data/sources.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:src/procure_rl/data/sources.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:src/procure_rl/data/split.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:src/procure_rl/data/split.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:src/procure_rl/data/pipeline.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:src/procure_rl/data/pipeline.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:scripts/run_cpu_tests.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:scripts/run_cpu_tests.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:scripts/with_proxy.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:scripts/with_proxy.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:scripts/data/run_s2_independent_review.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:scripts/data/run_s2_independent_review.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:scripts/data/audit_source_coverage.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:scripts/data/audit_source_coverage.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:scripts/data/fetch_amazon_pilot.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:scripts/data/fetch_amazon_pilot.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:scripts/data/prepare_s2_review.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:scripts/data/prepare_s2_review.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:scripts/data/fetch_qwen3_review_model.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:scripts/data/fetch_qwen3_review_model.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:scripts/data/audit_official_identities.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:scripts/data/audit_official_identities.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:tests/test_data_teacher.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:tests/test_data_teacher.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:tests/test_data_independent.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:tests/test_data_independent.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:tests/test_data_builder.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:tests/test_data_builder.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:tests/test_doctor.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:tests/test_doctor.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:tests/test_gpu_probe.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:tests/test_gpu_probe.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:tests/test_official_identity_audit.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:tests/test_official_identity_audit.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:tests/test_data_sources.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:tests/test_data_sources.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:tests/test_session.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:tests/test_session.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:tests/test_data_split.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:tests/test_data_split.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:tests/test_data_review_material.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:tests/test_data_review_material.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:tests/test_upstream.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:tests/test_upstream.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:tests/test_source_coverage.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:tests/test_source_coverage.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:tests/test_verifier.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:tests/test_verifier.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:tests/test_config_runtime.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:tests/test_config_runtime.py",
+      "passed": true
+    },
+    {
+      "name": "module_description:tests/test_environment_probe.py",
+      "passed": true
+    },
+    {
+      "name": "documented_code:tests/test_environment_probe.py",
+      "passed": true
+    },
+    {
+      "name": "credential_not_present_in_new_logs_or_cache",
+      "passed": true
+    },
+    {
+      "name": "document_link:README.md:PLAN.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:README.md:AGENTS.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:README.md:PROGRESS.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:README.md:docs/stages/S2.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:README.md:docs/archive/README.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:README.md:PROGRESS.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:README.md:configs/s2-teacher.json",
+      "passed": true
+    },
+    {
+      "name": "document_link:README.md:docs/stages/S2.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:README.md:docs/stages/S0.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:README.md:docs/ecom-upstream-audit.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:README.md:docs/stages/S0.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:README.md:requirements/README.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:README.md:docs/dependency-audit.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:README.md:requirements/README.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:README.md:scripts/README.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:README.md:src/README.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:README.md:tests/README.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:README.md:configs/README.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:README.md:fixtures/README.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:README.md:third_party/README.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:README.md:requirements/README.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:README.md:scripts/README.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:README.md:docs/README.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:README.md:logs/README.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:README.md:docs/stages/S0.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:README.md:docs/stages/S1.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:README.md:docs/stages/S2.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:PROGRESS.md:configs/s2-teacher.json",
+      "passed": true
+    },
+    {
+      "name": "document_link:PROGRESS.md:docs/s2-source-audit.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:PROGRESS.md:logs/s2-20261022/tests-v1/unittest.log",
+      "passed": true
+    },
+    {
+      "name": "document_link:PROGRESS.md:logs/s2-20261022/build-real-final/report.json",
+      "passed": true
+    },
+    {
+      "name": "document_link:PROGRESS.md:logs/s2-20261022/collect-real-engineering-final/report.json",
+      "passed": true
+    },
+    {
+      "name": "document_link:PROGRESS.md:logs/s2-20261022/teacher-credentials-final/report.json",
+      "passed": true
+    },
+    {
+      "name": "document_link:PROGRESS.md:logs/s2-20261022/release-audit-final/release-decision.json",
+      "passed": true
+    },
+    {
+      "name": "document_link:PROGRESS.md:docs/stages/S2.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:PROGRESS.md:logs/s1-20261022/acceptance-final/report.json",
+      "passed": true
+    },
+    {
+      "name": "document_link:PROGRESS.md:logs/s1-20261022/tests-final/unittest.log",
+      "passed": true
+    },
+    {
+      "name": "document_link:PROGRESS.md:docs/ecom-upstream-audit.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:PROGRESS.md:docs/stages/S1.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:PROGRESS.md:PLAN.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:PROGRESS.md:docs/archive/README.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:PROGRESS.md:AGENTS.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:PROGRESS.md:docs/stages/S0.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:PROGRESS.md:logs/s0-20261022T0145+0800/",
+      "passed": true
+    },
+    {
+      "name": "document_link:PROGRESS.md:docs/stages/S0.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:PROGRESS.md:requirements/validation-s0.json",
+      "passed": true
+    },
+    {
+      "name": "document_link:PROGRESS.md:requirements/linux-py311-cu126-s0.lock",
+      "passed": true
+    },
+    {
+      "name": "document_link:PROGRESS.md:requirements/toolchain-s0.lock",
+      "passed": true
+    },
+    {
+      "name": "document_link:PROGRESS.md:requirements/installed-snapshot.txt",
+      "passed": true
+    },
+    {
+      "name": "document_link:PROGRESS.md:requirements/validation-s0.json",
+      "passed": true
+    },
+    {
+      "name": "document_link:docs/stages/S2.md:../../configs/s2-teacher.json",
+      "passed": true
+    },
+    {
+      "name": "document_link:docs/stages/S2.md:../s2-source-audit.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:docs/stages/S2.md:../../src/procure_rl/data/README.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:docs/stages/S2.md:../../scripts/data/README.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:docs/stages/S2.md:../../PROGRESS.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:src/procure_rl/data/README.md:../../../docs/stages/S2.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:src/procure_rl/data/README.md:../../../PROGRESS.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:src/procure_rl/data/README.md:../../../docs/s2-source-audit.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:scripts/data/README.md:../../src/procure_rl/data/README.md",
+      "passed": true
+    },
+    {
+      "name": "document_link:tests/README.md:../logs/s1-20261022/acceptance-final/report.json",
+      "passed": true
+    },
+    {
+      "name": "document_link:tests/README.md:../logs/s2-20261022-api/tests-final-v3/run.json",
+      "passed": true
+    },
+    {
+      "name": "document_link:tests/README.md:../logs/s2-20261022/tests-v1/run.json",
+      "passed": true
+    },
+    {
+      "name": "document_link:tests/README.md:../docs/stages/S0.md",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "checks_passed": 220,
+  "checks_total": 220,
+  "stage_complete": false,
+  "human_review_deferred_by_user": true,
+  "formal_release": "withheld",
+  "data_revision": "s2-f692f21320912220be59d4a5",
+  "teacher_new_api_calls": 72,
+  "teacher_cost_estimate_usd": 0.07544849999999997,
+  "billed_cost_usd": null,
+  "credential_leak_paths": [],
+  "next_stage_started": false,
+  "checkpoint": null
+}

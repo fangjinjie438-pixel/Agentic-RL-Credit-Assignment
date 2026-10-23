@@ -11,6 +11,8 @@
 | `teacher.py` | `collect_episode` 只把初始 observation、工具 schema 与已见工具结果送给策略，实际执行 S1 工具并保存公开对话/结构化轨迹。`ScriptedTeacher` 是工程策略；`OpenAIHTTPTeacher` 支持受预算限制的 HTTP 与持久请求缓存，保留原响应/usage/估算成本和失败，无自动重发不确定请求 | S2；collect 入口选择 engineering/API/cache-only；脚本轨迹不作为专家训练示范 |
 | `replay.py` | `replay_episode` 输入独立 split Catalog、私有任务及采集轨迹，重新实际执行每个动作，比较身份、公开对话、observation、事件、奖励、终局与状态哈希；输出接收/拒收 ledger。真实 HTTP 专家资格还需请求/响应证据一致；不信任轨迹中自报成功 | S2；collect 逐条调用，audit 再次调用；离线不访问教师 |
 | `review.py` | 从任务/商品/词面语义候选生成待人工/家族/独立模型审核队列；`release_gate` 输入真实回放 ledger 和绑定内容哈希的审核记录，输出 ready/withheld 原因，不填造人工或模型签核 | S2；build/collect/audit 调用 |
+| `review_material.py` | 从已核验数据包生成中文人工审阅材料、完整合法解/原句/同根反事实、空白签核表和未执行的独立模型输入；材料含私有答案，只能交审核者，不能交执行教师/学生 | S2；`scripts/data/prepare_s2_review.py` 调用；导出不代表审核完成 |
+| `independent.py` | 从train/dev私有审核材料生成完整task/hash绑定prompt，严格解析全部七项语义检查与accept/reject，任何不确定/失败要求reject；拒绝sealed/official表达、重复key和矛盾决定。不导入模型/网络/GPU | S2；`scripts/data/run_s2_independent_review.py`实际执行器调用，GPU证据与人工签核分别记录 |
 | `pipeline.py` | `build_dataset` 将原始摘录按source_row_index绑定到核验SHA的rows.json，写可追溯数据包及manifest；`load_dataset` 核验产物哈希，采集只加载 train/dev、仅遍历 train；`collect_dataset` 分开工程与专家产物；`audit_release` 校验集合身份并重新回放后评估审核与正式发布门槛 | S2；CLI `s2-build`、`s2-collect`、`s2-audit` |
 
 ## CPU 开发与学校 Linux 命令
@@ -30,9 +32,11 @@ build 预期输出 `report.json`、`run.json/run.log`、`dataset/manifest.json`�
 
 ## 暂定教师与真实采集
 
+真实采集 v1 暴露未澄清隐藏需求与相近值误判，当前通用提示为 `procure-teacher-visible-v2`、API策略 `s2-expert-tool-v2`；主动澄清常见采购维度并严格按结构化值判断。提示不接收私有约束或合法解，验证标准不变。旧 v1 提示保留注册，历史轨迹仍能独立回放。整个缓存目录共用请求/费用预留上限，改提示/模型/策略不会重置预算。
+
 **`configs/s2-teacher.json` 是用户授权 Codex 暂选的默认建议，可直接查看修改；尚未以本项目实测确认最优。** 默认 `deepseek-flash`、`thinking: {type: disabled}`，源于2026-10-22官方文档。`expected_model_revision` 记录文档当时映射 `DeepSeek-V4.1-Flash-1017`，它是可变别名说明；真实不可变 `model_revision` 仍为 null，不能用文档版本冒充实际服务端固定 revision。依据、价格和原始 HTML 哈希见 [来源审计](../../../docs/s2-source-audit.md)。
 
-密钥单独放项目 `.secrets/deepseek_api_key`（已忽略），配置只保存 `key_file` 路径；不得把密钥放进配置、命令、日志或聊天。HTTP Authorization 仅在内存构造，日志只留脱敏请求/响应。真实采集命令如下，**本轮尚未运行真实教师**：
+密钥单独放项目 `.secrets/deepseek_api_key`（已忽略），配置只保存 `key_file` 路径；不得把密钥放进配置、命令、日志或聊天。HTTP Authorization 仅在内存构造，日志只留脱敏请求/响应。**已实际执行两批真实教师，共72请求；v2为1/2回放接收、离线缓存重现一致且新请求0**。真实采集命令如下：
 
 ```bash
 PYTHONPATH=src .venv-cpu/bin/python -m procure_rl s2-collect --config configs/s2.json --teacher-config configs/s2-teacher.json --dataset logs/my-s2-build/dataset --execute-api --limit 2 --cache-directory logs/my-s2-teacher-cache --output logs/my-s2-api
@@ -48,7 +52,21 @@ PYTHONPATH=src .venv-cpu/bin/python -m procure_rl s2-collect --config configs/s2
 
 ## 审核与未完成门槛
 
-`--reviews` 是可选 JSON 文件，含 `human_reviews`、`identity_reviews`、`independent_reviews` 三个列表；它应保存实际签核，不能把 pending 队列直接改成通过。人工任务签核需 `task_id/task_sha256/role=human/reviewer/reviewed_at/decision`，家族签核需 `product_id/product_sha256/family/role=human/reviewer/reviewed_at/decision`；哈希必须对应当前数据包。独立模型审核需绑定任务哈希、`status=completed`、`decision` 和真实 `model_revision`，保留独立模型身份与原始结果。人工reject或冲突保持withheld；模型reject须有实际人工裁决并标记 `adjudicates_model_disagreement`。
+先导出可读材料再做真实人工审核。默认仅 train/dev；封存任务需显式 `--include-sealed-test`，仅用于数据质量审核，不用于模型/奖励选择。导出会核验数据包库存哈希并保存命令、机器、解释器、数据/代码/输出哈希。输出 `review.md`、`review-material.json`、`reviews-template.json`、`independent-inputs.jsonl` 与运行清单。空白签核表不能通过审计；独立模型输入仍标 `not_run`。
+
+```bash
+PYTHONPATH=src .venv-cpu/bin/python scripts/data/prepare_s2_review.py --dataset logs/my-s2-build/dataset --output logs/my-s2-review-material
+```
+
+PLAN 的 S2 顺序是先小规模端到端验收，再扩规模。小 pilot 的代码/真实教师回放可以单独报告；至少200条人工抽检及下述门槛继续约束正式数据发布，不因 pilot 不足200而声称已经满足，也不通过重复记录补数。
+
+`--reviews` 是可选 JSON 文件，含 `human_reviews`、`identity_reviews`、`independent_reviews` 三个列表；它应保存实际签核，不能把 pending 队列直接改成通过。人工任务签核需 `task_id/task_sha256/role=human/reviewer/reviewed_at/decision`，家族签核需 `product_id/product_sha256/family/role=human/reviewer/reviewed_at/decision`；哈希必须对应当前数据包。人工reject或冲突保持withheld；模型reject须有实际人工裁决并标记 `adjudicates_model_disagreement`。
+
+独立模型审核必须保存 `task_id/task_sha256/status=completed/decision`、`model`、真实非 unknown 的 `model_revision`、带时区 `reviewed_at`、`prompt_version`、`prompt`、`prompt_sha256`、`raw_response`、`response_sha256`。`prompt` 为含完整 `task` 与对应 `task_sha256` 的结构化对象；两份 SHA 使用 `procure_rl.env.catalog.digest` 的规范 JSON 算法，不能用不同缩进文件的 byte SHA 替代。原始文件路径/byte SHA 可另行保留。`independence_basis={"method":"different_model","generation_models":[实际生成教师模型标识]}` 声明复核模型与生成模型不同，同名模型拒收。缺字段、任务不符、原始输入/输出 SHA 不符或不带时区的记录不计入审核。
+
+发布门槛会用 `independent.parse_independent_response` 重新解析真实 runner 的 `raw_response.generated_text`；也支持含完整标准响应的原始JSON字符串或直接响应对象。解析出的 `decision/checks/reasons` 必须与审核记录完全一致，七项检查和accept/reject关系沿用严格解析规则。无法解释的raw对象、token上限截断、修改决定/检查/理由但保留原始生成文本的记录均拒收；只匹配原响应SHA不足以通过。
+
+这些检查只验证模型身份声明不同及原始内容绑定，不能自动认证外部执行、判断不同别名是否其实同一模型、或保证原始响应判读正确。发布者仍须审计实际模型 revision、调用日志/本地执行记录和原始响应；不能用补字段的方式制造“独立”审核。
 
 ```bash
 PYTHONPATH=src .venv-cpu/bin/python -m procure_rl s2-audit --dataset logs/my-s2-build/dataset --collection logs/my-s2-api --reviews logs/my-s2-human-reviews.json --output logs/my-s2-release-audit
@@ -56,6 +74,6 @@ PYTHONPATH=src .venv-cpu/bin/python -m procure_rl s2-audit --dataset logs/my-s2-
 
 audit 输出重新计算的 `replay-ledger.json`、`release-decision.json` 与报告。审计 `status=passed` 仅表示审计过程完成，仍需查看 `ready_for_formal_training` 和 `stage_complete`；`status=withheld` 的发布决定不产生正式可用专家列表。门槛包括官方家族/近重复元数据完整、商品家族人工确认、至少200条有效人工任务审核、所有分歧裁决、独立语义复核及真实教师成功轨迹回放与人工批准，不能用工程脚本或词面语义候选替代。
 
-当前官方索引已覆盖可得的目标 ID/品牌/明确型号/标题，并按整品牌保守排除；3个目标缺品牌，`metadata_complete=false`。真实来源只是小量历史研究 metadata，未进行正式200条人工抽检；学校独立8B语义复核与真实API教师采集尚未执行，均独立保留未完成状态。S2离线构建/真实SQLite回放无需GPU；未来8B复核必须另记录实际获分配UUID、模型revision和执行证据。
+当前官方索引按整品牌保守排除，另加入3个缺 Brand 目标有 store/Manufacturer/title 佐证的候选别名；`metadata_complete=false`，不冒充人工身份确认。真实来源只是小量历史研究 metadata，未进行正式200条人工抽检。真实API教师已执行，学校独立8B状态与正式全量测试见PROGRESS。S2离线构建/真实SQLite回放无需GPU；8B复核另记录实际获分配UUID、模型revision和执行证据。
 
 常见错误：`ModuleNotFoundError` 检查根目录和 `PYTHONPATH=src`；哈希不符从固定输入创建新数据包，不绕过校验；无任务先看 rejections 和 quarantine，不擅自去掉排除或放宽事实；输出目录存在换新目录；API失败检查脱敏journal和预算，不自动重复潜在付费请求。CPU全量结果以 PROGRESS 的正式测试日志为准，loopback HTTP协议测试需要执行上下文允许本地临时socket，不访问外部教师。

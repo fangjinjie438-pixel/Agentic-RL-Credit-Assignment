@@ -13,12 +13,17 @@
 | `test_upstream.py` | 在独立虚构 SQLite 上实际执行固定上游九个工具，检查 FTS 搜索、过滤、详情/评论/推荐、只读无 sidecar、原生澄清快照与并发隔离，以及源码篡改和未提交 WAL 拒绝；无工具 mock，输出 unittest 结果 | S1 | `PYTHONPATH=src .venv-cpu/bin/python -m unittest discover -s tests -p 'test_upstream.py' -v` |
 | `test_verifier.py` | 输入小型任务、事实、证据和独立预期，检查多合法解、分项硬约束、事实终局奖励与证据交付分离、伪造/重复证据、布尔/数值类型、首次覆盖预算与防刷分、输入不变；纯 CPU 数值验证 | S1 | `PYTHONPATH=src .venv-cpu/bin/python -m unittest discover -s tests -p 'test_verifier.py' -v` |
 | `test_data_sources.py` | 检查S2原始字段/原句/哈希、单位/币种/冲突拒收，12条真实pilot归一化→只读SQLite与官方660个ID及可得品牌/型号/标题quarantine边界；无网络/API/GPU | S2 | `PYTHONPATH=src .venv-cpu/bin/python -m unittest discover -s tests -p 'test_data_sources.py' -v` |
+| `test_official_identity_audit.py` | 5项合成目标元数据检查：store/Manufacturer/title佐证、保守别名、原Brand缺失和人工门槛保留、字段投影及去重；不访问官方任务表达、网络/API/GPU | S2 | `PYTHONPATH=src .venv-cpu/bin/python -m unittest discover -s tests -p 'test_official_identity_audit.py' -v` |
+| `test_source_coverage.py` | 8项合成元数据检查：严格字段/单位/颜色、禁止标题补事实、Unicode raw hash、配件范围排除、保留来源及官方家族整簇隔离；诊断不产生人工签核/任务/发布 | S2 | `PYTHONPATH=src .venv-cpu/bin/python -m unittest discover -s tests -p 'test_source_coverage.py' -v` |
 | `test_data_split.py` | 14项家族/型号/近重复连通、MinHash/Jaccard边界、输入顺序/种子稳定、官方整簇隔离、任务兄弟与证据split审计、语义候选限制 | S2 | `PYTHONPATH=src .venv-cpu/bin/python -m unittest discover -s tests -p 'test_data_split.py' -v` |
-| `test_data_teacher.py` | 16项观测隐私、真实本地HTTP请求/响应/工具ID、缓存/预算/恢复、原始错误响应去密、未完成计费请求拒重试、回放篡改拒收与工程隔离；外部教师未调用 | S2 | `PYTHONPATH=src .venv-cpu/bin/python -m unittest discover -s tests -p 'test_data_teacher.py' -v` |
+| `test_data_teacher.py` | 18项观测隐私、本地HTTP请求/响应/工具ID、缓存/跨策略预算、历史提示恢复、原始错误响应去密、未完成计费请求拒重试、回放篡改拒收与loopback工程隔离；测试不调用外部教师 | S2 | `PYTHONPATH=src .venv-cpu/bin/python -m unittest discover -s tests -p 'test_data_teacher.py' -v` |
 | `test_data_builder.py` | 13项独立可行解/反事实/改写、字面泄漏、全split解集、审核拒收与冲突、raw原始行绑定、封存开关，以及真实来源→SQLite→观测脚本→回放→发布门槛端到端 | S2 | `PYTHONPATH=src .venv-cpu/bin/python -m unittest discover -s tests -p 'test_data_builder.py' -v` |
+| `test_data_review_material.py` | 5项真实临时数据包→私有审阅材料导出；验证默认封存隔离、完整合法解/原句/兄弟哈希、空白表不能冒充审核、官方任务拒收，以及独立复核证据完整性；真实runner格式`generated_text`和原始字符串必须重新解析，改记录决定/检查/理由、无法解析或截断raw均拒收。不访问外部教师/模型/GPU | S2 | `PYTHONPATH=src .venv-cpu/bin/python -m unittest discover -s tests -p 'test_data_review_material.py' -v` |
 | `test_session.py` | 使用 `fixtures/s1` 构建真实 split SQLite，并执行原生工具/会话；与独立规格真值矩阵比较七个候选，验证隐藏信息、快照重放/篡改/跨配置拒绝、并发隔离、只读检索、预算、非法/深层 JSON/非有限输入、防刷分与结构化轨迹 | S1 | `PYTHONPATH=src .venv-cpu/bin/python -m unittest discover -s tests -p 'test_session.py' -v` |
 
 在项目根目录执行所有当前测试：
+
+`test_data_independent.py`：4项私有语义审核prompt完整任务/哈希与train/dev边界、严格JSON/重复key/检查与决定一致性；使用合成任务和模型字符串，不下载模型/访问API/GPU。CPU命令：`PYTHONPATH=src .venv-cpu/bin/python -m unittest discover -s tests -p test_data_independent.py -v`。
 
 ```bash
 PYTHONPATH=src .venv-cpu/bin/python -m unittest discover -s tests -v
@@ -33,7 +38,9 @@ PYTHONPATH=src .venv-cpu/bin/python -m procure_rl s1-smoke --config configs/s1.j
 
 **实际已验证：**[S1 验收报告](../logs/s1-20261022/acceptance-final/report.json) 为 27/27 项通过，覆盖真实 CPU SQLite/上游工具/项目环境。当前代码包括 S0 原 39 项与 S1 新 43 项（upstream 5、verifier 21、session 17），全量最终通过、失败和跳过数量以根 `PROGRESS.md` 的正式日志为准。该验收使用协作 agent 编写并逐项核对的虚构规格和独立预期矩阵，没有额外人工签核，也不是模型任务成功率。
 
-S2 最终全量结果：**136项，0失败/错误/跳过**，S0/S1原82 + S2新增54（sources11、split14、teacher16、builder13）。原始日志与runner/测试/fixture/source哈希在 [tests-v1](../logs/s2-20261022/tests-v1/run.json)。本地HTTP测试需执行上下文允许临时loopback socket；无外部模型/教师/GPU。两种来源的最终工程脚本各2/2通过真实回放、专家候选0，详见S2/PROGRESS；真实教师和人工/8B审核仍未执行。
+S2接续最终全量结果：**160项，0失败/错误/跳过**，原始日志与最终runner/测试/fixture/source哈希在 [tests-final-v3](../logs/s2-20261022-api/tests-final-v3/run.json)。覆盖18项教师边界、5项审阅材料/原始模型输出一致性、4项独立审核提示/严格JSON、5项官方身份审计、8项来源覆盖，以及既有环境/构建测试；不调用真实教师或GPU。真实API和独立模型执行另有集成日志，人工签核仍由用户稍后完成。早期151/160回归及16K上下文超限后的修复均留存，不覆盖旧run。
+
+S2首轮历史全量136项（82+54）在 [tests-v1](../logs/s2-20261022/tests-v1/run.json)。当时真实教师尚缺密钥；该历史状态不能代表接续。loopback HTTP需要执行上下文允许临时socket，两种工程来源各2/2真实回放、专家候选0等证据见S2/PROGRESS。
 
 上面的命令只使用项目独立 `.venv-cpu`；独立解释器与环境创建方式见根目录 README，禁止替换为系统 `python3`。
 实际执行证据以根目录 `PROGRESS.md` 和其中的日志位置为准；新规则前的系统工具探测若被保留，只能标为历史证据。

@@ -1,0 +1,20 @@
+test_ambiguous_color_and_mass_units_are_rejected (test_source_coverage.SourceCoverageTests.test_ambiguous_color_and_mass_units_are_rejected) ... ok
+test_diagnostics_separate_complete_scope_from_quarantine_and_formal_release (test_source_coverage.SourceCoverageTests.test_diagnostics_separate_complete_scope_from_quarantine_and_formal_release) ... FAIL
+test_misclassified_parts_are_not_office_device_candidates (test_source_coverage.SourceCoverageTests.test_misclassified_parts_are_not_office_device_candidates) ... ok
+test_price_precision_zero_weight_and_placeholder_brand_rejected (test_source_coverage.SourceCoverageTests.test_price_precision_zero_weight_and_placeholder_brand_rejected) ... ok
+test_record_retains_raw_hash_original_quotes_and_row_index (test_source_coverage.SourceCoverageTests.test_record_retains_raw_hash_original_quotes_and_row_index) ... ok
+test_title_color_and_store_brand_are_never_substituted_for_missing_fields (test_source_coverage.SourceCoverageTests.test_title_color_and_store_brand_are_never_substituted_for_missing_fields) ... ok
+test_unicode_raw_hash_matches_source_normalizer_and_not_task_hash (test_source_coverage.SourceCoverageTests.test_unicode_raw_hash_matches_source_normalizer_and_not_task_hash) ... ok
+
+======================================================================
+FAIL: test_diagnostics_separate_complete_scope_from_quarantine_and_formal_release (test_source_coverage.SourceCoverageTests.test_diagnostics_separate_complete_scope_from_quarantine_and_formal_release)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/fangjinjie/project/credit_assign/tests/test_source_coverage.py", line 106, in test_diagnostics_separate_complete_scope_from_quarantine_and_formal_release
+    self.assertEqual(report["remaining_candidates"], 1)
+AssertionError: 0 != 1
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.011s
+
+FAILED (failures=1)

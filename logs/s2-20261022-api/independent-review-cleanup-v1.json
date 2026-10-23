@@ -1,0 +1,12 @@
+{
+  "checked_at": "2026-10-22T05:09:38+08:00",
+  "own_review_pid": 3696476,
+  "own_review_process_running": false,
+  "own_pid_in_gpu_compute_apps": false,
+  "selected_uuid": "GPU-2e81c395-ac38-bfde-adba-34f3d967f7af",
+  "read_only_gpu_snapshot": "GPU-2e81c395-ac38-bfde-adba-34f3d967f7af, 15 MiB, 48555 MiB, 560.35.03",
+  "cleanup_verified": true,
+  "other_processes_terminated_or_modified": false,
+  "other_gpus_used": false,
+  "cuda_context_created_for_cleanup": false
+}

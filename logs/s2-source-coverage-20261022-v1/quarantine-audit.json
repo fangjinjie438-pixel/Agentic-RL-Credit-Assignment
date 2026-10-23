@@ -1,0 +1,183 @@
+{
+  "method": "connected-product-clusters-seeded-sha256-v1",
+  "seed": 0,
+  "ratios": {
+    "train": 0.7272727272727273,
+    "dev": 0.09090909090909091,
+    "sealed_test": 0.18181818181818182
+  },
+  "input_products": 14,
+  "assigned_products": 10,
+  "quarantined_products": 4,
+  "clusters": [
+    {
+      "cluster_id": "cluster-a39723f7ad37d398a1195168",
+      "product_ids": [
+        "B00SK0FOHG"
+      ],
+      "split": "quarantine",
+      "official_overlap_members": [
+        "B00SK0FOHG"
+      ],
+      "official_overlap_reasons": [
+        "official_family"
+      ]
+    },
+    {
+      "cluster_id": "cluster-252f31ba17e60bc8dda8716b",
+      "product_ids": [
+        "B00VBTJCJE"
+      ],
+      "split": "sealed_test",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-a79a0c9b20c600fb87aee5c6",
+      "product_ids": [
+        "B0174X43LM"
+      ],
+      "split": "sealed_test",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-a75609cdaee5214f0b2c028c",
+      "product_ids": [
+        "B076DKFYF9"
+      ],
+      "split": "quarantine",
+      "official_overlap_members": [
+        "B076DKFYF9"
+      ],
+      "official_overlap_reasons": [
+        "official_family"
+      ]
+    },
+    {
+      "cluster_id": "cluster-f8e29c96041d477ad161538c",
+      "product_ids": [
+        "B077BNJHVJ"
+      ],
+      "split": "train",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-840398b2cfa1bc9e2eddbc84",
+      "product_ids": [
+        "B079J395DC"
+      ],
+      "split": "quarantine",
+      "official_overlap_members": [
+        "B079J395DC"
+      ],
+      "official_overlap_reasons": [
+        "official_family"
+      ]
+    },
+    {
+      "cluster_id": "cluster-21966c9e02a31ba571b6cd9e",
+      "product_ids": [
+        "B07H8QWTPH"
+      ],
+      "split": "train",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-1981269cf6088057c4d25855",
+      "product_ids": [
+        "B07K89WHJH"
+      ],
+      "split": "quarantine",
+      "official_overlap_members": [
+        "B07K89WHJH"
+      ],
+      "official_overlap_reasons": [
+        "official_family"
+      ]
+    },
+    {
+      "cluster_id": "cluster-035c56635294888c6eddbf6f",
+      "product_ids": [
+        "B09X8LNVSY"
+      ],
+      "split": "train",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-d7d70d32d3da7f6f31583431",
+      "product_ids": [
+        "B09X983942"
+      ],
+      "split": "train",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-cea775fffe38c16a5e19bbf1",
+      "product_ids": [
+        "B0BGMJX4RN"
+      ],
+      "split": "train",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-6f0801cca96823b26d559597",
+      "product_ids": [
+        "B0BKS1K986"
+      ],
+      "split": "train",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-5b2addaa78c85f19652a9aa4",
+      "product_ids": [
+        "B0BWYJJLSF"
+      ],
+      "split": "train",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    },
+    {
+      "cluster_id": "cluster-bdee59e2275411c64b8df608",
+      "product_ids": [
+        "B0BYBG1PPD"
+      ],
+      "split": "train",
+      "official_overlap_members": [],
+      "official_overlap_reasons": []
+    }
+  ],
+  "cluster_count": 14,
+  "split_counts": {
+    "train": 8,
+    "dev": 0,
+    "sealed_test": 2,
+    "quarantine": 4
+  },
+  "ignored_input_split_count": 0,
+  "input_sha256": "bd3b607665d46210d593c27d838223ff55f176c34563d54faac5cc949fcd7984",
+  "assignments_sha256": "225bb7500b0f47b9eea3a1baf85bd43565bc4e13805adcc3f437cb0d9571f6a9",
+  "official_exclusions_sha256": "fc387ce33ad174c92f7fcf5c8a53708cc0defa1b9bbd6c7747f50710aaadf192",
+  "official_exclusions_source_revision": "97eff345811fdf652a2135d38d874f2932e11702",
+  "official_exclusion_coverage": "provided_metadata_only",
+  "normalization": "NFKC-casefold-unicode-word-tokens-v1",
+  "link_edges": [],
+  "title_deduplication": {
+    "method": "sha256-token-minhash-128-v1",
+    "permutations": 128,
+    "bands": 16,
+    "jaccard_threshold": 0.85,
+    "minhash_candidate_pairs": 48,
+    "overlap_guard_pairs": 1,
+    "exact_comparisons": 48,
+    "confirmed_pairs": 1,
+    "overlap_guard": "exact token overlap prevents probabilistic LSH false negatives"
+  },
+  "semantic_review": "not_run; lexical candidates cannot prove semantic disjointness"
+}

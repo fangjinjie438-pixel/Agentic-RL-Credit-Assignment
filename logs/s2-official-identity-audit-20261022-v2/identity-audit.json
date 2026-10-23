@@ -1,0 +1,94 @@
+{
+  "source_revision": "97eff345811fdf652a2135d38d874f2932e11702",
+  "source_sha256": "c6585d7adade0bf898dcc6b5377fb4534a699b874bd21ec796acfa96547c9b52",
+  "accessed_fields": [
+    "target_product.product_id",
+    "target_product.title",
+    "target_product.store",
+    "target_product.details.Manufacturer",
+    "target_product.details.Item model number",
+    "target_product.details.Model Number"
+  ],
+  "records": [
+    {
+      "product_id": "B08BXYQH9N",
+      "source_fields": {
+        "source_line_1based": 128,
+        "product_id": "B08BXYQH9N",
+        "title": "Motorcycle Stickers Pack, 50Pcs No Repeat Cool Moto Life Vinyl Waterproof Sticker and Decal, Love Car Racing Sticker for Adults Men Bike Laptop Skateboard Water Bottle",
+        "store": "EtherealKiller",
+        "details": {
+          "Manufacturer": "EtherealKiller"
+        }
+      },
+      "candidate_exclusion_aliases": [
+        "brand:etherealkiller"
+      ],
+      "corroboration": [
+        "store_equals_manufacturer"
+      ],
+      "status": "candidate_quarantine_only",
+      "observed_brand": null,
+      "human_review_status": "pending"
+    },
+    {
+      "product_id": "B00BSE4G4S",
+      "source_fields": {
+        "source_line_1based": 400,
+        "product_id": "B00BSE4G4S",
+        "title": "Alphaline Studio Over-the-Ear Headphones | MoonPoint",
+        "store": "ALPHALINE",
+        "details": {
+          "Manufacturer": "ALPHALINE"
+        }
+      },
+      "candidate_exclusion_aliases": [
+        "brand:alphaline"
+      ],
+      "corroboration": [
+        "store_equals_manufacturer",
+        "title_starts_with_store"
+      ],
+      "status": "candidate_quarantine_only",
+      "observed_brand": null,
+      "human_review_status": "pending"
+    },
+    {
+      "product_id": "B0BRCNTG83",
+      "source_fields": {
+        "source_line_1based": 418,
+        "product_id": "B0BRCNTG83",
+        "title": "REOLINK Dual View PoE Camera - IP Security Camera System with 1x 4K Wide-Angle Lens and 1x 3MP Telephoto Lens for A Close-up, AI Detection, Color Night Vision, Two-Way Talk, RLC-81MA",
+        "store": "REOLINK",
+        "details": {
+          "Item model number": "RLC-81MA",
+          "Manufacturer": "Reolink Digital"
+        }
+      },
+      "candidate_exclusion_aliases": [
+        "brand:reolink",
+        "brand:reolink digital"
+      ],
+      "corroboration": [
+        "title_starts_with_store"
+      ],
+      "status": "candidate_quarantine_only",
+      "observed_brand": null,
+      "human_review_status": "pending"
+    }
+  ],
+  "covered_by_candidate_aliases": [
+    "B00BSE4G4S",
+    "B08BXYQH9N",
+    "B0BRCNTG83"
+  ],
+  "unresolved_candidate_product_ids": [],
+  "new_families": [
+    "brand:alphaline",
+    "brand:etherealkiller",
+    "brand:reolink digital"
+  ],
+  "human_approval_count": 0,
+  "metadata_complete": false,
+  "limitation": "No observed Brand is inferred; family/semantic human review remains required."
+}

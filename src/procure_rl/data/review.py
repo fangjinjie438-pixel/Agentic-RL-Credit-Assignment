@@ -7,6 +7,10 @@ fabricates human decisions, semantic model results or official family coverage.
 
 from __future__ import annotations
 
+from datetime import datetime
+import json
+
+from .independent import parse_independent_response
 from ..env.catalog import digest
 
 
@@ -29,6 +33,60 @@ def make_review_queue(products: list[dict], tasks: list[dict], semantic_pairs: l
             "semantic_candidates": semantic_pairs,
             "independent_model_review": {"status": "not_run", "preferred_plan": "allocated single-GPU 8B",
                                          "lexical_candidates_are_not_model_reviews": True}}
+
+
+def _traceable_independent_review(review: dict, task: dict | None) -> bool:
+    """Check declared model separation and bind raw review inputs/outputs.
+
+    These checks cannot authenticate an external execution or resolve provider
+    aliases. Actual model provenance and independence still require inspection
+    of the recorded execution evidence; a completed label alone is insufficient.
+    """
+    if not isinstance(review, dict) or task is None:
+        return False
+    text_fields = ("model", "model_revision", "reviewed_at", "prompt_version", "prompt_sha256", "response_sha256")
+    if any(not isinstance(review.get(key), str) or not review[key].strip() for key in text_fields):
+        return False
+    if review["model_revision"].strip().casefold() in {"unknown", "null", "none", "not_run"}:
+        return False
+    try:
+        when = datetime.fromisoformat(review["reviewed_at"])
+        if when.tzinfo is None or when.utcoffset() is None:
+            return False
+    except ValueError:
+        return False
+    basis = review.get("independence_basis")
+    if not isinstance(basis, dict) or basis.get("method") != "different_model":
+        return False
+    generation_models = basis.get("generation_models")
+    if (not isinstance(generation_models, list) or not generation_models or
+            any(not isinstance(model, str) or not model.strip() for model in generation_models) or
+            review["model"].strip().casefold() in {model.strip().casefold() for model in generation_models}):
+        return False
+    if (not isinstance(review.get("prompt"), dict) or review["prompt"].get("task_sha256") != digest(task)
+            or digest(review["prompt"].get("task")) != digest(task)):
+        return False
+    raw_response = review.get("raw_response")
+    try:
+        if isinstance(raw_response, str):
+            response_text = raw_response
+        elif isinstance(raw_response, dict) and "generated_text" in raw_response:
+            if raw_response.get("finish_reason") == "length":
+                return False
+            response_text = raw_response["generated_text"]
+        elif isinstance(raw_response, dict):
+            response_text = json.dumps(raw_response, ensure_ascii=False, allow_nan=False)
+        else:
+            return False
+        parsed = parse_independent_response(response_text)
+    except (ValueError, TypeError):
+        return False
+    if any(review.get(key) != parsed[key] for key in ("decision", "checks", "reasons")):
+        return False
+    return (review.get("status") == "completed" and review.get("decision") in ("accept", "reject")
+            and review.get("task_sha256") == digest(task)
+            and review["prompt_sha256"] == digest(review["prompt"])
+            and review["response_sha256"] == digest(review["raw_response"]))
 
 
 def release_gate(products: list[dict], tasks: list[dict], ledgers: list[dict],
@@ -80,10 +138,12 @@ def release_gate(products: list[dict], tasks: list[dict], ledgers: list[dict],
         reasons.append("fewer_than_200_hash_bound_human_task_reviews")
     if invalid_reviews:
         reasons.append("invalid_or_stale_human_reviews")
-    valid_independent = [r for r in independent_reviews if r.get("status") == "completed"
-                       and r.get("model_revision") and r.get("task_id") in indexed
-                       and r.get("decision") in ("accept", "reject")
-                       and r.get("task_sha256") == digest(indexed[r["task_id"]])]
+    valid_independent = [r for r in independent_reviews if isinstance(r, dict)
+                         and _traceable_independent_review(r, indexed.get(r.get("task_id")))]
+    invalid_independent = [r.get("task_id") if isinstance(r, dict) else None
+                           for r in independent_reviews if r not in valid_independent]
+    if invalid_independent:
+        reasons.append("invalid_or_untraceable_independent_reviews")
     independent_ids = {r["task_id"] for r in valid_independent}
     disagreements = {t["task_id"] for t in tasks if t.get("model_disagreement")}
     disagreements.update(r["task_id"] for r in valid_independent if r["decision"] == "reject")
@@ -101,6 +161,8 @@ def release_gate(products: list[dict], tasks: list[dict], ledgers: list[dict],
             "reasons": reasons, "human_review_count": len(valid_human),
             "independent_review_count": len(independent_ids), "expert_candidate_task_count": len(expert_ids),
             "invalid_review_task_ids": invalid_reviews,
+            "invalid_independent_review_task_ids": invalid_independent,
+            "independence_validation": "declared_different_model_and_bound_raw_artifacts; execution_provenance_requires_audit",
             "human_rejected_task_ids": sorted(rejected_ids), "conflicting_task_ids": sorted(conflicting_ids),
             "unadjudicated_task_ids": sorted(disagreements - adjudicated),
             "quantity_targets": {"train": 1600, "dev": 200, "sealed_test": 400, "counterfactual_pairs": 100,

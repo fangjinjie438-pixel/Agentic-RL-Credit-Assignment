@@ -1,0 +1,18 @@
+[
+  {
+    "url": "https://huggingface.co/Qwen/Qwen3-8B/resolve/b968826d9c46dd6066d109eabc6255188de91218/model-00005-of-00005.safetensors",
+    "status": 206,
+    "content_range": "bytes 0-1048575/1244659840",
+    "bytes": 1048576,
+    "elapsed_seconds": 9.233211189508438,
+    "sha256": "f7178dd942d0d90407def004fe1abd7dc60154f4bc9b27489dbfb230384573cd"
+  },
+  {
+    "url": "https://hf-mirror.com/Qwen/Qwen3-8B/resolve/b968826d9c46dd6066d109eabc6255188de91218/model-00005-of-00005.safetensors",
+    "status": 206,
+    "content_range": "bytes 0-1048575/1244659840",
+    "bytes": 1048576,
+    "elapsed_seconds": 11.815116994082928,
+    "sha256": "f7178dd942d0d90407def004fe1abd7dc60154f4bc9b27489dbfb230384573cd"
+  }
+]

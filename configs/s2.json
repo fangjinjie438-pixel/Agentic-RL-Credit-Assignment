@@ -2,7 +2,7 @@
   "stage": "S2",
   "source_kind": "attributed_raw_records",
   "source_path": "fixtures/s2/amazon-electronics.json",
-  "official_exclusions_path": "fixtures/s2/official-exclusions.json",
+  "official_exclusions_path": "fixtures/s2/official-exclusions-candidate.json",
   "seed": 0,
   "split_ratios": {"train": 8, "dev": 1, "sealed_test": 2},
   "max_base_per_split": 8,

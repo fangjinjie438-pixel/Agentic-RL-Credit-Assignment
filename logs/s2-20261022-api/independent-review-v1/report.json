@@ -1,0 +1,15 @@
+{
+  "model": "Qwen/Qwen3-8B",
+  "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "dataset_revision": "s2-f692f21320912220be59d4a5",
+  "tasks_attempted": 7,
+  "completed_reviews": 7,
+  "accepted": 0,
+  "rejected": 7,
+  "failures": [],
+  "gpu_peak_allocated_bytes": 18382922240,
+  "gpu_peak_reserved_bytes": 19744686080,
+  "human_review_performed": false,
+  "formal_release_approved": false,
+  "training_performed": false
+}

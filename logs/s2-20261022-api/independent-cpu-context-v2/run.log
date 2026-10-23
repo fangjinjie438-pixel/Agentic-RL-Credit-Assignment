@@ -1,0 +1,2 @@
+2026-10-22T05:02:28+08:00 S2 run started: cpu_tokenizer_context_after_projection_fix; GPU has not been used by this run yet
+2026-10-22T05:02:29+08:00 Run succeeded: cpu_tokenizer_context_preflight_only

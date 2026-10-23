@@ -1,0 +1,158 @@
+{
+  "dataset_revision": "s2-ee9902b8fc67ad1b39533598",
+  "human_reviews": [
+    {
+      "task_id": "task-eab64e1f7a0884441a5f",
+      "task_sha256": "e03e1cbdf0c80cc99b77a5906313ee288bc945c1bafda1be67a5d38cee5e4f97",
+      "role": "human",
+      "reviewer": null,
+      "reviewed_at": null,
+      "decision": null,
+      "adjudicates_model_disagreement": false,
+      "notes": null
+    },
+    {
+      "task_id": "task-ac53e878d2c50893225c",
+      "task_sha256": "12088c0e67166803c7be92f31c780cab9ed52682c6d79df6a61bf844bc41fcf0",
+      "role": "human",
+      "reviewer": null,
+      "reviewed_at": null,
+      "decision": null,
+      "adjudicates_model_disagreement": false,
+      "notes": null
+    },
+    {
+      "task_id": "task-9e9c41995b5779485caa-cf-018340a0",
+      "task_sha256": "7109543f261f90a6716e28c1c558bc39cddd41bda7101ed60689171dd3a967ae",
+      "role": "human",
+      "reviewer": null,
+      "reviewed_at": null,
+      "decision": null,
+      "adjudicates_model_disagreement": false,
+      "notes": null
+    },
+    {
+      "task_id": "task-72e45343984d6a3ce84c",
+      "task_sha256": "f66729755239401b791f992bd70d42d1a3d9e99d0ea22e7bd24c3549ded9aeda",
+      "role": "human",
+      "reviewer": null,
+      "reviewed_at": null,
+      "decision": null,
+      "adjudicates_model_disagreement": false,
+      "notes": null
+    },
+    {
+      "task_id": "task-ac53e878d2c50893225c-cf-5ee29266",
+      "task_sha256": "4870fa81199a95c22430afdb9a6ba68700c47c4040af3875545e705cbb2ab116",
+      "role": "human",
+      "reviewer": null,
+      "reviewed_at": null,
+      "decision": null,
+      "adjudicates_model_disagreement": false,
+      "notes": null
+    },
+    {
+      "task_id": "task-964a2c1b4a9586d4b9ea",
+      "task_sha256": "f4ff13b89ad3a1d5e3e9700219509144b7927c4390caffae9d44fe7de92d493b",
+      "role": "human",
+      "reviewer": null,
+      "reviewed_at": null,
+      "decision": null,
+      "adjudicates_model_disagreement": false,
+      "notes": null
+    },
+    {
+      "task_id": "task-9e9c41995b5779485caa",
+      "task_sha256": "403694c105a4ba5b4b51c874b23139c5761be725969ecf5c472bc23de926650a",
+      "role": "human",
+      "reviewer": null,
+      "reviewed_at": null,
+      "decision": null,
+      "adjudicates_model_disagreement": false,
+      "notes": null
+    }
+  ],
+  "identity_reviews": [
+    {
+      "product_id": "B01FB654PI",
+      "product_sha256": "485235f10e502d42fe3dd31d3c34ba51dbbe0087aa75e890ad7754a0cecdd3fb",
+      "family": "brand:netgear",
+      "role": "human",
+      "reviewer": null,
+      "reviewed_at": null,
+      "decision": null,
+      "notes": null
+    },
+    {
+      "product_id": "B09H2JQD48",
+      "product_sha256": "2061e5a27ffbdd1512e44fa17979cee887635aa64388b840e39f655de5cadd99",
+      "family": "brand:kecop",
+      "role": "human",
+      "reviewer": null,
+      "reviewed_at": null,
+      "decision": null,
+      "notes": null
+    },
+    {
+      "product_id": "B09X983942",
+      "product_sha256": "639746191de24da2b24bdae19d4add4ceb1649255868b7297c0649061c968233",
+      "family": "brand:macally",
+      "role": "human",
+      "reviewer": null,
+      "reviewed_at": null,
+      "decision": null,
+      "notes": null
+    },
+    {
+      "product_id": "B0B5LDPJLD",
+      "product_sha256": "30aa20b5c1fd238b0c2cb5e2877403019d51067ebf9189ef22b488f258511d16",
+      "family": "brand:runelves",
+      "role": "human",
+      "reviewer": null,
+      "reviewed_at": null,
+      "decision": null,
+      "notes": null
+    },
+    {
+      "product_id": "B0B97BKQJV",
+      "product_sha256": "d96dbbfd8bd2ca5e10c92a5b0cd58bdf8e6f71cbb3ba36dd1fa7ca50b6dd604e",
+      "family": "brand:thinlerain",
+      "role": "human",
+      "reviewer": null,
+      "reviewed_at": null,
+      "decision": null,
+      "notes": null
+    },
+    {
+      "product_id": "B0BKFX6FWW",
+      "product_sha256": "67bd99ea0e64c17c046ff7c52764e04590c32eb658e35c9388c8be76d3206eaa",
+      "family": "brand:mafiti",
+      "role": "human",
+      "reviewer": null,
+      "reviewed_at": null,
+      "decision": null,
+      "notes": null
+    },
+    {
+      "product_id": "B0BKS1K986",
+      "product_sha256": "f67bd3268e2aabef1cd6ab53c8b6a7e1aa97f125540bec1cb52b4d66d6626349",
+      "family": "brand:lention",
+      "role": "human",
+      "reviewer": null,
+      "reviewed_at": null,
+      "decision": null,
+      "notes": null
+    },
+    {
+      "product_id": "B0BWYJJLSF",
+      "product_sha256": "1276c7c571a175be1e8f056918903cb621246750d81535e82965ec58aa4860b9",
+      "family": "brand:edjo",
+      "role": "human",
+      "reviewer": null,
+      "reviewed_at": null,
+      "decision": null,
+      "notes": null
+    }
+  ],
+  "independent_reviews": []
+}

@@ -1,0 +1,10 @@
+test_matching_manufacturer_store_adds_conservative_alias_and_preserves_gates (test_official_identity_audit.OfficialIdentityAuditTests.test_matching_manufacturer_store_adds_conservative_alias_and_preserves_gates) ... ok
+test_projection_drops_non_identity_target_fields (test_official_identity_audit.OfficialIdentityAuditTests.test_projection_drops_non_identity_target_fields) ... ok
+test_title_corroboration_adds_manufacturer_alias_without_claiming_brand (test_official_identity_audit.OfficialIdentityAuditTests.test_title_corroboration_adds_manufacturer_alias_without_claiming_brand) ... ok
+test_uncorroborated_seller_remains_unresolved (test_official_identity_audit.OfficialIdentityAuditTests.test_uncorroborated_seller_remains_unresolved) ... ok
+test_unlisted_and_duplicate_products_do_not_expand_candidates (test_official_identity_audit.OfficialIdentityAuditTests.test_unlisted_and_duplicate_products_do_not_expand_candidates) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK

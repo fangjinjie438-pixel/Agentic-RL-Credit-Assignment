@@ -179,7 +179,7 @@ def collect_dataset(dataset: Path, output: Path, *, mode: str, teacher_config: d
     if mode not in ("engineering", "api", "cache_only") or type(limit) is not int or limit <= 0:
         raise ValueError("Explicit collection mode and positive limit required")
     manifest, products, tasks = load_dataset(dataset)
-    policy_version = "s2-scripted-observation-v1" if mode == "engineering" else "s2-expert-tool-v1"
+    policy_version = "s2-scripted-observation-v1" if mode == "engineering" else "s2-expert-tool-v2"
     if mode == "engineering":
         teacher = ScriptedTeacher(**public_config)
     else:

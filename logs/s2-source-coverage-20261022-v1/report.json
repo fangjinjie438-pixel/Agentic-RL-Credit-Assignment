@@ -1,0 +1,61 @@
+{
+  "input_rows": 1000,
+  "scope_counts": {
+    "outside_office_device_leaf_categories": 849,
+    "office_device_candidate_not_human_reviewed": 74,
+    "missing_categories": 71,
+    "keyboard_switch_part_title": 1,
+    "explicit_accessory_or_incomplete_device_title": 4,
+    "embedded_display_module_title": 1
+  },
+  "all_rows_field_coverage": {
+    "one_or_more_fields_missing_or_invalid": 871,
+    "all_four_fields_valid": 129
+  },
+  "office_field_status_counts": {
+    "price": {
+      "missing": 45,
+      "valid": 29
+    },
+    "brand": {
+      "valid": 71,
+      "missing": 2,
+      "invalid_placeholder": 1
+    },
+    "weight": {
+      "valid": 73,
+      "missing": 1
+    },
+    "color": {
+      "missing": 28,
+      "valid": 34,
+      "not_in_conservative_color_vocabulary": 12
+    }
+  },
+  "complete_office_candidates_before_normalization": 18,
+  "normalization_accepted": 14,
+  "normalization_rejected": 4,
+  "official_quarantined_candidates": 4,
+  "remaining_candidates": 10,
+  "remaining_candidate_leaf_counts": {
+    "External Hard Drives": 2,
+    "Traditional Laptops": 4,
+    "Docking Stations": 1,
+    "Keyboards": 1,
+    "Tablets": 1,
+    "Keyboard & Mouse Combos": 1
+  },
+  "remaining_brand_families": 10,
+  "official_metadata_complete": false,
+  "human_reviews": 0,
+  "tasks_built": 0,
+  "teacher_calls": 0,
+  "formal_release": false,
+  "limitations": [
+    "The first 1,000 selected rows are not a representative or exhaustive source sample.",
+    "Conservative fixed color vocabulary rejects unknown descriptors rather than correcting them.",
+    "Category/title scope selection and source truth remain subject to real human review.",
+    "Official metadata coverage remains partial; quarantine absence is not full contamination clearance.",
+    "Only price, color and weight are extracted; this does not supply long-horizon interface/compatibility evidence."
+  ]
+}

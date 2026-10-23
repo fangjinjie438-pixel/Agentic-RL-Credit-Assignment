@@ -4,9 +4,9 @@
 
 **唯一现行计划是 [PLAN.md](PLAN.md)**；开始工作先读 [AGENTS.md](AGENTS.md)、计划、[PROGRESS.md](PROGRESS.md) 和当前 [S2 操作文档](docs/stages/S2.md)。两份原稿已原样归档到 [docs/archive](docs/archive/README.md)，不再作为并行计划。
 
-**S2 数据流水线代码与 CPU pilot 已实现，真实教师与数据审核尚待验收。** 固定来源的真实商品归一化、家族先划分、去重、反事实、教师客户端、回放过滤和审核门槛已实现；正式数据 withheld，尚未开始 S3。S0/S1 验收状态与逐项证据见 [PROGRESS](PROGRESS.md)。
+**S2 已执行真实教师小规模采集与离线重现，数据审核仍待完成。** 第二批2条真实轨迹中1条通过硬约束、证据与回放验收，1条拒收；固定来源、先划分、去重和反事实流水线保留。正式数据 withheld，尚未开始 S3。逐项证据及当前独立复核状态见 [PROGRESS](PROGRESS.md)。
 
-**教师默认值由 Codex 根据本轮授权暂选，可修改：[configs/s2-teacher.json](configs/s2-teacher.json)。** 当前为 `deepseek-flash`、关闭 thinking，未实测为本项目最优；密钥单独放 `.secrets/deepseek_api_key`，当前尚缺。选择理由、别名/价格边界及操作见 [S2](docs/stages/S2.md)。
+**教师默认值由 Codex 根据用户授权暂选，可修改：[configs/s2-teacher.json](configs/s2-teacher.json)。** 当前为 `deepseek-flash`、关闭 thinking，未实测为本项目最优；密钥已就绪，单独放 `.secrets/deepseek_api_key`。两批共72次请求，按保守价格估算0.0754485 USD，实际账单未知。选择理由、别名/价格边界及操作见 [S2](docs/stages/S2.md)。
 
 ## 最短运行路径
 
@@ -44,9 +44,9 @@ PYTHONPATH=src .venv-cpu/bin/python -m procure_rl gpu-probe --output logs/my-gpu
 
 四个核心包保持不变；传递依赖与FlashAttention的实际修正见[依赖审计](docs/dependency-audit.md)。已生成GPU与工具链的S0环境锁、原始安装快照和验证范围文件；[从锁重建命令](requirements/README.md)明确使用项目解释器与受控源码白名单。锁固定版本与来源，未对每个包独立核验完整归档哈希，也尚未在第二个全新环境重装验收；真实多轮、LoRA/FSDP2训练留待后续阶段。
 
-学校按先到先得协调，通常能取得两张 A6000、偶尔三张。用户已明确本次 **物理 GPU 5、7 可用于计算**，UUID 与来源见本轮 `allocation.json`。只在这两张内根据当时余量安排工作；4/5/7 三卡的额外授权以“不占显存”为条件，CUDA 上下文与 NCCL 均占显存，因此 GPU 4 只作只读拓扑查询。PIX 不等于 NVLink 或实际通信通过。不修改系统 CUDA/驱动或他人环境。
+学校按先到先得协调，通常能取得两张A6000、偶尔三张。S0历史使用5/7，原授权记录保留；**本次S2独立审核仅使用用户直接确认的GPU5**，当前授权为 `logs/s2-20261022-api/allocation-user-confirmed.json`，范围7任务单卡推理、不训练。GPU4的历史附加条件是“不占显存”，因此仅作只读查询。后续任务须核对当次有效分配范围；空闲显存不能证明归属，PIX不能证明实际通信通过。不修改系统CUDA/驱动或他人环境。
 
-0.6B 关闭 thinking 做冒烟，4B-Instruct-2507 做主实验，8B 依开发集诊断决定。S0 只做最小环境验收，可加载固定 revision 的 0.6B 生成单提示；真实多轮 LoRA 同步与训练属于 S3/S4。项目使用独立 `.venv-cpu`、`.venv-gpu` 和按需 `.venv-toolchain`；编译器包装见 [scripts](scripts/README.md)，不回落系统 GCC 或 Toolkit。网络有问题时可用用户授权的 `proxy_on`，包装命令见 S0。
+0.6B关闭thinking做冒烟，4B-Instruct-2507做主实验，主实验是否改用8B仍依开发集诊断决定。S2使用独立8B审核数据属于PLAN预定的审核分工，不改变训练模型决策；其实际执行证据见PROGRESS。S0只验最小环境；真实多轮LoRA同步与训练属于S3/S4。项目使用独立 `.venv-cpu`、`.venv-gpu` 和按需 `.venv-toolchain`；编译器包装见 [scripts](scripts/README.md)，不回落系统GCC/Toolkit。网络问题可用用户授权的 `proxy_on`，包装命令见S0。
 
 ## 目录导航
 
@@ -71,7 +71,7 @@ PYTHONPATH=src .venv-cpu/bin/python -m procure_rl gpu-probe --output logs/my-gpu
 | --- | --- | --- |
 | S0 工程与运行环境 | [S0.md](docs/stages/S0.md) | 声明范围验收通过；逐项证据见PROGRESS |
 | S1 环境和验证器 | [S1.md](docs/stages/S1.md) | 固定小数据 CPU 验收通过，阶段结束 |
-| S2 数据流水线 | [S2.md](docs/stages/S2.md) | 代码/CPU pilot实现；真实教师、人工/语义/官方家族审核待验收 |
+| S2 数据流水线 | [S2.md](docs/stages/S2.md) | 真实教师采集/正负过滤/缓存重现完成；人工、独立语义及官方家族审核状态见PROGRESS |
 | S3 SFT → S7 正式评测 | 按阶段实施时创建 | 尚未实现 |
 | S8 多教师 OPD | 主项目完成后独立开展 | 可选，尚未实现 |
 

@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "revision": "s2-f692f21320912220be59d4a5",
+  "source_sha256": "e101bfd3425a30169baadd638a8c0fa8200a690121f6f00b99661fd161e54e2d",
+  "databases": {
+    "train": {
+      "file": "train.sqlite",
+      "sha256": "86e1602df8cafeb24ec24ff630f05c18364fac2dded8caa44f7567b1661afa5a",
+      "product_count": 7
+    },
+    "dev": {
+      "file": "dev.sqlite",
+      "sha256": "2502b5ce9a82f320ba1f6d216a9baba5d3e9e17aef5a8bf9f89e8a0d259b5e5c",
+      "product_count": 1
+    },
+    "sealed_test": {
+      "file": "sealed_test.sqlite",
+      "sha256": "983873749aac04e208861184a901e964c372b8d75ab184d4e2f8c8ec249caabb",
+      "product_count": 0
+    },
+    "official_test": {
+      "file": "official_test.sqlite",
+      "sha256": "983873749aac04e208861184a901e964c372b8d75ab184d4e2f8c8ec249caabb",
+      "product_count": 0
+    }
+  }
+}

@@ -1,0 +1,226 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "search_products",
+      "description": "Search the product catalog by text query. Only searches product TITLES (not descriptions, features, or attributes). Uses BM25 ranking. Returns up to 20 results per page with product_id and title.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "Search query text"
+          },
+          "page": {
+            "type": "integer",
+            "description": "Page number (0-indexed). Page 0 returns the first 20 results, page 1 returns results 21-40, etc.",
+            "default": 0
+          }
+        },
+        "required": [
+          "query"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "filter_by_attribute",
+      "description": "Filter candidate products by a structured detail attribute using case-insensitive substring matching. Use the canonical detail key name exactly as stored in the catalog (e.g. 'Brand', 'Material', 'Compatible Phone Models', 'Connector Type'). Only filters within the provided candidate set (max 10 products). Does NOT search the full catalog.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "product_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Product IDs to filter (max 10)",
+            "maxItems": 10
+          },
+          "attribute_name": {
+            "type": "string",
+            "description": "Canonical attribute key to filter on, such as 'Brand', 'Item Form', 'Hair Type', or 'Skin Type'"
+          },
+          "attribute_value": {
+            "type": "string",
+            "description": "The attribute value to match (case-insensitive)"
+          }
+        },
+        "required": [
+          "product_ids",
+          "attribute_name",
+          "attribute_value"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get_product_details",
+      "description": "Get full structured details of a single product, including title, store, price, structured detail attributes, and feature descriptions. Does NOT include rating or review data.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "product_id": {
+            "type": "string",
+            "description": "Product ID to retrieve"
+          }
+        },
+        "required": [
+          "product_id"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get_review_content",
+      "description": "Search product reviews by text query for a specific product. Returns the top 5 most relevant reviews with full content including rating, title, text.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "Search query for review content"
+          },
+          "product_id": {
+            "type": "string",
+            "description": "Product ID to search reviews for"
+          }
+        },
+        "required": [
+          "query",
+          "product_id"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get_product_review_stats",
+      "description": "Get rating statistics for one or more products (max 10). Returns only product_id, average_rating, and rating_number. Does NOT return review text content.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "product_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Product IDs to retrieve rating info for (max 10)",
+            "maxItems": 10
+          }
+        },
+        "required": [
+          "product_ids"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get_store_products",
+      "description": "Get products from a specific store. Returns up to 20 results per page with product_id and title.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "store_name": {
+            "type": "string",
+            "description": "Exact store name"
+          },
+          "page": {
+            "type": "integer",
+            "description": "Page number (0-indexed)",
+            "default": 0
+          }
+        },
+        "required": [
+          "store_name"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get_user_profile",
+      "description": "Retrieve the current user's profile including demographics, lifestyle, shopping habits, and any product-specific requirements (e.g. skin type, preferred size, brand preference). Call this to discover implicit needs that the user hasn't stated in their query.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "ask_user",
+      "description": "Ask the user a clarifying question to gather information. The number of chars in question must be under 100, otherwise the tool will return error. You can only ask user up to 10 turns.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "question": {
+            "type": "string",
+            "description": "The question to ask the user"
+          }
+        },
+        "required": [
+          "question"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "recommend_product",
+      "description": "Submit your final product recommendation. Call this only when you have enough evidence. This ends the search process. Include checks citing observed evidence IDs for each revealed requirement.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "product_id": {
+            "type": "string",
+            "description": "Product ID to recommend"
+          },
+          "reasoning": {
+            "type": "string",
+            "description": "Brief explanation of why this product is recommended"
+          },
+          "checks": {
+            "type": "array",
+            "maxItems": 64,
+            "items": {
+              "type": "object",
+              "properties": {
+                "constraint_id": {
+                  "type": "string"
+                },
+                "evidence_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "required": [
+                "constraint_id",
+                "evidence_ids"
+              ]
+            }
+          }
+        },
+        "required": [
+          "product_id",
+          "reasoning"
+        ]
+      }
+    }
+  }
+]

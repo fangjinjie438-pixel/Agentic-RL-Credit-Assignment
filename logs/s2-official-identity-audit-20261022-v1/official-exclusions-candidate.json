@@ -1,0 +1,3697 @@
+{
+  "schema_version": 1,
+  "source_revision": "97eff345811fdf652a2135d38d874f2932e11702",
+  "source_sha256": "c6585d7adade0bf898dcc6b5377fb4534a699b874bd21ec796acfa96547c9b52",
+  "source_path": "third_party/ecomagentbench/97eff345811fdf652a2135d38d874f2932e11702/data/benchmark/benchmark.jsonl",
+  "source_url": "https://raw.githubusercontent.com/Morizeyao/EComAgentBench_/97eff345811fdf652a2135d38d874f2932e11702/data/benchmark/benchmark.jsonl",
+  "accessed_fields": [
+    "target_product.product_id",
+    "target_product.title",
+    "target_product.details.Brand",
+    "target_product.details.Item model number",
+    "target_product.details.Model Number"
+  ],
+  "official_task_count": 662,
+  "product_ids": [
+    "B00004TH2X",
+    "B00006AVV3",
+    "B0001G6U7A",
+    "B00022AH6I",
+    "B0002JUH3O",
+    "B0007CZ3D0",
+    "B0007OVIQO",
+    "B0008EWS7G",
+    "B000BARVW4",
+    "B000EIQO80",
+    "B000HEKSBU",
+    "B000NOVLEC",
+    "B000VGTQAI",
+    "B0011E67BA",
+    "B001283F60",
+    "B001D0I6O8",
+    "B001E1ECOE",
+    "B001EQ4BZE",
+    "B001GXCG9I",
+    "B001LNO0HY",
+    "B001ON2IYI",
+    "B001P80G5K",
+    "B002CMLIIM",
+    "B002JX2XRY",
+    "B002LITT3I",
+    "B002P5H55Q",
+    "B002XGD3FI",
+    "B0045JE7M4",
+    "B0046W2A0Q",
+    "B004E3EUIC",
+    "B004F38Y7Y",
+    "B004HW7K96",
+    "B004I2K88U",
+    "B004YZZQ3I",
+    "B004Z0KPUG",
+    "B005FH44SM",
+    "B005JXADRS",
+    "B006GWOQOC",
+    "B007HTGZ42",
+    "B007MAHSX8",
+    "B007MPCHGQ",
+    "B007OOBXUG",
+    "B007RHM5QQ",
+    "B008193UAO",
+    "B00898F816",
+    "B0089F1P1G",
+    "B008RX5X9K",
+    "B0099J8BZE",
+    "B00AG5RWD2",
+    "B00BS3HVV4",
+    "B00BSE4G4S",
+    "B00C32FOY0",
+    "B00C80SAZW",
+    "B00C80SCOQ",
+    "B00C80UFJQ",
+    "B00CBMTMD6",
+    "B00CF6V6FK",
+    "B00CTVIL5O",
+    "B00CWKX11G",
+    "B00CY9QKTA",
+    "B00D91Y6Q6",
+    "B00EVVNRG8",
+    "B00F2P84WE",
+    "B00FWL5CLE",
+    "B00GRIDAMO",
+    "B00HBTT1WQ",
+    "B00I83XEQI",
+    "B00IP8DVKK",
+    "B00JFL5F6O",
+    "B00K1SKXPI",
+    "B00KH4D6EG",
+    "B00KH5OY3C",
+    "B00KKUEFBA",
+    "B00KL7VSR6",
+    "B00KWWN242",
+    "B00KXB6E9C",
+    "B00MX4LH0I",
+    "B00NWRPAIU",
+    "B00OL4DEMC",
+    "B00OPH7A3E",
+    "B00OTR3CCI",
+    "B00PZMCMKY",
+    "B00QSSZT0E",
+    "B00RGB68AW",
+    "B00S6NRYUW",
+    "B00SI44NVC",
+    "B00TIRFCXQ",
+    "B00TPFB03C",
+    "B00UE35ZP8",
+    "B00ZS2HKQ2",
+    "B010QY8EFW",
+    "B011KM2GYO",
+    "B012TPQSUE",
+    "B0141G8JVU",
+    "B014GNOZ20",
+    "B014Q9UZ0A",
+    "B014W9D1EQ",
+    "B0156TP07W",
+    "B015AX68FC",
+    "B015NM1IAA",
+    "B0161ZDWIO",
+    "B017IOHGTI",
+    "B017JJTZ6O",
+    "B0189FUID6",
+    "B018HL4Q1C",
+    "B018NYNJFC",
+    "B01A33NUH8",
+    "B01ACO7V6E",
+    "B01ALRP46Q",
+    "B01AV8N32M",
+    "B01BHQJB8C",
+    "B01BO7PGJC",
+    "B01BZMOMTG",
+    "B01C3IL9YM",
+    "B01CF9I0SM",
+    "B01CQTK6GU",
+    "B01E2EQLD4",
+    "B01E4NPPGW",
+    "B01E7Y70SE",
+    "B01EK87T9M",
+    "B01EL5VJR2",
+    "B01ENXMEQC",
+    "B01FT2CQJQ",
+    "B01FXKSNU0",
+    "B01GIMELOO",
+    "B01H1B0RH6",
+    "B01H89QMXO",
+    "B01HXNTVOM",
+    "B01K626622",
+    "B01LZTGZW9",
+    "B01MA33I3K",
+    "B01MF8LPEH",
+    "B01MQ5TWYX",
+    "B01MSEP8AW",
+    "B01MUSBQ55",
+    "B01MXRU7ZB",
+    "B01N7DWLVA",
+    "B01NBZYUJP",
+    "B01NCQURSA",
+    "B06XBS6J8J",
+    "B06XP6Y5CL",
+    "B06XXDRKD3",
+    "B06Y16CYSR",
+    "B06ZYHZF6Q",
+    "B071FSLKC5",
+    "B071GCMLM5",
+    "B071J9W4VX",
+    "B071QX88NX",
+    "B071RZYC1W",
+    "B071Y3CTZV",
+    "B0721WQ9C4",
+    "B072K2WNY8",
+    "B072MF9P6Q",
+    "B073HLLKNF",
+    "B0745BZV6T",
+    "B074YYZNPG",
+    "B075F52TYM",
+    "B075KNBS5T",
+    "B075R16PC1",
+    "B075T2QXDG",
+    "B0761R3R5F",
+    "B076BX7JSV",
+    "B076F6TS4R",
+    "B076HPS41K",
+    "B076LKXNB5",
+    "B0772TG2FL",
+    "B07734NRVC",
+    "B0778V1T9N",
+    "B077C21Y1T",
+    "B077FSRTQZ",
+    "B077QF184L",
+    "B077VBRRMF",
+    "B0786BLFTQ",
+    "B0787FP9QG",
+    "B079JY83DN",
+    "B079SBYX5N",
+    "B07B6CPG3S",
+    "B07B7KB1HQ",
+    "B07BT664CL",
+    "B07BV716NV",
+    "B07C6LYZPJ",
+    "B07CDD45ZK",
+    "B07CMT4RCR",
+    "B07CNPG5F7",
+    "B07CQBZG7K",
+    "B07CQVWJH1",
+    "B07CX7W8M3",
+    "B07D1941FQ",
+    "B07D5GG16Q",
+    "B07DFX64X7",
+    "B07DJ98ZH9",
+    "B07DJB5F29",
+    "B07DLTKYJL",
+    "B07DNN94JD",
+    "B07DNQVJSX",
+    "B07DPB1V9H",
+    "B07DVM4TSQ",
+    "B07F29LMJR",
+    "B07F7T45PX",
+    "B07FBPG8YF",
+    "B07FXB7NNJ",
+    "B07FYVB28Z",
+    "B07G9G7MRK",
+    "B07GCLPVSH",
+    "B07GNKJCT7",
+    "B07GWM19Q3",
+    "B07GZMRMFX",
+    "B07H1JPTN7",
+    "B07H2ZG1J2",
+    "B07H3SNG5V",
+    "B07HBJY615",
+    "B07JDJDTCV",
+    "B07JZCT38P",
+    "B07K1K8GPG",
+    "B07K8JJ29G",
+    "B07KB7NW2P",
+    "B07KFWJFVH",
+    "B07KHYRMT8",
+    "B07KWXRN4L",
+    "B07KYTF75T",
+    "B07L1CBZ55",
+    "B07L378RG7",
+    "B07M6GFJNN",
+    "B07MNWK1G9",
+    "B07MVYPZ6L",
+    "B07MXMXTDZ",
+    "B07N4M7F9Q",
+    "B07NXFVBWR",
+    "B07P38PKYF",
+    "B07PLVBHF4",
+    "B07PM595KY",
+    "B07PQGQQJN",
+    "B07PWXLB8D",
+    "B07QQLV6M9",
+    "B07QVMQLZP",
+    "B07QW6LC95",
+    "B07R4MVD37",
+    "B07R6P9RB9",
+    "B07RHH5GTN",
+    "B07RLFQPZ6",
+    "B07RSB9XY4",
+    "B07RXM8LJY",
+    "B07SBF87VZ",
+    "B07SD12B43",
+    "B07SSYTBQH",
+    "B07SZ9PM3N",
+    "B07T4PG5D8",
+    "B07TC2MR4C",
+    "B07TH9N8MG",
+    "B07TKXBWWW",
+    "B07VCLPCZ3",
+    "B07VG8Z4CY",
+    "B07VKSXPK9",
+    "B07VRKZMG4",
+    "B07VVYGW6S",
+    "B07VWHJBB6",
+    "B07VXKB1CH",
+    "B07WNK5943",
+    "B07WP56S44",
+    "B07WTR5Q9F",
+    "B07Y2X37HH",
+    "B07Y5W98K2",
+    "B07Y6D86XY",
+    "B07YBG5GLP",
+    "B07YS35KWL",
+    "B07YS5M43P",
+    "B07YSGVQ16",
+    "B07YZ8BD4Y",
+    "B07Z43XN94",
+    "B07Z9K88PN",
+    "B07ZB5VRBR",
+    "B07ZHVK8DF",
+    "B07ZJLDD7B",
+    "B07ZQYZ82X",
+    "B07ZVGJQ5M",
+    "B0815872LK",
+    "B081CX1HZF",
+    "B081GZV9FM",
+    "B081SVDLGV",
+    "B081XSL347",
+    "B0824ZJXTC",
+    "B08264QY7Y",
+    "B0827251ZY",
+    "B082D21GRP",
+    "B082LNZGP1",
+    "B0832ZGX1J",
+    "B083996BY3",
+    "B083FK95QH",
+    "B083FNPHF3",
+    "B083N5ZH1W",
+    "B083NG9YW1",
+    "B083ZTWR8F",
+    "B0844GFJLW",
+    "B0846WMQZF",
+    "B0847BRCGC",
+    "B0848JRKXN",
+    "B084TRHTV8",
+    "B084TT4PDS",
+    "B08521HMMB",
+    "B0855Q2GWV",
+    "B085B8BRPS",
+    "B085T5D6JF",
+    "B086GL3TD7",
+    "B0875ST9FW",
+    "B087CCFSX4",
+    "B087CX7XP3",
+    "B087GDHJGJ",
+    "B087R8YJ5X",
+    "B088GZYJQM",
+    "B088LZQPBD",
+    "B088TQJ3L5",
+    "B088X2RPZ5",
+    "B089NYGBCK",
+    "B089PXB1KS",
+    "B089QGYGP2",
+    "B089S1CK1V",
+    "B08B3DZNB6",
+    "B08BC5MKSP",
+    "B08BR9FB4N",
+    "B08BTJG67J",
+    "B08BTLCMX8",
+    "B08BTMZVT7",
+    "B08BXYQH9N",
+    "B08BY4JSK8",
+    "B08C2R9WKP",
+    "B08C4KRHM5",
+    "B08CHCYH1C",
+    "B08CHJMVH4",
+    "B08CQ8W7Q6",
+    "B08CZJ263Z",
+    "B08D6CTL1T",
+    "B08D6W3874",
+    "B08D6XQX14",
+    "B08DD46TT8",
+    "B08DFKQ911",
+    "B08DJ5CCV1",
+    "B08F2J9HQN",
+    "B08F357QMX",
+    "B08FDJHKPP",
+    "B08FSV9T3R",
+    "B08FWQDDLN",
+    "B08FX83LHM",
+    "B08FYL1FPH",
+    "B08G3JWPL2",
+    "B08G9QJYF1",
+    "B08HMLKS2N",
+    "B08HZ3DDH6",
+    "B08JLYYNBV",
+    "B08K2MRC13",
+    "B08K2WB5JD",
+    "B08K33DWP8",
+    "B08K3YZ535",
+    "B08KSRLLXB",
+    "B08L547HVD",
+    "B08L6D63B5",
+    "B08L9DJ6GT",
+    "B08L9GM9FC",
+    "B08LPMTGWG",
+    "B08LQB251V",
+    "B08M3PC34T",
+    "B08MTX6S61",
+    "B08N56CYYS",
+    "B08N69PLXB",
+    "B08N6XM9JC",
+    "B08N6YXLJZ",
+    "B08NPSQCCS",
+    "B08P1TCBSS",
+    "B08P434R45",
+    "B08P44G2XY",
+    "B08P4QLQNM",
+    "B08P6RC496",
+    "B08PQGD1CB",
+    "B08PV7TDDD",
+    "B08Q1L851R",
+    "B08Q2TWZQ8",
+    "B08Q4JCZVP",
+    "B08Q4JR68D",
+    "B08QCK7S4W",
+    "B08QHLBVNT",
+    "B08QM9NPYN",
+    "B08QMQKZP7",
+    "B08QMRJDRC",
+    "B08QN38HGC",
+    "B08QRG9RMF",
+    "B08QYZWKZJ",
+    "B08QZ33KVH",
+    "B08RJ1N67B",
+    "B08RYTYMP1",
+    "B08S6XSGG9",
+    "B08SBH3F9J",
+    "B08SCLZVCS",
+    "B08SGH6M55",
+    "B08T1JXD4P",
+    "B08T1W2RPV",
+    "B08T95RPRS",
+    "B08V8FQYZ7",
+    "B08VHRHXX6",
+    "B08X13ZR9P",
+    "B08XMW14YT",
+    "B08XNCDWKK",
+    "B08XZ7J7ZZ",
+    "B08XZKQ1H6",
+    "B08Y68GYDP",
+    "B08YDPW1GM",
+    "B08YRKL1FF",
+    "B08YZ6JCPH",
+    "B08Z3NQ7X1",
+    "B08Z8CTZ48",
+    "B0912TLX5W",
+    "B091533XV7",
+    "B091DH4M2L",
+    "B091DTC937",
+    "B091F6LRCC",
+    "B091SV2G8B",
+    "B091TDBCJ1",
+    "B091TF66LG",
+    "B091ZGSYPH",
+    "B09245JK8P",
+    "B092LYVV32",
+    "B092SWNJNX",
+    "B093DTZCRW",
+    "B093PR3FM9",
+    "B093WWQXG9",
+    "B094VPJ5LD",
+    "B095J7ZL81",
+    "B096FV5DWV",
+    "B096JXLDFP",
+    "B096P58TMG",
+    "B096X6XB8Y",
+    "B097M7S9L7",
+    "B09875R3L3",
+    "B098JXJX6F",
+    "B098SL8F2N",
+    "B0995NKP91",
+    "B099J3XMVD",
+    "B099J6L7BC",
+    "B099QPHWYP",
+    "B099RC1C5M",
+    "B09B6F2YDL",
+    "B09C1Z94JC",
+    "B09CDYCZM4",
+    "B09CSYB9XL",
+    "B09DCMW3CX",
+    "B09DKFHZWV",
+    "B09DV1BJ22",
+    "B09F5FGTWS",
+    "B09F5YTXV7",
+    "B09FPN6HCB",
+    "B09FSYJW46",
+    "B09FW3PQ5Y",
+    "B09G1WTWQ5",
+    "B09G698BDF",
+    "B09H5PL2W4",
+    "B09HBZZ4LN",
+    "B09HH2QCMB",
+    "B09HV7KTYP",
+    "B09J57NPGP",
+    "B09KMVCNKV",
+    "B09KPW15WG",
+    "B09L454CGF",
+    "B09L7YPC58",
+    "B09L7Z5LGZ",
+    "B09LC6264K",
+    "B09LD526R1",
+    "B09LHJ29CT",
+    "B09M9H53KK",
+    "B09MG33T41",
+    "B09MJ4PSFP",
+    "B09MJ85GC7",
+    "B09N3J274K",
+    "B09NLZRNQF",
+    "B09PHGSM2B",
+    "B09PTR4P6Y",
+    "B09PZDDX1G",
+    "B09Q4GZBSK",
+    "B09Q5VY644",
+    "B09Q8RWZWK",
+    "B09QKDJ6HR",
+    "B09QMQNZNP",
+    "B09QSSJ2NN",
+    "B09R4GB77T",
+    "B09S615N7M",
+    "B09S6VKCLX",
+    "B09SBGX4T8",
+    "B09SH5FDNK",
+    "B09SMSTJRM",
+    "B09SNZ9Y7L",
+    "B09SX54FXB",
+    "B09V1WND5D",
+    "B09V4LPFK6",
+    "B09VGJSXHZ",
+    "B09VGPP4T4",
+    "B09VZJV3WN",
+    "B09W3636SV",
+    "B09WH9NTJ9",
+    "B09WT3GP3Z",
+    "B09WVBT41F",
+    "B09WW2KZGK",
+    "B09WXJ57RG",
+    "B09X2CP2M1",
+    "B09XH1QNBN",
+    "B09XM7DZ3M",
+    "B09Y4ZH274",
+    "B09Y8RJHYM",
+    "B09YCWJP3L",
+    "B09YCYW1X7",
+    "B09YKW7KZ9",
+    "B09YPSQM9L",
+    "B09YRGRMPM",
+    "B09YYHTHQB",
+    "B09Z6XFWJD",
+    "B09Z86H2JR",
+    "B09Z884J22",
+    "B09Z8Q7XKW",
+    "B09ZLRR4XG",
+    "B09ZNYN1HT",
+    "B09ZTPNRTF",
+    "B09ZTZ1DNR",
+    "B09ZY8HB4W",
+    "B0B1CW86WG",
+    "B0B21WWSQ3",
+    "B0B28GXKQ3",
+    "B0B2NPGZXX",
+    "B0B2QNNMJL",
+    "B0B2Z4WZ3B",
+    "B0B3D5DH8R",
+    "B0B3RM6SJF",
+    "B0B3T6QZVX",
+    "B0B3VHYX4Z",
+    "B0B3XRZ5WB",
+    "B0B47QHD1P",
+    "B0B4G2KK7Z",
+    "B0B4MXD481",
+    "B0B4RPMZQ3",
+    "B0B51DHRMN",
+    "B0B55G9QWH",
+    "B0B5TJJMXG",
+    "B0B62K7GBK",
+    "B0B62KZ9F5",
+    "B0B62VXHLC",
+    "B0B65CB8XM",
+    "B0B6CHST7P",
+    "B0B6HDM78G",
+    "B0B6HT6NG6",
+    "B0B7DKPQFV",
+    "B0B7LTY5F4",
+    "B0B7PX9NPJ",
+    "B0B7WD7GQS",
+    "B0B87B86HK",
+    "B0B87FNY2N",
+    "B0B8Y4RVR8",
+    "B0B9678ZR3",
+    "B0B9MKZHVS",
+    "B0B9T1BJ44",
+    "B0BB6LZTDF",
+    "B0BBGD927D",
+    "B0BBND4T9S",
+    "B0BCF79V22",
+    "B0BCJ3HL6B",
+    "B0BCKBS56R",
+    "B0BCL1DS23",
+    "B0BCQBD9J8",
+    "B0BCVNPK1M",
+    "B0BDMCZTZ2",
+    "B0BDQ8W42Q",
+    "B0BF8PF426",
+    "B0BFDSCN36",
+    "B0BFLRTH12",
+    "B0BFQJWWYW",
+    "B0BG9B4L1G",
+    "B0BGPQRCFD",
+    "B0BGT38NWB",
+    "B0BGXXS3BK",
+    "B0BHR3Y45D",
+    "B0BJ2VQCLB",
+    "B0BJ326LNW",
+    "B0BJCTWX2P",
+    "B0BK92HHCQ",
+    "B0BL95BRBS",
+    "B0BLRVWPF2",
+    "B0BM1Z6DX5",
+    "B0BMLFNRKW",
+    "B0BN6N3HCT",
+    "B0BNK6SPLW",
+    "B0BNLCS7KS",
+    "B0BNPJ2LVY",
+    "B0BNPJSR3D",
+    "B0BNVHSYDT",
+    "B0BP1RX8KZ",
+    "B0BP7R9FQ1",
+    "B0BP9Z159S",
+    "B0BPZC84ZT",
+    "B0BQ3GKCRC",
+    "B0BQM2XLTC",
+    "B0BQP5Z4SD",
+    "B0BQRCYFMW",
+    "B0BRCNTG83",
+    "B0BRSTY97M",
+    "B0BRW5M5DP",
+    "B0BRY5DSSG",
+    "B0BS67D8DY",
+    "B0BTD91X9G",
+    "B0BTHPYTBR",
+    "B0BTHR4J5W",
+    "B0BTM8CTRM",
+    "B0BTP3BS71",
+    "B0BTT3WZ72",
+    "B0BV17HVDH",
+    "B0BVMG3HHJ",
+    "B0BVRGVF4V",
+    "B0BVVK8J5B",
+    "B0BW3TWGB3",
+    "B0BW4PZ5YH",
+    "B0BWDB2PWC",
+    "B0BWGWKP38",
+    "B0BX41J8Q2",
+    "B0BX9NKPYT",
+    "B0BXRZ7H8G",
+    "B0BY227NHD",
+    "B0BY8YDJ6S",
+    "B0BYCKBTL9",
+    "B0BYNTPC1R",
+    "B0BZMSSLBM",
+    "B0C274QZ84",
+    "B0C27P3TPH",
+    "B0C28HGT5N",
+    "B0C2BXFRVF",
+    "B0C2CP7K7P",
+    "B0C2PG14G1",
+    "B0C2YJT9YC",
+    "B0C36NGDMD",
+    "B0C3R9F39X",
+    "B0C4GZ6QKR",
+    "B0C4LBGNSK",
+    "B0C4SRK231",
+    "B0C658ZQ4T",
+    "B0C6LY2DTT",
+    "B0C6PY8R7P",
+    "B0C6RH5KBS",
+    "B0C7B7SKR2",
+    "B0C7C4ZCZK",
+    "B0C7D2S87G",
+    "B0C7D3C438",
+    "B0C85K9DDH",
+    "B0C9G3FS8R",
+    "B0C9LSF93K",
+    "B0C9SXKSDD",
+    "B0CB7TBRLW",
+    "B0CB83DWPL",
+    "B0CBPP4B74",
+    "B0CCP4L8T7",
+    "B0CDKH26VN",
+    "B0CDP6P4TK",
+    "B0CFD517NS",
+    "B0CGL66DKG",
+    "B0CGTRXHMB",
+    "B0CH16KNTJ",
+    "B0CH8TSQCB",
+    "B0CHYY2PRL",
+    "B0CJ53SDC3"
+  ],
+  "titles": [
+    "(2 Pack) MSLAN for Galaxy Note 10+ Plus/5G Screen Protector, Glass [3D Full Frame] Premium Tempered 9H Hardness Super Easy Apply for Galaxy Note 10+ 5G Work with Most case",
+    "(2+1 Pack) Note 20 Ultra 5G Screen Protector and Camera Lens Protector, 9H Tempered Glass, Fingerprint Sensor Compatible, Case Friendly, Easy Installation, HD Clear for Samsung Galaxy Note 20 Ultra",
+    "(2+2PACK) Galaxy Note 10 Plus Screen Protector Tempered Glass, Ultrasonic Fingerprint Sensor Compatible, Bubble-Free, 3D Curved, Scratch-Resistant for Samsung Note 10 Plus 5G 6.8 inch",
+    "(3 Pack) Supershieldz Anti Glare and Anti Fingerprint (Matte) Screen Protector Shield Designed for Fire 7 inch Tablet (5th Generation 2015 Release)",
+    "(3 Pack) Supershieldz Designed for Asus Chromebook Flip 12.5 inch (C302CA-DHM4 and C302CA-DH54) Screen Protector, Anti Glare and Anti Fingerprint (Matte) Shield",
+    "(4Pack) iPhone 14 13 12 Charger Fast Charging with Cable, [4x6FT] USB C to Lightning Cable with Apple Fast USB C Wall Charger Compatible with iPhone 14Pro/13 Pro/12/12 Pro Max/11 Pro Max/XS Max/XS",
+    "(6 Pack) Supershieldz Designed for LG V10 Screen Protector, High Definition Clear Shield (PET)",
+    "(DKKPIA) AC Adapter Charger for Arcade1up Game Machines Arcade 1up Fits All Riser Power",
+    "01 Digital Camera Recorder, Vlogging Camera 2MP 720P 30FPS HD Mini Digital Video Camera for Beginner for Teens Kids for Outdoor(Black)",
+    "1.98\" Smart Watch for Men Women, 100+ Sports Modes Fitness Tracker with Heart Rate/SpO2/Sleep Monitor, Step Calorie Counter, Water Resistant Smartwatches for Android & iOS, 2 Bands Included (Cream)",
+    "10 Pack 12-Inch Social Distancing Floor Decals - Professional Anti-Slip, Waterproof 6 Feet Social Distancing Floor Sticker Signs - Removable, for Hard Floors Or Carpet",
+    "100V-240V AC to DC 12V 5A(5000Am) Adapter, 60W Switching Charger Power Supply Transformer and Wall Plug for Led Strip Lights,CCTV Surveillance Camera with 2.1x5.5mm DC Jack Connector (1 Piece)",
+    "100W USB C Charger, 4 Port GaN Fast Charger USB C Wall Charger for MacBook Pro Air Charger, Type C Charging Station for iPad Pro Air, USB-C PD Charger Adapter for iPhone 13 Pro Max Samsung Galaxy S22…",
+    "102pcs Kawaii Stickers for Teens，Plushies Cat Graffiti Cute Decals Sticker Pack，Anime Game Animation Vinyl Waterproof Decal for Water Bottle，Laptop，Phone Case， Skateboard，Gift for Adult/Kid",
+    "112pcs Vintage Aesthetic Stickers, Cute Retro Journaling Scrapbooking Stickers Pack for Adult Women Teen Grils, Waterproof Vinyl Decals for Water Bottle Laptop Computer Phone Case Tumbler Cup Ipad",
+    "129 Keys PBT Keycaps Dye Sub Cherry Profile Carbon Keycaps Set Fit for 61/64/87/104/108 Cherry Mx Switches Mechanical Keyboard",
+    "12V 2A Power Supply Adapter AC 100-240V to DC 12 Volt 2 Amp Wall Adapter Manuu UL Listed 24W Transformer with 10 DC Conversion Plug for 2A 1.6A 1.5A 1.4A 1.3A 1.2A 1A 2000mA 1500mA 1000mA Power Cord",
+    "12V USB Outlet, ADSDIA 12V/24V 36W Aluminum Quick Charge 3.0 USB Car Charger Waterproof Dual Fast Charger Socket Power Adapter Outlet with LED Display for Car Boat Motorcycle RV Golf Cart DIY Kit",
+    "12pcs Bling Fancy Diamond Pens for Women Girls Writing, Black Ink Rhinestones Jewel Ballpoint Pen with Big Diamonds on top for Birthday Wedding Bridal Shower Gifts",
+    "14\" School Stack Chairs, Yellow (6-Pack)",
+    "150W 20V Charger for Asus TUF Gaming A15-FA506 A17-FA706 FX505GT FX705GT, 150W ASUS ROG Strix GL531GT G531GT G512LI, ADP-150CH B A18-150P1A",
+    "170W Charger Fit for Lenovo Laptop Power Cord Supply AC Adapter UL Listed",
+    "19.5V 4.62A PA-10 PA10 AC Adapter Power Charger Compatible with Dell Latitude E6500 E6400 E4200 E4300 E4310 E5400 90W, N5110 N5030 PA-1900-02D PA-1900-05D 7.4x5.0mm with Power Cord",
+    "1InTheOffice Letter Trays for Desk Stackable, Front-Load Mesh Desk Tray Organizer, Black, 2 Pack",
+    "1PC Flexible Mini USB LED,Mini USB LED Light Lamp,USB Light for Laptop, Reading Light,USB Powered LED Light,Portable USB Laptop Light,Blue",
+    "1TB 2.5\" SSHD Solid State Hybrid Drive for Apple MacBook Unibody A1278 A1342",
+    "2 Pieces Wall Mounted Dry Erase Marker Organizer 3 Compartments Wall Mounted Marker Organizer Acrylic Pen Holder with Adhesive and Screws for Wall Clear Whiteboard Marker Holder for School Office Home",
+    "200Pcs Neon Style Stickers Decals, Cool Neon Light Stickers for Kids Teens Adults, Waterproof Vinyl Stickers for Laptop Water Bottle Guitar Skateboard",
+    "208 Pieces Cute Animal Sticker Animal Water Bottle Sticker Decal Waterproof Vinyl Sticker for Kids Boys Girls Adults Laptop Notebook Skateboard Suitcase Guitar Scrapbook",
+    "20W USB-C Charger [2 Pack], JSAUX iPhone 14/13 Fast Charging PD 3.0 USB C Power Adapter Type C Charger Block Compatible with iPhone 14/14 Plus/14 Pro/14 Pro Max, iPhone 13/12/11 Pro Max, iPad Pro/Air",
+    "3 Pieces Dual-sided Face Mask Brush Silicone Facial Mud Clay Applicator Mask Beauty Tool for Foundation Applying Mud Clay Mask Modeling Mask Body Lotion and BB CC Cream",
+    "3 in 1 Charger, Magnetic Wireless Charging Station, Charging pad, Travel Charger, 18W Fast Mag-Safe Charger for iPhone 14/13/12/SE/11/XS/8,Samsung Galaxy, AirPods Pro,Apple Watch(Adapter Inc.)-White",
+    "3x5 Index Card Holder Pink Card File Box Organizer, Hold 1200 3x5-Inch Flash Cards- 2 Pack Pink",
+    "4 Greenery Pre K & Kindergarten Homeschool Supplies - ABC Chart For Wall For Toddlers, Number Chart 1-100 For Kids For Wall, Color Posters For Classroom Posters Preschool, Preschool Learning Posters…",
+    "4 Pack - Simple Trending Stackable Office Desk Supplies Organizer, Desktop File Document Letter Tray Holder Organizer, Black",
+    "4-Pack Screen Protector Compatible with Google Pixel Watch, NANW Soft TPU Rugged Bumper Case Cover All-Around Protective Plated Bumper Shell Accessories for Pixel Smartwatch",
+    "45W AC Charger Fit for HP 250 255 210 215 240 242 245 246 248 256 340 345 348 350 355 G1 G2 G3 G4 G5 G6 Laptop Power Supply Adapter Cord - (UL Safety Certified Products)",
+    "45W Super Fast Charging, LENCENT GaN PPS USB C Fast Charger with AC Outlet, Compatible for Samsung Galaxy S23/S23+/S23 Ultra/S22/S22 Ultra/S21/Note 20/Note 10, Laptop, 6.6ft Type C Cable Included",
+    "45W USB C Charger for New MacBook Air 13 inch 2020/2019 2018,Super Fast Wall Charger for Samsung Galaxy S23 Ultra/S23/S22 Ultra/ S22+/S22, Note 10/Note 10+/Note 20",
+    "45W USB-C Charger,Samsung Super Fast Charger for Samsung Galaxy S22 Ultra/S22+/S22/S21 S20 Plus Ultra, Note 20,Tab S8/S8+/S8 Ultra/S7,PD 3.0 PPS Type C Fast Charging Wall Charger with 5ft Cable 2 Pack",
+    "45w USB C Type C Charger for Acer Chromebook Spin R13 11 11A G6 EE 14 514 315 311 512 715 714 314 C733 Series;N15Q13 N16Q12 N17Q5 N18Q1 PA-1450-78 PA-1450-80 A16-045N1A ADP-45PE B Power Adapter",
+    "5 Pieces 44 mm Watch Case Protector Compatible with Iwatch Series 6 5 4 SE, Bling Crystal Diamonds Sparkle Rhinestone Watch Cover Plated Hard Frame Protective for Girl Women, 5 Colors",
+    "5 Sets (225pcs) Vintage Green Plants Floral Stationery Stamp Stickers Baking Gift Packing Scrapbooking Art Journaling Diary Journal Planner Label Card Envelope Book Water Bottle DIY Decals Sticker",
+    "55 Pcs Airline Marks Stickers Airways Decals for Water Bottle Hydro Flask Laptop Luggage Car Bike Bicycle Vinyl Waterproof Stickers Pack",
+    "5V 2A AC Adapter Njuone AC 100-240V to DC 5V 2A Power Supply Adaptor Universal Wall Plug 5V 2A Power Adapter 5.5mm x 2.1mm DC Jack",
+    "5V 2A AC Charger Fit for HP touchpad Tablet 10 Plus Adapter Power Supply Cord",
+    "6 Cactus Reading Posters For Classroom Library Decorations For School - Reading Posters For Elementary School, Reading Bulletin Board Sets For Classrooms, Reading Corner Decor For Classroom Decoration",
+    "6-Tier Magnetic File Holder, Large Capacity File Cabinet Organizer, No-Drill Mount Hanging Magnetic Paper Holder for File Cabinets, Office, Whiteboard, Magnetic Mail Holder",
+    "60 Pcs Expense Tracker Budget Sheets A6 Budget Binder for Banknote envelope Trackers Budget Planner for Ledger Book, Organizer, Wallet (Purple, Green, Orange, Pink, Cyan, Black)",
+    "600 PCS Smells Like Happy Mail Stickers, TNE Creator 1.5 Inch Happy Mail Labels Small Shop Stickers Thank You Customer Sticker Labels for Small Businesses Packaging Sticker, Handmade Sticker",
+    "60w Car Charger Super Fast Charging 2.0 Dual-Port (45W+15W) with USB C to C Cable for Samsung Galaxy S23,S22,S21/S21 Ultra/ S21 Plus 5G,Note 10/10+ 5G Z Fold 3 5G, S20/Note 20, Tab S7/S7+",
+    "65W 45W Charger Fit for Lenovo IdeaPad Flex 5 3 CB Laptop - (Safety Certified by UL)",
+    "65W 45W USB-C Type-C Laptop Charger Compatible with Lenovo Chromebook C330 S330 100e 300e Yoga C930 C940 730S Samsung/LG/Acer HP Spectre x360 13-ac013dx Elite x2 1012 G1 ADLX65YDC2A AC Adapter",
+    "65W AC Charger Fit for Asus Zenbook 14 UX433FN UX433FA UX433F UX433 UX433FLC UX433FL UX433FAC UX434FL UX434F UX434FLC UX434FAC UX434FA UX434FQ UX434 Laptop Power Supply Adapter Cord",
+    "65W Ac Adapter/Laptop Charger/Power Supply for ASUS RT-AC68U RT-AC88U RT-AC66U RT-AC5300 RT-AC66U B1 RT-AC3100 RT-AC3200 RT-AC5300 RT-AC87U RT-AC1900P TM-AC1900 Wireless Tri-band Gigabit Router -EMAKS",
+    "65W Charger Power Supply Adapter for Dell Chromebook 11 3180 3189 3120 3181 P22T P26T LA65NS2-01 PA-12 HA65NM130 06TM1C 09RN2C 6TM1C Y1H45 1XRN1 PA-1900-02D CB1C13 DA65NM111-00 928G4",
+    "65W GaN Charger,USB C Fast Charger, PD 3.0 Charger Foldable Wall Charger Adapter with 3-Port Compatible for iPhone 13 Pro Max/13 Pro/13/13 Mini, MacBook Pro, iPad Pro, Switch, Galaxy S21/S20",
+    "65W GaN USB C Charger 3 Ports Compact Fast Charger Power Adapter Foldable Plug Wall Charger and 100W Type C Fast Charging Cable with Power Delivery for Laptops, Tablets & Phones",
+    "65W USB C Charger Block by ULTRANET, PPS 2-Port Fast Compact Foldable USB Wall Charger for MacBook Pro/Air, iPad Pro, Galaxy S22/S10, Dell XPS 13, Note 20/10+, iPhone 13 Pro Max, Pixel & More",
+    "65W USB C Laptop Charger Fit for Dell Latitude 7420 7520 7320 3120 2 in 1 Type C Laptop AC Power Adapter Supply Cord",
+    "67 Pieces Christian Bulletin Board Religious Piece of Gods Plan Sunday School Decorations Bible Verse Holiday Cutouts for Classroom Sunday Puzzle Piece Decor for School for Door Wall Decor Supplies",
+    "6Ft 20W Fast Charger for Google Pixel 7 7 Pro 6 6 Pro 6A 5 4A 4 3 3A 2,Pixel XL 2XL 3XL 4XL Phone Pixel Stand PD Type USB C AC Power Supply Adapter Cord(Black)",
+    "6Pack PC Case Compatible with Samsung Galaxy Watch 5 4 40mm with Tempered Glass Screen Protector, KakuFunny Ultra-Thin Scratch Resistant Bumper Protective Cover for Galaxy 5 4,40mm",
+    "AACL 3D Curved Tempered Glass for Samsung Galaxy S23 Ultra Screen Protector, 9H Glass for S23 Ultra 5G, Scratch Proof, Easy Installation Frame, Bubble Free, Case Friendly [3 Pack]",
+    "AC Adapter Wall Charger w/Extended 6' FT Power Cable by ChargerCity for Garmin Nuvi Drive DriveSmart 50 51 51LMT 55 55LM 57 57LM 57LMT 60 61 61LMT 62 65 65LM 66 66LMT 67 67LM GPS",
+    "AC Wall Adapter for Tascam Studio DP-006 DP-008EX DC Power Supply Charger Cord Cable, 5 Feet, with LED Indicator, Compatible Replacement",
+    "AGVEE 32Bit 384Khz Digital USB-C Headphones, Type-C Earbuds in-Ear Wired Earphone with Microphone (Mic) Ultra Bass Audifonos for Samsung S21 S20, Note 20 10, iPad Pro, Google Pixel, Gray",
+    "AGVEE 3A Fast USB-C Charging Cable [4 Pack 3ft] Seamless USBC End Tip, Braided Type-C Charger Phone Cord for Samsung Galaxy S10 S9 S8 Plus, Note 9 8, LG Stylo 4 5, G7 G8 V20, Gold",
+    "AIGOMARA Compatible Samsung Galaxy Note 10 Plus Case with Strap Kickstand Butterflies Shockproof Protection Soft TPU and Hard PC Anti-Scratch Slim Cover for Galaxy Note 10+",
+    "ANNKE 8CH Wired Security Camera System with 1TB Hard Drive, H.265+ Surveillance DVR and 8 x 1080p HD IP66 CCTV Camera, 100 ft Night Vision with Smart IR, Easy Remote Access, Motion Detection",
+    "ANNKE H.265+ Full 1080p Home Security Camera System Outdoor Indoor, 5MP Lite CCTV DVR 8 Channel and 4 x 1080p 100 ft Night Vision Weatherproof Surveillance Bullet Camera, Motion Alerts (No Hard Drive)",
+    "AYNEFF Compatible with 65W USB-C Laptop Charger, Chromebook Charger Dell XPS 13 9350 9360 9380 9370 9365 7280 5580,Latitude 7370 7280 5480 7275 5290 7490, 0JYNW, 2YKOF, 02YKOF Type C Power Cord",
+    "Ac Adapter Charger 65W 19.5V 3.34A for Dell Latitude E6420 E6430 E6430s E6430U E6440 E6500 E6510 E6520 E6530 E6540 E7240 E7250 E7440 E7450 LA65NM130 HA65NM130 Power Supply",
+    "Accessory USA AC DC Adapter for Sony NSZ-GT1 NSZGT1 NSG-AC19V Blu Ray Google Internet TV Box Power Supply Cord",
+    "Acer Travelmate P253-M P253- E TMP253E (All Models) Laptop AC Adapter Charger Power Cord",
+    "Acrimet Horizontal Triple File Folder Holder Organizer (Solid Pink Color)",
+    "Acrimet Incline Desk File Sorter Step 5 Sections Heavy Duty (Solid Purple Color)",
+    "Adesso WKB-4400UB - Wireless SlimTouch Desktop Touchpad Keyboard",
+    "Aemus (3 Pack Compatible for SyncUP Watch Screen Protector T-MOBILE Smart Watch TPU Full coverage Bubble self-healing flexible film",
+    "Agents of S.H.I.E.L.D. Logo 5\" Shield Decal Sticker for Cars Laptops Tablets Skateboard - Black",
+    "Aiuonenian Photo Storage Box 5x7, Cardboard Photo Boxes For Pictures, Family Photos Storage Box Set, Small Photo Storage Box Archival For Baby Photos, Photo Gift Boxes, Postcards Box (Orange)",
+    "Alphaline Studio Over-the-Ear Headphones | MoonPoint",
+    "Amazfit T-Rex 2 Smart Watch for Men, Dual-Band & 6 Satellite Positioning, 24-Day Battery Life, Ultra-Low Temperature Operation, Rugged Outdoor GPS Military Smartwatch, Real-time Navigation-Black",
+    "Amazon Basics USB 2.0 A-Male to Micro B Cable - 6 Feet",
+    "Amazon Basics USB 3.0 Cable - A-Male to B-Male - 6 Feet (1.8 Meters)",
+    "Amcrest AMDV10818-4B4D-B Full-HD 1080P 8CH Video Security System w/Eight 2.0MP (1920TVL) Outdoor IP67 Bullet & Dome Cameras, 66ft Night Vision, Pre-Installed 1TB Hard Drive",
+    "Anbel Design Anbzsign [2 Pack] Xiaomi Redmi Note 8 (2019/2021) 6.3\" Privacy Screen Protector, [Full Coverage] [Case Friendly] Anti-Spy 9H Hardness Tempered Glass",
+    "Anker 543 USB C to USB C Cable (140W 6ft), USB 2.0 Bio-Based Charging Cable for MacBook Pro 2020, iPad Pro 2020, iPad Air 4, Samsung Galaxy S23+/S23 Ultra/S22 Ultra (Phantom Black)",
+    "Annymall for iPhone Xr Case with 2X Screen Protector,3 Layer Shockproof Dropproof Heavy Duty Military Grade Protection Non-Slip Rugged Durable Phone Case Cover for Apple iPhone xr (Black)",
+    "Anti Blue Light Screen Protector for 32 Inches (Screen Measured Diagonally) TV. Filter out Blue Light that relieve computer eye strain and help you sleep better",
+    "Apple Wireless Charger 4 in 1 for iPhone 14 Pro Max/13/12/11, AirPods Pro, iPad Stand, Watch Charger for iWatch Series 8/7/6/SE, Wireless Charging Station for Multiple Devices",
+    "Apple iPad Charger Wall Charger and Cord 10 ft 2Set,12W iPad Charger Fast Charging Block & iPad Charger Cord 10 ft Apple Certified Lightning Cable for iPad 7th 8th 9th Generation,iPad Air/Mini,iPhone",
+    "Ares Ultra Slim Pocket Foldable Bluetooth Wireless Keyboard with Touchpad (Silver)",
+    "ArmorSuit MilitaryShield - Apple iPhone SE Matte Screen Protector - Anti-Glare/Anti-Fingerprint & Anti-Bubble Shield + Lifetime Replacement",
+    "ArmorSuit MilitaryShield Anti-Glare Screen Protector for Apple iPhone 7 Plus - [Max Coverage] Anti-Bubble Matte Film",
+    "ArmorSuit MilitaryShield Anti-Glare Screen Protector for Samsung Galaxy Tab A 10.1 (2016 Release) with S-Pen [SM-P580] - [Max Coverage] Anti-Bubble Matte Film",
+    "ArmorSuit MilitaryShield Screen Protector for Samsung Galaxy Tab 4 10.1 - [Max Coverage] Anti-Bubble HD Clear Film",
+    "BAISRKE Huawei Y6 2018 Case, Honor 7A Case with Flowers Slim Shockproof Clear Floral Pattern Soft Flexible TPU Back Cove for Huawei Y6 2018 /Honor 7A/Y6 Prime 2018 [Purple Pink]",
+    "BEARUT Wooden Router Shelf Wall Mount WiFi Router Storage Box Modem Cable Router Cover Organized Power Strip Cable Management Hider Rack Need Assembly 11.4\" W x 9.4\" H x 9.1\" D",
+    "BENTOBEN Compatible with Samsung Note 10 Case, Slim Silicone 360° Ring Holder Kickstand Support Car Mount Microfiber Liner Shockproof Non-Slip Case for Samsung Galaxy Note 10 6.3\"- Navy Blue",
+    "BETCKEY - Compatible Large Address Labels Replacement for Brother DK-1208 (1.4\" x 3.5\"), Use with Brother QL Label Printers [10 Rolls + 2 Reusable Cartridges]",
+    "BEYONG 50PCS Animal Stickers for Laptop, Water Bottles, Computer, Phone, Luggage for Kids, Teens, Children",
+    "BHONGVV Pen Holder Metal Wire Pencil Cup for Desk Cute Pen Organizer for Office Desktop Makeup Brush Holder (2Pcs, Gold)",
+    "BNEHS Office Chair Ergonomic,Branch Mesh Chair for Heavy People with Slide Seat, Executive Desk Chair for Back Pain with Adjustable Headrest,Black",
+    "BOBLOV A22 Body Camera, 180° Rotatable Lens, 1080P HD BodyCam with OLED Screen to Playback, Portable Body Camera with Audio, 10 Hours Recording for Travel/Walking/Delivery (32GB Card)",
+    "BORIYUAN iPad 10.2 8th Gen 2020/7th Gen Keyboard Case with Touchpad, Detachable Keyboard Slim Leather Folio Smart Cover with Pencil Holder for iPad 10.2 Inch/iPad Air 3 10.5\"/iPad Pro 10.5-Black",
+    "Backlit Keyboard Case for Samsung Galaxy Tab S8+/ S7+ / S7 FE 12.4\", Cover with Detachable Keyboard US Layout for Samsung Galaxy Tab S7 FE/ S8 Plus / S7 Plus 12.4 Inch, Black",
+    "BaiHui Compatible with Apple Watch Case 38mm Series 3 2 1, Women Sparkling Bling Case Cover with Over 200 Crystal Diamond Bezel Case Protector for 38mm Series 3 - Gold",
+    "Baseus USB Type C Cable for Car, Retractable USB C Cable(3FT) Curly USB A to USB-C Fast Charger Cord Compatible Samsung Galaxy S10 S9 S8 Plus Note 9 8, Moto Z, LG5/G6/V20, USB C Devices (Black)",
+    "Beseller Battery Case for iPhone 12 Mini, 4700mAh Slim Rechargeable Battery & Raised Bezel, Fully Charging & Protective Battery Case for iPhone 12 Mini (5.4 inches) Black",
+    "Beyond Cell New Clear Full-Body Protection TRI-MAX Transparent CASE Built-in Screen Guard TPU WRAP Slim Cover for Samsung Galaxy S8 Plus, S8+ (SM-G955)",
+    "Black Girl Recipe Sticker 1 Piece 4 x 3 Inch Phone Laptop Inspirational Motivational Decal for Strong Women",
+    "Bluetooth Wireless Keyboard, Multi-Device Portable Keyboard with USB Rechargeable and Integrated Stand Phone Holder, Wireless Keyboard for ipad, Compatible with iOS, Android, Windows System.",
+    "Blur Band Stickers | 50PCS-Pack Cute Funny Vinyl Waterproof for Laptop Stickers,Skateboard, Water Bottle, Computer, Guitar,Luggage, Adults,Teens Stickers",
+    "BoHangong 3 Pack Screen Protector for iPhone 14 Pro[6.1 inch], Dynamic Island Compatible, Case Friendly Tempered Glass Film,[9H Hardness] - HD",
+    "BodyGuardz - Pure Arc Glass Screen Protector for Galaxy S8+, Ultra-thin Tempered Glass Screen Protection for Samsung Galaxy S8+",
+    "Bodyrbrun Solar Panel Foldable Portable Universal 12W High Efficiency Dual-Port Solar Charger - by iURJA",
+    "Bondi Band Womens Armband Cell Phone Holder, Arm Bands for Running Compatible With iPhone And All Other Cell Phones, Stash Identification, Credit card, Cash, Keys, Gels and More, Many Colors",
+    "Brydge W-Touch Wireless Precision Touchpad | Compatible with Surface & Windows | Designed for Surface | (Black)",
+    "C2G/Cables to Go 40320 Velocity HDMI to DVI-D Digital Video Cable (2 Meter/6.5 Feet)",
+    "CERRXIAN 30cm Gold Plated USB Type C 3.1 Mount Extension Dash Flush Cable for Car, Boat, Motorcycle, Truck Dashboard (USB-C 3.1)",
+    "CHBC 3 Pcs/set Lovely Cherry Blossoms Rubber Erasers Sakura Petal Sketch Painting Pencil Correction Tool School Office Stationery Supply",
+    "CHUWI LarkBox Pro Mini PC, Intel J4125, Smallest Windows 10 4K Desktop Computer with 6GB RAM / 128GB eMMC, Support BT 5.1, Dual WiFi, 4K, Linux",
+    "CHWARES Wireless Video Doorbell Camera 1080p HD with Chime, Motion Detector, Night Vision, 2-Way Audio, Battery Powered, Free Cloud Storage, No Monthly Fee",
+    "CJP-Geek 5ft Mini USB Charging Cable Replacement for Cygolite Streak 450 Bicycle Light Power Cord Lead",
+    "COLAMY Reclining Office Chair with Footrest, Big Tall Bonded Leather Adjustable Tilt Angle Height Lumbar Support High-Back Home Desk Task Executive Chair",
+    "COZYZOOM File Box with Lock, Fireproof Document Organizer Box, Collapsible Storage Filing Box with Zippers Office Home Safe File Box for Hanging Letter/Legal Folders (Silver)",
+    "Cactus Shaped Rollerball Pen Cute Creative 0.5 mm Black Ink Gel Pens For Student and Office 12 Pieces by Meiso",
+    "Canon EOS 77D Body (Renewed)",
+    "Canon EOS R Mirrorless Digital Camera with 24-105mm Lens (Renewed)",
+    "Canon EOS Rebel T7 DSLR Camera with 18-55mm is II Lens + Canon EF 75-300mm III and 420-800mm Preset Zoom Lens + 128GB Memory + Filters + Editing Software + Spider Flex Tripod + Professional Bundle",
+    "Canon Hf-g30 Hfg30 Hf G30 Vixia Camcorder with LED Light , Wide Angle Lens, Telephoto Lens, Full Size Tripod, 16gb Sd Memory Card, Camera Case, Sd Card Reader , Table Top Tripod Silver Package",
+    "Canon PowerShot A200 2MP Digital Camera",
+    "Canon PowerShot ELPH 100 HS 12.1 MP CMOS Digital Camera with 4X Optical Zoom (Silver)",
+    "Canon PowerShot SX20IS 12.1MP Digital Camera with 20x Wide Angle Optical Image Stabilized Zoom and 2.5-Inch Articulating LCD (Discontinued by Manufacturer)",
+    "Canon PowerShot SX530 HS Digital Camera + Sandisk 32GB Memory Card + Tripod + Ritz Gear Bag + Card Reader + Cleaning Kit + Spare Battery Bundle",
+    "Canon Powershot A2000IS 10MP Digital Camera with 6x Optical Image Stabilized Zoom",
+    "Canon Powershot SX20IS 12.1MP Digital Camera with 20x Wide Angle Optical Image Stabilized Zoom and 2.5-inch Articulating LCD Bundle w/ 4GB SD Memory, Card Reader, Case, Tripod and Lens Cleaning Kit",
+    "Canvas Prints Wall Art Ocean Beach Bathroom Decor,Starfish Shell Pearl Artwork Framed Paintings Wall Decoration for Living Room Bedroom Home office Prints(3X12x16in)",
+    "Car Phone Wireless Charger Holder Mount, Smart Sensor 15W/10W/7.5W Fasting Charging Mount, Air Vent Auto Clamp Smartphone Holder Compatible with iPhone 12/11/X/8/7/6/SE Series, Android Phones, Black",
+    "Car Wireless Charger, Topume 15W Qi Car Charger, Auto-Clamping Wireless Car Charger Windshield Dash Air Vent Car Mount Compatible with iPhone 13/12/12Pro/11/Xs Samsung S10/Note 10",
+    "Casio Exilim EX-V8 8MP Digital Camera with 7x Anti-Shake Optical Zoom",
+    "Cast Iron Doorstop Door Wedge Stop Black & White Lighthouse 10.25\" Tall",
+    "Cell Phone Jail Lock Box,Timer Self Control Mobile Phone Holder Locker Prison,Timed Phone Stand Cage for Sumsung/Google/iPhone 14/13 Pro Plus,Classroom Office Family Time Party Holiday Gadget Gift",
+    "Cell Phone Ring Holder Rabbit,Fwaytech 360 Rotate Metal Finger Ring Grip Kickstand Socket for Smartphones,3Pack (Rabbit)",
+    "CellEver 4.8A 24W PowerBoost High Speed Dual USB Wall Charger with SmartID (2 Ports and Foldable Plug) Travel Charger for Apple iPhone 5, 5S, SE, 6, 6s, 7, 8, X, XS, XR X Max iPad Pro and more - White",
+    "Charger Dock Stand for Garmin Fenix 7 7S 7X 6 6S 6X 5 5S 5X Plus, Forerunner 955 945 745 255 245 55 45, Approach S10 S12 S40 S42 S60 S62, Vivoactive 3/4/4S, Instinct 2 2S, Venu 2 2S Plus (Silver)",
+    "Charger for Acer Laptop Charger, 65W, 45W, AC Adapter for Acer Monitor LCD H236HL SA230 G276HL S230HL G246HL G206HQL S271HL S240HL G236HL S220HQL S202HL; G236HL H226HQL H276HL HN274H",
+    "Charging Cable, Quick Charge Power Adapter, Waterproof Outdoor/Indoor Charging Adapter & Power Extension Cord for Arlo Pro & Pro 2, Arlo Go, Other Smart Security Home Camera, 1 Set, Black (30FT)",
+    "Charging Clip Compatible with Garmin MARQ Athlete/Aviator/Captain/Driver/Expedition/Golfer Smartwatch Charger, 3.3ft USB Data Sync Charge Cradle Dock Adapter Charging Cable - Black",
+    "Cllena 12v Dc 3.1a Waterproof Dual Car USB Charger Socket Blue LED Indicator for Rocker Switch Panel Car Boat Jeep iPhone 6s/6 Plug Outlet",
+    "Collapsible File Box with Lid [2-Pack] Decorative Documents Storage Organizer with Linen Filing, Home Office Bin, Letter Size Legal Size, Gray",
+    "Comix Desk Organizer with Pen Holder, Storage for desk, Desktop Storage, Plastic Storage with drawers, Makeup Organizer, Desktop Organizer for Office School Home (White)",
+    "CommClad 25-inch Deep 4-Drawer, Letter-Size Vertical File Cabinet (Black)",
+    "Compatible Samsung Galaxy S10 S10+ S10E S9 S8 S9+ Note 9 Note 8 S8 Plus Fast Charger USB Type C Charger, Quick Charge 3.0 USB Wall Charger for LG G7 G6 V30 with Rapid USB C Cable",
+    "Compatible with Garmin Forerunner 25 Charger 3.3ft USB Cable Charging Dock/Clip Compatible with Garmin Forerunner 25 Running Smart Watch (Black, Small Size for Woman)",
+    "Computer Monitor Light, Screen Light Bar with No Glare for iMac(22~29'') Auto Photosensitive Countless Color Temperatures & Brightness USB LED Desk Lamp for Professional Designer/Software Programmer",
+    "Coolfire - Silent Wake Yourself Up Wristband Vibrating Alarm Watch for Couples, Students, Hearing Impaired. Silent Wrist Shock Alarm Clock. Vibration Alarm Bracelet, Vibrating Alarm Clock (Blue)",
+    "Core Innovations Baby Shark Alarm Clock and Bluetooth Speaker, Yellow",
+    "Corsair K55 RGB Gaming Keyboard - Quiet & Satisfying LED Backlit Keys - Media Controls - Wrist Rest Included - Onboard Macro Recording (Renewed)",
+    "Cosmo JrTrack 2 Kids Smartwatch | 4G Phone Calling | Text, Voice, & SOS | Precision GPS | Selfie Camera | Photo Sharing | Flexible Cosmo Plans | Tracking Watch for Kids Pink",
+    "CosyTech Lumbar Support Pillow for Office Chair - Ideal for Lower Back & Neck Pain Relief - Memory Foam Seat Cushion - Ergonomic Orthopedic Back Pillow - Chair Cushion for Desk Chair (Black)",
+    "Cross Peerless Special-Edition Ballpoint Pen, Medium Nib - London",
+    "Cross Tech 3+ Multifunctional Pen (Standard Box, Mechanical Pencil, Ballpoint Pen, Eraser/Stylus Cap) Glossy Chrome",
+    "Cute Cartoon -Pushing and Standing Silhouette - MacBook Trackpad-Laptop.G1-A24",
+    "DC 5V 2A Power Supply Adapter for Nextbook, Tablets, Baby Monitor, Victrola Record Player, Yealink SIP Phones, TV Box, Camera, Guitar Receiver, Speaker and More 5Volt 2Amp Devices Charger Cord",
+    "DIAN iPhone 14 Series Tempered Glass Screen Protector and Camera Lens Protector, cut to size Full Coverage with Easy Installation Kit [3+1 PACK] (Iphone 14 Pro MAX)",
+    "DIGIFORCE USB C Wall Charger USB-C Power Adapter Type C PD Fast Charger Block for iPhone 13/12/11 /Pro Max, XS/XR/X, iPad Pro, AirPods Pro, Samsung Galaxy and More",
+    "DISCOUNT PROMOS Personalized Silver Accent Grip Pens - 100 pack - Plastic Pens - Customizable Text, Logo - Purple",
+    "DOMEUN Keyboard Case for iPad 10th Generation 10.9 inch 2022 - Detachable Bluetooth Keyboard, Folio Stand Keyboard Cover with Pencil Holder, Rechargeable Keyboard for New iPad 10th Gen 2022 (Black)",
+    "DTech 10 ft DB9 Serial Cable Female to Female 9 Pin Straight Through (Black, 3 Meters)",
+    "Dayspring Pens Engraved Cross Pen | Personalized Cross Tech3+ Lustrous Chrome Multifunction Gift Pen. A Black and Red Pen With a Mechanical Pencil. Custom Engraving",
+    "Delippo 18.5V 6.5A 120W Slim Laptop Charger Power Supply for Hp Pavilion ZD7000 ZX5000 ZV5000 3000 R3000 HP/Compaq Notebooks Nx9000 Nx9010 Nx9020 Nx9110 Nx9500",
+    "Dell Premier Multi-Device Wireless Bluetooth Keyboard and Mouse - KM7321W",
+    "Denkee 4 Pack A4 File Portable Project Case, Plastic Storage Box for 8.5\" x 11\" Letter Paper, Scrapbook Paper Storage Boxes Documents Magazines Holder (Inner Size 12.2 x 8.9 x 0.7 in)",
+    "Desk Lamp with Wireless Charging Smart Watch, Smart Phone, Samsung Galaxy LCD Display Time and Alarm Clock, 3 Color & 5 Brightness Levels, Foldable Reading Light with QC 3.0 Adapter, Black",
+    "Desktop Power Strip with USB - JACKYLED 4.8A 3 USB & 2 Outlet Charging Station with Phone/Tablet Stand 6.56ft Extension Cord Surge Protector Outlet Extender for Nightstand Office and Travel - White",
+    "Digital Camera for Kids Teens Boys Girls Adults,2.7K Digital Camera 44MP Camera with 16X Digital Zoom YouTube Vlogging Camera",
+    "Dolphin.dyl(TM) Replacement Individual Key Keyboard for US Retina Display Pro A1425 A1502 A1398 A1466 Replacement Key Keyboard Left Shift (New Version)",
+    "Door Stop, 2 Pack Stainless Steel Door Stoppers, Brushed Satin Nickel, Extra Long Modern Heavy Duty Rubber Doorstop Door Stopper for Wall and Door Protection",
+    "DoorBird IP Video Door Station D2101KV, Stainless Steel V2A Brushed - grinding dust resistant - 1 Call button- Keypad - POE Capable",
+    "DreamsEden Decorative Remote Control Holder - Vintage American Flag Desk Organizer Box Home Office Decor Storage Caddy Remotes Stand Container with 5 Slots (Patriotic)",
+    "Drtopey Micro USB Cable Android Charger [2Pack 3ft/6ft]Nylon Braided Cord Magnetic Charging Cable with Led Light for Android Smartphones and More(Black)",
+    "Dual Head Car Fans 12V/ 24V USB Rechargeable Fan Electric 3 Speed Car Cooling Fan 360 Degree Rotatable Car Fan for Car SUV RV Boat Auto Vehicles",
+    "Duoai Mini USB Desk Fan Battery Operated, 2000mAh Desktop Rechargeable Small Quiet Personal Fans Portable with 360°Rotation 3 Speeds for Office Home Library Dorm Bedroom Car Outdoor Travel, Blue",
+    "E EGOWAY Screen Protector Drawing Texture Paper Matte PET Film for iPad Mini 7.9 inch (iPad Mini 5 4)",
+    "EGV 2 Pack Samsung Galaxy S21 Ultra Screen Protector [9H Polymer Nanomaterials] [Not Glass], 2 Pack Lens Protector, Fingerprint Compatible, Easier Installation with UV Lamp, Shockproof Drop Protection",
+    "EMMA + OLIVER Jute Church Chair 20.5 in. Wide",
+    "ENGPOW Fireproof Photo Storage Box with 16 Inner 4\" x 6\" Photo Case(Clear), Photo Box Organizer with Lock,Collapsible Portable Photo Storage Containers with Handle for Photos,Picture,Valuables",
+    "ESR MagSafe Ring (HaloLock), MagSafe Sticker, Universal Magnetic Wireless Charging Conversion Kit, Compatible with iPhone 14/13/12 Series, Galaxy S22, MagSafe Accessories, 4 Pack, Black and Silver",
+    "EYZUTAK Floral Case for iPhone 7 Plus iPhone 8 Plus,Daisy Flowers Design Cover Premium IMD Craft Phone Case Rugged Shockproof Slim Case Full Body Protective Case (Camera Protection)-Blue",
+    "Easykart Truck Stickers for Kids, Construction Stickers 500pcs, 12 Different Truck Vehicle Stickers, Tractor Stickers for Home, Birthday, Party, School Activity (1.5 Inch Round)",
+    "Eccolo World Traveler Desk Size Journal, 256 Lined Page Hardcover Notebook, 8-x-10-inch, Live A Great Story",
+    "Echolife Skull Pen Pencil Holder Cup Resin Skeleton Makeup Brush Holder Dressing Table Office Desk Storage Box Green Plant Flower Pot for Home Office Decoration Halloween (White)",
+    "Encased Rebel Armor for iPhone 11 Pro Max Case (Black)",
+    "English Keyboard Stickers Full Set Big Letter, Universal PC Computer Laptop Desktop Keyboard Replacement English Keyboard Stickers, Black Background with White Lettering-2 Pack",
+    "Epakh 24 PCS Disposable Fountain Pens, Quick Drying Ink Pen, Smooth Writing Multicolor Art Supplies for Sketching, Journaling, Calligraphy and Doodling, 8 Basic Colors, Black",
+    "Ergonomic Office Chair, High Back Home Office Desk Chairs, Big & Tall Mesh Computer Task Chair with Lumbar Support/Headrest/5D Armrests, Executive Desk Chair with Adjustable Height & Tilt Function",
+    "Evoluent Wired Essentials Full Featured Compact Keyboard - EKB",
+    "Extra Thick Seat Cushion | Dual Layer Memory Foam Seat Cushions for Coccyx Tailbone Sciatica Back Pain Relief | Soft Support Long Sitting for Office Chair, Wheelchair, Car Seat Cushion",
+    "FD 1TB 7200RPM External Hard Drive - USB 3.2 Gen 1 - 5Gbps & eSATA - GForce 3 Aluminum - Black - Compatible with Mac/Windows/PS4/Xbox (GFP1000EU3) by Fantom Drives",
+    "FITUEYES Height Adjustable Standing Desk Gas Spring Riser Desk Converter for Dual Monitor Sit to Stand in Seconds SD108001MB",
+    "FIZZEEY Waiting Room Reception Guest Chairs - Waiting Room Bench, Waiting Room Furniture with Armrest for Hospital, Bank, Airport, Black",
+    "Fancy Buying 48W 12V 3.6A Portable Charger for Microsoft Surface Pro 2 Surface Pro 1 & Surface RT Tablet, Windows 8 Tablet 1536 (with 5V/1A USB Charging 6Ft Power Cord)",
+    "Fasgear USB C to USB A Cable 2 Pack 10ft Long 3A Fast Charging Type C Charger Cord Braided Right Angle Data Sync Compatible for PS5 Controller/Sam-Sung A34/Galaxy S23 Note 10/Moto G/TCL 30 SE Black",
+    "Fast Android Phone Charger Type C, 20W USB C Wall Block, 3+6FT C Power Cord Cable for Moto G Play 2023,G Stylus 5G 2022,G 5G,G Pure,G Power 2021,Motorola Edge 30 Edge 5G UW,One 5G Ace,G73 G53 G23 G13",
+    "Fast C Type Charger Kit for Samsung Galaxy S23 S22 S22+ S21 Ultra 5G S20 S10 S10E A51 A71 Note 20 Tab S8 Google Pixel 7 Pro 7 6a 6 6Pro, 20W PD Wall Plug+30W Car Adapter+2 x 60W C to USB-C Cables-6Ft",
+    "Fast Charger iPhone, iPhone 14 Charger【Apple MFi Certified】20W USB C Fast Charging Wall Charger Block with Rapid TypeC to Lightning Cable Quick Data Sync Cord for iPhone 14/13/12/Pro/Max/11/XR/SE 2022",
+    "Fast Wireless Charger, Qi Certified Wireless Fast Charger Charging Stand Pad Foldable for Samsung Galaxy S9 S9+ S8 S8 Plus Note 8/5 S7/S7 Edge,Qi iPhone Wireless Charger Compatible X 8 8 Plus",
+    "Fintie 12-Inch Ultrathin (4mm) Wireless Bluetooth Keyboard for iPad Samsung Tablet, iPhone Smartphone, iOS, Android Tablets Phone",
+    "Fintie Keyboard Case for Samsung Galaxy Tab A 8.0 2017 Model T380/T385, Smart Slim Shell Stand Cover with Detachable Wireless Bluetooth Keyboard, Composition Book",
+    "Fishing Stickers |50 Pcs Waterproof Vinyl Decals for Bike Water Bottles Laptop Bicycle Refrigerator Cup Luggage Computer Mobile Phone Skateboard Decor",
+    "Foldable Bluetooth Keyboard, Rock&Rown Pocket Size Portable Wireless Keyboard with Touchpad for Mac OS,Android, Windows, Linux, PC, Tablet, with Rechargeable Li-ion Battery-Dark Gray",
+    "Foldable Wireless Charger, 18W 3 in 1 Fast Wireless Charging Station, Suitable for iPhone 14/13/12/11 Series/XR/X/Xs/8 Plus, Charging Stand/Stand for iWatch SE/AirPods 2/Pro(White)",
+    "Freefa for Samsung Galaxy S22 Ultra Screen Protector W Phone Pin - 9H Tempered Glass Camera Lens Protector Aluminum Alloy Ring Cover S22 Ultra Accessories",
+    "Fuers Fake Camera, TL-2600 Waterproof Outdoor/Indoor Security Dummy Surveillance Simulation Bullet Camera with Flashing LED Light,Black(2pcs)",
+    "Fuji S8600Bundle Digital Camera Bundle, 36x Optical Zoom, 16MP with Included Lens kit",
+    "Fujifilm FinePix 4700 2.4MP Digital Camera w/ 3x Optical Zoom",
+    "Fujifilm FinePix F60fd 12MP Digital Camera with 3x Optical Dual Image Stabilized Zoom",
+    "GAJOFO Business Card Organizer Business Card Holder Book ,Credit Card Holder, Portable Business Card Binder File Sleeve Storage, Business Card Holders, 2 PCS Name Card Holder For Men & Women.",
+    "GALASALA Desk Organizers with File Holder, 5-Tier Paper Organizer Letter Tray with Sliding Drawer and Extra Pen Holder, Mesh Desktop File Organizer for School Office Supplies, Black",
+    "GHY Computer Privacy Screen for 29 Inch Aspect Ratio 21:9 Monitors, Computer Screen Privacy Shield and Anti Glare Screen (W x H) 26 3/8 x 11",
+    "GONEO USB C Charger 30W Fast Charging Station with Type C Ports USB C Charger Block 6ft Power Strip Wall Charger for Multiple Devices for iPhone 14, Galaxy, iPad, Tablets Smartphones",
+    "GW 4K (3840x2160 @30fps Real-time) 8 Channel Security Camera System with 4 8MP AI Facial Recognition/Human/Vehicle Detection 5X Optical Motorized Zoom PoE IP Dome Cameras",
+    "GabbaGoods Premium Shatter-Proof Tempered Glass Screen Protector for Apple iPhone 4/4S",
+    "Galaxy Note 20 Ultra Tempered Glass Screen Protector[2 Pack] + 2 Pack Camera Lens Protector Support Fingerprint for Samsung Galaxy Note 20 Ultra 5G",
+    "Galaxy S8 Clear Screen Protector -[Case Friendly] Glass Screen Protector for Galaxy S8 [2 Pack] S02",
+    "Galaxy S8 Privacy Tempered Glass Anti-Spy Screen Protector [3D Curved] [Case Friendly] [9H Hardness] for Samsung Galaxy S8",
+    "Garmin Quest Pocket-sized Navigation System",
+    "Genius SlimStar 8000 2.4GHz Wireless Keyboard Combo",
+    "Genshin Impact Stickers Pack| 50Pcs Waterproof Genshin Impact Game Stickers for Laptop Phone Book Water Bottle Skateboard Decal Kaeya Diluc Genshin Impact Switch Decals Stickers for Teens Girls Boys",
+    "GoPro HERO3+ Black Edition Camera HD Camcorder + 2 Extended Batteries with Charger + 6 FT HDMI Cable + Gripster III Flexible + Monopod With 64GB MicroSDXC Class10 And Much More Complete Deluxe Accessory Bundle",
+    "GonHui WA AivmolIk",
+    "Google Pixel 4 XL - Oh So Orange - 64GB - Unlocked (Renewed)",
+    "GoooodGIFT Small Wooden Drawers Rustic Desk Organizers and Accessories Wooden Storage Box with Drawers Desktop Storage Library Card Catalog Cabinet School Supply Storage Apothecary Cabinet(BROWN 5)",
+    "Gorilla Double-Sided Tape, 1.41\" x 8 yd, Gray, (Pack of 2)",
+    "Gorilla Tough & Clear Double Sided Mounting Tape, 1\" x 60\", Clear, (Pack of 12)",
+    "Goton 2-Pack for Samsung Galaxy watch 4 Screen Protector Case 44mm Accessories - Hard PC Face Cover with Tempered Glass Film for Galaxy watch 4 44mm Clear + Green",
+    "Goton Camera Lens Protector for iPhone 13 Pro Max 6.7 iPhone 13 Pro 6.1 - Tempered Glass Bling Protective Film Full Cover Glitter Accessories for Women, for iPhone 13 Pro Max / Pro 2021 (Colorful Glitter)",
+    "GottaHaveit Travel Cable Organizer Pouch - Compact, Water-Resistant Storage for Electronic Accessories, Cables, Wires, Chargers, Phone, Earphones - Multiple Pockets - Black",
+    "Griffin BreakSafe Magnetic USB-C Breakaway Power Cable for MacBooks and Chromebook Pixel",
+    "HAMIGAR Whiteboard Sticker for Wall 17.7\" x 78.7\" Whiteboard Wallpaper Peel and Stick, White Board Stick On Wall, Dry Erase Contact Paper Adhesive Poster Board Whiteboard Paint with 1 Marker",
+    "HAYLOU LS01 Global Version 9 Sport Modes Smart Watch IP68 Waterproof Sleep Management Universal Fashion Bluetooth Smart Band",
+    "HON Mod Support Pedestal-15 W, 28 x 15 x 20, Mahogany",
+    "HP 19.5V 2.31A 45W Ac Adapter Laptop Charger for HP Envy x360 x2 13 15 M6 15-u010dx 15-u011dx 741727-001 740015-003 740015-002 HSTNN-LA40 HSTNN-DA40 740015-001 740015-004 Notebook Power Supply",
+    "HP 460 Desktop Computer, Intel Quad-Core i7-7700T 2.9GHz Upto 3.8GHz, 32GB RAM, 1TB SSD, DVDRW, HDMI, VGA, Wi-Fi, Bluetooth, Windows 10 Home 64",
+    "HP 65w USB C Charger Fit for HP Spectre x360/Envy/Chromebook/EliteBook x360/ProBook/Elite x2/Split x2/Google Chromebook,Fast Charging Type C Slim AC Adapter Travel Power Cord Supply",
+    "HP EliteDesk 800 G1-SFF, Intel Core i7-4770 3.4GHz, 8GB RAM, 2TB Hard Drive, DVDRW, Windows 10 Pro 64Bit (Cerfified Renewed)",
+    "HP High Performance Slim Desktop for Business Computer PC, Intel Pentium Silver J5040, 16GB RAM, 1TB SSD, Intel UHD Graphics 605, Business Office, Mouse&Desktop&Keybord Combo, Win 11 Home",
+    "HP Wireless Elite Keyboard v2",
+    "HY1C AC-PW20 AC Adapter NP-FW50 A6400 A6000 Dummy Battery Kit for Sony Alpha A5100 A6100 A6300 A6500 ZV-E10 A7II A7S A7SII A7R A7RII DSC-RX10 NEX-5 Cameras Continuous Power Supply",
+    "Hasuit Wood File Cabinet with Movable Casters, Home Office Rolling Filing Cabinet, Printer Stand Office Cabinet for Home Office (Black)",
+    "Heavy Duty Reclining Office Chair with Footrest, 400lb Executive Office Chair for Heavy People, Big and Tall Leather Managerial Chair with Padded Armrests, Tilt Funcation 90°-130°, Black",
+    "Hniuyun 2 Pieces TV Screen Top Shelf Monitor Top Shelf for Cellphone/Computer Monitor/Media Boxes/Flat Screen TV (11.9inch)",
+    "Hoblaze Micro USB Cable 1ft 5 Pack, Short Android Charger Cable Braided Fast Charging Phone Charger Cord Compatible with Galaxy S7 S6 Edge, Kindle, Note 5, Windows Smartphones and More - Blue",
+    "Honeywell LED 1000 Lumen Multi-Function Bluetooth Speaker Work Light",
+    "Honeywell Safes & Door Locks 30 Minute Fire Safe Waterproof Filing Safe Box Chest (fits Letter and A4 Files), Medium, 1106",
+    "Hopply Bezel Ring Styling Compatible with Samsung Galaxy Watch 4 Classic 46mm(2021 Released),Stainless Steel Adhesive Frame Ring Protection Cover Anti Scratch for Galaxy Watch4 Classic 46mm (Black (46mm-01))",
+    "Houleya (2pack) Wall Phone tv Remote Control Holder for Table Office Storage Supplies Pencil Holder Marker Organizer",
+    "ILLUMI AquaShield Screen Protector Compatible with Apple iPhone Xs Max (6.5 inch)(2-Pack)(Max Coverage) No-Bubble High Definition Clear Flexible TPU Film",
+    "ILLUMISHIELD Matte Screen Protector Compatible with Lenovo Yoga 900S (2-Pack) Anti-Glare Shield Anti-Bubble and Anti-Fingerprint PET Film",
+    "ILLUMISHIELD Screen Protector Compatible with Apple iPhone XR (6.1 inch)(3-Pack) Clear HD Shield Anti-Bubble and Anti-Fingerprint PET Film",
+    "ILLUMISHIELD Screen Protector Compatible with BlackBerry Bold 9900 (3-Pack) Clear HD Shield Anti-Bubble and Anti-Fingerprint PET Film",
+    "ILLUMISHIELD Screen Protector Compatible with Google Pixelbook (12.3)(2-Pack) Clear HD Shield Anti-Bubble and Anti-Fingerprint PET Film",
+    "ILLUMISHIELD Screen Protector Compatible with LG Gram 15 15.6 inch (1-Pack) Clear HD Shield Anti-Bubble and Anti-Fingerprint PET Film",
+    "ILLUMISHIELD Screen Protector Compatible with Lenovo ThinkPad Tablet 2 10.1 inch (2-Pack) Clear HD Shield Anti-Bubble and Anti-Fingerprint PET Film",
+    "ILLUMISHIELD Screen Protector Compatible with Motorola Moto X Pure Edition (Moto X Style)(3-Pack) Clear HD Shield Anti-Bubble and Anti-Fingerprint PET Film",
+    "ILLUMISHIELD Screen Protector Compatible with Samsung Galaxy Proclaim (3-Pack) Clear HD Shield Anti-Bubble and Anti-Fingerprint PET Film",
+    "ILLUMISHIELD Screen Protector Compatible with Sony SmartWatch (1st Gen)(3-Pack) Clear HD Shield Anti-Bubble and Anti-Fingerprint PET Film",
+    "IQShield Full Body Skin Compatible with Motorola Moto X4 (4th Gen, 2017) + LiQuidSkin Clear (Full Coverage) Screen Protector HD and Anti-Bubble TPU Film",
+    "IQShield Matte Full Body Skin Compatible with Apple iPad Pro 12.9 inch (2015) + Anti-Glare (Full Coverage) Screen Protector and Anti-Bubble Film",
+    "IRIS USA Medium Portable Desktop File Box with Open Lid, 6 Pack, Side Handles, Hanging File Folders, Tabs & Inserts, Letter Size, Magazines, Newspapers, Mail, Books, Notebooks, Black",
+    "ITAYVAN Desk Organizers, Office Supplies Pencil holder with 6 Compartments and 1 Sliding Drawer, Mesh Desktop Organizer for Office, Home, Classroom and School",
+    "Ionic Bluetooth Keyboard Tablet Stand Leather Case For Apple iPad 2, iPad 3, iPad 4, iPad 2nd, iPad 3rd, iPad 4th Generation Tablet AT&T Verizon 4G LTE (WhiteRed)",
+    "Ives by Schlage 436B-716 Dome Door Stop",
+    "JACKCUBE Design Wood Monthly Office Desktop Bill & Mail & File Organizer Storage with Steel Divider Holder 31section, Entryway or Printer table Living room Kitchen (MK487A)",
+    "JETech Privacy Full Coverage Screen Protector for iPhone 11 Pro/X/XS 5.8-Inch, Anti-Spy Tempered Glass Film, Edge to Edge Protection Case-Friendly, 2-Pack",
+    "JUQITECH Case for iPad 9th 8th 7th Gen 10.2 - Slim Shockproof Smart Tablet Cover with Apple Pencil Holder Clear Back Trifold Stand Auto Wake/Sleep for iPad 9th 8th 7th Generation 2021/2020/2019, Blue",
+    "JUYOON 90W OptiPlex Micro Charger Power Cord for dell OptiPlex 7000 7060 5060 7070 5070 dell Inspiron 15 7590 7790 7500 17 7706 15 7501 7506 7510 16 5630 5635 7610 7630 Plus P125F (4.5 * 3.0mm)",
+    "Jueyue Samsung Galaxy S22 Ultra Screen Protector,3Pack TPU Flexible Film,Case Friendly,Easy To Install,Fingerprint unlock,Scratch Resistant,HD Clear",
+    "June Gold 36 Colored 2.8 mm Lead Refills, 6 Colors, Deep or Long Reach Nose & Nib Pencil Refills",
+    "KFD 65W 45W Universal Adapter Laptop Charger for Dell HP Toshiba Lenovo ASUS Acer Gateway Fujitsu Samsung Sony LG Laptop TV Monitor,Nighthawk Asus Router,Sony Bose Soundbar,JBL Xtreme Xtreme 2 Speaker",
+    "Kai Anti Glare (2X Pcs) Screen Protector for 15.5\" Sony Vaio Flip 15 / Fit 15a Pc",
+    "Kanex Multi-Device Full-Size Bluetooth Keyboard, Black (K166-1102-AL)",
+    "Kensington 120-Watt Ultraportable Wall Notebook PC Power Adapter (K33336US)",
+    "Keyboard Case Compatible with 2017 iPad 9.7\" (5th Gen) & 2018 New iPad 9.7\" (6th Gen) & iPad Air, Bluetooth Folio Hard Back Cover/Aluminum Keyboard Base with Auto Sleep/Wake -Ultra Slim (Silver)",
+    "Keyboard Case for iPad Pro 12.9 inch 2022-6th / 2021-5th / 2020-4th / 2018-3rd Generation – Magnetic Keyboard Case with Multi-Touch Trackpad – Floating Cantilever Stand– Backlit Wireless Keyboard",
+    "Keychron K8 Optical RGB Backlight Aluminum Red Switch",
+    "Kids Halloween Character Cups With Flexible Straw Set of 4",
+    "Kids Smart Watch for Boys Girls, Waterproof Smart Watch for Kids with Call SOS Alarm Clock Games Camera, LBS Tracker Touch Screen Children Smart Watch Christmas Birthday Gifts for Kids",
+    "Kilmila Smokey The Bear Stickers (20Pcs-10 Different Designs Each 2 Packs).Merchandise Prevent Wildfires Merch Gifts Stickers Protect Nature Decal for Laptop Water Bottle Luggage",
+    "King Ma Laptop Charger for Dell XPS 12 13 15, 65W PD GaN Wall Charger with 1.5m Fast Charging Cable (4.5 * 3.0mm) for Dell Inspiron 14 5000 7472 3501",
+    "Kodak Easyshare DX7440 4 MP Digital Camera with 4xOptical Zoom",
+    "Kodak Easyshare LS753 5 MP Digital Camera with 2.8xOptical Zoom",
+    "Kodak Easyshare Z885 8.1 MP Digital Camera with 5xOptical Zoom",
+    "Kodak PIXPRO AZ252 Point & Shoot Digital Camera with 3” LCD, Black",
+    "Koh-I-Noor MAGIC Jumbo Triangular Coloured Pencil (Pack of 12 + 1)",
+    "Koh-I-Noor Mondeluz Portrait Aquarell Coloured Pencils (Set of 24)",
+    "Korean version of the lovely fine pen ballpoint pen color creative push",
+    "Ksleri [2 Pack Matte Glass Screen Protector for iPad 10.2 inch(2021/2020/2019 Model, 9th/8th/7th Generation) Anti-Glare Anti-Fingerprint Tempered Glass Film with Alignment Frame",
+    "KumbaCam 3 Axis Handheld Stabilizer for GoPro",
+    "LEKETREE Desk Organizers and Accessories, 5-Tier Paper Letter Tray Organizer with File Holder, Office Supplies for Women, Office Desk Accessories & Workspace Organizers(Rose Gold)",
+    "LG Aristo Compatible Black Micro USB Cable Rapid Charge Power Cord Data Sync Micro-USB Wire Supports Fast Charging",
+    "LG Electronics AN-VC500 720p Skype Video Call Camera, 2 MP, Stereo Microphone",
+    "LG Phoenix 4 AT&T Prepaid Smartphone with 16GB, 4G LTE, Android 7.1 OS, 8MP + 5MP Cameras - Black (Renewed)",
+    "LG Tribute Black (Virgin Prepaid)",
+    "LaView 4MP Security Camera Outdoor Wired Starlight Color Night Vision, Cameras for Home Security AI Human Detection & Auto Tracking, IP65 Outdoor Camera 2-Way Audio, US Cloud, Compatible with Alexa",
+    "LaView 8 1080P IP Camera Security System, 16 Channel 1080P IP PoE NVR w/3TB HDD and 8 1080P 2MP White Bullet Surveillance Camera Kit",
+    "Labtec Go440 Headphones with Volume Control (Discontinued by Manufacturer)",
+    "Leimonri Magazine File Holder - Set of 10 Cardboard Magazine File Boxes Document Organizer(3.5 x 11 x 10.5 inch)",
+    "Lenovo ThinkPad Compact USB Keyboard with Trackpoint - Wired Keyboard - USB - Black",
+    "Leviton 88018 U.S. VERSION NOT ACCEPTABLE FOR CANADA",
+    "Lifestyle Premium Seat Cushion with Anti Slip Bottom - Orthopedic 100% Memory Foam Coccyx Cushion for Tailbone Pain - Car Seat & Office Chair Cushions - Sciatica & Back Pain Relief",
+    "Light Bulb Security Camera, 3MP WiFi Wireless Outdoor Security Camera E27 Bulb 355 Degree,1080P Night Vision, Automatic Human Motion Detection",
+    "Lock Box with Combination Lock, Smathou Cash Box with Money Tray, 5 Compartments with Cover, 4 Spring-Loaded, Lockbox 11.8 X 9.5 X 3.54 Inches, Pink",
+    "Logitech Slim Folio with Integrated Bluetooth Keyboard for iPad (5th and 6th Generation) - Black",
+    "Lorell 5-Drawer 36 x 18.6 x 67.7 inch Telescoping Suspension Lateral File, Black",
+    "MAKAQI Wireless Car Charger for Galaxy Z Fold 4/3/2, Dual Coil Auto Clamping Wireless Car Charger Mount for iPhone 14/13/12/11 Pro Max /X , Fast Charging Car Holder for Galaxy Z Fold Series",
+    "MASTER MANUFACTURING Giant Foot Door Stop - Extra Large Door Stop Door Stopper Wedge Door Stoppers For Bottom Of Door Security Door Wedge Door Stops Wedges For Doors Door Holder Doorstop, Brown, 2 Pack",
+    "MAYtobe [2-Pack] Screen Protector For Samsung Galaxy A12 Tempered Glass, Easy to Install, Anti Scratch, Bubble Free",
+    "MK-MT Skylink Wireless Security Keychain Remote Keyfob for SkylinkNet Connected Home Alarm Security & Home Automation System and M-Series. Remotely Arm & Disarm your Home Security System",
+    "MOOACE Mail Organizer Wall Mount with Key Hooks, 2-Slot Wooden Mail and Key Holder for Wall Decorative, File Letter Hanging Organizer Shelf Home Farmhouse Decor for Entryway Office",
+    "MPF Products Replacement USB & AV Audio Video Cable Lead Cord for Nikon Coolpix 2100, 2200, 3100, 3200, 3700, 4100, 4200, 4600, 4800, 5100, 5200, 5600, 5900, 7600, 7900, 8400, 8800, AW100, AW100s, D5000, D5100, L1, L2, L3, L4, L5, L6, L9, L10, L11, L12, L13, L14, L15, L16, L18, L19, L20, L21, L22, L23, L24, L25, L26, L27, L28, L29, L30, L100, L110 & L120 Digital Cameras UC-E6 EG-CP14",
+    "Machanc Screen Protector for Google Pixel 7 5G [2022], [3+3 Pack] Pixel 7 Screen Protector Tempered Glass, 3 Pack Camera Lens Protector Case Friendly [Fingerprint Support ][Alignment Tool]",
+    "Mag-Safe car charger 15W - magnetic wireless car mount for air vent - iPhone 12/13 - 12/13 mini- 12/13 pro - 12/13 pro max",
+    "Magellan TW0200SGXNA Echo Fit Smart Sports Watch with Activity and Sleep Tracking (Black)",
+    "Maledan 2-Pack Charger Compatible with Samsung Galaxy Watch 3 Active 1 2 SM-R500 SM-R820 SM-R830 SM-R840 SM-R850, 3.3ft USB Charging Cable Dock Stand for Galaxy Watch Charger Replacement Accessories",
+    "Mcdodo LED Wireless Fast Charger Charging 10W Silicone Pad for iPhone X, 8/8 Plus, Nexus 5/6 /7,and Other Devices, Provides Fast-Charging for Galaxy S8/ S8+/ S7/S7 Edge/S6 Edge+,and Note 5 (Black)",
+    "Mechanical Keyboard, Built-in 12.6 Inch Touchscreen, Compact 71 Keys RGB LED Backlit N-Key Multifunctional Split Screen Keyboard for Mac Windows Android - Black",
+    "Megamind - Will Ferrell - Ollo! Hello!, Megamind Decal Sticker - Sticker Graphic - Auto, Wall, Laptop, Cell, Truck Sticker for Windows, Cars, Trucks",
+    "Merry Expressions - Silver Gift Card Box - Elegant White Satin Ribbon & Cards Label - 10x10x10 Large",
+    "Mirror Mount Bracket + Mirror Wire Cord - Escort MAX360 MAX2 MAX",
+    "MoKo 2-Pack Anti-Glare Screen Protector for 6\" All-New Kindle 11th Generation 2022/10th Generation 2019, Full Coverage Premium PET Protective Film Eye-Caring Matte Screen Protector",
+    "MoKo Keyboard Case for New iPad 9th Generation 2021/iPad 10.2 2020/2019 with Apple Pencil Holder, Wireless Keyboard Cover Case for Apple New iPad 9th Generation 2021/iPad 8th/7th Gen 10.2\",Rose Gold",
+    "MoNiBloom Office Chair with Footrest Adjustable Ergonomic Task Chair with Linkage Armrest, Lumbar Support Reclining High Back Mesh Chair Suitable for Home Office Nap, 250 Lbs Capacity, Gray",
+    "Modoway Desk Chairs with Wheels and Arms Ergonomic Mesh Office Chair with 300LBS Capacity (White-1Unit)",
+    "Monitor Light Bar, Screen Light Bar with Cooling Fan, USB Powered Screen LED Light Eye Care Reading Task Lamp for Office/Home/Gaming, No Screen Glare, Stepless Dimming, Adjustable Color Temperature",
+    "Moshi Rewind 2 Dual-USB Port Wall Charger 12W Fast Charge with Cable Management, Folding Plug, for iPhone 13/12/11/XR/XS, Galaxy/Note, iPad Pro/Air/Mini, iPod & USB Charging Devices",
+    "Moshi iVisor AG Matte Screen Protector Compatible with iPhone 12 Pro Max Screen Protector, Edge-to-Edge, Anti-glare, Matte, Easy Install, Bubble-proof, for 6.7\" iPhone 12 Pro Max (2020)",
+    "Motorcycle Stickers Pack, 50Pcs No Repeat Cool Moto Life Vinyl Waterproof Sticker and Decal, Love Car Racing Sticker for Adults Men Bike Laptop Skateboard Water Bottle",
+    "MouKou Apple Watch iWatch 38MM Screen Protectors 3-Pack Tempered Glass Screen Protector for iWatch 38MM ONLY",
+    "Mowoodwork Rustic Wood Crates Set of 6 They Can Be Used Indoors Or Outside",
+    "Mr. Pen- Pastel Mechanical Pencil Set with Lead and Eraser Refills, 5 Sizes, 0.3, 0.5, 0.7, 0.9, 2mm, Mechanical Pencils for Drawing and Sketching, Cute Pencils, Mechanical Pencil, Lead Pencils",
+    "Mr.Shield [3-Pack] Designed For OnePlus 9 / OnePlus 9 5G [Upgrade Maximum Cover Screen Version] [Tempered Glass] [Japan Glass with 9H Hardness] Screen Protector with Lifetime Replacement",
+    "Mr.Shield [3-Pack] Designed For Xiaomi Redmi Note 9T 5G [Tempered Glass] [Japan Glass with 9H Hardness] Screen Protector with Lifetime Replacement",
+    "Mr.Shield [3-Pack] Designed For iPhone Xs [Tempered Glass] Screen Protector [Japan Glass with 9H Hardness] with Lifetime Replacement",
+    "MyGift Brass Metal Magnetic Marker Holder for Whiteboard, Dry Erase Markers and Accessories Storage Basket Organizer with Floral Cutout Design",
+    "Myron Executive Professional Metal Ballpoint Pen, Lighted Tip, Gunmetal Gold Barrel, 12 Pack (Black Ink)",
+    "NA USB Desk Fan, Personal Table fan with 3 Wind Speeds, Auto-Adjust Angle, Night Light, USB Powered, Mini Powerful Rechargeable Table Fan for Home Office Desktop Bedroom",
+    "NEVOLA USB C Fast Charging Cable",
+    "NPKC Sunset Blue Gradient Keycaps Thick PBT Laser-Etched Cherry Profile or OEM Profile for Cherry MX Switches of Mechanical Keyboard (87-Key, Sunset Blue Gradient)",
+    "NYX Simply Vamp Lip Cream - SV03 Aphrodisiac",
+    "Native Union Drop Marquetry-High Speed Wireless Charger[Qi Certified] 10W Fast Wireless Charging Pad-Crafted with Genuine Italian Leather Compatible with iPhone12 /12Pro /12Pro Max /12mini",
+    "Nature Bird Oregon Scientific Stylish Retro Minimalist Design Macaron Color Radio-Controlled Alarm Atomic Clock-Yellow",
+    "Navitech Folding Leather Folio Case Cover & Stand with Removable Wireless Keyboard for The 10'' Windows 10 by Fusion5 Ultra Slim Design Windows Tablet PC",
+    "Nekteck iPhone X Wireless Charger,Fast Wireless Charger Pad for Samsung Galaxy S9/ S9+/ S8/ S8 Plus /S7 /S7 Edge/ S6 Edge Plus,Note 8 5, Standard Charger for iPhone X/ 8/8 Plus (Adapter NOT Included)",
+    "New 65W USB C Charger for Lenovo Laptop: Lenovo ThinkPad x1 Charger, Lenovo ThinkPad x1 Carbon Yoga/Chromebook/ThinkBook, Replacement GX20Z46256 ADLX65YSCC3A Fast Charging AC Power Adapter",
+    "New GEP AC Adapter/Power Supply for Dell 23\" Widescreen Flat-Panel IPS LED HD Minitor S2340M/c, 24\" LCD Monitor S2440Lb.",
+    "New Keyboard fit for ipad 9.7/ipad Air Keyboard Case, 7 Color Backlight Detachable Keyboard Folio Wireless Stand Keyboard Cover for ipad 5/6,Smart Automatic Sleep/weak for iPad Pro 9.7（Silver",
+    "New L305 L305D 90W AC Adapter Laptop Charger for Toshiba Satellite L455 L505 L505D L635 L645 L655 L655D L745 L755 L775 L855 L875 C55 C655 C675 C850 C855,fit PA3714U-1ACA PA5177U-1ACA Power Supply Cord",
+    "New SHARKK Apple iPad Mini Keyboard Bluetooth Case Cover Stand For 7.9 Inch New Mini iPad With 360 Degree Rotating Feature And Multiple Viewing Angles. Folio Style with IOS Commands. For the iPad MINI ONLY (iPad mini, Pink)",
+    "New UL Listed 65W Surface Charger with 5V 1A USB Port Fits for Microsoft Model 1706, Microsoft Surface Pro 3/4/5/6/7 Power Supply Cord, and Compatible with 65W/44W/36W Surface AC Adapter Charger",
+    "New bee Optical Audio Cable 10ft Digital Toslink Cable 24K Gold-Plated Nylon Braided S/PDIF Cable for Home Theater, Sound Bar, TV, PS4, Xbox, Playstation",
+    "NewYork Cables RJ45 Cat6 Ends | Pack of 50 | Cat 6/ Cat5e RJ45 Gold Plated Connectors | Crimp Modular Plug | Ethernet Cable Crimp Connectors for Stranded & Solid UTP Network Cable, Yellow",
+    "Nexus 5X Screen Protector,LaoHe(TM) LG (Google) Nexus 5X Tempered Glass Screen Protector, 99% Clarity 0.3mm 9H Hardness Featuring Anti-Scratch, Anti-Fingerprint, Bubble Free,Lifetime Warranty (1Pack)",
+    "Nikon Coolpix B500 Wi-Fi Digital Camera (Black) with 32GB Card + Batteries & Charger + Case + Tripod Kit (Renewed)",
+    "OMOTON Bluetooth Keyboard for Mac, Ultra-Slim Wireless Keyboard Compatible with MacBook Pro/Air, iMac, iMac Pro, Mac Mini, Mac Pro Laptop and PC, White",
+    "ONOLA Phone Case for Samsung S21 Ultra Case 5G (6.8inch) S21 Ultra Case,Galaxy S21 Ultra Case Three-in-One Dust Proof 3-Layer Durable Cover for Samsung Galaxy S21 Ultra 5G Phone (Darkblue-Black)",
+    "ONTRY Electric Standing Desk, 55”Adjustable Height and Width Computer Desk for Home Office, 4 Programmable Preset Controller, Splice Board",
+    "OWC Mount Pro SSD Bundle for Mac Pro 2009-2012, 2.0TB 2.5\" Mercury Electra 3G Solid State Drive 5 Piece Toolkit",
+    "OYEEICE Hybrid Case for iPad Pro 12.9 inch 6th / 5th / 4th / 3rd Generation(2022/2021/2020/2018), Magnetic Detachable Cover with PU Leather, Anti-Fingerprint, Stain-Resistant, Support Pencil 2, Black",
+    "Oddmoal Fancy Metal Ballpoint Pens Floating Glitter Dynamic Liquid Sand Pen for Office Supplies, Black Ink, 12 Count(Mixed Color)",
+    "Odyson - 512GB SSD Replacement for MacBook Pro 13\" A1425 (Late 2012, Early 2013), 15\" A1398 (Mid 2012, Early 2013)",
+    "OenFoto 2 in 1 Wireless Charger Compatible with Fibit Versa 2 (Not for Versa)– Adjustable Charging Stand Cable Station Dock for Fibit Versa 2 and Wireless Cell Phone (with QC 3.0 Adapter)",
+    "Olympus D595 5MP Digital Camera with 3x Optical Zoom",
+    "Olympus FE-20 8MP Digital Camera (Black)",
+    "Olympus PEN E-P1 12.3 MP Micro Four Thirds Interchangeable Lens Digital Camera with 14-42mm f/3.5-5.6 Zuiko Digital Zoom Lens (White Body/Silver Lens)",
+    "Olympus Stylus Tough-6000 10 MP Waterproof Digital Camera with 3.6x Wide Angle Optical Dual Image Stabilized Zoom and 2.7-Inch LCD (Blue) (Discontinued by Manufacturer)",
+    "Omnifense Galaxy S22 Screen Protector Matte Privacy Soft Film 2 Pack and Tempered Glass Camera Lens Protector 1 Pack, Support Fingerprint Unlock Matte Finish Surface Anti Glare 2 Way Anti Spy Privacy Protection for Samsung Galaxy S22 (6.1\")",
+    "Omnihil AC/DC Adapter Compatible with Ktec KSAFH1200500T1M2 Switch Mode Power Supply",
+    "Orginal Oneplus X 4G Smartphone Android 5.1 3GB RAM+16GB ROM with 5.0\" Dual Sim International Version (black)",
+    "Orzero (3 Pack Compatible for OnePlus Pad 11.61 inch Screen Protector, Tempered Glass 2.5D Arc Edges 9 Hardness HD Bubble-Free (Lifetime Replacement)",
+    "OtterBox ALPHA FLEX SERIES Screen Protector for Galaxy S22 Ultra - CLEAR",
+    "Outstyle Portable Speaker - 6 Hours Playtime Bluetooth Wireless Portable Speaker | IPX7 Waterproof Wireless Bluetooth Speaker for On The Go Listening | Rechargeable Travel Speakers with Bluetooth",
+    "PERFECTSIGHT Anti Glare Blue Light Screen Protector for iPad Air 5/Air 4 10.9 (2022/2020)/ iPad Pro 11 Inch (2022/2021/2020/2018 Model), [Eye Protection] Matte Low Reflection Tempered Glass,[1 Pack]",
+    "PILOT 36711 Better Ball Point Stick Pen, Blue Ink, 1Mm, Dozen",
+    "POPRUN Rose Gold Desktop Mail Organizer - Mail Sorter & Pen Holder for Desk, Cute Mesh Office Supplies Accessories Essentials Caddy for Home & Office Desktop Organization & Decor",
+    "POSTER STOP ONLINE Avengers Endgame - Movie Poster (All The Avengers & Thanos) (Size 36 x 24)",
+    "POSTER STOP ONLINE Scarface - Movie Poster (Tony Montana/Al Pacino - On Balcony) (Size: 36\" x 24\")",
+    "PROVISION ISR Webcam with Light – Professional Web Camera with Adjustable Light Levels – Full HD 1080p Webcam – PC Camera with Built-in Noise Reduction Mic – for Live Streaming, Conferences, Vloggers",
+    "PTH110 Label Tape 12mm Replacement for Brother TZe Tape 12mm 0.47'' Laminated TZe231 TZe131 TZe431 TZe531 TZe631 TZe731 for Brother P-Touch Label Maker Tape PTD200 PTD210 PTD220 PTD600, 6PK",
+    "Panasonic Lumix DMC-FP5 14.1 MP Digital Camera with 4x Optical Image Stabilized Zoom with 3.0-Inch Touch-Screen LCD (Black)",
+    "Panasonic Lumix DMC-FZ5K 5MP Digital Camera with 12x Image Stabilized Optical Zoom (Black)",
+    "Paper Mate InkJoy Mini Ballpoint Pens, Medium Point, Assorted, 3 Pack (1951380)",
+    "Parker Jotter Pink Ribbon, Ballpoint Pen with Medium Blue refill (1736845)",
+    "Patriot Viper VP4300 2TB M.2 2280 PCIe Gen4 x 4 Solid State Drive, Compatible with PS5",
+    "Patriotic American Glory Custom Printed Business Cards - Set of 250-2 x 3-½ inches - Matte Finish - Single-Sided - Great for Graduations and Personalized Gifts, Printed in the USA, by Colorful Images",
+    "Pelikan Pura 817158 Fountain Pen Petrol Blue F Nib Includes Large Cartridge Gemstone Ink® Sapphire",
+    "Pentax K-5 II 16.3 MP DSLR DA 18-135mm WR lens kit (Black) (OLD MODEL)",
+    "Pentel 10 - Elegant Automatic Pencil, .5mm, Glossy Metallic Pink (P1035BPP-BC)",
+    "Perixx PERIBOARD-220H US, Wired Compact USB Keyboard with 2 Hubs - Build-in Numeric Keypad - Black - US English Layout, (11506)",
+    "Perixx PERIPAD-205U Teclado Numérico con Cable - para Portátil y Ordenador - Caracteres de impresión Grande - Negro - con Teclas Tab y ESC - Para distribución EEUU",
+    "Philips CAM110RD/37 10 MP Digital Camera with CMOS Sensor and 4 x Optical Zoom (Black)",
+    "Piccassio File Box for Hanging Files with Lid - Filing Box for Home and Office Use - Collapsible, Portable, Stackable File Organizer Easy-to-clean Countertop Box - Linen Fabric Exterior Material",
+    "Plugable 10Gbps USB C to USB C Cable, 3.3 feet (1 Meter), 5A, USB-IF Certified, USB 3.1 Gen 2 Type-C - Driverless",
+    "Pokanic Full Body Protection Kickstand Ring Holder Military Graded 15ft. Drop Tested Shockproof Cover Case Compatible with Apple iPhone 11/11 Pro/ 11 Pro Max (Black, iPhone 11)",
+    "Pokolan [3-Pack] Screen Protector for Samsung Galaxy A71 4G/5G, A72 4G/5G, A73 5G Tempered Glass - Easy Installation without bubbles - Lifetime Replacement",
+    "Polaroid 5ft USB Type-C Cable, LED Light, Braided Premium Spun Nylon, Charger Cable, USB-A to USB-C, Compatible with Android, Samsung Galaxy S10 S9 S8 S20 Plus Note 10 9 8, All USB C Devices - Black",
+    "Poppin Mobile Mini Sittable Stow Rolling File Cabinet - White with Dark Gray Seat Cushion. Two Locking Drawers and One Key Lock. Two Keys Included. One Utility Drawer and One Hanging File Drawer",
+    "Portable Laptop Power AC Adapter 19V 2.37A 45W Charger for VivoBook S510 S510U S510UA; Zenbook Prime UX305 UX305C UX305CA UX305F UX305FA UX305L UX305LA UX305U UX305UA Power Supply",
+    "Posters USA - Voltron Legendary Defender TV Series Show Poster GLOSSY FINISH - TVS441 (24\" x 36\" (61cm x 91.5cm))",
+    "Power Cord Cable Fit for Lenovo IBM Asus Vivobook Samsung Toshiba Thinkpad Ideapad Dell inspiron Chromebook Yoga Flex X1 Carbon MSI Tablet Series Laptop Charger HP 213349-009 213349-001 490371-001",
+    "Premium Orthopedic Seat Cushion-Non-Slip Hemorrhoid Pillow Memory Foam Coccyx for Tailbone Pain - Office Home Chair Car Seat Cushion - Sciatica & Back Pain Relief",
+    "Privacy Screen Protector for Samsung Galaxy Watch 5 44mm&Galaxy Watch 4 44mm (Not for Samsung Galaxy Watch 5 Pro), 2-Pack Anti-Spy Tempered Glass Protective Film for Samsung Galaxy Watch 5&Galaxy Watch 4 44mm",
+    "ProCase 2 Pack Galaxy Tab A8 10.5 Screen Protector X200 X205 X207, Tempered Glass Screen Film Guard for 10.5 Inch Samsung Galaxy Tab A8 2022 Release SM-X200 SM-X205 SM-X207",
+    "ProCase Pack of 2 protective glass screen protectors for Surface Pro 7 Plus, Surface Pro 7, Surface Pro 6, Surface Pro 5, Surface Pro 4, protective foil screen protector",
+    "Pyle Tablet Holder Seat Bolt - Swivel Cradle, Table Clamp for All iPads, Kindle, Androids, eReaders, Nexus, Samsung Galaxy, Adjustable Gooseneck Arm, LED Lights, & USB Charging Port - PSPAD15, Black",
+    "QC3.0 Fast Wall Charger 6.6FT Micro Cable Charger Compatible with LG Q60,LG W30 W10,LG K50S K50 K40 K40S K30 K20 K10,Samsung Galaxy S7 S6 S5 S4 Edge,Note 7 5 4,HTC One X10,Moto Phone and More",
+    "QQ-Tech Folio Laptop Style Stand Keybook for Bluetooth Keyboard Case for Kindle Fire HDX 7\" Tablet (for Kindle Fire HDX 7\", Red)",
+    "REOLINK 4K Security Camera System, 4pcs H.265 4K PoE Security Cameras Wired with Person Vehicle Detection, 8MP/4K 8CH NVR with 2TB HDD for 24-7 Recording, RLK8-810B4-A Black",
+    "REOLINK Dual View PoE Camera - IP Security Camera System with 1x 4K Wide-Angle Lens and 1x 3MP Telephoto Lens for A Close-up, AI Detection, Color Night Vision, Two-Way Talk, RLC-81MA",
+    "REPIND Type C Charger Fast Charging",
+    "ROADYAKO Digital Alarm Clock for Bedrooms, Dual Alarm with FM Radio & Nap Timer, Dimmer, 2 USB Charger Ports, Battery Backup, 6.5Inch LED Display, 7 Color Night Light for Bedside Kids Teens",
+    "Rechargeable Battery Automotive Replacement Batteries Solar Power Bank External Battery USB Charger Built in LED Light with Dual 2 USB Port/LED Flashlights for All Smartphone, Android Cellphones",
+    "Renaissance Art Stickers,50 Pcs Vintage Aesthetic Artist Painting Stickers for Water Bottles Laptop Srapbooking Journaling",
+    "Replacement Keyboard for Thinkpad T440 T440p T440s T450 T450s T460 T431s L440 L450 L460,US Layout Laptop Keyboard No Backlit, Black",
+    "Retractable Car Charger, 4 in 1 USB C Car Charger 60W, Retractable Charger Cable, 2 Type-C USB Ports Car Charger Adapter, Compatible for Android Galaxy S23/S22/S21/S20,Google Pixel 7/6/5/4, LG G8/G7",
+    "Retro Poster Water Bottle Stickers, Classic Movie Teen Kids Adult Laptop Travel Case Computer Wall Skateboard Motorcycle Phone Bicycle Luggage Guitar Bike Stickers Decal",
+    "Revo America Ultra 16CH 4K H.265 NVR, 3 TB Surveillance Grade HDD, Remote Access, with 8X 4 Megapixel True WDR Indoor/Outdoor IR Bullet Cameras",
+    "Reward Achievement Sticker Roll for Kids, Teacher Supplies (600 Pieces)",
+    "Ringke Cover Display Glass Compatible with Samsung Galaxy Z Fold 3, Exterior Cover Display Tempered Glass Screen Protector Film 9H Hardness",
+    "RiverRidge Gray Madison Two-Door Wall Cabinet, Size",
+    "Rolodex® Wood Tones™ Letter-Size Tray, Black",
+    "Rosewill Mechanical Keyboard RK-9000 with Cherry MX Blue Switch (RK-9000)",
+    "Rotring 500 Mechanical Pencil, Black, 0.35mm (1910973)",
+    "Ruaeoda 3.5mm Aux Audio Cord 2 ft, Nylon Braid 3.5mm Male to Male Audio Cable 1/8 Shielded AUX Headphone Cable Extension Outdoor Auxillary Stereo Audio Cable Cord",
+    "Ruaeoda USB to USB Cable 1.5 ft, USB 3.0 Male to Male Type A to Type A Double Sided USB Cord for Data Transfer Compatible with Hard Drive, Laptop, DVD Player, TV, USB 3.0 Hub, Monitor and More",
+    "S-Tech iPhone 12 Mini Tempered Glass Screen Protector (3 Pack) 5.4\" Case Friendly Screen Protective Glass Shockproof 9H for Apple iPhone 12 Mini 5.4 inch 2020 Model",
+    "SAMSUNG Galaxy S21 Ultra 5G, 128GB, Phantom Black - Unlocked (Renewed Premium)",
+    "SAMSUNG Galaxy S6 Edge G925T 32GB w/ 4G LTE, 16MP Camera and Octa-Core Processor (T-Mobile) - White Pearl",
+    "SANNCE 8CH 1080P Home Surveillance Camera System with 1TB HDD and 4 x 1080P TVI Weatherproof CCTV Cameras, Infrared Superior Night Vision, Easy Remote Access, Wired Security Camera System Outdoor",
+    "SANNCE 8CH 1080P Lite Home Security Camera System with 8x1080P Indoor/Outdoor Surveillance Cameras and 1TB Hard Disk Included with EXIR Night Vision, Motion Detection, APP Push& Email Alert",
+    "SANRUI Magazine File Holder Desk Organizer Clear Acrylic Vertical File Organizer for Office Home 2-Pack",
+    "SHUAXI Watch Screen Protector (3+1Pack) Compatible for Garmin Fenix 6S / Fenix 6S pro,Tempered Glass Film Anti-Scratch High Definition Full Coverage and Soft TPU Protective Case",
+    "SINTIA Keyboard Case for Samsung Galaxy Tab A 10.1 2019 T510 T515-Folio PU Leather Stand Case-Detachable Wireless Keyboard Case for Samsung Galaxy Tab A 10.1 Inch SM-T510 SM-T515 2019 (Black)",
+    "SIVGA M002 Portable in-Ear Premium Ebony Wood Noise Cancelling Earbud Natural Audio Surround Sound Earphone with Storage Bag for Smart Phone, Laptop",
+    "SOONDAR® Creative Spaceman Astronaut LED Flexible USB Light for Laptop PC Notebook",
+    "STAPLES 2806660 4-Drawer Vertical File Cabinet Locking Letter Black 18-Inch D (52152)",
+    "STYLOOC Solar Powered Car Window Windshield Auto Air Vent Fan Auto Ventilator System,Exhaust Fan Vehicle Radiator Vent with Ventilation(Black)",
+    "SUPANT Fibreboard Office Desk Organizer Set & Accessories, Multi-Functional DIY Pen Holder Box for Kid Men Women, Desktop Stationary, Paper Filer Trays Organization, Home Office Supply Storage Rack",
+    "SWYJO USB Light Brightness Stepless Dimming 3 Colors Temperatures, USB Lamp Built-in Battery Rechargeable Touch Sensor 16LED 360° Rotatable, Eye-Protect for E-Reader/Notebook/Laptop/Reading Light",
+    "Safco Muv Adjustable-Height Desk",
+    "Samsung Galaxy S10 (5G) 256GB / 8GB RAM SM-G977B Single-SIM (GSM Only, No CDMA) Factory Unlocked Android Smartphone - International Version (Crown Silver)",
+    "Samsung Galaxy S10+ Factory Unlocked Android Cell Phone | US Version | 128GB of Storage | Fingerprint ID and Facial Recognition | Long-Lasting Battery | Prism Blue (SM-G975UZBAXAA)",
+    "Samsung Galaxy S10e, 128GB, Prism Black - Unlocked (Renewed Premium)",
+    "Samsung S860 8.1MP Digital Camera with 3x Optical Zoom (Black)",
+    "Samsung WB350F 16.2MP Smart WiFi Digital Camera with 4GB Card and Case (Brown)",
+    "Sandstone Lamp Cord Cover Thin-Style Faux Silk 9 ft long Taupe",
+    "Scentos Scented Gel Pens for Kids - Assorted Colorful Pens - Fine Point Gel Pen Set - For Ages 3 and Up - 24 Count",
+    "Screen Protector for Fitbit Versa 2 (6 Pack) Smartwatch, Flexible TPU Film Full Coverage Friendly Anti-Bubble HD Clear Film (Upgrade Version)",
+    "Screen Protector for Samsung Galaxy S10, [High Definition] [No Bubbles] [9H Hardness] [Support Fingerprint Sensor], Samsung Galaxy S10 HD Screen Protector [2 Pack]",
+    "Seagate 8TB Enterprise Capacity 3.5 HDD 7200RPM SATA 6Gbps 256 MB Cache Internal Bare Drive (ST8000NM0055)",
+    "Sesame Street 400+ Fun & Reward Sticker Book | 6 Sheets | Incentive Stickers for Kids | Great for Teachers, Parents, or Caregivers | Incentives, Crafts and Scrapbooking | by Leap Year Publishing",
+    "Sgorlds 13\" Cash Register Drawer for POS Machine with 4 Bill 4 Coin Fully Removable Cash Tray Coin Compartment,12-24V,RJ11/RJ12 Compatible,Key Lock",
+    "Shields Up for Galaxy S23 Ultra Case, Samsung S23 Ultra Case, Minimalist Wallet Case with Card Holder & Ring Kickstand/Stand, Slim Protective Shockproof Cover for Samsung Galaxy S23 Ultra - Clear",
+    "Skinomi Matte Full Body Protector Compatible with LG Nexus 5X (2015)(Screen Protector + Back Skin Cover) Full Coverage Matte Skin Anti-Glare HD Film",
+    "Skinomi Matte Screen Protector Compatible with Amazon Kindle Oasis (8th Generation 2016) Anti-Glare Matte Skin TPU Anti-Bubble Film",
+    "Skinomi Screen Protector Compatible with Acer Liquid E Clear TechSkin TPU Anti-Bubble HD Film",
+    "Skinomi Screen Protector Compatible with Barnes & Noble Nook Color Clear TechSkin TPU Anti-Bubble HD Film",
+    "Skinomi Screen Protector Compatible with BlackBerry Bold 9790 Clear TechSkin TPU Anti-Bubble HD Film",
+    "Skinomi Screen Protector Compatible with Palm Treo Pro 850 Clear TechSkin TPU Anti-Bubble HD Film",
+    "Skinomi Screen Protector Compatible with Samsung Galaxy Exhilarate Clear TechSkin TPU Anti-Bubble HD Film",
+    "Skinomi Screen Protector Compatible with Samsung Galaxy S4 Active (I9295) Clear TechSkin TPU Anti-Bubble HD Film",
+    "Smart Watch Charger Magnetic, Charging Cable for YAMAY Willful Letsfit Letscom Umidigi Uwatch 3S 3 2 2S Urun smartwatch",
+    "Smart Watch for Men Women|Fitness Tracker with Heart Rate Monitor, with 1.81\" Large Screen Waterproof Fitness Watch (IP65) Sleep Tracker Monitoring Pedometer Watches Activity Tracker for iOS Android",
+    "Smart Watch, 2022 Fitness Tracker for Men Women, 1.69 Inch Fitness Watch with Heart Rate Blood Oxygen Sleep Monitor, Step Counter, Activity Tracker, IP68 Waterproof Smartwatch for Android iOS Phones",
+    "Smart Watches for Men Women, Bluetooth Call Watch (Answer/Dail Call), IP68 Waterproof Fitness Tracker Smartwatch with Blood Pressure Heart Rate Health Sport Exercise Smart Watch for Android iPhone",
+    "Smart Watches for Women (Answer/Make Call), 2023 Newest AMOLED Bluetooth Smartwatch for Android Phones and iPhone, Waterproof Fitness Tracker with Text, Heart Rate, Blood Oxygen, Sleep Monitor, Pink",
+    "Smolink Rj45 to Rj45 Coupler, 5pack Connector Ethernet Cable Rj45 Inline LAN Cable Extender Adapter Compatible with Cat8/Cat7/Cat6/Cat5e/Cat5 Connector Coupler for Router/Switch/TV/PC (Black)",
+    "Smyidel Waterproof Mini Kid Camera High Definition 12MP HD 3M Underwater Swimming Digital Camera Camcorder 32G SD Card Flash 2.0 Inch LCD Display (Black)",
+    "Snugg iPad 10.2 Case with Keyboard/iPad Air 3rd Generation Case with Keyboard/iPad Pro 10.5 Keyboard Case - Backlit iPad 10.2 Keyboard Case -360 Degree Rotatable 10.2 Inch iPad Case with Keyboard",
+    "Social Security Card Protector/Sleeve Fit Insurance Card Ten (10)",
+    "Sofia + Sam Multi Tasking Lap Desk with Venting for Computer Heat | Adjustable Legs and Pullout Drawer | Fits Laptops Up to 15\" | Walnut | Laptop Bed Tray | Folding TV Tray Table",
+    "Sony 19.5V 4.7A 90W VGP-AC19V20 VGP-AC19V10 AC Adapter Charger (VGP-AC19V23)",
+    "Sony Cybershot DSCW120/B 7.2MP Digital Camera with 4x Optical Zoom with Super Steady Shot (Black)",
+    "Sony DSCW800/B 20.1 MP Digital Camera (Black) (Renewed)",
+    "Sony FDR-AX33/B 4K Camcorder Black Bundle with 64GB Memory Card, Camera Bag, 60 Inch Tripod, 2X 2540 mAh Battery, Charger, 52mm Filter Set and HDMI Cable",
+    "Sony RX100VA 20.1MP Digital Camera: RX100 V Cyber-shot Camera Black (Renewed)",
+    "South Korea 4 Pack of Country Flag Stickers Decal for Window Laptop Computer Vinyl Car Bumper Scrapbook Korean",
+    "Spigen ArcField for MagSafe Charger, Magnetic Wireless Charger for iPhone 14 MagSafe Charger Fast Wireless Charging Pad Compatible with iPhone 13 Pro Max 13 Mini 12 Pro Max 12 Mini AirPods 3",
+    "Sproutbrite Classroom Banner Decorations and Poster Bulletin Board Set - Together We Are Better",
+    "Sterilite 23658004 Medium Tall Modular Drawer, White Frame with Clear Drawers, 4-Pack",
+    "Storex Premium File Crate with Comfort Handles, 17.25 x 14.25 x 10.5 Inches, Teal (61694A03C)",
+    "Stylish Smart Watch, MBHB Heart Rate Blood Pressure Sleep Monitor, Fitness Tracker for Girl Ladies Women, Black (8 inch)",
+    "Subhtoh Dual Monitor Stand Riser with 3 in1 Wireless Charging Station, Larger Monitor Stands for 2 Monitors with Adjustable Angle, Monitor Riser with 25W Fast Charger for iPhone Samsung Earbuds",
+    "SunJack 40W 5 Port USB Desktop Charger Station Hub with Qualcomm QC3.0 Quick Charge 3.0 for iPhone, iPad, Samsung Galaxy and More",
+    "Suoman 4-Pack for Samsung Galaxy Watch 6 44mm / Galaxy Watch 5 44mm / Galaxy Watch 4 44mm Screen Protector, [Perfectly Fit] Tempered Glass Protector for Galaxy Watch 4/5/6 (44mm) Smartwatch",
+    "Supeasy 5-Trays Desktop File Organizer with Handle, Letter Tray Paper Organizer with Drawer and Pen Holders, White Mesh Office Supplies File Holder, Desk Organizer for Office School Home",
+    "Super Fast Charger Samsung Type C Charging Block for Samsung Galaxy S23 A54 A34 A14,A53,A13,A23,A04s,A03s,S23 Ultra,S22,S21,S20,M14,Note 20, iPad,Pixel 7 6a,USB C Wall Charger & 6FT USB C to C Cable",
+    "Super Fast Charger Type C Kit,18W Quick Charge 3.0 Wall Charger Car Adapter for Samsung Galaxy Z Flip 4/3 Z Fold 4/3 S23 Ultra S22 S21 S20 S10 S9 A73 A54 A53 A33 A14 A13 A32 A52,with 2 USB C Cable 3FT",
+    "Super Fast Charger Type C, 3 Pack 25W Samsung Charger Super Fast Charging Block with 10FT Long Type C Charger Cable for Samsung Galaxy S23 Ultra/S23+/S23/S22 Ultra/S22+/S22/S21/S20/Note 20/10/Z Fold 3",
+    "Supershieldz (3 Pack) Designed for Lenovo ThinkPad X1 Yoga (3rd Gen) Screen Protector, Anti Glare and Anti Fingerprint (Matte) Shield",
+    "Surface Pro Surface Laptop Charger,65W Power Supply Adapter[Updated] Compatible with Microsoft Surface Pro 9/8/X/7+/7/6/5/4/3,Surface Laptop 5/Studio/4/3/2/1,Surface Book,Surface Go 3/2/1&Travel case",
+    "T POWER 2 x pcs 30-pin (6.6 ft Long Cable) Compatible with Samsung Galaxy Tab Note 7.0 7.7 8.9 10.1 Galaxy Tab 7\", 8.9\",10.1\" Tablet 2 Replacement Spare Power Cord Charging Sync Data Cable",
+    "TAMOXI Wireless Charger for Apple Watch 7 6 SE 5 4 3 2, Airpods 2/Pro, iPhone 13Pro Max/13 Pro/13/12/12 Pro/12 Pro Max/Qi-Certified Phones Dark Purple",
+    "TANTEK l209 HD Clear/Anti Scratch/Anti Glare/Anti Fingerprint Tempered Glass Screen Protector for Apple IPad Mini 4 (7.9\"), 3 Piece",
+    "TOPK AM23 1M LED Magnetic Charging USB Cable Type C (Red)",
+    "TP-LINK Kasa Indoor, 1080P HD Smart WiFi Security 360 Pan and Tilt Camera, Night Vision, Motion Detection, Remote Monitor, Works with Google Assistant and Alexa (KC110) (Renewed)",
+    "TZe-151 TZ-151 ptouch 24mm Black on Clear Label Tape Label KINGDOM Compatible Label Tape Replacement for Brother 24mm .94\" Laminated P Touch Label Maker Tape PT D600 P700 P900W Label Maker, 3-Pack",
+    "Tablet Screen Protector for Galaxy Tab A 10.1 2019, [2-Pack] 9H Hardness HD Screen Tempered Glass for Samsung Galaxy Tab A 10.1 2019 SM-T515/T510",
+    "Targeal 65W USB C Charger Block - Dual Port QC&PD 3.0 GaN Wall Charger - Foldable Type C Charger Fast Charging for MacBook Pro/Air, Galaxy S22/S21, HP Spectre, Note20/10+, iPhone 13/Pro, Pixel-Black",
+    "Tech Armor Ballistic Glass Screen Protector Designed for Apple iPhone 5C, 5S, 5 and SE (2016) 2 Pack Tempered Glass",
+    "Tech Armor HD Clear Film Screen Protector Designed for Apple NEW iPad Pro 11-inch 2021, 2020, 2018 and iPad Air 5 (2022), iPad Air 4 (2020) - 2 Pack",
+    "Tekmax 10W Nano-Tiny Fast Charger, Mini Qi Wireless Charging Pad for Phone13/13 mini/13 pro/max/Phone12/12 mini/12 pro/max/AirPods, iPhone 11/11 Pro/11 Pro Max/XS Max/X/8, Samsung S20/S20+/S10/S9/S8",
+    "Tensea for iPhone 13 Pro/iPhone 13 Pro Max Camera Lens Protector Bling, Protection Camera Cover Tempered Glass Screen Protector Diamond Metal Individual Ring for 13Pro 6.1\" / 13 ProMax 6.7 inch 2021",
+    "The Eero Genie for eero 6+, eero 6, and Mesh Wi-Fi: Wall Mount Outlet Holder Stand | Lowest Profile | Open Access | Multiple Install Options | Horizontal Outlets | Design Winner! (1-Pack)",
+    "The Office Stickers, Pack of 50 Vinyl Sticker Decals, Funny Stickers for Water Bottles, Tumblers, Laptops, Flask, Waterproof Office Stickers for Adults and Teens",
+    "Top Flight Steno Book, 6 x 9 In, White, 80 Sheets",
+    "Travel 3 in 1 Magsafe Wireless Charger, Foldable Wireless Charging Station for Apple, Wireless Charging Pad Compatible with iPhone 14 13 12 11/Pro/XS/XR,AirPods 3/2/Pro, iWatch 7/6/5/4/3/2",
+    "Trianium 3 Pack Camera Lens Screen Protector Compatible for iPhone 13 Pro and iPhone 13 Pro Max (2021, 6.1\" / 6.7\" Phone) - Clear [Support Night Shooting]",
+    "Tribesigns Lateral File Cabinet 2 Drawer,Wood Filing Cabinet with Wheels,Printer Stand with Storage Shelves for Home Office,Black & Brown",
+    "Tripp Lite Dual Port USB Wall / Travel Charger for Tablet & Mobile Devices 5V/3.4A/17W (U280-002-W12)",
+    "Tukellen Paper Screen Protector for iPad 9.7 inch (iPad Pro 9.7 inch/iPad 5/6th Generation) Drawing Writing Feel Like Paper Anti Glare Matte Film, Compatible with Apple Pencil(2 Pack)",
+    "Turquoise 2-Tier Drawer Unit - European Country Style Desk Organizer Box - 9.7x7x5.1\" Teal Wooden Stackable Drawers - Countertop Organizer Drawers w/Label Holder - Double File Drawer Unit",
+    "Type C Charger Fast Charging Block, AILKIN Mini USB Wall Adapter Plug, PD 20W Brick Box 6FT Cord TPE Power Line for Samsung Galaxy S21+, S21 Ultra 5G, Note20, iPad Pro 2021, Lg G6 G5, Moto G8",
+    "UBOTIE Large Print Computer Keyboard with Yellow Keys and Black Letters, Wired USB Keyboards for Visually Impaired Low Vision Individuals",
+    "UL Listed 65W AC Charger Fit for Asus Zenbook UX430UQ UX430UA UX430UN UX430U UX430 UX410UA UX410UQ UX410U UX410 Laptop Power Supply Adapter Cord",
+    "USB C 100W pd 3.0 Multiport Charger, GaN Fast Power Delivery Adapter, 4 Port Foldable USB Station Travel Charging Compatible with MacBook Air Pro, iPhone 13 Pro, iPad, Samsung, Pixel, White MICMI",
+    "USB C Car Charger, Vocrby 45W Fast Car Charger Adapter PD&QC3.0&PPS 3-Port Type C Car Charger with 5.25FT Coiled Cable, Car Charger Compatible with Samsung Galaxy S23 22/Google Pixel/iPhone/Android",
+    "USB C Charger, EQWOL Byte 2-Pack 20W Mini USB-C Wall Charger, Fast Charger Compatible with iPhone 13/13 Mini / 13 Pro / 13 Pro Max / 12/12 Mini / 12 Pro / 12 Pro Max (2-White)",
+    "USB C Wall Charger 30W 2-Port Compact for iPhone 13 Charger Block with 18W Type C Power Delivery Foldable Power Adapter PD Compatible with iPhone 13 Pro Max Mini 12 iPad Pro AirPods Pro Galaxy Pixel",
+    "USB C Wall Charger Block 20W, Dual Port USB-C Wall Plug-in USB Charger 20W PD & QC3.0 USB A Fast Charging Block for iPhone 14/13/12/11 /Pro Max, iPad Pro, AirPods Pro, Samsung Android Phones and More",
+    "USB C Wall Charger Block, CKCN 20W Type C Fast Charger Plug Adapter, Power Delivery + QC3.0 USB A Double Port Fast Charging Block for iPhone 14/13/12/11 /Pro Max/XS/XR, iPad Pro, AirPods Pro, Samsung",
+    "USB C iPhone Fast Charger with Cable, 18W PD Type C Charger Fast Wall Charger with 5ft USB C to Lightning Cable for iPhone 13 12 Pro 11 Xs Max XR X 8 Plus iPad Pro and iPad Air 3 iPad Mini 5",
+    "USB Type C Cable, 2.1A Dual Port Plug Wall Charger Box + 6ft USB-C Fast Charger Nylon Braided Cord",
+    "USB Wall Charger Block, CableLovers 3-Pack 1A/5V Single Port USB Cube Fast Power Adapter Charger Plug Charging Box Replacement for iPhone Xs/XR/X/8/7/6 Plus/6, iPad, Samsung Galaxy, Moto, LG, Android",
+    "USB Wall Charger, Charger Box, NonoUV 4-Pack Dual Port Fast Charging Block Cube Plug for iPhone 14 13 12 11 Pro XR XS X 8 7 6 Plus, iPad, Samsung Galaxy S22 S21 S20 S10 S9 Note 20 10 9,Android,Kindle",
+    "USB Wall Plug,3Pack Power Adapter USB Charging Block Cube Plug Box Compatible with iPhone 11 XR XS X,Samsung Galaxy S22 S21 Ultra 5G S20 S10 S9 Note20/10 A51 A71 A11 A01 A21 A20 A50 A70,LG,Moto,Pixel",
+    "UTEBIT Universal C-Clamp with 1/4\" Thread Hole Heavy Duty Aluminum Clamps 2.36 Inch for Desktop Mount Holder LCD Monitor Flash Desks Home Woodworking",
+    "UUMAO Magnetic 5-in-1 Dual 10W Wireless Charger, 6-Coil Wireless Charging for Multiple Devices, Suitable for Mag Safe for iPhone14/13/12/Airpods and iWatch (with 36W Adapter) (X6+PD+Wood Grain)",
+    "Ubiquiti UniFi AP, AC PRO, 3-Pack - UAP-AC-PRO-3(US)",
+    "Umhlaba Compatible With iPhone 11 (2019) and XR (2018) Screen Protector Mirrored Tempered Glass Film Mirror Effect HD Clear 6.1 inch Mirror Effect 2 Pack",
+    "Unipha Tempered Glass Screen Protector for iPhone XR and iPhone 11 - Fingerprints Resistant with Touchscreen Sensitivity - HD Super Clarity and 9H Hardness Protection, Case Friendly - 2-Pack",
+    "UniqueMe [ 2+2 Pack Compatible for Samsung Galaxy S10 Plus TPU Screen Protector and Camera Lens Protector Tempered Glass [Easy installation Tool][Support Fingerprint Unlock] [Bubble Free]",
+    "Universal 2 in 1 Wireless Bluetooth Keyboard Flip Case with Folio Stand and Detachable 3.0 Magnetic Bluetooth Keyboard,Durable, Shockproof,for 4.5inch to 6.8inch iOS,Android and Win Smart(Black)",
+    "Universal Slim Portable Wireless Keyboard with Builtin Rechargeable Battery Automatic Sleep Function (Without Backlight) (White)",
+    "UpBright 15V AC Adapter Compatible with Electrolux Ergorapido 108A EL1005A EL1006 EL1015A EL1016 EL2001 9.6V EL2081A 10.8V DC 12V EL1000A Vacuum SIL SSA-10W US 150015 Kings KU2B-150200D Power Charger",
+    "Upgraded File Box with Lock, Fireproof Document Box File Cabinet File Organizer Box with Water-Resistant Zipper & Adjustable Handle, Collapsible Filing Cabinet for Hanging Letter/Legal Folder (Grey) (Grey)",
+    "Urth Zeolite Tech Organiser – Electronics Accessories Bag, Weatherproof + Recycled (Black)",
+    "UseBean 240W USB C to USB C Cable 6.6ft (2 Pack),USB 3.2 Gen 2X2 20Gbps Data Transfer Type-C Cable PD Fast Charging,4K Video Monitor Cord,for Thunderbolt 3/4 MacBook Pro, iPad Pro,Galaxy S21/S20",
+    "Uyiton Compatible with Apple Watch Series 8/7 45mm Screen Protector [Full Coverage][Auto-Alignment Installation Kit] HD Clear Bubble-Free Hard Coated Flexible PET Film for iWatch Cover 45mm, 2 Pack",
+    "VOSATRON Height Adjustable Electric Standing Desk, 55 x 24 Inches Sit Stand Up Desk with Splice Board, Memory Computer Home Office Desk with Caster Wheels, Black Frame/Mahogany Top",
+    "VSCO Stickers for Hydro Flask, Cute Computer Laptop Sticker, Teen Girl Stuff Gifts, Cool Aesthetic Waterproof Vinyl Stickers for Water Bottles, Skateboard, Bike Guitar Luggage Decals 50pcs",
+    "Vault Locks Wall Mount Lockbox for House Keys Outdoor - Keysafe Storage Lock Box With 4-Digit Numeric Combination",
+    "VisionTek Waterproof Bluetooth Mini Keyboard for windows iOS and Android Devices - 900838",
+    "Voltenick Kids Camera for 3-10 Year Old Girls Kids Digital Cameras 1080P 2 inch Toddler Video Camera Gift for Age 3 4 5 6 7 8 9 Years Old Boys, Girls Birthday Gifts with 32G SD Card (Pink)",
+    "Vosker 2 Keys Cable Lock for Security Cameras | 6 Feet Long Flexible Braided Steel | Universal Locking Cable and Flexible Lock Cable (Protection Box Support)",
+    "Vuepoint 3.1Mp Digital Camera",
+    "WAOAW Seat Cushion for Car, Office Chair Cushions Butt Pillow (Dark Brown)",
+    "WOKA Electric Standing Desk Adjustable Height 48x24 in with Memory Controller, Ergonomic Motorized Standing Desk with Keyboard Tray, Rising Desk for Home Office Sit Stand Desk",
+    "Watch Charger Compatible with Apple Watch Charger Stand, Watch Charger Charging Stand for iWatch Series 8/Ultra/7/6/5/4/3/2/SE/SE2, Magnetic Fast Charging Station for iWatch Wireless Charging (4.2ft)",
+    "Watch Charger for Apple Watch Charger, Long 6.6FT iWatch Portable Wireless Fast Charging Cable Cord with USB Wall Charger Plug Adapter Block Compatible with Apple Watch Series 8/7/SE/6/5/4/3/2/1",
+    "Watch, Smart Watch for Men Smartwatch for Android Phones iOS Phones Waterproof 11Sports Mode, Bluetooth Full Touch Screen Smart Watch with Heart Rate Monitor Blood Pressure Monitor Sleep Monitor",
+    "Watch Charger for Apple Watch Charger,USB C 20W Fast Charger Adapter 6.6FT iWatch Charger Magnetic Charging Cable Cord Apple Watch Charger for Apple Watch Support Apple Watch Series 8/7/6/5/4/3/2/1/SE",
+    "Waxinila 2 PCS Shark Baby Crochet Hooks Set Ergonomic Sew Iron on Embroidered Polo T",
+    "Weatherproof Indoor/Outdoor 20 Feet Power Extension Cable and Quick Charge 3.0 Power Adapter Compatible for Arlo Pro and Pro 2, Arlo GO, Other Home Camera (Micro USB) by - Taken, No Charging Needed",
+    "Werkryt MFi Certified iPhone Charger Lightning Cable 5 Pack [3/3/6/6/10FT] Extra Long Nylon Braided USB Charging & Syncing Cord Compatible iPhone Xs/Max/XR/X/8/8Plus/7/7Plus/6S/6S Plus/SE/iPad/Nan Mor",
+    "Wireless Charger 6 in 1,15W Fast Wireless Charging Station for iPhone 14/14 Pro/14Pro Max/ 13Pro Max/13 Pro/13/12/11/11 Pro,for Apple iWatch 6/5/4/3/2/1,AirPods Pro,Samsung Galaxy and Qi-Enabled…",
+    "Wireless Charger Stand, Fast Charging Station for Apple and Samsung Devices, Allows Charging Multiple Devices in just one Stand 6 in 1Wireless Charger Stand (Black)",
+    "Wireless Charger Stand, ZHIKE 4 in 1 20W Wireless Charging Station Compatible with Galaxy Phone/Watch/Buds, Charger Dock for S22/S21/Note 20/Note 10, Galaxy Watch 4/3,Gear S5/S4/S3/sport,Active 2/1",
+    "Wireless Charger for Watch and Phone, Fast Wireless Charging Stand 3 in 1, Compatible iPhone 12/SE/11/11 Pro/X/XS/XR/Xs Max/8 Plus,AirPods Pro/2, Apple Watch Series 6/SE/5/4/3/2/1",
+    "Wireless Charger, 4 in 1 Fast Wireless Charging Station with Light Qi Charging Stand Foldable Dock for iPhone 13/13 Pro/13 Pro Max/12/11 Series/XS/XR/X/8/8 Plus, iWatch Series 6/5/4/3/2, AirPods 2/Pro",
+    "Wireless Charger, Coobetter 4 in 1 Wireless Charging Station, Foldable Wireless Charging Stand for Airpods Pro, Apple Watch, Compatible with iPhone 13/12/11 Series/XS/XS Max/XR/X/8P/8/Samsung Galaxy",
+    "Wireless Charger, Wireless Charging Station for AirPods, iPhone14/13/12/11/Pro/Pro Max/X/XS/XS Max/XR/8/8Plus, Samsung, and Other Qi-Certified Phones-Black",
+    "Wireless Charging Stand, 3 in 1 Charging Station for Apple iPhone 13/13 Pro/13 Pro Max/13 Mini/12/SE/11 Series/X/XS/XR/8 Plus, Wireless Charging Dock for Apple Watch 7/SE/6/5/4/3/2, AirPods Pro/2",
+    "Wireless Express LED Neck Fan with Neckband - Lightweight Small Fan - Portable Mini USB Fan - Rechargeable Personal Fan (Blue)",
+    "Wireless Security Camera System with 1TB Hard Drive, Security Cameras 1296P with Two Way Audio, IP66 Weatherproof Indoor Outdoor Camera, Voice Prompts, Full Color Night Vision, Face Recognition",
+    "YAMASORO Ergonomic Executive Office Chair White,High Back Leather Computer Chair Flip up Arm Rests,Office Desk Chairs with Wheels for Heavy People",
+    "YAMASORO Executive Office Chair Black Mid Back Office Desk Chairs with Wheels and Flip-up Arms Leather Computer Chair for Adults,Pink",
+    "YINDIA Waterproof Camera Underwater Camera 10 FT 2.7K Full HD 48MP 16X Digital Zoom Waterproof Digital Camera Self-Timer Dual Screens Anti Shake for Snorkeling, Travel and Vacation",
+    "YINYOO 4 Core Silver Plated Earphones Earbuds Cable Earphone Replacement Cable for Blon-03 Blon bl03 Earphones Earbuds Blon Bl-03 Bl03（2pin 3.5mm）",
+    "YIWEVEN Compatible with iPhone XR Screen Protector, iPhone 11 Screen Protector [3-Pack] –Premium HD 9H Tempered Glass Film for Apple iPhone 11/XR 6.1” [Anti-Scratch, Installation Frame, Bubble Free]",
+    "YMDK 104 Key SA Profile ANSI ISO Double Shot Shine Through PBT Ball Shape Keycaps Suitable for Standard MX 104 87 61 Keyboard (Orange)",
+    "YMDK 61 64 68 ANSI Dye Sub 60% Carbon Custom Keycaps OEM Profile Thick PBT Keycap for MX Mechanical Keyboard GH60 SP64 GK64 Tada68 (Gray White Red)(Only Keycap)",
+    "YMDK Custom Top Printed 87 104 Keycaps OEM Profile Thick PBT Keycap Set for Cherry MX Switches Mechanical Gaming Keyboard (Only Keycap)",
+    "YMDK DSA Profile 61 64 68 Minila Dye Subimation 60% Keycaps Thick PBT Keycap Set for Cherry MX GH60 XD64 GK64 Tada68 Minila DZ60 SP64 (Gray Red Mixed)(Only Keycap)",
+    "YMDK Godspeed Top Print Thick PBT Mac Keys OEM Profile Keycaps Suitable for Standard ANSI 61 TKL 108 MX Mechanical Keyboard (Only Keycap)",
+    "YMDK XDA DSA Blank PBT Keycaps Suitable for Ortholinear Layout MX Keyboard XD75 ID75 Planck Preonic Niu40 (Only Keycap)",
+    "YOLENY Big and Tall Office Chair with Foot Rest, Height-Adjustable Reclinable Ergonomic Swivel High Back Office Chair, Leather Office Chair, Supports Up to 350 lbs, Brown",
+    "YOOCH Tempered Glass Screen Protector for iPhone 11 Pro Max/iPhone Xs Max Full Coverage Tempered Glass Film Anti-Fingerprint, Bubble Free, Case Friendly",
+    "YOUMAKER Galaxy S9 Case,Metallic Purple with Built-in Screen Protector Heavy Duty Protection Shockproof Slim Fit Full Body Case Cover for Samsung Galaxy S9 5.8 inch - Purple/Black",
+    "YSKWA Hidden Camera Detectors, Bug Detector, Hidden Device Detector, Anti Spy Detector, GPS Detector, RF Detector Bug Detector, Anti-spy Signal Detector for GPS Listening Device Hidden Camera Finder",
+    "YUMU Portable Folding Aluminum Laptop Desk Stand Table with Mouse Pad Ergonomic Comfortable Notebook Table Stand TV Bed Tray HT1000A-02 …",
+    "YUWLDD,12V 2A 24W Universal AC/DC Adapter Switching Power Supply Wall Charger Suitable for Common Electronic Devices with 9 Selectable Plugs",
+    "Yaheetech Executive Office Desk Chair, High-Back Ergonomic Computer Chair, Swivel Conference Chair, Rolling Task Chair Bonded Leather with Lumbar Support, Armrest",
+    "Yesesion Plastic Cube Storage Bins with Wheels, Bathroom Cabinet Organizer Corner Stand, Rolling Utility Cart for Home Office Supplies, Kitchen, Living Room, Bedroom, White Folding Bookcase (1 Pack)",
+    "YiwerDer 20Pcs Antistatic Resealable Large Size Bag 22X24cm/8.6X9.4inch, Premium Anti Static Bag for Motherboard HDD and Other Electronic Devices",
+    "Yocuby Sport Smartwatch for Android iOS Phone, IP68 Waterproof Fitness Tracker Watch with HR Monitor, Step Counter, Calorie Counter Bluetooth Activity Tracker Smart Watch for Men",
+    "Yoobao Portable Fan USB Handheld Fan Small Desk Fan 3000 Battery Operated Rechargeable Personal Mini Fan with 3 Speeds Neck Fan for Bedroom/Home, Outdoor Fan Travel Fan Office Fan for Desk Quiet-BK",
+    "ZAGG EL8ZKF-BB0 Folio Case with Backlit Keyboard for 2016 Verizon Ellipsis 8 Tablet, Black",
+    "ZAGG InvisibleShield Glass+ 360 - Front + Back Screen Protection with Side Bumpers Made for Apple iPhone 8 Plus - White (200101564)",
+    "ZAGG InvisibleShield Ultra Clear+ for the Samsung Galaxy S20 (Screen)",
+    "ZAGGkeys Case with Universal Wireless Keyboard for All Bluetooth Smartphones and Tablets - Lime/Charcoal",
+    "ZBRO Growth Mindset Posters for Classroom Bulletin Board Display 22 Pieces Set - Motivation Posters for Classroom, Change Your Words Header,growth001",
+    "ZLONXUN Fast USB C Car Charger for iPhone 13 12 11 Pro Max X XS XR,Samsung Galaxy S22/S21/S20/S10/S9,Google Pixel 6/5/4",
+    "ZOSI 16CH 1080P Security Camera System Outdoor with 4TB Hard Drive,H.265+ 16Channel 1080P CCTV DVR with 16PCS 1920TVL Surveillance Cameras,Night Vision,Motion Alert,Remote Access,for 24/7 Recording",
+    "ZOSI 8CH 1080P Video Security DVR System and (4) HD 2.0MP 1920TVL Surveillance Indoor Outdoor CCTV Cameras with 65ft Night Vision, 1TB Hard Drive, ,Motion Alert, Smartphone, PC Easy Remote Access",
+    "ZOSI Wireless IP Camera Q2 White, Indoor Baby Monitor, Home Security Camera, Support Motion Detection, Remote Access, clarify Night Vision (no SD Card Include)",
+    "Zapuno Touchpad Keyboard Case for iPad Pro 12.9 2020 4th Generation/2018-3rd Gen, 360 Rotating iPad Pro 12.9 Case with Touchpad Backlight Wireless Tablet Keyboard - Pencil Holder Included",
+    "Zeking [2+2 Pack] for iPhone 14 Pro Max 6.7\" Privacy Tempered Glass Screen Protector and Camera Lens Protector, Anti-Spy Case Fiendly 9H Hardness Bubble",
+    "ZenRich (2 Pack) Screen Protector for Samsung Galaxy Tab S9 Plus/Tab S8 Plus/S7 FE/Galaxy Tab S7 Plus 12.4 inch, 9H Hardness Tempered Glass Screen Film for S Pen Compatible/Face ID/Case Friendly",
+    "[1PACK 4PCS] GOBUKEE Compatible for Soft Premium Anti-Glare Matte TPU Film Screen Protector + Inner + Outer + Back Full Coverage Samsung Galaxy Z Flip 4 5G,Case Friendly, Bubble Free, Self-Healing",
+    "[2 Pack] High Definition Screen Protector 9H Hardness Tempered Glass for iPad 8th Generation 10.2 inch (2020 Release)/ iPad 7th Generation (2019), Clear Tempered Glass Film with Anti-Scratch/High Definition/Bubble Free",
+    "[2 Pack] JZK Samsung Galaxy Watch 3 45mm Bezel Ring Styling Cover,Adhesive Cover Anti Scratch & Collision Protector Bezel Loop+Protector Case for Samsung Galaxy Watch 3 45mm Accessories",
+    "[2 Sets 10PCS] Matte Screen Protector Designed for Samsung Galaxy Z Flip 4 5G 2022 ,Soft TPU Premium Quality Bubble Free Sensitive Touch Ultra-Thin Screen Protectors for Galaxy Z Flip 4 Support Fingerprint Unlock (Matte)",
+    "[2+2 Pack] Galaxy S23 Ultra Screen Protector Include 2 Pack Tempered Glass Screen Protector +2 Pack Tempered Glass Camera Lens Protector,9H Hardness,3D Curved,Anti-Fingerprint for Galaxy S23 Ultra 5G",
+    "[2-PACK]-Mr.Shield Designed For Samsung Galaxy Tab S8 Plus/Galaxy Tab S7 FE 2021 / Galaxy Tab S7 Plus 5G (12.4 Inch) [Tempered Glass][Japan Glass with 9H Hardness] Screen Protector",
+    "[2-Pack] KATIN For Samsung Galaxy A50, A30, A30s, M31 Tempered Glass Screen Protector Anti Scratch, Bubble Free, 9H Hardness, Easy to Install, Case Friendly",
+    "[2-Pack] for Samsung Galaxy Tab A 10.1 (2019) Screen Protector - SuperGuardZ, Anti-Glare, Matte, Anti-Fingerprint, Anti-Bubble [Lifetime Replacement] + 2 Stylus Pen",
+    "[3+3 Pack]Galaxy A23 5G Screen Protector with Camera Lens Protector, HD Tempered Glass Film, 9H Hardness, Anti Scratch, Easy Installation, Bubble Free, Screen Protector for Samsung Galaxy A23 5G/4G",
+    "[3Pack 10ft] Compatible with Samsung Galaxy S9 S10 S8 Plus Charger Cord(3A Fast Charging), TPE USB C Type Charger Cable,USB A to Type C Replacement for Samsung A32/A12/A10e/A20/A51/Note 20/9,LG-Grey",
+    "[4 Pack] 2 Pack Tempered Glass Screen Protector +2 Pack Camera Lens Protector for iPhone 12 Pro 6.1 inch, [9H Hardness] [Easy Installed] Clear Scratch-Resistant [Bubble Free]【Not fit for iPhone 12】",
+    "[4 Pack] iCsapr Glass Screen Protector Compatible for OnePlus 8T 5G and OnePlus 8T+ / Plus 5G[9H Hardness]HD Screen Tempered Glass, Scratch Resistant,Easy Install-[Case Friendly][Bubble Free]2.5D Edge",
+    "[Apple MFi Certified] iPhone 14 13 Fast Charger, 20W USB C PD Wall Charger Power Rapid Adapter with Original 6FT Type C to Lightning Quick Sync Cable for iPhone 14/13/12/11/XS/XR/X/8/SE/iPad/AirPods",
+    "[Apple MFi Certified] iPhone Fast Charger Dual USB-C Port Wall Charging Block with 2Pack 6FT USB C to Lightning Cable for iPhone14 Plus/Pro Max/12 Pro/11 Mini/iPad,AirPods",
+    "[Apple MFi Certified] iPhone Fast Charger,3 Pack 20W PD USB C Wall Charger Adapter with 3 Pack 5.9FT Type C to Lightning Cable Compatible with iPhone 14 13 12 11 Pro Max XR XS X,iPad",
+    "beukei (3 Pack) Screen Protector Compatible for iphone 13 pro max Screen Protector Tempered Glass,(6.7\" Display, 2021) Touch Sensitive,Case Friendly, 9H Hardness",
+    "bloom daily planners Inspirational & Motivational Quotes Planner Stickers (8 Sheets / 200+ Stickers) - Hand-Lettered Positive Cute Aesthetic Quotes for Decorating Organizers, Scrapbooks, Laptops, etc.",
+    "for Apple Watch Charger Cable USB C, 6ft Iwatch Fast Charger, Applewatch Charger [Apple MFi Certified] Portable Wireless I Watch Fast Charging Cord for Apple Watch Series Ultra/SE2/8/7/6/5/4/3/2/1/SE",
+    "for Apple Watch Wireless Charger, Portable Magnetic iWatch Charger for Travel Outdoor, Compatible with Apple Watch Series 5/4/3/2/1/Nike+ 【Upgraded Version】",
+    "for Galaxy S8 Privacy Anti-Spy Tempered Glass Screen Protector,Timbay[Case Friendly][9H Hardness][Anti-Scratch][Bubble Free][3D Curved] Tempered Glass Screen Protector for Samsung Galaxy S8 (e34)",
+    "for Microsoft Surface Pro X 13\" Leather Case, Ultra Slim Folio Stand Lightweight Cover for 13 inch New Surface Pro X 2019 Release(Fit Tablet with Type Cover Keyboard) (Starry Sky)",
+    "for Newest iPad Air 2020 4 4th Generation 10.9 A2324 A2072 Keyboard Leather Case,7 Colors Backlit Removable Slim Lightweigh Folio Cover Wireless Bluetooth Keyboard for iPad 10.9\" (Black)",
+    "iCarez HD Anti Glare Matte Screen Protector for iPhone 14 Pro Max 6.7-inches [3 Pack] (Case Friendly) Premium No Bubble Easy to Apply with Hinge Installation",
+    "iPad 20W USB C Fast Charger, Compatible with iPad Pro 12.9, iPad Pro 11 inch 2022/2021/2020/2018, iPad Air 5th/4th, iPad Mini 6, 2022 iPad 10th Generation with 10foot USB C to C Charging Cable",
+    "iPad 6th Generation Case with Keyboard, iEGrow F180 7 Colors Adjustment Backlit and Breathing Light Keyboard with 360 Degree Rotatable Cover for iPad 6th/iPad 5th Generation/Pro 9.7/Air 2/Air (Black)",
+    "iPad 9.7 Keyboard Case - Slim Detachable Keyboard Case Folio Stand PU Leather Cover with Keyboard for New iPad 9.7/iPad Pro 9.7/iPad Air 2/iPad Air - Dark Grey",
+    "iPad 9th Generation Case with Keyboard and Touchpad, 360° Rotatable Backlit Keyboard with Pencil Holder for 10.2\" iPad 9th Gen 2021/ 8th Gen 2020/ 7th Gen 2019 and iPad Air 3 / Pro 10.5 inch-Rose Gold",
+    "iPad Charger Fast Charging Cord 10-Ft Apple Certified 20W USB-C Wall Charger For iPad 10th Generation, iPad Pro 12.9 6th 5th 4th 3rd/iPad Pro 11 4th 3rd 2nd 1st/iPad Air 10.9 5th 4th/iPad Mini 6th 8.3",
+    "iPad Keyboard Case for 10.2 inch, iPad 9th/8th/7th Gen, iPad Pro 10.5\", iPad Air3,,7-Color Backlit, 360 Rotatable, Wireless Bluetooth Keyboard Protective Folio Cover, Auto Sleep/Wake (Rose gold)",
+    "iPad Keyboard Case for iPad 6th Gen 2018, iPad 5th Gen 2017, iPad Pro 9.7, iPad Air 2, iPad Air 1, 360 Screen Rotation 7 Colors Backlight iPad Case with Keyboard - Black",
+    "iPad Mini 4 Keyboard, Arteck Ultra-Thin Apple iPad Mini Bluetooth Keyboard Folio Stand Groove for Apple iPad Mini 4 with 130 Degree Swivel Rotating",
+    "iPad Pro 9.7 Keyboard Case, Boriyuan Aluminum 7 Color Backlit Wireless Bluetooth Keyboard Folio Smart Cover for Apple iPad Pro 9.7 with Foldable Stand Function + Screen Protector + Stylus, Gray",
+    "iPhone 14 Charger Cord-Marchpower 3Pack 3ft 6ft 10ft MFi Certified Lightning Cable USB-A Fast Charging Cable Compatible with iPhone 13 12 11 Mini Pro Max SE X XS XR 8 7 6 Plus iPod iPad AirPods, White",
+    "iPhone 6S Screen Protector, iPhone 6 Screen Protector, Tempered Glass Screen Protector for Apple iPhone 6S, iPhone 6, [Easy-apply Fixture] [Full Installation Kits] [10H Hardness] 2-Pack by Proud Focus",
+    "iPhone 7 Privacy Screen Protector, Driell Tempered Glass Screen Protector 0.25mm 9H, 2.5D Anti-Scratch, Anti-Fingerprint, Easy Install",
+    "iPhone 8 Case for Girls/iPhone 7 Case, GOLINK Air Cushion Drop Protection Crystal Clear Bumper Soft TPU Case for iPhone 8/iPhone 7-Giraffe",
+    "iPhone Charger Fast Charging, [Apple MFi Certified] 2Pack PD 20W USB C Wall Charger Block with 6FT Long Type C to Lightning Fast Charging Data Sync Cable Compatible for iPhone 14 13 12 11 XS XR X SE 8",
+    "iPhone Charger,20W USB C Charger Block,2 in 1 USB C Charger Fast Charging Support Two-Way Output for iPhone 14,14 Pro,14 Pro Max,13,13 Pro,13 Pro Max,Galaxy S21 Ultra,iPad,AirPods.",
+    "iPhone Fast Charger,18W PD Type C Wall Charger with 5ft USB C to Lightning Cable Compatible with iPhone 12/12 Mini/12 Pro/12 Pro Max/11/11 Pro/Xs Max/XR/X/8 Plus iPad Pro,iPad Air 3,iPad Mini 5",
+    "iPhone X Case, Rebex & iPaky 360 All-Around Protective Cover Thin Slim Fit [Non-Slip] Dual Layer Hard Case with Tempered Glass Screen Protector for iPhone X (Rose Gold)",
+    "imluckies Camera Lens Protector for Samsung Galaxy Z Fold 4 (2022), Ultra HD Clarity, 9H Anti-Scratch Tempered Glass Protective Film, 3D Full Coverage Lens Cover for Galaxy Fold4, Clear",
+    "kotlie Case Compatible with iPhone 13 6.1-Inch, Transparent Soft Shockproof Protective Slim Thin Phone Cases Cover with 2 Pcs Built-in 9H Tempered Glass Screen Protector for iPhone 13",
+    "mingtron 3 Pack Erasable Multicolor Pens, Erasable Pens, Refillable Rolling Ball Gel Pens, Friction Erasable Pens, Medium Point (1.0MM), 3 Color Ink in One (Black, Blue, Red), With Extra Refills",
+    "miookoog Retro Typewriter Keyboard, Typewriter Keyboard Wireless with White Lighting, Upgraded Mechanical Keyboard Bluetooth 5.0, Multi Devices Connection, Retro Keyboard Round Keycaps(Black)",
+    "noonebutyou 2 Layers large Under Desk Drawer Organizer Slide Out, Hidden Self- adhesive Under Desk Storage Drawer, Add a Drawer Under Table Storage for Office/Classroom/Home (Black",
+    "seenda Wireless Backlit Keyboard for Mac with USB Receiver and Type C Adapter - 2.4Ghz Full-Size Slim Rechargeable Keyboard for iMac, MacBook Pro/Air, Mac Mini, Mac Pro (Black and Grey)",
+    "uni-ball 1937262 207 Gel Pens, 0.07mm Medium Point, Assorted Colors, Pack of 8 Plus 4 Bonus",
+    "zdyCGTime Panel Mount USB 2.0 B Cable USB B Female to 5 pin Female Dupont Motherboard USB Header Cable (30cm/12inch)",
+    "𝟮𝟬𝟮𝟯 𝗡𝗲𝘄 Wireless Charger,2 Pack Wireless Charger,Dual-Coil 15W Fast Wireless Charging Stand,Wireless Charger Compatible with iPhone 14 13 12 Pro XR XS 8 Plus SE GalaxyPhone Series(No Adapter)"
+  ],
+  "families": [
+    "brand:01",
+    "brand:1intheoffice",
+    "brand:5avecamera",
+    "brand:aacl",
+    "brand:abcpow",
+    "brand:accessory usa",
+    "brand:acrimet",
+    "brand:adesso",
+    "brand:adsdia",
+    "brand:aemus",
+    "brand:agvee",
+    "brand:aigomara",
+    "brand:ailkin",
+    "brand:ainpow",
+    "brand:aiuonenian",
+    "brand:alphaline",
+    "brand:amazfit",
+    "brand:amazon basics",
+    "brand:amcrest",
+    "brand:ameiqa",
+    "brand:amllen",
+    "brand:anbel design",
+    "brand:anker",
+    "brand:annke",
+    "brand:annymall",
+    "brand:ares gadgets",
+    "brand:armorsuit",
+    "brand:arteck",
+    "brand:articona",
+    "brand:aryee",
+    "brand:auideas",
+    "brand:auskic",
+    "brand:autrix",
+    "brand:awonderful",
+    "brand:axirata",
+    "brand:ayneff",
+    "brand:babg",
+    "brand:baihui",
+    "brand:baisrke",
+    "brand:baoyuanda",
+    "brand:baseshop",
+    "brand:baseus",
+    "brand:beach camera",
+    "brand:bearut",
+    "brand:bentoben",
+    "brand:beseller",
+    "brand:betckey",
+    "brand:beukei",
+    "brand:beyond cell",
+    "brand:beyong",
+    "brand:bhongvv",
+    "brand:bloom daily planners",
+    "brand:bnehs",
+    "brand:boao",
+    "brand:boblov",
+    "brand:bodyguardz",
+    "brand:bohangong",
+    "brand:bondi band",
+    "brand:boriyuan",
+    "brand:bqaa",
+    "brand:brydge",
+    "brand:bufort",
+    "brand:byiuihs",
+    "brand:c2g",
+    "brand:cabepow",
+    "brand:cablelovers",
+    "brand:camstar",
+    "brand:canon",
+    "brand:casefromme",
+    "brand:casevasn",
+    "brand:casio",
+    "brand:cellever",
+    "brand:cerrxian",
+    "brand:chafon",
+    "brand:chargercity",
+    "brand:chbc",
+    "brand:chichifit",
+    "brand:chuwi",
+    "brand:chwares",
+    "brand:cinc vision",
+    "brand:cjp geek",
+    "brand:ckcn",
+    "brand:cllena",
+    "brand:cnamszou",
+    "brand:colamy",
+    "brand:color rokk",
+    "brand:colorful images",
+    "brand:comix",
+    "brand:commclad",
+    "brand:coolfire",
+    "brand:core innovations",
+    "brand:corsair",
+    "brand:cosytech",
+    "brand:cover ease from collections by design",
+    "brand:cozyzoom",
+    "brand:crazyondigital",
+    "brand:cross",
+    "brand:cucell",
+    "brand:cyvensmart",
+    "brand:dayspring pens",
+    "brand:decals",
+    "brand:delippo",
+    "brand:dell",
+    "brand:delta",
+    "brand:deltucci",
+    "brand:denkee",
+    "brand:desert cactus",
+    "brand:dexpt",
+    "brand:dian",
+    "brand:digiblusky",
+    "brand:digiforce",
+    "brand:discount promos",
+    "brand:dkkpia",
+    "brand:dolphin dyl",
+    "brand:domeun",
+    "brand:dongerdi",
+    "brand:doorbird",
+    "brand:dotn",
+    "brand:dowee",
+    "brand:dreamseden",
+    "brand:drtopey",
+    "brand:dtech",
+    "brand:duloch",
+    "brand:duoai",
+    "brand:e ecsem",
+    "brand:e egoway",
+    "brand:earto",
+    "brand:eashion",
+    "brand:easykart labels",
+    "brand:eccolo world traveler",
+    "brand:echolife",
+    "brand:ecr4kids",
+    "brand:egv",
+    "brand:elec space",
+    "brand:emaks",
+    "brand:emma oliver",
+    "brand:encased",
+    "brand:engpow",
+    "brand:epakh",
+    "brand:eqwol",
+    "brand:errbbic",
+    "brand:esr",
+    "brand:etherealkiller",
+    "brand:evoluent",
+    "brand:eyzutak",
+    "brand:ez pro screen protector",
+    "brand:fancy buying",
+    "brand:fantom drives",
+    "brand:fasgear",
+    "brand:fengtao",
+    "brand:fintie",
+    "brand:first choose",
+    "brand:fitueyes",
+    "brand:fizzeey",
+    "brand:flag emotes",
+    "brand:focenterprises",
+    "brand:fosa",
+    "brand:foscam",
+    "brand:freefa",
+    "brand:fuers",
+    "brand:fujifilm",
+    "brand:funwing",
+    "brand:fwaytech",
+    "brand:gagbk",
+    "brand:gajofo",
+    "brand:galasala",
+    "brand:galaxy tab a 10 1 2019",
+    "brand:garmin",
+    "brand:geceninov",
+    "brand:generic",
+    "brand:genius",
+    "brand:gep",
+    "brand:ghy",
+    "brand:girasore",
+    "brand:gizncha",
+    "brand:gliansen",
+    "brand:gobukee",
+    "brand:golink",
+    "brand:goneo",
+    "brand:google",
+    "brand:goooodgift",
+    "brand:gorilla",
+    "brand:goton",
+    "brand:gottahaveit",
+    "brand:greateam",
+    "brand:green hills",
+    "brand:greenbrier",
+    "brand:griffin technology",
+    "brand:gudui",
+    "brand:guy tech",
+    "brand:hadley designs",
+    "brand:hamigar",
+    "brand:hamopy",
+    "brand:hanna",
+    "brand:harddrivegeeks",
+    "brand:harhana",
+    "brand:hasuit",
+    "brand:haylou",
+    "brand:henoyso",
+    "brand:hforesty",
+    "brand:hniuyun",
+    "brand:hoblaze",
+    "brand:hon",
+    "brand:honeywell",
+    "brand:honeywell safes door locks",
+    "brand:hootek",
+    "brand:hopply",
+    "brand:houleya",
+    "brand:hp",
+    "brand:hy1c",
+    "brand:iberls",
+    "brand:icarez",
+    "brand:icsapr",
+    "brand:iegrow",
+    "brand:ikalula",
+    "brand:illumishield",
+    "brand:ilouyu",
+    "brand:imluckies",
+    "brand:incholl",
+    "brand:iqshield",
+    "brand:iris usa inc",
+    "brand:itayvan",
+    "brand:iurja",
+    "brand:j jackcube design",
+    "brand:jackyled",
+    "brand:jaliell",
+    "brand:jelly ergo",
+    "brand:jetech",
+    "brand:jrtrack",
+    "brand:jsaux",
+    "brand:jueyue",
+    "brand:jugtech",
+    "brand:june gold",
+    "brand:juqitech",
+    "brand:juvale",
+    "brand:juyoon",
+    "brand:jzk",
+    "brand:kai",
+    "brand:kakufunny",
+    "brand:kameleon",
+    "brand:kanex",
+    "brand:kaqiar",
+    "brand:kartice",
+    "brand:katin",
+    "brand:kensington",
+    "brand:keychron",
+    "brand:kfd",
+    "brand:kilmila",
+    "brand:king ma",
+    "brand:kingze",
+    "brand:kissmart",
+    "brand:kodak",
+    "brand:koh i noor",
+    "brand:kopatesun",
+    "brand:kotlie",
+    "brand:ksleri",
+    "brand:ksw kingdo",
+    "brand:kumbacam",
+    "brand:label kingdom",
+    "brand:laohe",
+    "brand:lap pow",
+    "brand:laview",
+    "brand:leesons inc",
+    "brand:leimonri",
+    "brand:leketree",
+    "brand:lencent",
+    "brand:lenovo",
+    "brand:letang",
+    "brand:leviton",
+    "brand:lfeey",
+    "brand:lg",
+    "brand:lifestyle solutions",
+    "brand:logitech",
+    "brand:lorell",
+    "brand:lxhy",
+    "brand:m s screencleen",
+    "brand:machanc",
+    "brand:magellan",
+    "brand:mailink",
+    "brand:makaqi",
+    "brand:maledan",
+    "brand:mamawin",
+    "brand:manuu",
+    "brand:marathon studios",
+    "brand:marchpower",
+    "brand:master caster",
+    "brand:matsusho",
+    "brand:maxboss",
+    "brand:maytobe",
+    "brand:mbhb",
+    "brand:mcdodo",
+    "brand:meiso",
+    "brand:meliven",
+    "brand:menosupp",
+    "brand:merry expressions",
+    "brand:micmi",
+    "brand:microwear",
+    "brand:mingtron",
+    "brand:minlia",
+    "brand:miookoog",
+    "brand:modoway",
+    "brand:moko",
+    "brand:monibloom",
+    "brand:mooace",
+    "brand:moowhsh",
+    "brand:moshi",
+    "brand:moukou",
+    "brand:mount genie",
+    "brand:mpf products tm",
+    "brand:mr pen",
+    "brand:mr shield",
+    "brand:mslan",
+    "brand:mubuy gol",
+    "brand:mygift",
+    "brand:n a",
+    "brand:n juone",
+    "brand:nana jewels",
+    "brand:nanw",
+    "brand:native union",
+    "brand:nature bird",
+    "brand:navitech",
+    "brand:nejioon",
+    "brand:nekteck",
+    "brand:neotrixqi",
+    "brand:nevola",
+    "brand:new bee",
+    "brand:newyork cables",
+    "brand:nicpower",
+    "brand:nikon",
+    "brand:nonouv",
+    "brand:noonebutyou",
+    "brand:nuinno",
+    "brand:nxpoil",
+    "brand:nxtudy",
+    "brand:nyx",
+    "brand:oddmoal",
+    "brand:odyson",
+    "brand:oenfoto",
+    "brand:ognille",
+    "brand:olympus",
+    "brand:omiu",
+    "brand:omnifense",
+    "brand:omnihil",
+    "brand:omoton",
+    "brand:oneplus",
+    "brand:onola",
+    "brand:ontry",
+    "brand:orzero",
+    "brand:oskar",
+    "brand:otterbox",
+    "brand:ounyoizs",
+    "brand:ououdee",
+    "brand:outstyle",
+    "brand:outus",
+    "brand:owc",
+    "brand:oyeeice",
+    "brand:panasonic",
+    "brand:paper mate",
+    "brand:paresi",
+    "brand:parker",
+    "brand:patriot memory",
+    "brand:pelikan",
+    "brand:pentax",
+    "brand:pentel",
+    "brand:perfectsight",
+    "brand:perixx",
+    "brand:pf deals",
+    "brand:philips",
+    "brand:photo4less",
+    "brand:piccassio",
+    "brand:pilot",
+    "brand:pinruige",
+    "brand:plugable",
+    "brand:pokanic",
+    "brand:pokolan",
+    "brand:polaroid",
+    "brand:poppin",
+    "brand:poprun",
+    "brand:poster stop online",
+    "brand:posters usa",
+    "brand:procase",
+    "brand:proud focus",
+    "brand:provision isr",
+    "brand:pyle",
+    "brand:qingduo",
+    "brand:qiyuya",
+    "brand:qq tech",
+    "brand:quntis",
+    "brand:radar mount",
+    "brand:radidi",
+    "brand:rebex",
+    "brand:reolink",
+    "brand:reolink digital",
+    "brand:repind",
+    "brand:revo america",
+    "brand:ringke",
+    "brand:ritanish",
+    "brand:riverridge",
+    "brand:roadyako",
+    "brand:rock rown",
+    "brand:rolada",
+    "brand:rolodex",
+    "brand:rongkey",
+    "brand:rosewill",
+    "brand:rotring",
+    "brand:ruaeoda",
+    "brand:ruentech",
+    "brand:runelk",
+    "brand:rustic mowoodwork",
+    "brand:ryaobwu",
+    "brand:s skstyle",
+    "brand:s tech",
+    "brand:safco",
+    "brand:saientee",
+    "brand:samsung",
+    "brand:samsung electronics",
+    "brand:saneen",
+    "brand:sanidika",
+    "brand:sannce",
+    "brand:sanrui",
+    "brand:scdwireless",
+    "brand:scentos",
+    "brand:schlage",
+    "brand:seagate",
+    "brand:seenda",
+    "brand:sesame street",
+    "brand:sgorlds",
+    "brand:shanhuxu",
+    "brand:sharkk",
+    "brand:shields up",
+    "brand:shuaxi",
+    "brand:simple trending",
+    "brand:sintia",
+    "brand:sivga",
+    "brand:skinomi",
+    "brand:skylink",
+    "brand:smartsf",
+    "brand:smathou",
+    "brand:smolink",
+    "brand:smyidel",
+    "brand:snugg",
+    "brand:social security",
+    "brand:sofia sam",
+    "brand:sony",
+    "brand:soondar",
+    "brand:spigen",
+    "brand:sproutbrite",
+    "brand:staples",
+    "brand:sterilite",
+    "brand:storex",
+    "brand:stylooc",
+    "brand:subhtoh",
+    "brand:sudaya",
+    "brand:sumgsn",
+    "brand:sunjack",
+    "brand:suoman",
+    "brand:supant",
+    "brand:supeasy",
+    "brand:superer",
+    "brand:superguardz",
+    "brand:supershieldz",
+    "brand:supvol",
+    "brand:svmpena",
+    "brand:swyjo",
+    "brand:t power",
+    "brand:taken",
+    "brand:tallew",
+    "brand:tamoxi",
+    "brand:tantek",
+    "brand:targeal",
+    "brand:tech armor",
+    "brand:tekmax",
+    "brand:tensea",
+    "brand:tezzionas",
+    "brand:thanwa",
+    "brand:tne creator",
+    "brand:top flight",
+    "brand:topk",
+    "brand:topume",
+    "brand:tp link",
+    "brand:tpltech",
+    "brand:tree nb",
+    "brand:trianium",
+    "brand:tribesigns",
+    "brand:tripp lite",
+    "brand:trpyd",
+    "brand:tukellen",
+    "brand:tyrone battery",
+    "brand:ubiquiti networks",
+    "brand:ubotie",
+    "brand:uiytraesting",
+    "brand:ultranet",
+    "brand:umhlaba",
+    "brand:uni ball",
+    "brand:unipha",
+    "brand:uniqueme",
+    "brand:unknown",
+    "brand:upbright",
+    "brand:urth",
+    "brand:usebean",
+    "brand:utebit",
+    "brand:uumao",
+    "brand:uyiton",
+    "brand:vault locks",
+    "brand:verde birdie",
+    "brand:vifigen",
+    "brand:visiontek",
+    "brand:vocrby",
+    "brand:vocute",
+    "brand:voltenick",
+    "brand:vosatron",
+    "brand:vosker",
+    "brand:vupoint solutions",
+    "brand:waifu",
+    "brand:waoaw",
+    "brand:weewooday",
+    "brand:weiship",
+    "brand:wenyaa",
+    "brand:wireless express",
+    "brand:wiyuam",
+    "brand:woka",
+    "brand:woodaholic",
+    "brand:wowday",
+    "brand:wtose",
+    "brand:wymisnit",
+    "brand:xyll",
+    "brand:yaheetech",
+    "brand:yamasoro",
+    "brand:yesesion",
+    "brand:yindia",
+    "brand:yinyoo",
+    "brand:yiwerder",
+    "brand:yiweven",
+    "brand:yllkjjt",
+    "brand:ymdk",
+    "brand:yocuby",
+    "brand:yoksas",
+    "brand:yoleny",
+    "brand:yoobao",
+    "brand:yooch",
+    "brand:youmaker",
+    "brand:youoklight",
+    "brand:yumu",
+    "brand:yuwldd",
+    "brand:yzaeshay",
+    "brand:z zhike",
+    "brand:zagg",
+    "brand:zapuno",
+    "brand:zbro",
+    "brand:zdolakids",
+    "brand:zdycgtime",
+    "brand:zeking",
+    "brand:zengoose",
+    "brand:zenrich",
+    "brand:zlchair",
+    "brand:zlonxun",
+    "brand:zombazi",
+    "brand:zonon",
+    "brand:zosi",
+    "brand:zrengp",
+    "brand:zzzym"
+  ],
+  "brand_models": [
+    {
+      "brand": "1InTheOffice",
+      "model": "OF569867"
+    },
+    {
+      "brand": "5AveCamera",
+      "model": "Hf-G20"
+    },
+    {
+      "brand": "AACL",
+      "model": "for Samsung Galaxy S23 Ultra"
+    },
+    {
+      "brand": "ABCPOW",
+      "model": "BP2212-PD"
+    },
+    {
+      "brand": "Accessory USA",
+      "model": "KTAUB-0905655"
+    },
+    {
+      "brand": "Acrimet",
+      "model": "225.3"
+    },
+    {
+      "brand": "Acrimet",
+      "model": "860.1"
+    },
+    {
+      "brand": "Adesso",
+      "model": "WKB-4400UB"
+    },
+    {
+      "brand": "ADSDIA",
+      "model": "All USB electronic products"
+    },
+    {
+      "brand": "AGVEE",
+      "model": "BTC-BR03"
+    },
+    {
+      "brand": "AGVEE",
+      "model": "JTTEA1-GB23"
+    },
+    {
+      "brand": "AILKIN",
+      "model": "MINIPD-20W"
+    },
+    {
+      "brand": "AILKIN",
+      "model": "YD-PD"
+    },
+    {
+      "brand": "AINPOW",
+      "model": "A5224"
+    },
+    {
+      "brand": "Amazfit",
+      "model": "W2170OV2N"
+    },
+    {
+      "brand": "Amazon Basics",
+      "model": "24VMV3"
+    },
+    {
+      "brand": "Amazon Basics",
+      "model": "HL-002569"
+    },
+    {
+      "brand": "Amcrest",
+      "model": "AMDV10818-4B4D-B"
+    },
+    {
+      "brand": "AMLLEN",
+      "model": "PD 20W"
+    },
+    {
+      "brand": "Anbel Design",
+      "model": "Xiaomi Redmi Note 8"
+    },
+    {
+      "brand": "Anker",
+      "model": "A80E2011"
+    },
+    {
+      "brand": "ANNKE",
+      "model": "AU-DN81RA0-V5-54BH-P#USK"
+    },
+    {
+      "brand": "ArmorSuit",
+      "model": "101-183"
+    },
+    {
+      "brand": "ArmorSuit",
+      "model": "101-213"
+    },
+    {
+      "brand": "ArmorSuit",
+      "model": "320-303"
+    },
+    {
+      "brand": "ArmorSuit",
+      "model": "320-569"
+    },
+    {
+      "brand": "Arteck",
+      "model": "HB045-4"
+    },
+    {
+      "brand": "Auskic",
+      "model": "QC01"
+    },
+    {
+      "brand": "Awonderful",
+      "model": "DP-0519"
+    },
+    {
+      "brand": "Axirata",
+      "model": "Surveillance Camera"
+    },
+    {
+      "brand": "AYNEFF",
+      "model": "A1751"
+    },
+    {
+      "brand": "BABG",
+      "model": "iPad keyboard case for 9.7 inch"
+    },
+    {
+      "brand": "BAOYUANDA",
+      "model": "GS-W18A0920"
+    },
+    {
+      "brand": "Baseshop",
+      "model": "SBFG2"
+    },
+    {
+      "brand": "Baseus",
+      "model": "CATSR"
+    },
+    {
+      "brand": "Beach Camera",
+      "model": "FDR-AX33/B"
+    },
+    {
+      "brand": "BENTOBEN",
+      "model": "XDD-V315-04-FBA"
+    },
+    {
+      "brand": "Beseller",
+      "model": "XDL-639M"
+    },
+    {
+      "brand": "BETCKEY",
+      "model": "DK11208"
+    },
+    {
+      "brand": "Beyond Cell",
+      "model": "`GS8PLUS-TRIMAX-CLEAR"
+    },
+    {
+      "brand": "BEYONG",
+      "model": "stickers21"
+    },
+    {
+      "brand": "BHONGVV",
+      "model": "HW001"
+    },
+    {
+      "brand": "Bloom daily planners",
+      "model": "S"
+    },
+    {
+      "brand": "BodyGuardz",
+      "model": "SGCCB-SAS8P-4D0"
+    },
+    {
+      "brand": "BoHangong",
+      "model": "BO-14PRO"
+    },
+    {
+      "brand": "Boriyuan",
+      "model": "PB-IPAD7-7SE-GY"
+    },
+    {
+      "brand": "BQAA",
+      "model": "CE-NIB-175"
+    },
+    {
+      "brand": "Brydge",
+      "model": "BRY2303"
+    },
+    {
+      "brand": "BUFORT",
+      "model": "003"
+    },
+    {
+      "brand": "C2G",
+      "model": "40320"
+    },
+    {
+      "brand": "Cabepow",
+      "model": "RLC-381"
+    },
+    {
+      "brand": "CableLovers",
+      "model": "PT-WC-03"
+    },
+    {
+      "brand": "Camstar",
+      "model": "GW8CH8571RMMIC4"
+    },
+    {
+      "brand": "Canon",
+      "model": "4924B001"
+    },
+    {
+      "brand": "Canon",
+      "model": "9779B001"
+    },
+    {
+      "brand": "Canon",
+      "model": "A2000IS"
+    },
+    {
+      "brand": "Canon",
+      "model": "Canon EOS Rebel T7"
+    },
+    {
+      "brand": "Canon",
+      "model": "EOS 77D BODY"
+    },
+    {
+      "brand": "Canon",
+      "model": "powershot a200"
+    },
+    {
+      "brand": "Canon",
+      "model": "SX20IS"
+    },
+    {
+      "brand": "Casefromme",
+      "model": "ipad 10.9"
+    },
+    {
+      "brand": "Casio",
+      "model": "EX-V8SR"
+    },
+    {
+      "brand": "CellEver",
+      "model": "TK24W-L2"
+    },
+    {
+      "brand": "CHAFON",
+      "model": "Z12-2"
+    },
+    {
+      "brand": "ChargerCity",
+      "model": "WAL_H3"
+    },
+    {
+      "brand": "ChiChiFit",
+      "model": "FY0631203000"
+    },
+    {
+      "brand": "CINC VISION",
+      "model": "C03"
+    },
+    {
+      "brand": "CJP-Geek",
+      "model": "CJP-Geek-PSA-023AT2661"
+    },
+    {
+      "brand": "CKCN",
+      "model": "EST20"
+    },
+    {
+      "brand": "Cllena",
+      "model": "5019"
+    },
+    {
+      "brand": "Cnamszou",
+      "model": "HDD28-01"
+    },
+    {
+      "brand": "COLAMY",
+      "model": "290"
+    },
+    {
+      "brand": "color rokk",
+      "model": "GS-551"
+    },
+    {
+      "brand": "Coolfire",
+      "model": "1685E"
+    },
+    {
+      "brand": "Core Innovations",
+      "model": "ALM204"
+    },
+    {
+      "brand": "Corsair",
+      "model": "CH-9206015-NA"
+    },
+    {
+      "brand": "Cover Ease from Collections by Design",
+      "model": "CEU-SAN"
+    },
+    {
+      "brand": "CrazyOnDigital",
+      "model": "iPad3_KBBT_LthrWhtRed"
+    },
+    {
+      "brand": "Cross",
+      "model": "AT0090S-1-CR"
+    },
+    {
+      "brand": "Cross",
+      "model": "AT0706-7MD"
+    },
+    {
+      "brand": "CUCELL",
+      "model": "CU-001-BLA"
+    },
+    {
+      "brand": "Dayspring Pens",
+      "model": "gp-106engraved"
+    },
+    {
+      "brand": "Decals",
+      "model": "TEAM2117"
+    },
+    {
+      "brand": "Delippo",
+      "model": "D03618500650"
+    },
+    {
+      "brand": "Dell",
+      "model": "KM7321W"
+    },
+    {
+      "brand": "Delta",
+      "model": "ADP-65JH DB"
+    },
+    {
+      "brand": "DelTucci",
+      "model": "JXYCDQ05E"
+    },
+    {
+      "brand": "Dexpt",
+      "model": "PAZ200325"
+    },
+    {
+      "brand": "DIAN",
+      "model": "DIAN001IP"
+    },
+    {
+      "brand": "DIGIFORCE",
+      "model": "D0037"
+    },
+    {
+      "brand": "DKKPIA",
+      "model": "PP-33"
+    },
+    {
+      "brand": "DONGERDI",
+      "model": "DED200075M"
+    },
+    {
+      "brand": "DoorBird",
+      "model": "D2101KV"
+    },
+    {
+      "brand": "Dotn",
+      "model": "Q23F"
+    },
+    {
+      "brand": "DoWee",
+      "model": "T440"
+    },
+    {
+      "brand": "DreamsEden",
+      "model": "DE-ControlHolder"
+    },
+    {
+      "brand": "Drtopey",
+      "model": "AM30"
+    },
+    {
+      "brand": "DTech",
+      "model": "DT-9005C 3M"
+    },
+    {
+      "brand": "Duloch",
+      "model": "XHD-CA20WR"
+    },
+    {
+      "brand": "Duoai",
+      "model": "F008"
+    },
+    {
+      "brand": "Earto",
+      "model": "iPad 9.7 inch Keyboard Case"
+    },
+    {
+      "brand": "Eashion",
+      "model": "AM18C01"
+    },
+    {
+      "brand": "Easykart labels",
+      "model": "EKL/0918"
+    },
+    {
+      "brand": "Eccolo World Traveler",
+      "model": "D506J"
+    },
+    {
+      "brand": "Echolife",
+      "model": "EC-20201205-003"
+    },
+    {
+      "brand": "ECR4Kids",
+      "model": "ELR-0194-YE"
+    },
+    {
+      "brand": "EGV",
+      "model": "Samsung Galaxy S21 Ultra"
+    },
+    {
+      "brand": "Emaks",
+      "model": "19V3.42A65W"
+    },
+    {
+      "brand": "EMMA + OLIVER",
+      "model": "EOH-QDIU-945962"
+    },
+    {
+      "brand": "Encased",
+      "model": "RB103BK"
+    },
+    {
+      "brand": "ENGPOW",
+      "model": "EG025"
+    },
+    {
+      "brand": "EQWOL",
+      "model": "YS-PD20W"
+    },
+    {
+      "brand": "ERRBBIC",
+      "model": "S1008D"
+    },
+    {
+      "brand": "ESR",
+      "model": "ring_cx_4pcs_acs_odeu"
+    },
+    {
+      "brand": "Evoluent",
+      "model": "EKB"
+    },
+    {
+      "brand": "EYZUTAK",
+      "model": "iPhone 7 Plus/8 Plus"
+    },
+    {
+      "brand": "EZ-Pro Screen Protector",
+      "model": "ANTI-BLUE-32-SCREENPRO"
+    },
+    {
+      "brand": "Fancy Buying",
+      "model": "LW-060/500/120/002"
+    },
+    {
+      "brand": "Fancy Buying",
+      "model": "LW-065/400/120/001"
+    },
+    {
+      "brand": "Fantom Drives",
+      "model": "GFP1000EU3"
+    },
+    {
+      "brand": "Fasgear",
+      "model": "FG-TC8-3M"
+    },
+    {
+      "brand": "FITUEYES",
+      "model": "sd108001mb"
+    },
+    {
+      "brand": "FIZZEEY",
+      "model": "FIDOS"
+    },
+    {
+      "brand": "FLAG EMOTES",
+      "model": "DRS0002"
+    },
+    {
+      "brand": "FocEnterprises",
+      "model": "MAC-0017"
+    },
+    {
+      "brand": "FOSA",
+      "model": "8541534177"
+    },
+    {
+      "brand": "FOSCAM",
+      "model": "YSKWA"
+    },
+    {
+      "brand": "Fuers",
+      "model": "TL-2600"
+    },
+    {
+      "brand": "Fujifilm",
+      "model": "F60fd"
+    },
+    {
+      "brand": "Fujifilm",
+      "model": "MX4700"
+    },
+    {
+      "brand": "Fujifilm",
+      "model": "S8600Bundle"
+    },
+    {
+      "brand": "Fwaytech",
+      "model": "Phone Ring Holder Animal"
+    },
+    {
+      "brand": "GAGBK",
+      "model": "Z8A"
+    },
+    {
+      "brand": "GAJOFO",
+      "model": "KC-2-001"
+    },
+    {
+      "brand": "GALASALA",
+      "model": "5 Tier Mesh Paper Organizer"
+    },
+    {
+      "brand": "Garmin",
+      "model": "010-00306-00"
+    },
+    {
+      "brand": "Generic",
+      "model": "B-07"
+    },
+    {
+      "brand": "Genius",
+      "model": "SlimStar 8000"
+    },
+    {
+      "brand": "GEP",
+      "model": "Dell LED Minitor S2340M/c S2440Lb Power"
+    },
+    {
+      "brand": "GHY",
+      "model": "29\" Aspect Ratio 21:9"
+    },
+    {
+      "brand": "Girasore",
+      "model": "Girasore"
+    },
+    {
+      "brand": "GIZNCHA",
+      "model": "289A"
+    },
+    {
+      "brand": "Gliansen",
+      "model": "1"
+    },
+    {
+      "brand": "GONEO",
+      "model": "GNV-USAU1304"
+    },
+    {
+      "brand": "Google",
+      "model": "Google Pixel 4XL"
+    },
+    {
+      "brand": "Gorilla",
+      "model": "112018"
+    },
+    {
+      "brand": "Gorilla",
+      "model": "6065001-12"
+    },
+    {
+      "brand": "GottaHaveit",
+      "model": "GOCOTC"
+    },
+    {
+      "brand": "Greateam",
+      "model": "131-731"
+    },
+    {
+      "brand": "Green Hills",
+      "model": "Smart Watch"
+    },
+    {
+      "brand": "Griffin Technology",
+      "model": "FBA_GC42251"
+    },
+    {
+      "brand": "Gudui",
+      "model": "door stop 5 inch"
+    },
+    {
+      "brand": "Hadley Designs",
+      "model": "HD - Reading Posters - 004"
+    },
+    {
+      "brand": "HAMIGAR",
+      "model": "20200531WB45200AA"
+    },
+    {
+      "brand": "Hanna",
+      "model": "Genshin50"
+    },
+    {
+      "brand": "HardDriveGeeks",
+      "model": "816919-B21-AX"
+    },
+    {
+      "brand": "Hasuit",
+      "model": "WJG01"
+    },
+    {
+      "brand": "Hniuyun",
+      "model": "1"
+    },
+    {
+      "brand": "HON",
+      "model": "PLPSBBFLT1"
+    },
+    {
+      "brand": "Honeywell",
+      "model": "980279572"
+    },
+    {
+      "brand": "Honeywell Safes & Door Locks",
+      "model": "1106"
+    },
+    {
+      "brand": "HOOTEK",
+      "model": "BYHA-002/YD-QC3.0"
+    },
+    {
+      "brand": "HP",
+      "model": "460"
+    },
+    {
+      "brand": "HP",
+      "model": "800G1"
+    },
+    {
+      "brand": "HP",
+      "model": "HP Desktop"
+    },
+    {
+      "brand": "HP",
+      "model": "QB467AA#ABA"
+    },
+    {
+      "brand": "HY1C",
+      "model": "AC-PW20 NP-FW50"
+    },
+    {
+      "brand": "IBERLS",
+      "model": "5582706516"
+    },
+    {
+      "brand": "IEGrow",
+      "model": "F180 Black"
+    },
+    {
+      "brand": "ILLUMISHIELD",
+      "model": "4326999032"
+    },
+    {
+      "brand": "ILLUMISHIELD",
+      "model": "849899008441"
+    },
+    {
+      "brand": "ILLUMISHIELD",
+      "model": "8541530731"
+    },
+    {
+      "brand": "ILLUMISHIELD",
+      "model": "ILS20807"
+    },
+    {
+      "brand": "ILOUYU",
+      "model": "G06-PD1328A"
+    },
+    {
+      "brand": "IRIS USA, Inc.",
+      "model": "585048"
+    },
+    {
+      "brand": "J JACKCUBE DESIGN",
+      "model": "MK487"
+    },
+    {
+      "brand": "Jelly Ergo",
+      "model": "XQH-US0050-J"
+    },
+    {
+      "brand": "JETech",
+      "model": "1207-"
+    },
+    {
+      "brand": "JSAUX",
+      "model": "JS-FC20"
+    },
+    {
+      "brand": "June Gold",
+      "model": "10106"
+    },
+    {
+      "brand": "JUQITECH",
+      "model": "CBCase10.2"
+    },
+    {
+      "brand": "Juvale",
+      "model": "4336984628"
+    },
+    {
+      "brand": "JUYOON",
+      "model": "MU65W-A1706"
+    },
+    {
+      "brand": "Kai",
+      "model": "soflip15ag"
+    },
+    {
+      "brand": "Kakufunny",
+      "model": "QHqb-40-6PackPC"
+    },
+    {
+      "brand": "Kameleon",
+      "model": "KJP348"
+    },
+    {
+      "brand": "Kanex",
+      "model": "K166-1102-AL"
+    },
+    {
+      "brand": "KAQIAR",
+      "model": "SK90190342"
+    },
+    {
+      "brand": "KARTICE",
+      "model": "PT-16-2"
+    },
+    {
+      "brand": "KATIN",
+      "model": "Galaxy A50, A30, A30s, M31"
+    },
+    {
+      "brand": "Kensington",
+      "model": "K33336US"
+    },
+    {
+      "brand": "Keychron",
+      "model": "K8F1"
+    },
+    {
+      "brand": "KFD",
+      "model": "A12-2-190003420"
+    },
+    {
+      "brand": "Kilmila",
+      "model": "k5623"
+    },
+    {
+      "brand": "KODAK",
+      "model": "1685551"
+    },
+    {
+      "brand": "KODAK",
+      "model": "1842731"
+    },
+    {
+      "brand": "KODAK",
+      "model": "AZ252BK"
+    },
+    {
+      "brand": "KODAK",
+      "model": "LS753"
+    },
+    {
+      "brand": "Koh-I-Noor",
+      "model": "3404N15001KS"
+    },
+    {
+      "brand": "KOH-I-NOOR",
+      "model": "3724024012PL"
+    },
+    {
+      "brand": "Kopatesun",
+      "model": "XSP-20xUSzz"
+    },
+    {
+      "brand": "Ksleri",
+      "model": "KS-IP10.2-2P"
+    },
+    {
+      "brand": "KumbaCam",
+      "model": "GM-137-MUG"
+    },
+    {
+      "brand": "Label KINGDOM",
+      "model": "LK-151"
+    },
+    {
+      "brand": "LaoHe",
+      "model": "4326672194"
+    },
+    {
+      "brand": "LAP POW",
+      "model": "ND-A065W1902370"
+    },
+    {
+      "brand": "LaView",
+      "model": "LV-KN996P168A4-T3"
+    },
+    {
+      "brand": "LaView",
+      "model": "LV-PWR15B"
+    },
+    {
+      "brand": "LEKETREE",
+      "model": "5T"
+    },
+    {
+      "brand": "LENCENT",
+      "model": "PA045B"
+    },
+    {
+      "brand": "Lenovo",
+      "model": "0B47201"
+    },
+    {
+      "brand": "LETANG",
+      "model": "3333195"
+    },
+    {
+      "brand": "Leviton",
+      "model": "88018"
+    },
+    {
+      "brand": "LFEEY",
+      "model": "Galaxy Note 20 Ultra(6.9 in)"
+    },
+    {
+      "brand": "LG",
+      "model": "AN-VC500"
+    },
+    {
+      "brand": "LG",
+      "model": "LG Tribute"
+    },
+    {
+      "brand": "LG",
+      "model": "X210a"
+    },
+    {
+      "brand": "Logitech",
+      "model": "920-009017"
+    },
+    {
+      "brand": "Logitech",
+      "model": "980421-0403"
+    },
+    {
+      "brand": "Lorell",
+      "model": "LLR60551"
+    },
+    {
+      "brand": "LXHY",
+      "model": "KT60W190395B3"
+    },
+    {
+      "brand": "M&S ScreenCleen",
+      "model": "SC-SPTG-I4"
+    },
+    {
+      "brand": "Machanc",
+      "model": "pixel7"
+    },
+    {
+      "brand": "Magellan",
+      "model": "TW0200SGXNA"
+    },
+    {
+      "brand": "MAKAQI",
+      "model": "SY-681"
+    },
+    {
+      "brand": "Marathon Studios",
+      "model": "DISTSTICKER-12IN"
+    },
+    {
+      "brand": "Marchpower",
+      "model": "iPhone Charger Cable"
+    },
+    {
+      "brand": "Master Caster",
+      "model": "00969"
+    },
+    {
+      "brand": "Matsusho",
+      "model": "XHD-PD25W"
+    },
+    {
+      "brand": "MAYtobe",
+      "model": "Samsung Galaxy A12"
+    },
+    {
+      "brand": "Mcdodo",
+      "model": "5647454713"
+    },
+    {
+      "brand": "MenoSupp",
+      "model": "Cable-MSA-008"
+    },
+    {
+      "brand": "Microwear",
+      "model": "L15"
+    },
+    {
+      "brand": "Modoway",
+      "model": "M902"
+    },
+    {
+      "brand": "MoKo",
+      "model": "P840034628784"
+    },
+    {
+      "brand": "MoNiBloom",
+      "model": "A16-OC-006-1P-GY-WH"
+    },
+    {
+      "brand": "Moshi",
+      "model": "99MO020040"
+    },
+    {
+      "brand": "Moshi",
+      "model": "99MO022111"
+    },
+    {
+      "brand": "MPF Products TM",
+      "model": "UC-E6"
+    },
+    {
+      "brand": "Mr. Pen",
+      "model": "ELAI001M215"
+    },
+    {
+      "brand": "Mr.Shield",
+      "model": "5647413578"
+    },
+    {
+      "brand": "MyGift",
+      "model": "HOM2539BAS"
+    },
+    {
+      "brand": "N juone",
+      "model": "NJP1-5V 2A-5.5X2.5-US"
+    },
+    {
+      "brand": "Native Union",
+      "model": "DROP-GRY-MARQ-V2-NC"
+    },
+    {
+      "brand": "Nejioon",
+      "model": "Z60"
+    },
+    {
+      "brand": "Nekteck",
+      "model": "4344649189"
+    },
+    {
+      "brand": "NeotrixQI",
+      "model": "RH-PD100W, UM23."
+    },
+    {
+      "brand": "New bee",
+      "model": "YP"
+    },
+    {
+      "brand": "NewYork Cables",
+      "model": "N2034-79898184"
+    },
+    {
+      "brand": "Nicpower",
+      "model": "PAZ200850H"
+    },
+    {
+      "brand": "Nikon",
+      "model": "K-95178-02-CR"
+    },
+    {
+      "brand": "NonoUV",
+      "model": "PT-WC-13"
+    },
+    {
+      "brand": "Nuinno",
+      "model": "CHCBWIN"
+    },
+    {
+      "brand": "Oddmoal",
+      "model": "QC-001"
+    },
+    {
+      "brand": "Olympus",
+      "model": "225605"
+    },
+    {
+      "brand": "Olympus",
+      "model": "N3219692"
+    },
+    {
+      "brand": "Olympus",
+      "model": "Stylus 6000 Blue"
+    },
+    {
+      "brand": "Olympus",
+      "model": "White w/ 14-42mm Lens"
+    },
+    {
+      "brand": "OMIU",
+      "model": "1 OZ"
+    },
+    {
+      "brand": "OMNIHIL",
+      "model": "OMNI0006192"
+    },
+    {
+      "brand": "OMOTON",
+      "model": "5154858"
+    },
+    {
+      "brand": "OnePlus",
+      "model": "E1005"
+    },
+    {
+      "brand": "OSKAR",
+      "model": "6"
+    },
+    {
+      "brand": "OtterBox",
+      "model": "77-86842"
+    },
+    {
+      "brand": "Ounyoizs",
+      "model": "WJK-01"
+    },
+    {
+      "brand": "Ououdee",
+      "model": "PT-WC-17"
+    },
+    {
+      "brand": "Outus",
+      "model": "Outus-Cute Animal Sticker-635"
+    },
+    {
+      "brand": "OWC",
+      "model": "OWCDIYMP9S3E2TB"
+    },
+    {
+      "brand": "Panasonic",
+      "model": "DMC-FP5P-K"
+    },
+    {
+      "brand": "Panasonic",
+      "model": "DMC-FZ5PP-K"
+    },
+    {
+      "brand": "Paper Mate",
+      "model": "1951380"
+    },
+    {
+      "brand": "Parker",
+      "model": "1736845"
+    },
+    {
+      "brand": "Patriot Memory",
+      "model": "VP4300-2TBM28H"
+    },
+    {
+      "brand": "Pelikan",
+      "model": "817158"
+    },
+    {
+      "brand": "Pentax",
+      "model": "K-5 II lens kit DA 18-135WR"
+    },
+    {
+      "brand": "Pentel",
+      "model": "P1035BPP-BC"
+    },
+    {
+      "brand": "Perixx",
+      "model": "11506"
+    },
+    {
+      "brand": "Perixx",
+      "model": "PERIPAD-205U"
+    },
+    {
+      "brand": "PHILIPS",
+      "model": "CAM110RD/37"
+    },
+    {
+      "brand": "PHOTO4LESS",
+      "model": "GOPRO HERO3+"
+    },
+    {
+      "brand": "PILOT",
+      "model": "BPS--BLUM"
+    },
+    {
+      "brand": "Plugable",
+      "model": "USBC-C100"
+    },
+    {
+      "brand": "Pokanic",
+      "model": "iPhone 11 Cover Case"
+    },
+    {
+      "brand": "Pokolan",
+      "model": "Samsung Galaxy A72 4G, Galaxy A72 5G"
+    },
+    {
+      "brand": "Polaroid",
+      "model": "PPC1122BK"
+    },
+    {
+      "brand": "POPRUN",
+      "model": "B26G-RG"
+    },
+    {
+      "brand": "POSTER STOP ONLINE",
+      "model": "P6284"
+    },
+    {
+      "brand": "ProCase",
+      "model": "PC-08363097"
+    },
+    {
+      "brand": "ProCase",
+      "model": "PC-08363193"
+    },
+    {
+      "brand": "Proud Focus",
+      "model": "134A01-N"
+    },
+    {
+      "brand": "Pyle",
+      "model": "PSPAD15"
+    },
+    {
+      "brand": "Quntis",
+      "model": "Cable"
+    },
+    {
+      "brand": "Radar Mount",
+      "model": "3001102B"
+    },
+    {
+      "brand": "Radidi",
+      "model": "BP1905"
+    },
+    {
+      "brand": "REOLINK",
+      "model": "RLK8-810B4-A Black"
+    },
+    {
+      "brand": "REVO America",
+      "model": "RU162B8G-3T"
+    },
+    {
+      "brand": "Ringke",
+      "model": "Cover Display Glass"
+    },
+    {
+      "brand": "RiverRidge",
+      "model": "06-120"
+    },
+    {
+      "brand": "ROADYAKO",
+      "model": "LE-Alarm Clock"
+    },
+    {
+      "brand": "ROLADA",
+      "model": "SK90190342"
+    },
+    {
+      "brand": "Rolodex",
+      "model": "62523"
+    },
+    {
+      "brand": "Rosewill",
+      "model": "RK-9000"
+    },
+    {
+      "brand": "Rotring",
+      "model": "1910973"
+    },
+    {
+      "brand": "runelk",
+      "model": "HB358"
+    },
+    {
+      "brand": "Rustic mowoodwork",
+      "model": "39223319"
+    },
+    {
+      "brand": "Ryaobwu",
+      "model": "SK90185350"
+    },
+    {
+      "brand": "S SKSTYLE",
+      "model": "SK90A195231"
+    },
+    {
+      "brand": "S-Tech",
+      "model": "Apple iPhone 12 Pro Max"
+    },
+    {
+      "brand": "Safco",
+      "model": "1923GR"
+    },
+    {
+      "brand": "SAIENTEE",
+      "model": "AD065G2Uz"
+    },
+    {
+      "brand": "SAMSUNG",
+      "model": "EC-WB350FBDNM3"
+    },
+    {
+      "brand": "SAMSUNG",
+      "model": "S860Black"
+    },
+    {
+      "brand": "SAMSUNG",
+      "model": "SM5G970UZKAXAA"
+    },
+    {
+      "brand": "SAMSUNG",
+      "model": "SM5G998UZKAXAA"
+    },
+    {
+      "brand": "Samsung Electronics",
+      "model": "SM-G975UZBAXAA"
+    },
+    {
+      "brand": "SANIDIKA",
+      "model": "6805"
+    },
+    {
+      "brand": "SANNCE",
+      "model": "857761"
+    },
+    {
+      "brand": "SANNCE",
+      "model": "DN81BR1-58ER"
+    },
+    {
+      "brand": "SANRUI",
+      "model": "SD01V2"
+    },
+    {
+      "brand": "SCHLAGE",
+      "model": "436B-716"
+    },
+    {
+      "brand": "Seagate",
+      "model": "ST8000NM0055"
+    },
+    {
+      "brand": "Seenda",
+      "model": "JP300W"
+    },
+    {
+      "brand": "Sgorlds",
+      "model": "330-RO-WT-4B4C"
+    },
+    {
+      "brand": "SHANHUXU",
+      "model": "Z6D"
+    },
+    {
+      "brand": "Simple Trending",
+      "model": "ST58141"
+    },
+    {
+      "brand": "SIVGA",
+      "model": "M002"
+    },
+    {
+      "brand": "Skinomi",
+      "model": "SK11246"
+    },
+    {
+      "brand": "Skinomi",
+      "model": "SK13195"
+    },
+    {
+      "brand": "Skinomi",
+      "model": "SK24886-MATTE"
+    },
+    {
+      "brand": "Skinomi",
+      "model": "SK4682"
+    },
+    {
+      "brand": "Skinomi",
+      "model": "SK6236"
+    },
+    {
+      "brand": "Skinomi",
+      "model": "SK9890"
+    },
+    {
+      "brand": "SKYLINK",
+      "model": "MK-MT"
+    },
+    {
+      "brand": "SmartSF",
+      "model": "SSF-KH08D04US-1TB-HT"
+    },
+    {
+      "brand": "Smyidel",
+      "model": "2.0 Inch Black"
+    },
+    {
+      "brand": "Snugg",
+      "model": "iPad10.5360KeyboardGold"
+    },
+    {
+      "brand": "Sofia + Sam",
+      "model": "10463"
+    },
+    {
+      "brand": "Sony",
+      "model": "DSCRX100M5A/B-cr"
+    },
+    {
+      "brand": "Sony",
+      "model": "DSCW120/B"
+    },
+    {
+      "brand": "Sony",
+      "model": "VGP-AC19V23"
+    },
+    {
+      "brand": "SOONDAR",
+      "model": "A-EC0014"
+    },
+    {
+      "brand": "Spigen",
+      "model": "PF2009"
+    },
+    {
+      "brand": "Sterilite",
+      "model": "23658004"
+    },
+    {
+      "brand": "Storex",
+      "model": "61694A03C"
+    },
+    {
+      "brand": "STYLOOC",
+      "model": "ST1921W"
+    },
+    {
+      "brand": "Subhtoh",
+      "model": "Monitor Stand"
+    },
+    {
+      "brand": "SunJack",
+      "model": "SJPH"
+    },
+    {
+      "brand": "Superer",
+      "model": "NF-024"
+    },
+    {
+      "brand": "Superer",
+      "model": "PDADP200325L"
+    },
+    {
+      "brand": "Superer",
+      "model": "PSD0502000US"
+    },
+    {
+      "brand": "Superer",
+      "model": "SP190342U"
+    },
+    {
+      "brand": "Superer",
+      "model": "SPD190342"
+    },
+    {
+      "brand": "Superer",
+      "model": "SPD195231D"
+    },
+    {
+      "brand": "Supershieldz",
+      "model": "4351640405"
+    },
+    {
+      "brand": "Supershieldz",
+      "model": "8541530411"
+    },
+    {
+      "brand": "SUPVOL",
+      "model": "AM18C01"
+    },
+    {
+      "brand": "SVMPENA",
+      "model": "NB010(N)"
+    },
+    {
+      "brand": "T POWER",
+      "model": "TP-il8-F6O"
+    },
+    {
+      "brand": "TANTEK",
+      "model": "l209"
+    },
+    {
+      "brand": "Targeal",
+      "model": "CH021"
+    },
+    {
+      "brand": "Tech Armor",
+      "model": "4326562944"
+    },
+    {
+      "brand": "Tensea",
+      "model": "Camera Ring 13 pro / 13 pro max"
+    },
+    {
+      "brand": "Tezzionas",
+      "model": "F8S"
+    },
+    {
+      "brand": "TNE Creator",
+      "model": "TNE Creator"
+    },
+    {
+      "brand": "Top Flight",
+      "model": "4600945"
+    },
+    {
+      "brand": "TPLTECH",
+      "model": "GS-551"
+    },
+    {
+      "brand": "TREE.NB",
+      "model": "LD-090/462/195/011"
+    },
+    {
+      "brand": "Trianium",
+      "model": "TM000343"
+    },
+    {
+      "brand": "Tripp Lite",
+      "model": "U280-002-W12"
+    },
+    {
+      "brand": "TRPYD",
+      "model": "FC241"
+    },
+    {
+      "brand": "Tukellen",
+      "model": "A1673/A1674/A1675/A1893/A1954"
+    },
+    {
+      "brand": "Ubiquiti Networks",
+      "model": "UAP-AC-PRO-3-US"
+    },
+    {
+      "brand": "UIYTRAESTING",
+      "model": "BM8NS"
+    },
+    {
+      "brand": "ULTRANET",
+      "model": "CX65UC002"
+    },
+    {
+      "brand": "uni-ball",
+      "model": "1937262"
+    },
+    {
+      "brand": "Unknown",
+      "model": "SM-G977BZSABTU"
+    },
+    {
+      "brand": "UPBRIGHT",
+      "model": "Electrolux Ergorapido EL2001 Charger"
+    },
+    {
+      "brand": "Urth",
+      "model": "UTPCHA-BLK"
+    },
+    {
+      "brand": "UTEBIT",
+      "model": "4332013949"
+    },
+    {
+      "brand": "UUMAO",
+      "model": "X6+PD+Wood Grain"
+    },
+    {
+      "brand": "Uyiton",
+      "model": "Apple Watch Series 8/7 45mm"
+    },
+    {
+      "brand": "Verde Birdie",
+      "model": "7.0821E+11"
+    },
+    {
+      "brand": "VisionTek",
+      "model": "900838"
+    },
+    {
+      "brand": "VOCUTE",
+      "model": "AW-chargerdock-01"
+    },
+    {
+      "brand": "Voltenick",
+      "model": "C5"
+    },
+    {
+      "brand": "Vosker",
+      "model": "VSKVCBLOCK"
+    },
+    {
+      "brand": "VuPoint Solutions",
+      "model": "DC-M306AT-VP"
+    },
+    {
+      "brand": "WAOAW",
+      "model": "seat cushion"
+    },
+    {
+      "brand": "WENYAA",
+      "model": "SK90A200225"
+    },
+    {
+      "brand": "Wiyuam",
+      "model": "LX20AAC-120300-ZU"
+    },
+    {
+      "brand": "Woodaholic",
+      "model": "2-DRAWER-TEAL-ORG-BOX"
+    },
+    {
+      "brand": "WowDay",
+      "model": "C-025"
+    },
+    {
+      "brand": "Wymisnit",
+      "model": "KT60W195470B3"
+    },
+    {
+      "brand": "XYLL",
+      "model": "XY87"
+    },
+    {
+      "brand": "YAMASORO",
+      "model": "3286"
+    },
+    {
+      "brand": "Yesesion",
+      "model": "YKUC-001"
+    },
+    {
+      "brand": "YiwerDer",
+      "model": "Antistatic Bags-04"
+    },
+    {
+      "brand": "YIWEVEN",
+      "model": "YWV-SCP003"
+    },
+    {
+      "brand": "YLLKJJT",
+      "model": "SK90200325"
+    },
+    {
+      "brand": "YMDK",
+      "model": "8541647865"
+    },
+    {
+      "brand": "YOKSAS",
+      "model": "089"
+    },
+    {
+      "brand": "Yoobao",
+      "model": "F02"
+    },
+    {
+      "brand": "YOUMAKER",
+      "model": "473264031"
+    },
+    {
+      "brand": "YouOKLight",
+      "model": "IVANP4654"
+    },
+    {
+      "brand": "YZAESHAY",
+      "model": "DZ65200225"
+    },
+    {
+      "brand": "Z ZHIKE",
+      "model": "Z4"
+    },
+    {
+      "brand": "ZAGG",
+      "model": "200101564"
+    },
+    {
+      "brand": "ZAGG",
+      "model": "200204858"
+    },
+    {
+      "brand": "ZAGG",
+      "model": "EL8ZKF-BB0"
+    },
+    {
+      "brand": "ZAGG",
+      "model": "ZKUNILICH"
+    },
+    {
+      "brand": "ZBRO",
+      "model": "growth001"
+    },
+    {
+      "brand": "ZDOLAKIDS",
+      "model": "D359"
+    },
+    {
+      "brand": "ZdyCGTime",
+      "model": "8541586327"
+    },
+    {
+      "brand": "ZenGoose",
+      "model": "XF-C12"
+    },
+    {
+      "brand": "ZenRich",
+      "model": "Galaxy Tab S7 FE 2021/Galaxy Tab S7 Plus"
+    },
+    {
+      "brand": "ZLONXUN",
+      "model": "XY-C01"
+    },
+    {
+      "brand": "Zonon",
+      "model": "Zonon-Expense Tracker-236"
+    },
+    {
+      "brand": "ZOSI",
+      "model": "16CK-211B16S-40-US"
+    },
+    {
+      "brand": "ZOSI",
+      "model": "1ND-331Q2-W"
+    },
+    {
+      "brand": "ZOSI",
+      "model": "ZR08AA/10-ZM4317A"
+    }
+  ],
+  "coverage": "target_ids_and_available_brand_model_title",
+  "family_method": "conservative_whole_source_brand",
+  "unknown_family_product_ids": [
+    "B00BSE4G4S",
+    "B08BXYQH9N",
+    "B0BRCNTG83"
+  ],
+  "family_exclusion_status": "available_brand_metadata_plus_unapproved_conservative_identity_aliases",
+  "metadata_complete": false,
+  "purpose": "quarantine_only_never_task_or_reward_generation",
+  "counts": {
+    "tasks_with_brand": 659,
+    "tasks_with_explicit_model_number_and_brand": 423,
+    "unique_product_ids": 660,
+    "unique_titles": 660,
+    "unique_brand_families": 558,
+    "unique_brand_models": 420,
+    "unknown_family_product_ids": 3
+  },
+  "candidate_identity_alias_audit": {
+    "source_revision": "97eff345811fdf652a2135d38d874f2932e11702",
+    "source_sha256": "c6585d7adade0bf898dcc6b5377fb4534a699b874bd21ec796acfa96547c9b52",
+    "accessed_fields": [
+      "target_product.product_id",
+      "target_product.title",
+      "target_product.store",
+      "target_product.details.Manufacturer",
+      "target_product.details.Item model number",
+      "target_product.details.Model Number"
+    ],
+    "records": [
+      {
+        "product_id": "B08BXYQH9N",
+        "source_fields": {
+          "source_line_1based": 128,
+          "product_id": "B08BXYQH9N",
+          "title": "Motorcycle Stickers Pack, 50Pcs No Repeat Cool Moto Life Vinyl Waterproof Sticker and Decal, Love Car Racing Sticker for Adults Men Bike Laptop Skateboard Water Bottle",
+          "store": "EtherealKiller",
+          "details": {
+            "Manufacturer": "EtherealKiller"
+          }
+        },
+        "candidate_exclusion_aliases": [
+          "brand:etherealkiller"
+        ],
+        "corroboration": [
+          "store_equals_manufacturer"
+        ],
+        "status": "candidate_quarantine_only",
+        "observed_brand": null,
+        "human_review_status": "pending"
+      },
+      {
+        "product_id": "B00BSE4G4S",
+        "source_fields": {
+          "source_line_1based": 400,
+          "product_id": "B00BSE4G4S",
+          "title": "Alphaline Studio Over-the-Ear Headphones | MoonPoint",
+          "store": "ALPHALINE",
+          "details": {
+            "Manufacturer": "ALPHALINE"
+          }
+        },
+        "candidate_exclusion_aliases": [
+          "brand:alphaline"
+        ],
+        "corroboration": [
+          "store_equals_manufacturer",
+          "title_starts_with_store"
+        ],
+        "status": "candidate_quarantine_only",
+        "observed_brand": null,
+        "human_review_status": "pending"
+      },
+      {
+        "product_id": "B0BRCNTG83",
+        "source_fields": {
+          "source_line_1based": 418,
+          "product_id": "B0BRCNTG83",
+          "title": "REOLINK Dual View PoE Camera - IP Security Camera System with 1x 4K Wide-Angle Lens and 1x 3MP Telephoto Lens for A Close-up, AI Detection, Color Night Vision, Two-Way Talk, RLC-81MA",
+          "store": "REOLINK",
+          "details": {
+            "Item model number": "RLC-81MA",
+            "Manufacturer": "Reolink Digital"
+          }
+        },
+        "candidate_exclusion_aliases": [
+          "brand:reolink",
+          "brand:reolink digital"
+        ],
+        "corroboration": [
+          "title_starts_with_store"
+        ],
+        "status": "candidate_quarantine_only",
+        "observed_brand": null,
+        "human_review_status": "pending"
+      }
+    ],
+    "covered_by_candidate_aliases": [
+      "B00BSE4G4S",
+      "B08BXYQH9N",
+      "B0BRCNTG83"
+    ],
+    "unresolved_candidate_product_ids": [],
+    "new_families": [
+      "brand:alphaline",
+      "brand:etherealkiller",
+      "brand:reolink digital"
+    ],
+    "human_approval_count": 0,
+    "metadata_complete": false,
+    "limitation": "No observed Brand is inferred; family/semantic human review remains required."
+  }
+}

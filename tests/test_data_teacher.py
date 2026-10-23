@@ -19,7 +19,7 @@ from unittest.mock import patch
 import urllib.error
 
 from procure_rl.data.teacher import (OpenAIHTTPTeacher, ScriptedTeacher, TeacherError,
-                                     collect_episode)
+                                     PROMPTS, collect_episode)
 from procure_rl.data.replay import replay_episode
 from procure_rl.env import Catalog, ProcurementEnv, build_catalog, load_tasks
 from procure_rl.env.catalog import digest
@@ -187,6 +187,12 @@ class DataTeacherTests(unittest.TestCase):
             self.assertEqual(seen[1]["payload"]["messages"][2]["tool_calls"][0]["id"], "provider-call-1")
             ledger = replay_episode(self.catalog, self.task, episode)
             self.assertTrue(ledger["accepted"], ledger)
+            forged = copy.deepcopy(episode)
+            forged["collection"]["teacher"]["engineering_only"] = False
+            forged_ledger = replay_episode(self.catalog, self.task, forged)
+            self.assertTrue(forged_ledger["accepted"])
+            self.assertTrue(forged_ledger["engineering_only"])
+            self.assertFalse(forged_ledger["expert_eligible"])
             # The HTTP backend could be a local test double; this test establishes
             # the transport boundary, never counts it as a real teacher result.
             resumed = self.collect(teacher=self.http_teacher(config, cache_only=True), name="resume")
@@ -234,6 +240,28 @@ class DataTeacherTests(unittest.TestCase):
             with self.assertRaises(TeacherError):
                 second.next_action([{"role": "user", "content": "{}"}], [])
             self.assertEqual(len(seen), 1)
+
+    def test_policy_change_cannot_reset_shared_cache_request_budget(self):
+        with local_teacher() as (url, seen), patch.dict(os.environ, {"PROCURE_TEST_KEY": "test-secret-never-log"}):
+            config = self.http_config(url)
+            config["max_requests"] = 1
+            self.http_teacher(config, allow_network=True).next_action([], [])
+            changed = OpenAIHTTPTeacher(config, cache_directory=self.output / "cache",
+                                        policy_version="changed-policy", allow_network=True)
+            with self.assertRaises(TeacherError):
+                changed.next_action([], [])
+            self.assertEqual(len(seen), 1)
+
+    def test_legacy_prompt_episode_remains_replayable_and_unknown_version_rejected(self):
+        old_version = "procure-teacher-visible-v1"
+        with local_teacher() as (url, _), patch.dict(os.environ, {"PROCURE_TEST_KEY": "test-secret-never-log"}), \
+                patch("procure_rl.data.teacher.PROMPT_VERSION", old_version), \
+                patch("procure_rl.data.teacher.SYSTEM_PROMPT", PROMPTS[old_version]):
+            episode = self.collect(teacher=self.http_teacher(self.http_config(url), allow_network=True))
+        self.assertTrue(replay_episode(self.catalog, self.task, episode)["accepted"])
+        for version in ("unregistered-prompt", None, []):
+            episode["collection"]["prompt_version"] = version
+            self.assertIn("unknown_prompt_version", replay_episode(self.catalog, self.task, episode)["failure_types"])
 
     def test_billing_uncertain_call_is_not_retried(self):
         config = self.http_config("https://example.invalid")

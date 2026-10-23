@@ -1,0 +1,295 @@
+{
+  "schema_version": 1,
+  "source": {
+    "id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+    "url": "https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023/resolve/2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e/raw_meta_Electronics/full-00000-of-00010.parquet",
+    "revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+    "sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+    "hash_scope": "local_first_row_group_selected_columns_rows_json",
+    "retrieved_at": "2026-10-21T19:22:26.397354+00:00",
+    "license": {
+      "id": null,
+      "usage": "research purpose; no blanket data license granted",
+      "url": "https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023/discussions/1"
+    },
+    "currency_evidence_url": "https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023/blob/2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e/README.md",
+    "currency": "USD",
+    "upstream_lfs_sha256": "116fe3967889da3d2fd1f5785f46532955d7c952649aa8eebf6eb6434bb9db16",
+    "upstream_lfs_sha256_verified": false,
+    "upstream_file_bytes": 219918692,
+    "transferred_bytes": 1222800,
+    "retrieval_method": "HTTP Range: Parquet first row group with selected columns",
+    "ranges_manifest": "logs/s2-source-parquet-v1/ranges.json",
+    "raw_rows_artifact": "logs/s2-source-parquet-v1/rows.json",
+    "selected_rows": [
+      451,
+      598,
+      636,
+      895
+    ],
+    "model_revision": null,
+    "teacher_calls": 0
+  },
+  "status": "diagnostic_only_unreviewed_not_formal_dataset",
+  "records": [
+    {
+      "raw": {
+        "main_category": "Computers",
+        "title": "Google Pixel Slate 12.3-Inch 2 in 1 Tablet Intel Core i5, 8GB RAM, 128GB, Aspect Ratio 3:2",
+        "price": "749.0",
+        "store": "Google",
+        "categories": [
+          "Electronics",
+          "Computers & Accessories",
+          "Computers & Tablets",
+          "Tablets"
+        ],
+        "details": "{\"Standing screen display size\": \"12.3 Inches\", \"Max Screen Resolution\": \"3000x2000 Pixels\", \"Processor\": \"3.9 GHz core_i5\", \"RAM\": \"8 GB\", \"Hard Drive\": \"128 GB SSD\", \"Graphics Coprocessor\": \"Intel HD Graphics\", \"Card Description\": \"Integrated\", \"Wireless Type\": \"802.11a/b/g/n/ac, 802.11abg, 802.11a/b/g/n, 802.11a\", \"Average Battery Life (in hours)\": \"10 Hours\", \"Brand\": \"Google\", \"Series\": \"Google Pixel Slate\", \"Item model number\": \"C1A\", \"Operating System\": \"Chrome OS\", \"Item Weight\": \"1.59 pounds\", \"Product Dimensions\": \"11.45 x 7.95 x 0.28 inches\", \"Item Dimensions  LxWxH\": \"11.45 x 7.95 x 0.28 inches\", \"Color\": \"Black\", \"Rear Webcam Resolution\": \"8 MP\", \"Processor Brand\": \"Intel\", \"Number of Processors\": \"2\", \"Computer Memory Type\": \"Unknown\", \"Flash Memory Size\": \"128\", \"Hard Drive Interface\": \"Unknown\", \"Power Source\": \"Battery Powered\", \"Batteries\": \"1 Lithium Polymer batteries required. (included)\", \"Best Sellers Rank\": {\"Climate Pledge Friendly\": 15848, \"Computer Tablets\": 1189, \"Climate Pledge Friendly: Computers\": 1940}, \"Date First Available\": \"November 6, 2018\", \"Memory Storage Capacity\": \"128 GB\", \"Screen Size\": \"12.3 Inches\", \"Display Resolution Maximum\": \"3000x2000 Pixels\"}",
+        "parent_asin": "B07K89WHJH"
+      },
+      "raw_sha256": "ed7851a7567b4ad035b8fc3b6ad26a12ea3cbbb6c2a8ff5c232789549a361391",
+      "source_row_index": 451,
+      "facts": [
+        {
+          "field": "price",
+          "value": "749.0",
+          "unit": "USD",
+          "source_field": [
+            "price"
+          ],
+          "quote": "749.0"
+        },
+        {
+          "field": "weight_g",
+          "value": "1.59",
+          "unit": "pounds",
+          "source_field": [
+            "details",
+            "Item Weight"
+          ],
+          "quote": "1.59 pounds"
+        },
+        {
+          "field": "color",
+          "value": "Black",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Color"
+          ],
+          "quote": "Black"
+        }
+      ],
+      "identity": {
+        "brand_source_field": [
+          "details",
+          "Brand"
+        ],
+        "model_source_field": [
+          "details",
+          "Item model number"
+        ]
+      },
+      "review_status": "not_human_reviewed",
+      "selection_reason": "strict_office_leaf_and_attributed_price_weight_color_brand",
+      "review_notes": [
+        "Diagnostic candidate only; source facts, identity and scope still require human review."
+      ]
+    },
+    {
+      "raw": {
+        "main_category": "Computers",
+        "title": "Lenovo 20KH002RUS ThinkPad X1 Carbon Laptop, 14\"",
+        "price": "1429.77",
+        "store": "Lenovo",
+        "categories": [
+          "Electronics",
+          "Computers & Accessories",
+          "Computers & Tablets",
+          "Laptops",
+          "Traditional Laptops"
+        ],
+        "details": "{\"Standing screen display size\": \"14 Inches\", \"Screen Resolution\": \"2560 x 1440 pixels\", \"Max Screen Resolution\": \"2560x1440 Pixels\", \"Processor\": \"1.9 GHz core_i7\", \"RAM\": \"16 GB DDR3\", \"Memory Speed\": \"2133 MHz\", \"Hard Drive\": \"512 GB SSD\", \"Graphics Coprocessor\": \"Intel UHD Graphics 620\", \"Chipset Brand\": \"Intel\", \"Card Description\": \"Integrated\", \"Wireless Type\": \"802.11g\", \"Number of USB 3.0 Ports\": \"4\", \"Average Battery Life (in hours)\": \"6 Hours\", \"Brand\": \"Lenovo\", \"Series\": \"ThinkPad X1 Carbon 6th Gen 20KH002RUS Ultrabook\", \"Item model number\": \"20KH002RUS\", \"Hardware Platform\": \"PC\", \"Operating System\": \"Windows 10 Pro\", \"Item Weight\": \"10.6 ounces\", \"Product Dimensions\": \"3.3 x 12.1 x 18.7 inches\", \"Item Dimensions  LxWxH\": \"3.3 x 12.1 x 18.7 inches\", \"Color\": \"Black\", \"Processor Brand\": \"Intel\", \"Number of Processors\": \"4\", \"Computer Memory Type\": \"Unknown\", \"Flash Memory Size\": \"512\", \"Hard Drive Interface\": \"ATA-4\", \"Hard Drive Rotational Speed\": \"16 RPM\", \"Power Source\": \"Battery Powered\", \"Voltage\": \"120 Volts\", \"Batteries\": \"1 Lithium Polymer batteries required. (included)\", \"Best Sellers Rank\": {\"Computers & Accessories\": 71887, \"Traditional Laptop Computers\": 14154}, \"Date First Available\": \"February 13, 2018\", \"Screen Size\": \"14 Inches\", \"Hard Disk Size\": \"512 GB\", \"CPU Model\": \"Core i7\", \"Ram Memory Installed Size\": \"16 GB\"}",
+        "parent_asin": "B079J395DC"
+      },
+      "raw_sha256": "006bab01b84bea86c7bf5e380552bf4c0ce91d1f0211bbc546fe8ceb0535c62b",
+      "source_row_index": 598,
+      "facts": [
+        {
+          "field": "price",
+          "value": "1429.77",
+          "unit": "USD",
+          "source_field": [
+            "price"
+          ],
+          "quote": "1429.77"
+        },
+        {
+          "field": "weight_g",
+          "value": "10.6",
+          "unit": "ounces",
+          "source_field": [
+            "details",
+            "Item Weight"
+          ],
+          "quote": "10.6 ounces"
+        },
+        {
+          "field": "color",
+          "value": "Black",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Color"
+          ],
+          "quote": "Black"
+        }
+      ],
+      "identity": {
+        "brand_source_field": [
+          "details",
+          "Brand"
+        ],
+        "model_source_field": [
+          "details",
+          "Item model number"
+        ]
+      },
+      "review_status": "not_human_reviewed",
+      "selection_reason": "strict_office_leaf_and_attributed_price_weight_color_brand",
+      "review_notes": [
+        "Diagnostic candidate only; source facts, identity and scope still require human review."
+      ]
+    },
+    {
+      "raw": {
+        "main_category": "Computers",
+        "title": "Dell Latitude E7450 14in HD High Performance Ultra Book Business Laptop NoteBook (Intel Dual Core i5 5300U, 8GB Ram, 256GB Solid State SSD, Camera, HDMI, WIFI) Win 10 Pro (Renewed)",
+        "price": "149.98",
+        "store": "Amazon Renewed",
+        "categories": [
+          "Electronics",
+          "Computers & Accessories",
+          "Computers & Tablets",
+          "Laptops",
+          "Traditional Laptops"
+        ],
+        "details": "{\"Standing screen display size\": \"14 Inches\", \"Screen Resolution\": \"1366 x 768 pixels\", \"Max Screen Resolution\": \"1366x768\", \"Processor\": \"3 GHz apple_ci5\", \"RAM\": \"8 GB DDR3\", \"Memory Speed\": \"2.3 GHz\", \"Hard Drive\": \"256 GB SSD\", \"Graphics Coprocessor\": \"Intel HD Graphics 5500\", \"Chipset Brand\": \"Intel\", \"Card Description\": \"Integrated, Dedicated\", \"Wireless Type\": \"802.11n, 802.11abg, 802.11ab\", \"Average Battery Life (in hours)\": \"8 Hours\", \"Brand\": \"Dell\", \"Series\": \"Dell Latitude E7450\", \"Item model number\": \"Latitude E7450\", \"Hardware Platform\": \"PC\", \"Operating System\": \"Windows 10 Pro\", \"Item Weight\": \"3.63 pounds\", \"Product Dimensions\": \"9.12 x 13.3 x 0.8 inches\", \"Item Dimensions  LxWxH\": \"9.12 x 13.3 x 0.8 inches\", \"Color\": \"Black\", \"Processor Brand\": \"Intel\", \"Number of Processors\": \"1\", \"Computer Memory Type\": \"SDRAM\", \"Flash Memory Size\": \"256\", \"Optical Drive Type\": \"No Optical Drive\", \"Voltage\": \"240 Volts\", \"Batteries\": \"1 Lithium Ion batteries required. (included)\", \"Best Sellers Rank\": {\"Computers & Accessories\": 6701, \"Traditional Laptop Computers\": 844, \"Climate Pledge Friendly: Computers\": 1343}, \"Date First Available\": \"October 12, 2017\", \"Model Name\": \"Dell Latitude E7450\", \"Screen Size\": \"14 Inches\", \"Hard Disk Size\": \"256 GB\", \"CPU Model\": \"Intel Core i5\", \"Ram Memory Installed Size\": \"8 GB\", \"Graphics Card Description\": \"Integrated, Dedicated\"}",
+        "parent_asin": "B076DKFYF9"
+      },
+      "raw_sha256": "bfaeaee1019fc696e5bcabbd4f6a9b8db8ad25bcef965a60aaddce50ddd566d3",
+      "source_row_index": 636,
+      "facts": [
+        {
+          "field": "price",
+          "value": "149.98",
+          "unit": "USD",
+          "source_field": [
+            "price"
+          ],
+          "quote": "149.98"
+        },
+        {
+          "field": "weight_g",
+          "value": "3.63",
+          "unit": "pounds",
+          "source_field": [
+            "details",
+            "Item Weight"
+          ],
+          "quote": "3.63 pounds"
+        },
+        {
+          "field": "color",
+          "value": "Black",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Color"
+          ],
+          "quote": "Black"
+        }
+      ],
+      "identity": {
+        "brand_source_field": [
+          "details",
+          "Brand"
+        ],
+        "model_source_field": [
+          "details",
+          "Item model number"
+        ]
+      },
+      "review_status": "not_human_reviewed",
+      "selection_reason": "strict_office_leaf_and_attributed_price_weight_color_brand",
+      "review_notes": [
+        "Diagnostic candidate only; source facts, identity and scope still require human review."
+      ]
+    },
+    {
+      "raw": {
+        "main_category": "Computers",
+        "title": "Logitech Wireless Touch Keyboard K400 with Built-In Multi-Touch Touchpad, Black (Renewed)",
+        "price": "21.95",
+        "store": "Amazon Renewed",
+        "categories": [
+          "Electronics",
+          "Computers & Accessories",
+          "Computer Accessories & Peripherals",
+          "Keyboards, Mice & Accessories",
+          "Keyboards"
+        ],
+        "details": "{\"Product Dimensions\": \"5.4 x 0.9 x 13.9 inches\", \"Item Weight\": \"15.2 ounces\", \"Manufacturer\": \"Logitech\", \"Item model number\": \"920-003070RFB\", \"Batteries\": \"2 AA batteries required. (included)\", \"Best Sellers Rank\": {\"Amazon Renewed\": 766, \"Computer Keyboards\": 228, \"Climate Pledge Friendly: Computers\": 589}, \"Is Discontinued By Manufacturer\": \"No\", \"Date First Available\": \"January 21, 2015\", \"Brand\": \"Logitech\", \"Compatible Devices\": \"Laptop\", \"Connectivity Technology\": \"USB\", \"Keyboard Description\": \"USB\", \"Special Feature\": \"Wireless\", \"Color\": \"Black\", \"Operating System\": \"Windows 10\", \"Number of Keys\": \"90\", \"Style\": \"Modern\", \"Item Dimensions LxWxH\": \"5.4 x 0.9 x 13.9 inches\"}",
+        "parent_asin": "B00SK0FOHG"
+      },
+      "raw_sha256": "c921d44bf9656fa21c963e1951f6ffd03b0b27d7ba62ffe2eae4d5899512b2a9",
+      "source_row_index": 895,
+      "facts": [
+        {
+          "field": "price",
+          "value": "21.95",
+          "unit": "USD",
+          "source_field": [
+            "price"
+          ],
+          "quote": "21.95"
+        },
+        {
+          "field": "weight_g",
+          "value": "15.2",
+          "unit": "ounces",
+          "source_field": [
+            "details",
+            "Item Weight"
+          ],
+          "quote": "15.2 ounces"
+        },
+        {
+          "field": "color",
+          "value": "Black",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Color"
+          ],
+          "quote": "Black"
+        }
+      ],
+      "identity": {
+        "brand_source_field": [
+          "details",
+          "Brand"
+        ],
+        "model_source_field": [
+          "details",
+          "Item model number"
+        ]
+      },
+      "review_status": "not_human_reviewed",
+      "selection_reason": "strict_office_leaf_and_attributed_price_weight_color_brand",
+      "review_notes": [
+        "Diagnostic candidate only; source facts, identity and scope still require human review."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,804 @@
+{
+  "schema_version": 1,
+  "source": {
+    "id": "amazon-reviews-2023-electronics-first-rowgroup-v1",
+    "url": "https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023/resolve/2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e/raw_meta_Electronics/full-00000-of-00010.parquet",
+    "revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+    "sha256": "622128c4abc7252484911050111ddb0e6ac4530a5841c84807bfee752e97e6ac",
+    "hash_scope": "local_first_row_group_selected_columns_rows_json",
+    "retrieved_at": "2026-10-21T19:22:26.397354+00:00",
+    "license": {
+      "id": null,
+      "usage": "research purpose; no blanket data license granted",
+      "url": "https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023/discussions/1"
+    },
+    "currency_evidence_url": "https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023/blob/2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e/README.md",
+    "currency": "USD",
+    "upstream_lfs_sha256": "116fe3967889da3d2fd1f5785f46532955d7c952649aa8eebf6eb6434bb9db16",
+    "upstream_lfs_sha256_verified": false,
+    "upstream_file_bytes": 219918692,
+    "transferred_bytes": 1222800,
+    "retrieval_method": "HTTP Range: Parquet first row group with selected columns",
+    "ranges_manifest": "logs/s2-source-parquet-v1/ranges.json",
+    "raw_rows_artifact": "logs/s2-source-parquet-v1/rows.json",
+    "selected_rows": [
+      17,
+      20,
+      47,
+      85,
+      176,
+      182,
+      324,
+      345,
+      517,
+      630,
+      734,
+      767
+    ],
+    "model_revision": null,
+    "teacher_calls": 0
+  },
+  "status": "diagnostic_only_unreviewed_not_formal_dataset",
+  "records": [
+    {
+      "raw": {
+        "main_category": "Computers",
+        "title": "BIPRA U3 2.5 inch USB 3.0 NTFS Portable External Hard Drive - White (250GB)",
+        "price": "98.49",
+        "store": "BIPRA",
+        "categories": [
+          "Electronics",
+          "Computers & Accessories",
+          "Data Storage",
+          "External Hard Drives"
+        ],
+        "details": "{\"Hard Drive\": \"250 GB usb 3\", \"Brand\": \"BIPRA\", \"Item model number\": \"8541581831\", \"Item Weight\": \"2 pounds\", \"Color\": \"White\", \"Flash Memory Size\": \"250 GB\", \"Hard Drive Interface\": \"USB 1.1\", \"Manufacturer\": \"Bipra Limited\", \"Date First Available\": \"March 28, 2015\", \"Digital Storage Capacity\": \"250 GB\", \"Hard Disk Interface\": \"USB 1.1\", \"Connectivity Technology\": \"USB\", \"Hard Disk Form Factor\": \"2.5 Inches\", \"Hard Disk Description\": \"Usb 3\", \"Compatible Devices\": \"Laptop, Desktop\", \"Hard Disk Size\": \"250 GB\", \"Specific Uses For Product\": \"Personal\"}",
+        "parent_asin": "B00VBTJCJE"
+      },
+      "raw_sha256": "59aab20b5bdff06911fa30ac4f42f4f87b95562d1c8239267a4a8c39e7a7d63a",
+      "source_row_index": 17,
+      "facts": [
+        {
+          "field": "price",
+          "value": "98.49",
+          "unit": "USD",
+          "source_field": [
+            "price"
+          ],
+          "quote": "98.49"
+        },
+        {
+          "field": "weight_g",
+          "value": "2",
+          "unit": "pounds",
+          "source_field": [
+            "details",
+            "Item Weight"
+          ],
+          "quote": "2 pounds"
+        },
+        {
+          "field": "color",
+          "value": "White",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Color"
+          ],
+          "quote": "White"
+        }
+      ],
+      "identity": {
+        "brand_source_field": [
+          "details",
+          "Brand"
+        ],
+        "model_source_field": [
+          "details",
+          "Item model number"
+        ]
+      },
+      "review_status": "not_human_reviewed",
+      "selection_reason": "strict_office_leaf_and_attributed_price_weight_color_brand",
+      "review_notes": [
+        "Diagnostic candidate only; source facts, identity and scope still require human review."
+      ]
+    },
+    {
+      "raw": {
+        "main_category": "Computers",
+        "title": "Gateway 15.6\" FHD Ultra Slim Budget Notebook, Intel Pentium Processor(4-Core, up to 3.1 GHz), 4GB RAM, 128GB Storage, Precision Touchpad, HDMI, Type-C Windows 10S, Microsoft 365 1 Year, Charcoal Black",
+        "price": "189.99",
+        "store": "Gateway",
+        "categories": [
+          "Electronics",
+          "Computers & Accessories",
+          "Computers & Tablets",
+          "Laptops",
+          "Traditional Laptops"
+        ],
+        "details": "{\"Standing screen display size\": \"15.6 Inches\", \"Max Screen Resolution\": \"1920 x 1080 Pixels\", \"Processor\": \"3.1 GHz pentium\", \"RAM\": \"DDR4\", \"Memory Speed\": \"3200 MHz\", \"Hard Drive\": \"256 GB SSD\", \"Graphics Coprocessor\": \"Intel UHD Graphics\", \"Chipset Brand\": \"Intel\", \"Card Description\": \"Integrated\", \"Graphics Card Ram Size\": \"1 GB\", \"Number of USB 3.0 Ports\": \"2\", \"Brand\": \"Gateway\", \"Series\": \"Gateway book\", \"Item model number\": \"GWTN156\", \"Hardware Platform\": \"PC\", \"Operating System\": \"Windows 10\", \"Item Weight\": \"4.2 pounds\", \"Product Dimensions\": \"14.8 x 9.6 x 0.8 inches\", \"Item Dimensions  LxWxH\": \"14.8 x 9.6 x 0.8 inches\", \"Color\": \"Black\", \"Processor Brand\": \"Intel\", \"Number of Processors\": \"4\", \"Computer Memory Type\": \"DDR4 SDRAM\", \"Hard Drive Interface\": \"Solid State\", \"Hard Drive Rotational Speed\": \"5400.00\", \"Optical Drive Type\": \"BD-R\", \"Best Sellers Rank\": {\"Computers & Accessories\": 1093, \"Traditional Laptop Computers\": 111}, \"Date First Available\": \"March 5, 2023\", \"Screen Size\": \"15.6 Inches\", \"Hard Disk Size\": \"256 GB\", \"CPU Model\": \"Pentium\", \"Ram Memory Installed Size\": \"4 GB\"}",
+        "parent_asin": "B0BYBG1PPD"
+      },
+      "raw_sha256": "4cb27c8afcd0e088211efd4624b370ecb5ff453cbed7cb00df38481247af7a1c",
+      "source_row_index": 20,
+      "facts": [
+        {
+          "field": "price",
+          "value": "189.99",
+          "unit": "USD",
+          "source_field": [
+            "price"
+          ],
+          "quote": "189.99"
+        },
+        {
+          "field": "weight_g",
+          "value": "4.2",
+          "unit": "pounds",
+          "source_field": [
+            "details",
+            "Item Weight"
+          ],
+          "quote": "4.2 pounds"
+        },
+        {
+          "field": "color",
+          "value": "Black",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Color"
+          ],
+          "quote": "Black"
+        }
+      ],
+      "identity": {
+        "brand_source_field": [
+          "details",
+          "Brand"
+        ],
+        "model_source_field": [
+          "details",
+          "Item model number"
+        ]
+      },
+      "review_status": "not_human_reviewed",
+      "selection_reason": "strict_office_leaf_and_attributed_price_weight_color_brand",
+      "review_notes": [
+        "Diagnostic candidate only; source facts, identity and scope still require human review."
+      ]
+    },
+    {
+      "raw": {
+        "main_category": "All Electronics",
+        "title": "LENTION USB C Docking Station, 10 Gbps USB C&USB A Ports, 4K 60Hz HDMI, 100W PD, Ethernet, Card Reader, USB 3.0, AUX, USB C Dock for MacBook/Surface, More, Stable Driver USB C Hub(CB-D65, Space Gray)",
+        "price": "89.99",
+        "store": "LENTION",
+        "categories": [
+          "Electronics",
+          "Computers & Accessories",
+          "Laptop Accessories",
+          "Docking Stations"
+        ],
+        "details": "{\"Package Dimensions\": \"9.17 x 4.33 x 1.54 inches\", \"Item Weight\": \"15.8 ounces\", \"Best Sellers Rank\": {\"Electronics\": 263405, \"Laptop Docking Stations\": 1852}, \"Date First Available\": \"October 28, 2022\", \"Manufacturer\": \"LENTION\", \"Brand\": \"LENTION\", \"Color\": \"Space Gray\", \"Hardware Interface\": \"MicroSD, USB Type C, Ethernet, HDMI, USB 3.0, USB 3.2 Gen 2\", \"Compatible Devices\": \"The devices with full-function USB-C or Thunderbolt 3/4 port\\uff1aMacBook Pro 13/14/15/16 2016-2023, New MacBook Air 2018-2022, MacBook Pro/Air M1, M2, New iMac, MacBook 12, Steam Deck, Surface Pro 7/8/Book 2/Go, Chromebook, Dell XPS/Inspiron, HP Spectre/ENVY, Lenovo Yoga and moreThe devices with full-function USB-C or Thunderbolt 3/4 port\\uff1aMacBook Pro 13/14/15/16 2016-2023, New MacBook Air 2018-2022, MacBook Pro/Air M1, M2, New iMac, MacBook 12, Steam Deck, Surface Pro 7/8/Book 2/Go, Chrome\\u2026  See more\", \"Total USB Ports\": \"4\", \"Number of Ports\": \"10\", \"Total HDMI Ports\": \"1\", \"Wattage\": \"100 watts\"}",
+        "parent_asin": "B0BKS1K986"
+      },
+      "raw_sha256": "07de1c15ac494f03c8265a1a8c87c1941acb0707864b1b99ec0a45fd243cd74b",
+      "source_row_index": 47,
+      "facts": [
+        {
+          "field": "price",
+          "value": "89.99",
+          "unit": "USD",
+          "source_field": [
+            "price"
+          ],
+          "quote": "89.99"
+        },
+        {
+          "field": "weight_g",
+          "value": "15.8",
+          "unit": "ounces",
+          "source_field": [
+            "details",
+            "Item Weight"
+          ],
+          "quote": "15.8 ounces"
+        },
+        {
+          "field": "color",
+          "value": "Space Gray",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Color"
+          ],
+          "quote": "Space Gray"
+        }
+      ],
+      "identity": {
+        "brand_source_field": [
+          "details",
+          "Brand"
+        ]
+      },
+      "review_status": "not_human_reviewed",
+      "selection_reason": "strict_office_leaf_and_attributed_price_weight_color_brand",
+      "review_notes": [
+        "Diagnostic candidate only; source facts, identity and scope still require human review."
+      ]
+    },
+    {
+      "raw": {
+        "main_category": "Computers",
+        "title": "GIGABYTE AERO 16 XE5-16\" 4K/UHD+ Samsung AMOLED, Intel Core i7-12700H, NVIDIA GeForce RTX 3070 Ti Laptop GPU 8GB GDDR6, 32GB DDR5 RAM, 2TB SSD,Win11 Pro Laptop (AERO 16 XE5-73US948HP)",
+        "price": "1749.0",
+        "store": "Gigabyte",
+        "categories": [
+          "Electronics",
+          "Computers & Accessories",
+          "Computers & Tablets",
+          "Laptops",
+          "Traditional Laptops"
+        ],
+        "details": "{\"Standing screen display size\": \"16\", \"Max Screen Resolution\": \"3840 x 2400 Pixels\", \"Processor\": \"3.5 GHz core_i7\", \"RAM\": \"8 GB DDR5\", \"Memory Speed\": \"2.3 GHz\", \"Hard Drive\": \"2 TB SSD\", \"Graphics Coprocessor\": \"NVIDIA GeForce RTX 3070\", \"Chipset Brand\": \"NVIDIA\", \"Card Description\": \"Dedicated\", \"Graphics Card Ram Size\": \"8 GB\", \"Wireless Type\": \"Bluetooth\", \"Number of USB 3.0 Ports\": \"1\", \"Brand\": \"GIGABYTE\", \"Series\": \"AERO 16 XE5-73US948HP\", \"Item model number\": \"AERO 16 XE5-73US948HP\", \"Operating System\": \"Windows 11 Pro\", \"Item Weight\": \"8.98 pounds\", \"Product Dimensions\": \"9.78 x 14.02 x 0.88 inches\", \"Item Dimensions  LxWxH\": \"9.78 x 14.02 x 0.88 inches\", \"Color\": \"Silver\", \"Processor Brand\": \"Intel\", \"Number of Processors\": \"8\", \"Hard Drive Interface\": \"USB 3.2\", \"Optical Drive Type\": \"No Optical Drive\", \"Power Source\": \"Battery Powered\", \"Voltage\": \"230 Volts\", \"Batteries\": \"1 Lithium Polymer batteries required. (included)\", \"Best Sellers Rank\": {\"Computers & Accessories\": 79968, \"Traditional Laptop Computers\": 16096}, \"Date First Available\": \"March 29, 2022\", \"Model Name\": \"AERO 16 XE5-73US948HP\", \"Screen Size\": \"16\", \"Hard Disk Size\": \"2 TB\", \"CPU Model\": \"Core i7\", \"Ram Memory Installed Size\": \"32 GB\", \"Graphics Card Description\": \"Dedicated\"}",
+        "parent_asin": "B0BGMJX4RN"
+      },
+      "raw_sha256": "8e2ff2407e13eb6e459baf020860dd5dcc0b4adf7c4ddb82c9061a7386f65da1",
+      "source_row_index": 85,
+      "facts": [
+        {
+          "field": "price",
+          "value": "1749.0",
+          "unit": "USD",
+          "source_field": [
+            "price"
+          ],
+          "quote": "1749.0"
+        },
+        {
+          "field": "weight_g",
+          "value": "8.98",
+          "unit": "pounds",
+          "source_field": [
+            "details",
+            "Item Weight"
+          ],
+          "quote": "8.98 pounds"
+        },
+        {
+          "field": "color",
+          "value": "Silver",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Color"
+          ],
+          "quote": "Silver"
+        }
+      ],
+      "identity": {
+        "brand_source_field": [
+          "details",
+          "Brand"
+        ],
+        "model_source_field": [
+          "details",
+          "Item model number"
+        ]
+      },
+      "review_status": "not_human_reviewed",
+      "selection_reason": "strict_office_leaf_and_attributed_price_weight_color_brand",
+      "review_notes": [
+        "Diagnostic candidate only; source facts, identity and scope still require human review."
+      ]
+    },
+    {
+      "raw": {
+        "main_category": "Computers",
+        "title": "KECOP Baby Pink USB Wire Keyboard with Rainbow LED Backlight Full 104 Keys Water-Resistant Mechanical Feeling Game Keyboard for Desktop, Computer, PC (Baby Pink)",
+        "price": "23.99",
+        "store": "KECOP",
+        "categories": [
+          "Electronics",
+          "Computers & Accessories",
+          "Computer Accessories & Peripherals",
+          "Keyboards, Mice & Accessories",
+          "Keyboards"
+        ],
+        "details": "{\"Product Dimensions\": \"10 x 2 x 2.7 inches\", \"Item Weight\": \"1 pounds\", \"Manufacturer\": \"KECOP\", \"Best Sellers Rank\": {\"Computer Keyboards\": 1490}, \"Date First Available\": \"July 27, 2021\", \"Brand\": \"KECOP\", \"Compatible Devices\": \"Laptop\", \"Connectivity Technology\": \"USB\", \"Keyboard Description\": \"Mechanical,Gaming\", \"Special Feature\": \"Waterproof\", \"Color\": \"Baby Pink\", \"Operating System\": \"Linux, Windows Vista, Windows XP, Windows 8, Windows 7, Windows 10\", \"Number of Keys\": \"104\", \"Keyboard backlighting color support\": \"RGB\", \"Style\": \"Modern\"}",
+        "parent_asin": "B09H2JQD48"
+      },
+      "raw_sha256": "900cb12381dfa5a68aff04f8ede75ef4df5ee242ddaa6a5ed6c9768f4bdbe974",
+      "source_row_index": 176,
+      "facts": [
+        {
+          "field": "price",
+          "value": "23.99",
+          "unit": "USD",
+          "source_field": [
+            "price"
+          ],
+          "quote": "23.99"
+        },
+        {
+          "field": "weight_g",
+          "value": "1",
+          "unit": "pounds",
+          "source_field": [
+            "details",
+            "Item Weight"
+          ],
+          "quote": "1 pounds"
+        },
+        {
+          "field": "color",
+          "value": "Baby Pink",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Color"
+          ],
+          "quote": "Baby Pink"
+        }
+      ],
+      "identity": {
+        "brand_source_field": [
+          "details",
+          "Brand"
+        ]
+      },
+      "review_status": "not_human_reviewed",
+      "selection_reason": "strict_office_leaf_and_attributed_price_weight_color_brand",
+      "review_notes": [
+        "Diagnostic candidate only; source facts, identity and scope still require human review."
+      ]
+    },
+    {
+      "raw": {
+        "main_category": "Computers",
+        "title": "Macally 2.4G USB Wireless Keyboard for Laptop or Computer - Keep it Simple - Full Size Keyboard with Numeric Keypad & 13 Shortcut Keys - Plug and Play PC Keyboard Wireless - White Keyboard Cordless",
+        "price": "19.99",
+        "store": "Macally",
+        "categories": [
+          "Electronics",
+          "Computers & Accessories",
+          "Computer Accessories & Peripherals",
+          "Keyboards, Mice & Accessories",
+          "Keyboards"
+        ],
+        "details": "{\"Package Dimensions\": \"17.3 x 6 x 1 inches\", \"Item Weight\": \"1.36 pounds\", \"Manufacturer\": \"Mace Group Inc / Macally Peripherals\", \"Country of Origin\": \"China\", \"Batteries\": \"1 AAA batteries required. (included)\", \"Best Sellers Rank\": {\"Computer Keyboards\": 146}, \"Date First Available\": \"April 18, 2022\", \"Brand\": \"Macally\", \"Compatible Devices\": \"Laptop, PC, Smart TV\", \"Connectivity Technology\": \"RF, USB\", \"Keyboard Description\": \"USB Wireless Keyboard\", \"Recommended Uses For Product\": \"Office, School, Everyday Use, Education, Home\", \"Special Feature\": \"Laptop Keyboard, White Keyboard Wireless, Wireless Keyboard with Number Pad, Wireless Computer Keyboard White, Teclado InalambricoLaptop Keyboard, White Keyboard Wireless, Wireless Keyboard with Number Pad, Wireless Computer Keyboard White, Teclado Inalambrico  See more\", \"Color\": \"White\", \"Operating System\": \"Windows 7\", \"Number of Keys\": \"13\", \"Keyboard backlighting color support\": \"Single Color\"}",
+        "parent_asin": "B09X983942"
+      },
+      "raw_sha256": "66fd7e2ef6634b7de2b4850a3b1d4b11f51b76882a590f9a65f78a15bc774160",
+      "source_row_index": 182,
+      "facts": [
+        {
+          "field": "price",
+          "value": "19.99",
+          "unit": "USD",
+          "source_field": [
+            "price"
+          ],
+          "quote": "19.99"
+        },
+        {
+          "field": "weight_g",
+          "value": "1.36",
+          "unit": "pounds",
+          "source_field": [
+            "details",
+            "Item Weight"
+          ],
+          "quote": "1.36 pounds"
+        },
+        {
+          "field": "color",
+          "value": "White",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Color"
+          ],
+          "quote": "White"
+        }
+      ],
+      "identity": {
+        "brand_source_field": [
+          "details",
+          "Brand"
+        ]
+      },
+      "review_status": "not_human_reviewed",
+      "selection_reason": "strict_office_leaf_and_attributed_price_weight_color_brand",
+      "review_notes": [
+        "Diagnostic candidate only; source facts, identity and scope still require human review."
+      ]
+    },
+    {
+      "raw": {
+        "main_category": "Computers",
+        "title": "Apple 16GB iPad Air Wi-Fi Silver MGLW2LL/A (Renewed)",
+        "price": "140.0",
+        "store": "Amazon Renewed",
+        "categories": [
+          "Electronics",
+          "Computers & Accessories",
+          "Computers & Tablets",
+          "Tablets"
+        ],
+        "details": "{\"Standing screen display size\": \"9.7 Inches\", \"Screen Resolution\": \"2048x1536\", \"Max Screen Resolution\": \"2048 x 1536\", \"RAM\": \"16 GB\", \"Hard Drive\": \"16 GB\", \"Wireless Type\": \"802.11a/b/g/n/ac, 802.11abg, 802.11a/b/g/n, 802.11a\", \"Brand\": \"Apple\", \"Item model number\": \"MGLW2LL/A-cr\", \"Item Weight\": \"15.4 ounces\", \"Package Dimensions\": \"11.81 x 9.09 x 3.19 inches\", \"Color\": \"Silver\", \"Rear Webcam Resolution\": \"326 Lines Per Inch\", \"Flash Memory Size\": \"16 GB\", \"Power Source\": \"Corded Electric\", \"Best Sellers Rank\": {\"Amazon Renewed\": 8147, \"Computer Tablets\": 1779, \"Climate Pledge Friendly: Computers\": 2858}, \"Date First Available\": \"September 11, 2018\", \"Memory Storage Capacity\": \"16 GB\", \"Screen Size\": \"9.7 Inches\", \"Display Resolution Maximum\": \"2048 x 1536\"}",
+        "parent_asin": "B07H8QWTPH"
+      },
+      "raw_sha256": "d4edec0c7992aef8c83e7f3e6d9bcdcd56eadaa39ca580fa833aa10692a2ff5c",
+      "source_row_index": 324,
+      "facts": [
+        {
+          "field": "price",
+          "value": "140.0",
+          "unit": "USD",
+          "source_field": [
+            "price"
+          ],
+          "quote": "140.0"
+        },
+        {
+          "field": "weight_g",
+          "value": "15.4",
+          "unit": "ounces",
+          "source_field": [
+            "details",
+            "Item Weight"
+          ],
+          "quote": "15.4 ounces"
+        },
+        {
+          "field": "color",
+          "value": "Silver",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Color"
+          ],
+          "quote": "Silver"
+        }
+      ],
+      "identity": {
+        "brand_source_field": [
+          "details",
+          "Brand"
+        ],
+        "model_source_field": [
+          "details",
+          "Item model number"
+        ]
+      },
+      "review_status": "not_human_reviewed",
+      "selection_reason": "strict_office_leaf_and_attributed_price_weight_color_brand",
+      "review_notes": [
+        "Diagnostic candidate only; source facts, identity and scope still require human review."
+      ]
+    },
+    {
+      "raw": {
+        "main_category": "Computers",
+        "title": "ASUS UX430UN-NB71 ZenBook 14\" Ultra-Slim Laptop with 14 inch FHD Display, Intel Core i7-8550U (up to 4.00 GHz)",
+        "price": "999.99",
+        "store": "ASUS",
+        "categories": [
+          "Electronics",
+          "Computers & Accessories",
+          "Computers & Tablets",
+          "Laptops",
+          "Traditional Laptops"
+        ],
+        "details": "{\"Standing screen display size\": \"14 Inches\", \"Max Screen Resolution\": \"1920X1080 Pixels\", \"Processor\": \"1.8 GHz\", \"RAM\": \"8 GB\", \"Hard Drive\": \"256 GB SSD\", \"Graphics Coprocessor\": \"NVIDIA GeForce MX150\", \"Chipset Brand\": \"NVIDIA\", \"Card Description\": \"Integrated, Dedicated\", \"Wireless Type\": \"802.11g\", \"Number of USB 2.0 Ports\": \"1\", \"Number of USB 3.0 Ports\": \"1\", \"Brand\": \"ASUS\", \"Series\": \"ASUS ZenBook\", \"Item model number\": \"UX430UN-NB71\", \"Operating System\": \"Windows 10\", \"Item Weight\": \"5 pounds\", \"Product Dimensions\": \"18.5 x 2.9 x 11.3 inches\", \"Item Dimensions  LxWxH\": \"18.5 x 2.9 x 11.3 inches\", \"Color\": \"Blue\", \"Processor Brand\": \"Intel\", \"Number of Processors\": \"1\", \"Computer Memory Type\": \"DDR3 SDRAM\", \"Flash Memory Size\": \"256\", \"Batteries\": \"1 Lithium Polymer batteries required. (included)\", \"Date First Available\": \"August 18, 2018\", \"Model Name\": \"ASUS ZenBook\", \"Screen Size\": \"14 Inches\", \"Hard Disk Size\": \"256 GB\", \"Ram Memory Installed Size\": \"8 GB\", \"Special Feature\": \"Backlit Keyboard,Nano-edge Bezel\", \"Graphics Card Description\": \"Integrated, Dedicated\"}",
+        "parent_asin": "B077BNJHVJ"
+      },
+      "raw_sha256": "c34dbfd7e40004f1ed1382ceeee881a93f9a680c0c58428097467945c802c085",
+      "source_row_index": 345,
+      "facts": [
+        {
+          "field": "price",
+          "value": "999.99",
+          "unit": "USD",
+          "source_field": [
+            "price"
+          ],
+          "quote": "999.99"
+        },
+        {
+          "field": "weight_g",
+          "value": "5",
+          "unit": "pounds",
+          "source_field": [
+            "details",
+            "Item Weight"
+          ],
+          "quote": "5 pounds"
+        },
+        {
+          "field": "color",
+          "value": "Blue",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Color"
+          ],
+          "quote": "Blue"
+        }
+      ],
+      "identity": {
+        "brand_source_field": [
+          "details",
+          "Brand"
+        ],
+        "model_source_field": [
+          "details",
+          "Item model number"
+        ]
+      },
+      "review_status": "not_human_reviewed",
+      "selection_reason": "strict_office_leaf_and_attributed_price_weight_color_brand",
+      "review_notes": [
+        "Diagnostic candidate only; source facts, identity and scope still require human review."
+      ]
+    },
+    {
+      "raw": {
+        "main_category": "Computers",
+        "title": "Acer Chromebook C738T NX.G55AA.005;C738T-C44Z 11.6\" Laptop",
+        "price": "358.0",
+        "store": "Acer",
+        "categories": [
+          "Electronics",
+          "Computers & Accessories",
+          "Computers & Tablets",
+          "Laptops",
+          "Traditional Laptops"
+        ],
+        "details": "{\"Standing screen display size\": \"11.6 Inches\", \"Max Screen Resolution\": \"1366 x 768 Pixels\", \"Processor\": \"1.6 GHz celeron\", \"RAM\": \"4 GB DDR3L SDRAM\", \"Memory Speed\": \"1.6 GHz\", \"Hard Drive\": \"16 GB SSD\", \"Graphics Coprocessor\": \"Intel HD Graphics\", \"Chipset Brand\": \"Intel\", \"Card Description\": \"Integrated\", \"Wireless Type\": \"802.11ac\", \"Number of USB 2.0 Ports\": \"1\", \"Number of USB 3.0 Ports\": \"1\", \"Brand\": \"Acer\", \"Series\": \"C738T\", \"Item model number\": \"NX.G55AA.005;C738T-C44Z\", \"Hardware Platform\": \"PC\", \"Operating System\": \"Chrome OS\", \"Item Weight\": \"3.53 pounds\", \"Product Dimensions\": \"11.6 x 8 x 0.8 inches\", \"Item Dimensions  LxWxH\": \"11.6 x 8 x 0.8 inches\", \"Color\": \"Black\", \"Processor Brand\": \"Intel\", \"Number of Processors\": \"4\", \"Computer Memory Type\": \"DDR3 SDRAM\", \"Flash Memory Size\": \"16\", \"Hard Drive Interface\": \"USB\", \"Batteries\": \"1 Lithium Ion batteries required.\", \"Best Sellers Rank\": {\"Computers & Accessories\": 66824, \"Traditional Laptop Computers\": 13038}, \"Date First Available\": \"July 28, 2017\", \"Model Name\": \"C738T\", \"Screen Size\": \"11.6 Inches\", \"Hard Disk Size\": \"16 GB\", \"CPU Model\": \"Celeron\", \"Ram Memory Installed Size\": \"4 GB\", \"Graphics Card Description\": \"Integrated\"}",
+        "parent_asin": "B0174X43LM"
+      },
+      "raw_sha256": "6d08f5cfa0db4683f31a946342354076d474526b7c557017a521b76791c59d82",
+      "source_row_index": 517,
+      "facts": [
+        {
+          "field": "price",
+          "value": "358.0",
+          "unit": "USD",
+          "source_field": [
+            "price"
+          ],
+          "quote": "358.0"
+        },
+        {
+          "field": "weight_g",
+          "value": "3.53",
+          "unit": "pounds",
+          "source_field": [
+            "details",
+            "Item Weight"
+          ],
+          "quote": "3.53 pounds"
+        },
+        {
+          "field": "color",
+          "value": "Black",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Color"
+          ],
+          "quote": "Black"
+        }
+      ],
+      "identity": {
+        "brand_source_field": [
+          "details",
+          "Brand"
+        ],
+        "model_source_field": [
+          "details",
+          "Item model number"
+        ]
+      },
+      "review_status": "not_human_reviewed",
+      "selection_reason": "strict_office_leaf_and_attributed_price_weight_color_brand",
+      "review_notes": [
+        "Diagnostic candidate only; source facts, identity and scope still require human review."
+      ]
+    },
+    {
+      "raw": {
+        "main_category": "All Electronics",
+        "title": "Wireless Keyboard and Mouse Combo, EDJO Full-Sized Ergonomic Computer Keyboard with Wrist Rest and 3 Level DPI Adjustable Wireless Mouse for Windows, Mac OS Desktop/Laptop/PC (White)",
+        "price": "34.99",
+        "store": "EDJO",
+        "categories": [
+          "Electronics",
+          "Computers & Accessories",
+          "Computer Accessories & Peripherals",
+          "Keyboards, Mice & Accessories",
+          "Keyboard & Mouse Combos"
+        ],
+        "details": "{\"Package Dimensions\": \"17.83 x 10 x 1.97 inches\", \"Item Weight\": \"1.72 pounds\", \"Best Sellers Rank\": {\"Computer Keyboard & Mouse Combos\": 305}, \"Date First Available\": \"March 3, 2023\", \"Manufacturer\": \"EDJO\", \"Brand\": \"EDJO\", \"Color\": \"White\", \"Connectivity Technology\": \"Usb, Radio Frequency\", \"Special Feature\": \"Ergonomic\", \"Compatible Devices\": \"Laptop, Personal Computer\"}",
+        "parent_asin": "B0BWYJJLSF"
+      },
+      "raw_sha256": "dd0aa7b96c37769d1b03fbc4b86491b5256df185ad86ddc6e306b4f3114421af",
+      "source_row_index": 630,
+      "facts": [
+        {
+          "field": "price",
+          "value": "34.99",
+          "unit": "USD",
+          "source_field": [
+            "price"
+          ],
+          "quote": "34.99"
+        },
+        {
+          "field": "weight_g",
+          "value": "1.72",
+          "unit": "pounds",
+          "source_field": [
+            "details",
+            "Item Weight"
+          ],
+          "quote": "1.72 pounds"
+        },
+        {
+          "field": "color",
+          "value": "White",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Color"
+          ],
+          "quote": "White"
+        }
+      ],
+      "identity": {
+        "brand_source_field": [
+          "details",
+          "Brand"
+        ]
+      },
+      "review_status": "not_human_reviewed",
+      "selection_reason": "strict_office_leaf_and_attributed_price_weight_color_brand",
+      "review_notes": [
+        "Diagnostic candidate only; source facts, identity and scope still require human review."
+      ]
+    },
+    {
+      "raw": {
+        "main_category": "Computers",
+        "title": "Avolusion HD250U3-WH 1TB USB 3.0 Portable External Gaming Hard Drive (for Xbox One X, S, Gen1, Pre-Formatted) - 2 Year Warranty",
+        "price": "39.88",
+        "store": "Avolusion",
+        "categories": [
+          "Electronics",
+          "Computers & Accessories",
+          "Data Storage",
+          "External Hard Drives"
+        ],
+        "details": "{\"Hard Drive\": \"1 TB Mechanical Hard Disk\", \"Number of USB 3.0 Ports\": \"1\", \"Brand\": \"Avolusion\", \"Series\": \"HD250U3-WH-1TB-XBOX\", \"Item model number\": \"HD250U3-WH-1TB-XBOX\", \"Hardware Platform\": \"xbox one\", \"Item Weight\": \"10.8 ounces\", \"Product Dimensions\": \"5 x 3 x 0.5 inches\", \"Item Dimensions  LxWxH\": \"5 x 3 x 0.5 inches\", \"Color\": \"White\", \"Flash Memory Size\": \"1 TB\", \"Hard Drive Interface\": \"USB 3.0\", \"Hard Drive Rotational Speed\": \"5400.00\", \"Manufacturer\": \"Avolusion\", \"Date First Available\": \"April 1, 2022\", \"Best Sellers Rank\": {\"External Hard Drives\": 107}, \"Digital Storage Capacity\": \"1 TB\", \"Hard Disk Interface\": \"USB 3.0\", \"Connectivity Technology\": \"USB\", \"Hard Disk Form Factor\": \"2.5 Inches\", \"Hard Disk Description\": \"Mechanical Hard Disk\", \"Compatible Devices\": \"Gaming Console\", \"Installation Type\": \"Plug In\", \"Hard Disk Size\": \"1 TB\"}",
+        "parent_asin": "B09X8LNVSY"
+      },
+      "raw_sha256": "d9d2c46c702e9353ff2f92b0c978ada16ec8b7998321c91df167f71cc862ba8e",
+      "source_row_index": 734,
+      "facts": [
+        {
+          "field": "price",
+          "value": "39.88",
+          "unit": "USD",
+          "source_field": [
+            "price"
+          ],
+          "quote": "39.88"
+        },
+        {
+          "field": "weight_g",
+          "value": "10.8",
+          "unit": "ounces",
+          "source_field": [
+            "details",
+            "Item Weight"
+          ],
+          "quote": "10.8 ounces"
+        },
+        {
+          "field": "color",
+          "value": "White",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Color"
+          ],
+          "quote": "White"
+        }
+      ],
+      "identity": {
+        "brand_source_field": [
+          "details",
+          "Brand"
+        ],
+        "model_source_field": [
+          "details",
+          "Item model number"
+        ]
+      },
+      "review_status": "not_human_reviewed",
+      "selection_reason": "strict_office_leaf_and_attributed_price_weight_color_brand",
+      "review_notes": [
+        "Diagnostic candidate only; source facts, identity and scope still require human review."
+      ]
+    },
+    {
+      "raw": {
+        "main_category": "Computers",
+        "title": "ASUS Premium High Performance 14\" Full HD 1920x1080 Flagship Laptop Intel Celeron Dual Core-Processor 4GB RAM 32GB HDD HDMI WIFI WEBCAM 32GB Flash eMMC Storage　Windows 10- Blue - Discontinued",
+        "price": "389.88",
+        "store": "ASUS",
+        "categories": [
+          "Electronics",
+          "Computers & Accessories",
+          "Computers & Tablets",
+          "Laptops",
+          "Traditional Laptops"
+        ],
+        "details": "{\"Standing screen display size\": \"14 Inches\", \"Max Screen Resolution\": \"1920 x 1080 (FHD)\", \"Processor\": \"1.6 GHz celeron\", \"RAM\": \"4 GB DDR3\", \"Memory Speed\": \"2.48 GHz\", \"Hard Drive\": \"32 GB SSD\", \"Graphics Coprocessor\": \"Intel HD Graphics\", \"Chipset Brand\": \"Intel\", \"Card Description\": \"Integrated\", \"Wireless Type\": \"Bluetooth, 802.11bgn\", \"Brand\": \"ASUS\", \"Series\": \"ASUS\", \"Item model number\": \"7.41E+11\", \"Hardware Platform\": \"PC\", \"Operating System\": \"Windows 10\", \"Item Weight\": \"3.2 pounds\", \"Product Dimensions\": \"13.4 x 9.3 x 0.8 inches\", \"Item Dimensions  LxWxH\": \"13.4 x 9.3 x 0.8 inches\", \"Color\": \"Blue\", \"Processor Brand\": \"Intel\", \"Number of Processors\": \"2\", \"Computer Memory Type\": \"DDR3 SDRAM\", \"Flash Memory Size\": \"32 GB\", \"Hard Drive Interface\": \"Serial ATA\", \"Power Source\": \"AC & Battery\", \"Voltage\": \"12 Volts\", \"Batteries\": \"1 Lithium Ion batteries required.\", \"Date First Available\": \"December 1, 2016\", \"Model Name\": \"ASUS\", \"Screen Size\": \"14 Inches\", \"Hard Disk Size\": \"32 GB\", \"CPU Model\": \"Celeron\", \"Ram Memory Installed Size\": \"4 GB\", \"Graphics Card Description\": \"Integrated\"}",
+        "parent_asin": "B01N6BOWFJ"
+      },
+      "raw_sha256": "513b343685178a26aeeb1586201ce1a99f9bb37f182fc48bd3c3b35b821c6d2a",
+      "source_row_index": 767,
+      "facts": [
+        {
+          "field": "price",
+          "value": "389.88",
+          "unit": "USD",
+          "source_field": [
+            "price"
+          ],
+          "quote": "389.88"
+        },
+        {
+          "field": "weight_g",
+          "value": "3.2",
+          "unit": "pounds",
+          "source_field": [
+            "details",
+            "Item Weight"
+          ],
+          "quote": "3.2 pounds"
+        },
+        {
+          "field": "color",
+          "value": "Blue",
+          "unit": null,
+          "source_field": [
+            "details",
+            "Color"
+          ],
+          "quote": "Blue"
+        }
+      ],
+      "identity": {
+        "brand_source_field": [
+          "details",
+          "Brand"
+        ],
+        "model_source_field": [
+          "details",
+          "Item model number"
+        ]
+      },
+      "review_status": "not_human_reviewed",
+      "selection_reason": "strict_office_leaf_and_attributed_price_weight_color_brand",
+      "review_notes": [
+        "Diagnostic candidate only; source facts, identity and scope still require human review."
+      ]
+    }
+  ]
+}

@@ -23,15 +23,31 @@ import urllib.request
 
 from ..env.catalog import digest
 
-PROMPT_VERSION = "procure-teacher-visible-v1"
-SYSTEM_PROMPT = (
+PROMPT_VERSION = "procure-teacher-visible-v2"
+PROMPTS = {"procure-teacher-visible-v1": (
     "You are an office procurement agent. Discover user needs using the available tools, "
     "inspect actual product and review evidence, and recommend one product with checks "
     "citing observed evidence IDs for every requirement. Only observations are available; "
     "never invent facts or evidence. Return exactly one tool call per turn. "
     "Clarification questions must be at most 100 characters. Tool results contain the "
     "remaining action budget. Finish within it."
-)
+), PROMPT_VERSION: (
+    "You are an office procurement agent using only the public observations and tools. "
+    "Return exactly one tool call per turn. First obtain the user profile. Before making "
+    "a final recommendation, actively clarify missing procurement requirements with ask_user. "
+    "Ask short, topic-specific questions about common purchase limits such as weight, "
+    "dimensions, compatibility, power and intended use; generic 'anything else?' questions "
+    "may not reveal topic-specific requirements. Each question must be at most 100 characters. "
+    "Never infer a hidden requirement or invent a user answer. Treat the structured "
+    "requirements returned by tools as authoritative. For op=eq compare values exactly; "
+    "similar names, shades or model variants are not interchangeable. For numeric limits "
+    "compare the actual normalized values and units. Use concise search terms, inspect "
+    "actual product and review evidence, and cite observed evidence IDs in checks for "
+    "every discovered requirement. Do not recommend until all discovered requirements "
+    "are satisfied and supported by evidence. Tool results show the remaining action budget; "
+    "finish within it. Do not invent products, facts, evidence IDs or requirements."
+)}
+SYSTEM_PROMPT = PROMPTS[PROMPT_VERSION]
 
 
 def _now() -> str:
@@ -297,10 +313,11 @@ class OpenAIHTTPTeacher:
             raise TeacherError("No cached response; network teacher is disabled")
         key = self._secret()
         journal = [json.loads(p.read_text(encoding="utf-8")) for p in self.cache.glob("*.json")]
-        own = [r for r in journal if r.get("identity_sha256") == self.identity_sha256]
-        reserved = sum(max(r.get("reserved_cost_usd", 0), r.get("cost_usd") or 0) for r in own)
+        # A prompt/model/policy change must not reset the pilot budget. A cache
+        # directory is one spending scope, including pending/uncertain entries.
+        reserved = sum(max(r.get("reserved_cost_usd", 0), r.get("cost_usd") or 0) for r in journal)
         cap = float(self.config["request_cost_cap_usd"])
-        if len(own) >= self.config["max_requests"] or reserved + cap > self.config["max_cost_usd"] + 1e-12:
+        if len(journal) >= self.config["max_requests"] or reserved + cap > self.config["max_cost_usd"] + 1e-12:
             raise TeacherError("Teacher request or cost-reservation budget exhausted")
         prices = self.config.get("prices_usd_per_million_tokens", {})
         if not prices and "input_per_million_usd" in self.config:

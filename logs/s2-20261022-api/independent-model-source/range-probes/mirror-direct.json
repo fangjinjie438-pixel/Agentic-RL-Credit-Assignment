@@ -1,0 +1,9 @@
+{
+  "url": "https://hf-mirror.com/Qwen/Qwen3-8B/resolve/b968826d9c46dd6066d109eabc6255188de91218/model-00005-of-00005.safetensors",
+  "proxy": "disabled",
+  "status": 206,
+  "content_range": "bytes 1048576-2097151/1244659840",
+  "bytes": 1048576,
+  "sha256": "ee0006395176c77f729e479440ab58196cbac6568a77c1b89ac99e49ff4fbfd6",
+  "elapsed_seconds": 3.5268867798149586
+}

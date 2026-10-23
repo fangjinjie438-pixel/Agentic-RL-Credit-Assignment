@@ -1,0 +1,69 @@
+{
+  "model": "Qwen/Qwen3-8B",
+  "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "dataset_revision": "s2-f692f21320912220be59d4a5",
+  "tasks": [
+    {
+      "task_id": "task-72e45343984d6a3ce84c",
+      "task_sha256": "f66729755239401b791f992bd70d42d1a3d9e99d0ea22e7bd24c3549ded9aeda",
+      "prompt_sha256": "2edafe93fbe7c85cf9522ab11bc5c1cdc436514cfd01f3d3667875bb5b14ad96",
+      "input_tokens": 16796,
+      "reserved_output_tokens": 1024,
+      "within_context_limit": false
+    },
+    {
+      "task_id": "task-964a2c1b4a9586d4b9ea",
+      "task_sha256": "f4ff13b89ad3a1d5e3e9700219509144b7927c4390caffae9d44fe7de92d493b",
+      "prompt_sha256": "98593e18fcf4128f02b482bdfa0305539d55ca29fbfadd486620e81b3fefd17f",
+      "input_tokens": 16802,
+      "reserved_output_tokens": 1024,
+      "within_context_limit": false
+    },
+    {
+      "task_id": "task-9e9c41995b5779485caa",
+      "task_sha256": "403694c105a4ba5b4b51c874b23139c5761be725969ecf5c472bc23de926650a",
+      "prompt_sha256": "6ef267ede7df201cb3186a987e039d023493e4d3aad66ed653bf2b51b984d5d4",
+      "input_tokens": 17370,
+      "reserved_output_tokens": 1024,
+      "within_context_limit": false
+    },
+    {
+      "task_id": "task-9e9c41995b5779485caa-cf-018340a0",
+      "task_sha256": "7109543f261f90a6716e28c1c558bc39cddd41bda7101ed60689171dd3a967ae",
+      "prompt_sha256": "776fc2bf837db833825112d163eb8b616fceff1964084ab7befbd1996ff49847",
+      "input_tokens": 17431,
+      "reserved_output_tokens": 1024,
+      "within_context_limit": false
+    },
+    {
+      "task_id": "task-ac53e878d2c50893225c",
+      "task_sha256": "12088c0e67166803c7be92f31c780cab9ed52682c6d79df6a61bf844bc41fcf0",
+      "prompt_sha256": "06d692233d24425760f94ef9618ea0c977c947719c988fcec11817708afa6f86",
+      "input_tokens": 17372,
+      "reserved_output_tokens": 1024,
+      "within_context_limit": false
+    },
+    {
+      "task_id": "task-ac53e878d2c50893225c-cf-5ee29266",
+      "task_sha256": "4870fa81199a95c22430afdb9a6ba68700c47c4040af3875545e705cbb2ab116",
+      "prompt_sha256": "52b4bb87ed28181b38aa0a2ec57864066e1528d4d01d9b637b68b8b22b24e976",
+      "input_tokens": 17430,
+      "reserved_output_tokens": 1024,
+      "within_context_limit": false
+    },
+    {
+      "task_id": "task-eab64e1f7a0884441a5f",
+      "task_sha256": "e03e1cbdf0c80cc99b77a5906313ee288bc945c1bafda1be67a5d38cee5e4f97",
+      "prompt_sha256": "bab4ee4e3d0d1c1b8e3198bf8571c9ed4ec9cb5e10cf5e4827c4d0efe6f17636",
+      "input_tokens": 16791,
+      "reserved_output_tokens": 1024,
+      "within_context_limit": false
+    }
+  ],
+  "gpu_compute_performed": false,
+  "cuda_initialized": false,
+  "model_weights_loaded": false,
+  "model_review_performed": false,
+  "human_review_performed": false,
+  "all_prompts_fit": false
+}
